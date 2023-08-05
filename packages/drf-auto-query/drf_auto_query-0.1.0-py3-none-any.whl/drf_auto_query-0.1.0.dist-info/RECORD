@@ -1,0 +1,11 @@
+drf_auto_query/__init__.py,sha256=GFXac3ru49GyrgYHgucAp_Hoqz6F0DJy7K8kRnGfYaI,74
+drf_auto_query/exceptions.py,sha256=w5JXYTb7nMJLYeOVYC5nuHyh9gmPGReCuX0qoAvTQ3U,45
+drf_auto_query/field_tree_builder.py,sha256=SZj1IYMSbDR3mJUzjNsunM--HkIlxmKYCDnO3_Rdm4w,3418
+drf_auto_query/mixins.py,sha256=eUCrBtgLNtC2CcC80VYNeMvO6bkCiyyJH4pjMLp7QP4,367
+drf_auto_query/query_builder.py,sha256=aWvVZk4mOJ3GwnARu0LdmtjFVawpD0lkMWyOmz1c4Xk,6752
+drf_auto_query/types.py,sha256=nId70zjiZjSX_qbT_RxXNsHkQKuZvgTgkiSguV16ZD0,419
+drf_auto_query/utils.py,sha256=tgopGVeP3oV5mjJHp4ZP4MHs71KUn25fo2o4879sNkU,682
+drf_auto_query-0.1.0.dist-info/LICENSE,sha256=_YxPpG0DXwPQvNcy_56RyyeBs0Yuj8SkXgfnjE2ZCHQ,1080
+drf_auto_query-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+drf_auto_query-0.1.0.dist-info/METADATA,sha256=pL2N0xywQ_EY4SXH2NGUVdH5nBc-ZRyNlysbaJPEvZ8,5620
+drf_auto_query-0.1.0.dist-info/RECORD,,
