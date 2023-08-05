@@ -1,0 +1,15 @@
+setup.py
+lab3/DeserializerJson.py
+lab3/Json.py
+lab3/SerializerFactory.py
+lab3/SerializerJson.py
+lab3/__init__.py
+lab3/constants.py
+lab3/functions.py
+lab3/xml.py
+lab3/xml_parser.py
+shiroserializer.egg-info/PKG-INFO
+shiroserializer.egg-info/SOURCES.txt
+shiroserializer.egg-info/dependency_links.txt
+shiroserializer.egg-info/requires.txt
+shiroserializer.egg-info/top_level.txt

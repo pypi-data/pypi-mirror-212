@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: shiroserializer
+Version: 2.0.0
+Summary: serializer of XML and JSON
+Home-page: https://github.com/NLShiro/pyserializer
+Author: NLShiro
+Author-email: artem.rogachev@tut.by

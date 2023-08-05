@@ -1,0 +1,10 @@
+JSON = 'json'
+XML = 'xml'
+NULL = 'null'
+TRUE = 'true'
+FALSE = 'false'
+QUOTATION_MARK = '"'
+MINUS = '-'
+EXTRA_CHARACTERS_IN_LIST = [',', '\n', ' ']
+EXTRA_CHARACTERS_IN_DICT = [',', '\n', ' ', ':']
+EXTRA_ATTRIBUTE_CLASS_CODE=['__module__','__dict__','__weakref__']
