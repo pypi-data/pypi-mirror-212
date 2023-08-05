@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/interpreted/__init__.py
+src/interpreted/__main__.py
+src/interpreted/cli.py
+src/interpreted/py.typed
+src/interpreted.egg-info/PKG-INFO
+src/interpreted.egg-info/SOURCES.txt
+src/interpreted.egg-info/dependency_links.txt
+src/interpreted.egg-info/entry_points.txt
+src/interpreted.egg-info/requires.txt
+src/interpreted.egg-info/top_level.txt
