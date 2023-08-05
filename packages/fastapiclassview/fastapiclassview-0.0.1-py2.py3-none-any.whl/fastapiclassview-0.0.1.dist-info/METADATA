@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fastapiclassview
+Version: 0.0.1
+Summary: FastAPIView Class View
+Home-page: https://github.com/ShiLiangAPI/FastAPIView.git
+Author: ShiLiang
+Author-email: 2509144896@qq.com
+License: GPL-3.0-or-later
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+[联系作者](Wait To be improved)
+
+This is a simple example package. You can use
+
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+
+to write your content.
