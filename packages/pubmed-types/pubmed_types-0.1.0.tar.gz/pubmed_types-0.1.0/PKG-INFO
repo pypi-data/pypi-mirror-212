@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pubmed-types
+Version: 0.1.0
+Summary: Pubmed XML parsing and typehints.
+Author: Nick Schaub
+Author-email: nick.schaub@nih.gov
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: xsdata-pydantic[cli,lxml,soap] (>=22.10,<23.0)
