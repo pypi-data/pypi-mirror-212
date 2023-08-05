@@ -1,0 +1,10 @@
+cpp_linter_hooks/__init__.py,sha256=PPnAuwVH1pIvxoNu9-P_zuHnE4l_myeDg4Jw1vQC4YE,471
+cpp_linter_hooks/clang_format.py,sha256=tKOooUjxkBShlMiMk23tBV4TNpkKrnzlwlUHs3qTDv0,1044
+cpp_linter_hooks/clang_tidy.py,sha256=EFgsB98qn0W5a3d5BIqiB_uSCaWXhn1SS_oBT2Yr0Nk,928
+cpp_linter_hooks/util.py,sha256=hym3ogl6ZvChjqz21nLamQ-AF2k8JqKbvb_5ESRX5Lg,1466
+cpp_linter_hooks-0.2.4.dist-info/LICENSE,sha256=8jYtzp-KuZ4iRI55Gyi1CsGpjwkQe-Jzc0ekP254TdE,1067
+cpp_linter_hooks-0.2.4.dist-info/METADATA,sha256=YeyDdGofMfRekvYFotzj1yNHIyPf9xEoN9SxaOzB1OI,5870
+cpp_linter_hooks-0.2.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cpp_linter_hooks-0.2.4.dist-info/entry_points.txt,sha256=m1XxOFJtxU3bzHIhL6-scWevhShIQ94vtYyekbVeT_k,124
+cpp_linter_hooks-0.2.4.dist-info/top_level.txt,sha256=rAR2F_emgDEc8lJXfqUPZjtdTpbVm2I41dRGEUj9rzM,17
+cpp_linter_hooks-0.2.4.dist-info/RECORD,,
