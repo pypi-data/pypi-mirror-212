@@ -1,0 +1,9 @@
+parafilt/__init__.py,sha256=dT3ZgHyS6U1VMt7xuXJaje5m6Fstr-f7kjIAvI25Z-Q,92
+parafilt/base.py,sha256=s2Yjzamu3bj0_oni9AOg_wSndy-ueUlkJdqbBKuOSPw,4687
+parafilt/filters.py,sha256=M5a21h2-vfKpZ4RiTCeg4Uus0z1OdRQJl7PUDV_MJgE,6444
+parafilt/version.py,sha256=Bmx2rTwgBEfESxEreJp0mTWtwZCCKouJ7XKgBkco0-Y,45
+parafilt-0.1.1b0.dist-info/LICENSE,sha256=HFAl7G8M4Ea9wHm1XRPS5I9AaXMIm5y9wPRsoo1gdRQ,1067
+parafilt-0.1.1b0.dist-info/METADATA,sha256=pcne5gB7i0Jyfqs39GofVLmroGfYQsu3xRxI_RfBn0E,4770
+parafilt-0.1.1b0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+parafilt-0.1.1b0.dist-info/top_level.txt,sha256=U_lMcFLs39aeMs2WAYZ0euNwuRl_4FHgFf7eUsS1DnY,9
+parafilt-0.1.1b0.dist-info/RECORD,,
