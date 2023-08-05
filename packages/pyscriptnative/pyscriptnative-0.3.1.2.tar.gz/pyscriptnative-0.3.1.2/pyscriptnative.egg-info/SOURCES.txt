@@ -1,0 +1,9 @@
+README.rst
+pyproject.toml
+pyscriptnative.py
+setup.py
+pyscriptnative.egg-info/PKG-INFO
+pyscriptnative.egg-info/SOURCES.txt
+pyscriptnative.egg-info/dependency_links.txt
+pyscriptnative.egg-info/requires.txt
+pyscriptnative.egg-info/top_level.txt
