@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: mangowg
+Version: 0.1.10
+Summary: A portfolio website generator
+Author: Amelia
+Author-email: 53657436+AmeliaTYR@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Deprecated (==1.2.14)
+Requires-Dist: PyGithub (==1.58.2)
+Requires-Dist: PyJWT (==2.7.0)
+Requires-Dist: PyNaCl (==1.5.0)
+Requires-Dist: Pygments (==2.15.1)
+Requires-Dist: ansicon (==1.89.0)
+Requires-Dist: blessed (==1.20.0)
+Requires-Dist: certifi (==2023.5.7)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: colorama (==0.4.6)
+Requires-Dist: cryptography (==41.0.1)
+Requires-Dist: idna (==3.4)
+Requires-Dist: inquirer (==3.1.3)
+Requires-Dist: jinxed (==1.2.0)
+Requires-Dist: markdown-it-py (==2.2.0)
+Requires-Dist: mdurl (==0.1.2)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: python-dotenv (==1.0.0)
+Requires-Dist: python-editor (==1.0.4)
+Requires-Dist: readchar (==4.0.5)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: rich (==13.4.1)
+Requires-Dist: shellingham (==1.5.0.post1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: typer (==0.9.0)
+Requires-Dist: typing_extensions (==4.6.3)
+Requires-Dist: urllib3 (==2.0.2)
+Requires-Dist: wcwidth (==0.2.6)
+Requires-Dist: wrapt (==1.15.0)
+Requires-Dist: yattag (==1.15.1)
+Description-Content-Type: text/markdown
+
+# MangoWG
+Mango Website Generator PyPi Package 
+
+## Python Venv
+
+* `python -m venv venv`
+* `venv\Scripts\activate.bat`
+* `pip install -r requirements.txt`
+* `pip freeze > requirements.txt`
+
+## Usage
+Get started `python mangowg.py --help`
+
+To use command selection rather than typing the command name, use `python mangowg.py cut` then select the command to be executed.
+
+
+## PyPi publish 
+Publish new package
+
+* install poetry
+* `poetry init`
+* `poetry build`
+* `poetry publish -u USERNAME -p PASSWORD`
+    * use pypi password for this step
+
+To update version number:
+
+* `poetry version 0.1.2`
+* `poetry build`
+* `poetry publish -u USERNAME -p PASSWORD`
+    * use github password for this step
