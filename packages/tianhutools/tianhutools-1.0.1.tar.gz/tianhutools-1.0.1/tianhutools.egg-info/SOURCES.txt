@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+tianhutools/__init__.py
+tianhutools/ip.py
+tianhutools/jiami.py
+tianhutools/text.py
+tianhutools.egg-info/PKG-INFO
+tianhutools.egg-info/SOURCES.txt
+tianhutools.egg-info/dependency_links.txt
+tianhutools.egg-info/requires.txt
+tianhutools.egg-info/top_level.txt
