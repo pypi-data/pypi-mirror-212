@@ -1,0 +1,9 @@
+include LICENSE
+include HISTORY.md
+include Containerfile
+graft tests
+recursive-include docs invoker_terminal *
+include invoker_terminal/idl/invoker_network_market.json
+include invoker_terminal/templates/Dockerfile_template
+include invoker_terminal/templates/requirements.yaml
+include invoker_terminal/VERSION
