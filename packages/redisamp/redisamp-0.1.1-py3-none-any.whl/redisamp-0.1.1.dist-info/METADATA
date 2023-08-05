@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: redisamp
+Version: 0.1.1
+Summary: A Redis UI in your terminal
+Home-page: https://github.com/elicore/redisamp
+License: MIT
+Keywords: redis,tui,redis-client,redisamp,redis-ui,textual
+Author: Eli Cohen
+Author-email: amihai.cohen@gmail.com
+Requires-Python: >=3.10
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Dist: redis (>4.3.4)
+Requires-Dist: textual[dev] (>=0.27.0,<0.28.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Requires-Dist: walrus (>=0.9.2,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Redisamp
+_A Redis UI in your terminal_
+
+# Install
+Install via pip:
+```bash
+pip install redisamp
+```
+
+Install via pipx:
+```bash
+pipx install redisamp
+```
+
+# Run
+```bash
+redisamp [-u $REDIS_URL]
+```
+
+# Roadmap
+- [ ] Settings
+  - [ ] Connection settings
+    - [ ] SSH tunneling
+  - [ ] CLI settings
+  - [ ] Configuration file
+- [ ] Connection switching
+- [ ] Key actions - all keys
+  - [ ] Delete
+  - [ ] Set TTL
+  - [ ] Rename (?)
+- [ ] Monitor
+- [ ] redis-cli
+  - [ ] redis-cli process window (?)
+  - [ ] redis console panel 
+    - [ ] output formatting
+    - [ ] command formatting (highlight, auto-complete?)
+
