@@ -1,0 +1,2 @@
+[console_scripts]
+interpreted = interpreted.cli:cli
