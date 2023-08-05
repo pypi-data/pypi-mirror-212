@@ -1,0 +1,9 @@
+# Configuration file for HelloWorld - Distributed world client
+# YAML 1.2 compliant
+
+service_class: DistWorldClient  # class to use for service instantiation
+send_to:  # service classes that can receive messages sent from this service
+- DistWorldServer
+
+parameters:  # instance variables passed to the service on instantiation
+  send_interval: 5  # duration (in seconds) to wait between sending service messages

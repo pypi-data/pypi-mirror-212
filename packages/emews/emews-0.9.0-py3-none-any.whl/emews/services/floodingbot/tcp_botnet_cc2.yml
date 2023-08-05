@@ -1,0 +1,10 @@
+# Configuration file for Botnet C&C
+# YAML 1.2 compliant
+
+service_class: BotnetCC  # class to use for service instantiation
+send_to:  # service classes that can receive messages sent from this service
+- TCPFloodingBot
+
+parameters:  # instance variables passed to the service on instantiation
+  flood_start_delay: 120  # duration (in seconds) to wait before commanding bots to flood
+  flood_duration: 60  # duration that bots will flood, in seconds

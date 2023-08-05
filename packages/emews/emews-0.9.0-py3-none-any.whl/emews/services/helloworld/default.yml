@@ -1,0 +1,7 @@
+# Default configuration file for HelloWorld (example service)
+# YAML 1.2 compliant
+
+display_name: HelloWorld  # display name of the service (optional - only defined in the default config)
+parameters:  # instance variables passed to the service on instantiation
+  log_interval: 10  # duration (in seconds) to wait between generating log messages
+  use_env: True  # if True, ask evidence queries from the example network environment

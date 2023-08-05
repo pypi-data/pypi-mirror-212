@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: emews
+Version: 0.9.0
+Summary: Network traffic automation and prototyping.
+Home-page: https://mews.sv.cmu.edu/research/emews/
+License: GPL-3.0-only
+Author: Brian Ricks
+Author-email: absolutefunk@utdallas.edu
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Networking
+Requires-Dist: bs4 (>=0.0.1)
+Requires-Dist: linuxfd (>=1.4.4)
+Requires-Dist: pexpect (>=4.6)
+Requires-Dist: psutil (>=5.8)
+Requires-Dist: ruamel.yaml (>=0.17)
+Requires-Dist: scipy (>=1.5.4)
+Requires-Dist: urllib3 (>=1.25.8)
+Project-URL: Repository, https://github.com/absolutefunk/emews
+Description-Content-Type: text/markdown
+
+# eMews - Network Traffic Automation and Prototyping
+
+eMews is a framework which automates client-side computer network traffic generation, while providing centralized monitoring of a network while traffic is being generated.  eMews provides an API to write network applications which abstract away basic functionality such as peer-to-peer communication.  These applications, called _services_, provide client-side traffic generation, but can also be used to prototype complex network protocols, or even agent-environment interaction, in which the environment is the network itself [2].  eMews is designed for emulated networks such as those built with CORE, enabling quick deployment over potentially large-scale networks which reside on a single physical host [1].
+
+Bundled with eMews are services which can generate SSH and HTTPS client-side network traffic in a connection-orientated paradigm.  This is different from a playback approach, in that the traffic generated factors in response traffic from the server, and can be captured as PCAP data representing valid TCP sessions.  By writing your own eMews services, you can generate any client-side traffic for any network protocol you desire.
+
+With eMews you can quickly deploy large-scale botnets for flooding-type network traffic captures.  eMews comes with a botnet service which can generate distributed UDP or TCP traffic, and supports multiple concurrent botnets.
+
+- eMews version used in IRI-18 [1] paper: v0.32.
+- eMews version used in IRI-19 [2] paper: v0.4.
+
+## Quick Start
+We will assume that eMews is going to be run under the CORE network emulator.  To install CORE, see [here](https://coreemu.github.io/core/).  eMews is tested to work with CORE 8.
+
+First, install eMews using `pip`:
+
+```shell
+python3 -m pip install emews
+```
+
+You need to know where eMews was installed, so you can modify CORE's configuration accordingly.  Type the following to get the eMews path:
+
+```shell
+python3 -m pip show emews
+```
+
+The path is located under `Location` in the output, for example:
+
+```
+Location: /home/username/venv-emews/venv/lib/python3.8/site-packages
+```
+
+Copy the Location (which will be called `<pkg_path>`), and open `core.conf`. Modify the following:
+
+```
+custom_services_dir = <pkg_path>/emews/core_emu/legacy_services
+custom_config_services_dir = <pkg_path>/emews/core_emu/config_services
+```
+
+Note that CORE services are different from eMews services.  Starting from CORE 8, CORE services are called 'config services', which is the new CORE service paradigm.  Legacy CORE services are still supported, and called 'services'.  eMews started CORE support from CORE 5, and while all eMews services work with the config service paradigm, HTTPS server support is still handled using a legacy CORE service.  If you plan to use eMews HTTPS, please modify `custom_services_dir` accordingly, otherwise `custom_config_services_dir` is the only modification in `core.conf` which is necessary.  eMews provides a sample `core.conf` file under `<pkg_path>/emews/core_emu/example_conf`.
+
+### Building CORE Networks
+CORE networks can be built using `core_gui`.  When building a CORE network to run eMews nodes, one node should be designated to run the eMews hub.  In `core_gui`, right-click on this node (node type should be 'PC'), and select 'Config Services'.  If `custom_config_services_dir` was set correctly in `core.conf`, then under 'Groups', 'eMews' should be an option.  Select 'eMews' as the group, and select 'HubNode' as the service.
+
+All remaining nodes that will run eMews services need to additionally run an eMews host.  In `core_gui`, right-click on a node which should be an eMews host, and select 'Config Services'.  Select 'eMews' as the group, and select 'HostNode' as the service.  Select additional eMews services from this list if you'd like to run them on the selected node.
+
+eMews host nodes need to know the IP address of the hub.  This is set in the eMews system configuration file located at `<pkg_path>/emews/system.yml`.  Under the `hub` section is this line:
+
+```
+address: 10.0.0.20
+```
+
+This specifies that the hub address is at 10.0.0.20, which is the address of the first CORE node created in `core_gui` by default.  If your hub node has a different address, change it in `system.yml`.
+
+When running a CORE network with eMews-enabled nodes, you can both control eMews and monitor what it is doing by connecting to the hub node.  In CORE, you need to first enable a control network for your CORE network, so you can connect to the eMews hub node externally.  With your CORE network open in `core_gui`, click on the 'Session' menu, select 'Options', and type an IP address range for 'Control Network', for example 172.16.0.0/24.
+
+Example CORE networks with eMews nodes are located under `<pkg_path>/emews/core_emu/networks`.
+
+### Controlling and Monitoring eMews
+When running your CORE network, you may want to run an eMews console and monitor node to interact with eMews and view log output, respectively.  With your CORE network running, double-click on the hub node in `core_gui`.  This opens a root shell, and in this shell type:
+
+```shell
+ifconfig
+```
+
+The NIC for the control network should be called `ctrl0`.  Copy the IP address assigned for the control network, which will be called `<ctrl_ip>`.  Then open a local console and type:
+
+```shell
+python3 -m emews -n monitor1 monitor --hub_address <ctrl_ip>
+```
+
+This will create a local eMews node called 'monitor1', which will connect to the hub node and output log messages.  Now open another local console and type:
+
+```shell
+python3 -m emews -n console1 console --hub_address <ctrl_ip>
+```
+
+This will create a local eMews node called 'console1', which will connect to the hub node and provide a console in which you can type commands to eMews.  To start all eMews services, type in the console node:
+
+```
+exp start
+```
+
+To stop all eMews services, type in the console node:
+
+```
+exp stop
+```
+
+The eMews console supports many commands to interact with eMews.  Type `help` to get a list of commands.  Type `help <command>` to get help on a specific command.
+
+## Helpful Hints
+CORE network nodes are run as containers under root, and are built under `/tmp/pycore.###` (the '###' is a number).  In this directory are directories for each CORE node, named `<node_name>.conf`, where `<node_name>` is the name of the node as assigned in `core_gui` (such as 'n1').  For example, the path to a CORE node called 'n1' would be:
+
+```
+/tmp/pycore.###/n1.conf
+```
+
+All CORE nodes running eMews contain log files which start with `emews` and end with `.log`.  These files log console output (including exceptions) from each eMews daemon and service launcher, and may contain useful messages related to local issues.  For example, a CORE node running an eMews host has two log files:  `emews_node_host.log` and `emews_servspawn.log`.  The first provides local (to the CORE node) log output of the eMews host, whereas the second provides local log output for eMews service spawning.  To obtain eMews service log output among all nodes in the network, launch a monitor node.
+ 
+If you want eMews services to start automatically when your CORE network is started, under `<pkg_path>/emews/system.yml`, set `hub.scenario_autostart` to `True`.  When your CORE network starts, eMews services will start automatically after an amount of seconds given by `hub.scenario_autostart_delay`.  This enables you to launch a CORE network and start eMews services without having to connect a console session to the hub node.
+
+References:
+
+[1] B. Ricks, P. Tague and B. Thuraisingham, "Large-Scale Realistic Network Data Generation on a Budget," IEEE Intl Conference on Information Reuse and Integration for Data Science (IRI), Jul 2018
+- URL: https://mews.sv.cmu.edu/papers/iri-18.pdf
+
+[2] B. Ricks, B. Thuraisingham, and P. Tague, "Mimicking Human Behavior in Shared-Resource Computer Networks", IEEE Intl Conference on Information Reuse and Integration for Data Science (IRI), Jul 2019
+- URL: https://mews.sv.cmu.edu/papers/iri-19.pdf
+

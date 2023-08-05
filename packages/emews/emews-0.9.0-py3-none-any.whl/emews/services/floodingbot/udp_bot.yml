@@ -1,0 +1,11 @@
+# Configuration file for a UDP bot.
+# YAML 1.2 compliant
+
+service_class: UDPFloodingBot
+receive_from:
+- BotnetCC
+
+parameters:  # instance variables
+  target_address: 10.0.0.22
+  send_delay: 0.7
+  packet_size: 256

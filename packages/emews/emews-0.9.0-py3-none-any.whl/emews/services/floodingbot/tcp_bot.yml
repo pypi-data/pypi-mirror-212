@@ -1,0 +1,12 @@
+# Configuration file for a TCP HTTP request-based bot.
+# YAML 1.2 compliant
+
+service_class: TCPFloodingBot
+receive_from:
+- BotnetCC
+
+parameters:  # instance variables
+  user_agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+
+  target_address: https://10.0.1.20/blog.html
+  send_delay: 0.1
