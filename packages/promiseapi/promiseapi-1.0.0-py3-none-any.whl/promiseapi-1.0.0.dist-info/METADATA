@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: promiseapi
+Version: 1.0.0
+Summary: Kind of like JavaScript promises (in Python!)
+Author-email: Carl Furtado <carlzfurtado@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Carl Furtado
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/User0332/promiseapi
+Keywords: javascript,promise,async
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PromiseAPI
+
+Provides a Promise-like syntax for a JS Promise-like object in Python. It does not currently implement all methods (still a WIP), but the methods already implemented, such as `then`, `catch`, and `_finally`, do not behave exactly as they do in JavaScript. However, they behave similarly enough that similar code would not get too messed up. Examples are in `test.py`.
