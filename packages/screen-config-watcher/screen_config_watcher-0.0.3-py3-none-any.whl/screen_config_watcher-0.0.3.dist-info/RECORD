@@ -1,0 +1,16 @@
+scw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scw/config.py,sha256=0ZP6rNsQeNWgf8H6X61yorIi7zZS82q9LWwD5PxTdMc,5946
+scw/config_file_watcher.py,sha256=pM_Rq8xEL0ldRRcm50HjmSJRAHewMSqtpR0Ztkho7I0,1175
+scw/log.py,sha256=jM4V8hbIeRYcZCA6np2ZOuRZJSgA0JTZ01xIVz3elIg,2718
+scw/options.py,sha256=mD6_aZseEedd_j5faBUlP9eeeFAlcAf6SwU-eucDuoQ,1865
+scw/watcher_app.py,sha256=kVhw4Csss9clt4jNGeQQtJPSre1JUu0qvm6iLLzfrXY,5335
+scw/cli/__init__.py,sha256=FxAvqzcvtOxExIzfOLBEqacvR91cSPp-2eF7fagwGGw,79
+scw/cli/screen_config_watcher.py,sha256=2X-lNwSpICRwEs-5lkyVKz592tg3ChOD6FWMFden74o,551
+scw/screen_lock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scw/screen_lock/macos.py,sha256=cxoHMPIYfeQlH-dh6zMx0eftHhLS9zmPv-l00yv635Y,645
+screen_config_watcher-0.0.3.dist-info/LICENSE,sha256=1xlBijCnTixktumSEQi88sHobd0v_fXmNYXU6tS3Prk,1070
+screen_config_watcher-0.0.3.dist-info/METADATA,sha256=7KMQ2tDwzUWn5rqhSc1ztYPHNx5UTVvtDlmPyQgZsuI,1172
+screen_config_watcher-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+screen_config_watcher-0.0.3.dist-info/entry_points.txt,sha256=1d3kGjW8-MSp_PV9UwRiSdtd14km2wO9JOykEX7jW1M,62
+screen_config_watcher-0.0.3.dist-info/top_level.txt,sha256=rdywrs3hCr7cJk8gvhUnMGIVZSCUM_A0s0-G20rqFG4,4
+screen_config_watcher-0.0.3.dist-info/RECORD,,

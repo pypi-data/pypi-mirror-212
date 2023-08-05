@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: screen-config-watcher
+Version: 0.0.3
+Summary: A tool to watch OS screen configuration changes and change the OBS profile and scene collection accordingly.
+Author-email: Dennis Sitelew <yowidin@gmail.com>
+Project-URL: homepage, https://github.com/yowidin/screen-config-watcher
+Project-URL: bugtrack, https://github.com/yowidin/screen-config-watcher/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyside6 (~=6.4.2)
+Requires-Dist: toml (~=0.10.2)
+Requires-Dist: watchdog (~=2.3.0)
+Requires-Dist: obws-commands (~=0.0.3)
+Requires-Dist: pyobjc (~=9.0.1) ; sys_platform == "darwin"
+
+# Screen Config Watcher
+A tool to watch OS screen configuration changes and change the OBS profile and scene collection accordingly.
+
+## Getting display names
+
+Run the `screen-config-watcher` script with the `-vv` and `-d` command line arguments. This will launch it in the 
+dry-run mode, and you will be able to see the display names in the terminal.
+
+# Auto-Start
+
+See contents of the `samples` directory.
