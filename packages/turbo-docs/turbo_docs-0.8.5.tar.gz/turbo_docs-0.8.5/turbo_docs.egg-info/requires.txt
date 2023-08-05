@@ -1,0 +1,7 @@
+requests
+openai
+click
+pyperclip
+redbaron
+gitpython
+toml
