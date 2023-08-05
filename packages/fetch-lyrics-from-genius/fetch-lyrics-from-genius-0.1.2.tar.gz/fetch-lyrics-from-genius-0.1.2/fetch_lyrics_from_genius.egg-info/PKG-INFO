@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fetch-lyrics-from-genius
+Version: 0.1.2
+Summary: A package to fetch lyrics from Genius.com
+Author: Andrew Beveridge
+Author-email: andrew@beveridge.uk
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lyrics-from-genius
+Fetch lyrics from Genius for a song, or an entire artist, and write to text files
