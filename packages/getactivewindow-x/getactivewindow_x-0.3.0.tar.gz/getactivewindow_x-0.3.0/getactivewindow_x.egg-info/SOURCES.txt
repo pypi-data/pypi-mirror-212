@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+getactivewindow/__init__.py
+getactivewindow/py.typed
+getactivewindow_x.egg-info/PKG-INFO
+getactivewindow_x.egg-info/SOURCES.txt
+getactivewindow_x.egg-info/dependency_links.txt
+getactivewindow_x.egg-info/requires.txt
+getactivewindow_x.egg-info/top_level.txt
+getactivewindow_x.egg-info/zip-safe

@@ -1,0 +1,2 @@
+python-xlib~=0.29
+ewmh~=0.1.6
