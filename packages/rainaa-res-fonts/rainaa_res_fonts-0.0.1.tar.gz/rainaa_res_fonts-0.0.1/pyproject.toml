@@ -1,0 +1,23 @@
+[project]
+name = "RainAa-Res-Fonts"
+version = "0.0.1"
+description = ""
+authors = [
+    { name = "Little-LinNian", email = "2544704967@qq.com" },
+]
+requires-python = ">3.6"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.build]
+includes = [
+    "src/rainaa",
+]
