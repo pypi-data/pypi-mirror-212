@@ -1,0 +1,5 @@
+beartype
+einops>=0.6
+jinja2
+numpy
+pillow
