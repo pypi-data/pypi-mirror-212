@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: example-package-free-zoloft
+Version: 0.0.1
+Summary: A simple Python package.
+License: MIT
+Author: Free Zoloft
+Author-email: email@example.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use this package to add 1 to a number.
+
+## Installation
+
+```bash
+pip install example-package-YOUR-USERNAME-HERE
