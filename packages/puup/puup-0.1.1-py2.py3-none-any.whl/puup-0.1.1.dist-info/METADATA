@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: puup
+Version: 0.1.1
+Summary: Potentially Universally Unique Phrase generator
+Author-email: Chris Coleman <chris@chriscoleman.uk>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: click
+Requires-Dist: confuse
+
+# Potentially Universally Unique Phrase generator
+
+## Installation
+
+```
+pip install puup
+```
+
+## Usage
+
+### Python
+
+```python
+>>> import puup
+>>> puup.puup()
+('sideway', 'effectually', 'incessant', 'toiler')
+```
+
+### Shell
+
+```
+$ puup
+cosmetically nigh funded antiprotozoal
+$ puup --help
+Usage: puup [OPTIONS]
+
+  Generate a Potentially Universally Unique Phrase.
+
+Options:
+  -t, --template TEMPLATE        [default: rran]
+  -P, --prefix TEMPLATE
+  -S, --suffix TEMPLATE
+  -s, --separator STRING         [default: _]
+  -o, --output FILENAME
+  -O, --output-type [text|json]  [default: text]
+  -n, --n INTEGER                [default: 1]
+  -e, --entropy
+  --help                         Show this message and exit.
+```
+

@@ -1,0 +1,3 @@
+[console_scripts]
+puup=puup.cli:main
+
