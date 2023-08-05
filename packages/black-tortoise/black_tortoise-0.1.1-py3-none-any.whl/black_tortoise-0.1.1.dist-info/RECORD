@@ -1,0 +1,11 @@
+black_tortoise/__init__.py,sha256=eXTWYp2iWldyz5HKhd0q56cE-P8pMO5CYrF4qqosg2U,150
+black_tortoise/mock_data/__init__.py,sha256=d7XP-91VK590sGrUtEOfmDiITIIwdayuooCJJrHFXUY,166
+black_tortoise/mock_data/user/__init__.py,sha256=MaCLIUrXYEY7xX08Z844BbhPZQxxEHTUT2ftgnwFfjw,166
+black_tortoise/tests/__init__.py,sha256=j0f06lKhso9xVsjCn3TqqJsyt_3z1MJyMMSAfbX856o,166
+black_tortoise/utils/FileUtils.py,sha256=YWlypvPTAAVhNtbV3TnDs0fvfXEzJ0HCpVXlgW7QmBY,3486
+black_tortoise/utils/__init__.py,sha256=dbMPx4sxiTmAsHckTb_7jJV0kRzcuTVEO_YFvNLE2oA,161
+black_tortoise/utils/logger.py,sha256=eEpyujK1SwDAkvAQEsJEQo34QmmMJhOqgmwWynCEf0Y,3087
+black_tortoise-0.1.1.dist-info/METADATA,sha256=aYtbk-lviDEyONBw823pUaszDF30rddR3saL2ay9WZg,1658
+black_tortoise-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+black_tortoise-0.1.1.dist-info/top_level.txt,sha256=TgkI3OXKCpSjxqC-L0DMoObpeLsL71uCuZMPu89VqYg,15
+black_tortoise-0.1.1.dist-info/RECORD,,
