@@ -1,0 +1,15 @@
+datasinda/__init__.py,sha256=s7upPaZxgA8fzgT97BjmCnDBgG-nj-ETS4bcNlHyzds,56
+datasinda/admin.py,sha256=KDinuFOB7j8aGSpXcZa77ydeEXOGyOwQY7fL0-B-cL4,32
+datasinda/apps.py,sha256=BelBLyDUbUOOdgp0_ILp2lKtJBtLlm94E0ImkIWCRoU,165
+datasinda/models.py,sha256=mreu1XXCIbPgpi2zEfLTmZ3wpjGQifIfqDdhKzKSc2c,28
+datasinda/modulo.py,sha256=7XpY2T_Yu0ghHoy_Jme1NDDIk5XRJHWvGvLy0huk-qk,60
+datasinda/serializers.py,sha256=Tyc8R4-JudglTdy8CUnF1xHLENzAUH2UMGt5bijYRuc,1185
+datasinda/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+datasinda/urls.py,sha256=FGa_LdKF-0mltPtidlKlh7FWyT3nCIATW_JPGB1Bj8Q,752
+datasinda/views.py,sha256=NaOa4ScE66MtlIjE9OpO0XhgdglCQhZGSyY1xJuOyP0,7947
+datasinda/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datasinda-0.0.1.dist-info/LICENSE,sha256=u_DCHvviqUXeI2CvRE9Efn4oa_6odkD67jXsKW6u0fM,1072
+datasinda-0.0.1.dist-info/METADATA,sha256=qHl4x6N6Z0OaxTklXKEhMPW2N19nkMvaVQGbvCilS40,1253
+datasinda-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+datasinda-0.0.1.dist-info/top_level.txt,sha256=6dFF9_vhnrP1d41dyme0O9cONLJ9T9hNxiVGG5yblps,10
+datasinda-0.0.1.dist-info/RECORD,,

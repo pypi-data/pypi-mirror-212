@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: datasinda
+Version: 0.0.1
+Summary: Datasinda API
+Home-page: https://gitlab.com/alecerioli98/datasinda-api
+Author: 'Alessandro Cerioli'
+License: MIT
+Classifier: Framework :: Django
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+License-File: LICENSE
+Requires-Dist: asgiref (==3.6.0)
+Requires-Dist: Django (==3.2.6)
+Requires-Dist: sqlparse (==0.4.3)
+Requires-Dist: psycopg2-binary (==2.9.1)
+Requires-Dist: drf-yasg
+Requires-Dist: djangorestframework (==3.13.0)
+Requires-Dist: djangorestframework-simplejwt
+Requires-Dist: dj-rest-auth
+Requires-Dist: django-allauth
+Requires-Dist: django-cors-headers
+Requires-Dist: django-environ (==0.9.0)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: typing-extensions (==3.7.4.3)
+Requires-Dist: social-auth-app-django (==3.1.0)
+Requires-Dist: social-auth-core (==3.2.0)
+Requires-Dist: bootstrap-py (==1.0.2)
+Requires-Dist: tox (==4.4.6)
+Requires-Dist: gunicorn (==20.1)
+Requires-Dist: ibge
+
