@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+src/apinum/__init__.py
+src/apinum/apinum.py
+src/apinum/well_number_to_state_county.json
+src/apinum/well_numbers.json
+src/apinum.egg-info/PKG-INFO
+src/apinum.egg-info/SOURCES.txt
+src/apinum.egg-info/dependency_links.txt
+src/apinum.egg-info/entry_points.txt
+src/apinum.egg-info/top_level.txt
+tests/tests.py
