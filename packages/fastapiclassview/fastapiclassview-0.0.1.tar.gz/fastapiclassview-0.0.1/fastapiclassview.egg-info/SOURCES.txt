@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fastapiclassview.egg-info/PKG-INFO
+fastapiclassview.egg-info/SOURCES.txt
+fastapiclassview.egg-info/dependency_links.txt
+fastapiclassview.egg-info/top_level.txt
+fastapiview/__init__.py
+fastapiview/__version__.py
