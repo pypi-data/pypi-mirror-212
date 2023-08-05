@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: alpha-trader-python
+Version: 0.3.3
+Summary: Python SDK for https://alpha-trader.com
+License: MIT
+Author: maltemelzer
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: requests (>=2.29.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Alpha-Trader Python SDK
+
+Welcome to the Python SDK for Alpha-Trader.
+The functionality will be extended and Pull Requests are welcome.
+
+For documentation, mkdocs is used, please see:
+
+# [DOCUMENTATION](https://maltemelzer.github.io/alpha-trader-python/)
