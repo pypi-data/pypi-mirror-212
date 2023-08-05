@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: moss-engine
+Version: 0.0.2
+Summary: A game engine written in Python using OpenGL.
+Home-page: https://github.com/Aermoss/Moss
+Author: Yusuf Rençber
+Author-email: aermoss.0@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Moss Engine
+A game engine written in Python using OpenGL.
