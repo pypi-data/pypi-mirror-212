@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+ts2ml/__init__.py
+ts2ml/_modidx.py
+ts2ml/core.py
+ts2ml.egg-info/PKG-INFO
+ts2ml.egg-info/SOURCES.txt
+ts2ml.egg-info/dependency_links.txt
+ts2ml.egg-info/entry_points.txt
+ts2ml.egg-info/not-zip-safe
+ts2ml.egg-info/requires.txt
+ts2ml.egg-info/top_level.txt

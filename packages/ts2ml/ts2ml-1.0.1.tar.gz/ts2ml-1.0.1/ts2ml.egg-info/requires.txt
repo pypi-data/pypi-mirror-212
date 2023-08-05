@@ -1,0 +1,8 @@
+fastcore
+pandas
+numpy
+tqdm
+scikit-learn
+
+[dev]
+jupyter
