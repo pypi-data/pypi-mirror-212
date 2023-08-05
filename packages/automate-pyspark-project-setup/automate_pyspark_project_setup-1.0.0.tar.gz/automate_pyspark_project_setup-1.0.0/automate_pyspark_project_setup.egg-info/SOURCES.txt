@@ -1,0 +1,8 @@
+pyspark_project_setup.py
+setup.py
+automate_pyspark_project_setup.egg-info/PKG-INFO
+automate_pyspark_project_setup.egg-info/SOURCES.txt
+automate_pyspark_project_setup.egg-info/dependency_links.txt
+automate_pyspark_project_setup.egg-info/entry_points.txt
+automate_pyspark_project_setup.egg-info/requires.txt
+automate_pyspark_project_setup.egg-info/top_level.txt
