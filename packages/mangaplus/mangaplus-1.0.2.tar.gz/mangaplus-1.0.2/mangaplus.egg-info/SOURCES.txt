@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+mangaplus/__init__.py
+mangaplus/api_protocol_pb2.py
+mangaplus/client.py
+mangaplus.egg-info/PKG-INFO
+mangaplus.egg-info/SOURCES.txt
+mangaplus.egg-info/dependency_links.txt
+mangaplus.egg-info/requires.txt
+mangaplus.egg-info/top_level.txt
