@@ -1,0 +1,2 @@
+[console_scripts]
+screen-config-watcher = scw.cli:run_watcher
