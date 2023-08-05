@@ -1,0 +1,2 @@
+[console_scripts]
+staff = staff.__main__:main
