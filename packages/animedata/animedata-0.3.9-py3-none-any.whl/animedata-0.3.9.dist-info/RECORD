@@ -1,0 +1,14 @@
+animedata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+animedata/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+animedata/common/dict_checking.py,sha256=Pf7s64gCcRTgDG_2gqgBDVS-YvVrqCYpmyOZpdvcXPo,1310
+animedata/common/lib_interactions.py,sha256=rQfR1ZSrNtA56AJiIYu1Y8tztmI-45TbF19K90NoQTU,1943
+animedata/common/metadata.py,sha256=AfymrLIGN0187ZZ26YiMA61y44WvN_MIi1pnLqpqChg,720
+animedata/common/saving_process.py,sha256=87iQdErOcGbsjTnUKUPrA5J-jRZm8skstgJpZ8ktduM,998
+animedata/resources/animedata_source.json,sha256=v5mqJHjfCu4B7SbsIvvT_FPkiF26Rs45hpXZbMvQOUs,9352
+animedata/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+animedata/tests/test_dict_checking.py,sha256=9rBiqtAfZBBSVFSv9UEZCpU9fNs--REA4wW2kXNs3bs,352
+animedata/tests/test_lib_interaction.py,sha256=CZAuqke4m9sj_qNfBdHGCcjCacszDUIXQy9N2yEf97c,840
+animedata-0.3.9.dist-info/METADATA,sha256=E0ZabpOnF1GQXsjpQ6xh28Yz0LEPD_tevVCCf-zp2nA,2372
+animedata-0.3.9.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+animedata-0.3.9.dist-info/licenses/LICENSE,sha256=V0UxHCMbgeFhJWunar0xMV0Grogp3I-WCJhcsofjP4A,1086
+animedata-0.3.9.dist-info/RECORD,,
