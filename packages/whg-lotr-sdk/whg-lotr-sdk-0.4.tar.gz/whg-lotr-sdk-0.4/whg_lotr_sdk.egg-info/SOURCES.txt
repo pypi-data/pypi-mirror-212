@@ -1,0 +1,16 @@
+setup.py
+lotr_sdk/__init__.py
+lotr_sdk/run_api.py
+lotr_sdk/sdk.py
+lotr_sdk/handlers/__init__.py
+lotr_sdk/handlers/base_handler.py
+lotr_sdk/handlers/movie_handler.py
+lotr_sdk/handlers/quote_handler.py
+lotr_sdk/tests/__init__.py
+lotr_sdk/tests/mock_data.py
+lotr_sdk/tests/test_sdk.py
+whg_lotr_sdk.egg-info/PKG-INFO
+whg_lotr_sdk.egg-info/SOURCES.txt
+whg_lotr_sdk.egg-info/dependency_links.txt
+whg_lotr_sdk.egg-info/requires.txt
+whg_lotr_sdk.egg-info/top_level.txt
