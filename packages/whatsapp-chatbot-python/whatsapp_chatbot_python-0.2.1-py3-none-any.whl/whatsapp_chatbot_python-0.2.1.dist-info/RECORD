@@ -1,0 +1,12 @@
+whatsapp_chatbot_python/__init__.py,sha256=x-KMwT8ZAJB5-e7yz4q8VPDfOCTpVkhZUR11Sx2A2kU,184
+whatsapp_chatbot_python/bot.py,sha256=jFrNuR46npmyX5gzvh_tCVKKjguvfW0LrD9LW2bpHtE,1020
+whatsapp_chatbot_python/filters.py,sha256=OV28RMCM1XBHNQlPcMgPPPe4zel2M086aUCpLD2rfW0,3569
+whatsapp_chatbot_python/manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whatsapp_chatbot_python/manager/handler.py,sha256=O82V0w1DMtfDhXaxuPSWndBnokGROhxfOkzV0dAOsnM,3277
+whatsapp_chatbot_python/manager/observer.py,sha256=qFoa_h7D2AJNq892jKGhJH2ZUMWQ_SgPRlCNWKkcWDY,1821
+whatsapp_chatbot_python/manager/router.py,sha256=3wqiMFzCiQMFP9TAMRQIrgfIOnWGH9LFddEF8yDFxQE,1144
+whatsapp_chatbot_python-0.2.1.dist-info/LICENSE,sha256=i8xEGbjrLjDix0UDvo7U7-Mgb-riQ2jxX2Jozaz4U9k,18829
+whatsapp_chatbot_python-0.2.1.dist-info/METADATA,sha256=xRhV0y5IEf_nnJsZMLKMleQmJbrweiHk-lr5_T9-_UE,8702
+whatsapp_chatbot_python-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+whatsapp_chatbot_python-0.2.1.dist-info/top_level.txt,sha256=VfoKr0wRzIgJ9inpfX4pnSGAi_lbNDaKzXncQFaIEns,24
+whatsapp_chatbot_python-0.2.1.dist-info/RECORD,,
