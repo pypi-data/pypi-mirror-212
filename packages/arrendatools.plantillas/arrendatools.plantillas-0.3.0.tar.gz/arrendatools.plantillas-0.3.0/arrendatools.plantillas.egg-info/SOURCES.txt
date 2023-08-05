@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+arrendatools/__init__.py
+arrendatools.plantillas.egg-info/PKG-INFO
+arrendatools.plantillas.egg-info/SOURCES.txt
+arrendatools.plantillas.egg-info/dependency_links.txt
+arrendatools.plantillas.egg-info/requires.txt
+arrendatools.plantillas.egg-info/top_level.txt
+arrendatools/plantillas/__init__.py
+arrendatools/plantillas/plantilla.py
+arrendatools/plantillas/filters/__init__.py
+arrendatools/plantillas/filters/fechas.py
+arrendatools/plantillas/filters/numeros.py
