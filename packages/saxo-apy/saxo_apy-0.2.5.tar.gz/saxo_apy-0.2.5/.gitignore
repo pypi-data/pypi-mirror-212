@@ -1,0 +1,38 @@
+# VS Code
+.vscode/
+
+# cache folders
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# scripts
+scripts/
+
+# readme base doc
+README.ipynb
+
+# coverage
+.coverage*
+
+# Mac stuff
+*.DS_store
+
+# builds
+/dist
+
+# app config files
+app_config*.json
+
+# logfiles
+*log.txt
+
+# pdm
+.pdm-python
+pdm_notes.md
+
+# venv
+.venv/
