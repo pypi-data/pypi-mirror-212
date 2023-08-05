@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PySupercell
+Version: 0.0.1
+Summary: Python library for creating and manipulating crystal structures
+Home-page: https://to_be_posted
+Download-URL: https://on_request
+Author: Shunhong Zhang
+Author-email: zhangshunhong.pku@gmail.com
+License: MIT License
+Keywords: Python,Crystal structure
+Platform: Linux
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: termcolor
+
+A Open-source Python library for playing with crystal structures, such as supercell, dislocation, slab, and nanotube
