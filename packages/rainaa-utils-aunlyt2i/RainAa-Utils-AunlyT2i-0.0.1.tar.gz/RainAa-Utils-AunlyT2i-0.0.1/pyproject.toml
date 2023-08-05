@@ -1,0 +1,18 @@
+[project]
+name = "RainAa-Utils-AunlyT2i"
+version = "0.0.1"
+description = ""
+authors = [
+    {name = "Little-LinNian", email = "2544704967@qq.com"},
+]
+dependencies = [
+    "Pillow>=9.5.0",
+    "graiax-text2img-playwright>=0.4.0",
+    "minidynamicrender>=1.1.9",
+    "rainaa-res-fonts>=0.0.1",
+    "brotli>=1.0.9",
+]
+requires-python = ">=3.9"
+license = {text = "MIT"}
+[tool.pdm.build]
+includes = ["src/rainaa"]

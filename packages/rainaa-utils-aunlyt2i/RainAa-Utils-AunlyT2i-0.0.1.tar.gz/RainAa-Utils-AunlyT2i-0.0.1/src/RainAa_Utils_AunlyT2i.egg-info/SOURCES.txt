@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/RainAa_Utils_AunlyT2i.egg-info/PKG-INFO
+src/RainAa_Utils_AunlyT2i.egg-info/SOURCES.txt
+src/RainAa_Utils_AunlyT2i.egg-info/dependency_links.txt
+src/RainAa_Utils_AunlyT2i.egg-info/requires.txt
+src/RainAa_Utils_AunlyT2i.egg-info/top_level.txt
+src/rainaa/aunly/t2i/__init__.py
+src/rainaa/aunly/t2i/strings.py
