@@ -1,0 +1,10 @@
+setup.py
+wanted_models/__init__.py
+wanted_models/document.py
+wanted_models/photo.py
+wanted_models/record.py
+wanted_models.egg-info/PKG-INFO
+wanted_models.egg-info/SOURCES.txt
+wanted_models.egg-info/dependency_links.txt
+wanted_models.egg-info/requires.txt
+wanted_models.egg-info/top_level.txt
