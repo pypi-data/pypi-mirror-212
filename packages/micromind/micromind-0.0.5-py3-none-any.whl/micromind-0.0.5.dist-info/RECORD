@@ -1,0 +1,12 @@
+micromind/__init__.py,sha256=_kUi_gE7AXHIPPudx6ArvNOwJl67lqJE8MkeauABgfM,726
+micromind/conversion/__init__.py,sha256=qgbXYOGiiVMhTflg28rGVIE1zJY0E0CGM53hrYRUnq4,77
+micromind/conversion/convert.py,sha256=DUrwlWEzUsKte8i5b3RArAM0H9h3d_X5t-m_e6xhiII,4016
+micromind/networks/__init__.py,sha256=QSdp1oMlc2lAYnHJ8UGduAIPbzPZ2mHS1wnRqXEW_W0,27
+micromind/networks/phinet.py,sha256=4-LNSfEduO5Y9Y25TI36Htc3dhPWMdxGjYvMWOwTEko,25507
+micromind/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+micromind/utils/configlib.py,sha256=Uo9mOcUlseukZIWMlfY7euLpv3AlXbIUhxBiLHk4evA,1174
+micromind-0.0.5.dist-info/entry_points.txt,sha256=4RPIdfkkjbj923vuNScFSokHKmBeW5xMm1qd90OUFME,40
+micromind-0.0.5.dist-info/LICENSE,sha256=TS03cklIA-AoygDBl8IEtiRFFRYjmQ3kEUFcwU62cnc,11351
+micromind-0.0.5.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+micromind-0.0.5.dist-info/METADATA,sha256=BvQVeUValW3E8aiwNO-4fY1ZM5ZaU6qsawAmR-_NSlU,3381
+micromind-0.0.5.dist-info/RECORD,,
