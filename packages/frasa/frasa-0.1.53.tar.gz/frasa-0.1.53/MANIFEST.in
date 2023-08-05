@@ -1,0 +1,16 @@
+recursive-exclude tests *
+recursive-exclude frasa/deteksi/gender/data/*.pickle
+recursive-exclude frasa/deteksi/gender/data/*.pkl
+recursive-exclude frasa/deteksi/gender/data/nama-gender-combined.csv
+
+include frasa/datasets/corpus/indonesia/stopword.txt
+include frasa/datasets/corpus/indonesia/lemma/clitics.txt
+include frasa/datasets/corpus/indonesia/lemma/root.txt
+include frasa/datasets/corpus/indonesia/lemma/dict.json
+
+include frasa/datasets/corpus/sensor/alphabetic_unicode.json
+include frasa/datasets/corpus/sensor/sensor-kata.csv
+include frasa/datasets/corpus/sensor/sensor-aturan.csv
+include frasa/datasets/corpus/sensor/sensor-pengganti.csv
+
+include frasa/datasets/models/nusax/*.pkl
