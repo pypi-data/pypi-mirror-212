@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: callapi
+Version: 0.1.0
+Summary: A module for making API calls
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
