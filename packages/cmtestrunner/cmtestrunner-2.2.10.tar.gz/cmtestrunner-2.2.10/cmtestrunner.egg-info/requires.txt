@@ -1,0 +1,5 @@
+PyYAML
+case-insensitive-dictionary
+django
+djangorestframework
+requests
