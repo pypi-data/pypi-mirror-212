@@ -1,0 +1,155 @@
+Metadata-Version: 2.1
+Name: sonatype-nexus-iq-sdk
+Version: 0.1.0
+Summary: Python SDK for Sonatype Nexus IQ Server
+License: MIT
+Author: Justin Bailey
+Author-email: justthered63@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: certifi (>=2023.5.7,<2024.0.0)
+Requires-Dist: frozendict (>=2.3.8,<3.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: setuptools (>=67.8.0,<68.0.0)
+Requires-Dist: six (>=1.16.0,<2.0.0)
+Requires-Dist: typing-extensions (>=4.6.3,<5.0.0)
+Requires-Dist: urllib3 (>=2.0.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Sonatype: Nexus IQ Server - Python SDK
+
+## Installation
+
+If the python package is hosted on Github, you can install directly from Github
+
+```sh
+pip install nexus_iq_sdk
+```
+
+Then import the package:
+
+```python
+import nexus_iq_sdk
+```
+
+Then import the package:
+
+```python
+import nexus_iq_sdk
+```
+
+## Getting Started
+
+```python
+from __future__ import print_function
+import time
+import nexus_iq_sdk
+from nexus_iq_sdk.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = nexus_iq_sdk.ApplicationCategoriesApi(nexus_iq_sdk.ApiClient(configuration))
+organization_id = 'organization_id_example' # str |
+body = nexus_iq_sdk.ApiApplicationCategoryDTO() # ApiApplicationCategoryDTO |  (optional)
+
+try:
+    api_response = api_instance.add_tag(organization_id, body=body)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ApplicationCategoriesApi->add_tag: %s\n" % e)
+
+# create an instance of the API class
+api_instance = nexus_iq_sdk.ApplicationCategoriesApi(nexus_iq_sdk.ApiClient(configuration))
+organization_id = 'organization_id_example' # str |
+tag_id = 'tag_id_example' # str |
+
+try:
+    api_instance.delete_tag(organization_id, tag_id)
+except ApiException as e:
+    print("Exception when calling ApplicationCategoriesApi->delete_tag: %s\n" % e)
+
+# create an instance of the API class
+api_instance = nexus_iq_sdk.ApplicationCategoriesApi(nexus_iq_sdk.ApiClient(configuration))
+organization_id = 'organization_id_example' # str |
+
+try:
+    api_response = api_instance.get_applicable_tags(organization_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ApplicationCategoriesApi->get_applicable_tags: %s\n" % e)
+
+# create an instance of the API class
+api_instance = nexus_iq_sdk.ApplicationCategoriesApi(nexus_iq_sdk.ApiClient(configuration))
+application_public_id = 'application_public_id_example' # str |
+
+try:
+    api_response = api_instance.get_applicable_tags_by_application_public_id(application_public_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ApplicationCategoriesApi->get_applicable_tags_by_application_public_id: %s\n" % e)
+
+# create an instance of the API class
+api_instance = nexus_iq_sdk.ApplicationCategoriesApi(nexus_iq_sdk.ApiClient(configuration))
+application_public_id = 'application_public_id_example' # str |
+
+try:
+    api_response = api_instance.get_application_applicable_tags(application_public_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ApplicationCategoriesApi->get_application_applicable_tags: %s\n" % e)
+
+# create an instance of the API class
+api_instance = nexus_iq_sdk.ApplicationCategoriesApi(nexus_iq_sdk.ApiClient(configuration))
+organization_id = 'organization_id_example' # str |
+
+try:
+    api_response = api_instance.get_applied_policy_tags(organization_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ApplicationCategoriesApi->get_applied_policy_tags: %s\n" % e)
+
+# create an instance of the API class
+api_instance = nexus_iq_sdk.ApplicationCategoriesApi(nexus_iq_sdk.ApiClient(configuration))
+organization_id = 'organization_id_example' # str |
+
+try:
+    api_response = api_instance.get_applied_tags(organization_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ApplicationCategoriesApi->get_applied_tags: %s\n" % e)
+
+# create an instance of the API class
+api_instance = nexus_iq_sdk.ApplicationCategoriesApi(nexus_iq_sdk.ApiClient(configuration))
+organization_id = 'organization_id_example' # str |
+
+try:
+    api_response = api_instance.get_tags(organization_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ApplicationCategoriesApi->get_tags: %s\n" % e)
+
+# create an instance of the API class
+api_instance = nexus_iq_sdk.ApplicationCategoriesApi(nexus_iq_sdk.ApiClient(configuration))
+
+try:
+    api_response = api_instance.get_tags_used_by_applications()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ApplicationCategoriesApi->get_tags_used_by_applications: %s\n" % e)
+
+# create an instance of the API class
+api_instance = nexus_iq_sdk.ApplicationCategoriesApi(nexus_iq_sdk.ApiClient(configuration))
+organization_id = 'organization_id_example' # str |
+body = nexus_iq_sdk.ApiApplicationCategoryDTO() # ApiApplicationCategoryDTO |  (optional)
+
+try:
+    api_response = api_instance.update_tag(organization_id, body=body)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ApplicationCategoriesApi->update_tag: %s\n" % e)
+```
+
