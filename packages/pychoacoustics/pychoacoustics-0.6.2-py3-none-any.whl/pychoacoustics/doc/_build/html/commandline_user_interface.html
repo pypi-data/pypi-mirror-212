@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Command Line User Interface &mdash; pychoacoustics 0.6.2 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'./',
+        VERSION:'0.6.2',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="pychoacoustics 0.6.2 documentation" href="index.html"/>
+        <link rel="next" title="Paradigms" href="paradigms.html"/>
+        <link rel="prev" title="Graphical User Interface" href="graphical_user_interface.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="icon icon-home"> pychoacoustics</a>
+        <form class="wy-form" action="search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">What is <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graphical_user_interface.html">Graphical User Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="graphical_user_interface.html#quickstart">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphical_user_interface.html#the-control-window">The Control Window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphical_user_interface.html#process-results-dialog">Process Results Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphical_user_interface.html#edit-preferences-dialog">Edit Preferences Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphical_user_interface.html#edit-phones-dialog">Edit Phones Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphical_user_interface.html#edit-experimenters-dialog">Edit Experimenters Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphical_user_interface.html#the-response-box">The Response Box</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Command Line User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paradigms.html">Paradigms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="paradigms.html#available-paradigms">Available Paradigms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="result_files.html">Result Files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="result_files.html#tabular-results-files">Tabular Results Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="result_files.html#plain-text-result-files">Plain-Text Result Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="result_files.html#result-files-by-paradigm">Result Files by Paradigm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="result_files.html#log-results-files">Log Results Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="default_experiments.html">Default Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="default_experiments.html#module-pychoacoustics.default_experiments.audiogram">Audiogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default_experiments.html#module-pychoacoustics.default_experiments.audiogram_mf">Demo Audiogram Multiple Frequencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default_experiments.html#module-pychoacoustics.default_experiments.freq">Demo Frequency Discrimination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default_experiments.html#module-pychoacoustics.default_experiments.sig_detect">Demo Signal Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default_experiments.html#module-pychoacoustics.default_experiments.dummy_adaptive">Dummy Adaptive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default_experiments.html#module-pychoacoustics.default_experiments.F0DL">F0DL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default_experiments.html#module-pychoacoustics.default_experiments.level_discrimination">Level Discrimination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default_experiments.html#module-pychoacoustics.default_experiments.wav_ABX">WAV ABX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default_experiments.html#module-pychoacoustics.default_experiments.wav_comparison">WAV Comparison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default_experiments.html#module-pychoacoustics.default_experiments.wav_sameDifferent">WAV Same/Different</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="engine.html">The <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> Engine</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="engine.html#sound-output">Sound Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="engine.html#parameters-files">Parameters Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="engine.html#block-presentation-position">Block Presentation Position</a></li>
+<li class="toctree-l2"><a class="reference internal" href="engine.html#displaying-task-instructions">Displaying Task Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="engine.html#os-commands">OS Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="engine.html#preferences-settings">Preferences Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="engine.html#response-mode">Response Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="adding_experiments.html">Writing your own Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adding_experiments.html#first-steps">First Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding_experiments.html#writing-a-constant-1-interval-2-alternatives-paradigm-experiment">Writing a “Constant 1-Interval 2-Alternatives” Paradigm Experiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding_experiments.html#writing-an-experiment-for-the-transformed-up-down-interleaved-weighted-up-down-interleaved-and-multiple-constants-m-intervals-n-alternatives-paradigms">Writing an experiment for the Transformed Up-Down Interleaved, Weighted Up-Down Interleaved, and Multiple Constants m-Intervals n-Alternatives Paradigms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding_experiments.html#writing-a-constant-1-pair-same-different-paradigm-experiment">Writing a “Constant 1-Pair Same/Different” Paradigm Experiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding_experiments.html#writing-an-odd-one-out-paradigm-experiment">Writing an “Odd One Out” Paradigm Experiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding_experiments.html#the-experiment-opts">The Experiment “opts”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding_experiments.html#the-play-sound-functions">The Play Sound Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding_experiments.html#simulations">Simulations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#the-computer-crashed-in-the-middle-of-an-experimental-session">The computer crashed in the middle of an experimental session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/sndlib.html">sndlib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sndlib.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">sndlib</span></code> – Sound Synthesis Library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.AMTone"><code class="docutils literal notranslate"><span class="pre">AMTone()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.AMToneIPD"><code class="docutils literal notranslate"><span class="pre">AMToneIPD()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.AMToneVarLev"><code class="docutils literal notranslate"><span class="pre">AMToneVarLev()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.ERBDistance"><code class="docutils literal notranslate"><span class="pre">ERBDistance()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.FMTone"><code class="docutils literal notranslate"><span class="pre">FMTone()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.ITDShift"><code class="docutils literal notranslate"><span class="pre">ITDShift()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.addSounds"><code class="docutils literal notranslate"><span class="pre">addSounds()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.binauralPureTone"><code class="docutils literal notranslate"><span class="pre">binauralPureTone()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.broadbandNoise"><code class="docutils literal notranslate"><span class="pre">broadbandNoise()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.camSinFMComplex"><code class="docutils literal notranslate"><span class="pre">camSinFMComplex()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.camSinFMTone"><code class="docutils literal notranslate"><span class="pre">camSinFMTone()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.chirp"><code class="docutils literal notranslate"><span class="pre">chirp()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.complexTone"><code class="docutils literal notranslate"><span class="pre">complexTone()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.complexToneIPD"><code class="docutils literal notranslate"><span class="pre">complexToneIPD()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.complexToneParallel"><code class="docutils literal notranslate"><span class="pre">complexToneParallel()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.delayAdd"><code class="docutils literal notranslate"><span class="pre">delayAdd()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.dichoticNoiseFromSin"><code class="docutils literal notranslate"><span class="pre">dichoticNoiseFromSin()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.expAMNoise"><code class="docutils literal notranslate"><span class="pre">expAMNoise()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.expSinFMComplex"><code class="docutils literal notranslate"><span class="pre">expSinFMComplex()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.expSinFMTone"><code class="docutils literal notranslate"><span class="pre">expSinFMTone()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.fir2Filt"><code class="docutils literal notranslate"><span class="pre">fir2Filt()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.fm_complex1"><code class="docutils literal notranslate"><span class="pre">fm_complex1()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.fm_complex2"><code class="docutils literal notranslate"><span class="pre">fm_complex2()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.freqFromERBInterval"><code class="docutils literal notranslate"><span class="pre">freqFromERBInterval()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.gate"><code class="docutils literal notranslate"><span class="pre">gate()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.getRMS"><code class="docutils literal notranslate"><span class="pre">getRMS()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.glide"><code class="docutils literal notranslate"><span class="pre">glide()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.harmComplFromNarrowbandNoise"><code class="docutils literal notranslate"><span class="pre">harmComplFromNarrowbandNoise()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.imposeLevelGlide"><code class="docutils literal notranslate"><span class="pre">imposeLevelGlide()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.intNCyclesFreq"><code class="docutils literal notranslate"><span class="pre">intNCyclesFreq()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.itdtoipd"><code class="docutils literal notranslate"><span class="pre">itdtoipd()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.joinSndISI"><code class="docutils literal notranslate"><span class="pre">joinSndISI()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.makeAsynchChord"><code class="docutils literal notranslate"><span class="pre">makeAsynchChord()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.makeBlueRef"><code class="docutils literal notranslate"><span class="pre">makeBlueRef()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.makeHugginsPitch"><code class="docutils literal notranslate"><span class="pre">makeHugginsPitch()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.makeIRN"><code class="docutils literal notranslate"><span class="pre">makeIRN()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.makePink"><code class="docutils literal notranslate"><span class="pre">makePink()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.makePinkRef"><code class="docutils literal notranslate"><span class="pre">makePinkRef()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.makeRedRef"><code class="docutils literal notranslate"><span class="pre">makeRedRef()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.makeSilence"><code class="docutils literal notranslate"><span class="pre">makeSilence()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.makeVioletRef"><code class="docutils literal notranslate"><span class="pre">makeVioletRef()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.nextpow2"><code class="docutils literal notranslate"><span class="pre">nextpow2()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.phaseShift"><code class="docutils literal notranslate"><span class="pre">phaseShift()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.pinkNoiseFromSin"><code class="docutils literal notranslate"><span class="pre">pinkNoiseFromSin()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.pinkNoiseFromSin2"><code class="docutils literal notranslate"><span class="pre">pinkNoiseFromSin2()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.pureTone"><code class="docutils literal notranslate"><span class="pre">pureTone()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.scale"><code class="docutils literal notranslate"><span class="pre">scale()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.setLevel_"><code class="docutils literal notranslate"><span class="pre">setLevel_()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.spectralModNoise"><code class="docutils literal notranslate"><span class="pre">spectralModNoise()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sndlib.html#sndlib.steepNoise"><code class="docutils literal notranslate"><span class="pre">steepNoise()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/pysdt.html">pysdt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pysdt.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pysdt</span></code> – Signal Detection Theory Measures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.compute_proportions"><code class="docutils literal notranslate"><span class="pre">compute_proportions()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.dprime_ABX"><code class="docutils literal notranslate"><span class="pre">dprime_ABX()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.dprime_ABX_from_counts"><code class="docutils literal notranslate"><span class="pre">dprime_ABX_from_counts()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.dprime_SD"><code class="docutils literal notranslate"><span class="pre">dprime_SD()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.dprime_SD_from_counts"><code class="docutils literal notranslate"><span class="pre">dprime_SD_from_counts()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.dprime_mAFC"><code class="docutils literal notranslate"><span class="pre">dprime_mAFC()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.dprime_oddity"><code class="docutils literal notranslate"><span class="pre">dprime_oddity()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.dprime_yes_no"><code class="docutils literal notranslate"><span class="pre">dprime_yes_no()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.dprime_yes_no_from_counts"><code class="docutils literal notranslate"><span class="pre">dprime_yes_no_from_counts()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.gaussianPsy"><code class="docutils literal notranslate"><span class="pre">gaussianPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.gumbelPsy"><code class="docutils literal notranslate"><span class="pre">gumbelPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.invGaussianPsy"><code class="docutils literal notranslate"><span class="pre">invGaussianPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.invGumbelPsy"><code class="docutils literal notranslate"><span class="pre">invGumbelPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.invLogisticPsy"><code class="docutils literal notranslate"><span class="pre">invLogisticPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.invWeibullPsy"><code class="docutils literal notranslate"><span class="pre">invWeibullPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.logisticPsy"><code class="docutils literal notranslate"><span class="pre">logisticPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pysdt.html#pysdt.weibullPsy"><code class="docutils literal notranslate"><span class="pre">weibullPsy()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fdl.html">GNU Free Documentation License</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">pychoacoustics</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="index.html">Docs</a> &raquo;</li>
+  <li><a href="">Command Line User Interface</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <section id="command-line-user-interface">
+<span id="sec-cmd-user-interface"></span><h1>Command Line User Interface<a class="headerlink" href="#command-line-user-interface" title="Permalink to this heading">¶</a></h1>
+<p>In order to automate certain tasks, or perform some advanced operations,
+<code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> can be called from the command line with a number of
+command line options. The list of possible command line options is shown below:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-h,</span> <span class="pre">--help</span></code> Show help message.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-f,</span> <span class="pre">--file</span> <span class="pre">FILE</span></code> Load parameters file <code class="docutils literal notranslate"><span class="pre">FILE</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-r,</span> <span class="pre">--results</span> <span class="pre">FILE</span></code> Save the results to file <code class="docutils literal notranslate"><span class="pre">FILE</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-l,</span> <span class="pre">--listener</span> <span class="pre">LISTENER</span></code> Set listener label to <code class="docutils literal notranslate"><span class="pre">LISTENER</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-s,</span> <span class="pre">--session</span> <span class="pre">SESSION</span></code> Set session label to <code class="docutils literal notranslate"><span class="pre">SESSION</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-c,</span> <span class="pre">--conceal</span></code> Hide Control and Parameters Windows.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-p,</span> <span class="pre">--progbar</span></code> Show the progress bar.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-b,</span> <span class="pre">--blockprogbar</span></code> Show the progress bar.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-q,</span> <span class="pre">--quit</span></code> Quit after finished.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-a,</span> <span class="pre">--autostart</span></code> Automatically start the first stored block.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-k,</span> <span class="pre">--reset</span></code> Reset block positions.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-z,</span> <span class="pre">--seed</span></code> Set random seed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-x,</span> <span class="pre">--recursion-depth</span></code> Set the maximum recursion depth (this
+overrides the maximum recursion depth set in the preferences window).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-g,</span> <span class="pre">--graphicssystem</span></code> sets the backend to be used for on-screen
+widgets and QPixmaps. Available options are raster and opengl.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-d,</span> <span class="pre">--display</span></code> This option is only valid for X11 and sets the X
+display (default is $DISPLAY).</p></li>
+</ul>
+<p>each command line option has a short (single dash, one letter) and long
+(double dash, one word) form, for example to show the help message, you
+can use either of the two following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pychoacoustics -h
+$ pychoacoustics --help
+</pre></div>
+</div>
+</section>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="paradigms.html" class="btn btn-neutral float-right" title="Paradigms"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="graphical_user_interface.html" class="btn btn-neutral" title="Graphical User Interface"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2008-2023, Samuele Carcagno.
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>
