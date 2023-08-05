@@ -1,0 +1,4 @@
+pyyaml
+pypdf
+Pillow
+metaindex>=2.2.2
