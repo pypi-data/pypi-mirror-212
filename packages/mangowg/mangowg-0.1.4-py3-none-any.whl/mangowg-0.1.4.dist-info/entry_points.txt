@@ -1,0 +1,3 @@
+[console_scripts]
+mangowg=mangowg:cli
+
