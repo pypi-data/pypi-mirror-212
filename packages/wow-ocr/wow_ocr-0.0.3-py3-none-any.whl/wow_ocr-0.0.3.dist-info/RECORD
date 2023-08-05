@@ -1,0 +1,10 @@
+wow_ocr/__init__.py,sha256=Z1maKZl5MVBlIxMU_z-WNLXhLHawMCztOrLfOKN-n8M,75
+wow_ocr/detector.py,sha256=wphZQIWgn8OFftZ56POJWjawRZrhUbFiDb9GEop1DF0,31392
+wow_ocr/pipeline.py,sha256=1DHgUgDq6JVJ9r3lCn0y6NWUzL08hWDY-rHQB_e2Ipk,2779
+wow_ocr/recognizer.py,sha256=-oQnaI8Hg9n_Qh2JjqSvyXX2bEGAnNRuFZYQ6zSPw8U,19802
+wow_ocr/tools.py,sha256=SQHYQNcfKduYtUgRRRkY14KHJ_iHy2YrtevYQufZeh4,12944
+wow_ocr-0.0.3.dist-info/LICENSE,sha256=wYHu0lSmCDmaEFnd9ctyyx8aWEGgg6qjDz5nE4U9358,1022
+wow_ocr-0.0.3.dist-info/METADATA,sha256=YyDWNEnTgxzIHrA24rXeNMwkrfg7nyEXMYsLnLyGLqA,3108
+wow_ocr-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+wow_ocr-0.0.3.dist-info/top_level.txt,sha256=ADUePGz4NioeYs6ZDuKGGG5QtFzrQfTjD3Mnjxc50kc,8
+wow_ocr-0.0.3.dist-info/RECORD,,
