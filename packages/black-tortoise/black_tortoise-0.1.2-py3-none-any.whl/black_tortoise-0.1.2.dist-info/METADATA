@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: black-tortoise
+Version: 0.1.2
+Summary: 玄武 SDK 是一个提供底层工具级的项目，类似于hutool 一样，提供很多的工具类
+Home-page: https://github.com/lizhen1412/black_tortoise
+Author: Lambert
+Author-email: 595265454@qq.com
+License: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: faker (>=18.10.1)
+Requires-Dist: loguru (>=0.7.0)
+Requires-Dist: requests (>=2.31.0)
+Requires-Dist: gmssl (>=3.2.2)
+
+#### black_tortoise 项目介绍 ####
+
+##### 项目背景 #####
+待完善
+
+##### 项目结构 #####
+1. 源码查看项目结构 tree 方法
+```shell
+tree -I "venv|__pycache__|*.pyc|*.pyo|*.so|*.egg-info|*.egg|*.log|*.txt|*.md|*.json|*.yaml|*.yml|*.ini|*.cfg|*.conf|*.xml|*.html|*.rst|*.rst.txt|*.rst"
+
+# 移除常规文件夹
+tree -I 'venv|bin|black_tortoise.egg-info|build|dist'
+```
+2. 项目结构说明
+```shell
+black_tortoise
+|dosc
+│   └── deployment -- 发布相关文档介绍 
+├── mock_data  -- mock 数据
+│   ├── __init__.py
+│   └── user
+│       └── __init__.py
+├── setup.py -- 项目打包配置文件
+├── tests -- 测试用例
+│   └── __init__.py
+└── utils -- 工具类
+    ├── FileUtils.py
+    ├── __init__.py
+    └── logger.py
+```
