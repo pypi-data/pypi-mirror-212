@@ -1,0 +1,9 @@
+README.md
+chromadb_semantic.py
+setup.py
+chromadb_semantic.egg-info/PKG-INFO
+chromadb_semantic.egg-info/SOURCES.txt
+chromadb_semantic.egg-info/dependency_links.txt
+chromadb_semantic.egg-info/entry_points.txt
+chromadb_semantic.egg-info/requires.txt
+chromadb_semantic.egg-info/top_level.txt

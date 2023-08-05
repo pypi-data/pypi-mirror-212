@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: chromadb-semantic
+Version: 1.0.0
+Description-Content-Type: text/markdown
+
+# ChromaDB Semantic Search
+本專案使用 [ChromaDB](https://github.com/chroma-core/chroma) 以及 [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) 來實現中文與英文的語意搜尋。請按照以下的步驟進行安裝和使用。
+
+## 安裝
+1. 先確保您已安裝 Python 3.8 或更高版本。
+2. 運行以下指令安裝必要的套件：
+
+```bash
+python -m pip install chromadb-semantic
+```
+
+## 使用方法
+1. 將 `chromadb_semantic.py` 檔案放入你的專案資料夾中。
+2. 在你的專案中引入 `chromadb_semantic.py` 並使用以下函式：
+
+### `create_chromadb_client()`
+建立一個 ChromaDB 客戶端，資料會儲存在 `./data` 資料夾中。
+
+### `create_collection(client, collection_name)`
+- `client`: 需要傳入由 `create_chromadb_client()` 返回的客戶端物件。
+- `collection_name`: 使用您希望建立的集合名稱。
+建立一個新的語意搜尋集合。
+
+### `add_documents_to_collection(collection, documents, metadatas, ids)`
+- `collection`: 需要傳入由 `create_collection()` 返回的集合物件。
+- `documents`: 文檔列表，內容可以是中英文，必須與 `metadatas` 和 `ids` 一一對應。
+- `metadatas`: 元數據列表。
+- `ids`: 文檔標識列表。
+向集合中添加文檔。
+
+### `query_collection(collection, query_text, n_results)`
+- `collection`: 需要傳入由 `create_collection()` 返回的集合物件。
+- `query_text`: 查詢語句。
+- `n_results`: 從此查詢中要返回的結果數。
+通過查詢語句，在集合中執行語意搜索。
+
+## 示例
+以下是一個使用 `chromadb_semantic.py` 的範例：
+
+```python
+from chromadb_semantic import *
+
+client = create_chromadb_client()
+
+collection_name = "my_sentence_transformer_collection"
+collection = create_collection(client, collection_name)
+
+documents = ["This is a sample document.", "玉里鎮的月亮比較大顆", "This is a test document."]
+ids = ["doc1", "doc2", "doc3"]
+metadatas = [{"type": "sample"}, {"type": "example"}, {"type": "test"}]
+
+add_documents_to_collection(collection, documents, metadatas, ids)
+
+query_text = "哪一個鄉鎮的月亮比較圓"
+results = query_collection(collection, query_text, n_results=2)
+
+print(f"Results for query: {query_text}")
+print(results)
+```
+
+輸出示例：
+```
+Results for query: 哪一個鄉鎮的月亮比較圓
+{'ids': [['doc2', 'doc1']], 'embeddings': None, 'documents': [['玉里鎮的月亮比較大顆', 'This is a sample docummetadatas': [[{'type': 'example'}, {'type': 'sample'}]], 'distances': [[5.628111839294434, 43.863502502441406]]}
+```
+
+注意：第一次創建集合和添加文檔時，嵌入運算可能需要一些時間。之後的查詢將會更快。

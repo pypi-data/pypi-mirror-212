@@ -1,0 +1,2 @@
+[console_scripts]
+chromadb_semantic = chromadb_semantic:main
