@@ -1,0 +1,77 @@
+[project]
+authors = [
+    { name = "Jigsaw", email = "j1g5aw@foxmail.com" },
+]
+requires-python = ">=3.8,<4.0"
+dependencies = [
+    "nonebot2<3.0.0,>=2.0.0",
+    "nonebot-adapter-onebot<3.0.0,>=2.2.2",
+    "nonebot-plugin-apscheduler<1.0.0,>=0.3.0",
+    "mcstatus<11.0.0,>=10.0.1",
+]
+name = "nonebot-plugin-mcstatus"
+version = "0.1.8"
+description = "Check Minecraft server status"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/nonepkg/plugin-mcstatus"
+repository = "https://github.com/nonepkg/plugin-mcstatus"
+
+[tool.pdm.dev-dependencies]
+pre-commit = [
+    "pycln",
+    "isort",
+    "black",
+    "nonemoji",
+    "pre-commit",
+]
+nonebot = [
+    "fastapi",
+    "uvicorn",
+]
+
+[tool.black]
+line-length = 88
+target-version = [
+    "py38",
+    "py39",
+    "py310",
+    "py311",
+]
+include = "\\.pyi?$"
+extend-exclude = ""
+
+[tool.isort]
+profile = "black"
+line_length = 88
+length_sort = true
+skip_gitignore = true
+force_sort_within_sections = true
+extra_standard_library = [
+    "typing_extensions",
+]
+
+[tool.pycln]
+path = "."
+all = false
+
+[tool.pyright]
+reportShadowedImports = false
+pythonVersion = "3.8"
+pythonPlatform = "All"
+extraPaths = [
+    "__pypackages__/3.11/lib/",
+]
+exclude = [
+    "__pypackages__",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
