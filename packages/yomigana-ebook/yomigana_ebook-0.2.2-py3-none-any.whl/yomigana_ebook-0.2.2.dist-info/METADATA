@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: yomigana-ebook
+Version: 0.2.2
+Summary: Make learning Japanese easier by adding readings for every kanji in the eBook
+Home-page: https://github.com/rabbit19981023/yomigana-ebook
+License: MIT
+Keywords: japanese,lightnovel,ebook,epub,furigana,yomigana,kanji,mecab,unidic,nlp
+Author: Yu Chen
+Author-email: rabbit19981023@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: fugashi (>=1.2.1,<2.0.0)
+Requires-Dist: lxml (>=4.9.2,<5.0.0)
+Requires-Dist: unidic (>=1.1.0,<2.0.0)
+Project-URL: Repository, https://github.com/rabbit19981023/yomigana-ebook
+Description-Content-Type: text/markdown
+
+# yomigana ebook
+
+This project is aimed at making Japanese eBooks more friendly to those who are learning Japanese now by adding readings for every Kanji in the eBooks.
+
+To achieve this, the project utilizes Mecab, a Japanese morphological analyzer, and Unidic, a dictionary developed by NICT, to tokenize words and obtain the corresponding yomigana (reading) of each word. This information is then inserted above or besides the kanji characters in the eBook text, allowing readers to easily read and understand the pronunciation of each word.
+
+## Usage
+
+you can install the package via `pip`:
+
+`$ pip install yomigana-ebook`
+
+then download the `unidic` dictionary:
+
+`$ python -m unidic download`
+
+now you can use it:
+
+`$ yomigana_ebook <your-ebooks>`
+
+or just clone the repo to use it:
+
+```bash
+$ git clone https://github.com/rabbit19981023/yomigana-ebook.git
+$ pip install .
+$ python -m unidic download
+$ yomigana_ebook <your-ebooks>
+```
+
