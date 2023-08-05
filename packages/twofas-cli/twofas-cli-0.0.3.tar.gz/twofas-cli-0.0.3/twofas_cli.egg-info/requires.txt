@@ -1,0 +1,6 @@
+Click
+requests
+cryptography
+pyqrcode
+pypng
+websockets
