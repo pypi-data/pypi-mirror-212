@@ -1,0 +1,8 @@
+setup.py
+ebot/__init__.py
+ebot/ebotapi.py
+ebot.egg-info/PKG-INFO
+ebot.egg-info/SOURCES.txt
+ebot.egg-info/dependency_links.txt
+ebot.egg-info/requires.txt
+ebot.egg-info/top_level.txt
