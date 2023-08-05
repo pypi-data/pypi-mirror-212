@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fetch-lyrics-from-genius
+Version: 0.1.1
+Summary: A package to fetch lyrics from Genius.com
+Author: Andrew Beveridge
+Author-email: andrew@beveridge.uk
+License-File: LICENSE
+Requires-Dist: lyricsgenius
+Requires-Dist: musicbrainzngs
+Requires-Dist: python-slugify
+
