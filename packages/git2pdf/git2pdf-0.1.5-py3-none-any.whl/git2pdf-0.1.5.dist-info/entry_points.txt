@@ -1,0 +1,3 @@
+[console_scripts]
+git2pdf = git2pdf.main:main
+
