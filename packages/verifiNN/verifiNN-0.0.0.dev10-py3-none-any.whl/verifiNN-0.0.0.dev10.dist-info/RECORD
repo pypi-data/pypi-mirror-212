@@ -1,0 +1,12 @@
+verifiNN/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verifiNN/examples.py,sha256=gNvCJb9Mia2H7kmTBtSCn9lEN4TfODrrBCtsV1XKb-g,1117
+verifiNN/verifier.py,sha256=sMc-XicCpSQX_iEbPM_MdlaoOy-Haio5ftdWT__68Xc,5681
+verifiNN/algorithms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verifiNN/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verifiNN/models/network.py,sha256=Yat6v2Bdzk-foJyjy0flJ8j99VQ1nvGAmBgrAF-evvI,637
+verifiNN/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verifiNN/utils/utils.py,sha256=iGOeXb7bLzAxlF7-Y9GPzbRPfdRnKjSM4nc0r8X4_Eo,188
+verifiNN-0.0.0.dev10.dist-info/METADATA,sha256=AtFSAqUY4EiwcQUIbgxr4xNxs1JHPul-1_YLs53v1rk,4415
+verifiNN-0.0.0.dev10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+verifiNN-0.0.0.dev10.dist-info/top_level.txt,sha256=9BcHZ4RVSJD_0CodUeM_xyt_jwiwzAfB2lhwh5Q6qz4,9
+verifiNN-0.0.0.dev10.dist-info/RECORD,,
