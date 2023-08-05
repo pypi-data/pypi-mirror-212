@@ -1,0 +1,31 @@
+.face {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+}
+
+.face:nth-child(2) {
+    border-left: 1px solid #222222;
+}
+
+.piece-display {
+    border: 1px solid #222222;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: white;
+    margin: 3px;
+}
+
+.piece-display.double {
+    transform: rotate(90deg);
+}
+
+body {
+    background-color: #3c3c3c;
+}
+
+#board {
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+}
