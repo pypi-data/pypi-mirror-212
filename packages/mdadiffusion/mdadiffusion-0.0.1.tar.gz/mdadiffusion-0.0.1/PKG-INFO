@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mdadiffusion
+Version: 0.0.1
+Summary: Minimum dissipation approximation for hydrodynamic size.
+Home-page: https://github.com/RadostW/mdadiffusion/
+Author: Radost Waszkiewicz
+Author-email: radost.waszkiewicz@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/RadostW/mdadiffusion/
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Tests](https://github.com/RadostW/mdadiffusion/actions/workflows/tests.yml/badge.svg)](https://github.com/RadostW/mdadiffusion/actions/workflows/tests.yml)
+
+# MinimumDissipationApproximation
+
+Package for computing hydrodynamic size of elastic proteins (IDPs) in Minimum Dissipation Approximation and Kirkwood-Riesman approximation.
+Relies on PyGRPY for approximations of mobility tensors.
+
+# License
+
+This software is MIT licensed
+
+# How to cite
+
+B. Cichocki, M. Rubin, A. Niedzwiecka and P. Szymczak *Diffusion coefficients of elastic 
+macromolecules*; J. Fluid. Mech. (2019)
+

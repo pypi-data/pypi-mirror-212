@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+mdadiffusion/__init__.py
+mdadiffusion/mda.py
+mdadiffusion.egg-info/PKG-INFO
+mdadiffusion.egg-info/SOURCES.txt
+mdadiffusion.egg-info/dependency_links.txt
+mdadiffusion.egg-info/not-zip-safe
+mdadiffusion.egg-info/requires.txt
+mdadiffusion.egg-info/top_level.txt
+tests/test_mda.py
