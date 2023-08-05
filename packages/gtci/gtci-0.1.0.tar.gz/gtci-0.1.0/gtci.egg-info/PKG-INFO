@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gtci
+Version: 0.1.0
+Summary: A GTCI installer is a command line tool that quickly and efficiently installs software and libraries while managing software dependencies. It's essential for deployment and development pipelines and automates the installation process.
+Home-page: https://github.com/GreyTechno/gtci
+Author: MR_GT
+Author-email: friendyt89@gmail.com
+License: MIT
+Keywords: installer,gtci,cli,greytechno,mr_gt,packagemanagers,dependencies,automation,deploymentpipeline
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+An installer for GTCI (command line installer) is a useful tool that allows developers, beginners, and system administrators to install software and libraries from the command line interface quickly and efficiently. These installers use package managers to manage software dependencies and ensure a seamless installation process. They simplify the installation process and are an essential tool for deployment or development pipelines, particularly for automating installation processes. gtci installers are highly valuable in ensuring correct installation of software dependencies to prevent delays in the pipeline.
