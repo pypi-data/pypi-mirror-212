@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: google-meet-api
+Version: 0.0.4
+Summary: get meeting links of google meet according to your time slot and date.
+Author: Subhomoy Roy Choudhury
+Author-email: subhomoyrchoudhury@gmail.com
+Keywords: python,meet,api
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# meet-api-python
