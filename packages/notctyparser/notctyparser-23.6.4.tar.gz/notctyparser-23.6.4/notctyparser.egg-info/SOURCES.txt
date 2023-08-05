@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+docs/conf.py
+notctyparser/__info__.py
+notctyparser/__init__.py
+notctyparser/__main__.py
+notctyparser/bigcty.py
+notctyparser.egg-info/PKG-INFO
+notctyparser.egg-info/SOURCES.txt
+notctyparser.egg-info/dependency_links.txt
+notctyparser.egg-info/requires.txt
+notctyparser.egg-info/top_level.txt
