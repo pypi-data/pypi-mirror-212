@@ -1,0 +1,2 @@
+[console_scripts]
+twofas-cli = twofas_cli:cli

@@ -1,0 +1,12 @@
+twofas_cli/__init__.py,sha256=AHaPXqO-3bj0m2G33vEb9KgylPjKKs5cgh-72X7jWtc,61
+twofas_cli/common.py,sha256=Y-Cr2acqVA-b0SkD8qnB3DwH1Ms-YzXwrBKZxst6Huw,676
+twofas_cli/crypt.py,sha256=cdvGLNkA28eN4m0L9dn9aNQymU-bk-WJOE3-Ao4JssE,2312
+twofas_cli/twofas_cli.py,sha256=m8ATbVPJ2SaXI3QzMpM7Xpuy3xw_BWxtHYBdzkmd0d0,5521
+twofas_cli/api/__init__.py,sha256=CRpH-kvUJGZKP-iOF07QTGa2pNf-owY_pd3bgNDrvHw,26
+twofas_cli/api/api.py,sha256=6i0QhXZgkqds_gNEBxJ5WI9GWQnHPkyhKxkAc51sg-I,3976
+twofas_cli-0.0.3.dist-info/LICENSE,sha256=CK87-MVIffhZeYxAqw9HCJ1TChAMVpmhBUhMATjEYcQ,1508
+twofas_cli-0.0.3.dist-info/METADATA,sha256=ZP1eoTbzbZ4tfAJoWs3VglcnxnGxkf2LgJnDLBA5dnQ,1633
+twofas_cli-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+twofas_cli-0.0.3.dist-info/entry_points.txt,sha256=-fThmjN6qrc3eaAA9w2J-csUtR_IErjh8520Ig0X3WM,46
+twofas_cli-0.0.3.dist-info/top_level.txt,sha256=2TVeAmdzcBIxqf-VHl-ne7MiY8fblZldg26lJzzqOHw,11
+twofas_cli-0.0.3.dist-info/RECORD,,
