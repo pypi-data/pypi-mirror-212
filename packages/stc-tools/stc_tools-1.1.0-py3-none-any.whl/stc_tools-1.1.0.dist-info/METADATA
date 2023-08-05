@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: stc-tools
+Version: 1.1.0
+Summary: Standard Template Construct Client
+Author: Interdimensional Walker
+Project-URL: Homepage, https://github.com/nexus-stc/stc
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: summa-embed (>=0.15.7)
+Requires-Dist: termcolor
+Requires-Dist: fire
+
