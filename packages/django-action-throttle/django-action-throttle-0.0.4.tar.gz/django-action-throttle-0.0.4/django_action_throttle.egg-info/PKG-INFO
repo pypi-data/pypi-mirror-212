@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: django-action-throttle
+Version: 0.0.4
+Summary: Django Action Throttle
+Home-page: https://github.com/amir4v/django-action-throttle/
+Author: Amirhosein Ghorbani
+License: MIT License
+Keywords: django action throttle
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+License-File: LICENCE
+
+Django Action Throttle
+
+
