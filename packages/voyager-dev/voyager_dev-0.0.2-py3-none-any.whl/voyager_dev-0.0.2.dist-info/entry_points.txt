@@ -1,0 +1,3 @@
+[console_scripts]
+voyager_dev = voyager_dev.voyager_dev:main
+

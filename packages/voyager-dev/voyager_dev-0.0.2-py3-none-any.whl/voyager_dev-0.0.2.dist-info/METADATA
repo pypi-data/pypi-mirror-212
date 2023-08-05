@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: voyager-dev
+Version: 0.0.2
+Summary: A package for coding assistance
+Home-page: https://github.com/coyotespike/voyager-dev
+Author: Timothy Roy
+Author-email: tim@gradientflow.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## ✨ Coding Assistant ✨
+
+
+This project aims to develop a usable coding agent, which will work iteratively in collaboration with a developer.
+
+At the current time, BabyAgi/AutoGPT approaches are too unstable to be of very much assistance. However, there is every reason to develop an agent that learns from its environment, from its mistakes, and from your chat history. In the future we hope to allow it to develop LangChain tools as needed (Voyager).
+
+## Usage
+
+After installation, you can run `voyager_dev` from anywhere on the command line. You may optionally provide a prompt, `voyager_dev what is the weather today?`, or you can just hit enter and it will ask you for a prompt.
+
+For more complex prompts, place them in a file and provide the filename as the prompt. For example, `voyager_dev myprompt.txt`. This enables multiline prompts more easily.
+
+## Installation
+
+You can install this from [PyPi](https://pypi.org/project/voyager-dev/) with `pip install voyager_dev`.
+
+Alternatively, you can clone this repository. Then to install this repository as a global Python CLI tool, run `pip install -e .`
+
+Either way, you should also put your OpenAI and Google Search API keys in your .bashrc or .zshrc file, like this:
+
+```
+export OPENAI_API_KEY=yourkeyhere
+export GOOGLE_API_KEY=yourkeyhere
+export GOOGLE_CSE_ID=yourkeyhere
+```
+
+You can get the latter two by creating the GOOGLE_API_KEY in the [Google Cloud credential console](https://console.cloud.google.com/apis/credentials) and a GOOGLE_CSE_ID using the [Programmable Search Engine](https://programmablesearchengine.google.com/controlpanel/create). Examine the output carefully the first time you run it, Google may return a detailed error telling you how to fix it.
+
+Finally, install and run redis (for the memory store) with `brew install redis` and `brew services start redis`. (You can also use `redis-server` if you don't want it to run in the background.)
+
+After that, you can simply type `voyager_dev` anywhere on the command line.
+
+#
+
