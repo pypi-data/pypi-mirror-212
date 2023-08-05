@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tests/test_stft.py
+tflibrosa/__init__.py
+tflibrosa/stft.py
+tflibrosa.egg-info/PKG-INFO
+tflibrosa.egg-info/SOURCES.txt
+tflibrosa.egg-info/dependency_links.txt
+tflibrosa.egg-info/requires.txt
+tflibrosa.egg-info/top_level.txt
