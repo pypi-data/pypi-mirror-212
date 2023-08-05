@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: airfold
+Version: 0.2.0
+Summary: Pioneering real-time data
+Author-email: Julian Gilyadov <israelg99@gmail.com>, Constantine Peresypkin <pconstantine@gmail.com>
+License: Apache-2.0
+Requires-Python: <4,>=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# Airfold
+
+Pioneering real-time data.
+
+## Development
+
+- Use Conventional Commits.
+- Squash merge PRs.
