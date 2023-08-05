@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: abmatrix
+Version: 0.2.1
+Summary: Python module to read and parse AB Matrix files
+Author-email: Daniel Garrigan <popgendad@proton.me>
+Project-URL: Homepage, https://github.com/wisdomhealth-inc/abmatrix
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# abmatrix
+
+[![Upload Python Package](https://github.com/wisdomhealth-inc/abmatrix/actions/workflows/python-publish.yml/badge.svg)](https://github.com/wisdomhealth-inc/abmatrix/actions/workflows/python-publish.yml)
+
+Python3 module to read and parse AB Matrix files
