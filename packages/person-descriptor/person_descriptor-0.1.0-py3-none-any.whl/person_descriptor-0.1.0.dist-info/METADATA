@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: person-descriptor
+Version: 0.1.0
+Summary: Our super useful age descriptor
+Author: SDA
+Author-email: sda@sda.com
+Requires-Python: >=3.7
+
