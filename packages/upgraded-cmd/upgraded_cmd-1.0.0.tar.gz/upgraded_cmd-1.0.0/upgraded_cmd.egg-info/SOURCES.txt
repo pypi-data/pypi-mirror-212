@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+upgraded_cmd/__init__.py
+upgraded_cmd/constants.py
+upgraded_cmd.egg-info/PKG-INFO
+upgraded_cmd.egg-info/SOURCES.txt
+upgraded_cmd.egg-info/dependency_links.txt
+upgraded_cmd.egg-info/top_level.txt
+upgraded_cmd/classes/__init__.py
+upgraded_cmd/classes/cmd.py
+upgraded_cmd/classes/entry.py
+upgraded_cmd/classes/prompt.py
