@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+mzarr/__init__.py
+mzarr/mzarr.py
+mzarr/nifti2mzarr.py
+mzarr/tiff2mzarr.py
+mzarr.egg-info/PKG-INFO
+mzarr.egg-info/SOURCES.txt
+mzarr.egg-info/dependency_links.txt
+mzarr.egg-info/requires.txt
+mzarr.egg-info/top_level.txt
+mzarr/_tests/__init__.py

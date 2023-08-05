@@ -1,0 +1,12 @@
+numpy
+scikit-image>=0.19
+natsort
+numcodecs
+imagecodecs==2023.1.23
+zarr
+tifffile
+
+[testing]
+tox
+pytest
+pytest-cov
