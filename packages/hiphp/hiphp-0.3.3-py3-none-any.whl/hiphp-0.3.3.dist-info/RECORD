@@ -1,0 +1,17 @@
+hiphp/__init__.py,sha256=3UOqro1mgxMj6zNND8rUg3JYup-hxefcluy0mv0dhQs,26529
+hiphp/hiphpabout.py,sha256=uO3dLCFAzTOM9uF0A3HUksRy_ZHgZg58gYfMDuxGk0s,1323
+hiphp/hiphpcoding.py,sha256=wsQwDoU_MKos66xtu3xmFycbeNV8VYfnhp2Zcsv7wF4,1379
+hiphp/hiphpeditor.py,sha256=nG_3prOHD_uTxVNwohG6rlDlFzBy7VO-tZEpIaPi4IM,3083
+hiphp/hiphpfunc.py,sha256=clolhFQmsuC6p1eX5fo54ynXg95LBGjBZQU6p3u_pvw,1638
+hiphp/hiphphelp.py,sha256=FHLQvvGrq-h9FI8oA3t48T49BPbBJIbO_zmXAiU1EvU,5200
+hiphp/hiphplicense.py,sha256=Ra7JPODBBjjBma___Hme4neRnNUje3BXgXIly5JPbDs,1997
+hiphp/hiphplinkextractor.py,sha256=cQI5RyiGna320ilatJTFSkz_qQFP1GW45Y6BeF2n7Ik,2483
+hiphp/hiphplogo.py,sha256=PwHCv0Jkzb8xwK_BuOPUJwMIN0KWGBJYtnWi_cwi_fk,3211
+hiphp/hiphpmsgs.py,sha256=MsDbv__Iv3I46H-JEkFSmGRCqwmyIG0Lmlyllzy4Ys0,1546
+hiphp/hiphpphpfunctions.py,sha256=w53Iebpi37y0k_jheH9T0y0e723QE_31Mjfduc_nexU,10763
+hiphp/hiphpversion.py,sha256=KuCG16eF9gRIcbKY_KVgsV0-IWl8NYqw5WEjVaXXGXk,889
+hiphp-0.3.3.dist-info/LICENSE,sha256=S4qUYh8pDRFbWIqr761M6kJQmkYEwxmWuSEIxS21WtA,1088
+hiphp-0.3.3.dist-info/METADATA,sha256=BBm6G78L4DHCJw9_-oKLEWqlhJ6sgBwzqawzBrpLJbQ,18669
+hiphp-0.3.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hiphp-0.3.3.dist-info/top_level.txt,sha256=eMjuPD2kjgzGJo3D1HqtPfXwS5xzw7JjYdAnNI2lGR4,6
+hiphp-0.3.3.dist-info/RECORD,,
