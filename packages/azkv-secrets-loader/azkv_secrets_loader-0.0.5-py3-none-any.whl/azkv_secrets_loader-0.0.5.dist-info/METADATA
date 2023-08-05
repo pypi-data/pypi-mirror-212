@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: azkv-secrets-loader
+Version: 0.0.5
+Summary: A package for loading Azure Key Vault Secrets.
+Author: Richard
+Author-email: <rich_swainson@hotmail.co.uk>
+Keywords: azure,api,keyvault
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: azure-identity
+Requires-Dist: azure-keyvault-secrets
+Requires-Dist: azure-core
+
+A package for loading Azure Key Vault Secrets.
