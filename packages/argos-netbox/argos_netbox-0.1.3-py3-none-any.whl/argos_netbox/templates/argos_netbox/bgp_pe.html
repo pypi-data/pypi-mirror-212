@@ -1,0 +1,48 @@
+{% extends 'generic/object.html' %}
+{% load render_table from django_tables2 %}
+
+{% block content %}
+<div class="row mb-3">
+    <div class="col col-md-6">
+        <div class="card">
+            <h5 class="card-header">{{ object.device }}</h5>
+            <div class="card-body">
+                <table class="table table-hover attr-table">
+                    <tr>
+                        <th scope="row">Advertised Customers</th>
+                        {% for customer in object.advertised_customers.all %}
+                        <td>
+                            <a href="{{customer.get_absolute_url}}">{{ customer }}</a>
+                        </td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        <th scope="row">Device</th>
+                        <td>
+                            <a href="{{object.device.get_absolute_url}}">{{ object.device }}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">ASN</th>
+                        <td>
+                            <a href="{{object.asn.get_absolute_url}}">{{ object.asn }}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Update Source Interface</th>
+                        <td>
+                            <a href="{{object.update_source_interface.get_absolute_url}}">{{ object.update_source_interface }}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                </table>
+            </div>
+        </div>
+        {% include 'inc/panels/custom_fields.html' %}
+    </div>
+    <div class="col col-md-6">
+        {% include 'inc/panels/tags.html' %}
+        {% include 'inc/panels/comments.html' %}
+    </div>
+</div>
+{% endblock content %}

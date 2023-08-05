@@ -1,0 +1,44 @@
+{% extends 'generic/object_edit.html' %}
+{% load static %}
+{% load form_helpers %}
+{% load helpers %}
+{% load argos_macros %}
+
+
+{% block form %}
+<div class="field-group my-5">
+    <div class="row mb-2">
+        <h5 class="offset-sm-3">Address Family</h5>
+    </div>
+</div>
+{% render_field form.name %}
+
+<div class="field-group my-5">
+    {% render_field form.vpnv4_address_family %}
+
+    <div id="manual_label_div">
+        {% render_field form.vpnv4_community %}
+    </div>
+    {% hide_if_checked "vpnv4_address_family" "manual_label_div" True %}
+
+    {% render_field form.vpnv6_address_family %}
+
+    <div id="manual_label_div2">
+        {% render_field form.vpnv6_community %}
+    </div>
+    {% hide_if_checked "vpnv6_address_family" "manual_label_div2" True %}
+</div>
+
+<div class="field-group my-5">
+    {% render_field form.comments %}
+</div>
+
+{% if form.custom_fields %}
+<div class="field-group my-5">
+    <div class="row mb-2">
+        <h5 class="offset-sm-3">Custom Fields</h5>
+    </div>
+    {% render_custom_fields form %}
+</div>
+{% endif %}
+{% endblock %}

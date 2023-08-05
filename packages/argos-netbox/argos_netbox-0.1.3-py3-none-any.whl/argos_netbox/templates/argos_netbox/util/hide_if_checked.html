@@ -1,0 +1,19 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const checkbox = document.querySelector('input[name="{{ checkbox_field_name }}"]');
+        if (checkbox) {
+            const foo = function(checkbox) {
+                const block = document.getElementById('{{ block_id }}');
+                if (!!checkbox.checked ^ !!{{reverse}}) {
+                    block.style.display = 'none';
+                } else {
+                    block.style.display = 'block';
+                }
+            }
+            checkbox.addEventListener('change', function(){
+                foo(this);
+            });
+            foo(checkbox);
+        }
+    });
+</script>
