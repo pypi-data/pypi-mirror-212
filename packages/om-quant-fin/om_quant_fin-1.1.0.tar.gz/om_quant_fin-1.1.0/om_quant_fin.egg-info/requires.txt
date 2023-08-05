@@ -1,0 +1,11 @@
+yfinance
+pandas
+scikit-learn
+numpy
+time
+sys
+plotly
+statsmodels.tsa.stattools
+numpy_ext
+warnings
+datetime
