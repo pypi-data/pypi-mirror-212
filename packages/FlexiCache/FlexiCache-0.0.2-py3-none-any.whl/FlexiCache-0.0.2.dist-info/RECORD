@@ -1,0 +1,12 @@
+flexicache/__init__.py,sha256=bPosMKU0Zm9FBZMrQv5-4Yl0ATqoUtwT-I9JYi1n5Kg,114
+flexicache/cache_decorator.py,sha256=0_gsBTCkvJBKc2aucS5AlAqUPxy8GN1B8ZJR9CAaS8k,802
+flexicache/cache_strategy.py,sha256=wZQKwPhbUIMqCnMFQdYf9mDlh7Qn_p6Ib7S7KDZqoV8,695
+flexicache/storages/__init__.py,sha256=kPVFv4LLjNGw3xNkP6BgvqjdB41n1gDJfdVaN7115fs,104
+flexicache/storages/ddb_cache.py,sha256=sNX8b-_TMDXS7uGzmIllt_R4lfYvAP_ZCJ3iPnpltZc,2435
+flexicache/storages/file_cache.py,sha256=HziEMdhAlaVsHxcv6-DZ0RoIWTOmnhSuSP9pCMpHu0c,1002
+flexicache/storages/memory_cache.py,sha256=vRURlPfiRyE6TpFu4FHOlDy2ZAJ0G0YQegHKKiMAUyM,572
+FlexiCache-0.0.2.dist-info/LICENSE,sha256=lAJTPRS6VU299W2HDeLzbg7gkBWtE3Fr2d7oC3cv2l4,1069
+FlexiCache-0.0.2.dist-info/METADATA,sha256=n3bQHIJO4lSraRgoVLiUla9QZS1ygbF7MB03beAtO4Y,3981
+FlexiCache-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+FlexiCache-0.0.2.dist-info/top_level.txt,sha256=n-w7GWJoxy65bEK24XFhjFyQymfNzwog0xYs-JHewTY,11
+FlexiCache-0.0.2.dist-info/RECORD,,
