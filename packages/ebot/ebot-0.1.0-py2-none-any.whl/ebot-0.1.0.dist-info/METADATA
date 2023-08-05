@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ebot
+Version: 0.1.0
+Summary: A package with a variable API
+Home-page: UNKNOWN
+Author: SunYingXin
+Author-email: sunyingxin@baidu.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
