@@ -1,0 +1,57 @@
+- use rowid alias instead of string pks
+
+captions table
+playlists table
+
+sqlite-utils transform chickens.db chickens --pk id
+
+[author_id] INTEGER REFERENCES [authors]([id])
+db["dogs"].add_column("species_id", fk="species", fk_col="ref")
+
+table.transform(pk=None)
+
+- search: get title from media table
+
+- wt/lt/search join and use fts on both tables, threading ?
+
+- move time_played, playhead, and other ephemeral data to its own table
+
+add time_first_played, time_last_played; remove time_played instead use play_count
+
+- move mpv specific playhead code to a script subcommand
+
+option to delete mpv watch_later file if media file does not exist
+
+- improve block subcommand
+
+add support for domains, specific combinations
+
+- improve playlists subcommand
+
+- make generic printer. support --json or --csv for most subcommands
+
+SELECT \* FROM playlists p WHERE PATH NOT IN (SELECT DISTINCT playlist_path FROM media WHERE playlist_path NOT NULL )
+
+- improve dlstatus subcommand
+
+- scan bpm and key sig  https://github.com/aubio/aubio https://github.com/tyiannak/pyAudioAnalysis
+
+- CLI EDA tool
+
+- CLI incremental diff (SQLITE, NDJSON, CSV)
+
+    compare 100 rows at a time using primary key
+
+    show the differences between files
+
+- todo recursive todo management, fortune cookie style
+
+- CLI recursive financial planner (nano budget)
+
+- CLI incremental book reading
+
+- CLI reverse flight search
+
+- CLI city abacus
+
+- CLI UNLI Neighborhoods
