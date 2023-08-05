@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+linustorvalds.egg-info/PKG-INFO
+linustorvalds.egg-info/SOURCES.txt
+linustorvalds.egg-info/dependency_links.txt
+linustorvalds.egg-info/top_level.txt
