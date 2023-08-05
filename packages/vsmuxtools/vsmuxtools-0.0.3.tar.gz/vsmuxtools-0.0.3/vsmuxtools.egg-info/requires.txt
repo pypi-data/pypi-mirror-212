@@ -1,0 +1,3 @@
+vapoursynth>=60
+vstools>=1.6.2
+muxtools>=0.0.3
