@@ -1,0 +1,24 @@
+[package]
+name = "can-message-data-generator"
+version = "0.7.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "can_message_data_generator"
+crate-type = ["cdylib"]
+
+[dependencies]
+serde = { version = "1.0.163", features = ["derive"] }
+serde_json = "1.0.66"
+strum = "0.24"
+strum_macros = "0.24"
+
+# dev dependencies
+serde_test = "1.0.163"
+rand = "0.8.5"
+
+[dependencies.pyo3]
+version = "0.19"
+# "abi3-py37" tells pyo3 (and maturin) to build using the stable ABI with minimum Python version 3.7
+features = ["abi3-py37"]
