@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: moneyflow-base
+Version: 0.0.4
+Summary: Moneyflow Base
+Author-email: Team Moneyflow <infrastructure@moneyflow.io>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: structlog
+Requires-Dist: django
+Requires-Dist: dramatiq
+Requires-Dist: redis
+Project-URL: Bug Tracker, https://github.com/moneyflow-group/moneyflow-base/issues
+Project-URL: Homepage, https://github.com/moneyflow-group/moneyflow-base
+
+# moneyflow-base
+Base Functions, classes, utilities shared between all Moneyflow projects
+
