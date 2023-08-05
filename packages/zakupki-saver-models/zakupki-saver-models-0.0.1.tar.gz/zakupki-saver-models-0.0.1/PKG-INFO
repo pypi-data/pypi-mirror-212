@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: zakupki-saver-models
+Version: 0.0.1
+Summary: Zakupki saver models
+Home-page: 
+Author: mercurial
+Author-email: dias.nespayev@gmail.com
+License: MIT
+Requires-Python: >=3.5
