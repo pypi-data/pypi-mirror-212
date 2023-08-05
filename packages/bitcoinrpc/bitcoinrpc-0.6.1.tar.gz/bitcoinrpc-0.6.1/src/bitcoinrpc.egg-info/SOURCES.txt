@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/bitcoinrpc/__init__.py
+src/bitcoinrpc/__version__.py
+src/bitcoinrpc/_exceptions.py
+src/bitcoinrpc/_types.py
+src/bitcoinrpc/bitcoin_rpc.py
+src/bitcoinrpc.egg-info/PKG-INFO
+src/bitcoinrpc.egg-info/SOURCES.txt
+src/bitcoinrpc.egg-info/dependency_links.txt
+src/bitcoinrpc.egg-info/requires.txt
+src/bitcoinrpc.egg-info/top_level.txt
+tests/test_client_config.py
+tests/test_connection.py
