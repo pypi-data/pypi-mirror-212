@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+PixID.egg-info/PKG-INFO
+PixID.egg-info/SOURCES.txt
+PixID.egg-info/dependency_links.txt
+PixID.egg-info/top_level.txt
+pixid/PixID.py
+pixid/__init__.py
