@@ -1,0 +1,13 @@
+pyembree/rtcore_scene.cpython-36m-x86_64-linux-gnu.so,sha256=Gzb-CAQP8eRBUpl2h1vMiD4vIlSlzxYE84s2Vk-fv0k,514913
+pyembree/mesh_construction.cpython-36m-x86_64-linux-gnu.so,sha256=8qABx5UycumbAANNQXpTMLR7DGXovA7Ep3em9GZg5vM,403865
+pyembree/triangles.cpython-36m-x86_64-linux-gnu.so,sha256=7veBZuTA1NdgOQmHaP-se7G_WqNcElkZPyzyr71RxIA,100057
+pyembree/rtcore.cpython-36m-x86_64-linux-gnu.so,sha256=27ZNptYta6YUT5iJH_4tFJRVtFC-RoAdV8_OPb0eXck,231705
+embreeX-2.17.7.dist-info/METADATA,sha256=ZFLyQW05EpFyL5TbHcBnkKwNk0XaG-2t6WeVPgYCsdo,734
+embreeX-2.17.7.dist-info/AUTHORS,sha256=FuKSWm4UT7ibboERkfp6XNRyLmME43GvjmLqqRXj7uE,226
+embreeX-2.17.7.dist-info/LICENSE,sha256=_xuYAn05ET9sP82cOw68xgsUW5orgvVnD0RL4wKKkA4,1299
+embreeX-2.17.7.dist-info/RECORD,,
+embreeX-2.17.7.dist-info/top_level.txt,sha256=p-Cczvc4sP1B6gKiIOFTxZADigbzEZO9wz0X2nMvYP8,9
+embreeX-2.17.7.dist-info/WHEEL,sha256=2o5WOWabEixCANJsjbRq-k-ysmAqlETlAIL-KeeJn3k,113
+embreeX.libs/libtbb-1f9ff2d0.so.2,sha256=d9NmMBmlWGDMd3eFM_w6tQkJmqBBKUp5rQOjF4-Z2A8,2071001
+embreeX.libs/libembree-4458e9e2.so.2,sha256=Sa3O0YjKyLxIKVhsFq8khf6ppU1N62soEd26VPXMunQ,37410153
+embreeX.libs/libtbbmalloc-ceb46550.so.2,sha256=hK_nNyUTDypPrqHHNPPtosKr1ygPt1qvEOUwDXYqsUo,784473
