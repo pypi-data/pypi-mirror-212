@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caic_python"
+version = "0.1.8"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiohttp==3.8.4",
+    "pydantic==2.0a4",
+    "python-dateutil==2.8.*",
+]
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["src"]
