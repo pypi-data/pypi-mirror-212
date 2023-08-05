@@ -1,0 +1,23 @@
+from setuptools import setup
+
+Desc = """PyShorts is a dynamic Python package designed to enhance the coding experience and boost productivity for developers. With a range of efficient functions and utilities, PyShorts empowers users to write code rapidly and efficiently, reducing development time and increasing overall efficiency.
+
+One of the key features of PyShorts is its extensive library of shorthand functions. These functions are carefully crafted to simplify common coding tasks, allowing users to write concise and expressive code with minimal effort. Whether it's performing complex mathematical calculations, manipulating strings, or working with data structures, PyShorts provides intuitive and streamlined functions that significantly speed up the development process.
+
+Additionally, PyShorts offers a collection of code snippets, templates, and shortcuts that can be easily incorporated into your projects. These ready-to-use code snippets cover a wide range of programming scenarios, enabling users to quickly implement common functionalities and algorithms without reinventing the wheel. By leveraging PyShorts' extensive snippet library, developers can focus more on solving higher-level problems rather than getting bogged down by repetitive or time-consuming coding tasks.
+
+Furthermore, PyShorts includes a powerful code generation module, which automates the process of generating boilerplate code. This module allows users to create skeleton code for various frameworks, libraries, and design patterns with just a few simple commands. Whether you're starting a new project or integrating an existing one, PyShorts' code generation module helps you get up and running swiftly, eliminating the need for manual and error-prone boilerplate code creation.
+
+PyShorts also comes equipped with an intelligent code completion feature, providing real-time suggestions and autocompletion for code snippets, functions, and variables. This intelligent assistant analyzes your code as you write, offering helpful suggestions based on context, syntax, and the underlying codebase. This feature saves significant time by reducing the need to look up function signatures or constantly switch between documentation and code files.
+
+With its user-friendly interface and comprehensive documentation, PyShorts ensures a smooth learning curve and seamless integration into existing development workflows. By leveraging PyShorts' powerful functions, snippets, and code generation capabilities, developers can write high-quality code faster, optimize their workflow, and focus on building innovative and robust applications."""
+
+setup(name="PyShortsByAbdus", version="0.2", long_description=Desc, description="In summary, PyShorts is a game-changing Python package that empowers developers to write code swiftly and efficiently. By providing shorthand functions, code snippets, intelligent code completion, and code generation capabilities, PyShorts streamlines the coding process, enabling developers to accelerate their productivity and deliver high-quality code with ease.", author="Abdus-Samad", author_email="Samadgame0910@gmail.com",
+packages=['PyShorts'],
+install_requires=[
+    "Functions",
+    "pillow",
+    'setuptools'
+], extra_requires=["twine>=4.0.2", "pytest>=7.0"],
+long_description_content_type="text/markdown")
+
