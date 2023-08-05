@@ -1,0 +1,7 @@
+numpy==1.18.0
+torch
+bm3d
+nibabel
+tqdm
+pydicom
+termcolor
