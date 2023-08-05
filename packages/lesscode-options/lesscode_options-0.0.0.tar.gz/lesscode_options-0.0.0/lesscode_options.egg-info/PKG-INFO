@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: lesscode-options
+Version: 0.0.0
+Summary: lesscode_options是自定义全局配置项，一个地方定义，全局使用
+Author: navysummer
+Author-email: navysummer@yeah.net
+Platform: python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lesscode_options
+
+#### 介绍
+lesscode_options是自定义全局配置项，一个地方定义，全局使用
+
+#### 示例
+```python
+from lesscode_options.options import define, options
+
+define(name="ceshi", type_=str, default="hello world", help_="说明", callback=str)
+define(name="age", type_=int, default=5, help_="年龄", callback=str)
+
+print(options.ceshi)
+print(type(options.age))
+
+options.ceshi = "hello"
+print(options.ceshi)
+```
