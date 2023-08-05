@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: upgraded_cmd
+Version: 1.1.2
+Summary: Similar to built-in.cmd but allows tab completion in windows
+Author: Loïc Chevalier
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a package
