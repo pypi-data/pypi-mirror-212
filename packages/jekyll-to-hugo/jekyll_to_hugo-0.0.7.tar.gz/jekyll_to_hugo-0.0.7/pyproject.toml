@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jekyll-to-hugo"
+version = "0.0.7"
+authors = [
+  { name="Denis Nutiu", email="nuculabs@outlook.com" },
+]
+description = "Python library for converting jekyll md files to Hugo."
+readme = "readme.md"
+requires-python = ">=3.10"
+classifiers = [
+  "Environment :: Console",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "beautifulsoup4>=4.12, <5",
+  "PyYAML",
+  "soupsieve>=2.4, <3",
+  "pydantic>=1.10, <2",
+]
+
+[project.scripts]
+jekyll-to-hugo = "main:main"
+
+[project.optional-dependencies]
+dev = ["black", "pdoc", "isort", "autoflake", "pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/dnutiu/jekyll-to-hugo"
+"Bug Tracker" = "https://github.com/dnutiu/jekyll-to-hugo/issues"
