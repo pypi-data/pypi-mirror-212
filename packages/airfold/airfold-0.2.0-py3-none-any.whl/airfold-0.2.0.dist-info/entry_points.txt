@@ -1,0 +1,2 @@
+[console_scripts]
+airfold = airfold.cli.cli:app
