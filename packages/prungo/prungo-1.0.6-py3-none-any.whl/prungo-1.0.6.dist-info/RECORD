@@ -1,0 +1,11 @@
+LICENSE,sha256=_ndXywQPnpJjIpNaLxgehIA1TP071Eb13ab1Reh7EA4,1497
+prungo/__init__.py,sha256=K_D0Y6gqWzGHozMqZM5FHWc51rBZXPflmw9btd4pQlo,97
+prungo/constants.py,sha256=8OLVZCm4hFThXKe8Mx6CUazAszN4jiIGLpD-QLzYk_Q,103
+prungo/decorators.py,sha256=v6wKWqfx72QcHwtTFhCvz3s-Vg9GwG0TANSN-ChvaiM,2090
+prungo/interfaces.py,sha256=Xjm0sBaEumyqESI54XcB5UEoMhJTprMdiAMuiOnVOlA,445
+prungo/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prungo/utils.py,sha256=f_pAA9T0jCjmC6XEFNIDI_Un-pvKO-tNCetm8vo3D0U,2127
+prungo-1.0.6.dist-info/LICENSE,sha256=_ndXywQPnpJjIpNaLxgehIA1TP071Eb13ab1Reh7EA4,1497
+prungo-1.0.6.dist-info/METADATA,sha256=qVQ2KyluUX20pJ1ZrQ9JeK3r5d6ZTAKeoHbZJYyZBZw,797
+prungo-1.0.6.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+prungo-1.0.6.dist-info/RECORD,,
