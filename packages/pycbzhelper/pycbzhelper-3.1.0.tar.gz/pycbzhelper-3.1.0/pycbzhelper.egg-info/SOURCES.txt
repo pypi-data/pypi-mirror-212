@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pycbzhelper/__init__.py
+pycbzhelper/comicinfo.py
+pycbzhelper/exceptions.py
+pycbzhelper/helper.py
+pycbzhelper/utils.py
+pycbzhelper.egg-info/PKG-INFO
+pycbzhelper.egg-info/SOURCES.txt
+pycbzhelper.egg-info/dependency_links.txt
+pycbzhelper.egg-info/requires.txt
+pycbzhelper.egg-info/top_level.txt
