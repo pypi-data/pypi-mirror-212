@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: diffusion-webui
+Version: 2.5.0
+Summary: PyTorch implementation of Diffusion Models
+Home-page: https://github.com/kadirnar/diffusion-webui
+Author: kadirnar
+License: Open RAIL++-M
+Keywords: diffusion,stable diffusion,controlnet,webui,image2image,text2image,inpaint,canny,depth,hed,mlsd,pose,seg,scribble
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align="center">
+<h2>
+    Diffusion WebUI: Stable Diffusion + ControlNet + Inpaint
+</h2>
+<h4>
+    <img width="700" alt="teaser" src="doc/data/logo.png">
+<div>
+    <a href="https://pepy.tech/project/diffusion-webui"><img src="https://pepy.tech/badge/diffusion-webui" alt="downloads"></a>
+    <a href="https://badge.fury.io/py/diffusion-webui"><img src="https://badge.fury.io/py/diffusion-webui.svg" alt="pypi version"></a>
+    <a href="https://huggingface.co/spaces/ArtGAN/Stable-Diffusion-ControlNet-WebUI"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm.svg" alt="HuggingFace Spaces"></a>
+
+</div>
+</div>
+
+This repo is a Stable Diffusion + ControlNet + Inpaint WebUI implementation.
+
+### Installation
+```bash
+pip install diffusion-webui
+```
+### Usage
+```python
+from diffusion_webui import app
+
+app()
+```
