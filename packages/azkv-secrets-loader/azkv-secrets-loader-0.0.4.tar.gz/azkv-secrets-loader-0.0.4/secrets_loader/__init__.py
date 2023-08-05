@@ -1,0 +1,1 @@
+from .secrets_loader import load_secret
