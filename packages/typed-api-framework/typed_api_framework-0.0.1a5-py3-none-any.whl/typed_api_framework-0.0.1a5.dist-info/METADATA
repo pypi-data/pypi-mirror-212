@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: typed-api-framework
+Version: 0.0.1a5
+Summary: A lightweigt package for concisely defining an api.
+Home-page: https://github.com/Digital-Defiance/typed-api
+Author: Rui Filipe de Sousa Campos @ Digital Defiance
+Author-email: mail@ruicampos.org
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: starlette (>=0.27.0)
+Requires-Dist: pydantic (>=1.10.8)
+
+A lightweigt package for concisely defining an api.
