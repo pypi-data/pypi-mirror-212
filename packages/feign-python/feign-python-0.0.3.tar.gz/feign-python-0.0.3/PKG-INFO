@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: feign-python
+Version: 0.0.3
+Summary: feign python实现
+Home-page: https://github.com/openandopen/feign-python
+Author: 黑肱
+Author-email: zuiwoxing@qq.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
