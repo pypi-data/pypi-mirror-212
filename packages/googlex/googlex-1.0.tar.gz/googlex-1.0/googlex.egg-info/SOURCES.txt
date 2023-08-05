@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+googlex/__init__.py
+googlex/user_agents.py
+googlex.egg-info/PKG-INFO
+googlex.egg-info/SOURCES.txt
+googlex.egg-info/dependency_links.txt
+googlex.egg-info/requires.txt
+googlex.egg-info/top_level.txt
