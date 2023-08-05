@@ -1,0 +1,17 @@
+kevo/__init__.py,sha256=wZdilq_v7vugUAESwW8xkejATKGG_v2aMG7Q1xlZK2w,112
+kevo/remote.py,sha256=PynlTFOwBmSd9ryy9y6XCh18m9ze1REwP9DnpY9rVM8,7334
+kevo/common/__init__.py,sha256=dLqw30sG1iW-7y3TrCdlsMQZrNJWzDHUuNDeUIyI2TE,146
+kevo/common/bloomfilter.py,sha256=-oq4a9PKM3DBZgZEQZdnISr0nJ1xlkzS4YByVz2ghhE,2422
+kevo/common/fencepointers.py,sha256=yScqNvJUG0vkhQZsvz9rx3LMv8CxOi1xvvM06N9c68g,1880
+kevo/common/hashindex.py,sha256=cVfT1umE14WPMWWbjGr4Jqy-okxuNAdR2gsqHWSOVHk,6198
+kevo/common/ringbuffer.py,sha256=MkaKtNZlN4IQxTZekmL7wAaYJP7D4Up-jDeA1FoWBTs,1652
+kevo/engines/__init__.py,sha256=cS6lLDtcSjJCJr36RCaNHbuacxMM3NmbBS4rAM1MH5M,202
+kevo/engines/appendlog.py,sha256=qZphISC40d5UzOEczjA30on42Ysu4rVKWF8aGfpGCho,8539
+kevo/engines/hybridlog.py,sha256=XgBVE166y_8New3k7b0J19UhAGg2sQZLnuSrKS66XbM,10484
+kevo/engines/kvstore.py,sha256=cpoX4HXL2_3ip_cnNhLFk3Q-pJ69aEY6OYvObz9tV6Q,2692
+kevo/engines/lsmtree.py,sha256=aW1QRoePWMQrfzSnO_7-88CSbv44Y6Cmym2nUURxpj8,12586
+kevo/engines/memonly.py,sha256=KlrGUK1KxSTo_qm6UgZFHrW0Kipr-UhQnUZerDrdysY,2767
+kevo-0.0.0.dist-info/METADATA,sha256=H4v2Qrz11FLQ5TtnhnEW_R7U7PX7kjHE05X6WyKtO68,367
+kevo-0.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+kevo-0.0.0.dist-info/top_level.txt,sha256=sZ_IUj8AD02hOmOBnubP1NhEMY6_IsDS9WBOpIT9sdA,5
+kevo-0.0.0.dist-info/RECORD,,
