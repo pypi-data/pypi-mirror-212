@@ -1,0 +1,10 @@
+H: 512
+W: 512
+ddim_steps: 50
+max_generation_prompt_size: 512
+model_name: DreamShaper_5_beta2_noVae_half_pruned.ckpt
+num_images: 1
+sampler_name: plms
+scale: 7.5
+seed: -1
+skip_grid: true
