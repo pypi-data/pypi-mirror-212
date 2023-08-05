@@ -1,0 +1,12 @@
+get_eyedata/__init__.py,sha256=W4FBgth7iKFk03I0-XyzMklITKAdIKgfZDa7mt7yV8o,107
+get_eyedata/frame_utils.py,sha256=pQw3K43yuPM_1WFNQyXO-rILv1xWoMkN49jHnSyyzRY,1479
+get_eyedata/game_info.py,sha256=rbVFZx8NRecjk5fZDRHvdJlVrtkLXFKX3zUcqzGj9V4,1592
+get_eyedata/make_eyedataset.py,sha256=n-WmhMsP3BfztSm5yj-_GT2PtEHgNrJHZ4Vk5T1jsrY,1546
+get_eyedata/ow2.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+get_eyedata/save.py,sha256=dc778CgOeF_nz1571ESZ9y8L-yxs2Y59M0Iwg_QK7Fg,761
+get_eyedata/valo.py,sha256=2R5ppLlOEvfl0eI887rVZFEllDm0R6H_f7pLOPbjcT4,3569
+get_eyedata-1.1.0.dist-info/LICENCE,sha256=44r0hK-BnpFZTBiPxTYe52HFlT034sEPBfHrJyaNI0g,1091
+get_eyedata-1.1.0.dist-info/METADATA,sha256=1-33y2R_SeeX5-YP0whlspFIun_TYabC8990rLngOj4,2315
+get_eyedata-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+get_eyedata-1.1.0.dist-info/top_level.txt,sha256=zlueM7ZefajCSIgOyib56hk_6HWx15EsED6S68g0mWE,12
+get_eyedata-1.1.0.dist-info/RECORD,,
