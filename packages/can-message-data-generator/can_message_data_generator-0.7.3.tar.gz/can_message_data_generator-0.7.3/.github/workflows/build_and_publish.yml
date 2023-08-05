@@ -1,0 +1,270 @@
+name: Bulid and Publish
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+env:
+  PYTHON_VERSION: 3.7
+
+jobs:
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          architecture: x64
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Build Wheels -x86_64
+        uses: PyO3/maturin-action@v1
+        with:
+          target: x86_64
+          args: --release --out dist --sdist
+
+      - name: Install Built Wheel - x86_64
+        run: |
+          pip install can_message_data_generator --no-index --find-links dist --force-reinstall
+          python -c "import can_message_data_generator"
+
+      - name: Build Wheels - universal2
+        uses: PyO3/maturin-action@v1
+        with:
+          target: universal2-apple-darwin
+          args: --release --out dist
+
+      - name: Install Built Wheel - universal2
+        run: |
+          pip install can_message_data_generator --no-index --find-links dist --force-reinstall
+          python -c "import can_message_data_generator"
+
+      # Uploads to server to publish at the end
+      - name: Upload Wheels
+        uses: actions/upload-artifact@v3
+        with:
+          name: wheels
+          path: dist
+  
+  windows:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        target: [x64, x86]
+    steps:
+      - uses: actions/checkout@v3
+      
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          architecture: ${{ matrix.target }}
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Build Wheels
+        uses: PyO3/maturin-action@v1
+        with:
+          target: ${{ matrix.target }}
+          args: --release --out dist
+
+      - name: Install Built Wheel
+        run: |
+          python -m pip install can_message_data_generator --no-index --find-links dist --force-reinstall
+          python -c "import can_message_data_generator"
+      
+      # Uploads to server to publish at the end
+      - name: Upload Wheels
+        uses: actions/upload-artifact@v3
+        with:
+          name: wheels
+          path: dist
+
+  linux:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        target: [x86_64, i686]
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          architecture: x64
+      
+      - name: Get Linker for 32 bit Architecture
+        if: matrix.target == 'i686'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-multilib
+      
+      - name: Build Wheels
+        uses: PyO3/maturin-action@v1
+        with:
+          target: ${{ matrix.target }}
+          args: --release --out dist
+      
+      - name: Install Built Wheel
+        if: matrix.target == 'x86_64'
+        run: |
+          python -m pip install can_message_data_generator --no-index --find-links dist --force-reinstall
+          python -c "import can_message_data_generator"
+      
+      # Uploads to server to publish at the end
+      - name: Upload Wheels
+        uses: actions/upload-artifact@v3
+        with:
+          name: wheels
+          path: dist
+  
+  linux-cross:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        target: [aarch64, armv7, s390x, ppc64le, ppc64]
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Build Wheels
+        uses: PyO3/maturin-action@v1
+        with:
+          target: ${{ matrix.target }}
+          manylinux: auto
+          args: --release --out dist
+      
+      - uses: uraimo/run-on-arch-action@v2.5.0
+        if: matrix.target != 'ppc64'
+        name: Install Built Wheel
+        with:
+          arch: ${{ matrix.target }}
+          distro: ubuntu20.04
+          githubToken: ${{ github.token }}
+          install: |
+            apt-get update
+            apt-get install -y --no-install-recommends python3 python3-pip
+            pip3 install -U pip
+          run: |
+            pip3 install can_message_data_generator --no-index --find-links dist --force-reinstall
+            python3 -c "import can_message_data_generator"
+
+      - name: Upload Wheels
+        uses: actions/upload-artifact@v3
+        with:
+          name: wheels
+          path: dist
+
+  musllinux:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        target:
+          - x86_64-unknown-linux-musl
+          - i686-unknown-linux-musl
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        architecture: x64
+
+    - name: Build Wheels
+      uses: PyO3/maturin-action@v1
+      with:
+        target: ${{ matrix.target }}
+        manylinux: musllinux_1_2
+        args: --release --out dist
+
+    - name: Install Built Wheel
+      if: matrix.target == 'x86_64-unknown-linux-musl'
+      uses: addnab/docker-run-action@v3
+      with:
+        image: alpine:latest
+        options: -v ${{ github.workspace }}:/io -w /io
+        run: |
+          apk add py3-pip
+          pip3 install -U pip
+          pip3 install can_message_data_generator --no-index --find-links /io/dist/ --force-reinstall
+          python3 -c "import can_message_data_generator"
+
+    - name: Upload Wheels
+      uses: actions/upload-artifact@v3
+      with:
+        name: wheels
+        path: dist
+
+  musllinux-cross:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        platform:
+          - target: aarch64-unknown-linux-musl
+            arch: aarch64
+          - target: armv7-unknown-linux-musleabihf
+            arch: armv7
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+
+    - name: Build Wheels
+      uses: PyO3/maturin-action@v1
+      with:
+        target: ${{ matrix.platform.target }}
+        manylinux: musllinux_1_2
+        args: --release --out dist
+
+    - uses: uraimo/run-on-arch-action@v2.5.0
+      name: Install Built Wheel
+      with:
+        arch: ${{ matrix.platform.arch }}
+        distro: alpine_latest
+        githubToken: ${{ github.token }}
+        install: |
+          apk add py3-pip
+          pip3 install -U pip
+        run: |
+          pip3 install can_message_data_generator --no-index --find-links dist --force-reinstall
+          python3 -c "import can_message_data_generator"
+
+    - name: Upload Wheels
+      uses: actions/upload-artifact@v3
+      with:
+        name: wheels
+        path: dist
+
+  release:
+    environment: production
+    name: Release
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    needs: [linux, macos, windows, musllinux, linux-cross, musllinux-cross]
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: wheels
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Publish to PyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        run: |
+          python -m pip install twine
+          python -m twine upload --skip-existing *
