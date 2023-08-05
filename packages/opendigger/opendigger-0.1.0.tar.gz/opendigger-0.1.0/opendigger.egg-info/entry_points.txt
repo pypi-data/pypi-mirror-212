@@ -1,0 +1,2 @@
+[console_scripts]
+opendigger = opendigger.opendigger:main
