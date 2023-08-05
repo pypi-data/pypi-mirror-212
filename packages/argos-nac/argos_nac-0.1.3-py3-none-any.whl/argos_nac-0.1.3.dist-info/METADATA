@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: argos-nac
+Version: 0.1.3
+License: MIT
+Author-email: Dominic Walther <dominic.walther@ost.ch>,Dejan Jovicic <dejan.jovicic@ost.ch>
+Requires-Python: >=3.10
+Requires-Dist: jinja2>=3.1.2
+Requires-Dist: nornir-napalm>=0.3.0
+Requires-Dist: nornir-utils>=0.2.0
+Requires-Dist: nornir>=3.3.0
+Requires-Dist: pydantic>=1.10.7
+Requires-Dist: pynetbox>=7.0.1
+Requires-Dist: semver>=3.0.0
+Requires-Dist: setuptools>=67.6.0
+Requires-Dist: sgqlc>=16.1
+Description-Content-Type: text/markdown
+
+# Argos-NAC
+Network Automation Controller intended to be used in conjunction with [argos-netbox](https://pypi.org/project/argos-netbox/).
+
+## Supported devices
+### Cisco
+

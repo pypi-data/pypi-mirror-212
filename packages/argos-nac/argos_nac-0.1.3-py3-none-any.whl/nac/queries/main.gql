@@ -1,0 +1,141 @@
+fragment FullVRFQuery on VRFType {
+    id
+    name
+    rd
+    import_targets {
+        id
+        name
+    }
+    export_targets {
+        id
+        name
+    }
+    tenant {
+        id
+        name
+    }
+}
+
+fragment DeviceTypeQuery on DeviceTypeType {
+    manufacturer {
+        id
+        slug
+    }
+}
+
+fragment FullInterfaceQuery on InterfaceType {
+    id
+    name
+    mode
+    mgmt_only
+    ip_addresses {
+        id
+        address
+        vrf {
+            id
+        }
+    }
+    vrf {
+        id
+    }
+}
+
+fragment LDPQuery on LDP_Type {
+    id
+    auto_range
+    label_start
+    label_end
+    ldp_enabled_interfaces{
+        id
+    }
+}
+
+fragment BGPMeshQuery on BGP_Mesh_Type {
+    id
+    bgp_mesh {
+        id
+        update_source_interface {
+            id
+        }
+        asn {
+            id
+            asn
+        }
+    }
+    address_family{
+        ...Address_Family_Query
+    }
+}
+
+fragment Address_Family_Query on Address_Family_Type {
+    id
+    vpnv4_address_family
+    vpnv4_community
+    vpnv6_address_family
+    vpnv6_community
+}
+
+fragment BGP_CE_Query on BGP_CE_Type {
+    id
+    ip_addresses {
+        id
+        address
+        vrf {
+            id
+        }
+    }
+    asn {
+        id
+        asn
+    }
+}
+
+fragment BGP_PE_Query on BGP_PE_Type {
+    id
+    update_source_interface {
+        id
+    }
+    asn {
+        id
+        asn
+    }
+    advertised_customers {
+        ...BGP_CE_Query
+    }
+    bgp_mesh {
+        id
+    }
+}
+
+query {
+    # Prerequisites
+    interface_list(site_id: "{{ site_id }}") {
+        ...FullInterfaceQuery
+    }
+    vrf_list {
+        ...FullVRFQuery
+    }
+    bgp_mesh_list {
+        ...BGPMeshQuery
+    }
+    # Main query
+    site(id: {{ site_id }}) {
+        id
+        devices {
+            id
+            name
+            device_type {
+                ...DeviceTypeQuery
+            }
+            interfaces {
+                id
+            }
+            ldp {
+                ...LDPQuery
+            }
+            bgp_pe {
+                ...BGP_PE_Query
+            }
+        }
+    }
+}

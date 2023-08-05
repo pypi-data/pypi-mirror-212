@@ -1,0 +1,3 @@
+[console_scripts]
+argos-deploy=nac.__main__:run
+
