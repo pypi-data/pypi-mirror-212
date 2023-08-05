@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: airtable-view-fetcher
+Version: 0.2.0
+Summary: Tool to scrape data from an Airtable shared view
+Home-page: https://github.com/vartur/airtable_view_fetcher
+Author: Vincent Artur
+Author-email: 6145191+vartur@users.noreply.github.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pytz
+
+Tool to scrape data from an Airtable shared view
