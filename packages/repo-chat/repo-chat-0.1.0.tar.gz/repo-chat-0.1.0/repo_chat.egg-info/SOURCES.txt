@@ -1,0 +1,7 @@
+README.md
+setup.py
+repo_chat.egg-info/PKG-INFO
+repo_chat.egg-info/SOURCES.txt
+repo_chat.egg-info/dependency_links.txt
+repo_chat.egg-info/requires.txt
+repo_chat.egg-info/top_level.txt
