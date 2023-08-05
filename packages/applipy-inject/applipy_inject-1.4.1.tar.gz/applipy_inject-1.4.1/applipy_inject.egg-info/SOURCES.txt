@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+applipy_inject/__init__.py
+applipy_inject/inject.py
+applipy_inject/py.typed
+applipy_inject/version.py
+applipy_inject.egg-info/PKG-INFO
+applipy_inject.egg-info/SOURCES.txt
+applipy_inject.egg-info/dependency_links.txt
+applipy_inject.egg-info/top_level.txt
