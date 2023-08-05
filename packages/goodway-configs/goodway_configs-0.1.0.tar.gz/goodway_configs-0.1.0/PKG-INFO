@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: goodway-configs
+Version: 0.1.0
+Summary: configs in a good way
+Home-page: https://github.com/mahs4d/goodway-config
+License: MIT
+Keywords: goodway,config
+Author: Mahdi Sadeghi
+Author-email: mahdi74sadeghi@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: etcd-loader
+Provides-Extra: yaml-loader
+Requires-Dist: httpx (>=0.24.1,<0.25.0) ; extra == "etcd-loader"
+Requires-Dist: pyyaml (>=6.0,<7.0) ; extra == "yaml-loader"
+Project-URL: Documentation, https://goodway-config.mahs4d.com
+Description-Content-Type: text/markdown
+
+# Goodway Configs
+
+This library contains utilities to work with configs in a good way.
+
+## Installation
+
+`pip install goodway-configs`
+
+## Getting Started
+
+The following code uses `MultiConfigLoader` and `JsonConfigLoader` to combine two config files together.
+
+```python
+from pathlib import Path
+
+from goodway_configs.config_loader.json_loader import JsonConfigLoader
+from goodway_configs.config_loader.multi_loader import MultiConfigLoader
+
+loader = MultiConfigLoader(config_loaders=[
+    JsonConfigLoader(file_path=Path('./config1.json')),
+    JsonConfigLoader(file_path=Path('./config2.json')),
+])
+
+config = await loader.load_config()
+```
+
+## Documentation
+
+Documentation can be found [here](https://mahs4d.github.io/goodway-configs/).
+
