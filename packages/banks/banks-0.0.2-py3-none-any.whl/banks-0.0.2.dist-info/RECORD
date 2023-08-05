@@ -1,0 +1,16 @@
+banks/__about__.py,sha256=F6X6SQdApsiOLMtrB4Lw6Vh0uPwo8FDiMjQ4O9S0xNc,132
+banks/__init__.py,sha256=XhOAT0iPWwwapUqX6ljQDlFXLCpCGCcIx9YibIUa7no,137
+banks/env.py,sha256=TIVElrz_NzK3TgUqkXJLQIcVLlkmYxL8KP8pr5YvpjQ,585
+banks/prompt.py,sha256=fGu50tNyhi1lQTyAUbcR9-FQkuEUL0GSHPpxuAGfP9M,600
+banks/extensions/__init__.py,sha256=k68JHQtnOdi8hMzt1oHdDm8Bg9DW74jrlHBnachJ1lE,150
+banks/extensions/generate.py,sha256=ReBFMdu4cL1hqCHzGyhKDAC5b7ZMSQtACmjE5cWxi7M,1340
+banks/filters/__init__.py,sha256=rIjJ3QSgCHfp4tGXeH4WS6HXkwEA8fNFHfD5YpgjAH4,143
+banks/filters/lemmatize.py,sha256=p5w8ATkaCKtkIVWA5skkKRILk5O_rI0ww6r8I92SJjM,250
+banks/templates/blog.jinja,sha256=h91eb1nuWH1ayRwGVSZ55XlwZa83o6OGHfRnpWjekow,120
+banks/templates/generate_tweet.jinja,sha256=fnKFv9jZLayHK9ESJEaecG54uuRjvxqjvLv6TJWNfj0,331
+banks/templates/summarize.jinja,sha256=T_CvXq6rn4G2qvgjkB0FPGESyenOGpFv0V_UDpNprEI,103
+banks/templates/summarize_lemma.jinja,sha256=sCn8-3Gy5pBwUmQEud3em3xZ2KnbeIn2SyPmHuyaPXc,69
+banks-0.0.2.dist-info/METADATA,sha256=c5yF9j0IIx807wEUqitp0I3yACv36RjYQL0ZKeXVFdo,6225
+banks-0.0.2.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+banks-0.0.2.dist-info/licenses/LICENSE.txt,sha256=NZJne_JTwMFwq_g-kq-sm4PuaeVOgu1l3NUGOgBHX-g,1102
+banks-0.0.2.dist-info/RECORD,,
