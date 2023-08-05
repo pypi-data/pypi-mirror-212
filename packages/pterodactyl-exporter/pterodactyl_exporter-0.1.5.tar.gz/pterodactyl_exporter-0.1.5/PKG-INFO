@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pterodactyl_exporter
+Version: 0.1.5
+Summary: Metrics exporter for Pterodactyl
+Home-page: https://github.com/LOENS2/pterodactyl_exporter
+Author: LOENS2
+Author-email: info@loens2.com
+License: MIT
+License-File: LICENSE
