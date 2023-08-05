@@ -1,0 +1,187 @@
+Metadata-Version: 2.1
+Name: genetikaplusIO
+Version: 0.0.6
+Summary: IO for database
+Author: Alon Ben Zion
+Author-email: alon@genetikaplus.com
+License: MIT License
+        
+        Permission is hereby granted, free of charge, to any person obtaining
+        a copy of this software and associated documentation files (the
+        "Software"), to deal in the Software without restriction, including
+        without limitation the rights to use, copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to
+        the following conditions:
+        
+        The above copyright notice and this permission notice shall be
+        included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+        LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+        OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+        WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: contourpy (==1.0.7)
+Requires-Dist: cycler (==0.11.0)
+Requires-Dist: et-xmlfile (==1.1.0)
+Requires-Dist: fonttools (==4.39.4)
+Requires-Dist: greenlet (==2.0.2)
+Requires-Dist: kiwisolver (==1.4.4)
+Requires-Dist: matplotlib (==3.7.1)
+Requires-Dist: numpy (>=1.24.3)
+Requires-Dist: openpyxl (==3.1.2)
+Requires-Dist: packaging (==23.1)
+Requires-Dist: pandas (==2.0.2)
+Requires-Dist: psycopg2-binary (==2.9.6)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: python-dotenv (==1.0.0)
+Requires-Dist: setuptools (==67.8.0)
+Requires-Dist: sqlalchemy (==2.0.15)
+Requires-Dist: typing-extensions (==4.6.2)
+Requires-Dist: wheel (==0.38.4)
+
+# **GPIO Package**
+
+The GPIO package is a Python package that provides functionality for managing input/output operations related to
+Postgres databases and file storage.
+It consists of three modules: dgp_db_io, gp_storage_io, gp_sqlconnection.
+Before you download this package you need to have an env file in your root directory
+
+## **Installation**
+
+To install the genetikaplusIO package, you can use pip:
+
+`pip install genetikaplusIO`
+
+To install 
+## Modules
+
+### gp_db_io
+
+The gp_db_io module provides functions for interacting with Postgres databases.
+
+#### Usage
+```
+import gp_db_io
+
+# Read sqlQuery to a pandas dataframe
+df = db.dbReadQuery(query: str, database: str = "gbase", **kwargs)
+
+# Execute query
+db.dbExecuteQuery(query, database)
+
+db.dbExecuteReturn(query, database)
+
+# Get list of schemas
+schemas = db.dbListSchemas(database)
+
+# Get list of tables in a specific schema
+tables_list = db.dbListTables(schema, database)
+
+# Read table
+table = db.dbReadTable(tableName, schema, database, index_col)
+
+db.dbExistsTable(tableName,schema,database)
+
+# Creating a new schema
+db.dbCreateSchema(newSchemaName, database)
+
+# Delete an existing schema
+db.dbDeleteSchema(schema, database)
+
+# Delete an existing table
+db.dbRemoveTable(tableName, schema, database)
+
+# Creating a new table/Appending to an existing table 
+db.dbWriteTable(df,
+                tableName,
+                override,
+                schema,
+                append,
+                database,
+                **kwargs
+                )
+
+# Append partial columns to a table
+db.dbAppendTablePartialColumns(df,
+                               tableName,
+                               schema,
+                               database,
+                               append,
+                               row_names,
+                               row_names_label,
+                               **kwargs)
+
+# Disconnect sqlconnection
+db.dbDisconnect(connection)
+```
+## gp_storage_io
+The gp_storage_io module provides functions for interacting with file storage.
+## Usage
+```
+import gp_storage_io
+
+# Check existent of a file
+bool = storage.is_file_exist(filname: str)
+
+# Reformat path so it will fit the loacal computer
+format = storage.format_file_path(filename: str)
+ 
+ # Read csv file to a pandas data frame 
+df = storage.read_csv(filename: str, header=True, **kwargs)
+
+# Read xlsx file to a pandas data frame
+df = storage.read_excel(filename, **kwargs)
+
+# List all files in a givven directory path
+list = storage.list_files(path: str)
+
+# Save a figure
+storage.ggsave(fig: matplotlib.figure.Figure, path: str, format: str = "png", **kwargs)
+
+# Write the data frame as an xlsx file 
+storage.write_xlsx(df: pd.DataFrame, path: str, **kwargs)
+
+# Right the data frame as a csv file
+storage.write_csv(df: pd.DataFrame, path: str, **kwargs)
+
+```
+### gp_sqlconnection
+
+The gp_sqlconnection module provides direct connection with sql to perform more specific queries that db does not provide.
+
+#### Usage
+```
+# Returns a new connection object
+connection = make_connection(database)
+
+# Returns a nwe connection for using pandas specifically
+pandas_connection = make_pandas_connection(database)
+
+# Execute query and return a value if return_value=True
+optional_value = execute_query(connection, query, return_value)
+
+# Creates engine object for some functions that needs it, like pd.to_sql()
+engine = create_engine_for_pd(database)
+```
+
+## Contributing
+
+Contributions to the GPIO package are welcome! If you find any issues or have suggestions for improvements,
+please contact through the email below
+
+## License
+
+The GPIO package is released under the MIT License. See the LICENSE file for more details.
+
+## Contact
+
+alon@genetikaplus.com
+
