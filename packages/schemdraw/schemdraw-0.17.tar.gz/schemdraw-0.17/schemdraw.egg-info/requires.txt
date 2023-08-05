@@ -1,0 +1,8 @@
+
+[matplotlib]
+matplotlib>=3.4
+
+[svgmath]
+ziafont>=0.6
+ziamath>=0.8.1
+latex2mathml
