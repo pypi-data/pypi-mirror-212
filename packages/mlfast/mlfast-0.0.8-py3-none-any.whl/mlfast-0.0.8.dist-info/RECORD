@@ -1,0 +1,12 @@
+mlfast/Chatbot.py,sha256=e_Dbna-vjurWnDQicm5klmLuhyXnhwwXV3euQudPXA8,1572
+mlfast/Classification.py,sha256=USPKHxkgtY0NWMRw6_nawvo5XLoDrMXy5GZrSgPgNIU,3058
+mlfast/Regression.py,sha256=F4JEVrmkt-ttrRHOIwhLTwi4BFzA9NRLggnnXlrISiY,3162
+mlfast/Text_preprocessing.py,sha256=sHBSFRc6QsmJFJLUnb3h4c-cDyKVIYDMLlpQv3z9AbU,2537
+mlfast/__init__.py,sha256=vXuXG7cBuaAor13RwTan5cSDMoYJQrch_cadOKVrSKc,181
+mlfast/custom_exception.py,sha256=L-yQP8VeCkflhxsW1JcL0Smzs2KPcNb5Y2ztPOOvuZQ,169
+mlfast/logger.py,sha256=BpKdlPeuXkoXMb1xhjfpQRwiZkShtUbwdK0DVSBkS48,437
+mlfast-0.0.8.dist-info/LICENSE,sha256=3fTQHb-zI2TX4j0B9gYxM0Ri0E2K8ZvXyfp2HzjBwts,1069
+mlfast-0.0.8.dist-info/METADATA,sha256=o2j3aoKDg9xeCUZAt--js8_UXBxbF_9Ey7Qws2yJOPA,1751
+mlfast-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mlfast-0.0.8.dist-info/top_level.txt,sha256=Jri-qi3w89ir_akmenI1QWNdtgImr34ZS3enntvoe7s,7
+mlfast-0.0.8.dist-info/RECORD,,
