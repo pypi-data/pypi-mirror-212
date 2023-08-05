@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+elonmusk.egg-info/PKG-INFO
+elonmusk.egg-info/SOURCES.txt
+elonmusk.egg-info/dependency_links.txt
+elonmusk.egg-info/top_level.txt
