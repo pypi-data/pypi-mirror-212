@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/gamer3514/__init__.py
+src/gamer3514/api.py
+src/gamer3514/utils.py
+src/gamer3514.egg-info/PKG-INFO
+src/gamer3514.egg-info/SOURCES.txt
+src/gamer3514.egg-info/dependency_links.txt
+src/gamer3514.egg-info/top_level.txt
