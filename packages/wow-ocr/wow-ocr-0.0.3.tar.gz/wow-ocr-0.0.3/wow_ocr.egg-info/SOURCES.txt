@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+wow_ocr/__init__.py
+wow_ocr/detector.py
+wow_ocr/pipeline.py
+wow_ocr/recognizer.py
+wow_ocr/tools.py
+wow_ocr.egg-info/PKG-INFO
+wow_ocr.egg-info/SOURCES.txt
+wow_ocr.egg-info/dependency_links.txt
+wow_ocr.egg-info/requires.txt
+wow_ocr.egg-info/top_level.txt

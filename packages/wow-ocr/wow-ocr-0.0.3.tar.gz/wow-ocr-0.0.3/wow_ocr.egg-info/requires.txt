@@ -1,0 +1,17 @@
+validators
+essential_generators
+tqdm
+imgaug
+fonttools
+editdistance
+pyclipper
+shapely
+efficientnet
+tensorflow
+
+[dev]
+black
+pip-tools
+pytest
+types-requests
+types-pkg-resources
