@@ -1,0 +1,7 @@
+setup.py
+kkk3.egg-info/PKG-INFO
+kkk3.egg-info/SOURCES.txt
+kkk3.egg-info/dependency_links.txt
+kkk3.egg-info/entry_points.txt
+kkk3.egg-info/requires.txt
+kkk3.egg-info/top_level.txt
