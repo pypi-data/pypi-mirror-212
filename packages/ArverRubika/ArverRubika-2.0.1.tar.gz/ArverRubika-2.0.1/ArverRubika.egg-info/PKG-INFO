@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ArverRubika
+Version: 2.0.1
+Summary: Coding the robot in Rubika in the easiest way !
+Author: Aboli Coder
+Author-email: mirzaiabolfazl6@gmail.com
+Keywords: python,rubel,Rubika,ArverRubika,robika,robot,ArseinRubika,arsein,arver,Arver,pyrubi
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+a simple module for creating & coding a robika platform bot
+
+easy to work
+
+install :
+       1 open cmd 
+       2 write  git install ArverRubika
+       3 use in project by import
+
+creator : Aboli Coder 
+devops : Ilia.Django 
+
