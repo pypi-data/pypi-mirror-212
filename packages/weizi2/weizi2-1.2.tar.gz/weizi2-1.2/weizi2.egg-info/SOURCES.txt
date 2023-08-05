@@ -1,0 +1,7 @@
+setup.py
+weizi2.egg-info/PKG-INFO
+weizi2.egg-info/SOURCES.txt
+weizi2.egg-info/dependency_links.txt
+weizi2.egg-info/entry_points.txt
+weizi2.egg-info/requires.txt
+weizi2.egg-info/top_level.txt
