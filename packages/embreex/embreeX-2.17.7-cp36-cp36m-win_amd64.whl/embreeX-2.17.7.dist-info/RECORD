@@ -1,0 +1,17 @@
+embreeX-2.17.7.dist-info/AUTHORS,sha256=YKOj-QX4b7Xt7n0i8Vu0RocyS5pCXoFIAXhiCLV9JdU,238
+embreeX-2.17.7.dist-info/DELVEWHEEL,sha256=fjSkCmQP0mXf_Q6ASkONPDDAww26KWnIS196END1stI,448
+embreeX-2.17.7.dist-info/LICENSE,sha256=jHKQqjQeBLEURACxGrahlkXqgW1IQ-aF1OF5yvvh4PA,1323
+embreeX-2.17.7.dist-info/METADATA,sha256=ZFLyQW05EpFyL5TbHcBnkKwNk0XaG-2t6WeVPgYCsdo,734
+embreeX-2.17.7.dist-info/RECORD,,
+embreeX-2.17.7.dist-info/top_level.txt,sha256=p-Cczvc4sP1B6gKiIOFTxZADigbzEZO9wz0X2nMvYP8,9
+embreeX-2.17.7.dist-info/WHEEL,sha256=zukbZftcRdNfJ55Q_RYV9JZ3uVyqWKyq-wDJbmszs_U,101
+embreeX.libs/.load-order-embreeX-2.17.7,sha256=nGdGvmF3FQ4W4DfJ3HspysBKM_xVr2BOgfgj1AiS7e4,115
+embreeX.libs/embree-9e7e3e9f5c66e293ceeab4154c959b4a.dll,sha256=3o7g484UP2pidLdULu9BJOEP6v0C4mcujS_Faq3gvq4,30010880
+embreeX.libs/msvcp120.dll,sha256=kvrt0Yop4b0t0nodgF6lqj5zuVSmJa9Fp09J1JUG0g8,659616
+embreeX.libs/msvcr120.dll,sha256=0ox6s0hCthSWCb1Oa1Zt2ri4kfDVBiSAolPvIKaiyqo,963240
+embreeX.libs/tbb-1fbd8af523d0b69bfef8045b55001dee.dll,sha256=EJKt_uyYwjpQIbKH-jWDnd0_KXQaQIDIzK-P2V0uXFI,394992
+pyembree/mesh_construction.cp36-win_amd64.pyd,sha256=V96CI2TBRnKRLs-ARoZoXrcxxbVml3RdR2yFqzXtsTo,60928
+pyembree/rtcore.cp36-win_amd64.pyd,sha256=-wqFxykcdEz82XTYqXs4-AzLj_ud3oAovKxRA4mTihI,45568
+pyembree/rtcore_scene.cp36-win_amd64.pyd,sha256=vWh3T5dexBF40qHFQetrIB-rEK4wxGZPEsYgOxvunys,81408
+pyembree/triangles.cp36-win_amd64.pyd,sha256=GWuio7QU2byrLVH_Wnj-IUK9MuIb4ZhA75icB-fZMnE,25600
+pyembree/__init__.py,sha256=Y3N2sctJ-vq-N-DvlqYnCCTV-JNKI2e4t3b4urc-CzI,1314
