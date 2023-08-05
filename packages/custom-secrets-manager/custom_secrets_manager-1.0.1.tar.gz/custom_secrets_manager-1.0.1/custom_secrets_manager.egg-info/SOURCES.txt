@@ -1,0 +1,11 @@
+README.md
+setup.py
+custom_secrets_manager/__init__.py
+custom_secrets_manager/secrets_loader.py
+custom_secrets_manager/starter_process.py
+custom_secrets_manager.egg-info/PKG-INFO
+custom_secrets_manager.egg-info/SOURCES.txt
+custom_secrets_manager.egg-info/dependency_links.txt
+custom_secrets_manager.egg-info/entry_points.txt
+custom_secrets_manager.egg-info/requires.txt
+custom_secrets_manager.egg-info/top_level.txt
