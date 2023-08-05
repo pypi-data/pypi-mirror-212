@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: shaggy
+Version: 1.0.6
+Summary: Discover and connect with social media accounts across multiple platforms using just a username with SocialTrackr, the ultimate account hunting software.
+Home-page: https://github.com/mauro-balades/shaggy
+Author: Mauro Baladés
+Author-email: mauro.balades@tutanota.com
+License: MIT
+Description: # Shaggy
+        
+        Discover and connect with social media accounts across multiple platforms using just a username with SocialTrackr, the ultimate account hunting software.
+        
+        As you know sherlock's devs don't really care about the **important** websites, so we came and cut the **bs** to make your lifes easier. May the [shaggy](https://www.youtube.com/watch?v=6qQJvUfBDOQ) supremacy beggin.
+        
+        ~ **Sherlock, but better**
+        
+        ```
+        
+        ░░░░░░░░░░░░░░░░▄▄█▀▀██▄▄░░░░░░░
+        ░░░░░░░░░░░░░▄█▀▀░░░░░░░▀█░░░░░░
+        ░░░░░░░░░░░▄▀░░░░░░░░░░░░░█░░░░░
+        ░░░░░░░░░▄█░░░░░░░░░░░░░░░█░░░░░
+        ░░░░░░░██▀░░░░░░░▄▄▄░░▄░█▄█▄░░░░
+        ░░░░░▄▀░░░░░░░░░░████░█▄██░▀▄░░░
+        ░░░░█▀░░░░░░░░▄▄██▀░░█████░██░░░
+        ░░░█▀░░░░░░░░░▀█░▀█▀█▀▀▄██▄█▀░░░
+        ░░░██░░░░░░░░░░█░░█░█░░▀▀▄█▀░░░░
+        ░░░░█░░░░░█░░░▀█░░░░▄░░░░░▄█░░░░
+        ░░░░▀█░░░░███▄░█░░░░░░▄▄▄▄█▀█▄░░
+        ░░░░░▀██░░█▄▀▀██░░░░░░░░▄▄█░░▀▄░
+        ░░░░░░▀▀█▄░▀▄▄░▄░░░░░░░███▀░░▄██
+        ░░░░░░░░░▀▀▀███▀█▄░░░░░█▀░▀░░░▀█
+        ░░░░░░░░░░░░▄▀░░░▀█▄░░░░░▄▄░░▄█▀
+        ░░░▄▄▄▀▀▀▀▀█▀░░░░░█▄▀▄▄▄▄▄▄█▀▀░░
+        ░▄█░░░▄██▀░░░░░░░░░█▄░░░░░░░░░░░
+        █▀▀░▄█░░░░░░░░░░░░░░▀▀█▄░░░░░░░░
+        █░░░█░░░░░░░░░░░░░░░░░░█▄░░░░░░░
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown

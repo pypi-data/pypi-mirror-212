@@ -1,0 +1,12 @@
+README.md
+setup.py
+shaggy/__init__.py
+shaggy/hunt.py
+shaggy/output.py
+shaggy/sources.py
+shaggy.egg-info/PKG-INFO
+shaggy.egg-info/SOURCES.txt
+shaggy.egg-info/dependency_links.txt
+shaggy.egg-info/entry_points.txt
+shaggy.egg-info/requires.txt
+shaggy.egg-info/top_level.txt
