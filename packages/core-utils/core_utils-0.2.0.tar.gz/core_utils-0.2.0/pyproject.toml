@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "core-utils"
+version = "0.2.0"
+description = "A repository for core Python utilities"
+authors = ["Sean O'Leary <seamicole@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "core"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
