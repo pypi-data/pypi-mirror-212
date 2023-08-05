@@ -1,0 +1,8 @@
+README.md
+setup.py
+FileKit/File.py
+FileKit/__init__.py
+FileKit.egg-info/PKG-INFO
+FileKit.egg-info/SOURCES.txt
+FileKit.egg-info/dependency_links.txt
+FileKit.egg-info/top_level.txt
