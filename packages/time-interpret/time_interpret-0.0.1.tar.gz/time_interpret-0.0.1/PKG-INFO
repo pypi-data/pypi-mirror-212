@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: time_interpret
+Version: 0.0.1
+Summary: Time interpret library for PyTorch.
+Keywords: deep-learning,pytorch,captum,explainable-ai,time-series
+Author-email: Joseph Enguehard <joseph@skippr.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: captum
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pytorch-lightning
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: torch
+Requires-Dist: captum ; extra == "full"
+Requires-Dist: numpy ; extra == "full"
+Requires-Dist: pandas ; extra == "full"
+Requires-Dist: pytorch-lightning ; extra == "full"
+Requires-Dist: scikit-learn ; extra == "full"
+Requires-Dist: scipy ; extra == "full"
+Requires-Dist: torch ; extra == "full"
+Requires-Dist: fasttext ; extra == "full"
+Requires-Dist: google ; extra == "full"
+Requires-Dist: jupyter ; extra == "full"
+Requires-Dist: optuna ; extra == "full"
+Requires-Dist: pandarallel ; extra == "full"
+Requires-Dist: psycopg2 ; extra == "full"
+Requires-Dist: scikit-image ; extra == "full"
+Requires-Dist: statsmodels ; extra == "full"
+Requires-Dist: tick ; extra == "full"
+Requires-Dist: torchmetrics ; extra == "full"
+Requires-Dist: torchvision ; extra == "full"
+Requires-Dist: tqdm ; extra == "full"
+Requires-Dist: transformers ; extra == "full"
+Requires-Dist: huggingface_hub ; extra == "full"
+Requires-Dist: pytest ; extra == "full"
+Requires-Dist: pytest-cov ; extra == "full"
+Requires-Dist: pytest-mock ; extra == "full"
+Requires-Dist: fasttext ; extra == "graphgym"
+Requires-Dist: google ; extra == "graphgym"
+Requires-Dist: jupyter ; extra == "graphgym"
+Requires-Dist: optuna ; extra == "graphgym"
+Requires-Dist: pandarallel ; extra == "graphgym"
+Requires-Dist: psycopg2 ; extra == "graphgym"
+Requires-Dist: scikit-image ; extra == "graphgym"
+Requires-Dist: statsmodels ; extra == "graphgym"
+Requires-Dist: tick ; extra == "graphgym"
+Requires-Dist: torchmetrics ; extra == "graphgym"
+Requires-Dist: torchvision ; extra == "graphgym"
+Requires-Dist: tqdm ; extra == "graphgym"
+Requires-Dist: transformers ; extra == "graphgym"
+Requires-Dist: huggingface_hub ; extra == "modelhub"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-mock ; extra == "test"
+Project-URL: documentation, https://josephenguehard.github.io/time_interpret
+Project-URL: homepage, https://github.com/josephenguehard/time_interpret
+Provides-Extra: full
+Provides-Extra: graphgym
+Provides-Extra: modelhub
+Provides-Extra: test
+
+# Time Interpret
+
+This package contains several baseline datasets and models for neural networks 
+interpretation in time. Please see the documentation and examples for more 
+details.
+
+## Install
+
+Time Interpret In can be installed with pip:
+
+```shell script
+pip install time_interpret
+```
+
+or from source with conda:
+
+```shell script
+git clone git@github.com:babylonhealth/time_interpret.git
+cd time_interpret
+conda env create
+source activate tint
+pip install --no-deps -e .
+```
+
+
+## Quick-start
+
+To be added.
+
