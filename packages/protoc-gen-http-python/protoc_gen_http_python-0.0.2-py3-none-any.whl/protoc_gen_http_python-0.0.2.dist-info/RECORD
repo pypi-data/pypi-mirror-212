@@ -1,0 +1,11 @@
+protoc_gen_http_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protoc_gen_http_python/http.py,sha256=r18YUHvBnMBEt4teoiozZiH_cDHM3LEv4V_wNI4rqxE,7008
+protoc_gen_http_python/main.py,sha256=AF3lhzg_3HsubN2ExZYrPeZ-dKzT_85n01Ilk_sVrZA,952
+protoc_gen_http_python/template.py,sha256=4BBomDa_5uMhsALlz3lF2t3zQ475jYrucp9oPN57c80,4247
+protoc_gen_http_python/util.py,sha256=uJ6yPw3X4QNw8o9OFhpcdhQd23y681mjtAefHHwK3mM,688
+protoc_gen_http_python-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+protoc_gen_http_python-0.0.2.dist-info/METADATA,sha256=uNrp0GyhHVh560uO8i7cLBkPTtnEo5L5hy7Okkd2RIM,495
+protoc_gen_http_python-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+protoc_gen_http_python-0.0.2.dist-info/entry_points.txt,sha256=NhGgREmeCzfi_3n81KNxHUHQ9wXa0pPKZIKLdDr3i1w,76
+protoc_gen_http_python-0.0.2.dist-info/top_level.txt,sha256=nLRSViUlcCpKj02MpsM9KMizsBEzjuiMQjhz07aMA-4,23
+protoc_gen_http_python-0.0.2.dist-info/RECORD,,
