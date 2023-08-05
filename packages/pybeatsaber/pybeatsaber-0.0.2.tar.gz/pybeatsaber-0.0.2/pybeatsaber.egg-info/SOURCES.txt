@@ -1,0 +1,9 @@
+README.md
+setup.py
+pybeatsaber/__init__.py
+pybeatsaber/datatype.py
+pybeatsaber/utils.py
+pybeatsaber.egg-info/PKG-INFO
+pybeatsaber.egg-info/SOURCES.txt
+pybeatsaber.egg-info/dependency_links.txt
+pybeatsaber.egg-info/top_level.txt
