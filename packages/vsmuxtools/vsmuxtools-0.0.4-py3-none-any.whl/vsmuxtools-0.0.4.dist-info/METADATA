@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: vsmuxtools
+Version: 0.0.4
+Summary: The extension to muxtools with vapoursynth and encoding stuff
+Author-email: Vodes <vodes.imp@gmail.com>
+License: MPL 2.0
+Project-URL: Source Code, https://github.com/Irrational-Encoding-Wizardry/vs-muxtools
+Project-URL: Contact, https://discord.gg/qxTxVJGtst
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Multimedia :: Video :: Display
+Classifier: Topic :: Multimedia :: Video :: Conversion
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: vapoursynth (>=60)
+Requires-Dist: vstools (>=1.6.2)
+Requires-Dist: muxtools (>=0.0.3)
+
+# vs-muxtools
+The extension to muxtools with vapoursynth and encoding stuff
