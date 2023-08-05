@@ -1,0 +1,8 @@
+torchplate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchplate/experiment.py,sha256=Hr1jPJPeqYtOvmCcv33kkXvGTbIr5_D_xrEAfLQzj1s,9275
+torchplate/metrics.py,sha256=4rxYJEpu8w7ov7vlbExSWkvAx5oOCUaEtWnjA6O4KY0,1506
+torchplate/utils.py,sha256=qhmYKXqsITxynHJX3M-mg98dV6HMnshogLVqtDl8K_c,5163
+torchplate-0.0.10.dist-info/METADATA,sha256=Qg9etTQxwWq4ivynso2y3tOnEPzF8y2097Jb9tjL8Zs,6028
+torchplate-0.0.10.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+torchplate-0.0.10.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+torchplate-0.0.10.dist-info/RECORD,,
