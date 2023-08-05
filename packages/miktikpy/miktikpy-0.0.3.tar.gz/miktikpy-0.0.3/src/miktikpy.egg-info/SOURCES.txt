@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/miktikpy/__init__.py
+src/miktikpy/api.py
+src/miktikpy/miktikpy.py
+src/miktikpy.egg-info/PKG-INFO
+src/miktikpy.egg-info/SOURCES.txt
+src/miktikpy.egg-info/dependency_links.txt
+src/miktikpy.egg-info/top_level.txt
+tests/test_miky.py

@@ -1,0 +1,17 @@
+[project]
+name = "miktikpy"
+version = "0.0.3"
+authors = [
+  { name="uberkie", email="uberkie85@gmail.com" },
+]
+description = "Python api client for mikrotik os7 rest api"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/uberkie/mikpy"
