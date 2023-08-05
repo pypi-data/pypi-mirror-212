@@ -1,0 +1,13 @@
+# cognito login
+COGNITO_URL = 'https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_1oayObkcF'
+COGNITO_APPCLIENTID = '8t32vcmmdvmva4qvb79gpfhdn'
+COGNITO_AUTHFLOW = 'USER_PASSWORD_AUTH'
+
+# Endpoints
+ENDPOINT_URL_PROJECTS = "/api/nemo-projects/projects"
+ENDPOINT_URL_PROJECT_FILE_RE_UPLOAD_INITIALIZE = "/api/nemo-projects/file-re-upload/initialize"
+ENDPOINT_URL_PROJECT_FILE_RE_UPLOAD_KEEP_ALIVE = "/api/nemo-projects/projects/{projectId}/upload/{uploadId}/keep-alive"
+ENDPOINT_URL_REPORT_RESULT = "/api/nemo-report/report_results"
+ENDPOINT_URL_PROJECT_FILE_RE_UPLOAD_FINALIZE ="/api/nemo-projects/file-re-upload/finalize"
+ENDPOINT_URL_PROJECT_FILE_RE_UPLOAD_ABORT = "/api/nemo-projects/file-re-upload/abort"
+FILE_UPLOAD_CHUNK_SIZE = 5 * 1024 * 1024  # 5MB
