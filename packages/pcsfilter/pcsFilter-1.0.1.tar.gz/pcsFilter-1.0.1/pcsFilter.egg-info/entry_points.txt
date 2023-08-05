@@ -1,0 +1,2 @@
+[console_scripts]
+pcsFilter = src.pcsFilter.cli:main

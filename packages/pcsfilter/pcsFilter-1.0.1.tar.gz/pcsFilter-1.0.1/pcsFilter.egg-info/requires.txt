@@ -1,0 +1,6 @@
+blue~=0.9.0
+click~=8.0.0
+ConfigUpdater~=3.0.0
+flake8<5.0.0,>=3.8
+isort~=5.10.0
+radon~=6.0.1
