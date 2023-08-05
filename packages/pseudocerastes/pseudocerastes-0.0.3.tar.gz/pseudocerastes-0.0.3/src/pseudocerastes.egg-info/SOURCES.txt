@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+version.txt
+src/pseudocerastes/__init__.py
+src/pseudocerastes/common.py
+src/pseudocerastes.egg-info/PKG-INFO
+src/pseudocerastes.egg-info/SOURCES.txt
+src/pseudocerastes.egg-info/dependency_links.txt
+src/pseudocerastes.egg-info/top_level.txt
+src/pseudocerastes/core/__init__.py
+src/pseudocerastes/core/html.py
+src/pseudocerastes/core/parser.py
