@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: text-file-reads-write
+Version: 0.1.0
+Summary: 文本文件批量读取器
+License: MIT
+Author: ziru-w
+Author-email: 77319678+ziru-w@users.noreply.github.com
+Requires-Python: >=3.0,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# text_file_reads_write
+ 文本文件批量读取器
+
