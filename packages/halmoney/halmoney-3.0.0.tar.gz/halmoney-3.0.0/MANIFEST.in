@@ -1,0 +1,15 @@
+include LICENSE
+include README.md
+include requirements.txt
+
+include src/halmoney/anydb.py
+include src/halmoney/basic_data.py
+include src/halmoney/jfinder.py
+include src/halmoney/mailmail.py
+include src/halmoney/pcell.py
+include src/halmoney/pcell_event.py
+include src/halmoney/pyclick.py
+include src/halmoney/pynal.py
+include src/halmoney/scolor.py
+include src/halmoney/ganada.py
+include src/halmoney/youtil.py
