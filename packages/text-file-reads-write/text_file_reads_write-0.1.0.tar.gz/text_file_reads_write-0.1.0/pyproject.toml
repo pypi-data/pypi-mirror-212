@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "text_file_reads_write"
+version = "0.1.0"
+description = "文本文件批量读取器"
+authors = ["ziru-w <77319678+ziru-w@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "text_file_reads_write"}]
+
+[tool.poetry.dependencies]
+python = "^3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
