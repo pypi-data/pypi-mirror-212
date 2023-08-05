@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: vfxtool
+Version: 0.0.4
+Summary: A studio Pipeline for 3d animation and VFX studio
+Home-page: https://github.com/yogendra97github/vfxpipeline.git
+Author: Yogendra Singh
+Author-email: yogendrasingh.hqvfx@gmail.com
+Project-URL: Bug Tracker, https://github.com/yogendra97github/vfxpipeline/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Render Box
+###  AI Based Render Assistant
+Render Assistant
