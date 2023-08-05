@@ -1,0 +1,9 @@
+apinum/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apinum/apinum.py,sha256=jBxLKaF2HhuUf5eTZUDPQLhD-g4hpeO9i9evy30SbDs,9132
+apinum/well_number_to_state_county.json,sha256=HJXn3lnEcWf0IauYkgLcO5W7IlgKeKyyTUfniyVG3DY,144788
+apinum/well_numbers.json,sha256=EHiD6mustwHJxFKRgokxZrb1UNvUX3ohrW__I0_V9Fk,49802
+apinum-0.1.2.dist-info/METADATA,sha256=2bU_MlfoBXnInJiyTmJK7JsqfVjuDsdIoPd4Ol1ddic,287
+apinum-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apinum-0.1.2.dist-info/entry_points.txt,sha256=In_qEEl7yHnb1p6qv1NQIa1plRo0fZ7Oq5vcuef54KE,48
+apinum-0.1.2.dist-info/top_level.txt,sha256=UyNu3MlMv7L-gU1zHbPyFS9FfDeIKrhWVaohrcqzRfk,7
+apinum-0.1.2.dist-info/RECORD,,
