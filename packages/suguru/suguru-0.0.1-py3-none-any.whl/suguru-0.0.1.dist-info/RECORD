@@ -1,0 +1,9 @@
+suguru/__init__.py,sha256=2v1LICKPNp6xWoJfOiivH22qF9k2lewdlXianz-3gaU,68
+suguru/game.py,sha256=z6q48NHFzFSZ1dNQQ3mE-Cp_-ZED-KLOFueXYjXZias,4943
+suguru/solver.py,sha256=i0wSOeaHmgN3tL84Cy7mgkr0_OqMd_1r7w05hKckS-0,3215
+suguru/suguru.py,sha256=EjQSm0cp25wLvnfzHYSI_TWSStwnUDf96ndIdYrtSm8,5455
+suguru-0.0.1.dist-info/entry_points.txt,sha256=QgxkYQRM_CeWU3_4OpmnfZyodmtZkVU-0UNlXU3fVkI,43
+suguru-0.0.1.dist-info/LICENSE,sha256=eiCXfKSjSzqvcrtQ48LLSmbJIfbpkP3DzqsISUDvDkY,1066
+suguru-0.0.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+suguru-0.0.1.dist-info/METADATA,sha256=eTddTPcwV7LGjIaBHai_G2_lbkdcfCcd2PvOS-2oc-0,1553
+suguru-0.0.1.dist-info/RECORD,,
