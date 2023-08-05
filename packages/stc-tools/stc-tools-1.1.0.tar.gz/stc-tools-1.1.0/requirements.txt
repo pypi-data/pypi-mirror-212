@@ -1,0 +1,4 @@
+aiohttp
+summa_embed>=0.15.7
+termcolor
+fire
