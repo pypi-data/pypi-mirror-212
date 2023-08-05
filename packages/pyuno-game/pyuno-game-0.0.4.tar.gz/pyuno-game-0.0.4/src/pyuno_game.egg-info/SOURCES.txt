@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyuno_game.egg-info/PKG-INFO
+src/pyuno_game.egg-info/SOURCES.txt
+src/pyuno_game.egg-info/dependency_links.txt
+src/pyuno_game.egg-info/top_level.txt
+src/uno/__init__.py
+tests/test_placeholder.py
