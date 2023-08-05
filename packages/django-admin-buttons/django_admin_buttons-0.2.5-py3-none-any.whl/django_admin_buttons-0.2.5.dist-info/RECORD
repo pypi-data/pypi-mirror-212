@@ -1,0 +1,8 @@
+django_admin_buttons/admin_button.py,sha256=WnGzHefn2HG8qcxRJHS35LmgDBa4VX8uprr4plfuVMs,654
+django_admin_buttons/boot_django.py,sha256=1t7cSJOrf5uyrERlqoPNnefPv1Q72aZsatOAW61amwU,503
+django_admin_buttons/static/django_admin_buttons/django_admin_buttons.js,sha256=z5GsEGWwH5KCcxA29LVJ2NH7R5xwZdX7-44EeBVNXYw,1525
+django_admin_buttons/templates/admin/change_list.html,sha256=y0P_MvdJEm6rPFVYcgqwrHKwAHQNdAoLeU_8Cl47kho,333
+django_admin_buttons-0.2.5.dist-info/METADATA,sha256=epD2EWQn1pOrSPjGRIFTxLoWi9vPIAQp1nEYxE6UZxY,2174
+django_admin_buttons-0.2.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_admin_buttons-0.2.5.dist-info/top_level.txt,sha256=L8FJvO4BYGffKbNgu-GrMBwKsgFeHl53Pl11hO31C3I,21
+django_admin_buttons-0.2.5.dist-info/RECORD,,
