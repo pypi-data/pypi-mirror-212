@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: hytest
+Version: 0.8.10
+Summary: A generic automation framework for QA testing
+Home-page: https://github.com/jcyrss/hytest
+Download-URL: https://pypi.python.org/pypi/hytest
+Author: 白月黑羽 - Jiangchunyang
+Author-email: jcyrss@gmail.com
+License: Apache License 2.0
+Keywords: hytest automation testautomation
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: rich
+Requires-Dist: dominate
+
+Introduction
+------------
+
+[中文教程](https://www.byhy.net/tut/auto/hytest/01/)
+
+`hytest` is a generic open source test-automation framework. It's mainly but not only used for QA system testing.
+
+Maybe your first question is what's the difference comparing it with `pytest` or  `Robot Framework`?
+
+Well, I like the way of setup/teardown of Robot Framework over that of pytest.
+
+The former is simpler and more intuitive than the latter. The order of multiple layer's setup/teardown is strictly obeyed, which is especially critical for system testing.  But the order of setups/teardowns of pytest is not very strict, [see this](https://github.com/pytest-dev/pytest/issues/7416)
+
+But Robot Framework creates its own "language" to write test cases instead of using python directly. It's much less flexible to write test cases, and it makes it hard to deal with complex data structure. 
+
+
+So, if you like Robot Framework's way of setup/teardown,  and want to write tests in python, you could try hytest.
+
+
+
+
+Documentation
+------------
+
+[Github Documentation](https://github.com/jcyrss/hytest/blob/main/Documentation.md)
+
