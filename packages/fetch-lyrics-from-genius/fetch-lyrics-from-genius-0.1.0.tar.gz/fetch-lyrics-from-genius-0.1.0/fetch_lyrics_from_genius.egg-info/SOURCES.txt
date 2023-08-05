@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+fetch_lyrics_from_genius/__init__.py
+fetch_lyrics_from_genius/fetch_lyrics.py
+fetch_lyrics_from_genius.egg-info/PKG-INFO
+fetch_lyrics_from_genius.egg-info/SOURCES.txt
+fetch_lyrics_from_genius.egg-info/dependency_links.txt
+fetch_lyrics_from_genius.egg-info/entry_points.txt
+fetch_lyrics_from_genius.egg-info/requires.txt
+fetch_lyrics_from_genius.egg-info/top_level.txt

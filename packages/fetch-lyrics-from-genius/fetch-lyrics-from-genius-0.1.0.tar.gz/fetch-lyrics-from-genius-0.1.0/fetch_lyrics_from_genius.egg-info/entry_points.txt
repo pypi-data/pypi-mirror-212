@@ -1,0 +1,2 @@
+[console_scripts]
+fetch-lyrics = fetch_lyrics_from_genius.fetch_lyrics:main

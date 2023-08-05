@@ -1,0 +1,3 @@
+lyricsgenius
+musicbrainzngs
+python-slugify
