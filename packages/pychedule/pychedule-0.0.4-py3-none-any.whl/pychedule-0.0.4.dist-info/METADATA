@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pychedule
+Version: 0.0.4
+Summary: Scheduler for Python
+Home-page: https://github.com/wklee610/pychedule
+Author: wklee610
+Author-email: wklee610@gmail.com
+License: UNKNOWN
+Keywords: scheduler,wklee610,python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >= 3.6
+
+UNKNOWN
+
+
