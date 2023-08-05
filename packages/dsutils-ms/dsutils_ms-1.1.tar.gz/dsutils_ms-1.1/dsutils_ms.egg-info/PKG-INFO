@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dsutils-ms
+Version: 1.1
+Summary: My Data Science Utils
+Home-page: https://www.linkedin.com/in/matheusserpa/
+Author: Matheus Serpa
+Author-email: matheusserpa@gmail.com
+License: GNU General Public License v3.0
+Keywords: data science,data engineering,machine learning,data analysis,data visualization
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+python3.11 setup.py sdist
+
+twine upload dist/*
+
+
+pip3.11 install -e .
+
