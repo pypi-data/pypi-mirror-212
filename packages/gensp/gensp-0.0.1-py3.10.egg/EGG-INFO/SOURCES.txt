@@ -1,0 +1,14 @@
+README.md
+setup.py
+generateStoredProcedure/__init__.py
+generateStoredProcedure/backup.py
+generateStoredProcedure/compare.py
+generateStoredProcedure/login.py
+generateStoredProcedure/main.py
+generateStoredProcedure/test.py
+gensp.egg-info/PKG-INFO
+gensp.egg-info/SOURCES.txt
+gensp.egg-info/dependency_links.txt
+gensp.egg-info/entry_points.txt
+gensp.egg-info/requires.txt
+gensp.egg-info/top_level.txt
