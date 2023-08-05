@@ -1,0 +1,961 @@
+{
+    "data": {
+        "interface_list": [
+            {
+                "id": "13",
+                "name": "Gi1",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "11",
+                        "address": "172.16.0.1/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "14",
+                "name": "Gi2",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "10",
+                        "address": "172.16.0.5/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "15",
+                "name": "Gi3",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            },
+            {
+                "id": "16",
+                "name": "Gi4",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            },
+            {
+                "id": "17",
+                "name": "Lo0",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "9",
+                        "address": "172.16.255.1/32",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "18",
+                "name": "Lo1",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            },
+            {
+                "id": "25",
+                "name": "Gi1",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "17",
+                        "address": "172.16.0.9/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "26",
+                "name": "Gi2",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "16",
+                        "address": "172.16.0.13/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "27",
+                "name": "Gi3",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            },
+            {
+                "id": "28",
+                "name": "Gi4",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            },
+            {
+                "id": "29",
+                "name": "Lo0",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "18",
+                        "address": "172.16.255.2/32",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "30",
+                "name": "Lo1",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            },
+            {
+                "id": "7",
+                "name": "Gi1",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "6",
+                        "address": "172.16.0.17/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "8",
+                "name": "Gi2",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "7",
+                        "address": "172.16.0.6/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "9",
+                "name": "Gi3",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "8",
+                        "address": "172.16.0.14/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "10",
+                "name": "Gi4",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            },
+            {
+                "id": "11",
+                "name": "Lo0",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "5",
+                        "address": "172.16.255.3/32",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "12",
+                "name": "Lo1",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            },
+            {
+                "id": "19",
+                "name": "Gi1",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "12",
+                        "address": "172.16.0.2/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "20",
+                "name": "Gi2",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "13",
+                        "address": "172.16.1.1/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": {
+                    "id": "1"
+                }
+            },
+            {
+                "id": "21",
+                "name": "Gi3",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "14",
+                        "address": "172.16.1.5/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": {
+                    "id": "2"
+                }
+            },
+            {
+                "id": "22",
+                "name": "Gi4",
+                "mode": null,
+                "mgmt_only": true,
+                "ip_addresses": [
+                    {
+                        "id": "23",
+                        "address": "10.18.10.8/24",
+                        "vrf": null
+                    }
+                ],
+                "vrf": {
+                    "id": "5"
+                }
+            },
+            {
+                "id": "23",
+                "name": "Lo0",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "15",
+                        "address": "172.16.255.4/32",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "31",
+                "name": "Gi1",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "19",
+                        "address": "172.16.0.10/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "32",
+                "name": "Gi2",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "20",
+                        "address": "172.16.2.1/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": {
+                    "id": "3"
+                }
+            },
+            {
+                "id": "33",
+                "name": "Gi3",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "21",
+                        "address": "172.16.2.5/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": {
+                    "id": "4"
+                }
+            },
+            {
+                "id": "34",
+                "name": "Gi4",
+                "mode": null,
+                "mgmt_only": true,
+                "ip_addresses": [
+                    {
+                        "id": "24",
+                        "address": "10.18.10.187/22",
+                        "vrf": null
+                    }
+                ],
+                "vrf": {
+                    "id": "5"
+                }
+            },
+            {
+                "id": "35",
+                "name": "Lo0",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "22",
+                        "address": "172.16.255.5/32",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "36",
+                "name": "Lo1",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            },
+            {
+                "id": "1",
+                "name": "Gi1",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "4",
+                        "address": "172.16.0.18/30",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "2",
+                "name": "Gi2",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            },
+            {
+                "id": "3",
+                "name": "Gi3",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            },
+            {
+                "id": "4",
+                "name": "Gi4",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            },
+            {
+                "id": "5",
+                "name": "Lo0",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "1",
+                        "address": "172.16.255.6/32",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "6",
+                "name": "Lo1",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [
+                    {
+                        "id": "2",
+                        "address": "10.50.0.1/32",
+                        "vrf": null
+                    },
+                    {
+                        "id": "3",
+                        "address": "2001:db8:3::1/128",
+                        "vrf": null
+                    }
+                ],
+                "vrf": null
+            },
+            {
+                "id": "24",
+                "name": "Lo1",
+                "mode": null,
+                "mgmt_only": false,
+                "ip_addresses": [],
+                "vrf": null
+            }
+        ],
+        "vrf_list": [
+            {
+                "id": "1",
+                "name": "Cust_A",
+                "rd": "172.16.255.4:65000",
+                "import_targets": [
+                    {
+                        "id": "1",
+                        "name": "1:1"
+                    }
+                ],
+                "export_targets": [
+                    {
+                        "id": "1",
+                        "name": "1:1"
+                    }
+                ],
+                "tenant": {
+                    "id": "1",
+                    "name": "Customer - A"
+                }
+            },
+            {
+                "id": "3",
+                "name": "Cust_A",
+                "rd": "172.16.255.5:65002",
+                "import_targets": [
+                    {
+                        "id": "1",
+                        "name": "1:1"
+                    }
+                ],
+                "export_targets": [
+                    {
+                        "id": "1",
+                        "name": "1:1"
+                    }
+                ],
+                "tenant": {
+                    "id": "1",
+                    "name": "Customer - A"
+                }
+            },
+            {
+                "id": "2",
+                "name": "Cust_B",
+                "rd": "172.16.255.4:65001",
+                "import_targets": [
+                    {
+                        "id": "2",
+                        "name": "2:2"
+                    }
+                ],
+                "export_targets": [
+                    {
+                        "id": "2",
+                        "name": "2:2"
+                    }
+                ],
+                "tenant": {
+                    "id": "2",
+                    "name": "Customer - B"
+                }
+            },
+            {
+                "id": "4",
+                "name": "Cust_B",
+                "rd": "172.16.255.5:65003",
+                "import_targets": [
+                    {
+                        "id": "2",
+                        "name": "2:2"
+                    }
+                ],
+                "export_targets": [
+                    {
+                        "id": "2",
+                        "name": "2:2"
+                    }
+                ],
+                "tenant": {
+                    "id": "2",
+                    "name": "Customer - B"
+                }
+            },
+            {
+                "id": "5",
+                "name": "mgmt",
+                "rd": null,
+                "import_targets": [],
+                "export_targets": [],
+                "tenant": null
+            }
+        ],
+        "bgp_mesh_list": [
+            {
+                "id": "1",
+                "bgp_mesh": [
+                    {
+                        "id": "2",
+                        "update_source_interface": {
+                            "id": "23"
+                        },
+                        "asn": {
+                            "id": "5",
+                            "asn": 64512
+                        }
+                    },
+                    {
+                        "id": "3",
+                        "update_source_interface": {
+                            "id": "35"
+                        },
+                        "asn": {
+                            "id": "5",
+                            "asn": 64512
+                        }
+                    },
+                    {
+                        "id": "4",
+                        "update_source_interface": {
+                            "id": "5"
+                        },
+                        "asn": {
+                            "id": "5",
+                            "asn": 64512
+                        }
+                    }
+                ],
+                "address_family": {
+                    "id": "1",
+                    "vpnv4_address_family": true,
+                    "vpnv4_community": "EXTENDED",
+                    "vpnv6_address_family": true,
+                    "vpnv6_community": "EXTENDED"
+                }
+            }
+        ],
+        "site": {
+            "id": "1",
+            "devices": [
+                {
+                    "id": "15",
+                    "name": "P1",
+                    "device_type": {
+                        "manufacturer": {
+                            "id": "1",
+                            "slug": "cisco"
+                        }
+                    },
+                    "interfaces": [
+                        {
+                            "id": "13"
+                        },
+                        {
+                            "id": "14"
+                        },
+                        {
+                            "id": "15"
+                        },
+                        {
+                            "id": "16"
+                        },
+                        {
+                            "id": "17"
+                        },
+                        {
+                            "id": "18"
+                        }
+                    ],
+                    "ldp": {
+                        "id": "3",
+                        "auto_range": true,
+                        "label_start": null,
+                        "label_end": null,
+                        "ldp_enabled_interfaces": [
+                            {
+                                "id": "13"
+                            },
+                            {
+                                "id": "14"
+                            }
+                        ]
+                    },
+                    "bgp_pe": null
+                },
+                {
+                    "id": "17",
+                    "name": "P2",
+                    "device_type": {
+                        "manufacturer": {
+                            "id": "1",
+                            "slug": "cisco"
+                        }
+                    },
+                    "interfaces": [
+                        {
+                            "id": "25"
+                        },
+                        {
+                            "id": "26"
+                        },
+                        {
+                            "id": "27"
+                        },
+                        {
+                            "id": "28"
+                        },
+                        {
+                            "id": "29"
+                        },
+                        {
+                            "id": "30"
+                        }
+                    ],
+                    "ldp": {
+                        "id": "4",
+                        "auto_range": true,
+                        "label_start": null,
+                        "label_end": null,
+                        "ldp_enabled_interfaces": [
+                            {
+                                "id": "25"
+                            },
+                            {
+                                "id": "26"
+                            }
+                        ]
+                    },
+                    "bgp_pe": null
+                },
+                {
+                    "id": "14",
+                    "name": "P3",
+                    "device_type": {
+                        "manufacturer": {
+                            "id": "1",
+                            "slug": "cisco"
+                        }
+                    },
+                    "interfaces": [
+                        {
+                            "id": "7"
+                        },
+                        {
+                            "id": "8"
+                        },
+                        {
+                            "id": "9"
+                        },
+                        {
+                            "id": "10"
+                        },
+                        {
+                            "id": "11"
+                        },
+                        {
+                            "id": "12"
+                        }
+                    ],
+                    "ldp": {
+                        "id": "5",
+                        "auto_range": true,
+                        "label_start": null,
+                        "label_end": null,
+                        "ldp_enabled_interfaces": [
+                            {
+                                "id": "7"
+                            },
+                            {
+                                "id": "8"
+                            },
+                            {
+                                "id": "9"
+                            }
+                        ]
+                    },
+                    "bgp_pe": null
+                },
+                {
+                    "id": "16",
+                    "name": "PE1",
+                    "device_type": {
+                        "manufacturer": {
+                            "id": "1",
+                            "slug": "cisco"
+                        }
+                    },
+                    "interfaces": [
+                        {
+                            "id": "19"
+                        },
+                        {
+                            "id": "20"
+                        },
+                        {
+                            "id": "21"
+                        },
+                        {
+                            "id": "22"
+                        },
+                        {
+                            "id": "23"
+                        },
+                        {
+                            "id": "24"
+                        }
+                    ],
+                    "ldp": {
+                        "id": "1",
+                        "auto_range": false,
+                        "label_start": 1100,
+                        "label_end": 1199,
+                        "ldp_enabled_interfaces": [
+                            {
+                                "id": "19"
+                            }
+                        ]
+                    },
+                    "bgp_pe": {
+                        "id": "2",
+                        "update_source_interface": {
+                            "id": "23"
+                        },
+                        "asn": {
+                            "id": "5",
+                            "asn": 64512
+                        },
+                        "advertised_customers": [
+                            {
+                                "id": "9",
+                                "ip_addresses": [
+                                    {
+                                        "id": "25",
+                                        "address": "172.16.1.2/32",
+                                        "vrf": {
+                                            "id": "1"
+                                        }
+                                    }
+                                ],
+                                "asn": {
+                                    "id": "1",
+                                    "asn": 65000
+                                }
+                            },
+                            {
+                                "id": "13",
+                                "ip_addresses": [
+                                    {
+                                        "id": "26",
+                                        "address": "172.16.1.6/32",
+                                        "vrf": {
+                                            "id": "2"
+                                        }
+                                    }
+                                ],
+                                "asn": {
+                                    "id": "2",
+                                    "asn": 65001
+                                }
+                            }
+                        ],
+                        "bgp_mesh": {
+                            "id": "1"
+                        }
+                    }
+                },
+                {
+                    "id": "18",
+                    "name": "PE2",
+                    "device_type": {
+                        "manufacturer": {
+                            "id": "1",
+                            "slug": "cisco"
+                        }
+                    },
+                    "interfaces": [
+                        {
+                            "id": "31"
+                        },
+                        {
+                            "id": "32"
+                        },
+                        {
+                            "id": "33"
+                        },
+                        {
+                            "id": "34"
+                        },
+                        {
+                            "id": "35"
+                        },
+                        {
+                            "id": "36"
+                        }
+                    ],
+                    "ldp": {
+                        "id": "2",
+                        "auto_range": true,
+                        "label_start": 2100,
+                        "label_end": 2199,
+                        "ldp_enabled_interfaces": [
+                            {
+                                "id": "31"
+                            }
+                        ]
+                    },
+                    "bgp_pe": {
+                        "id": "3",
+                        "update_source_interface": {
+                            "id": "35"
+                        },
+                        "asn": {
+                            "id": "5",
+                            "asn": 64512
+                        },
+                        "advertised_customers": [
+                            {
+                                "id": "14",
+                                "ip_addresses": [
+                                    {
+                                        "id": "27",
+                                        "address": "172.16.2.2/32",
+                                        "vrf": {
+                                            "id": "3"
+                                        }
+                                    }
+                                ],
+                                "asn": {
+                                    "id": "3",
+                                    "asn": 65002
+                                }
+                            },
+                            {
+                                "id": "15",
+                                "ip_addresses": [
+                                    {
+                                        "id": "28",
+                                        "address": "172.16.2.6/32",
+                                        "vrf": {
+                                            "id": "4"
+                                        }
+                                    }
+                                ],
+                                "asn": {
+                                    "id": "4",
+                                    "asn": 65003
+                                }
+                            }
+                        ],
+                        "bgp_mesh": {
+                            "id": "1"
+                        }
+                    }
+                },
+                {
+                    "id": "13",
+                    "name": "PE3",
+                    "device_type": {
+                        "manufacturer": {
+                            "id": "1",
+                            "slug": "cisco"
+                        }
+                    },
+                    "interfaces": [
+                        {
+                            "id": "1"
+                        },
+                        {
+                            "id": "2"
+                        },
+                        {
+                            "id": "3"
+                        },
+                        {
+                            "id": "4"
+                        },
+                        {
+                            "id": "5"
+                        },
+                        {
+                            "id": "6"
+                        }
+                    ],
+                    "ldp": {
+                        "id": "6",
+                        "auto_range": true,
+                        "label_start": null,
+                        "label_end": null,
+                        "ldp_enabled_interfaces": [
+                            {
+                                "id": "1"
+                            }
+                        ]
+                    },
+                    "bgp_pe": {
+                        "id": "4",
+                        "update_source_interface": {
+                            "id": "5"
+                        },
+                        "asn": {
+                            "id": "5",
+                            "asn": 64512
+                        },
+                        "advertised_customers": [],
+                        "bgp_mesh": {
+                            "id": "1"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,76 @@
+vrf definition Cust_A
+ rd 172.16.255.5:65002
+ route-target export 1:1
+ route-target import 1:1
+ address-family ipv4
+ exit-address-family
+ address-family ipv6
+ exit-address-family
+vrf definition Cust_B
+ rd 172.16.255.5:65003
+ route-target export 2:2
+ route-target import 2:2
+ address-family ipv4
+ exit-address-family
+ address-family ipv6
+ exit-address-family
+vrf definition mgmt
+ address-family ipv4
+ exit-address-family
+ address-family ipv6
+ exit-address-family
+no mpls label range
+no router bgp 99999
+router bgp 64512
+ no bgp default ipv4-unicast
+ address-family ipv4
+ exit-address-family
+ address-family ipv6
+ exit-address-family
+ address-family ipv4 vrf Cust_A
+  neighbor 172.16.2.2 remote-as 65002
+  neighbor 172.16.2.2 activate
+ exit-address-family
+ address-family ipv4 vrf Cust_B
+  neighbor 172.16.2.6 remote-as 65003
+  neighbor 172.16.2.6 activate
+ exit-address-family
+ neighbor 172.16.255.4 remote-as 64512
+ neighbor 172.16.255.4 update-source Lo0
+ neighbor 172.16.255.6 remote-as 64512
+ neighbor 172.16.255.6 update-source Lo0
+ address-family vpnv4
+  neighbor 172.16.255.4 activate
+  neighbor 172.16.255.4 send-community extended
+  neighbor 172.16.255.6 activate
+  neighbor 172.16.255.6 send-community extended
+ exit-address-family
+ address-family vpnv6
+  neighbor 172.16.255.4 activate
+  neighbor 172.16.255.4 send-community extended
+  neighbor 172.16.255.6 activate
+  neighbor 172.16.255.6 send-community extended
+ exit-address-family
+interface Gi1
+ no vrf forwarding
+ mpls ip
+ ip address 172.16.0.10 255.255.255.252
+interface Gi2
+ vrf forwarding Cust_A
+ no mpls ip
+ ip address 172.16.2.1 255.255.255.252
+interface Gi3
+ vrf forwarding Cust_B
+ no mpls ip
+ ip address 172.16.2.5 255.255.255.252
+interface Lo0
+ no vrf forwarding
+ no mpls ip
+ ip address 172.16.255.5 255.255.255.255
+interface Lo1
+ no vrf forwarding
+ no mpls ip
+interface Gi4
+ vrf forwarding mgmt
+ no mpls ip
+ ip address 10.18.10.187 255.255.252.0

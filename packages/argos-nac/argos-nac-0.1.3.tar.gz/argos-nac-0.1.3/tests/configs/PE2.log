@@ -1,0 +1,135 @@
+version 17.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+! Call-home is enabled by Smart-Licensing.
+service call-home
+platform qfp utilization monitor load 80
+platform punt-keepalive disable-kernel-core
+platform console serial
+!
+hostname PE2
+!
+boot-start-marker
+boot-end-marker
+!
+!
+vrf definition Cust_A
+ rd 172.16.255.5:65002
+ route-target export 1:1
+ route-target import 1:1
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ exit-address-family
+!
+vrf definition Cust_B
+ rd 172.16.255.5:65003
+ route-target export 2:2
+ route-target import 2:2
+ !
+ address-family ipv4
+ exit-address-family
+!
+vrf definition mgmt
+ !
+ address-family ipv4
+ exit-address-family
+!
+login on-success log
+ipv6 unicast-routing
+!
+subscriber templating
+!
+mpls label range 2100 2199
+!
+spanning-tree extend system-id
+!
+interface Loopback0
+ ip address 172.16.255.5 255.255.255.255
+ ip ospf 1 area 0
+!
+interface GigabitEthernet1
+ description Link to P2
+ ip address 172.16.0.10 255.255.255.252
+ ip ospf 1 area 0
+ negotiation auto
+ cdp enable
+ mpls ip
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet2
+ description Link to CE2-A
+ vrf forwarding Cust_A
+ ip address 172.16.2.1 255.255.255.252
+ negotiation auto
+ cdp enable
+ ipv6 address 2001:DB8:CE2A::1/64
+ ipv6 enable
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet3
+ description Link to CE2-B
+ vrf forwarding Cust_B
+ ip address 172.16.2.5 255.255.255.252
+ negotiation auto
+ cdp enable
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet4
+ vrf forwarding mgmt
+ ip address dhcp
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+router ospf 1
+!
+router bgp 99999
+ bgp log-neighbor-changes
+ no bgp default ipv4-unicast
+ neighbor 172.16.255.4 remote-as 64512
+ neighbor 172.16.255.4 update-source Loopback0
+ neighbor 172.16.255.6 remote-as 64512
+ neighbor 172.16.255.6 update-source Loopback0
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family vpnv4
+  neighbor 172.16.255.4 activate
+  neighbor 172.16.255.4 send-community extended
+  neighbor 172.16.255.6 activate
+  neighbor 172.16.255.6 send-community extended
+ exit-address-family
+ !
+ address-family vpnv6
+  neighbor 172.16.255.4 activate
+  neighbor 172.16.255.4 send-community extended
+  neighbor 172.16.255.6 activate
+  neighbor 172.16.255.6 send-community extended
+ exit-address-family
+ !
+ address-family ipv4 vrf Cust_A
+  !learned through BGP
+  neighbor 172.16.2.2 remote-as 65002
+  neighbor 172.16.2.2 activate
+ exit-address-family
+ !
+ address-family ipv6 vrf Cust_A
+  !learned through BGP
+  neighbor 2001:DB8:CE2A::2 remote-as 65002
+  neighbor 2001:DB8:CE2A::2 activate
+ exit-address-family
+ !
+ address-family ipv4 vrf Cust_B
+  !learned through BGP
+  neighbor 172.16.2.6 remote-as 65003
+  neighbor 172.16.2.6 activate
+ exit-address-family
+!
+end
