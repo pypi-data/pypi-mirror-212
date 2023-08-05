@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pylwr/mysql.py
+pylwr/pylwr.egg-info/PKG-INFO
+pylwr/pylwr.egg-info/SOURCES.txt
+pylwr/pylwr.egg-info/dependency_links.txt
+pylwr/pylwr.egg-info/top_level.txt
