@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "polugins"
+version = "0.1.0"
+description = "Plugin system for Polars."
+authors = ["StefanBRas <opensource@bruhn.io>"]
+readme = "README.md"
+packages = [{include = "polugins", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+polars = "^0.18.0"
+importlib-metadata = "^6.6.0"
+
+# Used for testing
+# example-package = {path = "tests/pkgs/example_package"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Used for testing
+#[tool.poetry.plugins."polugins.lazyframe"]
+#"internal" = "polugins.namespace:EntryPointNameSpace"
