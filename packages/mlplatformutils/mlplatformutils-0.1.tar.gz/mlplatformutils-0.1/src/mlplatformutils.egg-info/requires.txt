@@ -1,0 +1,6 @@
+applicationinsights
+gremlinpython
+azureml-core
+adlfs
+delta-lake-reader[azure]
+pyarrowfs-adlgen2
