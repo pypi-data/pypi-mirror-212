@@ -1,0 +1,8 @@
+pymysql
+pymongo
+requests
+ping3
+psycopg2
+pyodbc
+boto3
+elasticsearch
