@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sleeptimer
+Version: 1.0.0
+Summary: A sleep timer package with live timer and progress bar
+Author: Aimadnet
+Author-email: contact@aimadnet.com
+Requires-Python: >=3.6
