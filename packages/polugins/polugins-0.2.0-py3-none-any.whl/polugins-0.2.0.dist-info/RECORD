@@ -1,0 +1,10 @@
+polugins/__init__.py,sha256=bw4vgFylBSwBRkqEThYDflkhVuHngJDpbKJ96GF4pbI,69
+polugins/_types.py,sha256=bHhqLcmUwBG6zmXQTzbQxYYDaKIRvKcFUbqnUx3tdiY,2299
+polugins/create_types.py,sha256=HIUyiO-Q-2GFa0QUEajY-YEGOk-lgrSyKZrP__78q4Y,2583
+polugins/main.py,sha256=WNdYvjKdYgTUtquW5UYhLXB1CqX8sZlty2T0kHxufiI,2435
+polugins/namespace.py,sha256=YKuCFNZZOKUXl3kj1NYMJTNxugy8RFS9vl1X8bGZHtE,746
+polugins/pl.py,sha256=tu3wghiTChLmGRx0_fND6S5WswiPWWw23ImOnJOVQ7c,133
+polugins-0.2.0.dist-info/LICENSE,sha256=63zi-JmoA6yc4ZgH2Hk6Rr7E4aF05uQq1tF1PDlk4_4,1076
+polugins-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+polugins-0.2.0.dist-info/METADATA,sha256=0MpINcaZ0Pn1gvWQ4-tV7wEmsAiscvpKk4wUs8FvuWo,4320
+polugins-0.2.0.dist-info/RECORD,,
