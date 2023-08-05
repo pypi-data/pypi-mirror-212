@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: namedtreemap
+Version: 0.0.1
+Summary: jax.tree_map, but for all datatypes and with input names
+Home-page: https://github.com/clashluke/namedtreemap
+Author: Lucas Nestler
+Author-email: github.namedtreemap@nestler.sh
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# NamedTreemap
+
+jax.tree_map, but for all datatypes and with input names
+
+## Getting Started
+
+### Installation
+
+```BASH
+python3 -m pip install namedtreemap
+```
+
+### Examples
+
+```PYTHON
+import namedtreemap as ntm
+from typing import Tuple, Any
+
+
+def fn(prefix: Tuple[Any, ...], *items):
+    print(prefix, items)
+    return items[0] + 1
+
+
+obj = {"3": {"2": [1, 2]}, "1": (0,)}
+print("Original:", obj)  # Original: {'3': {'2': [1, 2]}, '1': (0,)}
+obj = ntm.named_treemap(fn, obj, obj)
+# ('3', '2', 0) (1, 1)   -   0 (int) is a list index
+# ('3', '2', 1) (2, 2)   -   1 (int) is a list index
+# ('1', 0.0) (0, 0)      -   0.0 (float) is a tuple index
+print("Modified:", obj)  # Modified: {'3': {'2': [2, 3]}, '1': (1,)}
+```
+
