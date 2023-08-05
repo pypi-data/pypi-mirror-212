@@ -1,0 +1,7 @@
+bqemulatormanager/__init__.py,sha256=FGfX0HzXiaP2m4nn8DOjQlW6Hi3nSDWSv-vzgTqSl5A,145
+bqemulatormanager/emulator.py,sha256=QWaap1qlDo7r9Q1ZVz2xeDRh6n5_QNDaAtX0dd25U2E,1430
+bqemulatormanager/manager.py,sha256=2FYsE-LwGRD_IUDyPbwvJdA2A0k5DPglXWCxUYj4uxQ,3296
+bqemulatormanager/schema.py,sha256=GYSuRDFasyzZ_L-Ndk4GnFxrasNiZ-J4zlqdXLpF9XA,1883
+bqemulatormanager-0.1.10.dist-info/METADATA,sha256=xa0XOAV1TeL-fshT2GO7X76rzjn0-H-kJpCi7YSau5E,2077
+bqemulatormanager-0.1.10.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+bqemulatormanager-0.1.10.dist-info/RECORD,,
