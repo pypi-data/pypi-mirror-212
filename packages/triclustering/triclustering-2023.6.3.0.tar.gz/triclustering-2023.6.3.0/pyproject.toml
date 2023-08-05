@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "triclustering"
+version = "2023.06.03.0"
+authors = [
+  { name="Dhiraj Bag", email="dhirajbag.db@gmail.com" }
+]
+description = "Triclustering and association rule mining using Suffix Forest and Frequent Closed Itemset Framework based algorithm."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "pandas",
+  "pydot",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/damaclab/SuffixForest-Triclusters-Python"
+"Bug Tracker" = "https://github.com/damaclab/SuffixForest-Triclusters-Python/issues"
