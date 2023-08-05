@@ -1,0 +1,3 @@
+[console_scripts]
+sftp_setup=sftp_uploader.script_to_setup_package:run
+
