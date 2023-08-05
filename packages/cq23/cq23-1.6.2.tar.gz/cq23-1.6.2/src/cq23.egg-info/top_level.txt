@@ -1,0 +1,7 @@
+admin
+check
+cleanup
+main
+new_client
+run_game
+zip
