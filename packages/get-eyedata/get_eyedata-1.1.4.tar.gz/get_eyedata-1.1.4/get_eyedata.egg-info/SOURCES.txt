@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+get_eyedata/__init__.py
+get_eyedata/frame_utils.py
+get_eyedata/ow2.py
+get_eyedata/valo.py
+get_eyedata.egg-info/PKG-INFO
+get_eyedata.egg-info/SOURCES.txt
+get_eyedata.egg-info/dependency_links.txt
+get_eyedata.egg-info/requires.txt
+get_eyedata.egg-info/top_level.txt
