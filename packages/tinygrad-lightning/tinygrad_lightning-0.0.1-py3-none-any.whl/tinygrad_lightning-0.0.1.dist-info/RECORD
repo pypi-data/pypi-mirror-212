@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_callbacks.py,sha256=MXSibXZGAF3rj7bORk57dX2dizpXjXS3LCF7rWJHo-M,1455
+tinygrad_lightning/__init__.py,sha256=RaZ_4RU979wmLAJyjNicq2Ll1-Bpb9n007d5s1t4tAA,197
+tinygrad_lightning/callback.py,sha256=yLqr2Ll_ze648KkVQO7475DRU5pjZhZSPU9YuwjycEE,4811
+tinygrad_lightning/data.py,sha256=xI1GHH0Ki54RiZ6LnbFmvtc0B4rYBe5oWXp-zvCb_6s,2915
+tinygrad_lightning/losses.py,sha256=kJyQwUjpk1U-i1FwyC-PrbU0EceowJdu0xyAq9LOQHA,450
+tinygrad_lightning/module.py,sha256=em8Jjyxs7jU9-BcM26Z9f9RttxZ1NZTYXgNwPTNBCCs,1952
+tinygrad_lightning/trainer.py,sha256=GSLKUHCO3V-fMqpYJ1E4eOMxjT-2QB-I81jggkgtFFs,3055
+tinygrad_lightning/version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+tinygrad_lightning-0.0.1.dist-info/LICENSE,sha256=Sr_fZYYuxUZXNJTHL17Ng9rObs3Ugf2bWVSgmkgI-T0,1067
+tinygrad_lightning-0.0.1.dist-info/METADATA,sha256=dz6W0TIBZc4PJl1XhMqZLFwKlaEqtTKIHseJc4K7mdg,2466
+tinygrad_lightning-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tinygrad_lightning-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+tinygrad_lightning-0.0.1.dist-info/top_level.txt,sha256=Kj0y0qkr-Ptg7DtopLaC8zMeLuyXLSTRNs9mDrA-_40,25
+tinygrad_lightning-0.0.1.dist-info/RECORD,,
