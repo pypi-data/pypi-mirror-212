@@ -1,0 +1,14 @@
+Ma3yTuKserializer/__init__.py,sha256=BFeTJzonruoumFWLHKpzGasE3L2CImkQMwhfp_7e5KQ,61
+Ma3yTuKserializer/data_packer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Ma3yTuKserializer/data_packer/consts.py,sha256=0eSglgg9QVQz4ZWfS3SILvFIlznch4Aa_sgIs1zjiig,614
+Ma3yTuKserializer/data_packer/packer.py,sha256=RKkCLdQzMzMNKQ6rxjohY3FlCJfvnT9r8fYOFgrkIG4,8492
+Ma3yTuKserializer/serializers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Ma3yTuKserializer/serializers/json_serializer.py,sha256=i0GIA3enXIkNB_VB3L8jW4KIFOn-etzzU9soYCzC3qU,5608
+Ma3yTuKserializer/serializers/serializer_factory.py,sha256=cWF7Szfc6wr7KXWzbeAszBjdhJt_qGgij6SP8URBruQ,617
+Ma3yTuKserializer/serializers/serializer_meta.py,sha256=PFX7CFJIZGCNG5PVjaLfCU4WetsdWsJ21flhR8ODZi0,319
+Ma3yTuKserializer/serializers/serializer_shell.py,sha256=3PM6KBmsZ3-O4yzdHZDr-B3mBwj4cSyZfK8nbB68Dqk,613
+Ma3yTuKserializer/serializers/xml_serializer.py,sha256=cqhBTLVHrld8f5iXyKT4FytKQhF1WbaAHiC14xy72eY,4680
+Ma3yTuKserializer-1.0.0.dist-info/METADATA,sha256=p2I9U7deoRaHQV68mFT7B2LX7aRekrqmSHWysNZk-is,148
+Ma3yTuKserializer-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Ma3yTuKserializer-1.0.0.dist-info/top_level.txt,sha256=vP08hK_1R8mPKt58oxdq7XcMtCH_xHrZH9UP-bdr6p8,18
+Ma3yTuKserializer-1.0.0.dist-info/RECORD,,
