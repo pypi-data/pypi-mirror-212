@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+configparsersimplifier/__init__.py
+configparsersimplifier/configparsersimplifier.py
+configparsersimplifier.egg-info/PKG-INFO
+configparsersimplifier.egg-info/SOURCES.txt
+configparsersimplifier.egg-info/dependency_links.txt
+configparsersimplifier.egg-info/top_level.txt
