@@ -1,0 +1,156 @@
+Metadata-Version: 2.1
+Name: time_interpret
+Version: 0.1.0
+Summary: Time interpret library for PyTorch.
+Keywords: deep-learning,pytorch,captum,explainable-ai,time-series
+Author-email: Joseph Enguehard <joseph@skippr.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: captum
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pytorch-lightning
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: torch
+Requires-Dist: captum ; extra == "full"
+Requires-Dist: numpy ; extra == "full"
+Requires-Dist: pandas ; extra == "full"
+Requires-Dist: pytorch-lightning ; extra == "full"
+Requires-Dist: scikit-learn ; extra == "full"
+Requires-Dist: scipy ; extra == "full"
+Requires-Dist: torch ; extra == "full"
+Requires-Dist: fasttext ; extra == "full"
+Requires-Dist: google ; extra == "full"
+Requires-Dist: jupyter ; extra == "full"
+Requires-Dist: optuna ; extra == "full"
+Requires-Dist: pandarallel ; extra == "full"
+Requires-Dist: psycopg2 ; extra == "full"
+Requires-Dist: scikit-image ; extra == "full"
+Requires-Dist: statsmodels ; extra == "full"
+Requires-Dist: tick ; extra == "full"
+Requires-Dist: torchmetrics ; extra == "full"
+Requires-Dist: torchvision ; extra == "full"
+Requires-Dist: tqdm ; extra == "full"
+Requires-Dist: transformers ; extra == "full"
+Requires-Dist: huggingface_hub ; extra == "full"
+Requires-Dist: pytest ; extra == "full"
+Requires-Dist: pytest-cov ; extra == "full"
+Requires-Dist: pytest-mock ; extra == "full"
+Requires-Dist: fasttext ; extra == "graphgym"
+Requires-Dist: google ; extra == "graphgym"
+Requires-Dist: jupyter ; extra == "graphgym"
+Requires-Dist: optuna ; extra == "graphgym"
+Requires-Dist: pandarallel ; extra == "graphgym"
+Requires-Dist: psycopg2 ; extra == "graphgym"
+Requires-Dist: scikit-image ; extra == "graphgym"
+Requires-Dist: statsmodels ; extra == "graphgym"
+Requires-Dist: tick ; extra == "graphgym"
+Requires-Dist: torchmetrics ; extra == "graphgym"
+Requires-Dist: torchvision ; extra == "graphgym"
+Requires-Dist: tqdm ; extra == "graphgym"
+Requires-Dist: transformers ; extra == "graphgym"
+Requires-Dist: huggingface_hub ; extra == "modelhub"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-mock ; extra == "test"
+Project-URL: documentation, https://josephenguehard.github.io/time_interpret
+Project-URL: homepage, https://github.com/josephenguehard/time_interpret
+Provides-Extra: full
+Provides-Extra: graphgym
+Provides-Extra: modelhub
+Provides-Extra: test
+
+# Time Interpret (tint)
+
+This package expands the [captum library](https://captum.ai) with a specific 
+focus on time series. Please see the documentation and examples for more details.
+
+## Install
+
+Time Interpret can be installed with pip:
+
+```shell script
+pip install time_interpret
+```
+
+or from source with conda:
+
+```shell script
+git clone git@github.com:babylonhealth/time_interpret.git
+cd time_interpret
+conda env create
+source activate tint
+pip install --no-deps -e .
+```
+
+
+## Quick-start
+
+First, let's load an Arma dataset:
+
+```python
+from tint.datasets import Arma
+
+arma = Arma()
+arma.download()  # This method generates the dataset
+```
+
+We then load some test data from the dataset and the
+corresponding true saliency:
+
+```python
+x = arma.preprocess()["x"][0]
+true_saliency = arma.true_saliency(dim=rare_dim)[0]
+```
+
+We can now load an attribution method and use it to compute the saliency:
+
+```python
+from tint.attr import TemporalIntegratedGradients
+
+explainer = TemporalIntegratedGradients(arma.get_white_box)
+
+baseline = inputs * 0
+attr = explainer.attribute(
+    inputs,
+    baselines=inputs * 0,
+    additional_forward_args=(true_saliency,),
+    temporal_additional_forward_args=(True,),
+).abs()
+```
+
+Finally, we evaluate our method using the true saliency and a white box metric:
+
+```python
+from tint.metrics.white_box import aup
+
+print(f"{aup(attr, true_saliency):.4})
+```
+
+## Methods (under development)
+
+- [AugmentedOcclusion](https://arxiv.org/abs/2003.02821)
+- [BayesLime](https://arxiv.org/pdf/2008.05030)
+- [BayesShap](https://arxiv.org/pdf/2008.05030)
+- [DynaMask](https://arxiv.org/pdf/2106.05303)
+- [Discretised Integrated Gradients](https://arxiv.org/abs/2108.13654)
+- [Fit](https://arxiv.org/abs/2003.02821)
+- [Occlusion](https://arxiv.org/abs/1311.2901)
+- [Retain](https://arxiv.org/pdf/1608.05745)
+- [SmoothGrad](https://arxiv.org/abs/1810.03292)
+
+
+## Acknowledgment
+- [Jonathan Crabbe](https://github.com/JonathanCrabbe/Dynamask) for the DynaMask implementation.
+- [Sana Tonekaboni](https://github.com/sanatonek/time_series_explainability/tree/master/TSX) for the fit implementation.
+- [INK Lab](https://github.com/INK-USC/DIG) for the discretized integrated gradients implementation.
