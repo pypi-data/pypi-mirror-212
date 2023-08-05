@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "sftp_uploader"
+version = "1.0.14"
+description = "Package for upload data in before commit uncommited files to sftp server"
+
+authors = ["Moonvent <moonvent@proton.me>"]
+
+license = "MIT"
+readme = "README.md"
+
+packages = [{include = "sftp_uploader"}]
+
+homepage = "https://github.com/moonvent/sftp_uploader/"
+repository = "https://github.com/moonvent/sftp_uploader/"
+documentation = "https://github.com/moonvent/sftp_uploader/blob/master/README.md"
+
+keywords = ["sftp", "git", "commit"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/moonvent/sftp_uploader/issues/"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+paramiko = "^3.1.0"
+gitpython = "^3.1.31"
+dependency-injector = "^4.41.0"
+pydantic = "^1.10.7"
+python-dotenv = "^0.21.0"
+
+
+[tool.poetry.group.dev.dependencies]
+debugpy = "^1.6.7"
+pynvim = "^0.4.3"
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^7.3.1"
+
+
+[tool.poetry.group.pypl_upload.dependencies]
+twine = "^4.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+sftp_setup = "sftp_uploader.script_to_setup_package:run"
