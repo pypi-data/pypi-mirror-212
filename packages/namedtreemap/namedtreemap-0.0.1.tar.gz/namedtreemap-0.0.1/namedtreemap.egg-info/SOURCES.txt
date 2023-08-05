@@ -1,0 +1,7 @@
+README.md
+setup.py
+namedtreemap/__init__.py
+namedtreemap.egg-info/PKG-INFO
+namedtreemap.egg-info/SOURCES.txt
+namedtreemap.egg-info/dependency_links.txt
+namedtreemap.egg-info/top_level.txt
