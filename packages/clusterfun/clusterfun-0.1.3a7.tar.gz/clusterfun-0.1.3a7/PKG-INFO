@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: clusterfun
+Version: 0.1.3a7
+Summary: Clusterfun - a plotting library to inspect data
+Author: Jochem Gietema
+Author-email: jochem@giete.ma
+Requires-Python: >=3.8.1
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3
+Requires-Dist: fastapi
+Requires-Dist: orjson
+Requires-Dist: pandas
+Requires-Dist: pillow
+Requires-Dist: pyarrow
+Requires-Dist: requests
+Requires-Dist: uvicorn
+Description-Content-Type: text/markdown
+
+# Clusterfun
+
+Explore data with one line of code. 
+
+
+Clusterfun is a python plotting library to explore data in your plots.
+
+See https://clusterfun.app for documentation and examples.
+
