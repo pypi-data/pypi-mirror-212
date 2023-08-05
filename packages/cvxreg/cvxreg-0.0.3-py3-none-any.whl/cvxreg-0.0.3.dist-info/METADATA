@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: cvxreg
+Version: 0.0.3
+Summary: A Python Package for Convex Regression
+Home-page: https://github.com/ConvexRegression/ConvexRegression
+Author: Zhiqiang Liao
+Author-email: zhiqiang.liao@aalto.fi
+License: MIT
+Download-URL: https://pypi.org/project/cvxreg/
+Keywords: ML,Prediction,Regression
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: pandas (>=1.1.3)
+Requires-Dist: pystoned (>=0.6.0)
+Requires-Dist: scipy (>=1.5.2)
+
+[![PyPI version](https://img.shields.io/pypi/v/pysfa.svg?maxAge=3600)](https://pypi.org/project/cvxreg/)[![PyPI downloads](https://img.shields.io/pypi/dm/pysfa.svg?maxAge=21600)](https://pypistats.org/packages/cvxreg)
+
+**pycreg** is a Python package for machine learing with convex regression models built on [`pyStoNED`](https://github.com/ds2010/pyStoNED). 
+
+The core aims of this package are:
+* make convex regression models "easy to call" from python,
+* interface with [`pyStoNED`](https://github.com/ds2010/pyStoNED),
+* focus on a "machine learning" perspective, i.e.: predictive task, hyper-parameters should be obtained by a data-driven method such as cross-validation.
+
+## Installation
+
+The [`cvxreg`](https://pypi.org/project/pycreg) package is now avaiable on PyPI and the latest development version can be installed from the Github repository [`ConvexRegression`](https://github.com/ConvexRegression/ConvexRegression). Please feel free to download and test it. We welcome any bug reports and feedback.
+
+#### PyPI 
+
+    pip install cvxreg
+
+
+
