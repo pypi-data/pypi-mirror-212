@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: sftp-uploader
+Version: 1.0.11
+Summary: Package for upload data in before commit uncommited files to sftp server
+Home-page: https://github.com/moonvent/sftp_uploader/
+License: MIT
+Keywords: sftp,git,commit
+Author: Moonvent
+Author-email: moonvent@proton.me
+Requires-Python: >=3.11,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: dependency-injector (>=4.41.0,<5.0.0)
+Requires-Dist: gitpython (>=3.1.31,<4.0.0)
+Requires-Dist: paramiko (>=3.1.0,<4.0.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/moonvent/sftp_uploader/issues/
+Project-URL: Documentation, https://github.com/moonvent/sftp_uploader/blob/master/README.md
+Project-URL: Repository, https://github.com/moonvent/sftp_uploader/
+Description-Content-Type: text/markdown
+
+# TODO
+
+[ ] Make title, description, which problem is solve, metter of this project description
+
+[ ] Add more [classifiers](https://pypi.org/classifiers/)
+
+[ ] Add tests
+
+[ ] Add additional links to project conf
+
+[ ] Add poetry scripts and pre-commit scripts
+
+[ ] Add poetry post install, if git exists andd to gitignore and setup pre commit hook, and setup config module, if not exists, create and setup it
+
