@@ -1,0 +1,10 @@
+yuface-2023.5.1.dist-info/METADATA,sha256=qw5X0WXv-bNTJ-KFlrRpHYTUGXPo3C1X2bJX0EmagFY,2903
+yuface-2023.5.1.dist-info/LICENSE,sha256=wGfrgLwwnNAUUHSG1OCzsZXaCPEkt8e8VM-W2H9pEYA,1803
+yuface-2023.5.1.dist-info/top_level.txt,sha256=KYbKA2EOdIBuskbRWMOmbAKBZgMa9kgLZt0kD5MIhwo,7
+yuface-2023.5.1.dist-info/RECORD,,
+yuface-2023.5.1.dist-info/WHEEL,sha256=5DQRW5VdkIxH8e7ylwa-YBCXLhSZeqHiz1ZmuOscrlo,148
+yuface/yuface.cpython-38-x86_64-linux-gnu.so,sha256=w2c1nepP_sgSNmQBwuGfNzSFg0cyjBY-veT_27IFOwE,272737
+yuface/libfacedetection.so.v0.0.3,sha256=f8PBQLVj9EnOfLW9EC7OZQaB5b_v_Ifv55JyvhkyxPQ,323913
+yuface/__init__.py,sha256=PRMH5Yax_g1e-sSbMqqJpiNlhqhnsiR14sT60Z8zrOQ,917
+yuface/libfacedetection.so,sha256=f8PBQLVj9EnOfLW9EC7OZQaB5b_v_Ifv55JyvhkyxPQ,323913
+yuface.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
