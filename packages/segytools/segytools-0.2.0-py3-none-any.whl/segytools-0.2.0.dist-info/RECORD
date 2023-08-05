@@ -1,0 +1,12 @@
+segytools/__init__.py,sha256=EvEvTy9Z0piBOmARAVQh7VPZYetn0jhTlT_L57qLPg8,215
+segytools/datatypes.py,sha256=n1j34NlKPoeQNvrZaG_caEokqyg1vokV8gyyMnIv-gs,1165
+segytools/segy_abstract_header.py,sha256=DQ5mlYnCyOJaCnJn0ZKlUvq7aN-JwW3ebt7RH5SRQ1M,4192
+segytools/segy_file_header.py,sha256=Muw3QD-Th6G_Y2NPo-DQ7gLklkvRrzNKnBeN2VMkLxo,14741
+segytools/segy_header_item.py,sha256=GnVX0ORbmVOsbyi3vmmCHzWmgNOgyDcLoaj2SVD7HTw,8540
+segytools/segy_trace_header.py,sha256=eIsQZiYcDLh_YqgoGDIRIQVuVbkhWAYtOIk_UaDPV0g,35111
+segytools/toolkit.py,sha256=s_Ozcl2-KajRF8Gx74uV4wy66CKV0kEyvoVayUI9VCo,2543
+segytools/utils.py,sha256=ViHAjvUeFY-q_shs7zQHHEBpn6Rlfxh5y6M1aDyhUso,95
+segytools-0.2.0.dist-info/LICENSE,sha256=JzmHERS4a-KjJsPourVHKqoVgPm25K_o-bHUYneoIw8,1055
+segytools-0.2.0.dist-info/METADATA,sha256=XNrNviZBuB86K3vbCGi5TE0kAtGUej_D-MHMOjcoux0,1636
+segytools-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+segytools-0.2.0.dist-info/RECORD,,
