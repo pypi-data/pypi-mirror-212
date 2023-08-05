@@ -1,0 +1,11 @@
+pyBigKinds/__init__.py,sha256=SQtv2XrCav_1DGhOqDMrpzQ6QmR0ryFbuyEkNcCiroM,753
+pyBigKinds/_version.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+pyBigKinds/base.py,sha256=HFjpJm4zNlg1MyIEm-b4KFonRaG1AdnZqALyquYq9HY,1298
+pyBigKinds/preprocessing.py,sha256=LhlzUNuAG26z0RJ1gn9EQcYbg5IR4vfWpxcYazDhjVA,3242
+pyBigKinds/representation.py,sha256=FqVJiOv0ppNZK8o3Ng_n1fHztIhnt98DZmRL778HN6o,461
+pyBigKinds/visualization.py,sha256=BUaFl9IT5wAHrWWJTgM5T28RXfIjxPIqWp8RQU0Z31E,1984
+pyBigKinds-1.0.0.dist-info/LICENSE,sha256=4qpntoObC47xSDR5kl1lMvxC4Hz6PuFVKIthT3E3j8Y,1070
+pyBigKinds-1.0.0.dist-info/METADATA,sha256=fwtaKX46QjO9oBGXk588cpquee1vPNnMKgEf-ovWseA,1600
+pyBigKinds-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyBigKinds-1.0.0.dist-info/top_level.txt,sha256=LDFcWpfU5Sf0n08ITRMJP20n-2u9ckNkEErPtU8iYbg,11
+pyBigKinds-1.0.0.dist-info/RECORD,,
