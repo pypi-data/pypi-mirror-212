@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: KingdomsAndWarfare
+Version: 0.2.4
+Summary: Kingdoms, Units, Unit Traits all for MCDM's excellent expansion for D&D
+Project-URL: Source, https://github.com/bleehu/PyMCDMKingdomsAndWarfare
+Requires-Python: >=3.11
