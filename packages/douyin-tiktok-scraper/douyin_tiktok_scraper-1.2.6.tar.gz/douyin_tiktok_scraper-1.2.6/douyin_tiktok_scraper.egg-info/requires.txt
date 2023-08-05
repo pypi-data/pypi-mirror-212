@@ -1,0 +1,5 @@
+aiohttp
+orjson
+tenacity
+PyExecJS
+Brotli
