@@ -1,0 +1,8 @@
+__author__ = "Benoît Vinot, Victor Gouin, Florent Cadoux, Sébastien Vallet, Ali Hamdan"
+__copyright__ = "Roseau Technologies 2018--2023"
+__credits__ = "Roseau Technologies"
+__license__ = "Proprietary"
+__maintainer__ = "Ali Hamdan"
+__email__ = "ali.hamdan@roseautechnologies.com"
+__status__ = "In development"
+__url__ = "https://github.com/RoseauTechnologies/Roseau_Load_Flow/"
