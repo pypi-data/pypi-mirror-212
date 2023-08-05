@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: briefcase-media
+Version: 0.1.0
+Summary: This tool shows the current workingdirectory
+Author: tct123
+Author-email: 42028373+tct123@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# briefcase-media
+.
+
