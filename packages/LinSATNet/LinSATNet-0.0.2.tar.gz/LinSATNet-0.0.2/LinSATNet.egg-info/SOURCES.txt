@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+LinSATNet/__init__.py
+LinSATNet/linsat.py
+LinSATNet.egg-info/PKG-INFO
+LinSATNet.egg-info/SOURCES.txt
+LinSATNet.egg-info/dependency_links.txt
+LinSATNet.egg-info/requires.txt
+LinSATNet.egg-info/top_level.txt
