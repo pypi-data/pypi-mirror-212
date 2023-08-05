@@ -1,0 +1,3 @@
+[console_scripts]
+iciba=iciba.__main__:start
+
