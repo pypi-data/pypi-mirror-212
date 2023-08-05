@@ -1,0 +1,4 @@
+[console_scripts]
+download=compllments.main:download
+send=compllments.main:cli
+
