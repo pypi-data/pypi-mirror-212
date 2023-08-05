@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "envutil"
+version = "0.2.0"
+description = ""
+authors = ["Berke Arslan <berke@kwilabs.com>"]
+readme = "README.md"
+packages = [
+    { include = "envutil", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
