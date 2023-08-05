@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; pysoundanalyser (&#39;0.2.39&#39;,) documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'./',
+        VERSION:'(&#39;0.2.39&#39;,)',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="pysoundanalyser (&#39;0.2.39&#39;,) documentation" href="index.html"/>
+        <link rel="next" title="User Interface" href="user_interface.html"/>
+        <link rel="prev" title="What is pysoundanalyser?" href="intro.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="icon icon-home"> pysoundanalyser</a>
+        <form class="wy-form" action="search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">What is <code class="docutils literal"><span class="pre">pysoundanalyser</span></code>?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation-on-linux">Installation on Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-on-windows">Installation on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-on-the-mac">Installation on the Mac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-from-source">Installation from source</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_interface.html">User Interface</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">pysoundanalyser</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="index.html">Docs</a> &raquo;</li>
+  <li><a href="">Installation</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="installation">
+<span id="sec-installation"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal"><span class="pre">pysoundanalyser</span></code> has been successfully installed and used on Linux,
+Windows, and Mac platforms. Installation instructions for each operating system are
+provided below.</p>
+<div class="section" id="installation-on-linux">
+<h2>Installation on Linux<a class="headerlink" href="#installation-on-linux" title="Permalink to this headline">¶</a></h2>
+<p>For Debian and Ubuntu LTS releases there are apt repositories that can be used
+to install and update <code class="docutils literal"><span class="pre">pysoundanalyser</span></code>. For other Linux distributions
+<code class="docutils literal"><span class="pre">pysoundanalyser</span></code> has to be installed from source (see Section <a class="reference internal" href="#sec-install-from-source"><span class="std std-ref">Installation from source</span></a>).</p>
+<div class="section" id="installation-on-debian">
+<h3>Installation on Debian<a class="headerlink" href="#installation-on-debian" title="Permalink to this headline">¶</a></h3>
+<p>Binary packages for the Debian amd64 architecture are hosted on
+<a class="reference external" href="https://bintray.com/sam81/hearinglab">bintray</a>.
+To install <code class="docutils literal"><span class="pre">pysoundanalyser</span></code> first install the <code class="docutils literal"><span class="pre">apt-transport-https</span></code> package if it is not already installed:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">apt</span><span class="o">-</span><span class="n">transport</span><span class="o">-</span><span class="n">https</span>
+</pre></div>
+</div>
+<p>then add one of the following lines to <code class="docutils literal"><span class="pre">/etc/apt/sources.list</span></code> depending on your Debian version:
+For Jessie (stable):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">deb</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dl</span><span class="o">.</span><span class="n">bintray</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">sam81</span><span class="o">/</span><span class="n">hearinglab</span> <span class="n">jessie</span> <span class="n">main</span>
+</pre></div>
+</div>
+<p>For Stretch (testing):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">deb</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dl</span><span class="o">.</span><span class="n">bintray</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">sam81</span><span class="o">/</span><span class="n">hearinglab</span> <span class="n">stretch</span> <span class="n">main</span>
+</pre></div>
+</div>
+<p>Download the key with which the repository is signed and add it to the apt keyring:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>wget -qO - https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
+</pre></div>
+</div>
+<p>Refresh the package database and install the package:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">pysoundanalyser</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation-on-ubuntu-lts-releases">
+<h3>Installation on Ubuntu LTS Releases<a class="headerlink" href="#installation-on-ubuntu-lts-releases" title="Permalink to this headline">¶</a></h3>
+<p>Binary packages for Ubuntu Long Term Support (LTS) releases are hosted on
+<a class="reference external" href="https://launchpad.net/~samuele-carcagno/+archive/ubuntu/hearinglab">Launchpad</a>.
+To install pysoundanalyser run the following commands:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="p">:</span><span class="n">samuele</span><span class="o">-</span><span class="n">carcagno</span><span class="o">/</span><span class="n">hearinglab</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">pysoundanalyser</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="installation-on-windows">
+<h2>Installation on Windows<a class="headerlink" href="#installation-on-windows" title="Permalink to this headline">¶</a></h2>
+<p>A Windows installer is provided on the downloads page:</p>
+<p><a class="reference external" href="http://samcarcagno.altervista.org/pysoundanalyser/pysoundanalyser.html#downloads">http://samcarcagno.altervista.org/pysoundanalyser/pysoundanalyser.html</a></p>
+</div>
+<div class="section" id="installation-on-the-mac">
+<h2>Installation on the Mac<a class="headerlink" href="#installation-on-the-mac" title="Permalink to this headline">¶</a></h2>
+<p>The easiest way to install <code class="docutils literal"><span class="pre">pysoundanalyser</span></code> on the Mac is
+to use Pyzo as a Python distribution.
+The steps are similar as those for the installation with Pyzo on
+Windows (see below). Please, note that if you install with Pyzo you
+will need to use the PySide version of <code class="docutils literal"><span class="pre">pysoundanalyser</span></code>.</p>
+</div>
+<div class="section" id="installation-from-source">
+<span id="sec-install-from-source"></span><h2>Installation from source<a class="headerlink" href="#installation-from-source" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">pysoundanalyser</span></code> depends on Python and a handful of Python modules.
+There are two ways to obtain these dependencies. One is to install Python
+and all the dependencies &#8220;manually&#8221; (that is one by one). The other (and easier)
+way is to install a Python distribution that comes with a bundle of pre-installed
+modules. These include:</p>
+<ul class="simple">
+<li>Pyzo: <a class="reference external" href="http://www.pyzo.org/">http://www.pyzo.org/</a></li>
+<li>Anaconda: <a href="#id1"><span class="problematic" id="id2">`https://www.continuum.io/downloads https://www.continuum.io/downloads&gt;`_</span></a></li>
+<li>WinPython (Windows only): <a href="#id3"><span class="problematic" id="id4">`http://winpython.github.io/ http://winpython.github.io/&gt;`_</span></a></li>
+</ul>
+<p>Step by step instructions to install <code class="docutils literal"><span class="pre">pysoundanalyser</span></code> on Windows with Pyzo are provided below.
+Although these instructions are specific to Windows the installation steps are similar on Mac OS X
+and Linux systems. If you get stuck at some point don&#8217;t hesitate to get in touch &lt;<a class="reference external" href="mailto:sam&#46;carcagno&#37;&#52;&#48;gmail&#46;com">sam<span>&#46;</span>carcagno<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt;.</p>
+<div class="section" id="install-with-pyzo-on-windows">
+<h3>Install with Pyzo on Windows<a class="headerlink" href="#install-with-pyzo-on-windows" title="Permalink to this headline">¶</a></h3>
+<p>Download the latest version on Pyzo and unpack it to a folder of your choice.
+Download the Windows source package (PySide) of <cite>pysoundanalyser</cite>. Open the DOS
+command prompt and change directory to the folder where you unpacked <code class="docutils literal"><span class="pre">Pyzo</span></code>, which
+should contain the <cite>python.exe</cite> executable. For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">audiolab</span>\<span class="n">Desktop</span>\<span class="n">pyzo2013c</span>
+</pre></div>
+</div>
+<p>once you&#8217;re in the Pyzo folder, you can instruct the Pyzo Python interpreter
+to run <cite>pysoundanalyser</cite> by calling python.exe followed by the path where the <cite>pysoundanalyser</cite>
+main file is located. For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span><span class="o">.</span><span class="n">exe</span> <span class="s2">&quot;C:\Users</span><span class="se">\a</span><span class="s2">udiolab\Desktop\pysoundanalyser-pyside-0.2.81\pysoundanalyser.pyw&quot;</span>
+</pre></div>
+</div>
+<p>Currently there is not an application launcher. There is, however, a file called
+<code class="docutils literal"><span class="pre">pysoundanalyser-launcher.bat</span></code> inside the <cite>scripts</cite> folder of the source distribution of
+<cite>pysoundanalyser</cite> that after some modifications can be used as a launcher.
+The content of the file is the following:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Python32</span>\<span class="n">python</span> <span class="s2">&quot;C:\Python32\site-packages\pysoundanalyser.pyw&quot;</span>
+</pre></div>
+</div>
+<p>The first statement <code class="docutils literal"><span class="pre">C:\Python32\python</span></code> is the path to the Python
+executable. The second statement is the path to the main file of the
+<code class="docutils literal"><span class="pre">pysoundanalyser</span></code> app. You simply need to replace those two statements
+to reflect the Python installation on your system. Following the example
+above, you would change the contents of the file to:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">audiolab</span>\<span class="n">Desktop</span>\<span class="n">pyzo2013c</span>\<span class="n">python</span><span class="o">.</span><span class="n">exe</span> <span class="s2">&quot;C:\Users</span><span class="se">\a</span><span class="s2">udiolab\Desktop\pysoundanalyser-pyside-0.2.81\pysoundanalyser.pyw&quot;</span>
+</pre></div>
+</div>
+<p>You can place the <code class="docutils literal"><span class="pre">.bat</span></code>
+launcher wherever you want, for example on your <code class="docutils literal"><span class="pre">Desktop</span></code> folder.
+Simply double click on it, and <code class="docutils literal"><span class="pre">pysoundanalyser</span></code> should start.</p>
+</div>
+<div class="section" id="manual-installation-from-source">
+<h3>&#8220;Manual&#8221; Installation from Source<a class="headerlink" href="#manual-installation-from-source" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">pysoundanalyser</span></code> depends on the installation of a
+handful of other Python modules:</p>
+<ul class="simple">
+<li>Python (version 3) <a class="reference external" href="http://www.python.org/">http://www.python.org/</a></li>
+<li>numpy
+<a class="reference external" href="http://sourceforge.net/projects/numpy/files/">http://sourceforge.net/projects/numpy/files/</a></li>
+<li>scipy
+<a class="reference external" href="http://sourceforge.net/projects/scipy/files/">http://sourceforge.net/projects/scipy/files/</a></li>
+<li>matplotlib
+<a class="reference external" href="http://matplotlib.org/">http://matplotlib.org/</a></li>
+</ul>
+<p>additionally it is necessary to install one of the modules providing Python bindings to the Qt widgets toolkit.
+There are three parallel versions of <code class="docutils literal"><span class="pre">pysoundanalyser</span></code> that support the major
+modules providing Python bindings to Qt (PyQt5, PyQt4, and PySide). You need to install only one
+of these modules, and use the corresponding version of <code class="docutils literal"><span class="pre">pysoundanalyser</span></code></p>
+<ul class="simple">
+<li>PyQt5
+<a class="reference external" href="https://riverbankcomputing.com/software/pyqt/download5">https://riverbankcomputing.com/software/pyqt/download5</a></li>
+<li>PyQt4
+<a class="reference external" href="http://www.riverbankcomputing.co.uk/software/pyqt/download">http://www.riverbankcomputing.co.uk/software/pyqt/download</a></li>
+<li>PySide
+<a class="reference external" href="https://pypi.python.org/pypi/PySide/">https://pypi.python.org/pypi/PySide/</a></li>
+</ul>
+<p>these programs need to be installed manually. Once these programs are
+installed you can proceed with the installtion of <code class="docutils literal"><span class="pre">pysoundanalyser</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+</pre></div>
+</div>
+<p>you can then invoke <code class="docutils literal"><span class="pre">pysoundanalyser</span></code> from a terminal by typing the
+command</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pysoundanalyser</span><span class="o">.</span><span class="n">pyw</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-python-and-the-dependencies-manually-on-windows">
+<h3>Install Python and the Dependencies manually on Windows<a class="headerlink" href="#install-python-and-the-dependencies-manually-on-windows" title="Permalink to this headline">¶</a></h3>
+<p>Please, note that you will need Python version 3 or above to run <cite>pysoundanalyser</cite>.</p>
+<p>To install the dependencies, download them from their respective websites.
+Make sure that you pick versions compatible with your architecture (64 or 32 bits),
+and compatible with you Python version.</p>
+<p>After installing the dependencies, it is recommended to add the
+directory where the Python executable resides to the system <code class="docutils literal"><span class="pre">PATH</span></code>. In
+this way you can call <code class="docutils literal"><span class="pre">python</span></code> from a <code class="docutils literal"><span class="pre">DOS</span></code> shell by simply typing
+its name, rather than typing the full path to the Python executable.</p>
+<p>By default <code class="docutils literal"><span class="pre">python</span></code> is installed in <code class="docutils literal"><span class="pre">C:</span></code>. The name of the Python
+directory depends on its version number, for example, if you installed
+Python version 3.2, the python directory will be <code class="docutils literal"><span class="pre">C:\Python32</span></code>. To add
+this directory to the system path go to <code class="docutils literal"><span class="pre">My</span> <span class="pre">Computer</span></code> and click
+<code class="docutils literal"><span class="pre">Properties</span></code>, then click <code class="docutils literal"><span class="pre">Advanced</span> <span class="pre">System</span> <span class="pre">Settings</span></code>. In the
+<code class="docutils literal"><span class="pre">System</span> <span class="pre">Properties</span></code> window click <code class="docutils literal"><span class="pre">Environment</span> <span class="pre">Variables</span></code>. There you
+will find an entry called <code class="docutils literal"><span class="pre">Path</span></code>. Select it and click <code class="docutils literal"><span class="pre">Edit</span></code>. Be
+careful not to remove any of the entries that are already written there
+because it could corrupt your system. Simply append the name of the full
+path of the folder where Python is installed, at the end of the
+other entries.</p>
+<p>To run <code class="docutils literal"><span class="pre">pysoundanalyser</span></code>, unpack the <code class="docutils literal"><span class="pre">pysoundanalyser</span></code>
+<code class="docutils literal"><span class="pre">.zip</span></code> file containing the source code. Open a <code class="docutils literal"><span class="pre">DOS</span></code> shell, <code class="docutils literal"><span class="pre">cd</span></code> to the directory
+where you unzipped pysoundanalyser and launch it with the following
+command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">pysoundanalyser</span><span class="o">.</span><span class="n">pyw</span>
+</pre></div>
+</div>
+<p>Currently there is not an application launcher. There is, however, a file called
+<code class="docutils literal"><span class="pre">pysoundanalyser-launcher.bat</span></code> inside the <cite>scripts</cite> folder of the source distribution of
+<cite>pysoundanalyser</cite> that after some modifications can be used as a launcher.
+The content of the file is the following:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Python32</span>\<span class="n">python</span> <span class="s2">&quot;C:\Python32\site-packages\pysoundanalyser.pyw&quot;</span>
+</pre></div>
+</div>
+<p>The first statement <code class="docutils literal"><span class="pre">C:\Python32\python</span></code> is the path to the Python
+executable. The second statement is the path to the main file of the
+<code class="docutils literal"><span class="pre">pysoundanalyser</span></code> app. You simply need to replace those two statements
+to reflect the Python installation on your system. You can place the <code class="docutils literal"><span class="pre">.bat</span></code>
+launcher wherever you want, for example on your <code class="docutils literal"><span class="pre">Desktop</span></code> folder.
+Simply double click on it, and <code class="docutils literal"><span class="pre">pysoundanalyser</span></code> should start.</p>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="user_interface.html" class="btn btn-neutral float-right" title="User Interface"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="intro.html" class="btn btn-neutral" title="What is pysoundanalyser?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2010-2017, Samuele Carcagno.
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>
