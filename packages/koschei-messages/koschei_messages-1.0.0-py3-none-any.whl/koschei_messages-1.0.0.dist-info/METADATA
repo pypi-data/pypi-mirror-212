@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: koschei-messages
+Version: 1.0.0
+Summary: A schema package for messages sent by Koschei
+Home-page: https://github.com/fedora-infra/koschei-messages
+License: GPLv2-or-later
+Keywords: fedora-messaging
+Author: Fedora Infrastructure Team
+Author-email: infrastructure@lists.fedoraproject.org
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Communications
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: coverage[toml] (>=7.2.7,<8.0.0)
+Requires-Dist: fedora-messaging (>=3.3.0,<4.0.0)
+Requires-Dist: reuse (>=1.1.2,<2.0.0)
+Project-URL: Repository, https://github.com/fedora-infra/koschei-messages
+Description-Content-Type: text/markdown
+
+<!--
+SPDX-FileCopyrightText: 2023 Contributors to the Fedora Project
+
+SPDX-License-Identifier: GPL-2.0-or-later
+-->
+
+# Koschei messages
+
+A schema package for [Koschei](http://github.com/fedora-infra/koschei).
+
+See the [detailed documentation](https://fedora-messaging.readthedocs.io/en/stable/messages.html) on packaging your schemas.
+

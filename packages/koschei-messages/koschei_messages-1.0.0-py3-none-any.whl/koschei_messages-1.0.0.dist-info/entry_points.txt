@@ -1,0 +1,4 @@
+[fedora.messages]
+koschei.collection.state.change=koschei_messages.collection:CollectionStateChange
+koschei.package.state.change=koschei_messages.package:PackageStateChange
+
