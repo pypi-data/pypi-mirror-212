@@ -1,0 +1,101 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "build",
+    "setuptools >= 67.7.2",
+	"setuptools_scm >= 7.1",
+	"wheel >= 0.40.0"
+]
+
+
+[project]
+authors = [
+    {name = "David Slusser", email = "dbslusser@gmail.com"},
+]
+classifiers = [
+    "Framework :: Django",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "django",
+    "django-handyhelpers",
+    "psutil",
+]
+description = "host utilities for django projects"
+dynamic = ["version"]
+keywords = ["django", "host", "utilities"]
+license = {file = "LICENSE"}
+name = "django-hostutils"
+readme = "README.md"
+requires-python = ">=3.8"
+
+
+[project.optional-dependencies]
+dev = [
+    "bandit",
+    "black",
+    "build",
+    "coveralls",
+    "mypy",
+    "mypy-extensions",
+    "ruff",
+    "pytest",
+    "pytest-cov",
+    "pytest-django",
+    "types-python-dateutil",
+    "typing_extensions",
+]
+
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+]
+
+
+[tool.bandit]
+exclude_dirs = ["venv", "tests"]
+
+
+[tool.black]
+line-length = 120
+
+
+[tool.coverage.report]
+show_missing = true
+
+
+[tool.coverage.run]
+branch = true
+omit = ["*_test.py", "*/tests/*", "*__version__.py", "setup.py"]
+relative_files = true
+source = ["src"]
+
+
+[tool.flake8]
+exclude = "tests"
+hang-closing = true
+ignore = "E203,E266,H106,H904,E133"
+max-complexity = 25
+max-line-length = 120
+
+
+[tool.mypy]
+exclude = ['venv/*']
+ignore_missing_imports = true
+
+
+# https://docs.pytest.org/en/6.2.x/customize.html#pyproject-toml
+[tool.pytest.ini_options]
+addopts = "-s -v -x --strict-markers -m 'not extra' --doctest-modules"
+filterwarnings = [
+    "ignore::UserWarning",
+]
+testpaths = ["tests"]
+
+
+[tool.ruff]
+line-length = 120
+
+
+[tool.setuptools_scm]
+write_to = "src/__version__.py"
