@@ -1,0 +1,100 @@
+## Description 
+[a brief description of the pipeline]
+
+## Modules 
+
+Normalization 
+- SNGAN:
+- 
+
+Nodule Detection 
+- SANet:
+
+Nodule Segmentation 
+- UNet:
+
+Feature Extraction
+- (Deep features) HSCNN:
+- Ridiomics:
+
+## Installation 
+
+### Requirements 
+- Python 3.6 
+- CUDA 12.0
+- [PyTorch](https://pytorch.org/) 1.8
+
+The program has been validated with PyTorch version 1.8.0 and CUDA version 12.0, and it is recommended to use these specific versions to ensure optimal performance and compatibility.
+
+### Docker 
+Use docker image `litou/mii-pytorch:20.11` on the 62 server. For example, if you are using NLST data, run the following command to create and start a new docker container. 
+```
+docker run --shm-size=4g --gpus all -it --rm -v /home/<your_home_directory>:/workspace -v /data/lung/nlst/:/datasets  -v /etc/localtime:/etc/localtime:ro litou/mii-pytorch:20.11
+```
+
+### Install by pip
+Pypi project page: https://pypi.org/project/lung-analysis-pipeline/. Use the following command to install the pip package: 
+```
+pip install lung-analysis-pipeline
+```
+
+## Usage 
+To run the pipeline, specify input and output types and locations, and operations needed in `option.json` file. The following is an option file that specifies using SNGAN as the normalization model and SANet as the nodule detection model. The pipeline would take the output of SNGAN as the input of SANet.
+```
+{
+    "gpu_ids": [0]
+    , "dataset": {
+        "source": "nlst"
+        , "image_type": "dicom"
+        , "dataroot_HR": null
+        , "uids_location": null
+        , "dataroot_LR": "/datasets/NLST_CT_annotations"
+    }
+    , "order": ["normalization", "detection"]
+    , "normalization": {
+        "model": "sngan" 
+        , "output_dtype": "nrrd"
+        , "output_path": "./test/results/normalization/nrrd"
+    }
+    , "detection" :{
+        "model": "SANet"
+        , "output_dtype": "csv"
+        , "output_path": "./test/results/detection/bboxes.csv"
+    }
+    , "output": {
+        "log": "./test/results"
+    }
+}
+```
+
+Then run: 
+```
+import lung_analysis_pipeline 
+lung_analysis_pipeline.run_pipeline('option.json')
+```
+
+
+|             key         | description|
+| --------------------- |----------- |
+| `gpu_ids`        | Required. The ID of GPU to use |
+| `output['log']` | Required. The directory in which log file will be stored. |
+| `dataset['source']`        | Required. Name of the dataset to use. Support `nlst` and `ucla  `.
+| `image_type` | Required. The format of images in the dataset. Support `dicom` for NLST and `h5` for UCLA data| 
+| `dataset['dataroot_HR']` | Optional. The location of high-resolution data. Used for evaluating normalization models. `null` for NLST. | 
+| `dataset['uids_location'] `| Optional. The ID's of images in UCLA data. `null` for NLST. | 
+| `dataset['dataroot_LR']` | Required. Location of the input images. | 
+| `dataset['feature_roi']` | Optional. Location of a json file that contained the locations of RoI's that feature extraction model extracts feature from. Required if `feature_extraction['roi_source']` is set to `user`. |
+|  `order` | Required. Order in which the pipeline executres. Normalization, if exists, has to be the first operation. If both detection and segmentation are specified, detection has to come before segmentation. | 
+| `normalization` | Required if normalization is specified in `order`. Provides information on normalization model and output. |
+| `normalization['model']` | Required. Which normalization model to use. Support `sngan`, `sr_resnet`, `wgan`, `rrdb`, `bm3d`. | 
+| `normalization['output_path']` | Optional. If specified, output of normalization module will be saved to this location. If not, the output will not be saved. | 
+| `normalization['output_dtype']` | Optional. Format to save normalization output. Support `nrrd` and `nifti`. | 
+| `segmentation` | Required if segmentation is specified in `order`. |
+| `segmentation['model']` | Required. Which segmentation model to use. Support `unet`. |
+| `segmentation['use_detection_bbox']` | Required. If set to true, detection must be specified earlier in `order`, and the module will perform nodule segmentation in the RoI's genderated by the detection module. If set to false, segmentation will be performed on the entire volume in a patch-based overlapping sliding window appraoch. |
+| `segmentation['output_path']` | Optional. See `normalization[output_path']`. | 
+| `segmentation['output_dtype']` | Optional. See `normalization[output_dtype']`. |
+| `feature_extraction['roi_source']` | Source of the RoI's from which features are extracted. If set to `user`, the pipeline will extract features from the user-specified bounding boxes in `dataset['feature_roi']`. If set to `segmentation`, the pipeline will extract the centroids of connected components of the binary mask from previous segmentation model, extract image patches centered at these locations, and extract features from those patches. If set to `detection`, the pipeline will use bounding boxes generated by the detection model to extract features. |
+| `feature_extraction['deep_model']['model']` | Required. Which model to use as deep feature extractor. Support 'hscnn'. | 
+| `feature_extraction['output_dtype']` | Required. File format to save extracted features. Support `csv`. | 
+See [this file](https://colab.research.google.com/drive/1irp3YwR8EGHw187RT0i0t_HIaApSBPrG?usp=sharing) for a complete template.
