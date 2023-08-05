@@ -1,0 +1,11 @@
+coverage
+jupyter
+numpy_financial
+pandas
+plotly
+pre-commit
+pylint
+pytest
+pytest-cov
+swolfpy_inputdata
+xlrd==1.2.0
