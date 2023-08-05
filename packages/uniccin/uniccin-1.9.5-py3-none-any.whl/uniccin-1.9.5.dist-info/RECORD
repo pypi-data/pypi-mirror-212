@@ -1,0 +1,17 @@
+uniccin/__init__.py,sha256=aBukHc6j0X5RAtVcTMHTHGr9fJRBfWT9Tac5kmGZp2I,35
+uniccin/block.py,sha256=V7a7ZS-VYghpdI8HduL8lGwBXVpU0OAH1RnklZS2nas,1628
+uniccin/format.py,sha256=7m1qCDtv5fdv81CfQgT8m45FqCCJRd-e8O3Xq7ulAUU,1520
+uniccin/html.py,sha256=Dz1skVhA5DtT_hc6VJPZldBb_wxbqfm72hQOepqfTqo,677
+uniccin/search.py,sha256=2U8WXkl7zP203YEveizukyUafmgtQEpZqzBVqelWp_U,2623
+uniccin/uc.py,sha256=shUldIHY7PeJQ5K3b9GHCW1aFh1jKASA_JhBAIQJcEA,5459
+uniccin/uni.py,sha256=xJTtJkYJGPx-oI4dht-pnKDq12X_RpzKvfgeMXumZkY,7859
+uniccin/data/__init__.py,sha256=f7eSfXqK_tEeQgcSlb2T5lj0JCHd4oP4EFUWCws2a_I,58
+uniccin/data/block.py,sha256=P4ejMigjAnZnnA0SZ3nR0LfPRI4eKmEaHYFwj4bop-E,18613
+uniccin/data/ccc.py,sha256=5ihpHa8EFAgoQIJga-5FJt2QaoWYQxfg4Ww_Hx5yF9A,1066
+uniccin/data/html_entities.py,sha256=tvBJQ1bznLDHBWFl6cwpaVXu4zA6Xuaz0y7A7xJDe3w,28591
+uniccin-1.9.5.dist-info/LICENSE,sha256=I3n34VjpmazdN9JAdI2S_so-Ab6x0n5CO0huxzvdKA0,1057
+uniccin-1.9.5.dist-info/METADATA,sha256=1_4sPyHeosI6MgesxDKeBP55eFTTZHy8itMmzQFAAiQ,5628
+uniccin-1.9.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+uniccin-1.9.5.dist-info/entry_points.txt,sha256=0aSgxOt3q8POh73T4k3tImpZllE0S_s-2zxeW0vfS-8,41
+uniccin-1.9.5.dist-info/top_level.txt,sha256=EZCEPVS11mvreHrJ1_52Vx55-4osxEbSwxKX_vSxiZw,8
+uniccin-1.9.5.dist-info/RECORD,,
