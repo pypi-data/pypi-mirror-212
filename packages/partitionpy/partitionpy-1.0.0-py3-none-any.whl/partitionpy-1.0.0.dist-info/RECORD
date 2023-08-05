@@ -1,0 +1,12 @@
+partitionpy/__init__.py,sha256=S2tDVD6mut40MP8wuOUDLhrJ22sMebDTziKwkze9BQE,268
+partitionpy/cga.py,sha256=iIp7hCHcktPPFC4ND9mXl2nlhLfBwmKB7q3S1QzhBuw,916
+partitionpy/ckk.py,sha256=bmak-tkChvnz_qjC8r6-KCHXlxuEhbLdMTPM7KdEUGQ,918
+partitionpy/complete_base.py,sha256=rL5ZDdMLBmQfXLFMPpoT3EhMLosHqyIkVk5E5PVzKYA,4567
+partitionpy/kckk.py,sha256=XF-iBaoVV4im1wN03yUnK6559maBw9icNIbqSk1mXFI,4638
+partitionpy/kk.py,sha256=o4GRayAp7mL-I9laYw5Qtc9TvNJ-RgjRUo3egC34jTY,3356
+partitionpy/naive_greedy.py,sha256=VaaeIjXH6ot3_B2Jbrvn0nqojeP9Ig1zdn8s5e-WMAk,1191
+partitionpy/types.py,sha256=xVlk6vNwkpWTHLv63tHIH7dSd9Sjk-X5VPf6uYMkzJ0,128
+partitionpy-1.0.0.dist-info/METADATA,sha256=SFbqwID8uYTdyCQD3GIaQRgrAetvjoberM-1JSgyUs8,3233
+partitionpy-1.0.0.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+partitionpy-1.0.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+partitionpy-1.0.0.dist-info/RECORD,,
