@@ -1,0 +1,4 @@
+beartype
+jinja2
+numpy
+pillow
