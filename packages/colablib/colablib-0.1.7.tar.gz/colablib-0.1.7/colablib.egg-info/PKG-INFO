@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: colablib
+Version: 0.1.7
+Summary: A utility library for Google Colab
+Home-page: https://github.com/Linaqruf/colablib
+Author: Furqanil Taqwa
+Author-email: furqanil.taqwa@gmail.com
