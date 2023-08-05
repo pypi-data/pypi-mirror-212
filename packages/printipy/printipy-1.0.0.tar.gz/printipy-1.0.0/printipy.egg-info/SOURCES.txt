@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+printipy/__init__.py
+printipy/api.py
+printipy/data_objects.py
+printipy/exceptions.py
+printipy.egg-info/PKG-INFO
+printipy.egg-info/SOURCES.txt
+printipy.egg-info/dependency_links.txt
+printipy.egg-info/requires.txt
+printipy.egg-info/top_level.txt
