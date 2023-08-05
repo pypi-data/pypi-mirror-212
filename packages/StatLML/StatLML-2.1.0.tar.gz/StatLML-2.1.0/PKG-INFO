@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: StatLML
+Version: 2.1.0
+Summary: Statistical Learning Models Library
+Home-page: https://github.com/Ahmed-Bayoumy/SLML
+Author: Ahmed H. Bayoumy
+Author-email: ahmed.bayoumy@mail.mcgill.ca
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Ahmed-Bayoumy/SLML/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: interactive
+License-File: LICENSE
+
+# SLML
+Statistical Learning Models Library: A python library for dynamic surrogates and statistical learning algorithms
+
+**Version 2.0.0**
+
+---
+
+## License & copyright
+
+© Ahmed H. Bayoumy 
+---
+## How to use SLML package
+
+After installing the `SLML` package, the functions and classes of `SLML` module can be imported directly into the python script as follows:
+
+```pycon
+from SLML import *
+```
+
+

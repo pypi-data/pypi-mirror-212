@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/SLML/SLML.py
+src/SLML/__init__.py
+src/StatLML.egg-info/PKG-INFO
+src/StatLML.egg-info/SOURCES.txt
+src/StatLML.egg-info/dependency_links.txt
+src/StatLML.egg-info/requires.txt
+src/StatLML.egg-info/top_level.txt
