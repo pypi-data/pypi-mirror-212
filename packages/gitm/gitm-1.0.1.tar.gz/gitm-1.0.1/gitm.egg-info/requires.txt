@@ -1,0 +1,6 @@
+typer>=0.7.0
+
+[build]
+build
+twine
+bumpver

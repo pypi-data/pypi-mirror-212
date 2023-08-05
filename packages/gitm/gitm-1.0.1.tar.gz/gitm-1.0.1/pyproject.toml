@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitm"
+version = "1.0.1"
+description = "Git emoji cli application"
+readme = "README.md"
+authors = [
+    { name = "AmirBahador Bahadori", email = "amirbahador.pv@gmail.com" },
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["gitm", "Git emoji cli"]
+dependencies = [
+    "typer >= 0.7.0",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+build = ["build", "twine", "bumpver"]
+
+[project.scripts]
+gitm = "gitm.__main__:run"
+
+[project.urls]
+repository = "https://github.com/amirbahador-hub/gitm"
+#documentation = ""
+
+
+[tool.bumpver]
+current_version = "0.1.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"',
+]
+"gitm/__init__.py" = [
+    'gitm_version = "{version}"',
+]
