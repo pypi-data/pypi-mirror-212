@@ -1,0 +1,4 @@
+build_dependencies
+resources
+swegram
+swegram_main
