@@ -1,0 +1,15 @@
+vertopal/__init__.py,sha256=1CpYunnHSJl-tJRwD-2oXbCLNcK-1Je-Ab1--pftq9Q,333
+vertopal/build.py,sha256=anwarsy4lsWiE8EiM_fitJXvWeufXIi0q-W2FbU9VFY,4975
+vertopal/vertopal.py,sha256=jH0j20NduwVRnPZflykFb5vYyoY2FWcEaPpRJvf73d8,1792
+vertopal/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vertopal/api/interface.py,sha256=ekYz5wLAV6HVgWaw8MPHg7i9WtdaI83rYkvQhpd4Nuw,2235
+vertopal/api/v1.py,sha256=ULtFAr5r2bySfeNlwfFhoClCXtAHRCe0FwLr1NbIJIs,6748
+vertopal/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vertopal/utils/config.py,sha256=IUtn4RnwWZTI6FzhNZjeDx4kJm5Lzq4GonmC0PCo-tM,2618
+vertopal/utils/terminal.py,sha256=kV9kv-700xHnTBRArzntlN8bAmUQY9hNuHq9jobRZtw,22621
+vertopal-1.0.3.dist-info/LICENSE,sha256=m2lDYAFnEUw_xB9HofnFJQ4TjE-KOcX4EHgYieCLbUU,1065
+vertopal-1.0.3.dist-info/METADATA,sha256=_FDrL5lf4VKCHYp9_H7y3Rvxk8Ri7IfQK8s-fFuTwUc,3806
+vertopal-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vertopal-1.0.3.dist-info/entry_points.txt,sha256=E3N-SazQXnSEy6JH3yaVjLzc8RsF5AKXKOyE1UTj9DE,52
+vertopal-1.0.3.dist-info/top_level.txt,sha256=EC3afD3aTz6jtIAbbnL3kYQ1UZUMBw91HXWqBs6yJGA,9
+vertopal-1.0.3.dist-info/RECORD,,
