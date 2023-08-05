@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Python_Proxy/Buffer.py
+src/Python_Proxy/GenerateCertificates.py
+src/Python_Proxy/Proxy.py
+src/Python_Proxy/TcpProxy.py
+src/Python_Proxy/TcpSslProxy.py
+src/Python_Proxy/UdpProxy.py
+src/Python_Proxy/__init__.py
+src/Python_Proxy.egg-info/PKG-INFO
+src/Python_Proxy.egg-info/SOURCES.txt
+src/Python_Proxy.egg-info/dependency_links.txt
+src/Python_Proxy.egg-info/requires.txt
+src/Python_Proxy.egg-info/top_level.txt
+test/test.py
