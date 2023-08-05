@@ -1,0 +1,13 @@
+README.md
+setup.py
+SerializerTalay/Creator.py
+SerializerTalay/JSONSerializer.py
+SerializerTalay/XMLSerializator.py
+SerializerTalay/__init__.py
+SerializerTalay/constans.py
+SerializerTalay/serializer_functions.py
+SerializerTalay.egg-info/PKG-INFO
+SerializerTalay.egg-info/SOURCES.txt
+SerializerTalay.egg-info/dependency_links.txt
+SerializerTalay.egg-info/requires.txt
+SerializerTalay.egg-info/top_level.txt
