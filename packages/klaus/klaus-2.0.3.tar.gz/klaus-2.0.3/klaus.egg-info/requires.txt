@@ -1,0 +1,11 @@
+flask
+Werkzeug>=0.15.0
+pygments
+httpauth
+humanize
+
+[:python_version < "3.5"]
+dulwich<0.20,>=0.19.3
+
+[:python_version >= "3.5"]
+dulwich>=0.19.3
