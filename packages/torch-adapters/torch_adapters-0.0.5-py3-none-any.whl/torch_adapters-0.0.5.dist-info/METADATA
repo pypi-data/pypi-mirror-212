@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: torch-adapters
+Version: 0.0.5
+Summary: Small Library of Torch Adaptation modules
+Home-page: https://github.com/ma2za/torch-adapters
+License: MIT
+Keywords: lora,adapters,llm,transformers,bert
+Author: ma2za
+Author-email: mazzapaolo2019@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: torch (>=2.0.1,<3.0.0)
+Project-URL: Repository, https://github.com/ma2za/torch-adapters
+Description-Content-Type: text/markdown
+
+# Torch Adapters
+
+> <em>"During a gold rush, sell shovels."</em>
+
+# Introduction
+
+Small Library of Torch Adaptation modules
+
+### Supported Methods
+
+- [X] LoRA
+- [X] Prompt Tuning
+- [X] Bottleneck Adapter
+
+# Installation
+
+You can install torch-adapters using:
+
+    $ pip install torch-adapters
+
+# Usage
+
+    $ add_lora(model, ["key", "value"], {"alpha": 8, "r": 8})
+

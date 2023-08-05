@@ -1,0 +1,11 @@
+torch_adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_adapters/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_adapters/adapters/adapter.py,sha256=I0d1ioCzZnEbkcgpTiqWDvQ07MpWXHE360NjQXEZIkQ,1112
+torch_adapters/adapters/lora.py,sha256=hopgVt0x9jvQwGXE5NCmDXxddOxhHis_kd_nUSQHmVw,1731
+torch_adapters/adapters/mixin.py,sha256=Z4_QPM9ZfzKge4hp_MlRe9FZwXfUqsvmTkbSAEuvY1c,193
+torch_adapters/adapters/prompt_tuning.py,sha256=6EqMp0mrL-i8hlxVwjz3PE_33SjhT0AHVp8haEsz8s4,3161
+torch_adapters/utils.py,sha256=-Lvn0379haNFosmub0ONIQhG0uUnWi7yAMc9woxIFHo,4038
+torch_adapters-0.0.5.dist-info/LICENSE,sha256=jQP3CLPNJ3wkjftPFHJIPy-DHXrZUqtjnHmzzooOAfA,1062
+torch_adapters-0.0.5.dist-info/METADATA,sha256=hDubgeLVtkzyklk4ogSIps0p9LA5NSqu-P4uyBHiCI8,1111
+torch_adapters-0.0.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+torch_adapters-0.0.5.dist-info/RECORD,,
