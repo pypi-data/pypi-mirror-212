@@ -1,0 +1,11 @@
+ttkbootstrap>=1.10.1
+siaextractlib>=0.2.2
+siaplotlib>=0.2.1
+pillow>=9.3.0
+xarray>=2023.5.0
+numpy>=1.23.4
+
+[dev]
+bumpver
+build
+twine

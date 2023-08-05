@@ -1,0 +1,5 @@
+[console_scripts]
+sia-app-debug = sia_app.__main__:main
+
+[gui_scripts]
+sia-app = sia_app.__main__:main
