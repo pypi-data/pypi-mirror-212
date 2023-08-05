@@ -1,0 +1,13 @@
+[project]
+name = "colorsdude_g1gabyteDEV"
+version = "0.6.9"
+authors = [
+  { name="James", email="me@g1gabyte.dev" },
+]
+description = "A small package used for ez refrence to colors."
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]

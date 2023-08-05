@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/colorsdude_g1gabyteDEV/__init__.py
+src/colorsdude_g1gabyteDEV/yes.py
+src/colorsdude_g1gabyteDEV.egg-info/PKG-INFO
+src/colorsdude_g1gabyteDEV.egg-info/SOURCES.txt
+src/colorsdude_g1gabyteDEV.egg-info/dependency_links.txt
+src/colorsdude_g1gabyteDEV.egg-info/top_level.txt
