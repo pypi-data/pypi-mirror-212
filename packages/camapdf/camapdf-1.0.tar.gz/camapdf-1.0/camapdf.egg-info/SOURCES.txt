@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+camapdf/__init__.py
+camapdf/pdf2image.py
+camapdf/pdf2text.py
+camapdf.egg-info/PKG-INFO
+camapdf.egg-info/SOURCES.txt
+camapdf.egg-info/dependency_links.txt
+camapdf.egg-info/top_level.txt
