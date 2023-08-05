@@ -1,0 +1,13 @@
+django_mock_queries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mock_queries/asserts.py,sha256=tDqhcwiSWV9Dz5RXKT3t7Yf9kPYXM8GbvXuMxhijal0,3153
+django_mock_queries/comparisons.py,sha256=2xXEvS8F92_ztgN732BIj8GjKSJoLJknnKq1Q83JRuM,1673
+django_mock_queries/constants.py,sha256=ye7K1_nyDwKH47JKZB4mJYm-CiS_E262tBOA2QHvdPk,2378
+django_mock_queries/exceptions.py,sha256=v_2bnDLuwLj4WLmsXo9C01cyNj9l6JwbijmgeMxeMlY,95
+django_mock_queries/mocks.py,sha256=DWK1pl_6KpfIhfMfY_uj6kdrjJS8LbAgNrtozWez3GA,17059
+django_mock_queries/query.py,sha256=j9KcAZ96CSk6L8WYhr0_Ea1KgdjtTSpFPHiOs17-qLc,16646
+django_mock_queries/utils.py,sha256=b6BDD-Xb-eJ1Y5C6x14P1VpD-kq6CcacJh_WWi7grO0,9651
+django_mock_queries-2.1.8.dist-info/LICENSE.txt,sha256=f_84RcT1yYr0aFYLMrPai5ZD1KuJbWey0GaPKo6OMHc,1079
+django_mock_queries-2.1.8.dist-info/METADATA,sha256=E7luKOuJ5Ga0VPIPULQCB3hru2TfYCzrjkuKVoSFdpM,8158
+django_mock_queries-2.1.8.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+django_mock_queries-2.1.8.dist-info/top_level.txt,sha256=8n688Dr34MeMobrw0kdNl_jT2oYQy18i-Y2g1C-RYPs,20
+django_mock_queries-2.1.8.dist-info/RECORD,,
