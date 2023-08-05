@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: static-frame-pyodide
+Version: 0.1.1
+Summary: StaticFrame packaged for use in Pyodide, PyScript, and WebAssembly/Emscripten environments
+Author: Christopher Ariza
+License: MIT
+Keywords: immutable,array,numpy,data structures
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Environment :: WebAssembly
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# static-frame-pyodide
+StaticFrame packaged for use in Pyodide, PyScript, and WebAssembly/Emscripten environments
