@@ -1,0 +1,13 @@
+README.md
+setup.py
+SerilizerGrishchuk/Creator.py
+SerilizerGrishchuk/JSONSerializer.py
+SerilizerGrishchuk/XMLSerializator.py
+SerilizerGrishchuk/__init__.py
+SerilizerGrishchuk/constans.py
+SerilizerGrishchuk/serializer_functions.py
+SerilizerGrishchuk.egg-info/PKG-INFO
+SerilizerGrishchuk.egg-info/SOURCES.txt
+SerilizerGrishchuk.egg-info/dependency_links.txt
+SerilizerGrishchuk.egg-info/requires.txt
+SerilizerGrishchuk.egg-info/top_level.txt
