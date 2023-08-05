@@ -1,0 +1,11 @@
+facebook_page_scraper/__init__.py,sha256=zxJKslYYfgy6jx2Api-ugMSGk4WhoUQpmHlfy-VhibQ,322
+facebook_page_scraper/driver_initialization.py,sha256=goIfHv663X1ZTHuHAJeK7l3_5hx-6Gs4a4ueQJqm1V4,3878
+facebook_page_scraper/driver_utilities.py,sha256=TKRUxF7RzZwooNevrLjazUDTG7GLqExmcnLwwLZeFVg,7853
+facebook_page_scraper/element_finder.py,sha256=21NqYEZLxAwGEVFwAp21Ck9HUt19OpDk1uHhV9Nic4I,17022
+facebook_page_scraper/scraper.py,sha256=OAiYZRPVtKlfOdbaFXCO6BdrMQAKr8UKmBiym1Nr0h0,15742
+facebook_page_scraper/scraping_utilities.py,sha256=-nuF0UjIWytWPHpkGWyL2pBclfhWTtJPOzZqy3R3bVg,5248
+facebook_page_scraper-5.0.0.dist-info/LICENSE,sha256=9dpDjhfc88V_L1ttUb2B6p068Xnreg5GJlXoG79fn8Y,1090
+facebook_page_scraper-5.0.0.dist-info/METADATA,sha256=57MKBurYK7fw_nXrTx8j0GZOc5GjDQnResWKiCL0oeA,12452
+facebook_page_scraper-5.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+facebook_page_scraper-5.0.0.dist-info/top_level.txt,sha256=HA0ql8gVWR1P5mF1w1OTqrxemvjsV4Juee98n0kgGgs,22
+facebook_page_scraper-5.0.0.dist-info/RECORD,,
