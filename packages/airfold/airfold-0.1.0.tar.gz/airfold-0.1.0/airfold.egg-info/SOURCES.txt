@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+airfold.egg-info/PKG-INFO
+airfold.egg-info/SOURCES.txt
+airfold.egg-info/dependency_links.txt
+airfold.egg-info/requires.txt
+airfold.egg-info/top_level.txt
+test/test_config.py
+test/test_locks.py
+test/test_parse.py
+test/test_runtime_ch.py
+test/test_storage.py
+test/test_utils.py
