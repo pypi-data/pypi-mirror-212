@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+src/lookaside/__init__.py
+src/lookaside/cli.py
+src/lookaside/lookaside.py
+src/lookaside/util.py
+src/lookaside.egg-info/PKG-INFO
+src/lookaside.egg-info/SOURCES.txt
+src/lookaside.egg-info/dependency_links.txt
+src/lookaside.egg-info/entry_points.txt
+src/lookaside.egg-info/requires.txt
+src/lookaside.egg-info/top_level.txt
