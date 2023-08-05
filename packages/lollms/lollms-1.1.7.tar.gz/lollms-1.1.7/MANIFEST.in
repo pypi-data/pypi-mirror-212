@@ -1,0 +1,5 @@
+global-exclude *.pyc
+global-exclude local_config.yaml
+global-exclude .installed
+global-exclude .git
+global-exclude .gitignore
