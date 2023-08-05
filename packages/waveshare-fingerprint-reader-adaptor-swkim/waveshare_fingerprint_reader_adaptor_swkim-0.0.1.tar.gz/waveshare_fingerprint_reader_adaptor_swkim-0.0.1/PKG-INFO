@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: waveshare-fingerprint-reader-adaptor_swkim
+Version: 0.0.1
+Summary: This is a library that allows you to use a fingerprint reader made by waveshare using Python.
+Project-URL: Homepage, https://github.com/sophianetSun/waveshare-fingerprint-reader-adaptor
+Project-URL: Bug Tracker, https://github.com/sophianetSun/waveshare-fingerprint-reader-adaptor/issues
+Author-email: SunWoo Kim <sanuverse@outlook.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# waveshare-fingerprint-reader-adaptor
+
+This is a library that allows you to use a fingerprint reader made by waveshare using Python.
