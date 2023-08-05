@@ -1,0 +1,10 @@
+LICENCE.md
+README.md
+pyproject.toml
+src/appwee/__init__.py
+src/appwee/app.py
+src/appwee.egg-info/PKG-INFO
+src/appwee.egg-info/SOURCES.txt
+src/appwee.egg-info/dependency_links.txt
+src/appwee.egg-info/requires.txt
+src/appwee.egg-info/top_level.txt
