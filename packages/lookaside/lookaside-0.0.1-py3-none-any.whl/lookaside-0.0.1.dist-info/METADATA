@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: lookaside
+Version: 0.0.1
+Summary: Lookaside cache in the LLM era
+Home-page: https://github.com/WorkshopHQ/lookaside
+Author: Tan Li
+Author-email: tan@tanli.dev
+Project-URL: Bug Tracker, https://github.com/WorkshopHQ/lookaside/issues
+Project-URL: Changelog, https://github.com/WorkshopHQ/lookaside/releases
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: rich
+Requires-Dist: textual
+Requires-Dist: typer
+Requires-Dist: termcolor
+Requires-Dist: tiktoken
+Requires-Dist: faiss-cpu
+Requires-Dist: openai
+Requires-Dist: lancedb
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: Faker ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: memray ; extra == 'dev'
+Requires-Dist: pdbpp ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: richbench ; extra == 'dev'
+
+# LookAside
+
+<https://lookaside.ai>

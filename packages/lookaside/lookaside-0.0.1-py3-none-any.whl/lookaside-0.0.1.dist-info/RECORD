@@ -1,0 +1,9 @@
+lookaside/__init__.py,sha256=AJSBXfbpJasH-23jDp25v1LBqsaCvVmbAuXcP0GE42Y,38
+lookaside/cli.py,sha256=QUBe-gLzM0Rj9ZeOw3Qdgkx2NrBL8GRY5CiWPAPvkwU,283
+lookaside/lookaside.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lookaside/util.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lookaside-0.0.1.dist-info/METADATA,sha256=5mXvg56AIZouudPXdhg_vYTXDK8hllDXMXO-t1UeRTg,1105
+lookaside-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lookaside-0.0.1.dist-info/entry_points.txt,sha256=dfanh1nAoCCcwgnfhmar6AYc2_6rA4kbO1Oq5NL6TcA,44
+lookaside-0.0.1.dist-info/top_level.txt,sha256=Xc4KgenGE9c6wr5qlpM7qcdrqdbR_Zj0uus7kbU7mKo,10
+lookaside-0.0.1.dist-info/RECORD,,
