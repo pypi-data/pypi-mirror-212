@@ -1,0 +1,3 @@
+[console_scripts]
+yomigana_ebook=yomigana_ebook.cli:main
+

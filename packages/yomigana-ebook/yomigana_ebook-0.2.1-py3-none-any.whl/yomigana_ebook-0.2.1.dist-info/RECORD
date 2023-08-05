@@ -1,0 +1,13 @@
+yomigana_ebook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yomigana_ebook/checking.py,sha256=2diAkPFkUzLzOmi24AyDHNC1HH-XrazOVieqr5xyanI,920
+yomigana_ebook/cli.py,sha256=HbPn6dOzKYSzTJhFl-5Cy3ZqnI5kZuDz-DqyKblVccM,1273
+yomigana_ebook/constants.py,sha256=f5_BfQofAzxGc307odrp6uam3q48QW-FVBEs2sDZFkM,611
+yomigana_ebook/converter.py,sha256=4xq-7UNuSn9BwJtX0ayOzfFrPb4iEIc4vzqrmVQanYo,317
+yomigana_ebook/process_ebook.py,sha256=8UpfSKBes8Baf8l-isaaiOU-Pl2FcgWfCMi4HwwcjFY,1794
+yomigana_ebook/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yomigana_ebook/yomituki.py,sha256=XeSXB_CowmOZOArNGzwz8YNTpe7_j7a2diAL_iHkHoI,3455
+yomigana_ebook-0.2.1.dist-info/LICENSE,sha256=XfRvF4Fovyb8WCM_xSZUeyMiwyuuQOvrB_g9B658J8k,1069
+yomigana_ebook-0.2.1.dist-info/METADATA,sha256=GxGAtrkJ9VHa5TxGpm_q-OM189ph9pI1kyL8DEDei3E,1750
+yomigana_ebook-0.2.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+yomigana_ebook-0.2.1.dist-info/entry_points.txt,sha256=N9lBaFeAVmega0kyvX-sqPCagfMNk5g1rpVwwHjmJAs,58
+yomigana_ebook-0.2.1.dist-info/RECORD,,
