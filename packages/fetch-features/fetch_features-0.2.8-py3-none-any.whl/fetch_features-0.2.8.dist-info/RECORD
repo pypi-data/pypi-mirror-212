@@ -1,0 +1,12 @@
+fetcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fetcher/__main__.py,sha256=ALT2nMowmUsrZU_zxxn8MJZ3elf4JH3ZWSvhAzNmkrE,1239
+fetcher/access_genbank.py,sha256=5O_mXVur2Z4aV6cAM6UOhJZQO-RI-RiuoTSR5q2NC1Y,18653
+fetcher/gui.py,sha256=Fxi_K_n8EKGibaw5e4JKKVyNeL-0IZAkY054pPBdodg,17556
+fetcher/user_input.py,sha256=8kaWJ_kNZkx81C_WsbnLmq1BwrC1COfCBflktWbIqps,10902
+fetcher/utils.py,sha256=nCDxnlx_HTb8OhqeWVqTGd7R_Lqhk7NpTeAkWkuOtuc,27324
+fetch_features-0.2.8.dist-info/LICENSE.md,sha256=3tYfyryKpk_-opginHVTyIzmzFy1okvqYBIqQizzwEA,1507
+fetch_features-0.2.8.dist-info/METADATA,sha256=UZzlh-9ANG_vLdmLduEsmAr94s5Xtpxbl2VGjluqxzc,3601
+fetch_features-0.2.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fetch_features-0.2.8.dist-info/entry_points.txt,sha256=uaS-WzO417U71M0Z7boKz9cXeewvv5N8CUlH-oUW98M,57
+fetch_features-0.2.8.dist-info/top_level.txt,sha256=MIZI9CEY8nJAjpBzoQhUBqZ9lAf0LX0ia6RRFktdChg,8
+fetch_features-0.2.8.dist-info/RECORD,,
