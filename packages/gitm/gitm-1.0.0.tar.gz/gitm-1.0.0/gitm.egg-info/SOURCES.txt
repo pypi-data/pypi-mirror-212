@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gitm/__init__.py
+gitm/__main__.py
+gitm/connection.py
+gitm/db.py
+gitm/pattern.py
+gitm.egg-info/PKG-INFO
+gitm.egg-info/SOURCES.txt
+gitm.egg-info/dependency_links.txt
+gitm.egg-info/entry_points.txt
+gitm.egg-info/requires.txt
+gitm.egg-info/top_level.txt
