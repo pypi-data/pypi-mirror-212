@@ -1,0 +1,2 @@
+[console_scripts]
+coderschoolai = CoderSchoolAI.cli.cli:main
