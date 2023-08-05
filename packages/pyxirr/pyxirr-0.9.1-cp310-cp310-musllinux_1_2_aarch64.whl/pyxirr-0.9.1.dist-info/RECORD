@@ -1,0 +1,10 @@
+pyxirr-0.9.1.dist-info/METADATA,sha256=voORcSPe44V52RZBW_E0ybQj-v58Z-7iTQ3tHcOXGzM,6650
+pyxirr-0.9.1.dist-info/WHEEL,sha256=hcQAsKtVktH75b61CfoYwj_8N0I-uzQO3UfgBLvCtcY,108
+pyxirr-0.9.1.dist-info/license_files/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+pyxirr.libs/libgcc_s-d7088d38.so.1,sha256=eruenD4WU9j8z1O_nkRT5IW55VHdj1SnpqEnqwzjVx0,724137
+pyproject.toml,sha256=e5tlW6KTZP17ogeOj7ZLQlEOBwzONZSOmwRWraqn-40,895
+pyxirr/__init__.py,sha256=UyxBSruWyko8edZDSHqRh3vs5SgfYWGx8j9pKyfenp8,107
+pyxirr/__init__.pyi,sha256=k0Tyuhlrhtjy3kf9H9OtsriJlXq1vJX96t019z3CO6U,10518
+pyxirr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyxirr/pyxirr.cpython-310-aarch64-linux-gnu.so,sha256=hSNt_btKLGJ_8lLxTMzP6aAn2M2Tw_7fWzDE5l1tECc,920321
+pyxirr-0.9.1.dist-info/RECORD,,
