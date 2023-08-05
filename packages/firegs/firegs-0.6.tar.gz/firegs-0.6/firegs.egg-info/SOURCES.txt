@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+firegs/__init__.py
+firegs/script.py
+firegs/version.py
+firegs.egg-info/PKG-INFO
+firegs.egg-info/SOURCES.txt
+firegs.egg-info/dependency_links.txt
+firegs.egg-info/entry_points.txt
+firegs.egg-info/requires.txt
+firegs.egg-info/top_level.txt
