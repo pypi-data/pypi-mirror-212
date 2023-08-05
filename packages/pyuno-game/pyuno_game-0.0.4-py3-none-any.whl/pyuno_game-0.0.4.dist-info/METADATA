@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pyuno-game
+Version: 0.0.4
+Summary: A uno game
+Author-email: Dorapower <thatisluo@outlook.com>
+License: MIT License
+        
+        Copyright (c) 2023 Lokdora
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/Dorapower/Uno-Game
+Project-URL: Documentation, https://github.com/Dorapower/Uno-Game/wiki
+Project-URL: Repository, https://github.com/Dorapower/Uno-Game.git
+Keywords: uno,game
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Uno-Game
+A Uno game implemented in Python
+
+Currently a placeholder but may be updated in the future.
+
+## Installation
+
+```bash
+pip install pyuno-game
+```
+
+## Rules
+
+Official Rules can be found [here](https://service.mattel.com/us/instruction_sheets.aspx).
+Do note that there are many variations of the game (also known as Theme Packs) and the rules can be very different.
+The target of this project is to implement the original uno game, and potentially allow for customisation as extensions.
+
+Some most popular (citation required) rules is listed below, and also can be found under the [rules](rules/) folder.
+
+- UNO Flip™ (2019) - [rules](rules/GDG37-Eng.pdf)
+- UNO® Card Game (2016) - [rules](rules/FFK04-Eng.pdf)
+- UNO® Card Game (2010) - [rules](rules/41940-Eng.pdf)
+- UNO® Card Game (2008?) - [rules](rules/UNO%20Basic%20IS.pdf)
+
+The last one above is the one wildly used by 3rd party website including [Wikipeida](https://en.wikipedia.org/wiki/Uno_(card_game)#cite_note-UNO-6)
+and [Mattel Wiki](https://mattel.fandom.com/wiki/UNO#cite_note-UNO-4), but it can't be found on the official website
+(Although the file is still on the server, the product page offers a different version of the rules, which is also provided above).
