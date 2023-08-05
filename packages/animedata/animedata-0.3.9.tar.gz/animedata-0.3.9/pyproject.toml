@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+exclude = [
+  "/dist",
+  "/.git",
+  ".gitignore"
+  ]
+include = [
+  "animedata/*"
+]
+
+[project]
+name = "animedata"
+version = "0.3.9"
+authors = [
+ {name="swarthur"}
+]
+description = "Open-source library containing package about animes/series and including a built-in utility."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Github" = "https://github.com/swarthur/animedata"
+"Bug" = "https://github.com/swarthur/animedata/issues"
