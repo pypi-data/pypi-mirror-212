@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: hashformers
+Version: 2.0.0
+Summary: Word segmentation with transformers
+Author: Ruan Chaves Rodrigues
+Author-email: ruanchave93@gmail.com
+License-File: LICENSE
