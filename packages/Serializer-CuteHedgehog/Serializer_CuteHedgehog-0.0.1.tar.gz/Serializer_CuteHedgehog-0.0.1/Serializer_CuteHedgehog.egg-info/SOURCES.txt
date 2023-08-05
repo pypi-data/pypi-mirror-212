@@ -1,0 +1,14 @@
+setup.py
+Serializer/DeserializerJSON.py
+Serializer/DeserializerXML.py
+Serializer/ParserJSON.py
+Serializer/ParserXML.py
+Serializer/SerializerFactory.py
+Serializer/SerializerJSON.py
+Serializer/SerializerXML.py
+Serializer/__init__.py
+Serializer/constants.py
+Serializer_CuteHedgehog.egg-info/PKG-INFO
+Serializer_CuteHedgehog.egg-info/SOURCES.txt
+Serializer_CuteHedgehog.egg-info/dependency_links.txt
+Serializer_CuteHedgehog.egg-info/top_level.txt

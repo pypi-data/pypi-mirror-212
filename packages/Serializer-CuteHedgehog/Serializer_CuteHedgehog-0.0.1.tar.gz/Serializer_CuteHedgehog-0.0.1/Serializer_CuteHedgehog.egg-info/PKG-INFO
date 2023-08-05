@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Serializer-CuteHedgehog
+Version: 0.0.1
+Summary: Python serializer
+Author: Yulia Atrashonok
+Author-email: <yulia.atrashonok@yandex.ru>
+Keywords: python,first package
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+Python serializer for lab 3
