@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: StatLML
+Version: 2.1.0
+Summary: Statistical Learning Models Library
+Home-page: https://github.com/Ahmed-Bayoumy/SLML
+Author: Ahmed H. Bayoumy
+Author-email: ahmed.bayoumy@mail.mcgill.ca
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Ahmed-Bayoumy/SLML/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.22.4)
+Requires-Dist: OMADS (>=1.5.0)
+Requires-Dist: pandas (>=1.4.2)
+Requires-Dist: pyDOE2 (>=1.3.0)
+Requires-Dist: scikit-learn (>=1.1.1)
+Requires-Dist: scipy (>=1.8.1)
+Requires-Dist: setuptools (>=58.1.0)
+Requires-Dist: requests (>=2.20.0)
+Provides-Extra: interactive
+Requires-Dist: matplotlib (>=3.5.2) ; extra == 'interactive'
+Requires-Dist: plotly (>=5.14.1) ; extra == 'interactive'
+
+# SLML
+Statistical Learning Models Library: A python library for dynamic surrogates and statistical learning algorithms
+
+**Version 2.0.0**
+
+---
+
+## License & copyright
+
+© Ahmed H. Bayoumy 
+---
+## How to use SLML package
+
+After installing the `SLML` package, the functions and classes of `SLML` module can be imported directly into the python script as follows:
+
+```pycon
+from SLML import *
+```
+
+
