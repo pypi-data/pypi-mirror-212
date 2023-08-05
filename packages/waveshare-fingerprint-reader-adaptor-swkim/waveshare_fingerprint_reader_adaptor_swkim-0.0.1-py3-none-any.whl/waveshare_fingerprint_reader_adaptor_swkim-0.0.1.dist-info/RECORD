@@ -1,0 +1,7 @@
+setup.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/fingerprint_reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/fingerprint_reader/fingerprint.py,sha256=_xRqV44U3PhGDXpmZcx9vgthO63bEDGxqQhhZp4yOMg,15910
+waveshare_fingerprint_reader_adaptor_swkim-0.0.1.dist-info/METADATA,sha256=iVcjiQDwh27Gn7flSvm9ok2v-VpIoaEr_p936cLZAow,798
+waveshare_fingerprint_reader_adaptor_swkim-0.0.1.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+waveshare_fingerprint_reader_adaptor_swkim-0.0.1.dist-info/licenses/LICENSE,sha256=0FMe4Tvl9TybTMb-YO_xS1iWHG59fQxGqWqBpgUflck,1068
+waveshare_fingerprint_reader_adaptor_swkim-0.0.1.dist-info/RECORD,,
