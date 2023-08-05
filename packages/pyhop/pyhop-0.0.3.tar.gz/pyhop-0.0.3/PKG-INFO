@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pyhop
+Version: 0.0.3
+Summary: This project is a Python script that utilizes built-in trace tools like tracert for Windows and traceroute for Linux to perform a traceroute to a given hostname or IP address. It traces the path that packets take from your device to the destination host, providing ip addresses
+Author: Sarthak
+Author-email: <waliasarthak@gmail.com>
+Keywords: python,traceroute,tracert,hops,ip address,server hops
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+pyhop is a Python package that simplifies the process of performing traceroutes by utilizing the built-in trace tools, tracert for Windows and traceroute for Linux. This package provides a consistent interface and reliable results across different platforms, allowing network administrators, developers, and users to diagnose network issues and optimize performance with ease. 
+
+With pyhop, you can effortlessly trace the path of packets from your device to a destination host, gaining valuable insights into network connectivity.
+
+Usage Example:
+
+from pyhop import pyhop
+
+print(pyhop(example.com))
+
