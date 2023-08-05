@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+linggapy/__init__.py
+linggapy/stemmer.py
+linggapy.egg-info/PKG-INFO
+linggapy.egg-info/SOURCES.txt
+linggapy.egg-info/dependency_links.txt
+linggapy.egg-info/top_level.txt

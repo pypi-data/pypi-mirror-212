@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: linggapy
+Version: 0.1
+Summary: Library for Stemming Balinese Text Language
+Home-page: https://github.com/putuwaw/linggapy
+Author: Putu Widyantara Artanta Wibawa
+Author-email: putuwaw973@gmail.com
+License: MIT
+Keywords: stemming,stem,balinese,language
+License-File: LICENSE
