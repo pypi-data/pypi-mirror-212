@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "biclustering"
+version = "2023.05.31.5"
+authors = [
+  { name="Mijanur Rahaman Mallick", email="mijanur08@gmail.com" }
+]
+description = "Biclustering and association rule mining using Suffix Tree and Frequent Closed Itemset based algorithm."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "pandas",
+  "pydot",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/damaclab/FIST-Biclustering-Python"
+"Bug Tracker" = "https://github.com/damaclab/FIST-Biclustering-Python/issues"
