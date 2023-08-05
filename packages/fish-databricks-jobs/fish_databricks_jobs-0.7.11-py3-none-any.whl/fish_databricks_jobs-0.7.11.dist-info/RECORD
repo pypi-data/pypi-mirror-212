@@ -1,0 +1,11 @@
+fish_databricks_jobs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fish_databricks_jobs/cli.py,sha256=TzAOOIiB2QcF85PXII-dD3j0hLaZMoZ9RJF7iNBnvI8,3538
+fish_databricks_jobs/config.py,sha256=OmMNDwOSKDslpQReOL2RHTxYigokgSQskIj8hCBy6d4,313
+fish_databricks_jobs/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fish_databricks_jobs/services/jobs.py,sha256=JbIN01sGQO69cF28Nx2JZB_JG4unxxD5Xq7Cr9847WA,2380
+fish_databricks_jobs/services/permissions.py,sha256=8KfzcvQfxy0JNVRNhnCu4e9fV5fAeNkAGK8F7GUjxVw,2042
+fish_databricks_jobs/services/version.py,sha256=fz-6hydvc6tE5DLteurCCHqbWQufzlz-5GrPJN9073c,143
+fish_databricks_jobs-0.7.11.dist-info/METADATA,sha256=t6F59-KZ4NE-MlySgvyf4FmjX4OI0fu-9lBnH4mYtzY,5478
+fish_databricks_jobs-0.7.11.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+fish_databricks_jobs-0.7.11.dist-info/entry_points.txt,sha256=LHV0KVgHB4kuCFm2clO9tkZJhf03TsUAJwnmhLWNP5w,105
+fish_databricks_jobs-0.7.11.dist-info/RECORD,,
