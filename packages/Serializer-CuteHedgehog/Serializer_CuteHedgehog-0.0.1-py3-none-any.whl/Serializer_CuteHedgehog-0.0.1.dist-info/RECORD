@@ -1,0 +1,13 @@
+Serializer/DeserializerJSON.py,sha256=JCnikVkxLxFCK5hL-PSpBCdjCwCr1IPcUgAO4c6v3nU,6058
+Serializer/DeserializerXML.py,sha256=iR1syWqV3FFakjldr3otzVj-IJcPrJ0gzu8YtjGqOJA,6407
+Serializer/ParserJSON.py,sha256=FncJvhdnfej2lHy5Nm3uvX-pbiAoUzJN6x9sQ-9tZpE,749
+Serializer/ParserXML.py,sha256=F5jybFQfUb8b2SXD7OPPUNnHd2r4U_14e_utfZoiv0s,776
+Serializer/SerializerFactory.py,sha256=kecWHIE8GVybOFLFyBIIcNi2uxsVfH8tcqlQ8Ddk6M4,403
+Serializer/SerializerJSON.py,sha256=XCrqo4nPyzEB7HRVzKJ7oCCFFewg2l6jAVvdD0gjTfA,8223
+Serializer/SerializerXML.py,sha256=tLIJ7uM7lHeNxD45J5xA1PJmPq_RVPqcP7JlCv_pFok,8303
+Serializer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Serializer/constants.py,sha256=tSmQJCmkM2ZWZFElTiWOc0uDxWeb_rp_pt3fyCLpfQA,315
+Serializer_CuteHedgehog-0.0.1.dist-info/METADATA,sha256=Vh5QSiiP1h-Zd3xclKtJIOUNi4JJo-7eF03blFvRlPs,372
+Serializer_CuteHedgehog-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Serializer_CuteHedgehog-0.0.1.dist-info/top_level.txt,sha256=_i9LuaWfBRjsGJRmxndZDrUwcLNaDmNnJ-KqSd0RVIk,11
+Serializer_CuteHedgehog-0.0.1.dist-info/RECORD,,
