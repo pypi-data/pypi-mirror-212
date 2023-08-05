@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pyaudioai/OpenAiResponse.py
+src/pyaudioai/RecordQuestion.py
+src/pyaudioai/__init__.py
+src/pyaudioai.egg-info/PKG-INFO
+src/pyaudioai.egg-info/SOURCES.txt
+src/pyaudioai.egg-info/dependency_links.txt
+src/pyaudioai.egg-info/requires.txt
+src/pyaudioai.egg-info/top_level.txt
+tests/test_openai_response.py
+tests/test_record_question.py

@@ -1,0 +1,11 @@
+openai
+gTTS
+playsound
+pyaudio
+wave
+
+[dev]
+check-manifest
+
+[test]
+coverage
