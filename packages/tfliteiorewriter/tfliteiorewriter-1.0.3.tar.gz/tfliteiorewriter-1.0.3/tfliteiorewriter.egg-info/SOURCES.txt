@@ -1,0 +1,17 @@
+.dockerignore
+.gitignore
+Dockerfile
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/codeql-analysis.yml
+.github/workflows/python-publish.yml
+tfliteiorewriter/__init__.py
+tfliteiorewriter/_version.py
+tfliteiorewriter/main.py
+tfliteiorewriter.egg-info/PKG-INFO
+tfliteiorewriter.egg-info/SOURCES.txt
+tfliteiorewriter.egg-info/dependency_links.txt
+tfliteiorewriter.egg-info/entry_points.txt
+tfliteiorewriter.egg-info/requires.txt
+tfliteiorewriter.egg-info/top_level.txt
