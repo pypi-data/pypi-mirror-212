@@ -1,0 +1,7 @@
+venv/
+*.pyc
+__pycache__/
+build/
+dist/
+*/verifiNN.egg-info/
+.DS_Store
