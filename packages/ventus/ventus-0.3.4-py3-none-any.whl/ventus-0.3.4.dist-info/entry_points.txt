@@ -1,0 +1,2 @@
+[console_scripts]
+ventus = ventus.cli:cli
