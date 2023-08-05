@@ -1,0 +1,3 @@
+recursive-include hcm_causal/pytetrad/resources *.*
+recursive-include hcm_causal/pytetrad/tools *.*
+recursive-include hcm_causal/pytetrad/R *.*

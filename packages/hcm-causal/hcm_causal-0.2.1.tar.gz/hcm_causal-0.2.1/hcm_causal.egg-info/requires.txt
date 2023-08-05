@@ -1,0 +1,11 @@
+numpy
+scipy
+pandas
+JPype1
+causal-learn
+python-igraph
+torch
+tqdm
+scikit-learn
+toolz
+bayesian-optimization>=1.1.0
