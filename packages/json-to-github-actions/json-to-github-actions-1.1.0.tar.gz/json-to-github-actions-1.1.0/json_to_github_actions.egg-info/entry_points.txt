@@ -1,0 +1,2 @@
+[console_scripts]
+json_to_github_actions = json_to_github_actions:main
