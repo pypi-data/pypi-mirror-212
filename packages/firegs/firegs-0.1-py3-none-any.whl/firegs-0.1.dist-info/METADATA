@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: firegs
+Version: 0.1
+Summary: A tool to add app to Firebase project from the command line
+Home-page: https://github.com/androiddevnotes/firegs
+Author: Android Dev Notes
+Author-email: awesomedevnotes@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: google-auth
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-transport-requests
+
+# FireGS
+
+FireGS is a command-line tool for managing Firebase Android Apps. It allows you to create new apps and list all apps in your Firebase project.
+
+## Installation
+
+You can install FireGS using pip:
+
+```bash
+pip install firegs
+```
+
+You will also need to provide the path to your Firebase service account key file. You can do this by running the `firegs` command:
+
+```bash
+firegs
+```
+
+This will prompt you for the path to your service account key file.
+
+## Usage
+
+To create a new Firebase Android app, run the `firegs` command with the `-c` flag followed by the package name of the new app. You can also provide a display name for the app with the `-d` flag:
+
+```bash
+firegs -c com.example.app -d "Example App"
+```
+
+To list all Firebase Android apps in your project, run the `firegs` command with the `-l` flag:
+
+```
+firegs -l
+```
+
+## License
+
+FireGS is released under the MIT License. See the LICENSE file for more details.
+
+
+
+
