@@ -1,0 +1,2 @@
+[console_scripts]
+veta = veta:main
