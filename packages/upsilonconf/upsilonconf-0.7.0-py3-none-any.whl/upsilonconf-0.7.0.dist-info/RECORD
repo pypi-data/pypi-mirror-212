@@ -1,0 +1,15 @@
+upsilonconf/__init__.py,sha256=Eg8xQsfX9xrDPmAAKTVTrc58-QfMtaqwA11VXNDIxIk,366
+upsilonconf/config.py,sha256=S1z1a2m5pqz9wnIRwu56kLD5-pR9SSqSC5QStJckuy0,35473
+upsilonconf/io/__init__.py,sha256=utvks21T6XzuFsZQ5bR0y75_eVdZ5xBLYeRJLXuOoWo,4924
+upsilonconf/io/_optional_dependencies.py,sha256=m3i6duPfr4-dKtcExforKb9NxsLk5qpct2JM1tGkuMk,2180
+upsilonconf/io/base.py,sha256=Kadsq0rFmqc9C-Mo8hLNmbnXdGo_okY2PISyymtvwWk,12273
+upsilonconf/io/cli.py,sha256=LyHeibAS6LiaGChc9Iic0r71AMBqNF4IWQbvl9I_el4,3920
+upsilonconf/io/directory.py,sha256=OaAPYqTl1Z3akbuA-M1ods2D8hrtXTnoc5RxBgpKOjY,3976
+upsilonconf/io/json.py,sha256=Dzy2zIJ79nAKAJHlXI95ejJulhMJXqlAaTFDiSFvJyU,1337
+upsilonconf/io/toml.py,sha256=l9h9RboDB-ipTXc-n_8u7wcVg1yFdr-PoLKiQHuDUVA,917
+upsilonconf/io/yaml.py,sha256=ipk1mjHZa6RRR9ENoS8mrI4vR562GqCB_TyIglZYxWQ,2140
+upsilonconf-0.7.0.dist-info/LICENSE,sha256=pGWt8D03WVckxq4Jh02RRWqY13CJrGDnvRFdxFdizTg,1073
+upsilonconf-0.7.0.dist-info/METADATA,sha256=oGpM7DIbkb0vePzzVpDaAntlWImdtKDWaqGhS6MsgOs,5629
+upsilonconf-0.7.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+upsilonconf-0.7.0.dist-info/top_level.txt,sha256=mOHce961Iclfc_cl361Ko2QGBWswWnLEsBE2dTZPwyQ,12
+upsilonconf-0.7.0.dist-info/RECORD,,
