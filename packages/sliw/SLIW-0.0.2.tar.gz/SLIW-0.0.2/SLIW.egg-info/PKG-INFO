@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: SLIW
+Version: 0.0.2
+Summary: Command analyzer for pandas new version
+Author: sliw team
+Author-email: giokhvichia69@gmail.com
+Keywords: python,data,analyze,information,simplicity
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/plain

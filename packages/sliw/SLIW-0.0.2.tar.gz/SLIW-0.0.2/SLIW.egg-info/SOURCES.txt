@@ -1,0 +1,8 @@
+setup.py
+SLIN_GN/SLIW_GN.py
+SLIN_GN/__init__.py
+SLIW.egg-info/PKG-INFO
+SLIW.egg-info/SOURCES.txt
+SLIW.egg-info/dependency_links.txt
+SLIW.egg-info/requires.txt
+SLIW.egg-info/top_level.txt
