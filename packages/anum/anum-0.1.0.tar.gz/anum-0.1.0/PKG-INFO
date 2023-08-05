@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: anum
+Version: 0.1.0
+Summary: Conjunto de ferramentas para implementação de métodos elementares de análise numérica
+Project-URL: Homepage, https://github.com/GHM-ML/anum
+Project-URL: Bug Tracker, https://github.com/GHM-ML/anum/issues
+Author-email: Gabriel Martins <gabe.hm.ml@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# ANum
+## Análise Numérica
+Implementação dos métodos elementares de análise numérica contidos no livro referência.
+## Ferramentas disponíveis:
+v0.1.0:
+
+Aproximação de raízes de funções de uma variável pelos métodos:
+- Biseção
+- Posição falsa
+- Ponto fixo
+- Newton-Raphson
+- Secante
+
+# Referência:
+[Cálculo numérico: Aspectos teóricos e computacionais. 2ª Ed. Livro por: Marcia Ruggiero e Vera Lúcia Lopes](https://www.google.com/search?q=C%C3%A1lculo+Num%C3%A9rico:+Aspectos+Te%C3%B3ricos+e+Computacionais&sxsrf=APwXEdfgqS5mIzsXo3Rk-RsZe0XDspg7lA:1685770539697&source=lnms&sa=X&ved=2ahUKEwik18PRsKb_AhWsjZUCHSdsAf4Q_AUoAHoECAoQAg&biw=1292&bih=668&dpr=1)

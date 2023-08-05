@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "anum"
+version = "0.1.0"
+authors = [
+  { name="Gabriel Martins", email="gabe.hm.ml@gmail.com" },
+]
+description = "Conjunto de ferramentas para implementação de métodos elementares de análise numérica"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/GHM-ML/anum"
+"Bug Tracker" = "https://github.com/GHM-ML/anum/issues"
