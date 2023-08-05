@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+src/gp_db_io.py
+src/gp_sqlconnection.py
+src/gp_storage_io.py
+src/genetikaplusIO.egg-info/PKG-INFO
+src/genetikaplusIO.egg-info/SOURCES.txt
+src/genetikaplusIO.egg-info/dependency_links.txt
+src/genetikaplusIO.egg-info/requires.txt
+src/genetikaplusIO.egg-info/top_level.txt
