@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pdf-cleanup-empty
+Version: 0.0.1
+Summary: This package can be used to remove white/empty pages from a pdf.
+Author-email: Patrick Schleiter <git.pschleiter@gmail.com>
+Project-URL: repository, https://github.com/pschleiter/pdf-cleanup-empty
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pikepdf
+Requires-Dist: numpy
+Requires-Dist: click
+
+# pdf_cleanup_empty
+
+This package can be used to remove white/empty pages from a pdf.
+
+## Usage
+
+Install via pip
+
+    $ pip install pdf_cleanup_empty
+  
+Use via CLI
+
+    $ cleanup --help
+    Usage: cleanup [OPTIONS] [INPUT_PATH]...
+
+    Removes empty and blank pages from the provided pdf files and saves them
+    with the suffix _clean.
+
+    Options:
+    -t, --target PATH  Provide a target path where the newly create files will
+                        be saved.
+    -v, --verbose      Show some details while processing the documents.
+    --help             Show this message and exit.

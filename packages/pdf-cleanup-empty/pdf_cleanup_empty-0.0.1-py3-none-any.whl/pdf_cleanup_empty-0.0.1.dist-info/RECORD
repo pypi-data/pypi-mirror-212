@@ -1,0 +1,10 @@
+pdf_cleanup_empty/__init__.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+pdf_cleanup_empty/cli.py,sha256=u7IPrXUHLznmAc5k-3OmY8fHV0J-6KiWWUP-uGkEI4s,3381
+pdf_cleanup_empty/__pycache__/__init__.cpython-38.pyc,sha256=2hANpQwdub--fLytaMh9Zw7-cdz_rA-NqRRQl9qFd4E,182
+pdf_cleanup_empty/__pycache__/cli.cpython-38.pyc,sha256=r8FW6Q2-bHdo1xD5kPWP2xUem02v_vRcgZDEV5up72I,2543
+pdf_cleanup_empty-0.0.1.dist-info/LICENSE,sha256=CaD78PAaLhHkkozzddzAIEAcWtHfwEMgf7eDWQrCpew,1095
+pdf_cleanup_empty-0.0.1.dist-info/METADATA,sha256=rmHg96CdKct2YK5KMUwFsFjj8xOJdT57CSeXXEWKQo8,1480
+pdf_cleanup_empty-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pdf_cleanup_empty-0.0.1.dist-info/entry_points.txt,sha256=Y1hzNtLWzsDn25pfYW_DyQsOa4odtNl29wcQJXfPpb8,69
+pdf_cleanup_empty-0.0.1.dist-info/top_level.txt,sha256=JQiEfePvcdyeGvBvJQb7IJAlIqmD20HZJeHBMjSNV4k,18
+pdf_cleanup_empty-0.0.1.dist-info/RECORD,,
