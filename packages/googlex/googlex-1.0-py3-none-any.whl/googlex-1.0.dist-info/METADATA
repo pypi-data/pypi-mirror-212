@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: googlex
+Version: 1.0
+Summary: This is a powerful library for building self robots in Rubika
+Home-page: https://github.com/mrsalari/googlex
+Author: mohammad saeed salari
+Author-email: salari601601@gmail.com
+Keywords: googlex,google,search,gogle,pyrubika,search google,google search
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pycryptodome
+Requires-Dist: websocket-client
+Requires-Dist: websockets
+Requires-Dist: requests
+Requires-Dist: aiohttp
+Requires-Dist: pillow
+Requires-Dist: mutagen
+Requires-Dist: tinytag
+
+<p align="center">
+    <br>
+        <img src="mrsalari.github.io/images.jpeg" alt="search" width="428">
+    <br>
+    <br>
+        <b>Google search library with Python</b>
+    <br>
+</p>
+
+## google
+
+> A fast, and  powerful library for search own in google
+
+``` python
+from googlex import search
+search("Google")
+  
+```
+
+
+### Installing
+
+``` bash
+pip3 install googlex
+```
+
+This is not an official google product. It is affiliated with nor endorsed by google Inc.
+
+© 2023 Mohammad Saeed Salari
