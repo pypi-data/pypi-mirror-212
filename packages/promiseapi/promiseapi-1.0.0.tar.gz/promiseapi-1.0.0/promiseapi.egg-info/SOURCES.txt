@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+promiseapi/__init__.py
+promiseapi.egg-info/PKG-INFO
+promiseapi.egg-info/SOURCES.txt
+promiseapi.egg-info/dependency_links.txt
+promiseapi.egg-info/top_level.txt

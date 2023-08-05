@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "promiseapi"
+version = "1.0.0"
+description = "Kind of like JavaScript promises (in Python!)"
+readme = "README.md"
+authors = [{ name = "Carl Furtado", email = "carlzfurtado@gmail.com" }]
+license = { file = "LICENSE" }
+keywords = [
+	"javascript",
+    "promise",
+    "async"
+]
+requires-python = ">= 3.9"
+
+[project.urls]
+Homepage = "https://github.com/User0332/promiseapi"
+
+[tool.setuptools]
+packages = ["promiseapi"]
