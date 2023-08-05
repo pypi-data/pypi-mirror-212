@@ -1,0 +1,1 @@
+from .automate_analysis import insights

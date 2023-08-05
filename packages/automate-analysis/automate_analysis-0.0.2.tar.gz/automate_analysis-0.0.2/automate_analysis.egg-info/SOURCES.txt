@@ -1,0 +1,7 @@
+setup.py
+automate_analysis/__init__.py
+automate_analysis/automate_analysis.py
+automate_analysis.egg-info/PKG-INFO
+automate_analysis.egg-info/SOURCES.txt
+automate_analysis.egg-info/dependency_links.txt
+automate_analysis.egg-info/top_level.txt

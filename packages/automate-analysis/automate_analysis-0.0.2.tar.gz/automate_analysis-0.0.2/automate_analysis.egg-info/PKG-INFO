@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: automate-analysis
+Version: 0.0.2
+Summary: Basic insight generator - EDA
+Author: Hirshikesh karan Ahilan
+Author-email: hirshiahilan2003@gmail.com
+Keywords: python,automate,automate eda,eda,analysis,data analysis
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+This package automates and gives you basic visualization of the data, before using the package please install the required lib, the list of lib are mentioned in the __init__.py file in the git hub - https://github.com/Hirshikesh2003/Automate_EDA
