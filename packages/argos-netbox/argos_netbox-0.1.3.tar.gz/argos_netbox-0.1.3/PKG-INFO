@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: argos-netbox
+Version: 0.1.3
+Author-Email: Dominic Walther <dominic.walther@ost.ch>, Dejan Jovicic <dejan.jovicic@ost.ch>
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Project-URL: Repository, https://gitlab.ost.ch/pydantic-sa/netboxify
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Argos-NetBox
+NetBox plugin for documenting network services in NetBox for the purposes of SSoT based deployment. Can be used in conjunction with [argos-nac](https://pypi.org/project/argos-nac/) for automated, SSoT based service deployment.
+
+## Currently supported services
+### MPLS L3 VPN:
+- BGP (Full mesh topology only)
+- LDP (Manual + automatic ranges)
+- VRF

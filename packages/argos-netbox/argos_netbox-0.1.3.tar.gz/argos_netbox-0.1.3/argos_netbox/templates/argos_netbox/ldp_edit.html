@@ -1,0 +1,42 @@
+{% extends 'generic/object_edit.html' %}
+{% load static %}
+{% load form_helpers %}
+{% load helpers %}
+{% load argos_macros %}
+
+
+{% block form %}
+    <div class="field-group my-5">
+        <div class="row mb-2">
+            <h5 class="offset-sm-3">LDP</h5>
+        </div>
+        {% render_field form.device %}
+        {% render_field form.ldp_enabled_interfaces %}
+    </div>
+
+    <div class="field-group my-5">
+        <div class="row mb-2">
+            <h5 class="offset-sm-3">Range</h5>
+        </div>
+        {% render_field form.auto_range %}
+
+        <div id="manual_label_div">
+            {% render_field form.label_start %}
+            {% render_field form.label_end %}
+        </div>
+        {% hide_if_checked "auto_range" "manual_label_div" %}
+    </div>
+
+    <div class="field-group my-5">
+        {% render_field form.comments %}
+    </div>
+
+    {% if form.custom_fields %}
+    <div class="field-group my-5">
+        <div class="row mb-2">
+            <h5 class="offset-sm-3">Custom Fields</h5>
+        </div>
+        {% render_custom_fields form %}
+    </div>
+    {% endif %}
+{% endblock %}
