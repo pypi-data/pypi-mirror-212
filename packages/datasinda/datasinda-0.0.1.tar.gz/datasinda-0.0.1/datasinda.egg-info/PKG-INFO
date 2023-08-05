@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: datasinda
+Version: 0.0.1
+Summary: Datasinda API
+Home-page: https://gitlab.com/alecerioli98/datasinda-api
+Author: 'Alessandro Cerioli'
+License: MIT
+Classifier: Framework :: Django
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+License-File: LICENSE
