@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mypackagelicenseprototype
+Version: 1.3.0
+Summary: Description of your package
+Requires-Python: >=3.7, <4
+
