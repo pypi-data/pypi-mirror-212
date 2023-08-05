@@ -1,0 +1,5 @@
+rs_distances-0.4.0.dist-info/METADATA,sha256=4oiRfOECE3obGmvkl6NvIM0H4e72rYeheHwganXK0qY,2784
+rs_distances-0.4.0.dist-info/WHEEL,sha256=4xIUMtxw7Bkd37TCu3xmcGEe8Uaiysj97n2XhIcwtBc,95
+rs_distances/__init__.py,sha256=vDWLPR3_6mpHAkf4LBlxAyW_XGPQ1AubmdaucAnbMfk,131
+rs_distances/rs_distances.cp310-win_amd64.pyd,sha256=Qjz31tI7m2kwG3e0M0f6BBckdgW8m0_0R5E4upZHczw,300544
+rs_distances-0.4.0.dist-info/RECORD,,
