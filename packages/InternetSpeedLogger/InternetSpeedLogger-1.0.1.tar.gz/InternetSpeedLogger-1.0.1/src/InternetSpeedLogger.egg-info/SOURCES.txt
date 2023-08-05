@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/InternetSpeedLogger/1__init__.py
+src/InternetSpeedLogger/InternetSpeedLogger.py
+src/InternetSpeedLogger.egg-info/PKG-INFO
+src/InternetSpeedLogger.egg-info/SOURCES.txt
+src/InternetSpeedLogger.egg-info/dependency_links.txt
+src/InternetSpeedLogger.egg-info/requires.txt
+src/InternetSpeedLogger.egg-info/top_level.txt
