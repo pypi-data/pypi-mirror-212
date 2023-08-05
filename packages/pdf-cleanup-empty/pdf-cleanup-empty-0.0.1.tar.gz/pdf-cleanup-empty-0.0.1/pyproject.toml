@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-cleanup-empty"
+authors = [
+    {name = "Patrick Schleiter", email = "git.pschleiter@gmail.com"},
+]
+description = "This package can be used to remove white/empty pages from a pdf."
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "pikepdf",
+    "numpy",
+    "click",
+]
+dynamic = ["version", "readme"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "pdf_cleanup_empty.__version__"}
+readme = {file = ["README.md"], content-type = "text/markdown"}
+
+[project.scripts]
+cleanup = "pdf_cleanup_empty.cli:remove_empty_pages"
+
+[project.urls]
+repository = "https://github.com/pschleiter/pdf-cleanup-empty"

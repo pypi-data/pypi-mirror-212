@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pdf_cleanup_empty/__init__.py
+src/pdf_cleanup_empty/cli.py
+src/pdf_cleanup_empty.egg-info/PKG-INFO
+src/pdf_cleanup_empty.egg-info/SOURCES.txt
+src/pdf_cleanup_empty.egg-info/dependency_links.txt
+src/pdf_cleanup_empty.egg-info/entry_points.txt
+src/pdf_cleanup_empty.egg-info/requires.txt
+src/pdf_cleanup_empty.egg-info/top_level.txt
+src/pdf_cleanup_empty/__pycache__/__init__.cpython-38.pyc
+src/pdf_cleanup_empty/__pycache__/cli.cpython-38.pyc
