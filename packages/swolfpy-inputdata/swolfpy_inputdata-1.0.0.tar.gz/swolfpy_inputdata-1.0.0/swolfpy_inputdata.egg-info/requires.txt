@@ -1,0 +1,10 @@
+coverage
+jupyter
+pandas
+pre-commit
+pylint
+pytest
+pytest-cov
+pytest-flake8
+stats-arrays
+xlrd==1.2.0

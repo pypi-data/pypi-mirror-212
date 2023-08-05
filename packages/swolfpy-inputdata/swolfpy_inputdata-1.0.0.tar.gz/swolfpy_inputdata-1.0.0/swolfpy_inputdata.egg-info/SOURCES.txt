@@ -1,0 +1,85 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+HISTORY.rst
+LICENSE.md
+MANIFEST.in
+README.rst
+pyproject.toml
+requirements.txt
+swolfpy_inputdata/AD_Input.py
+swolfpy_inputdata/AnF_Input.py
+swolfpy_inputdata/COM_Col_Input.py
+swolfpy_inputdata/CommonData.py
+swolfpy_inputdata/Comp_Input.py
+swolfpy_inputdata/GC_Input.py
+swolfpy_inputdata/HC_Input.py
+swolfpy_inputdata/InputData.py
+swolfpy_inputdata/LF_Input.py
+swolfpy_inputdata/MC.py
+swolfpy_inputdata/MF_Col_Input.py
+swolfpy_inputdata/RDF_Input.py
+swolfpy_inputdata/Reproc_Input.py
+swolfpy_inputdata/SF_Col_Input.py
+swolfpy_inputdata/SS_MRF_Input.py
+swolfpy_inputdata/TS_Input.py
+swolfpy_inputdata/Technosphere_Input.py
+swolfpy_inputdata/WTE_Input.py
+swolfpy_inputdata/__init__.py
+swolfpy_inputdata.egg-info/PKG-INFO
+swolfpy_inputdata.egg-info/SOURCES.txt
+swolfpy_inputdata.egg-info/dependency_links.txt
+swolfpy_inputdata.egg-info/requires.txt
+swolfpy_inputdata.egg-info/top_level.txt
+swolfpy_inputdata/data/AD_Input.csv
+swolfpy_inputdata/data/AD_Input_MaterialDependent.csv
+swolfpy_inputdata/data/AnF_Input.csv
+swolfpy_inputdata/data/AnF_Input_MaterialDependent.csv
+swolfpy_inputdata/data/COM_Col_Input.csv
+swolfpy_inputdata/data/COM_Col_Input_MaterialDependent.csv
+swolfpy_inputdata/data/CommonData.csv
+swolfpy_inputdata/data/Comp_Input.csv
+swolfpy_inputdata/data/Comp_Input_MaterialDependent.csv
+swolfpy_inputdata/data/Distance.csv
+swolfpy_inputdata/data/GC_Input.csv
+swolfpy_inputdata/data/GC_Input_MaterialDependent.csv
+swolfpy_inputdata/data/HC_Input.csv
+swolfpy_inputdata/data/HC_Input_MaterialDependent.csv
+swolfpy_inputdata/data/LF_GasColPlan.csv
+swolfpy_inputdata/data/LF_Gas_emission_factors.csv
+swolfpy_inputdata/data/LF_Input.csv
+swolfpy_inputdata/data/LF_Input_MaterialDependent.csv
+swolfpy_inputdata/data/LF_Leachate_Quality.csv
+swolfpy_inputdata/data/MF_Col_Input.csv
+swolfpy_inputdata/data/MF_Col_Input_MaterialDependent.csv
+swolfpy_inputdata/data/Material properties.csv
+swolfpy_inputdata/data/RDF_Input.csv
+swolfpy_inputdata/data/RDF_Input_MaterialDependent.csv
+swolfpy_inputdata/data/References.csv
+swolfpy_inputdata/data/Reprocessing_Input.csv
+swolfpy_inputdata/data/SF_Col_Input.csv
+swolfpy_inputdata/data/SF_Col_Input_MaterialDependent.csv
+swolfpy_inputdata/data/SS_MRF_Input.csv
+swolfpy_inputdata/data/SS_MRF_Input_MaterialDependent.csv
+swolfpy_inputdata/data/TS_Input.csv
+swolfpy_inputdata/data/Technosphere_LCI.csv
+swolfpy_inputdata/data/Technosphere_References.csv
+swolfpy_inputdata/data/WTE_Input.csv
+swolfpy_inputdata/data/WTE_Input_MaterialDependent.csv
+swolfpy_inputdata/data/keys.csv
+swolfpy_inputdata/data/lcia_methods/('CML (v4.4) SwolfPy', 'resources', 'depletion of abiotic resources - elements, ultimate reserves').csv
+swolfpy_inputdata/data/lcia_methods/('IPCC 2007, Ecoinvent V3.5', 'climate change', 'GWP 100a, bioCO2=0').csv
+swolfpy_inputdata/data/lcia_methods/('IPCC 2007, Ecoinvent V3.5', 'climate change', 'GWP 100a, bioCO2=1').csv
+swolfpy_inputdata/data/lcia_methods/('IPCC 2013, Ecoinvent V3.5', 'climate change', 'GWP 100a, bioCO2=0').csv
+swolfpy_inputdata/data/lcia_methods/('IPCC 2013, Ecoinvent V3.5', 'climate change', 'GWP 100a, bioCO2=0, C1_36').csv
+swolfpy_inputdata/data/lcia_methods/('IPCC 2013, Ecoinvent V3.5', 'climate change', 'GWP 100a, bioCO2=1').csv
+swolfpy_inputdata/data/lcia_methods/('IPCC 2013, Ecoinvent V3.5', 'climate change', 'GWP 100a, bioCO2=1, C1_36').csv
+swolfpy_inputdata/data/lcia_methods/('SwolfPy_Capital_Cost', 'SwolfPy').csv
+swolfpy_inputdata/data/lcia_methods/('SwolfPy_Operational_Cost', 'SwolfPy').csv
+swolfpy_inputdata/data/lcia_methods/('SwolfPy_Total_Cost', 'SwolfPy').csv
+swolfpy_inputdata/data/lcia_methods/('TRACI (2.1) SwolfPy', 'environmental impact', 'acidification').csv
+swolfpy_inputdata/data/lcia_methods/('TRACI (2.1) SwolfPy', 'environmental impact', 'eutrophication').csv
+swolfpy_inputdata/data/lcia_methods/('TRACI (2.1) SwolfPy', 'environmental impact', 'photochemical smog').csv
+tests/Test_Input.csv
+tests/__init__.py
+tests/test_inputdata.py
+tests/test_inputs.py
