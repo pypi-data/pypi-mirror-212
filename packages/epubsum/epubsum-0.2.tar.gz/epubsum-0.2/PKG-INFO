@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: epubsum
+Version: 0.2
+Summary: epubsum.
+Author-email: Graham Wheeler <graham@grahamwheeler.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: bs4
+Requires-Dist: clean-text
+Requires-Dist: docopt
+Requires-Dist: ebooklib
+Requires-Dist: flit_core >=3.7
+Requires-Dist: textsum
+Project-URL: Source, https://github.com/gramster/epubsum
+
+epubsum - An EPUB book file summarizer.
+
+This is based on https://github.com/pszemraj/textsum, which handles
+plan text and PDF files.
+
+The intent is not to generate good summaries - the model sometimes does
+an okay job at that but the output is generally pretty unwieldy. I wrote
+this primarily to generate summaries I could use for faster search.
+
+Run `epubsum --help` for help.
+
+
+
