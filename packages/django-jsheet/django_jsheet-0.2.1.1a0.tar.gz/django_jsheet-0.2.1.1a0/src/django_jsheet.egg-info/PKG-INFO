@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: django-jsheet
+Version: 0.2.1.1a0
+Summary: A little tool to render a simple excel sheet in webpage
+Home-page: https://github.com/shadMod/django-jsheet
+Author: shadMod
+Author-email: support@shadmod.it
+Project-URL: Bug Tracker, https://github.com/shadMod/django-jsheet/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Django JSheet
+
+Django JSheet is a little tool to render a simple excel sheet in webpage
+
+A sheet is generated with all the data and its history.
+
+No model is required, but you can eventually add it to allows synchronization of data with the db
+
+There are many around, but mine is cooler because it's made by me .-.
+
+Good luck! \o/``

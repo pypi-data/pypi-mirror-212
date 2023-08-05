@@ -1,0 +1,3 @@
+core
+django_jsheet
+templatetags
