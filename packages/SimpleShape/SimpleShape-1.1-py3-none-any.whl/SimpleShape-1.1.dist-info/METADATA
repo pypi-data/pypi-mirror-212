@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: SimpleShape
+Version: 1.1
+Summary: A simple package for creating geometric objects and 
+Author: Tilen Žel
+Author-email: tilen.zel@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: License.txt
+
+# README
+
+This project enables the creation of different geometric objects, on which we can perform different operations, like calculation of their perimeter.
+
+## Features
+
+- Create and visualise various geometric objects: Triangle, Rectangle, Polygon, Circle and Ellipse
+- Calculate their perimeter and their area
+- Check if two shapes intersect
+- Save and load geometric shapes from json files
+
+## Installation
+
+Download the zip file and insert the Shapes.py function, located in the SimpleShape subfolder, to location of choice or use pip install SimpleShape.
+
+## 1. Instructions
+
+To start using this project, create the Geometric object using the available classes and perform different methods (see section 1.1). You can also check example.py, located in the SimpleShape subfolder, for a quick overwiev on how to use this package.
+
+This package also provides various simple functions, as described in section 1.2.
+
+### 1.1 Geometric Classes and Methods
+
+##### Class Geometry(coordinates): 
+Parent class for creating geometric objects. Here, coordinates is nx2 tuple or array (n > 3) of 1x2 tupples or arrays that represent coordinates in x-y plane. Note though that this initialization differs for circles and ellipses. 
+
+###### This class has following methods:
+- \_\_init__(self, coordinates): Initialization method for the object.
+- \_\_str__(self): String representation of the objects, obtained using print(object)
+- area(self) -> float: Returns the area of geometric object
+- perimeter(self) -> float: Returns the perimeter of the geometric object
+- to_json(self) -> json: Converts a geometric object to .json format
+- from\_json(cls, json\_data) -> object: Creates the geometric object from .json format
+- save\_shapes(shapes, filename): Save json\_data to a file
+- load\_shapes(filename): Creates json\_data from a file
+- intersect(self, other) -> bool: Check if two objects intersect
+- visualize(self) -> None: Visualize the object using matplotlib module
+
+##### Class Triangle(coordinates):
+
+A class for creating triangle objects. Here, Coordinates is a 3x2 aray or tupple of arrays or tupples.  If the array or tuple is larger, only the initial 3x2 array is taken, while error is returned if array is smaller than that.  
+
+##### Class Rectangle(coordinates):
+
+A class for creating rectangle objects. Here, coordinates is a 4x2 aray or tupple of 1x2 arrays or tupples that should be inserted in clockwise or counter clockwise direction. If the array or tuple is larger, only the initial 4x2 array is taken, while error is returned if array is smaller than that.  
+
+##### Class Polygon(coordinates):
+
+A class for creating (simple) polygon objects. where Coordinates is a nx2 aray or tupple of 1x2 arrays of tuples that should be inserted in fixed order. n has to be equal or larger than 3.
+
+##### Class Circle(r, center):
+
+A class for creating circle objects. Here, r is radius and center (default value (0,0)) is 1x2 array or tuple that represents center of the circle on x-y plane. 
+
+##### Class Ellipse(a, b, f, center):
+
+A class for creating ellipse objects. Here, a is the major axis, b is the minor axis, f is the rotation in counter-clockwise direction (in degrees, default value 0) and center is 1x2 array or tuple that represents center on x-y plane (default value (0,0)). 
+
+### 1.2 Functions
+**random_shape(shape)**: Create a geometric object of random dimensions. If the shape parameter is not specified, a arbitrary shape will be returned. Otherwise, insert one of the following: "Rectangle", "Triangle", "Circle", "Ellipse", "Polygon".
+**intersect(A,B,C,D)**: Check if two line segments (AB and CD, where each letter represents 1x2 tuple or array of coordinates) intersect
+**parallel(A,B,C,D)**: Check if two line segments (AB and CD, where each letter represents 1x2 tuple or array of coordinates) are parallel
+**Line_Intersect_Circle(A, B, c, r)**: Check if line segment AB intersect or touches a circle with radious r and central point c (1x2 array or tuple)
+
