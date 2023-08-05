@@ -1,0 +1,5 @@
+python-dotenv
+rich
+typer
+click
+gitpython

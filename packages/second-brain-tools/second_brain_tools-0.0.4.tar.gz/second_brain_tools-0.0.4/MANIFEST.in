@@ -1,0 +1,26 @@
+graft docs
+graft src
+graft ci
+graft tests
+
+include .bumpversion.cfg
+include .cookiecutterrc
+include .coveragerc
+include .editorconfig
+include .github/workflows/github-actions.yml
+include .pre-commit-config.yaml
+include pytest.ini
+include tox.ini
+
+include AUTHORS.rst
+include CHANGELOG.rst
+include CONTRIBUTING.rst
+include LICENSE
+include README.md
+include CODE_OF_CONDUCT.md
+include SECURITY.md
+
+include .sbt_config
+recursive-include workflows *.yml
+
+global-exclude *.py[cod] __pycache__/* *.so *.dyli
