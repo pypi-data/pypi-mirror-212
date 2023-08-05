@@ -1,0 +1,8 @@
+README.md
+setup.py
+cadmium/__init__.py
+cadmium.egg-info/PKG-INFO
+cadmium.egg-info/SOURCES.txt
+cadmium.egg-info/dependency_links.txt
+cadmium.egg-info/not-zip-safe
+cadmium.egg-info/top_level.txt
