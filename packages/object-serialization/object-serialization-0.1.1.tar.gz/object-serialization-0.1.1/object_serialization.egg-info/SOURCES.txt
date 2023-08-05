@@ -1,0 +1,6 @@
+MySerializer.py
+setup.py
+object_serialization.egg-info/PKG-INFO
+object_serialization.egg-info/SOURCES.txt
+object_serialization.egg-info/dependency_links.txt
+object_serialization.egg-info/top_level.txt
