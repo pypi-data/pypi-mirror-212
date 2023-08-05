@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: kevo
+Version: 0.0.0
+Summary: Key-value store with 3 backend engines
+Author: Nikos Gavalas
+Keywords: key-value,store
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
