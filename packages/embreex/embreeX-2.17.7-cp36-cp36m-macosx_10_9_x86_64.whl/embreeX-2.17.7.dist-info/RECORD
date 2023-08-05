@@ -1,0 +1,13 @@
+pyembree/rtcore.cpython-36m-darwin.so,sha256=Y8CwkfJLMVgGach0J-_wDSWlH58OlC8yZXHnCtjQ5tE,90224
+pyembree/mesh_construction.cpython-36m-darwin.so,sha256=7smMtMzCNn0KcTqa6rwgX-r3ZNK7JaCPwL1w6aD06ec,91376
+pyembree/triangles.cpython-36m-darwin.so,sha256=JcPURciXzAoVAAJtk2UIA1ozlCGeSbWJNb1wt8GrkYM,61344
+pyembree/rtcore_scene.cpython-36m-darwin.so,sha256=W2-8XuimqaZhwVuyP1JUXO_fR_2o2_QoT2l2kcxFU5M,138688
+embreeX.dylibs/libembree.2.dylib,sha256=zMyH-vgnMafiaqnFgB4eXdWN-b6QMufo8OWUMJPqvaU,24751312
+embreeX.dylibs/libtbbmalloc.dylib,sha256=mQPNR5oqGemNiVUrM2RjA7ysC2qYyQrPbjxh6SRwgYc,477648
+embreeX.dylibs/libtbb.dylib,sha256=7xq9HHQ7vsEufZ6NFHZoj8PI7eWXpTf7kPNFgQrnN_s,954784
+embreeX-2.17.7.dist-info/RECORD,,
+embreeX-2.17.7.dist-info/LICENSE,sha256=_xuYAn05ET9sP82cOw68xgsUW5orgvVnD0RL4wKKkA4,1299
+embreeX-2.17.7.dist-info/AUTHORS,sha256=FuKSWm4UT7ibboERkfp6XNRyLmME43GvjmLqqRXj7uE,226
+embreeX-2.17.7.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+embreeX-2.17.7.dist-info/top_level.txt,sha256=p-Cczvc4sP1B6gKiIOFTxZADigbzEZO9wz0X2nMvYP8,9
+embreeX-2.17.7.dist-info/METADATA,sha256=ZFLyQW05EpFyL5TbHcBnkKwNk0XaG-2t6WeVPgYCsdo,734
