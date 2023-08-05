@@ -1,0 +1,11 @@
+LICENSE-APACHE
+LICENSE-MIT
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+rapidgzip.egg-info/PKG-INFO
+rapidgzip.egg-info/SOURCES.txt
+rapidgzip.egg-info/dependency_links.txt
+rapidgzip.egg-info/entry_points.txt
+rapidgzip.egg-info/top_level.txt
