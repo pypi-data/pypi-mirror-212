@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clscidapi"
+version = "0.1.0"
+description = "A simple HTTP API that supports lookups of CAIC classic Field Report IDs."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.96.*",
+    "pydantic==1.10.*",
+    "uvicorn==0.22.*",
+]
+
+[[project.authors]]
+name = "John Gorman"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/gormaniac/clscidapi"
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["src"]

@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/clscidapi/__init__.py
+src/clscidapi/__main__.py
+src/clscidapi/api.py
+src/clscidapi/config.py
+src/clscidapi/models.py
+src/clscidapi.egg-info/PKG-INFO
+src/clscidapi.egg-info/SOURCES.txt
+src/clscidapi.egg-info/dependency_links.txt
+src/clscidapi.egg-info/requires.txt
+src/clscidapi.egg-info/top_level.txt
