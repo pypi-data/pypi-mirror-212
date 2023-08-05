@@ -1,0 +1,17 @@
+InstructorEmbedding>=1.0.1
+argilla==1.8.0
+chromadb<0.4.0,>=0.3.0
+ctransformers<0.3.0,>=0.2.5
+extract-msg<0.42.0,>=0.41.0
+langchain>=0.0.181
+pandoc==2.3
+pdfminer.six==20221105
+pypandoc==1.11
+sentence-transformers>=2.2.2
+tqdm>=4.64.1
+typer>=0.9.0
+typing-extensions>=4.4.0
+unstructured<0.7.0,>=0.6.0
+
+[tests]
+pytest
