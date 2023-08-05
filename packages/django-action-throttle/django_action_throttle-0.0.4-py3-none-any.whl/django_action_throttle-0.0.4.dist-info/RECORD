@@ -1,0 +1,17 @@
+action_throttle/__init__.py,sha256=oXngD0y7V07m2JOSAt0Ui3o4z2hhYcPbnLLHjBg0oKY,567
+action_throttle/admin.py,sha256=K72PdgPqI2qqfU0MzaENBJxJkVL8sTs9paQRkiHLhw4,173
+action_throttle/apps.py,sha256=l-kQU2Le-9eEVZlZRJ5FCAkl3KeqzqhoxXKY0UUhpeo,161
+action_throttle/middleware.py,sha256=P16rtQ_yt0eOAO3aG9PDLTxfLBRV_iRiEHq6gepCLN8,1578
+action_throttle/models.py,sha256=U8QgStDDkOqeSd4Ndyq9IFBSnmt9n2BrxvAo1eiJpU8,3594
+action_throttle/rest.py,sha256=Ew4Dxo5nxtKSr3eykQUe-62MRIzGW2RK5WqiKe8Aco4,1262
+action_throttle/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+action_throttle/throttle.py,sha256=oXbWJnjNSrwluWflbFzk3JCzL7Ub5nQu8lztnHHc70k,7288
+action_throttle/throttle_settings.py,sha256=FZrYCKhhdc3ZkNT0a8hBuTZAxqzvHWgGo_5VCMyLue8,565
+action_throttle/urls.py,sha256=EwNgiCbw47OKHpKwwbgH4N2a2RAeZ9DrpTu8NjxelU4,50
+action_throttle/utils.py,sha256=ASdQKa3aGAXCSWGgEhVVokmannKGUr2V3k54HV7Vruc,239
+action_throttle/views.py,sha256=u0FhL7RT5byf5IlcnZEMrcH2TOnQkdfRQU2SjtA26m0,66
+django_action_throttle-0.0.4.dist-info/LICENCE,sha256=q7KJbcPCqUAvkBuI1QNc8Kg9XPfBfnNkLN9WKwudO8U,11
+django_action_throttle-0.0.4.dist-info/METADATA,sha256=M66TtBXikey6_2w5z8o0I7a04hGkULCLPdyyDQBTf8o,701
+django_action_throttle-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_action_throttle-0.0.4.dist-info/top_level.txt,sha256=p9eVv5vLYnk_yVdxsE4Fz0mFfyxBEv3Nk1tHj_I9-W8,16
+django_action_throttle-0.0.4.dist-info/RECORD,,
