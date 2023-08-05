@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: tortoise-vector
+Version: 0.1.0
+Summary: pgvector implementation for Tortoise-ORM
+License: MIT
+Author: Sebastien Nicolet
+Author-email: snicolet95@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: tortoise-orm[asyncpg] (>=0.19.3,<0.20.0)
+Description-Content-Type: text/markdown
+
+# Implementation of vector from Tortoise-ORM
+Usage:
+
+```python
+from tortoise_vector.field import VectorField
+from tortoise_vector.expressions import CosineSimilarity
+from tortoise import Model
+
+
+OPENAI_VECTOR_SIZE = 1536
+
+
+class MyModel(Model):
+    # vectors have a fixed size, openai uses 1536 dimensions
+    embedding = VectorField(vector_size=OPENAI_VECTOR_SIZE)
+
+
+
+async def get_embedding_from_text(str: str) -> list[float]:
+    ...
+
+
+async def get_nearst_models(text: str) -> Queryset[MyModel]:
+    embedding = await get_embedding_from_text(text)
+    return (
+        MyModel
+        .all()
+        .annotate(
+            distance=CosineSimilarity(
+                "embedding",
+                embedding,
+                OPENAI_VECTOR_SIZE
+            )
+        )
+        .order_by("distance")
+    )
+```
+
+
