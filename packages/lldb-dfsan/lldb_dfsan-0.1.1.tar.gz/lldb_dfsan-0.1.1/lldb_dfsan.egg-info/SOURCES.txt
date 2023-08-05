@@ -1,0 +1,9 @@
+LICENSE
+README.md
+lldb_dfsan.py
+pyproject.toml
+lldb_dfsan.egg-info/PKG-INFO
+lldb_dfsan.egg-info/SOURCES.txt
+lldb_dfsan.egg-info/dependency_links.txt
+lldb_dfsan.egg-info/top_level.txt
+tests/test.py
