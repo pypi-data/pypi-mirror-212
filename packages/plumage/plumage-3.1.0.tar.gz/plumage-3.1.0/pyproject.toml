@@ -1,0 +1,79 @@
+[tool.poetry]
+# Docs: https://python-poetry.org/docs/pyproject/
+name = "plumage"
+version = "3.1.0"
+description = "Clean and tidy theme for Pelican."
+license = 'GPL-2.0-or-later'
+authors = ["Kevin Deldycke <kevin@deldycke.com>"]
+readme = "readme.md"
+homepage = 'https://github.com/kdeldycke/plumage'
+repository = 'https://github.com/kdeldycke/plumage'
+documentation = 'https://github.com/kdeldycke/plumage#settings'
+keywords = [
+    'pelican',
+    'pelican-theme',
+    'stork',
+    'static-search',
+    'masonry',
+    'theme',
+    'bootstrap',
+    'jquery',
+    'font-awesome',
+]
+classifiers = [
+    # See: https://pypi.org/pypi?%3Aaction=list_classifiers
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Plugins',
+    'Environment :: Web Environment',
+    'Framework :: Pelican :: Themes',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Information Technology',
+    'Operating System :: OS Independent',
+    'Programming Language :: JavaScript',
+    'Programming Language :: Other',
+    'Topic :: Internet :: WWW/HTTP',
+    'Topic :: Text Processing :: Markup :: HTML',
+    'Typing :: Typed',
+]
+
+[tool.poetry.urls]
+"Funding" = "https://github.com/sponsors/kdeldycke"
+"Issues" = "https://github.com/kdeldycke/plumage/issues"
+"Changelog" = "https://github.com/kdeldycke/plumage/blob/main/changelog.md#changelog"
+
+[tool.poetry.dependencies]
+# List of python versions and their support status:
+# https://en.wikipedia.org/wiki/History_of_Python#Support
+python = "^3.8"
+closure = "^20191111"          # XXX Unmaintained!
+cssmin = "^0.2.0"              # XXX Unmaintained!
+libsass = "^0.22.0"
+Markdown = "^3.4.1"
+pelican = "^4.8.0"
+pelican-webassets = "^2.0.0"
+pygments = "^2.14.0"
+pymdown-extensions = "^10.0.1"
+pynpm = "^0.1.2"
+pyquery = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+bump2version = "^1.0.1"
+djlint = "^1.30.2"
+mypy = "^1.1"
+types-Pygments = "^2.14.0"
+
+[tool.mypy]
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+warn_unreachable = true
+pretty = true
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = ["pyquery", "pynpm", "pelican.*"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
