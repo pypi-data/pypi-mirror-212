@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+curtely/curtely.py
+curtely/curtely.egg-info/PKG-INFO
+curtely/curtely.egg-info/SOURCES.txt
+curtely/curtely.egg-info/dependency_links.txt
+curtely/curtely.egg-info/top_level.txt

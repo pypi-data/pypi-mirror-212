@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: curtely
+Version: 0.0.3
+Summary: a 🧑‍💻Telegram API🧑‍💻 wrapper
+Home-page: https://github.com/CURVoid/curtely
+Author: VOID
+License: APACHE 2.0
+Keywords: telegram,api,curtely,messenger
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Curtely v0.0.3 Telegram API wrapper
+## Change log
+- Added `chat_id()` to `Message`
+- Renamed `TelegramAPI` on `Bot`
+## Usage
+```python
+# Here is an example of an easy echo bot
+import curtely
+
+TOKEN = "your-token-here"
+
+bot = curtely.Bot(TOKEN)
+
+@curtely.message_handler(bot)
+def message_handler(api: curtely.Bot, message: curtely.Message):
+    api.send_message(message.reply(message.content()))
+
+bot.run()
+```
