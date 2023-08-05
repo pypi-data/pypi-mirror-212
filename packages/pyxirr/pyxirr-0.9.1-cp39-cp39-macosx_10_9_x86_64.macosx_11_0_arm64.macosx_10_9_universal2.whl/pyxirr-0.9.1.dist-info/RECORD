@@ -1,0 +1,9 @@
+pyxirr-0.9.1.dist-info/METADATA,sha256=voORcSPe44V52RZBW_E0ybQj-v58Z-7iTQ3tHcOXGzM,6650
+pyxirr-0.9.1.dist-info/WHEEL,sha256=QnBbc4T3fbKZdQ5SC8IbkAq8s7RHD6mdmmuN3-HI1FQ,144
+pyxirr-0.9.1.dist-info/license_files/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+pyproject.toml,sha256=e5tlW6KTZP17ogeOj7ZLQlEOBwzONZSOmwRWraqn-40,895
+pyxirr/__init__.py,sha256=UyxBSruWyko8edZDSHqRh3vs5SgfYWGx8j9pKyfenp8,107
+pyxirr/__init__.pyi,sha256=k0Tyuhlrhtjy3kf9H9OtsriJlXq1vJX96t019z3CO6U,10518
+pyxirr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyxirr/pyxirr.cpython-39-darwin.so,sha256=IjpgpENKE8iPMmEjc2PV25bD58kLlxmizP35M0-E43I,1853496
+pyxirr-0.9.1.dist-info/RECORD,,
