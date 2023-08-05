@@ -1,0 +1,18 @@
+[project]
+name = "PyTrek_9000"
+version = "1.0.2"
+authors = [
+  { name="Randall Nagy", email="r.a.nagy@gmail.com" },
+]
+description = "Classic Cross-Platform 'StarTrek' Game"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Python3-Training/PyTrek"
+"Bug Tracker" = "https://github.com/Python3-Training/PyTrek/issues"
