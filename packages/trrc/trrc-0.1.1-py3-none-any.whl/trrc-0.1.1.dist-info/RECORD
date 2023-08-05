@@ -1,0 +1,13 @@
+trrc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trrc/__main__.py,sha256=gWM9TYpJSsKfIN0A-uyM3l5HgGV_rMQDYJMEosHw1F0,354
+trrc/config_opts.py,sha256=yXE57MBeKZKXKaCYrq-OZDOLdQlLaitfr4upX0DckDY,4864
+trrc/create_parser.py,sha256=BNeQnmLdNMyxLsWTIviGC58Qogt10kJgCJv9QwCIAI4,23774
+trrc/parser_opts.py,sha256=fxLPzFvqHvYBo8EyPdwrDvq5U4b7LZvkHGgDsXwgvV0,6846
+trrc/utils.py,sha256=ulVy3kpynfJSHp3RBbZZ7alD76ZV_pkDbc230OxLtUg,11937
+trrc-0.1.1.data/data/share/man/man1/trrc.1,sha256=fmBctij3HMnNcXhTlh_UoVMYmmq3I1VkRJ8KRgOod2U,4018
+trrc-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+trrc-0.1.1.dist-info/METADATA,sha256=tDfBXNNCV4L_xEJXi-WuvUb-Kj6G1MQoyBDBrmDHJlQ,58885
+trrc-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+trrc-0.1.1.dist-info/entry_points.txt,sha256=OXwh86Hf2SU01sX7JQomBmc34QPWU67rVHg5qCywwUc,44
+trrc-0.1.1.dist-info/top_level.txt,sha256=qX_OJQi9MGMJPcSadvj8gXbNO2RAQN2aBw-vLJSkgIM,5
+trrc-0.1.1.dist-info/RECORD,,
