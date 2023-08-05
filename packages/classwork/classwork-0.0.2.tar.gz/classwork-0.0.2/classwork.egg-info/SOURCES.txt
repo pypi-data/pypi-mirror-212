@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+classwork/__init__.py
+classwork/main.py
+classwork/utils.py
+classwork.egg-info/PKG-INFO
+classwork.egg-info/SOURCES.txt
+classwork.egg-info/dependency_links.txt
+classwork.egg-info/requires.txt
+classwork.egg-info/top_level.txt
