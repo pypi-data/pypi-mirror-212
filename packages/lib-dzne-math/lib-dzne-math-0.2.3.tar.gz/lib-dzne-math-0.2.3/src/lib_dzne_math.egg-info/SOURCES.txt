@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/lib_dzne_math/__init__.py
+src/lib_dzne_math.egg-info/PKG-INFO
+src/lib_dzne_math.egg-info/SOURCES.txt
+src/lib_dzne_math.egg-info/dependency_links.txt
+src/lib_dzne_math.egg-info/requires.txt
+src/lib_dzne_math.egg-info/top_level.txt
+src/lib_dzne_math/functions/__init__.py
+src/lib_dzne_math/na/__init__.py
+src/lib_dzne_math/numerals/__init__.py
+src/lib_dzne_math/statistics/__init__.py
+src/lib_dzne_math/statistics/plots/DataEntry.py
+src/lib_dzne_math/statistics/plots/__init__.py
