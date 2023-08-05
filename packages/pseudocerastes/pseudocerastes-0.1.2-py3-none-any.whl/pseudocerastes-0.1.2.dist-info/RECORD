@@ -1,0 +1,10 @@
+pseudocerastes/__init__.py,sha256=GmXUZF8BGx8jOQeogrgkXI4q-EOq3nrDa4KBJmHzLvI,30
+pseudocerastes/common.py,sha256=HYSkhvIZp0FfQocoe8fuJUFdnoSapoXbcOOTFaJ9jkQ,456
+pseudocerastes/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pseudocerastes/core/html.py,sha256=Vjh_s6beRtxPWyflZggLZTd4GpYaGQpfmgNiSSMKuLE,1103
+pseudocerastes/core/parser.py,sha256=p_h7erCJW7K075fcgH0jqcu_XSOQgyQVmwpTq_or1Fo,1470
+pseudocerastes-0.1.2.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+pseudocerastes-0.1.2.dist-info/METADATA,sha256=wgqIywqJjkAJlR0ApLzb8EIP4J7DDsDem73gkZf3jmA,823
+pseudocerastes-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pseudocerastes-0.1.2.dist-info/top_level.txt,sha256=dvJILw5K9apdmujifZjHx1CZ0iqhxhsnWCsrEA368G8,15
+pseudocerastes-0.1.2.dist-info/RECORD,,
