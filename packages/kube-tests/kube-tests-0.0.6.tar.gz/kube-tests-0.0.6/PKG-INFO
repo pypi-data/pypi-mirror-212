@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: kube-tests
+Version: 0.0.6
+Summary: Kubernetes test client
+Author: Vladimir Vojtenko
+Author-email: vladimirdev635@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# KTest
