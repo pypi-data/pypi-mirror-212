@@ -1,0 +1,2 @@
+requests
+cs-telegram-bot-api
