@@ -1,0 +1,7 @@
+setup.py
+src/helloworld_deshrit.egg-info/PKG-INFO
+src/helloworld_deshrit.egg-info/SOURCES.txt
+src/helloworld_deshrit.egg-info/dependency_links.txt
+src/helloworld_deshrit.egg-info/top_level.txt
+src/hw_deshrit/__init__.py
+src/hw_deshrit/hw.py
