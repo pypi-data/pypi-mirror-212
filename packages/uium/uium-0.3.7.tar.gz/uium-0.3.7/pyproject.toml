@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "uium"
+version = "0.3.7"
+description = "An interesting python package"
+authors = ["Mark Hoo <markhoo@foxmail.com>"]
+readme = "README.md"
+license = "Apache-2.0"
+homepage = "https://github.com/MarkHoo/uium"
+repository = "https://github.com/MarkHoo/uium"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Operating System :: Unix",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+packages = [
+    { include = "uium" },
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/MarkHoo/uium/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+undetected-chromedriver = "^3.4.7"
+selenium = "^4.0.0"
+webdriver-manager = "^3.8.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
