@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: netora-python
+Version: 0.1.9
+Summary: A package with lots of features
+Author: JacksonLin
+Author-email: jacksonlam.macau@gmail.com
+Keywords: python,features,youtube,youtube downloader
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: yt-dlp
+
