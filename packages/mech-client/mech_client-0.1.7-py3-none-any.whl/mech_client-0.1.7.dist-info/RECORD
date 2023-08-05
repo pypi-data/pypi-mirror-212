@@ -1,0 +1,11 @@
+mech_client/__init__.py,sha256=YpKDcdV7CqL8n45u267wKtyloM13FSVbOdrqgNZnSLM,22
+mech_client/cli.py,sha256=MQhUJXEfMhQ7iRKwzeiL5B6PK4PkzUFoeAbiMQtRLt4,1514
+mech_client/interact.py,sha256=6os3y4-X0AEmFWu4CjuUmocyFcKEm_hlz8el2C2pjPs,7617
+mech_client/prompt_to_ipfs.py,sha256=Poid9ACcma_zp1M4xnLIsJNJV6XsahFlenHIn4ubkAc,1779
+mech_client/push_to_ipfs.py,sha256=V3M6kefAhBy_B6LqD82k-2m5JOhuH7OecCCJTgkxzeU,1659
+mech_client/to_png.py,sha256=4WFTPWmsA3XP2CKkjmtgkdF4k6kGldX6DgfaZN4ujs8,1993
+mech_client-0.1.7.dist-info/LICENSE,sha256=mdBDB-mWKV5Cz4ejBzBiKqan6Z8zVLAh9xwM64O2FW4,11339
+mech_client-0.1.7.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mech_client-0.1.7.dist-info/entry_points.txt,sha256=SbRMRsayzD8XfNXhgwPuXEqQsdZ5Bw9XDPnUuaDExyY,45
+mech_client-0.1.7.dist-info/METADATA,sha256=UWuNaIxsoafdwr3ZfTyLo9tWjJvbxt-mSYi0M4WDIgw,2690
+mech_client-0.1.7.dist-info/RECORD,,
