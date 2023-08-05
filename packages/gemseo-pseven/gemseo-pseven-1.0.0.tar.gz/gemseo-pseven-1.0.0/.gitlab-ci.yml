@@ -1,0 +1,8 @@
+include:
+  - remote: "https://gitlab.com/gemseo/dev/ci-includes/-/raw/publish/base.yml"
+
+test:
+  extends:
+    - .test-base
+  rules:
+    - when: never

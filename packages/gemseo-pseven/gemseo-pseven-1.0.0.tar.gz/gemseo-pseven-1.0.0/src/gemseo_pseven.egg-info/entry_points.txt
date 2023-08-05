@@ -1,0 +1,2 @@
+[gemseo_plugins]
+gemseo-pseven = gemseo_pseven
