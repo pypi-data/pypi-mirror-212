@@ -1,0 +1,24 @@
+bkapi_client_generator/__init__.py,sha256=zi6SFExiQn3LeLhuiVMt_IGFCQBaqjG05mDFAwysPRA,2284
+bkapi_client_generator/bkapi-client-generator,sha256=rJWDRhLrXWqbtIgVvO8205Xgk-ZeJU56YzrhnJss4UM,4743748
+bkapi_client_generator/swagger,sha256=yfGIiv7LXLbdwEHbUnj1ECvnAh9EdfQ-yVv9EokmIEQ,14721024
+bkapi_client_generator/templates/bkapi_golang/bkapi-{{ .ClientPackage | kebabcase }}/bkapi.go.gotmpl,sha256=p_cCs8b-N8ZvO5e0_1H7H5mNGeSaipraNN9xa4OvOmU,1297
+bkapi_client_generator/templates/bkapi_python/bkapi/__init__.py,sha256=c67e78YShDHwdhzF33ErtN42pNa_6iKCes5EJ4l3bbw,170
+bkapi_client_generator/templates/bkapi_python/bkapi/{{ .ClientPackage | snakecase }}/__init__.py.gotmpl,sha256=NRIQrQtViW0AW52yEsM09H6INvJz8W5K82itY3u6F5M,60
+bkapi_client_generator/templates/bkapi_python/bkapi/{{ .ClientPackage | snakecase }}/client.py.gotmpl,sha256=ICW90HT_2qwOY_SO-x5rF-SFibdVl3ESP4gXUTfc784,1024
+bkapi_client_generator/templates/bkapi_python/bkapi/{{ .ClientPackage | snakecase }}/client.pyi.gotmpl,sha256=Jr29z-AcuyqGlTccKPj3_56rXq2C88uLL54Hrf-q2DE,471
+bkapi_client_generator/templates/bkapi_python/bkapi/{{ .ClientPackage | snakecase }}/shortcuts.py.gotmpl,sha256=_M3vJYKqXpgJKlEMIwPEZLRNXEMEUuq19mqbpPt72oA,467
+bkapi_client_generator/templates/bkapi_python/noxfile.py.gotmpl,sha256=Vp7ad9chsAtEKzelqIpeu9i4sUBAFbDD7vhaASZ_H4o,598
+bkapi_client_generator/templates/bkapi_python/setup.py.gotmpl,sha256=9pz6h8HpE0KnEcZlQPMFNskZgiWNvx6ZQx8-Bu7FkIE,737
+bkapi_client_generator/templates/demo/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bkapi_client_generator/templates/esb_python/bkapi_component/__init__.py,sha256=c67e78YShDHwdhzF33ErtN42pNa_6iKCes5EJ4l3bbw,170
+bkapi_client_generator/templates/esb_python/bkapi_component/{{ .ClientPackage | snakecase }}/__init__.py.gotmpl,sha256=LbIMMNG6W_cHuCTkIqu1i1YwLwUEZ6Mhf86N3-omm1U,59
+bkapi_client_generator/templates/esb_python/bkapi_component/{{ .ClientPackage | snakecase }}/client.py.gotmpl,sha256=zqnvI_RkNPI0IUq15z6UADsxgnhHkVGQ8F8kbp9haRM,824
+bkapi_client_generator/templates/esb_python/bkapi_component/{{ .ClientPackage | snakecase }}/client.pyi.gotmpl,sha256=j3Z5nc9G7pn4PaaUS4qO8M6BO45D-3HRtTVDNCcNqQw,623
+bkapi_client_generator/templates/esb_python/bkapi_component/{{ .ClientPackage | snakecase }}/shortcuts.py.gotmpl,sha256=-9K_c_hHQar0N8Fz1YP9AprBbh3AoeKk8FpA6ZaMZFM,595
+bkapi_client_generator/templates/esb_python/noxfile.py.gotmpl,sha256=f8gDGf3_gPLPMGJF2_UkDu7Wyzv7v7MKzsDyQ9A0NKM,608
+bkapi_client_generator/templates/esb_python/setup.py.gotmpl,sha256=8K2t_3mWERbd9wHL-y9R_M7ePy_CVTQApc5UFwiEXxI,662
+bkapi_client_generator/templates/markdown/en/docs.md.gotmpl,sha256=brpiaGOETeBSl_VEUzrd4A826V31Kxu30gaidJZKCZg,7910
+bkapi_client_generator/templates/markdown/zh/docs.md.gotmpl,sha256=gXZEYgjI56MFJzy4Kk3DLSZefI5j6dHejLLnOn-oqq8,7871
+bkapi_client_generator-0.1.28.dist-info/METADATA,sha256=kYAz_RVLbq97nUH3JWfXosHu8nMq9BMVKY3AcsiHuS0,455
+bkapi_client_generator-0.1.28.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+bkapi_client_generator-0.1.28.dist-info/RECORD,,

@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+import nox
+import os
+
+nox.needs_version = '>=2021.6.12'
+{{- $package := .Package | snakecase }}
+
+
+@nox.session(python=["2.7", "3.6", "3.7", "3.8"])
+def install(session):
+    session.install(".")
+
+    package_file = session.run(
+        "python",
+        "-c",
+        "print(__import__('bkapi.{{ $package }}').{{ $package }}.__file__)",
+        silent=True,
+    ).strip()
+    namespace_path = os.path.dirname(os.path.dirname(package_file))
+
+    session.run("python", "-m", "pip", "uninstall", "-y", "{{ .APIPackage | kebabcase }}")
+
+    assert os.path.isdir(namespace_path)

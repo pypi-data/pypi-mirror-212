@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+from bkapi_client_core.esb import ESBClient, Operation, OperationGroup
+
+{{- range .OperationGroups }}
+
+
+class {{ pascalize .Name }}Group(OperationGroup):
+{{- range .Operations }}
+
+    @property
+    def {{ index .Extensions "x-component-name" | snakecase }}(self) -> Operation:
+        """
+        {{- with .Description }}
+        {{- . }}
+        {{- end -}}
+        """
+{{- end }}
+{{- end }}
+
+
+class Client(ESBClient):
+    """{{ .Info.Title }}"""
+    {{- range .OperationGroups }}
+
+    @property
+    def {{ snakecase .Name }}(self) -> Group:
+        """{{ snakecase .Name }} apis"""
+    {{- end }}

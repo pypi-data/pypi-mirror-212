@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+from bkapi_client_core.esb import ESBClient, Operation, OperationGroup, bind_property
+
+
+{{ range .OperationGroups -}}
+class {{ pascalize .Name }}Group(OperationGroup):
+{{- range .Operations }}
+    {{- $name := index .Extensions "x-component-name" | snakecase }}
+
+    {{- with .Summary }}{{ regexReplaceAll "^|(\n)" . "$1# " | nindent 4 }}{{- end }}
+    {{- with .Description }}{{ regexReplaceAll "^|(\n)" . "$1# " | nindent 4 }}{{- end }}
+    {{ $name }} = bind_property(
+        Operation, name="{{ $name }}", method="{{ upper .Method }}",
+        path="{{ .Path }}",
+    )
+{{ end }}
+
+{{ end -}}
+class Client(ESBClient):
+    """{{ .Info.Title }}"""
+
+    {{- range .OperationGroups }}
+    {{ snakecase .Name }} = bind_property({{ pascalize .Name }}Group, name="{{ snakecase .Name }}")
+    {{- end }}

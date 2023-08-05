@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+from bkapi_client_core.apigateway import APIGatewayClient, Operation, OperationGroup
+
+
+class Group(OperationGroup):
+{{- range .Operations }}
+
+    @property
+    def {{ snakecase .Name }}(self) -> Operation:
+        """
+        {{- template "python.groupDocs" (list "        " .) }}
+        """
+{{- end }}
+
+
+class Client(APIGatewayClient):
+    """Bkapi {{ .Package }} client"""
+
+    @property
+    def api(self) -> Group:
+        """api resources"""

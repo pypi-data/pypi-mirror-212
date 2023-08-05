@@ -1,0 +1,40 @@
+{{- define "python.groupDocs" -}}
+{{- $prefix := first . -}}
+{{- $operation := last . -}}
+{{- $docs := list (printf "bkapi resource %s" $operation.Name ) -}}
+
+{{- with $operation.Summary -}}
+{{- $docs = concat $docs (regexSplit "\r?\n" . -1 ) -}}
+{{- end -}}
+
+{{- with $operation.Description -}}
+{{- $docs = concat $docs (regexSplit "\r?\n" . -1 ) -}}
+{{- end -}}
+
+{{- range $docs }}
+{{ $prefix }}{{ . }}
+{{- end -}}
+{{- end -}}
+
+# -*- coding: utf-8 -*-
+from bkapi_client_core.apigateway import APIGatewayClient, Operation, OperationGroup, bind_property
+
+
+class Group(OperationGroup):
+{{- range .Operations }}
+    {{- $name := snakecase .Name }}
+
+    {{- template "python.groupDocs" (list "    # " .) }}
+    {{ $name }} = bind_property(
+        Operation,
+        name="{{ $name }}",
+        method="{{ upper .Method }}",
+        path="{{ .Path }}",
+    )
+{{ end }}
+
+class Client(APIGatewayClient):
+    """Bkapi {{ .Package }} client"""
+    _api_name = "{{ kebabcase .Package }}"
+
+    api = bind_property(Group, name="api")
