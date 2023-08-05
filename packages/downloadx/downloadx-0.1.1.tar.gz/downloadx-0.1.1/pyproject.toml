@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "downloadx"
+authors = [{ name = "ruriazz", email = "azizruri.s@gmail.com" }]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+]
+description = "DownloadX CLI"
+dynamic = ["version", "dependencies"]
+keywords = ["downloadx", "DownloadX"]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+downloadx = "downloadx.__main__:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "downloadx.VERSION"}
+dependencies = {file = ["downloadx/requirements.txt"]}
+
+[tool.setuptools.packages.find]
+exclude = ["tests*", "example*"]
