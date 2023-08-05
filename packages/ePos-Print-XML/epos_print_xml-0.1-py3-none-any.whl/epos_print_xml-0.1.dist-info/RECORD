@@ -1,0 +1,11 @@
+src/epos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/epos/attributes.py,sha256=NiLGb90xS0stga9Go8mjLrxnTueUsZCTuNqVlzIo9aI,4103
+src/epos/constants.py,sha256=36ulZvbOM4rGmPrlL89Zku0J772o_wXtImmbuuSLV00,1057
+src/epos/document.py,sha256=0EpDOBI4pDYlSHKMVcpMKgli4RnycW3ksMx3i4UZvPQ,1431
+src/epos/elements.py,sha256=uFgYyeSupkI-U_OhHCZMrn9M2tAQW7pJaxyqW3rL4ds,17159
+src/epos/printer.py,sha256=xNHMGVU97-F2IaPv67kyR1TF3maBmeGJPwfSuIijdCo,1899
+src/epos/status.py,sha256=cvFF_aCLPa8OtZxD32AKYVXJsi39diG2hZgo-u05168,1618
+epos_print_xml-0.1.dist-info/METADATA,sha256=coX8DB4nMWwS53LwGLSSPkdDUGe3xe1Y_mTvOr8r2TA,2579
+epos_print_xml-0.1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+epos_print_xml-0.1.dist-info/licenses/LICENSE,sha256=5tQsK-s7yxlP2RT8xZ8c3Tw7fvueaotM76AbWXkYiDA,1092
+epos_print_xml-0.1.dist-info/RECORD,,
