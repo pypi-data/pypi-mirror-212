@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: yuface
+Version: 2023.5.0
+Summary: A face detection library based on libfacedetection
+Home-page: https://github.com/ShiqiYu/libfacedetection.pip
+Author: Wwupup
+Author-email: 12032501@mail.sustech.edu.cn
+License: ./LISENCE
+Keywords: face detection
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Intended Audience :: Developers
+License-File: LICENSE
+
