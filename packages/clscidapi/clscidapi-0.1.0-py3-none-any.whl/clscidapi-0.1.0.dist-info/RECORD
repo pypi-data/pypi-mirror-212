@@ -1,0 +1,10 @@
+clscidapi/__init__.py,sha256=7sWpkAHT4KTxuXGK1XkvEfH8vT8iqeUsTmGXAIT17yw,835
+clscidapi/__main__.py,sha256=lymzFBSM98bCCnjoDPmYLOpSwq4NRVEbWkWPk8QizCM,357
+clscidapi/api.py,sha256=BlodlL3qo-uSA9HKK153ri5C1-1LRDY1OJn5cBaALR8,3868
+clscidapi/config.py,sha256=mb7IaPLAWSLDMc-8SzrFl5zcDh7QqZfmeVlt82UrAAc,1535
+clscidapi/models.py,sha256=jlppYAAsJ3GeBcrlk_yBp84E2Ut3pjys6TY3JLiXkio,313
+clscidapi-0.1.0.dist-info/LICENSE,sha256=I9cNVSn0enf_0BDQByTdXcn_uYzcr8NrexaPG6wU5D8,1067
+clscidapi-0.1.0.dist-info/METADATA,sha256=rbF-ZU-_dObl7tMauQT2OXN_pCJMYbpD5uk153frdzw,4135
+clscidapi-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+clscidapi-0.1.0.dist-info/top_level.txt,sha256=k3HfcXL2KB0mXUapajubDhqSOTWNbFv9hWUZVof6_jE,10
+clscidapi-0.1.0.dist-info/RECORD,,
