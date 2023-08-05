@@ -1,0 +1,8 @@
+PyYAML<6,>=3.11
+packaging<21,>=20.8
+pyasn1<1,>=0.4.2
+python-Levenshtein<1,>=0.12
+
+[cli]
+docopt-subcommands<4,>=3.0
+pick<2,>=1.6.0
