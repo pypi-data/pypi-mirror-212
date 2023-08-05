@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: inegm.staff
+Version: 0.2.3
+Summary: Utilities for computer assisted composition
+Author: Ismail Negm
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# staff
+
+Staff is a toolbox for computer assisted composition in Python.
+
+## Installing
+
+```
+pip install inegm.staff
+```
+
+## Documentation
+
+[Full documentation is available here.](https://inegm.github.io/staff/)
