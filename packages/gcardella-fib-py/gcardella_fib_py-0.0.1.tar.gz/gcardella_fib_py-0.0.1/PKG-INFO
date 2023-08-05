@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gcardella_fib_py
+Version: 0.0.1
+Summary: Calculates a Fibonacci number
+Home-page: https://github.com/jc-development/fib-py
+Author: Joe C
+Author-email: 
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fib-py
+basic pip module on calculating fibonacci numbers
