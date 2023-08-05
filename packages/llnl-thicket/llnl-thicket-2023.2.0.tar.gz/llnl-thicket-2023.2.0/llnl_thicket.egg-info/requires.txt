@@ -1,0 +1,10 @@
+scipy
+seaborn
+pydot
+matplotlib
+numpy
+pandas>=1.1
+llnl-hatchet
+
+[extrap]
+extrap
