@@ -1,0 +1,103 @@
+[tool.poetry]
+name = "md_translate"
+version = "3.0.1"
+description = "CLI tool to translate markdown files"
+authors = ["Ilya Chichak <ilyachch@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+repository = "https://github.com/ilyachch/md_docs-trans-app"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Documentation",
+    "Topic :: Utilities",
+    "Typing :: Typed"
+]
+
+[tool.poetry.scripts]
+md-translate = "md_translate.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.5.0"
+mistune = "^2.0.4"
+pydantic = "^1.10.2"
+click = "^8.1.3"
+webdriver-manager = "^3.8.6"
+
+[tool.poetry.group.dev.dependencies]
+types-selenium = "^3.141.9"
+black = "^22.10.0"
+coverage = "^6.5.0"
+mypy = "^0.982"
+isort = "^5.10.1"
+pytest = "^7.1.3"
+pytest-cov = "^4.0.0"
+pre-commit = "^2.20.0"
+types-requests = "^2.28.11.2"
+flake8 = "^5.0.4"
+Flake8-pyproject = "^1.1.0.post0"
+
+[tool.black]
+line-length = 99
+skip-string-normalization = true
+exclude = """
+(
+    tests
+)
+"""
+
+[tool.isort]
+profile = "black"
+line_length = 99
+src_paths = ["md_translate"]
+
+[tool.pytest.ini_options]
+addopts = "-m 'not web'"
+markers = [
+    "web: mark test as web test",
+]
+
+[tool.coverage.run]
+source = [
+    "md_translate",
+]
+omit = [
+    "tests/*",
+    "md_translate/app.py",
+    "md_translate/translators/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "# pragma: no cover",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]
+
+[tool.mypy]
+python_version = "3.10"
+disallow_untyped_defs = true
+ignore_missing_imports = true
+warn_unused_configs = true
+exclude = [
+    "tests",
+]
+
+[tool.flake8]
+extend-ignore = ["E501", ]
+max-complexity = 6
