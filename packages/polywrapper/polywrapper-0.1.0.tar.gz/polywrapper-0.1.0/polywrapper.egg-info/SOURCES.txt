@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+polywrapper/__init__.py
+polywrapper/polywrapper.py
+polywrapper.egg-info/PKG-INFO
+polywrapper.egg-info/SOURCES.txt
+polywrapper.egg-info/dependency_links.txt
+polywrapper.egg-info/requires.txt
+polywrapper.egg-info/top_level.txt
