@@ -1,0 +1,28 @@
+[common]
+items = [1000, 5000, 10000, 20000]
+engines = ["PickledList", "DbmEngine", "SqliteEngine"]
+
+[[profiles]]
+name = "minimal"
+producers = 1
+consumers = 1
+
+[[profiles]]
+name = "medium"
+producers = 5
+consumers = 1
+
+[[profiles]]
+name = "heavy"
+producers = 20
+consumers = 2
+
+[[profiles]]
+name = "producers"
+producers = 2
+consumers = 0
+
+[[profiles]]
+name = "consumers"
+producers = 0
+consumers = 2
