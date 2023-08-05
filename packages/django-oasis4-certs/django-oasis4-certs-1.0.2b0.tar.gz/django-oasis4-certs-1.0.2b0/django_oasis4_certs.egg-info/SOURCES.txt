@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+django_oasis4_certs.egg-info/PKG-INFO
+django_oasis4_certs.egg-info/SOURCES.txt
+django_oasis4_certs.egg-info/dependency_links.txt
+django_oasis4_certs.egg-info/requires.txt
+django_oasis4_certs.egg-info/top_level.txt
