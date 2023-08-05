@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+terver/__init__.py
+terver/main.py
+terver.egg-info/PKG-INFO
+terver.egg-info/SOURCES.txt
+terver.egg-info/dependency_links.txt
+terver.egg-info/requires.txt
+terver.egg-info/top_level.txt
