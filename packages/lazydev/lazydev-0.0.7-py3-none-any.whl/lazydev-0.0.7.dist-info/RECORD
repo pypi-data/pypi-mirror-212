@@ -1,0 +1,12 @@
+lazydev/__init__.py,sha256=Qt2r8jqEIGhPpisN8T3cC0HXW46XVAD4GNdUO5-gl3c,482
+lazydev/develop.py,sha256=UTpwfr8GXbuC2ONR8SZSA0pwqnmdiUaXwo1taTfXSVY,1280
+lazydev/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lazydev/modules/developer.py,sha256=nZ7bcxZXE_nuCJSUp0lWaXVgMZhfSaofi3vB96TBdTo,7279
+lazydev/modules/prompts.py,sha256=QXaxBPee_vKqszeARc69rZmktDEaWJqxaXhNEiAch4g,6118
+lazydev/modules/utils.py,sha256=l9AZx6C1nBy-katFZ_pUlz8jOl3AL2k1eMuenoeMc98,1807
+lazydev-0.0.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lazydev-0.0.7.dist-info/METADATA,sha256=F3uoisPno7QNYBY9VxjsV73TQbp7EoRggIBhzA4x8SM,4623
+lazydev-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lazydev-0.0.7.dist-info/entry_points.txt,sha256=I7QuI-M-VdCki_cWmFN9ESB26X-URkr1m6yPrSzCRTo,40
+lazydev-0.0.7.dist-info/top_level.txt,sha256=uRvnvSMZ4DzYGq2xr9paaWXmsRfmjNs-7ZVNILfqofQ,8
+lazydev-0.0.7.dist-info/RECORD,,
