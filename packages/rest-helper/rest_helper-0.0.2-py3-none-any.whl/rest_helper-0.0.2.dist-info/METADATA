@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rest-helper
+Version: 0.0.2
+Summary: Utility tool used for parsing specific .ini files
+Author: Norbert Gocze
+Author-email: gnorbi951@gmail.com
+Keywords: rest_helper
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: docopt
+
