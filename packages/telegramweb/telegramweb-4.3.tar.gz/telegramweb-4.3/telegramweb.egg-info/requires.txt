@@ -1,0 +1,7 @@
+requests
+SQLAlchemy
+beautifulsoup4
+psycopg2-binary
+lxml
+xmltodict
+postgresql
