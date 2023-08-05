@@ -1,0 +1,8 @@
+setup.py
+sliw/__init__.py
+sliw/sliw.py
+sliw.egg-info/PKG-INFO
+sliw.egg-info/SOURCES.txt
+sliw.egg-info/dependency_links.txt
+sliw.egg-info/requires.txt
+sliw.egg-info/top_level.txt
