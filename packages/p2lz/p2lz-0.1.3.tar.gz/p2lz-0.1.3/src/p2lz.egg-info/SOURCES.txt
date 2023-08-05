@@ -1,0 +1,17 @@
+.gitignore
+.tool-versions
+LICENSE.txt
+Makefile
+README.md
+pyproject.toml
+.github/workflows/publish.yaml
+src/p2lz/__init__.py
+src/p2lz/_version.py
+src/p2lz/dynamodb.py
+src/p2lz/tools.py
+src/p2lz/tools_error.py
+src/p2lz.egg-info/PKG-INFO
+src/p2lz.egg-info/SOURCES.txt
+src/p2lz.egg-info/dependency_links.txt
+src/p2lz.egg-info/requires.txt
+src/p2lz.egg-info/top_level.txt
