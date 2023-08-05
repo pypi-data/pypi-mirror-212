@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "doy"
+version = "0.7"
+description = ""
+authors = ["Dominik Schmidt <schmidtdominik30@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+matplotlib = "^3.6.2"
+numpy = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
