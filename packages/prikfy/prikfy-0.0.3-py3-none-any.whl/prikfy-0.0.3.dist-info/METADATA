@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: prikfy
+Version: 0.0.3
+Summary: A small python package
+Home-page: http://github.com/Prikshit7766/prikfy
+Author: Prikshit7766
+Author-email: prikshitsharma8024@gmail.com
+License: MIT
+Project-URL: Bug Tracker, http://github.com/Prikshit7766/prikfy/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Prikfy Library
+
+Prikfy is a Python library that provides a function for converting numbers into their word representation.
+
+## Installation
+
+To install Prikfy, you can use pip:
+
+
+## Usage
+
+To use the number-to-word conversion function from Prikfy, follow these steps:
+
+1. Import the `UnitTransform` function from `prikfy.transform import UnitTransform`.
+
+```python
+from prikfy.transform import UnitTransform
+unit=UnitTransform()
+result = unit.number_to_word(1234)
+print(result)
+```
+
+
+
+Feel free to modify the code further or add any additional sections or information as per your requirements.
