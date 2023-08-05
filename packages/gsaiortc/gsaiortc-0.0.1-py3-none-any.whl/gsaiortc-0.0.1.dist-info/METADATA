@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: gsaiortc
+Version: 0.0.1
+Summary: gsaiortc
+Home-page: https://glass-sphere-ai.de
+Author: Glass Sphere Software
+Author-email: 
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aioice (<1.0.0,>=0.9.0)
+Requires-Dist: av (<11.0.0,>=9.0.0)
+Requires-Dist: cffi (>=1.0.0)
+Requires-Dist: cryptography (>=2.2)
+Requires-Dist: google-crc32c (>=1.1)
+Requires-Dist: pyee (>=9.0.0)
+Requires-Dist: pylibsrtp (>=0.5.6)
+Requires-Dist: pyopenssl (>=23.1.0)
+Requires-Dist: dataclasses ; python_version < "3.7"
+
+# GS Peer connection adapter
+
+
+
+
+
+## License
+
+(C) 2022 ENS - Freies Institut fuer Technische Informatik UG haftungsbeschraenkt
+
+[MIT](https://choosealicense.com/licenses/mit/)
