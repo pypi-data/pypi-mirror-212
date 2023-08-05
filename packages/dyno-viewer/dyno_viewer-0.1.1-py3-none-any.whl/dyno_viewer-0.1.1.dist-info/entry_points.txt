@@ -1,0 +1,5 @@
+[console_scripts]
+build_local=scripts.commands:build_local
+dyno-viewer=dyno_viewer.app:run
+flatpak_build=scripts.commands:build_flatpak
+
