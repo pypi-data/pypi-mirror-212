@@ -1,0 +1,2 @@
+puremagic
+pypdf>=3.8.0
