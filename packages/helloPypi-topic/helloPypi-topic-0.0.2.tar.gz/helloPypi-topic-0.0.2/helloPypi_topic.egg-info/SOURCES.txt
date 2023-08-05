@@ -1,0 +1,8 @@
+setup.py
+helloPypi_topic.egg-info/PKG-INFO
+helloPypi_topic.egg-info/SOURCES.txt
+helloPypi_topic.egg-info/dependency_links.txt
+helloPypi_topic.egg-info/top_level.txt
+myhellopackage/__init__.py
+myhellopackage/channel.py
+myhellopackage/hello.py
