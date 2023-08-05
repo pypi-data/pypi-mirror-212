@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "mqflow"
+version = "0.4.0"
+description = "Simple python message queue framework is ready to serve."
+authors = ["Allen Chou <f1470891079@gmail.com>"]
+readme = "README.md"
+packages = [{include = "mqflow"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.0,<3.11.0"
+typing-extensions = "*"
+rich = "*"
+pytz = "*"
+urllib3 = "1.26.16"
+pyassorted = "^0.7.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flake8 = "*"
+flake9 = "*"
+pytest = "*"
+pytest-asyncio = "*"
+yapf = "*"
+
+[tool.poetry.extras]
+all = []
+
+[tool.pytest.ini_options]
+log_cli = false
+log_cli_level = "INFO"
+log_file = "log/test.log"
+log_file_level = "DEBUG"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
