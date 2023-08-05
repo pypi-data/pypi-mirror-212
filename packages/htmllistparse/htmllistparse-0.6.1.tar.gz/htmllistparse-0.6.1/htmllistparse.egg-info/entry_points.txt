@@ -1,0 +1,2 @@
+[console_scripts]
+rehttpfs = htmllistparse.rehttpfs:main
