@@ -1,0 +1,5 @@
+[console_scripts]
+inabox=inabox:main
+jenkins=kalm:jenkins
+kalm=kalm:main
+
