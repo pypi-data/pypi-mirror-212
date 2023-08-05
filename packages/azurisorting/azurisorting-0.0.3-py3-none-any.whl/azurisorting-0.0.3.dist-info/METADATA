@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: azurisorting
+Version: 0.0.3
+Summary: This sorter is used to sort datasets based on their ASCII Position.
+Home-page: UNKNOWN
+Author: Nathan Hornby
+Author-email: alexmybestcat@gmail.com
+License: UNKNOWN
+Keywords: python,sorter,quick sorter,sort,fast sort,fast,corrective sorter,corrective,auto sorter,auto,easy sorter,easy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+These sorters are based on speed with 3 options: AzuriSorter is the default sorter used. AzuriFastSorter is meant for small datasets, it doesn't perform any corrections. AzuriCorrectiveSorter is a sorter that runs through the data as many times specified it sacrifices speed for accuracy.
+Fixes: Fixed Major error in which causes the package to be unusable. Attempts to fix: #2
+
