@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "briefcase-media"
+version = "0.4.0"
+description = "This tool shows the current workingdirectory"
+authors = ["tct123 <42028373+tct123@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "briefcase_media"}]
+
+[tool.poetry.dependencies]
+python = "^3.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
