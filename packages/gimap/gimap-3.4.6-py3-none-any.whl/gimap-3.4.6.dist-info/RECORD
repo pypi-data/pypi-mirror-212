@@ -1,0 +1,15 @@
+gimap/ArrowRotateMap.png,sha256=SSkV16G5ErjCFQ2PaREZYHYa58AosuMrvV0QzIevB0E,5279
+gimap/ArrowRotateMapAll.png,sha256=eS6VYG87fF7aJ15nDs1_KqmtDSoHRl_mtSmvItQC9xE,76749
+gimap/GIBigmap_luma_0125x_pad125.png,sha256=2HV9EJcBXPvWViKaM7lk-WO-C5rxxIysKo-lURuiAHo,373973
+gimap/GICityInner_05x.png,sha256=jCycSMI1uXEEJXAEPtsruWyEu7tBNvF7cipZ16LSSQM,20683
+gimap/GICityOuter_05x.png,sha256=aBSPLtejO_zBfElouOuXTfze8r0zHkLD130VbjpVVxs,21873
+gimap/GIMAP_05x.png,sha256=oi0w2VoaNG81MCMFuYVDTlwKhiAMtpPft1Aqrx_kZZo,14470145
+gimap/GIMAP_luma_05x.png,sha256=DibsT8WRb-HUnoOc--ZQIJa79AMTDbsnBP9y0UGRdOs,4524222
+gimap/GIReachableMask_0125x_pad125.png,sha256=oRI7umL9yKUMvWPt2cOMpbV9KDJLxyrf3xJKjAJGe1k,9566
+gimap/__init__.py,sha256=vNEokZgak5-wy2WQa2tCA85guPjpD4I7zKu2VyG5oj4,208
+gimap/__version__.py,sha256=LEYrbIlwlvksoNq42Db-Ir18VYMb5VVdntOgPxCpdrU,23
+gimap-3.4.6.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+gimap-3.4.6.dist-info/METADATA,sha256=_76wH4tBkN2iX3PRf3auHe2Wv7hqmZoMI_awQMFTou0,459
+gimap-3.4.6.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+gimap-3.4.6.dist-info/top_level.txt,sha256=fewrPUxOqi9buaQ-6uX01zMjCsvvVmRoipDbnpEe5O4,6
+gimap-3.4.6.dist-info/RECORD,,

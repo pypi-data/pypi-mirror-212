@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gimap
+Version: 3.4.6
+Summary: A dependency of genshin_impact_assistant
+Home-page: https://github.com/LmeSzinc/GIMAP
+Author: LmeSzinc
+Author-email: lmeszincsales@gamil.com
+License: UNKNOWN
+Platform: python3
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# GIMAP
+
+A dependency of [genshin_impact_assistant](https://github.com/infstellar/genshin_impact_assistant) .
+
+
+
