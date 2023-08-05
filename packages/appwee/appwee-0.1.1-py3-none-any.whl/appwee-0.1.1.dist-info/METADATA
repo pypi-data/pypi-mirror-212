@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: appwee
+Version: 0.1.1
+Summary: Wrapper around peewee with some QoL features
+Author-email: Highghlow <highghlow@proton.me>
+Project-URL: Homepage, https://github.com/highghlow/appwee
+Project-URL: Bug Tracker, https://github.com/highghlow/appwee/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.md
+Requires-Dist: peewee (>=3.16.0)
+
+# Appwee
+peewee wrapper with simple QoL changes
+## Installation
+```
+python -m pip install appwee
+```
+## Quickstart
+```python
+import appwee
+app = appwee.App(appwee.SqliteDatabase("example.db"))
+class ExampleModel(app.Model):
+    it_is_just = appwee.IntegerField()
+    like_normal_peewee = appwee.BlobField()
+
+if __name__ == "__main__":
+    app.init()
+```
+See [peewee's documentation](https://docs.peewee-orm.com) for more information
