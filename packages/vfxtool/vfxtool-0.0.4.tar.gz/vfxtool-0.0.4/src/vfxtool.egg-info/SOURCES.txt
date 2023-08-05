@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+src/vfxtool/__init__.py
+src/vfxtool/dataIO.py
+src/vfxtool/lineup.py
+src/vfxtool/main.py
+src/vfxtool/shotsInfo.py
+src/vfxtool.egg-info/PKG-INFO
+src/vfxtool.egg-info/SOURCES.txt
+src/vfxtool.egg-info/dependency_links.txt
+src/vfxtool.egg-info/top_level.txt
