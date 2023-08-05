@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pytele2api/Tele2Api.py
+pytele2api/__init__.py
+pytele2api/const.py
+pytele2api.egg-info/PKG-INFO
+pytele2api.egg-info/SOURCES.txt
+pytele2api.egg-info/dependency_links.txt
+pytele2api.egg-info/requires.txt
+pytele2api.egg-info/top_level.txt

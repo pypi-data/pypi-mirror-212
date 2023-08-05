@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pytele2api
+Version: 0.1.5
+Summary: Python library for communication with Tele2 My TSO
+Home-page: https://github.com/fredrikhaggbom/pytele2
+Author: Fredrik Häggbom
+Author-email: fredrik.haggbom@gmail.com
+License: MIT
+Download-URL: https://github.com/fredrikhaggbom/pytele2/archive/refs/tags/0.1.5.tar.gz
+Keywords: tele2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pytele2
+Python lib for accessing information from Tele2 my TSO
+
+
