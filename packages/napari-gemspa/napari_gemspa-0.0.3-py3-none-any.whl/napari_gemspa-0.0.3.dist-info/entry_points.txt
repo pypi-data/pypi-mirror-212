@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-gemspa = napari_gemspa:napari.yaml

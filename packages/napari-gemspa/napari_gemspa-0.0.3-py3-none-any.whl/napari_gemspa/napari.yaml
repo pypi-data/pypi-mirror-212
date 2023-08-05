@@ -1,0 +1,37 @@
+name: napari-gemspa
+display_name: GEMspa
+contributions:
+  commands:
+    - id: napari-gemspa.get_reader
+      python_name: napari_gemspa._reader:napari_get_reader
+      title: Open data with GEMspa
+    - id: napari-gemspa.write_points
+      python_name: napari_gemspa._writer:write_points
+      title: Save points layer data with GEMspa
+    - id: napari-gemspa.write_tracks
+      python_name: napari_gemspa._writer:write_tracks
+      title: Save tracks layer data with GEMspa
+    #- id: napari-gemspa.make_sample_data
+    #  python_name: napari_gemspa._sample_data:make_sample_data
+    #  title: Load sample data from GEMspa
+    - id: napari-gemspa.make_gemspa_plugin
+      python_name: napari_gemspa._gemspa_plugin:GEMspaPlugin
+      title: Make GEMspa plugin
+  readers:
+    - command: napari-gemspa.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.txt', '*.csv', '*.tsv']
+  writers:
+    - command: napari-gemspa.write_points
+      layer_types: ['points']
+      filename_extensions: ["txt", "csv", "tsv"]
+    - command: napari-gemspa.write_tracks
+      layer_types: ['tracks']
+      filename_extensions: [ "txt", "csv", "tsv"]
+#  sample_data:
+#    - command: napari-gemspa.make_sample_data
+#      display_name: GEMspa
+#      key: unique_id.1
+  widgets:
+    - command: napari-gemspa.make_gemspa_plugin
+      display_name: GEMspa
