@@ -1,0 +1,17 @@
+dxitemspy/.dxitems.py.swp,sha256=z9kAAaAwKFQzBpbEgfY9ieMzegHndz9T6w0doWuUyE8,12288
+dxitemspy/DXCCSR-Reference-File-v2023-1.xlsx,sha256=OUvxG0wN639NqvtmL5hrQjvU3fAyFHxbKfCb0baiSF0,3450557
+dxitemspy/DXI_Labels_v2021.1.xlsx,sha256=vrbGIP7Ekm_zfnmc4lz79vSr2BfZuDPodR1j1LZ6lqI,138315
+dxitemspy/ICD_10_CM_to_DXI_Mapping_v2021.1.xlsx,sha256=aJbcSTTCvJowAtceooFufS_Ne3-fXI7ZuaY4eeKyy9Y,8232388
+dxitemspy/Valid Procedure Codes v2.xlsx,sha256=HPEbUDDY33UZKOXvjpwmb0TbZLRWIDTWA8YDzmAY81Y,350803
+dxitemspy/Z_DXI_Model1_P_AnnTotalSpend_250K.sas,sha256=Lg_WlMOFy7fFVuwsI9si4ejO3xftMH57MJhGCbGPNpM,59929
+dxitemspy/__about__.py,sha256=pWe4Gj-31A-4me4XazfjbzRjKJtG2tmVwfJ5zOkMbG8,128
+dxitemspy/__init__.py,sha256=0Vg7Gp1Udvzb7-c90tBoSJxKTJihclElTVueKi0wszA,106
+dxitemspy/dxi_mapping.json,sha256=J8vHnJ9HS3uj7vjkuin7UmRE8EheZuOrosBwS2fI-Sg,21243725
+dxitemspy/dxi_metadata.json,sha256=IfuBM-p27P0ce_5k63R-0yPCLUkfRilqgafvrUTgx4Y,619732
+dxitemspy/dxitems.py,sha256=sjmODrBwg-6Zy_P-MUNmYLrpcBHKxDgw4lY1CImR7ng,1154
+dxitemspy/parse_dxi_mapping.py,sha256=sUdnZFuG-v4hFOHy2sqx7mYOm28r46RSkLpdmMmBvQ4,1615
+dxitemspy/parse_dxi_meta.py,sha256=_WZK0oyaHPJaWvuiwjoSZyBcunXNAsRvLqNciSxu9eg,2322
+dxitemspy-0.0.1.dist-info/METADATA,sha256=lywJncyPzGqNrlwXpfAxTYjgbxxyfPOwH27p7nf49ZA,2175
+dxitemspy-0.0.1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+dxitemspy-0.0.1.dist-info/licenses/LICENSE.txt,sha256=sMymzGzqI-yv9ih1av2aL8QLPcimH7UO6rb1m_atZeE,1098
+dxitemspy-0.0.1.dist-info/RECORD,,
