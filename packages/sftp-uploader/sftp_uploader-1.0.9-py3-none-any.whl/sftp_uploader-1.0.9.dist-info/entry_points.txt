@@ -1,0 +1,3 @@
+[console_scripts]
+post_install=sftp_uploader.post_install:run
+
