@@ -1,0 +1,2 @@
+[console_scripts]
+tfliteiorewriter = tfliteiorewriter.main:cli
