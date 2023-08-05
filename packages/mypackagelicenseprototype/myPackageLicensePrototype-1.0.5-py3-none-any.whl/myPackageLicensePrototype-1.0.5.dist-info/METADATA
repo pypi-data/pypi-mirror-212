@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: myPackageLicensePrototype
+Version: 1.0.5
+Summary: Description of your package
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy (==1.24.3)
+
