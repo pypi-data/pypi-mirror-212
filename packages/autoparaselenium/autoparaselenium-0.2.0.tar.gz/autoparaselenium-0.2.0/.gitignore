@@ -1,0 +1,10 @@
+*.swp
+__pycache__/
+build/
+dist/
+*.egg-info
+drivers/
+*.log
+log
+venv/
+test.py
