@@ -1,0 +1,2 @@
+[console_scripts]
+apinum = apinum.__main__:main
