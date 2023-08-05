@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@vitejs/plugin-vue": "^4",
+    "pinia": "^2",
+    "vite": "^4",
+    "vue": "^3",
+    "vue-router": "^4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest -r cast_vue/static/src/tests/",
+    "coverage": "vitest run --coverage",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.31.1",
+    "@vue/test-utils": "^2.4.0-alpha.1",
+    "jsdom": "^22.1.0",
+    "vitest": "^0.31.1"
+  }
+}
