@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: mlplatformutils
+Version: 0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Keshav Singh
+Author-email: keshav_singh@hotmail.com
+License: MIT
+Description: # mlplatformutils
+         mlplatformutils for observability
+        
+        ## Structure
+        
+         .
+        â”œâ”€â”€ LICENSE.txt
+        â”œâ”€â”€ README.rst
+        â”œâ”€â”€ setup.cfg
+        â”œâ”€â”€ setup.py
+        â”œâ”€â”€ src
+        â”‚   â”œâ”€â”€ mlplatformutils
+        â”‚   â”‚   â”œâ”€â”€ __init__.py
+        â”‚   â”‚   â””â”€â”€ core
+        â”‚   â”‚       â”œâ”€â”€ __init__.py
+        â”‚   â”‚       â””â”€â”€ sparkutils.py
+        â”‚   â”‚       â””â”€â”€ platformutils.py
+        â”‚   â”‚       â””â”€â”€ pandasutils.py
+        â”‚   â”‚       â””â”€â”€ lineagegraph.py
+        â”‚   â”‚       â””â”€â”€ app_insights_logger.py
+        â”œâ”€â”€ tests
+        â”‚   â”œâ”€â”€ __init__.py
+        â”‚   â””â”€â”€ core
+        â”‚       â”œâ”€â”€ __init__.py
+        â”‚       â””â”€â”€ sparkutils.py
+        â”‚       â””â”€â”€ platformutils.py
+        â”‚       â””â”€â”€ pandasutils.py
+        â”‚       â””â”€â”€ lineagegraph.py
+        â”‚       â””â”€â”€ app_insights_logger.py
+        
+        ## Instructions
+        
+         install twine - twine is a utility package that is used for publishing Python packages on PyPI
+         python -m pip install twine 
+         Build Package - create the source distribution of the package
+         python setup.py sdist 
+         Upload Package to PyPI
+         python -m twine upload dist/*
+        
+        ## Description
+        **app_insights_logger** - Constains **telemetrylogger** Class with Functions to Manage and Log Telemetry into Azure Application Insights
+        **lineagegraph** - Contains **LineageGraph** Class with functions to manage Graph on Azure Cosmos DB enabled with Gremlin
+        
+        **platformutils** - Contains platform utility functions to check, install depedencies, check Azure ML Compute
+        
+        * is_package_installed
+        * install_pip
+        * get_environment
+        * set_environment
+        * assert_amlcompute
+        * read_setup_ini
+        
+        **sparkutils** - Contains functions to read data from sources such as (Azure Data Lake Gen2, Azure Data Explorer (Kusto), Azure Sql Server) and write (Azure Data Lake Gen2)while ensuring integrated Lineage Graph Logging.
+        
+        * read_from_adls_gen2
+        * write_to_adls_gen2
+        * read_from_kusto
+        * read_from_azsql
+        
+        **pandasutils** - Contains functions to read data from Azure Data Lake Gen2 (from Delta Format or Parquet Format) into Pandas Dataframe without Spark while ensuring integrated Lineage Graph Logging.
+        
+        * read_from_delta_as_pandas
+        * read_from_parquet_as_pandas
+        
+Keywords: mlplatformutils
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
