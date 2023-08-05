@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: apinum
+Version: 0.1.1
+Project-URL: homepage, https://github.com/bzlmnop/apinum
+Keywords: US Well Numbers,API Numbers,Well Numbers,apinum
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# apinum
+Library for extracting API numbers from strings.
