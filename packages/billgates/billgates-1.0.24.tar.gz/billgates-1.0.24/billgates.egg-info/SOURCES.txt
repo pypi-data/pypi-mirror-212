@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+billgates.egg-info/PKG-INFO
+billgates.egg-info/SOURCES.txt
+billgates.egg-info/dependency_links.txt
+billgates.egg-info/top_level.txt
