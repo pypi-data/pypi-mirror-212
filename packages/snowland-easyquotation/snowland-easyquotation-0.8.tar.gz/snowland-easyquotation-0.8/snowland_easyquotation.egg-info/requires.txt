@@ -1,0 +1,5 @@
+requests
+astar-devopstool
+astartool
+easyutils
+fake_useragent>=0.1.11
