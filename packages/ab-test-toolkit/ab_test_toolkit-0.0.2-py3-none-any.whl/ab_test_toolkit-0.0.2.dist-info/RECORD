@@ -1,0 +1,12 @@
+ab_test_toolkit/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+ab_test_toolkit/_modidx.py,sha256=IEURqkiGMOhcRYaHYGQbRXFSM4l21cFyzi3zrJrs-Ec,3968
+ab_test_toolkit/generator.py,sha256=QpThKf1uLcBuR3KvVWz7FGhxp7bnK1qZi3n6P8RY0-s,3570
+ab_test_toolkit/plotting.py,sha256=IPOb6b89KnbyIO4i8Qz776ihNdcDuPu0iVLBZTbSHtw,5872
+ab_test_toolkit/power.py,sha256=q_vbrTbSNsKXOHF2RZ5hWkr5PvDmTN6S0UphAChZD58,8334
+ab_test_toolkit/wrappers.py,sha256=02RyQC96LQ1lMbP4nV5BFXsQv3w2ZddpNcvLeQz5AZ8,2033
+ab_test_toolkit-0.0.2.dist-info/LICENSE,sha256=RxRYj4Np_d4L7SrjKLiexu2moT31loPZYxk7PHRPsiw,1064
+ab_test_toolkit-0.0.2.dist-info/METADATA,sha256=LteCmkY7cv1JDpHbUJS7-ZLHvIX-Ad1qdpzrkABOyMI,5855
+ab_test_toolkit-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ab_test_toolkit-0.0.2.dist-info/entry_points.txt,sha256=V2c6D9n0YhLIlsVV04wbyZoYC8SxOMQIZqZ5zVw34LU,73
+ab_test_toolkit-0.0.2.dist-info/top_level.txt,sha256=FnWTKFKWf1-4p_fDiSL4fbKTYHBOx8ot91KeDmn3nvY,16
+ab_test_toolkit-0.0.2.dist-info/RECORD,,
