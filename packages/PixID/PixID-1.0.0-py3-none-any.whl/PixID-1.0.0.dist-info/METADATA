@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PixID
+Version: 1.0.0
+Summary: Generates a unique identifier for the computer.
+Home-page: https://github.com/ttwizz
+Author: ttwiz_z
+Author-email: moderkascriptsltd@gmail.com
+Project-URL: Organization, https://github.com/ModerkaScripts
+Keywords: PixID
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PixID
+Generates a unique identifier for the computer. This tool will be very useful to you if you are going to license your project.
+
+## Usage
+```py
+from pixid import PixID
+print(PixID())
+```
