@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ctpaperclip/README.MD
+ctpaperclip/__init__.py
+ctpaperclip/requirements.txt
+ctpaperclip/thirdparty.json
+ctpaperclip.egg-info/PKG-INFO
+ctpaperclip.egg-info/SOURCES.txt
+ctpaperclip.egg-info/dependency_links.txt
+ctpaperclip.egg-info/requires.txt
+ctpaperclip.egg-info/top_level.txt

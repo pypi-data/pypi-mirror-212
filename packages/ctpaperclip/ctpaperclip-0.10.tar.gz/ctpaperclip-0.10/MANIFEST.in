@@ -1,0 +1,3 @@
+include ctpaperclip/requirements.txt
+include ctpaperclip/thirdparty.json
+include ctpaperclip/README.MD
