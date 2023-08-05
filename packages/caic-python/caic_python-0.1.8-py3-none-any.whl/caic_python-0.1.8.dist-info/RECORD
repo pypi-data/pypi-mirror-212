@@ -1,0 +1,14 @@
+caic_python/__init__.py,sha256=rpXz_J8JcnPIWeWyTI_gAxlQMYp4Vugap2DRMUDP7-E,510
+caic_python/__main__.py,sha256=AEHxPseuTW5SNc9IQUwMlXQy7-QA5DuT59T1zo_8ZgM,2117
+caic_python/_args.py,sha256=rPwfZsltBON-V2wkctm7sp6HdmzztvAq3O-u2WuZWEs,2830
+caic_python/client.py,sha256=eCneCqM1OeyGwbOlbnmgI9IlhevBLgpBCOYlXfi_7d0,24212
+caic_python/definitions.py,sha256=64ys3Hv1YgJMHBJDfEoL64D1mwedpgqT72s0f98sCAw,3660
+caic_python/enums.py,sha256=L40bVxYntK3QxyhwzbvmreXk-1xvfQdV_ueFxj9kfEk,4670
+caic_python/errors.py,sha256=KqGRo9kVtWN3E2iWKUtUqFFALyBlvxSDx8i6sqthhvE,140
+caic_python/models.py,sha256=_b7Phcq9RJHW8A3cxpDdwKL1vFe7rN-SoWybVXBOPsE,16733
+caic_python/utils.py,sha256=a3ZoxWK-EeVLXa8KC37c3VM-uE2N3-7JY-53LoG-EZE,1671
+caic_python-0.1.8.dist-info/LICENSE,sha256=I9cNVSn0enf_0BDQByTdXcn_uYzcr8NrexaPG6wU5D8,1067
+caic_python-0.1.8.dist-info/METADATA,sha256=O2CrlYCOq8-TkQS_SQ_KBDlNxmNz6y73Kywn_n-Oz4w,1089
+caic_python-0.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+caic_python-0.1.8.dist-info/top_level.txt,sha256=fOi8fAf8UpXJVqLzVq0lGpz59aDQJnTg6DdhLtOEYtc,12
+caic_python-0.1.8.dist-info/RECORD,,
