@@ -1,0 +1,31 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "suguru"
+authors = [{ name = "Roi Gabay", email = "roigby@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version", "description"]
+scripts = { suguru = "suguru.game:main" }
+[project.urls]
+Home = "https://github.com/gabay/suguru"
+"Bug Tracker" = "https://github.com/gabay/suguru/issues"
+
+[project.optional-dependencies]
+dev = ["black"]
+test = ["pytest", "pytest-cov"]
+z3 = ["z3"]
+pygame = ["pygame", "z3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["error"]
+addopts = "--cov=src"
