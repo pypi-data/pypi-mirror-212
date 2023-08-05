@@ -1,0 +1,5 @@
+mediapipe
+opencv-python-headless
+plotly
+pandas
+numpy
