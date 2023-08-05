@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: bground
+Version: 0.1.0
+Summary: Interactive subtraction of background from XY-data
+Home-page: https://github.com/mirekslouf/bground/
+Author: Mirek Slouf
+Author-email: mirek.slouf@gmail.com
+License: MIT
+Project-URL: Documentation, https://mirekslouf.github.io/bground/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+BGROUND :: interactive background subtraction
+---------------------------------------------
+
+* BGROUND draws an interactive plot of XY-data.
+* The user can define and subtract backgound using mouse and keyboard.
+* XY-data is an arbitrary text file containing two columns: [X-data, Y-data].
+
+Documentation, help and examples
+--------------------------------
+
+* [PyPI](https://pypi.org/project/bground) repository.
+* [GitHub](https://mirekslouf.github.io/bground) repository.
+* [GitHub Pages](https://mirekslouf.github.io/bground/)
+  with [documentation](https://mirekslouf.github.io/bground/docs).
+
+Versions of BGROUND
+-------------------
+
+* Version 0.0.1 = an incomplete testing version
+* Version 0.0.2 = the basic algorithm works
+* Version 0.0.3 = a small improvement of code and docstrings
+* Version 0.1.0 = better arrangement of funcs in modules + semi-complete docs
+
