@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "pytest-httptesting"
+version = "0.4.0"
+description = "http_testing framework on top of pytest"
+authors = ["HE Qile <mr.qile@gmail.com>"]
+readme = "README.md"
+packages = [{include = "http_testing"}]
+
+homepage = "https://github.com/heqile/http_testing"
+repository = "https://github.com/heqile/http_testing"
+
+include = ["LICENSE"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^7.2.0"
+httpx = "^0.24.0"
+attrs = "^23.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.1.1"
+mypy = "^1.1.1"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."pytest11"]
+"http_page_checker" = "http_testing.plugin"
