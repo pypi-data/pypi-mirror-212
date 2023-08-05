@@ -1,0 +1,13 @@
+srsly>=2.0.8
+tqdm>=4.64.1
+
+[dev]
+pytest>=5.4.3
+black>=19.10b0
+flake8>=3.8.3
+mktestdocs>=0.1.0
+interrogate>=1.2.0
+isort==5.12.0
+autoflake==2.0.1
+mkdocs-material
+mkdocstrings
