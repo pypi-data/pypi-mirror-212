@@ -1,0 +1,83 @@
+# CSV 轉換為資訊區塊
+```
+🐔動機: 
+為了讓每個 CSV row 單獨成為語境探索的資訊區塊，需將 CSV row 轉換成 JSON 資訊區塊。
+切割完畢之後，下一個階段可以針對 content 欄位計算來增添 embeddings 詞向量欄位。
+ 
+💣地雷: 
+這個套件的輸入格式是 google-sheet-downloader 的輸出檔案群CSV and JSON。
+```
+
+## 簡介
+該工具可以將 CSV 文件中的數據轉換成 JSON 形式的資訊區塊。您可以選擇強制重新生成所有 JSON 文件，或者僅生成不存在的 JSON 文件。
+
+## 安裝
+```
+python3 -m pip install csv-to-info-chunks
+```
+
+## 套件用法
+```
+from csv_to_info_chunks import csv_to_info_chunks
+用法的定義：
+def csv_to_info_chunks(input_folder, output_folder, force=False)
+```
+
+## CLI使用方法
+1. 首先，打開命令提示符或終端機，並將工作路徑切換至包含 `csv_to_info_chunks.py` 的文件夹。
+2. 然後，執行以下命令：
+```
+python csv_to_info_chunks.py --input-folder <CSV 文件夾路徑> --output-folder <JSON 文件夾路徑> [--force]
+```
+其中：
+- `<CSV 文件夾路徑>` 是存放 CSV 文件的文件夾路徑。
+- `<JSON 文件夾路徑>` 是要將生成的 JSON 文件存放的文件夾路徑。
+- 如果要強制重新生成所有 JSON 文件，請在命令中添加 `--force` 選項。
+3. 該工具將會轉換指定文件夾中的所有 CSV 文件，並將生成的 JSON 文件存放在指定文件夾中。
+
+## 輸入的 CSV 文件格式
+```
+doc-id_14GQkXftKXoaIJ_TKxtXzae1J7p10XznGgF_lg7cDG8g_sha_4e09fa0d.csv
+提問,回答
+知識工作者的自治和責任,"知識工作需要自治和責任..."
+```
+
+## 輸入的 JSON 文件格式
+``` 
+doc-id_14GQkXftKXoaIJ_TKxtXzae1J7p10XznGgF_lg7cDG8g_sha_4e09fa0d.json
+{
+    "sheet_id": "1H0NTLvF0oyURCw_YWBQJ8CkcL7pij5D_8zO_1gXMc5k",
+    "sheet_name": "健康百科問答知識庫",
+    "worksheet_name": "工作表1",
+    "download_time": "2023-06-04T12:50:06.217484Z",
+    "download_filepath": "./data/users/bohachu_gmail_com/google_sheet_downloader/2023-06-04/doc-id_1H0NTLvF0oyURCw_YWBQJ8CkcL7pij5D_8zO_1gXMc5k_sha_0f813133.csv"
+}
+```
+
+## 輸出的 JSON 文件格式
+```
+{
+    "id": "9b70686d-948f-4091-8564-cb4727695482_7",
+    "time": "2023-06-04T15:59:20.666483Z",
+    "content": "組織惰性 所有的組織都需要一套可以因應現實的紀律。\n\n所有的組織都要知道，天底下沒有什麼計畫或活動可以不需要調整或是重新設計，就能長期持續運作。所有的活動最終都會落伍。忽視這個事實的組織，尤以政府機關最甚。事實上，當今政府部門之所以問題重重，最主要的癥結在於，所有事物都是沿襲過去，無法適時擺脫昨日的牽絆。這方面，醫院和大學只比政府好一點。\n\n企業人士念舊的程度不下於政府官僚。如果某個產品或是計畫失敗，企業人士很可能會照樣加倍投資。不過幸好，他們無法完全照自己的意思這麼做。企業受制於一套客觀的規範，那就是市場。企業有一套客觀的外部衡量標準，那就是利潤。企業早晚得淘汰失敗或不具生產力的產品或計畫。對政府機構、醫院、軍隊等其他組織而言，經濟只是一項邊界條件。",
+    "embeddings": [],
+    "type": "google_sheet",
+    "sheet_id": "14GQkXftKXoaIJ_TKxtXzae1J7p10XznGgF_lg7cDG8g",
+    "sheet_name": "經營百科問答知識庫",
+    "worksheet_name": "工作表1",
+    "download_time": "2023-06-04T12:50:08.519968Z",
+    "download_filepath": "./data/users/bohachu_gmail_com/google_sheet_downloader/2023-06-04/doc-id_14GQkXftKXoaIJ_TKxtXzae1J7p10XznGgF_lg7cDG8g_sha_4e09fa0d.csv",
+    "row": 7
+}
+```
+
+## 注意事項
+- 輸入的 CSV 文件應該使用 UTF-8 字元編碼。
+- 生成的 JSON 文件將使用相同的前綴名，但擴展名將替換為 `.json`。例如，`example.csv` 將生成名為 `example.json` 的文件。
+- 若要查看轉換過程中的具體信息，您可以在終端或命令提示符窗口查看。
+
+## 疑難排解
+- 如果遇到任何問題，請確保您使用的是 Python 3 及相關庫的最新版本。
+- 確保輸入文件夾中的 CSV 文件使用了正確的字元編碼（推薦使用 UTF-8）。
+
+祝使用順利！
