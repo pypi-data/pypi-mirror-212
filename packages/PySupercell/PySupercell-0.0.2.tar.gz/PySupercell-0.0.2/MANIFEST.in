@@ -1,0 +1,13 @@
+graft examples
+graft tests_basic
+graft bin
+
+recursive-include tests_basic *py
+#recursive-exclude tests_basic *pyc 
+
+recursive-include examples README
+recursive-exclude examples    *png
+recursive-exclude examples    *dat 
+recursive-exclude examples *pickle 
+recursive-exclude examples POSCAR.*
+
