@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/Signature_pywrapper/__init__.py
+src/Signature_pywrapper/commons-cli-1.5.0.jar
+src/Signature_pywrapper/eSignature.jar
+src/Signature_pywrapper/signature_wrapper.py
+src/Signature_pywrapper/signatures-1.2-SNAPSHOT.jar
+src/Signature_pywrapper/utils.py
+src/Signature_pywrapper.egg-info/PKG-INFO
+src/Signature_pywrapper.egg-info/SOURCES.txt
+src/Signature_pywrapper.egg-info/dependency_links.txt
+src/Signature_pywrapper.egg-info/requires.txt
+src/Signature_pywrapper.egg-info/top_level.txt
