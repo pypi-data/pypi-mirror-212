@@ -1,0 +1,16 @@
+lovely_grad/__init__.py,sha256=i0-llZxNY9yzAjMYvGoIwY8zlFuWrRphqQaxIsUlUJM,162
+lovely_grad/_modidx.py,sha256=I3EchisU5hRp0Utgjpv_yMfPI7ZHOTVnCMnKdn-V0-M,7404
+lovely_grad/patch.py,sha256=9idKzWGIp8unXJK1sIbgnX6hxICouc4BeozHPDfmDBY,1544
+lovely_grad/repr_chans.py,sha256=lXenAuDW3yc6rokEGXrXN8HrBcIUDAa40Y4CF_t6qIo,3271
+lovely_grad/repr_plt.py,sha256=U0Ie3KHyHxOoQD8Zny1jaaQgThHXYN1zY90SYncSUIk,2905
+lovely_grad/repr_rgb.py,sha256=-eDJSDwNKwTGZTpozepH9KsdOtMaqxd3dRgh5uJfFCU,3184
+lovely_grad/repr_str.py,sha256=Ya6jgsHemEOuALqCcSwQiBndvdOLz-kTvWwYeJJZy8w,6938
+lovely_grad/utils/__init__.py,sha256=aoNyWpiGH4YhGp4Z3aJX8uhouKQqXs1KPM81aOKJKfE,21
+lovely_grad/utils/config.py,sha256=gDyDK1dMDEQqG6j3Dra5VlvgjbMc98_sqwHBWOVBV3Q,3753
+lovely_grad/utils/misc.py,sha256=8EqdMPWAGZUHPVtfU-Is3ZSz9jKRiuu2sJLnQx7DbLU,767
+lovely_grad-0.0.2.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+lovely_grad-0.0.2.dist-info/METADATA,sha256=qoe-EaIDi2PLU9cJsTfDAvSPpTocyqiVNgIcy-IMqE4,13138
+lovely_grad-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lovely_grad-0.0.2.dist-info/entry_points.txt,sha256=GT6VuD4cQM2be2LypFOi8B25GTJv6__UXmYiZplevh0,44
+lovely_grad-0.0.2.dist-info/top_level.txt,sha256=54_QpTis7aWCv2z5se7-uNH5NoiPhlfWEIBFhrPx4cA,12
+lovely_grad-0.0.2.dist-info/RECORD,,
