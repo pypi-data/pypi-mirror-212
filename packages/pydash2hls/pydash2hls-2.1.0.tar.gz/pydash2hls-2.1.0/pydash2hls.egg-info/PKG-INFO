@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: pydash2hls
+Version: 2.1.0
+Summary: Python library for converting DASH manifest files to HLS format.
+Home-page: https://github.com/hyugogirubato/pydash2hls
+Author: hyugogirubato
+Author-email: hyugogirubato@gmail.com
+License: GPL-3.0-only
+Keywords: manifest,hls,m3u8,dash
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyDash2HLS
+
+[![License](https://img.shields.io/github/license/hyugogirubato/PyDash2HLS)](https://github.com/hyugogirubato/PyDash2HLS/blob/master/LICENSE)
+[![Release](https://img.shields.io/github/release-date/hyugogirubato/pydash2hls)](https://github.com/hyugogirubato/pydash2hls/releases)
+[![Latest Version](https://img.shields.io/pypi/v/pydash2hls)](https://pypi.org/project/pydash2hls)
+
+PyDash2HLS is a Python library for converting DASH (Dynamic Adaptive Streaming over HTTP) manifest files to HLS (HTTP
+Live Streaming) format.
+
+## Installation
+
+You can install PyDash2HLS using pip:
+
+````shell
+pip install pydash2hls
+````
+
+## Usage
+
+### Converter Initialization
+
+To initialize the Converter class, you can use the following methods:
+
+#### Initialization from a Remote URL
+
+````python
+from pydash2hls import Converter
+
+# Initialize Converter from a remote URL
+url = "http://example.com/manifest.mpd"
+converter = Converter.from_remote(url)
+````
+
+#### Initialization from a Local File
+
+````python
+from pydash2hls import Converter
+from pathlib import Path
+
+# Initialize Converter from a local file
+file_path = Path("path/to/manifest.mpd")
+converter = Converter.from_local(file_path)
+````
+
+### Building HLS Manifest
+
+To build an HLS manifest for a specific profile, you can use the `build_hls()` method:
+
+````python
+# Build HLS manifest for a profile
+profile_id = "profile1"
+hls_manifest = converter.build_hls(profile_id)
+````
+
+### Getting Media URLs
+
+To retrieve a list of media URLs for a specific profile, you can use the `media_urls()` method:
+
+````python
+# Get media URLs for a profile
+profile_id = "profile1"
+media_urls = converter.media_urls(profile_id)
+````
+
+### Exceptions
+
+The following exceptions can be raised by PyDash2HLS:
+
+- `InvalidPath`: Raised when the file path is invalid.
+- `InvalidFileContent`: Raised when the contents of the file are not in DASH format or are incompatible.
+- `InvalidProfile`: Raised when the selected profile is invalid.
+- `MissingRemoteUrl`: Raised when a remote file URL is required but not provided.
+
+### License
+
+This project is licensed under the [GPL v3 License](LICENSE).
+
