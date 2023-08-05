@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: gamer3514
+Version: 0.0.2
+Summary: A small package that does stuff
+Author-email: Gamer3514 <gamer@sillydev.co.uk>
+Project-URL: Homepage, https://github.com/thegamer3514/gamer3514
+Project-URL: Bug Tracker, https://github.com/thegamer3514/gamer3514/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Gamer3514
+
+A small package that does stuff
+
+## Installation
+
+```bash
+pip install gamer3514
+```
+
+## Usage
+
+```python
+from gamer3514 import api
+#NSFW Detection
+api.detectnsfw(imageurl, apikey)
+#Profanity Check
+api.profanitycheck(text, apikey)
+#Text To Braille
+api.texttobraille(text)
+#Random Number
+api.randomnumber(length)
+#Random Topic
+api.randomtopic()
+```
+
+## Resources
+
+- [Discord server](https://discord.gg/3qvpkgWSbF)
+- [Free hosting](https://panel.sillydev.co.uk)
+- Contact me: gamer@sillydev.co.uk
