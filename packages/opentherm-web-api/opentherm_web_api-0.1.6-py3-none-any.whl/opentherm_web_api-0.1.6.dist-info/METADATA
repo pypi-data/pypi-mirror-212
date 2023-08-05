@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: opentherm-web-api
+Version: 0.1.6
+Summary: WebAPI Connector for OpenThermWeb
+Home-page: https://github.com/Lake292/opentherm-web-api
+Author: Lake292
+Author-email: lake.erik@gmail.com
+Project-URL: Bug Reports, https://github.com/Lake292/opentherm-web-api/issues
+Keywords: openthermweb
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+
+OpenTherm Web API
+
+Allows to connecto to OpenTherm Web, retrieve and set controller confiuration.
