@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/Pytomatas.egg-info/PKG-INFO
+src/Pytomatas.egg-info/SOURCES.txt
+src/Pytomatas.egg-info/dependency_links.txt
+src/Pytomatas.egg-info/top_level.txt
