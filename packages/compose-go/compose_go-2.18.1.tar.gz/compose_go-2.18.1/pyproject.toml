@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "compose-go"
+version = "v2.18.1"  # docker-compose version
+description = "Docker Compose v2 (GoLang) wrapped in a Python Package"
+authors = ["Luã Bida Vacaro <luabidaa@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+include = ["src/compose/docker-compose"]
+
+
+[tool.poetry.scripts]
+docker-compose = "src.compose:docker_compose"
+
+
+[tool.poetry.dependencies]
+python = "^3.7.0"
+click = ">=6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
