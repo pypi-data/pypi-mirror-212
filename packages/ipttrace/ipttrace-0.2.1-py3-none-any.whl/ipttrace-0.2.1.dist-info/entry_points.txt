@@ -1,0 +1,3 @@
+[console_scripts]
+ipttrace=ipttrace.main:app
+
