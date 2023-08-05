@@ -1,0 +1,3 @@
+[console_scripts]
+pyspark_project_setup = pyspark_project_setup:init
+
