@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: world-model
+Version: 0.1.0
+Summary: world models with neural networks
+Author-email: Volodymyr Kyrylov <vol@wilab.org.ua>
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: opencv-python~=4.7.0.72
+Requires-Dist: torch~=2.0.1
+Description-Content-Type: text/markdown
+
+# world model
+
+Discrete world modeling by recording Coppelia simulations with ROS.
+
+```
+pip install world-model
+sim # run the simulation
+```
+
+The project report is in [README.pdf](./README.pdf).

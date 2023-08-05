@@ -1,0 +1,32 @@
+[project]
+name = "world-model"
+version = "0.1.0"
+description = "world models with neural networks"
+authors = [
+    { name = "Volodymyr Kyrylov", email = "vol@wilab.org.ua" }
+]
+dependencies = [
+    "torch~=2.0.1",
+    "opencv-python~=4.7.0.72",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.scripts]
+sim = "world.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build]
+exclude = [
+  "scenes/",
+  "textures/"
+]
