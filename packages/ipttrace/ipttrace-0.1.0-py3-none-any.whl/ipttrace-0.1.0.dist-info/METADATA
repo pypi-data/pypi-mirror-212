@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ipttrace
+Version: 0.1.0
+Summary: trace iptables rules with ease
+Author: sieginglion
+Author-email: sieginglion@gmail.com
+Requires-Python: >=3.6.3,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: dataclasses (>=0.8,<0.9); python_version < "3.7"
+Requires-Dist: rich (>=12.6.0,<13.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
