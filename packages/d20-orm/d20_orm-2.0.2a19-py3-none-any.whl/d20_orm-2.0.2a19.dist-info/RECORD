@@ -1,0 +1,15 @@
+dtwentyORM/BasicElement.py,sha256=BUnKy-BEDw9gnTyLE_xQfltADZqRq8zOmBZzlzmdGD4,8911
+dtwentyORM/DBConnector.py,sha256=VNYa9CHmAnHN_Q_bbF63wJdUBQ4M4DQTDkQsMgs_Fnc,7357
+dtwentyORM/Defaults_json.py,sha256=cvqikhTlbR5sWRH2VoTqYmgON1Kt-eGlBQohqzVSp7g,129614
+dtwentyORM/Element.py,sha256=CpyKYKCG-EklxLokJ5hqxYNzsLPqXu6Xj_i-vzA_OTg,4749
+dtwentyORM/Error.py,sha256=AK5638j0y-bNTlUb1llVEwU-Hy774zlYuCfcoKq6ni8,7462
+dtwentyORM/GraphClassFactory.py,sha256=P_9WDDy7d3AumanAfW2EgysauIdXQSQOWxwIOsG6mlg,3632
+dtwentyORM/Metadata.py,sha256=zC13lfoe_QCpxUUQywE7SjGUksE1KVMfa-5_bPuO9vE,7964
+dtwentyORM/__init__.py,sha256=qSBKxBv-knO7ggg5ZjwAs9nU-V4UQ59vpXLEpC2hTtY,95
+dtwentyORM/__version__.py,sha256=iBTfZtsJ5sNd39bC_99MfBSvZD6B9t-8-T-cpoz_t_M,162
+dtwentyORM/support.py,sha256=yskv53_jbsQzPUT6ZmuBZbo1czXHHyc_uzQ-uvCPhHM,1427
+d20_orm-2.0.2a19.dist-info/LICENSE,sha256=IAaaS7zw5PIwsp9zajc_08dzPMbu4Eqz0tcr9t-QEeI,1064
+d20_orm-2.0.2a19.dist-info/METADATA,sha256=smtITkM_6UtKfS8NjOjn0sqlCHC9ZZOxvt8vMgDIBWs,946
+d20_orm-2.0.2a19.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+d20_orm-2.0.2a19.dist-info/top_level.txt,sha256=XJ35EC_C8I84jqHg-5_nNc2wlrbOuHsmcmHi-BXLVu8,11
+d20_orm-2.0.2a19.dist-info/RECORD,,
