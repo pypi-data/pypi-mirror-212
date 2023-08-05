@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_cli.py
+twofas_cli/__init__.py
+twofas_cli/common.py
+twofas_cli/crypt.py
+twofas_cli/twofas_cli.py
+twofas_cli.egg-info/PKG-INFO
+twofas_cli.egg-info/SOURCES.txt
+twofas_cli.egg-info/dependency_links.txt
+twofas_cli.egg-info/entry_points.txt
+twofas_cli.egg-info/requires.txt
+twofas_cli.egg-info/top_level.txt
+twofas_cli/api/__init__.py
+twofas_cli/api/api.py
