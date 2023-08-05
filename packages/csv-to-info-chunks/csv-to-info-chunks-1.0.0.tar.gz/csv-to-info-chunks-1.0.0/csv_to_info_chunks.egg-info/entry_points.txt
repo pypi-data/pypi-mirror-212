@@ -1,0 +1,2 @@
+[console_scripts]
+csv_to_info_chunks = csv_to_info_chunks:main
