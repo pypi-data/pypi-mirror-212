@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: downloadx
+Version: 0.1.1
+Summary: DownloadX CLI
+Author-email: ruriazz <azizruri.s@gmail.com>
+Keywords: downloadx,DownloadX
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: alive-progress (==3.1.4)
+Requires-Dist: pydantic (==1.10.8)
+Requires-Dist: pytube (==15.0.0)
+
+# DownloadX

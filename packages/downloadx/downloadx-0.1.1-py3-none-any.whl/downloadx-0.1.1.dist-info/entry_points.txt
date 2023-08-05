@@ -1,0 +1,2 @@
+[console_scripts]
+downloadx = downloadx.__main__:main
