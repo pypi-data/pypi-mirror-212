@@ -1,0 +1,5 @@
+requests>=2.31.0
+opencv-python>=4.7.0.72
+uiautomator2>=2.16.23
+pyminitouch>=0.3.3
+urllib3
