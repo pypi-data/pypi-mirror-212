@@ -1,0 +1,9 @@
+pkg/app.py,sha256=Lv2llluJoeF1F0jqPK_fXFfrD1Gcq_cZJ4OTy9jVK2s,32
+pkg/args.py,sha256=xLjB60HZY05djznOBoZMVIfqexu9GjDCz2D3SsPTpkk,201
+pkg/sample.py,sha256=Rzf3htL3EdhEJORn--Qprk-9STkWY44n-x9AxcJcalE,166
+pkg/test_app.py,sha256=OQQ8PlG9k9IvKnVYkx6v8nnvjXbpN83wmXRwSE6I_6Y,524
+michiko-0.8.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+michiko-0.8.4.dist-info/METADATA,sha256=yOfYCaDMzMccaUBO3qqvPRcdlneY5bBEmw_2GFcwDug,570
+michiko-0.8.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+michiko-0.8.4.dist-info/top_level.txt,sha256=8jjfKuFvlaNGG7JiuNtS31gIuwOm8thUcUQoNbsxxls,4
+michiko-0.8.4.dist-info/RECORD,,
