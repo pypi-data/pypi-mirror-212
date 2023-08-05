@@ -1,0 +1,5 @@
+[console_scripts]
+env2ini = env2ini.commands:run_export_conda_to_ini
+
+[nbdev]
+env2ini = env2ini._modidx:d
