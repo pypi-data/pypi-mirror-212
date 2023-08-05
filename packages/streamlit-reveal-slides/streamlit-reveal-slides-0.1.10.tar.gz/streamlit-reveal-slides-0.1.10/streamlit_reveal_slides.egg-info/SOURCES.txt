@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+reveal_slides/__init__.py
+reveal_slides/frontend/build/bootstrap.min.css
+streamlit_reveal_slides.egg-info/PKG-INFO
+streamlit_reveal_slides.egg-info/SOURCES.txt
+streamlit_reveal_slides.egg-info/dependency_links.txt
+streamlit_reveal_slides.egg-info/requires.txt
+streamlit_reveal_slides.egg-info/top_level.txt
