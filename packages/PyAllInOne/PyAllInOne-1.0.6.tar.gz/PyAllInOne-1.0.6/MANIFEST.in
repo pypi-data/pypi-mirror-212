@@ -1,0 +1,7 @@
+include LICENSE.txt
+include README.md
+include CREDITS.md
+
+graft PyAllInOne/English/assets
+graft PyAllInOne/System/assets
+graft PyAllInOne/Traffic/assets

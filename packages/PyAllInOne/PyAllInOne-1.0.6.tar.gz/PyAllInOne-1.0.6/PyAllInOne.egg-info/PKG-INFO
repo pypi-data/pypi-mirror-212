@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: PyAllInOne
+Version: 1.0.6
+Summary: PyAllInOne is an advanced multi-purpose Python package.
+Home-page: https://github.com/Anikethc/PyAllInOne
+Download-URL: https://pypi.org/project/PyAllInOne
+Author: Aniketh Chavare
+Author-email: anikethchavare@outlook.com
+License: Apache License 2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# PyAllInOne
+
+## Introduction
+
+PyAllInOne is an advanced multi-purpose Python package.
+
+Read the docs on GitBook [here](https://aniketh-chavare.gitbook.io/pyallinone-docs).
+
+## Package Information
+
+**Name** - PyAllInOne</br>
+**Version** - 1.0.6</br>
+**Description** - PyAllInOne is an advanced multi-purpose Python package.</br>
+**Author** - Aniketh Chavare</br>
+**GitHub URL** - [https://github.com/Anikethc/PyAllInOne](https://github.com/Anikethc/PyAllInOne)</br>
+**Pypi.org URL** - [https://pypi.org/project/PyAllInOne](https://pypi.org/project/PyAllInOne)</br>
+**Docs URL** - [https://aniketh-chavare.gitbook.io/pyallinone-docs](https://aniketh-chavare.gitbook.io/pyallinone-docs)
+
+## License
+
+Copyright 2023 Aniketh Chavare
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+## Credits
+
+Go to the `CREDITS.md` file to see the credits.
+
+## Issues & Bugs
+
+If you encounter any issues or bugs, visit the 'Issues' tab and create an issue. I'll look into it and resolve it ASAP.
+
+## Conclusion
+
+I hope you liked this package. Thank you!
