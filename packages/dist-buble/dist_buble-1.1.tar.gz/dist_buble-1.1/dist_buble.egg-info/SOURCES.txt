@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+dist_buble/__init__.py
+dist_buble.egg-info/PKG-INFO
+dist_buble.egg-info/SOURCES.txt
+dist_buble.egg-info/dependency_links.txt
+dist_buble.egg-info/not-zip-safe
+dist_buble.egg-info/top_level.txt
