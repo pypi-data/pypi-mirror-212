@@ -1,0 +1,9 @@
+MySerializer.py
+json_helper.py
+serialization_helper.py
+setup.py
+xml_helper.py
+object_serialization.egg-info/PKG-INFO
+object_serialization.egg-info/SOURCES.txt
+object_serialization.egg-info/dependency_links.txt
+object_serialization.egg-info/top_level.txt
