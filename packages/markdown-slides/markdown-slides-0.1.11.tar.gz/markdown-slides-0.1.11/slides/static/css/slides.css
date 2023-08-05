@@ -1,0 +1,20 @@
+.reveal div[class^="col"] {
+    float: left;
+    width: 50%;
+}
+
+.reveal div.col-4 {
+    width: 40%;
+}
+
+.reveal div.col-6 {
+    width: 60%;
+}
+
+.reveal img.left {
+    float: left;
+}
+
+.reveal img.right {
+    float: right;
+}

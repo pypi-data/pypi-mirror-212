@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.css">
+  <link rel="stylesheet" href="static/css/slides.css">
+  {% if theme %}<link rel="stylesheet" href="{{ theme }}">{% endif %}
+  {% if highlight_theme %}<link rel="stylesheet" href="{{ highlight_theme }}">{% endif %}
+  {% for x in css %}
+  <link rel="stylesheet" href="{{ x }}">
+  {% endfor %}
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="/md/{{ document }}" data-separator-vertical="\n\^\^\^\n" data-separator-notes="^Note:">
+      </section>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/highlight/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/markdown/markdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/notes/notes.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/math/math.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/math/katex.min.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      controlsTutorial: false,
+      plugins: [
+        RevealMarkdown,  // Must be loaded before RevealHighlight.
+        RevealHighlight,
+        RevealMath.KaTeX,
+        RevealNotes,
+      ],
+      markdown: {
+        smartypants: true,
+      },
+      slideNumber: {{ slide_number | tojson }},
+    });
+
+    // Monkeypatch the "open" method to inject css that hides the assistive mathml.
+    window._open = window.open;
+    window.open = (url, target, features) => {
+      let child = window._open(url, target, features);
+      child.onload = "alert(123);"
+      setTimeout(() => {
+        let element = child.document.createElement("style");
+        element.textContent = "#speaker-controls .katex-html { display: none; }";
+        child.document.head.appendChild(element);
+      }, 500);
+      return child;
+    }
+  </script>
+</body>
+
+</html>

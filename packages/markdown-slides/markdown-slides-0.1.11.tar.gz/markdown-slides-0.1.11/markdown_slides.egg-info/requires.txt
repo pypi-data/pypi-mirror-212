@@ -1,0 +1,4 @@
+flask
+jsonschema
+python-frontmatter
+pyyaml

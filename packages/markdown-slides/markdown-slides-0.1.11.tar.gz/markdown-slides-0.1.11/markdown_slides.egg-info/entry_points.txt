@@ -1,0 +1,2 @@
+[console_scripts]
+slides = slides.__main__:__main__
