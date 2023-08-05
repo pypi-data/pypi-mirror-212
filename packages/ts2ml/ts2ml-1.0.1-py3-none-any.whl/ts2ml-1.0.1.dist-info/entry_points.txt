@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+ts2ml = ts2ml._modidx:d
+
