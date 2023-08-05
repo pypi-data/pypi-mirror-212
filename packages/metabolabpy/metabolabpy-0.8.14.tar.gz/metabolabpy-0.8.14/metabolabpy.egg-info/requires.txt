@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+pandas
+numba
+scikit-learn
+openpyxl
+xlsxwriter
+multiprocess
