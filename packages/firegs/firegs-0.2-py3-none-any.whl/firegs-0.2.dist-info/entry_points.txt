@@ -1,0 +1,3 @@
+[console_scripts]
+firegs = firegs.script:main
+
