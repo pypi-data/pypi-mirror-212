@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+thumbor_hsl/__init__.py
+thumbor_hsl.egg-info/PKG-INFO
+thumbor_hsl.egg-info/SOURCES.txt
+thumbor_hsl.egg-info/dependency_links.txt
+thumbor_hsl.egg-info/requires.txt
+thumbor_hsl.egg-info/top_level.txt
+thumbor_hsl/loaders/__init__.py
+thumbor_hsl/loaders/http_loader.py
