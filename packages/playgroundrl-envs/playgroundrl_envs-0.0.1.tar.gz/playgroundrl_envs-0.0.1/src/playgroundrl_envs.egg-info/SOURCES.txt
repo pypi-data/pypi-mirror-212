@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/playgroundrl_envs/game_interface.py
+src/playgroundrl_envs/sid_util.py
+src/playgroundrl_envs.egg-info/PKG-INFO
+src/playgroundrl_envs.egg-info/SOURCES.txt
+src/playgroundrl_envs.egg-info/dependency_links.txt
+src/playgroundrl_envs.egg-info/requires.txt
+src/playgroundrl_envs.egg-info/top_level.txt
