@@ -1,0 +1,7 @@
+openai
+redis
+tiktoken
+requests
+logging
+python-dotenv
+pydub
