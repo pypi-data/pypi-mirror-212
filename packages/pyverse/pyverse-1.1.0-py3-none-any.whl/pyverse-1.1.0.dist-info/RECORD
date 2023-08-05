@@ -1,0 +1,12 @@
+pyverse/__init__.py,sha256=O6tH4XQqxWJHkh0W6gxP7zqZ6O7czttOqgrk62Gd8E0,32
+pyverse/__main__.py,sha256=dG31XssdMlF2ySANBDA5y8aV4ZJleQD4k5hZC-AY5FA,1032
+pyverse/sentence.py,sha256=bSvcuOZ6b-fPH_7KFIaKI-x7b0i_bwrXC_9day5j_Bw,3082
+pyverse/silabeador.py,sha256=1MLt8El8I0iGwzDxTMFAdN_otSUdb2lLQOC42gpglcQ,3844
+pyverse/vars.py,sha256=oOcKyDkHBSVrzQnzH8tgBKQaJJGwyVLOnonul4BgJrQ,1746
+pyverse/word.py,sha256=TX8la33cAfNG7RxE0zg9N1NMlEaKIyfJwpNApt8LL1Y,11151
+pyverse-1.1.0.dist-info/LICENSE,sha256=fnwmQwOVs-ToBzBLCLDH0vVL7lL-s-_jr6AWlfyhTrA,1071
+pyverse-1.1.0.dist-info/METADATA,sha256=z3nOJwAjbL99HXxwmWWJ2pbNo0uDsfe9HK6M4eqmN8U,4776
+pyverse-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyverse-1.1.0.dist-info/entry_points.txt,sha256=f_EbSF044oTLeJ0tmUTGyfooLsd-zPmZamt4YTFLWfs,54
+pyverse-1.1.0.dist-info/top_level.txt,sha256=HEUVgNSOZJtgyzsXcpxp090mu1gU3D9gazD1qTZQiHc,8
+pyverse-1.1.0.dist-info/RECORD,,
