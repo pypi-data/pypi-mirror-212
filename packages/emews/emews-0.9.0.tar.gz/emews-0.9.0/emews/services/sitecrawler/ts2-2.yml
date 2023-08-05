@@ -1,0 +1,23 @@
+# YAML 1.2 compliant
+display_name: SiteCrawler
+
+parameters:  # service configuration
+  user_agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+  invalid_link_prefixes:  # prefix list for links which we should NOT visit
+  - java
+  - none
+  start_sites: # site address to start crawling from
+  - 'https://10.0.1.20'
+
+  num_links_sampler:  # sampler used to determine the max number of links to click
+    lower_bound: 1  # lower bound
+    upper_bound: 27  # upper bound
+  link_delay_sampler:  # sampler used to determine delay in crawling to next link (uniform)
+    lower_bound: 5  # lower bound (sec) - a_4
+    upper_bound: 37  # upper bound (sec) - b_4
+  crawl_sampler: # amount of time to wait between web crawls (uniform)
+    lower_bound: 17  # lower bound (sec) - a_3
+    upper_bound: 600  # upper bound (sec) - b_3
+
+  next_link_sigma_first: 5.0  # sigma used to pick first link in a crawl (truncnorm)
+  next_link_sigma: 3.5  # sigma used to pick subsequent links in a crawl (truncnorm)

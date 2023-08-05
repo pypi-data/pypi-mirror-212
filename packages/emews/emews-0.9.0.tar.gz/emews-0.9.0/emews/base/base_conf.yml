@@ -1,0 +1,32 @@
+# Base configuration file for the eMews daemon.
+# Editing this file could result in breaking eMews or core eMews functionality.
+# YAML 1.2 compliant
+system:
+  readonly:
+    general:
+      service_shutdown_timeout: 3  # time (seconds) allowed for a service to shutdown.  Minimum 1 second.
+    logging:
+      log_message_format_dist: "[%(asctime)s] %(node_name)-15.15s | %(node_id)-5.5s [%(levelname)-7.7s | %(threadName)-25.25s | %(module)-10.10s | %(funcName)-18.18s]: %(message)s"
+      log_message_format_local: "[%(asctime)s] %(levelname)-7.7s | %(threadName)-12.12s | %(module)-10.10s | %(funcName)-18.18s]: %(message)s"
+      log_stream: "sys.stdout"
+    hub:
+      heartbeat_duration: 5  # time (in seconds) between heartbeats.  Minimum 1 second.
+  overrides:
+    communication:
+      local_address: 127.0.0.1  # local address to use
+      port: 32518 # port to use
+      reconnect_delay: 5  # time (seconds) to wait before a reconnection attempt
+    debug:
+      disable_heartbeat: False  # If True, disable heartbeat requests to nodes.  This is useful if debugging and do not want heartbeat logging messages cluttering the terminal
+      host_port: null  # If given, host nodes will use this port to listen for connections
+      node_local_logging: True  # if true, then log local node output (not distributed - useful for debugging)
+    general:
+      node_name: null # should be null in system config, defined in node config
+      node_start_delay: 20  # time (seconds) for client nodes to wait before completing start-up
+    hub:
+      address: 127.0.0.1 # address of the hub
+      scenario_autostart: False  # If true, automatically start scenario after start_delay
+      scenario_autostart_delay: 50  # time (seconds) for hub to wait before starting experiment scenario
+      scenario_duration: 60  # time (seconds) to run a network experiment scenario.  0 = unlimited duration
+    logging:
+      log_message_level: DEBUG # log messages of this level and above for distributed logging

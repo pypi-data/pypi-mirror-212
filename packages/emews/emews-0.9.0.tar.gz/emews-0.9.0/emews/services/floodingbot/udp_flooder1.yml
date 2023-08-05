@@ -1,0 +1,10 @@
+# Configuration file for botnet (no C&C)
+# The default service is a UDP flooder.
+# YAML 1.2 compliant
+
+display_name: FloodingBot
+
+parameters:  # instance variables
+  target_address: 10.0.0.24
+  send_delay: 0.02
+  packet_size: 1024

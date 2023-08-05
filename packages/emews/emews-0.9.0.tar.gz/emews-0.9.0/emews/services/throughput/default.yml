@@ -1,0 +1,12 @@
+# Configuration file for Throughput (logs link throughput readings)
+# YAML 1.2 compliant
+
+display_name: Throughput  # display name of the service (optional - only defined in the default config)
+parameters:  # service configuration
+  interface_prefixes:  # prefixes to use for interface name matching
+  - eth
+  - ens
+  - enx
+  - lo
+  output_interval: 1  # interval (in seconds) to wait between generating throughput log messages (must be 1 or greater)
+  output_unit: k  # throughput unit to output (choices: k=kbps, m=mbps)

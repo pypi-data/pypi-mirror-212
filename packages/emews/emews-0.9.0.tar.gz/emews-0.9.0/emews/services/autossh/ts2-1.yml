@@ -1,0 +1,56 @@
+# Configuration file for AutoSSH
+# YAML 1.2 compliant
+
+display_name: AutoSSH
+
+parameters:  # instance variables
+  host: 10.0.1.21
+  port: 22
+  username: emewsclient
+  password: P28c7R
+
+  command_list:
+  - uptime
+  - ps aux
+  - df -m
+  - uptime
+  - pwd
+  - ls -al
+  - pwd
+  - ps aux
+  - uname -a
+  - free
+  - free
+  - pwd
+  - uptime
+  - ps aux
+  - ls -l
+  - ps aux
+  - uptime
+  - ps aux
+  - df -m
+  - uptime
+  - pwd
+  - ls -al
+  - pwd
+  - ps aux
+  - uname -a
+  - free
+  - free
+  - pwd
+  - uptime
+  - ps aux
+  - ls -l
+  - ps aux
+
+  num_commands_sampler:  # truncnorm
+    upper_bound: 31  # len(command.command_list) - 1
+    sigma: 2.5  # std deviation
+  command_sampler:  # the next command to execute (truncnorm)
+    sigma: 1.5
+  command_delay_sampler:  # delay to execute next command (uniform)
+    lower_bound: 2  # lower bound (sec)
+    upper_bound: 17  # upper bound (sec)
+  crawl_sampler:  # amount of time to wait between ssh crawls (uniform)
+    lower_bound: 27  # lower bound (sec)
+    upper_bound: 600  # upper bound (sec)

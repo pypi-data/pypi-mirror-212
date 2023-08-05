@@ -1,0 +1,8 @@
+# Configuration file for HelloWorld - Distributed world server
+# YAML 1.2 compliant
+
+service_class: DistWorldServer  # class to use for service instantiation
+receive_from:  # service classes that can send messages to this service
+- DistWorldClient
+
+parameters:  # instance variables passed to the service on instantiation
