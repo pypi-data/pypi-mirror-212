@@ -1,0 +1,23 @@
+[package]
+authors = ["Marcus Lee <marcuslee@balaenaquant.com>"]
+name = "cybotrade"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "cybotrade"
+crate-type = ["cdylib"]
+
+[dependencies]
+datahub = { version = "0.1", git = "ssh://git@bitbucket.org/balaena-quant/datahub.git" }
+# bqapi = { version = "0.1", git = "ssh://git@bitbucket.org/balaena-quant/bqapi.git" }
+bq-core = { version = "0.1", git = "ssh://git@bitbucket.org/balaena-quant/bq.git" } # Should remove (add Environment export in market-collector)
+market-collector = { version = "0.1", git = "ssh://git@bitbucket.org/balaena-quant/bq.git" }
+# bqapi-management = { version = "0.1", git = "ssh://git@bitbucket.org/balaena-quant/bqapi.git" }
+
+pyo3 = { version = "0.18", features = ["extension-module"] }
+pyo3-log = "0.8"
+pyo3-asyncio = { version = "0.18", features = ["attributes", "tokio-runtime"] }
+log = "0.4"
+tokio = "1.28"
+chrono = "0.4"
