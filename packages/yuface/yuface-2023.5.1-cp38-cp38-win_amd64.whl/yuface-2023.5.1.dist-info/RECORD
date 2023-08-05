@@ -1,0 +1,10 @@
+yuface/__init__.py,sha256=gvLqfzPahj0Wupx0q4JZzYLEdeLFjs5V0FmoQB7-_A4,942
+yuface/facedetection.dll,sha256=04Od0WKLGOsdfyP_JRBPWeZ8C2URs6mG6-hDMQWBwPE,285184
+yuface/facedetection.exp,sha256=hagfv-CSMjxIGkTxlXbFzuT2bZlBHJJVK8wgjJSYplw,53356
+yuface/facedetection.lib,sha256=2eK3tMQPOuZ4ZuiSQM21W3PgFweCKLyvlMNsFJjGioE,79478
+yuface/yuface.cp38-win_amd64.pyd,sha256=AyUec3NnTxri8oRn4oC1j52zNiRxalGOanNl9rFdQok,109568
+yuface-2023.5.1.dist-info/LICENSE,sha256=srrB7CzcyFnDf7zPGhUllhV1lppisgtn2qaWhJm3ndE,1837
+yuface-2023.5.1.dist-info/METADATA,sha256=krucWo7jex6MlQnjC3vadg0kHlQrfmwIemndeCboleg,2985
+yuface-2023.5.1.dist-info/WHEEL,sha256=F2aDWtWrilNM3-px1vBtJOEd7aRVTetQfFuDYmYbAUQ,100
+yuface-2023.5.1.dist-info/top_level.txt,sha256=KYbKA2EOdIBuskbRWMOmbAKBZgMa9kgLZt0kD5MIhwo,7
+yuface-2023.5.1.dist-info/RECORD,,
