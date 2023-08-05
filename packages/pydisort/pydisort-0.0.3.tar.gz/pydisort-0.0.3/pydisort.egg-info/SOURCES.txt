@@ -1,0 +1,10 @@
+setup.py
+pydisort/__init__.py
+pydisort/pydisort.cpython-311-darwin.so
+pydisort/pydisort.cpython-36m-x86_64-linux-gnu.so
+pydisort/pydisort.cpython-38-darwin.so
+pydisort/pydisort.cpython-39-x86_64-linux-gnu.so
+pydisort.egg-info/PKG-INFO
+pydisort.egg-info/SOURCES.txt
+pydisort.egg-info/dependency_links.txt
+pydisort.egg-info/top_level.txt
