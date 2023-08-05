@@ -1,0 +1,13 @@
+walt/__init__.py,sha256=fkw_FAE8MHrLaw8wPj_GA4oxpMrOncXRJdQWHdR-XtQ,29
+walt/base.html,sha256=smVvCm0mpjRsviDyHVR3cd9I6e_ON9-vsQqvQkE6sfc,3386
+walt/main.html,sha256=_XmhND6O4dWjOWHfEh7mmlECcqpSTO1EFOTuGkzTp_A,26
+walt/mkdocs_theme.yml,sha256=66We1Ca0VNFK7E5zfRT0iKc94DDG16MwLOsXJblX1v8,234
+walt/walt.min.css,sha256=MWZq6jKEK9KM2yT12_gsAHmlgcksxaDP39HDkqi2kpw,4543
+walt/highlightjs/catppuccin-latte.min.css,sha256=fKMC4D1KRZsEOs808nhjAQTW-b3ZL8PQFbKPfXCJfZo,1815
+walt/highlightjs/catppuccin-macchiato.min.css,sha256=oYmPDKEBf4mW1lnyz1A9jtQGxCBH8s13rIJV7sht7Xc,1823
+walt/highlightjs/highlight.min.js,sha256=HwayRKxSgU2BV-PClSPm1AUcp1mXdo3coV8CJgF9m_M,121488
+mkdocs_walt-0.1.1.dist-info/METADATA,sha256=eJFqCcDDf8jB0biMNWRa7vR6vkjDF8LbhfdNxkN2Oqo,1794
+mkdocs_walt-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mkdocs_walt-0.1.1.dist-info/entry_points.txt,sha256=GufyT_4zMKlF93_DJVjEkcRKuEXEw290lSWShB32lFg,28
+mkdocs_walt-0.1.1.dist-info/top_level.txt,sha256=l-PfU1zjk_gYnc1ACwNtjEENVU-lzZdx-dBWa_dJHX8,5
+mkdocs_walt-0.1.1.dist-info/RECORD,,
