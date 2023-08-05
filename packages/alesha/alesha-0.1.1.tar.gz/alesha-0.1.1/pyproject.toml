@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "alesha"
+version = "0.1.1"
+description = "The best fucking package by Rekzi"
+authors = ["Rekzi"]
+packages = [{include = "alesha"}]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
