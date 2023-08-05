@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: rkstreamer
+Version: 1.1
+Summary: RK's CLI Music Player
+Author-email: "Ray A." <ray@raysecure.ml>
+License: MIT License
+        
+        Copyright (c) 2023 Ray A.
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE
+Requires-Dist: requests (>=2.28.2)
+Requires-Dist: python-vlc (>=3.0.18121)
+Requires-Dist: setuptools (>=67.0.0)
+
+### RK Music Streamer
+
+A command-line music player that allows you to play/stream songs, albums, playlists. <br>
+**Powered by Jio Saavn Web APIs**
+
+---
+#### Prerequisites
+- Python 3.9.x or above.
+- VLC player must be installed. This application uses the VLC player from streaming and python-vlc bindings for interaction. <br>
+(Install from [VLC](https://www.videolan.org/vlc/))
+
+#### Dependencies
+- [requests](https://pypi.org/project/requests/)
+- [python-vlc](https://pypi.org/project/python-vlc/)
+---
+##### Installation
+```
+> python3 -m pip install rkstreamer
+$ pip/pip3 install rkstreamer
+```
+---
+##### Launch
+```
+Launch the application by entering the following in the terminal:
+
+> python3 -m rkstreamer
+or
+> rkstreamer
+
+```
+---
+##### Usage
+- Default mode is 'Song Search' Mode.
+- Modes can be switched using **--album, --plist**.
+- Supports search parameters for Songs, Albums -> 'search string' -n:number, -l:language, -b:bitrate.
+- **-q, -r, -g** displays Song Queue, Recommended Songs, Go-to-Album modes.
+- **a, p, r** followed by the song index can be used to Add, Play, Remove songs from the corresponding queues.
+- **-c** used to control the player and media playback; supports volume, playback, output controls.
+- Player control actions should be suffixed with the '-c' switch such as -cp - play, -cs - stop, -cn - next song, -cpr - previous song.
+- Volume controls: v - display current volume, +number - volume increase, -number - volume decrease.
+- Playback controls: >seconds - seek forward, <seconds - seek backward, t - shows remaining time.
+
+---
+##### Examples
+
+```
+> Enter the song name: pokkal pokkum -n:5 -l:tamil -b:320
+(Search string - pokkal pokkum, number of results to display - 5, language - tamil, bitrate - 320kpbs)
+
+*When a song is playing:
+> Enter the song name: -q
+(Displays the song queue)
+> -r
+(Displays the recommended song queue)
+> -g
+(Displays the playing song's album songs)
+
+> -qr1 - removes the first index song from queue
+> -qp1 - plays the first index song from queue
+> -qa1 - adds the first index song from search list
+
+Similar behaviors for -r (recommended songs), -g (go-to-album).
+Correct prefix and actions should be used such as -rr1, -ga1, etc.
+
+```
+
