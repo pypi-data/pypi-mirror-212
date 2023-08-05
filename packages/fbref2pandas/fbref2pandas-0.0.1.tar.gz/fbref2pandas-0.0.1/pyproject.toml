@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fbref2pandas"
+version = "0.0.1"
+authors = [
+  { name="Yash Srivastava", email="ysrivastava82@gmail.com" },
+]
+description = "A scraper that directly gives football(not soccer) data from FBRef website directly to Pandas dataframe. Major teams and leagues supported."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yash-srivastava19/fbref2pandas"
+"Bug Tracker" = "https://github.com/yash-srivastava19/fbref2pandas/issues"
