@@ -1,0 +1,18 @@
+[project]
+name = "Loden_9000"
+version = "1.0.0"
+authors = [
+  { name="Randall Nagy", email="r.a.nagy@gmail.com" },
+]
+description = "Making faces, in time."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Python3-Training/Loden"
+"Bug Tracker" = "https://github.com/Python3-Training/Loden/issues"
