@@ -1,0 +1,8 @@
+pillow
+moviepy
+cursor
+numpy
+click
+sounddevice
+av
+imageio
