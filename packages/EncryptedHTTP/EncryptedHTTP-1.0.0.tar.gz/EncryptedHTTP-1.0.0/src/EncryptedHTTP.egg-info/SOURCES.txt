@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/EncryptedHTTP/__init__.py
+src/EncryptedHTTP/client.py
+src/EncryptedHTTP/server.py
+src/EncryptedHTTP/server_utils.py
+src/EncryptedHTTP.egg-info/PKG-INFO
+src/EncryptedHTTP.egg-info/SOURCES.txt
+src/EncryptedHTTP.egg-info/dependency_links.txt
+src/EncryptedHTTP.egg-info/top_level.txt
