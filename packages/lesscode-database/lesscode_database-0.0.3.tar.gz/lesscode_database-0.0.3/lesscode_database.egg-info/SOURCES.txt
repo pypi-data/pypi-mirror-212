@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+lesscode_database/__init__.py
+lesscode_database/connect_pool.py
+lesscode_database/connection_info.py
+lesscode_database/options.py
+lesscode_database/version.py
+lesscode_database.egg-info/PKG-INFO
+lesscode_database.egg-info/SOURCES.txt
+lesscode_database.egg-info/dependency_links.txt
+lesscode_database.egg-info/top_level.txt
