@@ -1,0 +1,9 @@
+dist/
+*.egg-info/
+__pycache__/
+*.onnx
+*.tflite
+*.json
+_version.py
+.bash_history
+schema.fbs
