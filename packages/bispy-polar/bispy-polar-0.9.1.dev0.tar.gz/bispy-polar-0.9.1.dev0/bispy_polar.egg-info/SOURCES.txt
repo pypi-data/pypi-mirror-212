@@ -1,0 +1,16 @@
+LICENCE
+README.md
+setup.py
+bispy/__init__.py
+bispy/filters.py
+bispy/qfft.py
+bispy/signals.py
+bispy/spectral.py
+bispy/timefrequency.py
+bispy/utils.py
+bispy_polar.egg-info/PKG-INFO
+bispy_polar.egg-info/SOURCES.txt
+bispy_polar.egg-info/dependency_links.txt
+bispy_polar.egg-info/requires.txt
+bispy_polar.egg-info/top_level.txt
+tests/test_timefrequency.py
