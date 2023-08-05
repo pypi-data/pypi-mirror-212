@@ -1,0 +1,7 @@
+README.md
+setup.py
+Pycspace.egg-info/PKG-INFO
+Pycspace.egg-info/SOURCES.txt
+Pycspace.egg-info/dependency_links.txt
+Pycspace.egg-info/requires.txt
+Pycspace.egg-info/top_level.txt
