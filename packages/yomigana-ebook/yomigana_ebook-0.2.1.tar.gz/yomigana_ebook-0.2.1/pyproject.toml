@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "yomigana-ebook"
+version = "0.2.1"
+keywords = ["japanese", "lightnovel", "ebook", "epub", "furigana", "yomigana", "kanji", "mecab", "unidic"]
+description = "Make learning Japanese easier by adding readings for every kanji in the eBook"
+license = "MIT"
+authors = ["Yu Chen <rabbit19981023@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/rabbit19981023/yomigana-ebook"
+repository = "https://github.com/rabbit19981023/yomigana-ebook"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+fugashi = "^1.2.1"
+unidic = "^1.1.0"
+beautifulsoup4 = "^4.12.2"
+lxml = "^4.9.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.1"
+pytest-watcher = "^0.2.6"
+pytest-testmon = "^2.0.6"
+
+[tool.poetry.scripts]
+yomigana_ebook = "yomigana_ebook.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
