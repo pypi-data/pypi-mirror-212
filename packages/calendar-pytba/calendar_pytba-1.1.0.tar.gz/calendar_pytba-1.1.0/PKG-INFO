@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: calendar-pytba
+Version: 1.1.0
+Summary: 
+Author: Pavel Anokhin
+Author-email: p.a.anokhin@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pytelegrambotapi (>=4.12.0,<5.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+[![PyPi Package Version](https://img.shields.io/pypi/v/calendar-pytba.svg)](https://pypi.python.org/pypi/calendar-pytba)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/calendar-pytba.svg)](https://pypi.python.org/pypi/calendar-pytba)
+[![PyPi downloads](https://img.shields.io/pypi/dm/calendar-pytba.svg)](https://pypi.org/project/calendar-pytba/)
+
+# calendar-pytba
+
+
+Library for creating a calendar from InlineKeyboardMarkup in
+Telegram bots. Works with [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI) library
+
+
+### Installation:
+
+- Using pip:
+
+```bash
+pip install calendar-pytba
+```
+
+- Using poetry:
+
+```bash
+poetry add calendar-pytba
+```
+
+- Build from source:
+
+[Install](https://python-poetry.org/docs/#installation) Poetry
+
+```bash
+git clone https://github.com/pavelan0khin/calendar-pytba.git
+
+cd calendar-pytba
+
+poetry build
+```
+
+### Usage:
+
+1. [Create calendar](examples/create_calendar.py)
+2. [Handle callbacks](examples/handle_callbacks.py)
+
+
+### Demo:
+
+![Alt Text](examples/demo.gif)
+
+
+### You can also see an example of how it works:
+
+- [Telegram Bot](https://t.me/calendarpytbaexamplebot)
+- [Source code](https://github.com/pavelan0khin/calendar-pytba-example)
+
