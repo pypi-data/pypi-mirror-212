@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: dibug
+Version: 0.1.0
+Summary: Debugging Tool for discord.py
+License: MIT
+Author: Starcea
+Author-email: stardev.uwu@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: async-eval (>=0.1.11,<0.2.0)
+Requires-Dist: discord-py (>=2.0.0)
+Description-Content-Type: text/markdown
+
+# dibug
+
+Debugging Tool for discord.py
+
+# Usage
+
+```py
+from discord import Client, Intents, Message
+
+from dibug import Dibugger
+
+owners = [798690702635827200]
+
+
+class Bot(Client):
+    def __init__(self) -> None:
+        intents = Intents.default()
+        intents.message_content = True  # dibug requires message content intent
+        super().__init__(intents=intents)
+
+        self.dibugger = Dibugger(self, lambda id: id in owners)
+
+    async def on_message(self, msg: Message) -> None:
+        await self.dibugger.handle_msg(msg)
+
+
+bot = Bot()
+
+bot.run("token")
+```
+
+# Commands
+
+### Default Prefix: `!dbg `
+
+- `<prefix>eval <code>`: Evaluate code
+
