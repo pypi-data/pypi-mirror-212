@@ -1,0 +1,3 @@
+[console_scripts]
+rescubs = rescupybs.wrapper:main
+rescuiso = rescupybs.wrapper:surface
