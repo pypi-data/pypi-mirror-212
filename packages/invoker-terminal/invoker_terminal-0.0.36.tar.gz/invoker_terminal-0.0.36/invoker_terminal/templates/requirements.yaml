@@ -1,0 +1,21 @@
+name: invoker-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pillow
+  - yaml
+  - pyyaml
+  - matplotlib
+  - jupyter
+  - notebook
+  - tensorboardx
+  - tensorboard
+  - protobuf
+  - tqdm
+  - pip:
+    - torch==1.13.1
+    - invoker-terminal
