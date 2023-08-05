@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: nbproject
+Version: 0.8.7
+Summary: nbproject: Manage Jupyter notebooks.
+Author-email: Lamin Labs <laminlabs@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+Requires-Dist: packaging
+Requires-Dist: orjson
+Requires-Dist: ipylab
+Requires-Dist: importlib-metadata
+Requires-Dist: stdlib_list; python_version < '3.10'
+Requires-Dist: lamin_logger
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pandas ; extra == "test"
+Requires-Dist: nbformat ; extra == "test"
+Requires-Dist: nbproject_test >= 0.2.0 ; extra == "test"
+Project-URL: Home, https://github.com/laminlabs/nbproject
+Provides-Extra: dev
+Provides-Extra: test
+
+[![Stars](https://img.shields.io/github/stars/laminlabs/nbproject?logo=GitHub&color=yellow)](https://github.com/laminlabs/nbproject)
+[![coverage](https://codecov.io/gh/laminlabs/nbproject/branch/main/graph/badge.svg?token=05R04PR9RB)](https://codecov.io/gh/laminlabs/nbproject)
+[![pypi](https://img.shields.io/pypi/v/nbproject?color=blue&label=pypi%20package)](https://pypi.org/project/nbproject)
+[![doi](https://img.shields.io/badge/doi-10.56528%2Fnbp-lightgrey)](https://doi.org/10.56528/nbp)
+
+# nbproject: Manage Jupyter notebooks
+
+Track & publish notebooks with their metadata, dependencies, and consecutiveness.
+
+Why? Read the [blog post](https://lamin.ai/blog/2022/nbproject).
+
+Supported editors & platforms:
+
+- Jupyter Lab
+  - any pip or conda installation, a brew installation may give a problems
+  - Saturn Cloud ([run](https://github.com/laminlabs/run-lamin-on-saturn))
+  - Google Cloud Vertex AI (see [setup faq](faq/setup))
+- Jupyter Notebook
+- VS Code (no interactive experience, not recommended for production)
+
+For broader support and features, see `lamindb.track()`.
+
+Install: ![pyversions](https://img.shields.io/pypi/pyversions/nbproject)
+
+```
+pip install nbproject
+```
+
+Get started:
+
+```
+import nbproject
+
+nbproject.header()  # Tracks notebook, displays metadata.
+
+# do things
+
+nbproject.publish()  # Checks consecutiveness
+```
+
+More: Read the [docs](https://lamin.ai/docs/nbproject).
+
