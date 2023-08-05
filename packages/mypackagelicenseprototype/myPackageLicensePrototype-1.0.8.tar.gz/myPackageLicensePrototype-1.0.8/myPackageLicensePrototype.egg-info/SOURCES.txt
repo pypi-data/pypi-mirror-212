@@ -1,0 +1,16 @@
+LICENSE
+README.md
+__init__.py
+local_environment_installation_guide.txt
+requirements.txt
+setup.py
+dist/myPackageLicensePrototype-1.0.2.tar.gz
+dist/myPackageLicensePrototype-1.0.3.tar.gz
+dist/myPackageLicensePrototype-1.0.4.tar.gz
+myPackageLicensePrototype.egg-info/PKG-INFO
+myPackageLicensePrototype.egg-info/SOURCES.txt
+myPackageLicensePrototype.egg-info/dependency_links.txt
+myPackageLicensePrototype.egg-info/requires.txt
+myPackageLicensePrototype.egg-info/top_level.txt
+src/Implementation.ipynb
+src/__init__.py
