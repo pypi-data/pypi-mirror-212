@@ -1,0 +1,61 @@
+[tool.poetry]
+    name = "bell-avr-libraries"
+    version = "0.2.0a3"
+    description = "Common Python libraries used by parts of Bell AVR"
+    license = "MIT"
+    readme = "README.md"
+    homepage = "https://roboticseducation.org/bell-advanced-vertical-robotics/"
+    repository = "https://github.com/bellflight/AVR-Python-Libraries"
+    documentation = "https://bellflight.github.io/AVR-Python-Libraries"
+    authors = [
+        "Chris Padilla <cpadilla@bellflight.com>",
+        "Nathan Vaughn <nvaughn51@gmail.com>",
+    ]
+    packages = [{ include = "bell/avr" }]
+    exclude = [
+        "bell/**/*.j2",
+        "bell/**/*.json",
+        "bell/**/*.jsonc",
+        "bell/**/*.yml",
+        "bell/**/.gitignore",
+    ]
+    include = ["bell/**/*.pyi", "bell/**/*.py"]
+
+[tool.poetry.dependencies]
+    python             = ">=3.8,<3.12"
+    loguru             = ">=0.6,<0.8"
+    pydantic           = "^1.10.2"
+    paho-mqtt          = "^1.6.1"
+    numpy              = "^1.24.3"
+    pyserial           = { version = "^3.5", optional = true }
+    pyside6-essentials = { version = "^6.4.2", optional = true }
+
+[tool.poetry.extras]
+    serial = ["pyserial"]
+    qt     = ["pyside6-essentials"]
+
+[tool.poetry.group.dev.dependencies]
+    # testing
+    pytest       = "^7.2.0"
+    pytest-xdist = "^3.0.2"
+    pytest-mock  = "^3.10.0"
+    pytest-cov   = "^4.0.0"
+    pre-commit   = ">=2.21,<4.0"
+    # building template
+    Jinja2  = "^3.1.2"
+    jsonref = "^1.0.1"
+    pyyaml  = "^6.0"
+    tomli   = { version = "^2.0.1", python = "<3.11" }
+    pdoc    = "^13.1.1"
+
+[tool.pyright]
+    typeCheckingMode = "basic"
+    venvPath         = "."
+    venv             = ".venv"
+
+[tool.ruff]
+    ignore = ["E501"]
+
+[build-system]
+    requires      = ["poetry-core>=1.0.0"]
+    build-backend = "poetry.core.masonry.api"
