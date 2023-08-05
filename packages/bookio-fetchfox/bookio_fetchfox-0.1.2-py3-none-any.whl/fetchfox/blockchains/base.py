@@ -1,0 +1,49 @@
+from abc import abstractmethod
+from typing import Iterable
+
+from fetchfox.dtos import (
+    AssetDTO,
+    CampaignDTO,
+    HoldingDTO,
+    ListingDTO,
+    RankDTO,
+    SaleDTO,
+)
+
+
+class Blockchain:
+    def __init__(self, name: str, currency: str):
+        self.name: str = name
+        self.currency: str = currency
+
+    @abstractmethod
+    def get_assets(
+        self, collection_id: str, fetch_metadata: bool = True, *args, **kwargs
+    ) -> Iterable[AssetDTO]:
+        raise NotImplementedError()
+
+    @abstractmethod
+    def get_asset(self, collection_id: str, asset_id: str, *args, **kwargs) -> AssetDTO:
+        raise NotImplementedError()
+
+    def get_campaigns(self) -> Iterable[CampaignDTO]:
+        raise NotImplementedError()
+
+    @abstractmethod
+    def get_holdings(self, wallet: str, *args, **kwargs) -> Iterable[HoldingDTO]:
+        raise NotImplementedError()
+
+    @abstractmethod
+    def get_listings(self, collection_id: str, *args, **kwargs) -> Iterable[ListingDTO]:
+        raise NotImplementedError()
+
+    def get_ranks(self, collection_id: str, *args, **kwargs) -> Iterable[RankDTO]:
+        raise NotImplementedError()
+
+    @abstractmethod
+    def get_snapshot(self, collection_id: str, *args, **kwargs) -> Iterable[HoldingDTO]:
+        raise NotImplementedError()
+
+    @abstractmethod
+    def get_sales(self, collection_id: str, *args, **kwargs) -> Iterable[SaleDTO]:
+        raise NotImplementedError()
