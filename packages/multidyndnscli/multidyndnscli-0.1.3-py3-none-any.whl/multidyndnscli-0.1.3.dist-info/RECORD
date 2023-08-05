@@ -1,0 +1,10 @@
+multidyndnscli/__init__.py,sha256=lveRHrd3DhB4EcSD2q4lpXc6-eS_FTGUUo9j5S5PAW8,34180
+multidyndnscli/cli.py,sha256=uCKG-QmNCFGzfau6ol53ZgIUX_CQ9yXsGx2w7Yhg4e0,2311
+multidyndnscli/nc_dnsapi.py,sha256=qnvhxtSKAtxf5anbYwnr1UfnBaPl8f6n0ShMgE5CJoI,6951
+multidyndnscli/schemata.py,sha256=8Lq2j9yxRsUKounNKGYJt_tBj6tp54gLrAqw0g4sOyU,2771
+multidyndnscli/util.py,sha256=NS3bXK-XqmOwSrwPdzA_M6KITpcLxUgmuEk4yIlpNUM,3844
+multidyndnscli-0.1.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+multidyndnscli-0.1.3.dist-info/METADATA,sha256=UAoPxvg5pbaNxtSzMOKHAsno-eWUQbHJWacH_KimuRM,7773
+multidyndnscli-0.1.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+multidyndnscli-0.1.3.dist-info/entry_points.txt,sha256=TP0G7uGAPzF6vNuDpcdL8nVCRAr3-ibBBMBB7yXQPno,55
+multidyndnscli-0.1.3.dist-info/RECORD,,
