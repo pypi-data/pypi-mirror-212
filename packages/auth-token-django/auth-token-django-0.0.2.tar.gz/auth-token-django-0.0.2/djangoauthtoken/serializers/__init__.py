@@ -1,0 +1,1 @@
+from djangoauthtoken.serializers.user import UserSerializer

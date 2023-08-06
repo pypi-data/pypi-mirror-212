@@ -1,0 +1,1 @@
+from djangoauthtoken.models.custom_fields.case_insensitive_email_field import CaseInsensitiveEmailField
