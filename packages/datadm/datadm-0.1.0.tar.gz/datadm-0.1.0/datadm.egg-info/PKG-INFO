@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: datadm
+Version: 0.1.0
+Summary: Chat with your data, personal data assistant, keep your data private with pure local mode, slide into your data's DMs
+License: MIT License
+        
+        Copyright (c) 2023 Approximate Labs
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/approximatelabs/datadm
+Keywords: nlp,ai,data,chatbot,database,csv,analytics,datachat,datadm
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: cuda
+Provides-Extra: all
+License-File: LICENSE
+
+# datadm
+Chat with your data, personal data assistant, keep your data private with pure local mode, slide into your data's DMs
+
+
+## TO Save:
+
+```
+docker run --env-file ~/.env -p 7860:7860 -it datadm:latest
+```
+
+```
+docker run -e OPENAI_API_KEY=sk-C -p 7860:7860 -it datadm:latest
+```
+
+## TODO:
+Fill this all out
+
+## Development
+
+```bash
+pip install -r dev-requirements.txt
+pip install -e .
+```
