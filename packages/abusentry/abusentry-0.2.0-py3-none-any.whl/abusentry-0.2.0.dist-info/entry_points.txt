@@ -1,0 +1,15 @@
+[console_scripts]
+abusentry = abusentry.abusentry:main
+decode = abusentry.decode:main
+digs = abusentry.digs:main
+dnscheck = abusentry.dnscheck:main
+ipcheck = abusentry.ipcheck:main
+mailer = abusentry.mailer:main
+malvera = abusentry.malvera:main
+sniper = abusentry.sniper:main
+strip = abusentry.strip:main
+unshorten = abusentry.unshorten:main
+urlscan = abusentry.urlscan:main
+virustotal = abusentry.virustotal:main
+whobe = abusentry.whobe:main
+
