@@ -1,0 +1,7 @@
+[console_scripts]
+cloudtik = cloudtik.scripts.scripts:main
+cloudtik-ai-run = cloudtik.runtime.ai.runner.launch:main
+cloudtik-flink = cloudtik.runtime.flink.scripts:main
+cloudtik-operator = cloudtik.providers.kubernetes.cloudtik_operator.operator:main
+cloudtik-simulator = cloudtik.providers.onpremise.service.cloudtik_cloud_simulator:main
+cloudtik-spark = cloudtik.runtime.spark.scripts:main
