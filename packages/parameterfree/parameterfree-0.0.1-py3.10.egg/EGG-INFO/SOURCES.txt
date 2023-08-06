@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+parameterfree/__init__.py
+parameterfree/cocob.py
+parameterfree/kt.py
+parameterfree.egg-info/PKG-INFO
+parameterfree.egg-info/SOURCES.txt
+parameterfree.egg-info/dependency_links.txt
+parameterfree.egg-info/top_level.txt
