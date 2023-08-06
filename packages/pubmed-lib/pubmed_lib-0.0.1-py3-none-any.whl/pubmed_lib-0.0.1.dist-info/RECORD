@@ -1,0 +1,16 @@
+pubmed_lib/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+pubmed_lib/_modidx.py,sha256=aqQoLIZMCBaKbW8O8q1QH1VBRmcKN83tuFk9yjInxyg,3869
+pubmed_lib/affiliation.py,sha256=TC-vozGe_L_9qZKD3rIR2XnIxZzRf7YP1zpGc5Phlto,195
+pubmed_lib/author.py,sha256=6kwT6vWKr-AJiU7s2sPM-rkkm1Nt0wQ0bxo7nHuSO0A,917
+pubmed_lib/core.py,sha256=XvYRFJnboqMdZHx5H7r0_lA-3XPdhaQT2VEq4mdIHEg,142
+pubmed_lib/data.py,sha256=khGcXN4E6-WNatVWGBRZvtm0_-fbt-e3WNnHbnez2bU,24258
+pubmed_lib/parser.py,sha256=x5-QposFUQ8FSRKkfG_Xgdr45i7qKiaeyZCsMQEGEQQ,7534
+pubmed_lib/result.py,sha256=L7bVXMKPRXqEpIKVfikqOcskBj2F5-GoSkd2w28J9P8,1172
+pubmed_lib/search.py,sha256=XJDyot_5GEq2ujD463B2gRBNfKnNnilOJQOYyErIt5w,3290
+pubmed_lib/viz.py,sha256=oa05wIXk-5IghfmzEJRYXra5tHgpwO8uYTMjGdULovA,1541
+pubmed_lib-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pubmed_lib-0.0.1.dist-info/METADATA,sha256=lTrZthRD8rFIyxxqKD81Rvv4t1dgh57DNsh2JO8K2X4,12161
+pubmed_lib-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pubmed_lib-0.0.1.dist-info/entry_points.txt,sha256=7eQ1779TfCCNF-AN9leCw1Tecg4tSXD68VTkkSrLXNM,42
+pubmed_lib-0.0.1.dist-info/top_level.txt,sha256=pp1vUw0FIwpXfo7DLcyzyOO8iuwriukbKRMxRY5umXw,11
+pubmed_lib-0.0.1.dist-info/RECORD,,
