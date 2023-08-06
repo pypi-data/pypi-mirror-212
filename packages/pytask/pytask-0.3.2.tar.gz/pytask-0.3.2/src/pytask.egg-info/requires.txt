@@ -1,0 +1,10 @@
+attrs>=21.3.0
+click
+click-default-group
+networkx>=2.4
+packaging
+pluggy
+pony>=0.7.15
+pybaum>=0.1.1
+rich
+tomli>=1.0.0
