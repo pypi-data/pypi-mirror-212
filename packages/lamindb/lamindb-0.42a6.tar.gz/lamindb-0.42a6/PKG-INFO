@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: lamindb
+Version: 0.42a6
+Summary: LaminDB: Manage R&D data & analyses.
+Author-email: Lamin Labs <laminlabs@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: lnschema_core==0.35a7
+Requires-Dist: lamindb_setup==0.46a4
+Requires-Dist: erdiagram>=0.1.2
+Requires-Dist: pydantic[dotenv]
+Requires-Dist: pyarrow
+Requires-Dist: typing_extensions!=4.6.0
+Requires-Dist: readfcs>=1.1.2
+Requires-Dist: python-dateutil
+Requires-Dist: zarr
+Requires-Dist: anndata>=0.9.1
+Requires-Dist: fsspec
+Requires-Dist: universal_pathlib
+Requires-Dist: pandas
+Requires-Dist: typeguard
+Requires-Dist: botocore==1.29.76 ; extra == "aws"
+Requires-Dist: boto3==1.26.76 ; extra == "aws"
+Requires-Dist: fsspec[s3]==2023.5.0 ; extra == "aws"
+Requires-Dist: lnschema_bionty==0.19a2 ; extra == "bionty"
+Requires-Dist: fsspec[gs]==2023.5.0 ; extra == "gcp"
+Requires-Dist: lnschema_lamin1==0.18a1 ; extra == "lamin1"
+Requires-Dist: nbproject>=0.8.7 ; extra == "nbproject"
+Requires-Dist: pre-commit ; extra == "test"
+Requires-Dist: nox ; extra == "test"
+Requires-Dist: laminci>=0.3 ; extra == "test"
+Requires-Dist: pytest>=6.0 ; extra == "test"
+Requires-Dist: coverage ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: psycopg2-binary ; extra == "test"
+Requires-Dist: nbproject>=0.8.7 ; extra == "test"
+Requires-Dist: nbproject_test>=0.3.0 ; extra == "test"
+Project-URL: Home, https://github.com/laminlabs/lamindb
+Provides-Extra: aws
+Provides-Extra: bionty
+Provides-Extra: gcp
+Provides-Extra: lamin1
+Provides-Extra: nbproject
+Provides-Extra: test
+
+[![Stars](https://img.shields.io/github/stars/laminlabs/lamindb?logo=GitHub&color=yellow)](https://github.com/laminlabs/lamindb)
+[![codecov](https://codecov.io/gh/laminlabs/lamindb/branch/main/graph/badge.svg?token=VKMRJ7OWR3)](https://codecov.io/gh/laminlabs/lamindb)
+[![pypi](https://img.shields.io/pypi/v/lamindb?color=blue&label=pypi%20package)](https://pypi.org/project/lamindb)
+
+# LaminDB: Manage R&D data & analyses
+
+LaminDB is an open-source data lake for biology.
+
+It gives you components to build on data lineage & biological entities with an ORM for your existing infrastructure: **object storage** (local directories, S3, GCP) with a mapped **SQL query engine** (currently: SQLite, Postgres).
+
+You can create distributed **LaminDB instances** at any scale:
+
+- Get started on your laptop, deploy in the cloud, or work with a mesh of instances for different teams and purposes.
+- Share them through a hub akin to HuggingFace & GitHub - see, e.g, [lamin.ai/sunnyosun](https://lamin.ai/sunnyosun).
+
+```{warning}
+
+Public beta: Currently only recommended for collaborators as we still make breaking changes.
+
+Update 2023-06-05: We completed a major migration from SQLAlchemy/SQLModel to Django, available in pre-release of v0.42.
+
+```
+
+## Installation
+
+LaminDB is a Python package (Python 3.8+).
+
+```shell
+pip install lamindb
+```
+
+<br>
+
+It is configurable & works with custom schema modules (each being managed as a Django app):
+
+```shell
+pip install 'lamindb[bionty]'  # install biological entities
+pip install 'lamindb[nbproject]'  # install Jupyter notebook tracking
+pip install 'lamindb[aws]'  # install AWS dependencies (s3fs, etc.)
+pip install 'lamindb[gcp]'  # install GCP dependencies (s3fs, etc.)
+```
+
+<br>
+
+## Setup
+
+Quick setup on the command line:
+
+- Sign up via `lamin signup <email>`
+- Log in via `lamin login <handle>`
+- Set up an instance via `lamin init --storage <storage> --schema <schema_modules>`
+
+## Documentation
+
+Read the [docs](https://lamin.ai/docs/guide/).
+
