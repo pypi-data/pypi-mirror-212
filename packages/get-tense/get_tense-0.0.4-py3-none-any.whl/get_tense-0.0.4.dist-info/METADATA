@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: get-tense
+Version: 0.0.4
+Summary: An open-source python package to find the tense of each sentence
+Home-page: https://github.com/U77w41/
+Author: Ujjwal Chowdhury
+Author-email: <u77w41@gmail.com>
+License: MIT
+Keywords: python,text,regex,tense classification,grammer
+Description-Content-Type: text/markdown
+Requires-Dist: nltk
+Requires-Dist: regex
+Requires-Dist: pathlib
+
+# Testing
+
+
+
+## Hello World
