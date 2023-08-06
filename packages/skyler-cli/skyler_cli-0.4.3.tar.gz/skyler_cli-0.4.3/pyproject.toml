@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "skyler-cli"
+version = "0.4.3"
+description = "Skyler's toolbox of handy CLI utils"
+authors = ["bouldersky <skyarnold1@me.com>"]
+readme = "README.md"
+packages = [{include = "skyler_cli", from = "src"}]
+
+[tool.poetry.scripts]
+sc = "skyler_cli.cli.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = {extras = ["all"], version = "^0.6.1"}
+chevron = "0.14.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["d"], version = "^23.1.0"}
+flake8 = ">=5.0.4,<7.0.0"
+pytest-cov = "^4.0.0"
+# https://github.com/psf/black/issues/1928#issuecomment-910337314
+typing-extensions = "^4.3.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.1.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
