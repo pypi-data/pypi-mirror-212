@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Name_conversion.egg-info/PKG-INFO
+Name_conversion.egg-info/SOURCES.txt
+Name_conversion.egg-info/dependency_links.txt
+Name_conversion.egg-info/top_level.txt
+example/__init__.py
+example/example.py
+name_conversion/__init__.py
+name_conversion/converter.py
+name_conversion/enums.py
+name_conversion/rules/rules.json
+tests/__init__.py
+tests/simple.py

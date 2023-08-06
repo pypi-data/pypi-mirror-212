@@ -1,0 +1,6 @@
+include *.md
+include *.png
+include LICENSE
+recursive-include name_conversion *.md
+recursive-include name_conversion *.yml
+recursive-include name_conversion *.json

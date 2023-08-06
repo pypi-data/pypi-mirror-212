@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Name-conversion
+Version: 3.0.0
+Summary: Библиотека для склонения кириллических ФИО по падежам
+Home-page: https://github.com/DanilSozonov/name_conversion
+Author: damirazo
+Author-email: me@damirazo.ru
+License: MIT
+Keywords: name conversion python declension initials russian language
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Localization
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Russian
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
