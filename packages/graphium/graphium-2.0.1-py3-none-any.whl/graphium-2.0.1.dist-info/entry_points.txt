@@ -1,0 +1,2 @@
+[console_scripts]
+graphium = graphium.cli:main_cli
