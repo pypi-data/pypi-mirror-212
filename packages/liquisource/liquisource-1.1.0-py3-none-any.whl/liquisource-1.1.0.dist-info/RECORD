@@ -1,0 +1,7 @@
+client/__init__.py,sha256=WgE28e75QqIw-60q-pad9oZ3x6RRkcGd7kM-yv2gUrg,148
+client/ck_client.py,sha256=7Pf4HBv_NiJoGQAdWxtzx9Toc8HGKlZ-Ir8eSADvGIw,524
+client/config.py,sha256=iUHW0zeVcLF3HZWtP2r9x9wXbJGhuFvPVD1celtTWvo,496
+client/mongo_client.py,sha256=aCwOdkGeInJPQYIiwAk_W5KfI1RAQJ4El8ttDCt5JEg,287
+liquisource-1.1.0.dist-info/METADATA,sha256=Bs86pW6ionN4tagGbQcfWjB6ro5eiOOPyKvk_wHZrcE,1606
+liquisource-1.1.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+liquisource-1.1.0.dist-info/RECORD,,
