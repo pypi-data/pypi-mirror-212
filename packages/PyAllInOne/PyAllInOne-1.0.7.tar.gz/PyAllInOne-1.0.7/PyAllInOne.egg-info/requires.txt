@@ -1,0 +1,10 @@
+screen-brightness-control
+opencv-python
+imutils
+numpy
+pytesseract
+pillow
+matplotlib
+pyperclip
+gingerit
+pyttsx3
