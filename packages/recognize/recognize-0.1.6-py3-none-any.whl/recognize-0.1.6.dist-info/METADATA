@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: recognize
+Version: 0.1.6
+Summary: CLI for ML Pipeline
+Author: Oscar King
+Author-email: oscarking.nl@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.24.1,<0.25.0)
+Requires-Dist: speedtest-cli (>=2.1.3,<3.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+
