@@ -1,0 +1,3 @@
+cloudpickle
+dynaconf==3.1.11 # upgrade pending https://github.com/truera/truera/pull/12706
+pickle5
