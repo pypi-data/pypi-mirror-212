@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/databaseRestoreIntegrity/__init__.py
+src/databaseRestoreIntegrity/mysql.py
+src/databaseRestoreIntegrity.egg-info/PKG-INFO
+src/databaseRestoreIntegrity.egg-info/SOURCES.txt
+src/databaseRestoreIntegrity.egg-info/dependency_links.txt
+src/databaseRestoreIntegrity.egg-info/top_level.txt
