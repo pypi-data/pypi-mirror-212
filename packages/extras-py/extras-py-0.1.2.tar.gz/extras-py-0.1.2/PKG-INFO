@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: extras-py
+Version: 0.1.2
+Summary: Adding in simple things that are tedious to add in on your own, with one simple line you can unlock easiness.
+Author: SalladShooter
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
