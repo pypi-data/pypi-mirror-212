@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nonebot_plugin_wordle_help
+Version: 0.0.2
+Summary: wordle小游戏工具
+Home-page: https://github.com/Special-Week/Hinata-Bot/tree/main/src/plugins/wordle_help
+Author: Special-Week
+Author-email: 2385612749@qq.com
+Requires-Python: >=3.8.0
+License-File: LICENSE
+
+https://github.com/Special-Week/Hinata-Bot/tree/main/src/plugins/wordle_help

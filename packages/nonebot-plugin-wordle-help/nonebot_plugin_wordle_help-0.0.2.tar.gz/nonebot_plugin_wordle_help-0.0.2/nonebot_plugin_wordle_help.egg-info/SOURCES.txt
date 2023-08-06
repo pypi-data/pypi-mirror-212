@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+nonebot_plugin_wordle_help/__init__.py
+nonebot_plugin_wordle_help/data.json
+nonebot_plugin_wordle_help/handle.py
+nonebot_plugin_wordle_help.egg-info/PKG-INFO
+nonebot_plugin_wordle_help.egg-info/SOURCES.txt
+nonebot_plugin_wordle_help.egg-info/dependency_links.txt
+nonebot_plugin_wordle_help.egg-info/requires.txt
+nonebot_plugin_wordle_help.egg-info/top_level.txt
