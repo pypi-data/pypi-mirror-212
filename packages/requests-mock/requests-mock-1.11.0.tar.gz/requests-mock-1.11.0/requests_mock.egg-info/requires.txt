@@ -1,0 +1,16 @@
+requests<3,>=2.3
+six
+
+[fixture]
+fixtures
+
+[test]
+fixtures
+purl
+pytest
+sphinx
+testtools
+requests_futures
+
+[test:( python_version < '3.3')]
+mock
