@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+chatglmclient/__init__.py
+chatglmclient/chatglm_client.py
+chatglmclient.egg-info/PKG-INFO
+chatglmclient.egg-info/SOURCES.txt
+chatglmclient.egg-info/dependency_links.txt
+chatglmclient.egg-info/top_level.txt
+chatglmclient/tests/__init__.py
+chatglmclient/tests/test_base.py
+chatglmclient/tests/feature/__init__.py
+chatglmclient/tests/script/__init__.py
+chatglmclient/tests/unit/__init__.py
+chatglmclient/tests/unit/client_test.py
