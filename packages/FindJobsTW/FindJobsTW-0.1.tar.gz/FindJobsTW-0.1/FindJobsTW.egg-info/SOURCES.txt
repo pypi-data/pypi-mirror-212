@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+FindJobsTW.egg-info/PKG-INFO
+FindJobsTW.egg-info/SOURCES.txt
+FindJobsTW.egg-info/dependency_links.txt
+FindJobsTW.egg-info/requires.txt
+FindJobsTW.egg-info/top_level.txt
+find_jobs/__init__.py
