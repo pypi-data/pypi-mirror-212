@@ -1,0 +1,3 @@
+[console_scripts]
+kagsa = kagsasrc.__main__:main
+kg = kagsasrc.__main__:main
