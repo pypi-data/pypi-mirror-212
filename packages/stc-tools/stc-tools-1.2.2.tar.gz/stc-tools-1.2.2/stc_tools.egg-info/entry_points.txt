@@ -1,0 +1,2 @@
+[console_scripts]
+stc-tools = stc_tools.cli:main
