@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/num_tini4/__init__.py
+src/num_tini4/num.py
+src/num_tini4.egg-info/PKG-INFO
+src/num_tini4.egg-info/SOURCES.txt
+src/num_tini4.egg-info/dependency_links.txt
+src/num_tini4.egg-info/top_level.txt
+src/primes/__init__.py
+src/primes/primes.py
+tests/test_num.py
+tests/test_speed.py
