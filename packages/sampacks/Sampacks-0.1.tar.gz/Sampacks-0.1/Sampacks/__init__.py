@@ -1,0 +1,1 @@
+from Sampacks.funcs import mainfuncs
