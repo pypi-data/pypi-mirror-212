@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ngm_salam"
+version = "0.0.2"
+dependencies = [
+    "requests",
+    "psutil"
+]
+
+[project.scripts]
+salam = "ngm_salam.__main__:main"
