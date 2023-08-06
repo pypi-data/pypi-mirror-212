@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "extremitypathfinder"
+version = "2.7.0"
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/jannikmi/extremitypathfinder"
+homepage = "https://extremitypathfinder.readthedocs.io/en/latest/"
+documentation = "https://extremitypathfinder.readthedocs.io/en/latest/"
+keywords = ["path-planning", "path-finding", "shortest-path", "visibility", "graph", "polygon", "grid", "map", "robotics", "navigation", "offline"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Education",
+    "Topic :: Games/Entertainment"
+]
+description = "python package for fast shortest path computation on 2D polygon or grid maps"
+authors = ["jannikmi <github@michelfe.it>"]
+include = [
+    "LICENSE",
+    ".editorconfig",
+    ".pre-commit-config.yaml",
+    "CHANGELOG.rst",
+    "CONTRIBUTING.rst",
+    "Makefile",
+    "README.rst",
+    "tox.ini",
+    "tests/*.py",
+    "example.json",
+]
+#exclude = ["my_package/excluded.py"]
+
+[tool.poetry.scripts]
+extremitypathfinder = "extremitypathfinder.command_line:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.22"
+networkx = "^3"
+numba = {version = "^0.56.0", optional = true}
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "*"
+
+[tool.poetry.group.plot.dependencies]
+matplotlib = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+tox = "*"
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "*"
+sphinx-rtd-theme = "*"
+
+[tool.poetry.extras]
+numba = ["numba"]
+plot = ["matplotlib"]
+test = ["pytest", "tox"]
+docs = ["Sphinx", "sphinx-rtd-theme"]
+
+[build-system]
+requires = ["poetry-core>=1.5", "poetry>=1.4"]
+build-backend = "poetry.core.masonry.api"
