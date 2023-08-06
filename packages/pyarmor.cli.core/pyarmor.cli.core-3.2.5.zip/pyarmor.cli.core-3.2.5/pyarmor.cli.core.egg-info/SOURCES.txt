@@ -1,0 +1,10 @@
+README.rst
+pyproject.toml
+setup.py
+pyarmor.cli.core.egg-info/PKG-INFO
+pyarmor.cli.core.egg-info/SOURCES.txt
+pyarmor.cli.core.egg-info/dependency_links.txt
+pyarmor.cli.core.egg-info/top_level.txt
+src/__init__.py
+src/features.py
+src/runtime.py
