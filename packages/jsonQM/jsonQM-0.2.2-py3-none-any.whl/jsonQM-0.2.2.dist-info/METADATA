@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jsonQM
+Version: 0.2.2
+Summary: A simple tool to easily make your API endpoint json queries more versatile.
+Home-page: UNKNOWN
+Author: William A. Lim
+Author-email: william.lim@csu.fullerton.edu
+License: UNKNOWN
+Keywords: python,json,request,query,model
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+This module allows you to make your API endpoints more versatile by binding response functions to different entries on your json request similar to GraphQL.
+
