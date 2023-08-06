@@ -1,0 +1,7 @@
+numpy>=1.9.0
+scipy
+scikit-learn>=0.18.0
+bayesian-optimization
+matplotlib
+jsonpickle
+topas2numpy
