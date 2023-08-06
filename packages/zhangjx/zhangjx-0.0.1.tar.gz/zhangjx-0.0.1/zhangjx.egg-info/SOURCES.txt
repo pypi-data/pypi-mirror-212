@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+zhangjx.egg-info/PKG-INFO
+zhangjx.egg-info/SOURCES.txt
+zhangjx.egg-info/dependency_links.txt
+zhangjx.egg-info/top_level.txt
