@@ -1,0 +1,9 @@
+README.md
+setup.py
+wscraping_helper/__init__.py
+wscraping_helper/helper.py
+wscraping_helper.egg-info/PKG-INFO
+wscraping_helper.egg-info/SOURCES.txt
+wscraping_helper.egg-info/dependency_links.txt
+wscraping_helper.egg-info/requires.txt
+wscraping_helper.egg-info/top_level.txt
