@@ -1,0 +1,10 @@
+hsclient/__init__.py,sha256=Z7WhooGfGUKcWzGnusPIK1XqffDEJ_UEUif54NKaxKc,236
+hsclient/hydroshare.py,sha256=VYfPEb0kJJltXrcwpN-s9xmA-N6MQFzPdQZLEnR7Dxg,63541
+hsclient/json_models.py,sha256=2mp4PU6WVtX5xnxqllvEgrgbuQZQqYs7C3ey92s0L_k,1574
+hsclient/oauth2_model.py,sha256=IMNnM_tdrQxaf0iynxQUL_K0aE4IVeEKCucWSC7FeHU,413
+hsclient/utils.py,sha256=j2DJ1HEbz7EK4UTX9oCX3jmw8LWZa9PxnjyTfTkhtt4,1881
+hsclient-0.3.4.dist-info/LICENSE.txt,sha256=eczCP8lQ5PW7gDaRJnhj18JX0yFJk-STVMxu42RO_Qc,1499
+hsclient-0.3.4.dist-info/METADATA,sha256=5oKJb5lVDpCqbahMR02HwtYykDMfF_Xr-DhoPNXM9fk,4698
+hsclient-0.3.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hsclient-0.3.4.dist-info/top_level.txt,sha256=c8b2Ixjz4Y0FTUJBFNjsxGI_8SyHF47xio_PLU5IUiA,9
+hsclient-0.3.4.dist-info/RECORD,,
