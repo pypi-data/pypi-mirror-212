@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ngm-salam
+Version: 0.0.10
+Summary: Just a demo project
+Project-URL: Homepage, https://github.com/ngmaibulat/training-python-packaging
+Project-URL: Documentation, https://github.com/ngmaibulat/training-python-packaging
+Project-URL: Changes, https://github.com/ngmaibulat/training-python-packaging
+Keywords: sample,project
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+### Install
+
+```bash
+echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
+
+sudo apt install python3-pip
+
+pip install ngm-salam
+```
+
+### Commands:
+
+```bash
+salam
+```
