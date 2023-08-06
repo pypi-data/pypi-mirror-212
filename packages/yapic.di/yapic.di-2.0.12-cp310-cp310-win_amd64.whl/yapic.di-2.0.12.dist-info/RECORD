@@ -1,0 +1,9 @@
+yapic/di/__init__.py,sha256=wRSSlbjoYqUtXWOv-gcWei9EqH2N2YrGLZ_-j3A5TWw,102
+yapic/di/_di.cp310-win_amd64.pyd,sha256=F-gs2_SOV1QRiM4Ay22suBAwEKqKjPYMV6ebIUYCFGo,83456
+yapic/di/_di.pyi,sha256=7qYE04JII2l32M3NesBJFvOyssNq4C7jtq-rh3ycgVI,4013
+yapic/di/inject.py,sha256=IuFtQ_poYFPYv08kdV4xHIfms0QxnyifhREhQwuE6_M,794
+yapic.di-2.0.12.dist-info/LICENSE,sha256=x2x8NfnNqFpaYzZQQ2zmPwtvPzQ4sBTDZIo39B3h5-0,1542
+yapic.di-2.0.12.dist-info/METADATA,sha256=CWho0R3yePCD_Lx4W8iI4Hd0JwsF1tEiQphpRHdBR4I,4642
+yapic.di-2.0.12.dist-info/WHEEL,sha256=jrOhEbqKwvzRFSJcbYXlJCyVkgVdHg4_7__YHrdTUfw,102
+yapic.di-2.0.12.dist-info/top_level.txt,sha256=kWo6t5PbhxsWndVacpH2C9g7oIX4CfOPkPauQQ3xfb8,6
+yapic.di-2.0.12.dist-info/RECORD,,
