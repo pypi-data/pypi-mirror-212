@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "elefantolib-events"
+version = "0.3.0"
+description = ""
+authors = ["Aibar <bekaybar@gmail.com>"]
+readme = "README.md"
+packages = [{include = "elefantolib_events"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+orjson = "^3.9.0"
+aio-pika = "^9.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
