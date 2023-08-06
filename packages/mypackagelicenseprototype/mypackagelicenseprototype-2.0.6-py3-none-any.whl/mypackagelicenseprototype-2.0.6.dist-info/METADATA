@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: mypackagelicenseprototype
+Version: 2.0.6
+Summary: Description of your package
+Author-email: Daniel Roth <daniel-roth@posteo.org>
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PackageLicensePrototype
+
+# Activate virtual environment
+.venv\Scripts\activate.bat  
+
+
+# Package publish to pypi.org
+
+python setup.py sdist
+
+cd dist
+
+pip install twine
+
+twine upload myPackageLicensePrototype-1.0.x.tar.gz
+
+
+# Compiled publish
+
+pip install --upgrade setuptools wheel
+python setup.py bdist_wheel
+twine upload dist/* 
+
+# Pyarmer (make sure not to use venv or at least don't show in requirements, it's not needed for use)
+
+pip install pyarmor
+pyarmor gen PackageContent.py
+
+
