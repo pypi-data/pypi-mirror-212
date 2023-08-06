@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ofa2
+Version: 0.1.0.post202306071524
+Summary: Train one network, Search once, Deploy in many scenarios.
+Home-page: https://github.com/ito-rafael/once-for-all-2
+Author: Rafael Ito
+Author-email: ito.rafael@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+
+
+# OFA²: Train one network, Search once, Deploy in many scenarios [[arXiv]](https://arxiv.org/abs/2303.13683)
+```BibTex
+@misc{ito2023ofa2,
+      title={OFA²: A Multi-Objective Perspective for the Once-for-All Neural Architecture Search},
+      author={Rafael C. Ito and Fernando J. Von Zuben},
+      year={2023},
+      eprint={2303.13683},
+      archivePrefix={arXiv},
+      primaryClass={cs.NE}
+}
+```
+
+## Check our [GitHub](https://github.com/ito-rafael/once-for-all-2) for more details.
