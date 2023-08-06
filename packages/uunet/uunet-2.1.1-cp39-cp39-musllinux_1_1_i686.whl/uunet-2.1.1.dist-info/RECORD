@@ -1,0 +1,17 @@
+uunet-2.1.1.dist-info/METADATA,sha256=WnMS4A4dp7fo7Cqf20dDi3F2ScfKU8ijuORNLZSD1_I,2611
+uunet-2.1.1.dist-info/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+uunet-2.1.1.dist-info/RECORD,,
+uunet-2.1.1.dist-info/top_level.txt,sha256=h82D_WUVMUjGXPNhuhCkP0yidDyv0KDPcObssynQoJU,6
+uunet-2.1.1.dist-info/WHEEL,sha256=RUlL-_fOiLH-t2rrPZDFYtpfK6Vhs4a6bfN4K0dX3_A,109
+uunet.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+uunet.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+uunet/multinet.py,sha256=6mlNyHNNJgCrcW1JE41Rvx9qgsPWumFgOvyoztDvhdI,33353
+uunet/libuunet.so,sha256=TYChNZ3Viobwbd84V7STgGsS327f3dCAmJ5nS35kCYU,99507333
+uunet/__init__.py,sha256=PUQPeNYivlr5vT40zIBGRyc6Vadt_RgwFdZY9j9TqCs,18
+uunet/_multinet.cpython-39-i386-linux-gnu.so,sha256=L-iydhue7Jv74fo1KJWjoX36eJVksQlsJai2EwPCf0M,1198049
+uunet/data/florentine.mpx,sha256=x_unUEHPOE5P1cF9wf_OEu24kBvLBBfPnHrCUGiLees,1421
+uunet/data/aucs.mpx,sha256=ne7fZWt51O5zZ5dviW5IP1oiFgCxw96hu8JTbhrvUyw,19574
+uunet/data/book.mpx,sha256=BjftpEFhuIWQx7NpgUhIzzBsRV7ImijIPG3Z5ohdhOc,523
+uunet/data/bankwiring.mpx,sha256=K5kkAj0APRswCYBPBET65y5RZRX16h6HuMECV7q93Qs,1952
+uunet/data/tailorshop.mpx,sha256=dlYIN-Itg2LIsyBs9OrVzyUoeFlcpxF1gwjdPTwKYAU,13090
+uunet/data/monastery.mpx,sha256=Xzn4kwhXH4czc7rm0yL_ABRwwLfVOCvkIuvT17L4Y3c,14975
