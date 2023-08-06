@@ -1,0 +1,8 @@
+README.md
+setup.py
+email_connector/__init__.py
+email_connector.egg-info/PKG-INFO
+email_connector.egg-info/SOURCES.txt
+email_connector.egg-info/dependency_links.txt
+email_connector.egg-info/requires.txt
+email_connector.egg-info/top_level.txt
