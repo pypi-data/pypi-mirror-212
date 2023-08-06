@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/Mouritech_LoggingError/File_Errors.py
+src/Mouritech_LoggingError/__init__.py
+src/Mouritech_LoggingError/test.py
+src/Mouritech_LoggingError.egg-info/PKG-INFO
+src/Mouritech_LoggingError.egg-info/SOURCES.txt
+src/Mouritech_LoggingError.egg-info/dependency_links.txt
+src/Mouritech_LoggingError.egg-info/top_level.txt
