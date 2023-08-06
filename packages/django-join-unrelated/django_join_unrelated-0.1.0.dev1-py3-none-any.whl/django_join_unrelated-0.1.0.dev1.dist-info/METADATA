@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: django-join-unrelated
+Version: 0.1.0.dev1
+Summary: Join Django ORM models having no relations.
+Home-page: https://pypi.org/project/django-join-unrelated
+License: MIT
+Keywords: django,django-orm,orm
+Author: Denis Kazakov
+Author-email: denis@kazakov.ru.net
+Requires-Python: >=3.8,<4.0
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/KazakovDenis/django-join-unrelated
+Description-Content-Type: text/markdown
+
+# django-join-unrelated
+Join Django ORM models having no relations
+
