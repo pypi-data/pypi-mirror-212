@@ -1,0 +1,9 @@
+LICENSE.txt
+License.txt
+README.md
+setup.py
+src/PlanaPY.egg-info/PKG-INFO
+src/PlanaPY.egg-info/SOURCES.txt
+src/PlanaPY.egg-info/dependency_links.txt
+src/PlanaPY.egg-info/requires.txt
+src/PlanaPY.egg-info/top_level.txt
