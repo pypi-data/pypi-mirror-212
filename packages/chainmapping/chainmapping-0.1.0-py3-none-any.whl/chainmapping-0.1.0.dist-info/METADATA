@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: chainmapping
+Version: 0.1.0
+Summary: Simple class to create readonly ChainMaps that support typing,Mapping
+Author: Kalle M. Aagaard
+Author-email: km@conscia.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# py-chainmapping
+Simple class to create a ChainMap that can use typing.Mapping
+
