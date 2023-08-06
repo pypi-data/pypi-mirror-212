@@ -1,0 +1,8 @@
+idspy_dictionaries>=0.3.1
+numpy>=1.22
+h5py
+simplejson
+typing_extensions
+
+[test]
+pytest>=7.0.0
