@@ -1,0 +1,10 @@
+taskrift/__init__.py,sha256=DYYCo3iOpklDhirLX5ln1-CcJ25sPHez77Nt_NU2Gio,448
+taskrift/__main__.py,sha256=YZDDgv1Vb3vWSQtS5664SD6VCRzIOqDPPS6fznCmn10,177
+taskrift/cli.py,sha256=KmmCjY8N3xJ8GvyCiMEcyLNQuJtK4urTmBJIxYFjut4,6170
+taskrift/config.py,sha256=w6G_jZyjRKYfW1pZvqyGJoXPayCEgxwBMkEWguyVEfA,1217
+taskrift/database.py,sha256=jR4voiFBKyCLNs1A6aKz05T_W1CKvClL_bBLQA8-As4,1789
+taskrift/taskrift.py,sha256=nbhUze1o_ZjBCXXs8LPb6hx4GS3cUoVFPvCfcM6M8QA,2461
+taskrift-0.1.0.dist-info/LICENSE,sha256=VW-1Bz3jBRViodDm8v-jB7pWXa1t9o0U0JU_vtTQ2aM,1094
+taskrift-0.1.0.dist-info/METADATA,sha256=noMkyoVBD6JjIcRISs41kXidcL3j957eKeh0XX3PLjU,533
+taskrift-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+taskrift-0.1.0.dist-info/RECORD,,
