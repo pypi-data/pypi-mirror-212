@@ -1,0 +1,14 @@
+client_module/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client_module/client_database.py,sha256=3r_JwQhT3t7Auee4aOn_exZPiqRgI4H3Z7A-H-TYcPo,5189
+client_module/client_gui.py,sha256=btHYkCg2h_XQL2gCj4jkFrjHQPyZSNTQNy0IbQdLMko,16019
+client_module/main_client_window_ui.py,sha256=o1v1YwVsRCuGOnnPduPGvDlgTumKd6c5bJeAsGLPY1w,5166
+client_module/transport.py,sha256=KR6zetEbvi7YJBUXIp2dlofygvhPrNmIrI3WagE2CX0,11610
+common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common/decorators.py,sha256=TeyrR5W6lqSpEeK_gprg2YcBNU_KHPZg_ZDn2C-I674,3077
+common/descriptors.py,sha256=YSwNcToMUHUvUBRdk3PkH_yv4dJwJZvkXlZjmmSAZHw,1782
+common/metaclasses.py,sha256=v8zyXKeq4z5GZSyyiIe6nzKmfdyaQiWIzVlLKmR50x0,3508
+common/utils.py,sha256=duw0KT9Xc1tbGOQquKyn4RadjNfuzSSQed_nDKtm3I4,938
+mess_chat_123_client-0.0.1.dist-info/METADATA,sha256=426aHOEU3eh07ioeDd6mcLT3qtobXwILSPWyjq__lS4,250
+mess_chat_123_client-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mess_chat_123_client-0.0.1.dist-info/top_level.txt,sha256=FpnxSd3LdZn2eG_JiQ92wAJsr0p4EV3GlCbi31NkftI,21
+mess_chat_123_client-0.0.1.dist-info/RECORD,,

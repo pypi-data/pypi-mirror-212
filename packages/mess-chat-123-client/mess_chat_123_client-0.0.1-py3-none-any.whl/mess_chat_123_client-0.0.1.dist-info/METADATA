@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mess-chat-123-client
+Version: 0.0.1
+Summary: message_client
+Author: Natalia Pisarova
+Author-email: natalia@yandex.ru
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
