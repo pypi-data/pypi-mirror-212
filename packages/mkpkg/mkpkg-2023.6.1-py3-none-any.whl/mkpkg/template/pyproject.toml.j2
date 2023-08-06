@@ -1,0 +1,124 @@
+[build-system]
+requires = [{% if cffi %}"cffi", {%- endif %}"hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[project]
+name = "{{ package_name }}"
+description = ""
+readme = "README.rst"
+license = {text = "{% if not closed %}MIT{% else %}Private{% endif %}"}
+keywords = []
+authors = [
+  {email = "{{ author_email }}"},
+  {name = "Julian Berman"},
+]
+classifiers = [
+  "{{ status_classifier }}",
+  {% if not closed -%}
+  "License :: OSI Approved :: MIT License",
+  {% else -%}
+  "Private :: Do Not Upload",
+  {% endif -%}
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  {% for each in version_classifiers | sort -%}
+  "{{ each }}",
+  {% endfor -%}
+  "Programming Language :: Python :: 3",
+  {% if cpython -%}
+  "Programming Language :: Python :: Implementation :: CPython",
+  {% endif -%}
+  {% if pypy -%}
+  "Programming Language :: Python :: Implementation :: PyPy",
+  {% endif -%}
+  {% if jython -%}
+  "Programming Language :: Python :: Implementation :: Jython",
+  {% endif %}
+]
+dynamic = ["version"]
+{% for each in dependencies -%}
+{% if loop.first -%}dependencies = [{% endif %}
+  "{{ each }}",
+{% if loop.last -%}]{% endif %}
+{% endfor %}
+{% for each in scripts -%}
+{% if loop.first -%}[project.scripts]{%- endif %}
+  {{ each }}
+{% endfor %}
+[project.urls]{% if docs %}
+Documentation = "https://{{ name }}.readthedocs.io/"{%- endif %}
+Homepage = "https://github.com/Julian/{{ name }}"
+Issues = "https://github.com/Julian/{{ name }}/issues/"
+Funding = "https://github.com/sponsors/Julian"
+Source = "https://github.com/Julian/{{ name }}"
+
+[tool.coverage.html]
+show_contexts = true
+skip_covered = false
+
+[tool.coverage.run]
+branch = true
+source = ["{{ package_name }}"]
+dynamic_context = "test_function"
+
+[tool.coverage.report]
+exclude_also = [
+  "if TYPE_CHECKING:",
+  "\\s*\\.\\.\\.\\s*",
+]
+show_missing = true
+skip_covered = true
+
+[tool.doc8]
+ignore = [
+    "D001",  # one sentence per line, so max length doesn't make sense
+]
+
+[tool.isort]
+combine_as_imports = true
+from_first = true
+include_trailing_comma = true
+multi_line_output = 3
+
+[tool.ruff]
+line-length = 79
+target-version = "py38"
+select = ["ANN", "B", "D", "E", "F", "Q", "UP", "W"]
+ignore = [
+  # Wat, type annotations for self and cls, why is this a thing?
+  "ANN101",
+  "ANN102",
+  # Private annotations are fine to leave out.
+  "ANN202",
+  # raise SomeException(...) is fine.
+  "B904",
+  # It's fine to not have docstrings for magic methods.
+  "D105",
+  # This rule makes diffs uglier when expanding docstrings (and it's uglier)
+  "D200",
+  # No blank lines before docstrings.
+  "D203",
+  # Start docstrings on the second line.
+  "D212",
+  # This rule misses sassy docstrings ending with ! or ?.
+  "D400",
+  # Section headers should end with a colon not a newline
+  "D406",
+  # Underlines aren't needed
+  "D407",
+  # Plz spaces after section headers
+  "D412",
+  # We support 3.8 + 3.9
+  "UP007",
+]
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.ruff.per-file-ignores]
+"docs/*" = ["ANN", "D"]
+"{% if single_module %}tests.py{% else %}{{ package_name }}/tests/*{% endif %}" = ["ANN", "D"]
+"noxfile.py" = ["ANN", "D"]
