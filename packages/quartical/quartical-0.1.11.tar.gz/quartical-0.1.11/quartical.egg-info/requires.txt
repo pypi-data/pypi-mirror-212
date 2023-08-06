@@ -1,0 +1,12 @@
+tbump
+columnar
+ruamel.yaml
+dask-ms[s3,xarray,zarr]>=0.2.9
+codex-africanus[astropy,dask,python-casacore,scipy]
+astro-tigger-lsm
+loguru
+distributed
+requests
+pytest
+omegaconf
+colorama
