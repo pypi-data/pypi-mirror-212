@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: python-sscha
+Version: 1.3
+Summary: Python implementation of the sscha code
+Home-page: https://github.com/mesonepigreco/python-sscha
+Author: Lorenzo Monacelli
+License: GPLv3
+License-File: LICENSE.txt
