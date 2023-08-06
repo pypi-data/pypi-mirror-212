@@ -1,0 +1,2 @@
+[console_scripts]
+phasor_noise = phasor_noise:default_window
