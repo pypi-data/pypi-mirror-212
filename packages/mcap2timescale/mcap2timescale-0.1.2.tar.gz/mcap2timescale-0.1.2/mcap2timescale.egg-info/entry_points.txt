@@ -1,0 +1,3 @@
+[console_scripts]
+mcap2timescale = mcap2timescale.module:main
+

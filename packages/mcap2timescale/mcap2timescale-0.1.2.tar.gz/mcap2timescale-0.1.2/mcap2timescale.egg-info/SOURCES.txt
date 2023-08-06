@@ -1,0 +1,13 @@
+README.md
+setup.py
+mcap2timescale/__init__.py
+mcap2timescale/job.py
+mcap2timescale/main.py
+mcap2timescale/rosbag.py
+mcap2timescale/timescale.py
+mcap2timescale.egg-info/PKG-INFO
+mcap2timescale.egg-info/SOURCES.txt
+mcap2timescale.egg-info/dependency_links.txt
+mcap2timescale.egg-info/entry_points.txt
+mcap2timescale.egg-info/requires.txt
+mcap2timescale.egg-info/top_level.txt
