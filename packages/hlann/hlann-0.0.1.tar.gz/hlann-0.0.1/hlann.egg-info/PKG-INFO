@@ -1,0 +1,332 @@
+Metadata-Version: 2.1
+Name: hlann
+Version: 0.0.1
+Summary: HLA Annotation (HLAnn) Python package for annotating HLA
+Author: NMDP Bioinformatics
+Author-email: <rsajulga@nmdp.org>
+License: LGPL 3.0
+Keywords: hlann
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Provides: hlann
+Description-Content-Type: text/markdown
+
+# Aggregate Matching Tool
+
+# Table of Contents
+- [Background](#background-)
+- [Tools](#tools-)
+    - [Python Package](#python-package-)
+    - [Aggregate Matching Tool](#aggregate-matching-tool-)
+- [Docker Deployment](#docker-deployment-)
+
+# Background [⤴](#table-of-contents)
+In many cases, modern HLA nomenclature cannot fully describe the various genetic polymorphisms between both primary and reference data, as well as between recipients and stem cell sources. This tool addresses this issue by integrating sequence data with HLA nomenclature to facilitate research into some of these less-accessible genetic polymorphisms. Additionally, various mismatching models (HLA-B leader and HLA-DPB1 expression/TCE, for instance) have been built-in to provide an aggregating hub for aiding in clinical decision-making. This operating procedure details the usage and deployment of this tool.
+
+
+# Tools [⤴](#table-of-contents)
+## Python Package [⤴](#table-of-contents)
+### Installation
+```
+pip install .
+```
+### Setup
+```
+from hlann.hlann import HLAnn
+hla_db = HLAnn(db_version='3470', verbose=True)
+```
+### Usage
+#### Allotype
+Command
+```
+hla_db.annotate_allotype('DPB1*01:AETTG')
+```
+<details>
+<summary>Result</summary>
+<pre>
+{'name': 'DPB1*01:AETTG',
+ 'tce': '3',
+ 'resolution': 'intermediate',
+ 'matched': False,
+ 'expr_level': '~high',
+ 'expr_annot_type': '~experimental',
+ 'alleles': [{'allele_expr': 'DPB1*01:01',
+   'CIWD_TOTAL': 'C',
+   'exon3_motif_ref': 'ACCACTC',
+   'utr3_motif_ref': 'G',
+   'tce': '3',
+   'resolution': 'high',
+   'expr_level': 'high',
+   'experimental': True},
+  {'allele_expr': 'DPB1*162:01',
+   'CIWD_TOTAL': 'WD',
+   'exon3_motif_ref': 'GTTGTCT',
+   'utr3_motif_ref': 'A',
+   'tce': '3',
+   'resolution': 'high',
+   'expr_level': 'low',
+   'experimental': False},
+  {'allele_expr': 'DPB1*417:01',
+   'CIWD_TOTAL': 'WD',
+   'exon3_motif_ref': 'ACCACTC',
+   'utr3_motif_ref': 'unknown',
+   'tce': '3',
+   'resolution': 'high',
+   'expr_level': 'high',
+   'experimental': False}]}
+</pre>
+</details>
+<br>
+
+#### Genotype
+Command
+```
+hla_db.annotate_genotype('DPB1*01:AETTA+DPB1*04:AETTB')
+```
+<details>
+<summary>Result</summary>
+<pre>
+{
+  "allele_one": {
+    "alleles": [
+      {
+        "CIWD": "C",
+        "allele_expr": "DPB1*01:01",
+        "exon3_motif_ref": "ACCACTC",
+        "experimental": true,
+        "expr_level": "high",
+        "resolution": "high",
+        "tce": "3",
+        "utr3_motif_ref": "G"
+      },
+      {
+        "CIWD": "WD",
+        "allele_expr": "DPB1*417:01",
+        "exon3_motif_ref": "ACCACTC",
+        "experimental": false,
+        "expr_level": "high",
+        "resolution": "high",
+        "tce": "3",
+        "utr3_motif_ref": "unknown"
+      }
+    ],
+    "expr_annot_type": "experimental",
+    "expr_level": "high",
+    "matched": false,
+    "name": "DPB1*01:AETTA",
+    "resolution": "intermediate",
+    "tce": "3"
+  },
+  "allele_two": {
+    "alleles": [
+      {
+        "CIWD": "C",
+        "allele_expr": "DPB1*04:01",
+        "exon3_motif_ref": "GTTGTCT/GTTGCCT/GTTATCT",
+        "experimental": true,
+        "expr_level": "low",
+        "resolution": "high",
+        "tce": "3/0",
+        "utr3_motif_ref": "A"
+      },
+      {
+        "CIWD": "C",
+        "allele_expr": "DPB1*126:01",
+        "exon3_motif_ref": "GTTGTCT",
+        "experimental": false,
+        "expr_level": "low",
+        "resolution": "high",
+        "tce": "3",
+        "utr3_motif_ref": "A"
+      },
+      {
+        "CIWD": "I",
+        "allele_expr": "DPB1*350:01",
+        "exon3_motif_ref": "ACCACTC",
+        "experimental": false,
+        "expr_level": "high",
+        "resolution": "allelic",
+        "tce": "3",
+        "utr3_motif_ref": "unknown"
+      },
+      {
+        "CIWD": "WD",
+        "allele_expr": "DPB1*415:01",
+        "exon3_motif_ref": "GTTGTCT",
+        "experimental": false,
+        "expr_level": "low",
+        "resolution": "allelic",
+        "tce": "3",
+        "utr3_motif_ref": "A"
+      }
+    ],
+    "expr_annot_type": "~experimental",
+    "expr_level": "~low",
+    "matched": false,
+    "name": "DPB1*04:AETTB",
+    "resolution": "intermediate",
+    "tce": "3"
+  },
+  "genotype": "DPB1*01:AETTA+DPB1*04:AETTB"
+}
+</pre>
+</details>
+<br>
+
+
+#### Matches
+Command
+```
+hla_db.annotate_match('DPB1*04:01+DPB1*40:01', 'DPB1*40:01+DPB1*40:01')
+```
+<details>
+<summary>Result</summary>
+<pre>
+{
+  "directionality": "GvH",
+  "genotype_donor": {
+    "allele_one": {
+      "alleles": null,
+      "expr_annot_type": "experimental",
+      "expr_level": "low",
+      "matched": true,
+      "name": "DPB1*40:01",
+      "resolution": "high",
+      "tce": "3"
+    },
+    "allele_two": {
+      "alleles": null,
+      "expr_annot_type": "experimental",
+      "expr_level": "low",
+      "matched": true,
+      "name": "DPB1*40:01",
+      "resolution": "high",
+      "tce": "3"
+    },
+    "genotype": "DPB1*40:01+DPB1*40:01"
+  },
+  "genotype_recipient": {
+    "allele_one": {
+      "alleles": null,
+      "expr_annot_type": "experimental",
+      "expr_level": "low",
+      "matched": false,
+      "name": "DPB1*04:01",
+      "resolution": "high",
+      "tce": "3"
+    },
+    "allele_two": {
+      "alleles": null,
+      "expr_annot_type": "experimental",
+      "expr_level": "low",
+      "matched": true,
+      "name": "DPB1*40:01",
+      "resolution": "high",
+      "tce": "3"
+    },
+    "genotype": "DPB1*04:01+DPB1*40:01"
+  },
+  "grade": "MA",
+  "matched_alleles_don": [
+    "DPB1*40:01",
+    "DPB1*40:01"
+  ],
+  "matched_alleles_pat": [
+    "DPB1*40:01"
+  ],
+  "mismatched_allele_pat_expr_level": "low",
+  "mismatched_alleles_don": [],
+  "mismatched_alleles_pat": [
+    "DPB1*04:01"
+  ],
+  "tce_match": "Permissive"
+}
+</pre>
+</details>
+<br>
+
+
+
+## Aggregate Matching Tool [⤴](#table-of-contents)
+### Bootstrapping
+
+To begin, ensure that you have Python3 (3.9 was used for this project) installed. To check, issue this command to verify your python version:
+```
+python --version
+```
+
+If Python3 is not installed, please download it from [here](https://www.python.org/downloads/).
+
+If Python3 is readily available, set up your virtual environment by running these commands:
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+You can also use [Anaconda](https://www.anaconda.com/products/distribution) for the specific python version.
+```
+conda create -n "venv10" python=3.10
+conda activate venv10
+```
+
+Pip is the package installer for Python. It comes pre-packaged with Python. This will be used to install our requirements as such:
+```
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Once installed, *behave* will be available for testing.
+
+### Initialization
+
+Initialize the web service via this command:
+```
+streamlit run webapp.py
+```
+
+Once initialized, you may access the tool at http://localhost:8501.
+
+### Testing
+
+Running all the tests in this repository is as simple as running this command:
+```
+behave
+```
+
+The results of your BDD tests can sometimes be difficult to view in the terminal. To view the tests results in the browser, we can use allure-behave, which was installed by pip during the bootstrapping process.
+
+You will first need to specify behave to generate formatted allure results
+
+behave -f allure_behave.formatter:AllureFormatter -o tests/results/
+Finally, to view these formatted results in the browser, enter this command:
+
+allure serve tests/results
+
+### Docker Deployment [⤴](#table-of-contents)
+To build the docker image the following command may be executed in the project root directory:
+```
+docker build -t agg-match-tool .
+```
+
+To deploy the app now we can use the following command. The application should be available in your domain, i.e. `http://host:80/`
+```
+docker run -d -p 80:80 -t agg-match-tool .
+```
+To stop the app container, We have to obtain the container id by executing 
+```
+docker ps -a
+```
+Then we have to execute 
+```
+docker stop $CONTAINER_ID
+```
