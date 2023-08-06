@@ -1,0 +1,6 @@
+influxdb3-python
+pathlib
+pygments
+prompt_toolkit
+pandas
+tabulate
