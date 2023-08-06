@@ -1,0 +1,3 @@
+[console_scripts]
+pikendus = pikendus_backend.__main__:app
+
