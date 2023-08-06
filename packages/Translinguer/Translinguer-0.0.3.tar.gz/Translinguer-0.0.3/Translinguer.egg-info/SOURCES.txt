@@ -1,0 +1,17 @@
+License.txt
+MANIFEST.in
+ReadMe.md
+setup.py
+Translinguer.egg-info/PKG-INFO
+Translinguer.egg-info/SOURCES.txt
+Translinguer.egg-info/dependency_links.txt
+Translinguer.egg-info/top_level.txt
+translinguer/__init__.py
+translinguer/add_cache.py
+translinguer/add_cfg.py
+translinguer/add_csv.py
+translinguer/add_gsheets.py
+translinguer/add_ini.py
+translinguer/base.py
+translinguer/result.py
+translinguer/utils.py
