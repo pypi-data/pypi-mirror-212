@@ -1,0 +1,12 @@
+pp_project_pkg/__init__.py,sha256=9idX2X6SQKZg--ziGy6Ii9OB-kz9hOX1nEG9a0xEW9g,71
+pp_project_pkg/newsvendor.py,sha256=E6JHp0Vtmq63toKM6bO3xTAdCgwmAZzRua-w10wrc5Y,577
+pp_project_pkg/pp_tables.py,sha256=8rqVp4P9nF13UbBmN_R7vGK7MeY4BkeG2ibDa7jLRpg,7115
+pp_project_pkg/utils.py,sha256=f_FS6Yg5c3jIQa3HYPxGwfNptoVZF6zc6AkPZb8IiYg,1193
+pp_project_pkg/version.py,sha256=OFFiZi_a9yF7g5UYw5e7JL3fAqWcT2cV1vcDv7evVk8,396
+pp_project_pkg/wrangling.py,sha256=rw_wSGpePnxH0SOWySSe5NGLgV_l2x-OJakyMQp653s,4361
+pp_project_pkg-1.0.202306061458.data/scripts/get_tables.py,sha256=E5FmW2bHAU9NPORQMG85RzGtXOGjjzbATEa5lLGjyk4,65
+pp_project_pkg-1.0.202306061458.data/scripts/pp_project_run.py,sha256=Zkx_1kezh3VicdBtZrwlnqh9IyccvvgUxL97lK8kZ_4,508
+pp_project_pkg-1.0.202306061458.dist-info/METADATA,sha256=eXra9L7BgYtgbdQIXOMg9pKZ9SiAcDELdelz9Ch39Ks,191
+pp_project_pkg-1.0.202306061458.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pp_project_pkg-1.0.202306061458.dist-info/top_level.txt,sha256=2V1bEC5qsYRo1f2gAotX3L3S5xl1nIUxjITUTeRd8yQ,15
+pp_project_pkg-1.0.202306061458.dist-info/RECORD,,
