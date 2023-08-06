@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_swin/__init__.py
+autodistill_swin.egg-info/PKG-INFO
+autodistill_swin.egg-info/SOURCES.txt
+autodistill_swin.egg-info/dependency_links.txt
+autodistill_swin.egg-info/requires.txt
+autodistill_swin.egg-info/top_level.txt
