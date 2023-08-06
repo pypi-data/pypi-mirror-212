@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: faceshine
+Version: 1.0.2
+Summary: Photo image enhancer
+Home-page: https://github.com/leonelhs/faceshine
+Author: leonel hernandez
+Author-email: leonelhs@gmail.com
+License: Apache
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.24.3)
+Requires-Dist: torch (>=2.0.0)
+Requires-Dist: opencv-python (>=4.7.0.72)
+Requires-Dist: flask (>=2.3.2)
+Requires-Dist: flask-restful (>=0.3.10)
+Requires-Dist: pillow (>=9.5.0)
+Requires-Dist: torchvision
+Requires-Dist: colorama
+Requires-Dist: matplotlib
+Requires-Dist: fastprogress
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: deoldify
+Requires-Dist: realesrgan
+Requires-Dist: zeroscratches
+Requires-Dist: huggingface-hub
+
+## Face Shine Server
+
+### This project is an AI Photo Enhancer running over Pytorch
+
+## Features
+
+- [x] Face enhancement
+- [x] Super Resolution
+- [x] Erase Scratches
+- [x] Colorize Photo
+- [x] Enhance lights
+- [x] Clear background
+
+### Install 
+
+```console
+foo@bar:~$ pip install faceshine
+foo@bar:~$ faceshine
+```
+
+<img src="https://drive.google.com/uc?export=view&id=1D7hpjQSlUkzfTba-E5Ul4Rb1c8lYkFj5"/>
+<img src="https://drive.google.com/uc?export=view&id=1oKpJe-Ff3SeEekhGVRP1Ap3eIFqt0c8u"/>
+
