@@ -1,0 +1,18 @@
+{
+    "properties": {
+        "cracked": [
+            "\"true\"",
+            "\"false\""
+        ],
+        "facing": [
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
+        ]
+    },
+    "defaults": {
+        "cracked": "\"false\"",
+        "facing": "\"north\""
+    }
+}
