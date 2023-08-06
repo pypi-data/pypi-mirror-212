@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+include = mkdocs_include_folders:IncludeFolders
