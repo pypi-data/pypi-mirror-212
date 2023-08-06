@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: blackbox-adversarial-toolbox
+Version: 0.1.2
+Summary: Black-box Adversarial Toolbox (BAT) - Python Library for Deep Learning Security
+Home-page: https://github.com/wuhanstudio/blackbox-adversarial-toolbox
+Author: wuhanstudio
+Author-email: wuhanstudio <wuhanstudios@gmail.com>
+Maintainer: wuhanstudio
+Maintainer-email: wuhanstudio <wuhanstudios@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/wuhanstudio/blackbox-adversarial-toolbox
+Project-URL: Bug Tracker, https://github.com/wuhanstudio/blackbox-adversarial-toolbox/issues
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<img src="https://bat.wuhanstudio.uk/images/bat.png" width=300px style="float: left;" >
+
+# Black-box Adversarial Toolbox (BAT)
+
+[![Build Status](https://app.travis-ci.com/wuhanstudio/blackbox-adversarial-toolbox.svg?branch=master)](https://app.travis-ci.com/wuhanstudio/blackbox-adversarial-toolbox)
+[![PyPI version](https://badge.fury.io/py/blackbox-adversarial-toolbox.svg)](https://badge.fury.io/py/blackbox-adversarial-toolbox)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/blackbox-adversarial-toolbox)](https://pypi.org/project/blackbox-adversarial-toolbox/)
+[![](https://img.shields.io/badge/Documentation-infromational)](https://bat.wuhanstudio.uk/)
+
+A Python Library for Deep Learning Security that focuses on Distributed Black-box attacks.
+
+## Installation
+
+```python
+pip install blackbox-adversarial-toolbox
+```
+
+
+## Usage (CLI)
+
+```
+Usage: bat [OPTIONS] COMMAND [ARGS]...
+
+  The CLI tool for Black-box Adversarial Toolbox (BAT).
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  api      Manage Cloud APIs
+  attack   Manage Attacks
+  example  Manage Examples
+```
+Useful commands:
+```
+# List supported Cloud APIs
+$ bat api list
+
+# List supported Attacks
+$ bat attack list
+
+# Test Cloud APIs
+$ bat api run deepapi
+$ bat api run google
+$ bat api run imagga
+
+# Run exmaples
+$ bat example run simba_deepapi
+$ bat example run bandits_deepapi
+$ bat example run square_deepapi
+```
+
+## Usage (Python)
+
+```python
+import numpy as np
+from PIL import Image
+
+from bat.attacks import SimBA
+from bat.apis.deepapi import DeepAPI_VGG16_Cifar10
+
+# Load Image
+x = np.asarray(Image.open("dog.jpg").convert('RGB'))
+x = np.array([x])
+
+# Initialize the Cloud API Model
+DEEP_API_URL = 'http://localhost:8080'
+model = DeepAPI_VGG16_Cifar10(DEEP_API_URL)
+
+# Get Preditction
+y_pred = model.predict(x)[0]
+
+# Distributed SimBA Attack
+simba = SimBA(model)
+x_adv = simba.attack(x, np.argmax(y_pred), epsilon=0.05, max_it=10)
+```
