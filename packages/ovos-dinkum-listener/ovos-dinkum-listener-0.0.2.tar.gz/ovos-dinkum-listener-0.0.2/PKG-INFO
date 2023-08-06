@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ovos-dinkum-listener
+Version: 0.0.2
+Summary: ovos-core listener daemon client
+Home-page: https://github.com/OpenVoiceOS/ovos-dinkum-listener
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+
+UNKNOWN
+
