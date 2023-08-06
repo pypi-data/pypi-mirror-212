@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+stc_geck/cli.py
+stc_geck/client.py
+stc_geck.egg-info/PKG-INFO
+stc_geck.egg-info/SOURCES.txt
+stc_geck.egg-info/dependency_links.txt
+stc_geck.egg-info/entry_points.txt
+stc_geck.egg-info/requires.txt
+stc_geck.egg-info/top_level.txt
