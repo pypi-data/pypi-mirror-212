@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel", "Cython", "numpy", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuron-image-denoise"
+authors = [
+    {name = "Zuohan Zhao", email = "zzhmark@126.com"},
+]
+description = "Fluorescent neuron image denoising tools"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["vaa3d", "neuron-morphology", "image-processing"]
+license = { text = "MIT License" }
+dynamic = [ "version" ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "numpy",
+    "scikit-image"
+]
+
+[project.urls]
+"GitHub Project" = "https://github.com/SEU-ALLEN-codebase/neuron-image-denoise-py"
+"Documentation" = "https://SEU-ALLEN-codebase.github.io/neuron-image-denoise-py"
+
+[project.optional-dependencies]
+docs = [ "pdoc" ]
+
+[tool.setuptools_scm]
