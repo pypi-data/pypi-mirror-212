@@ -1,0 +1,12 @@
+build
+certifi
+distro
+numpy
+Pillow
+PyChromecast
+Send2Trash
+wxPython
+zeroconf
+
+[:sys_platform == "linux"]
+dbus-python
