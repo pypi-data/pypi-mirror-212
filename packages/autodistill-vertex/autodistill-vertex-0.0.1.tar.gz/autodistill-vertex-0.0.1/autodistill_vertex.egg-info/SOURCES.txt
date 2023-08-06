@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_vertex/__init__.py
+autodistill_vertex.egg-info/PKG-INFO
+autodistill_vertex.egg-info/SOURCES.txt
+autodistill_vertex.egg-info/dependency_links.txt
+autodistill_vertex.egg-info/requires.txt
+autodistill_vertex.egg-info/top_level.txt
