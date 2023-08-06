@@ -1,0 +1,5 @@
+[
+  "tests/test_about.py::test_version",
+  "tests/test_cli.py::test_direct_call",
+  "tests/test_cli.py::test_runner_call"
+]
