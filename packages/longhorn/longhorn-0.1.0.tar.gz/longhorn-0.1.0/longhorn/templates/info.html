@@ -1,0 +1,26 @@
+<div class="info-container">
+  <div class="info">
+    <a href="/"><h3>{{ blog_title }}</h3></a>
+    <p>
+      by <b>{{ fediverse_handle }}</b> <br />
+      <br />
+      Powered by
+      <a href="https://codeberg.org/bovine/longhorn">longhorn</a>, an
+      ActivityPub Client based blog. This means an existing Fediverse account is
+      used to federate blog entries. The entire thing is based on
+      <a href="https://codeberg.org/bovine/bovine">bovine</a>
+      and the corresponding ActivityPub server.
+    </p>
+    <p>
+      <a href="/atom.xml">Atom Feed</a>
+    </p>
+  </div>
+  <div class="info">
+    <h3>Posts</h3>
+    <ul>
+      {% for post in posts_side %}
+      <li><a href="/{{post.date}}/{{post.title_part}}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

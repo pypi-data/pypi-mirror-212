@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="stylesheet" href="/static/home.css" />
+    <title>{{ blog_title }}</title>
+  </head>
+
+  <body>
+    {% include 'info.html' %}
+
+    <article>
+      <h1>{{ blog_title }}</h1>
+    </article>
+    {% for post in posts %}
+    <article>
+      <h3>
+        <a href="/{{post.date}}/{{post.title_part}}">{{ post.title }}</a>
+        <div>by <b>{{ fediverse_handle }}</b><br />on <b>{{post.date}}</b></div>
+      </h3>
+      <p>{{post.summary | safe}}</p>
+    </article>
+    {% endfor %}
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<div class="post">
+  <div class="postcontent">
+    <div class="postheader">
+      <a href="{{ entry.content.attributedTo}}">{{ entry.content.username }}</a>
+      wrote at {{ entry.content.published }} UTC {% if entry.content.url %} (<a
+        href="{{ entry.content.url }}"
+        >original</a
+      >) {% endif %}
+    </div>
+    <div class="content">{{ entry.content.content | safe }}</div>
+  </div>
+  <div class="comments">
+    {% for entry in entry.replies %} {% include 'comment.html' %} {% endfor %}
+  </div>
+</div>
