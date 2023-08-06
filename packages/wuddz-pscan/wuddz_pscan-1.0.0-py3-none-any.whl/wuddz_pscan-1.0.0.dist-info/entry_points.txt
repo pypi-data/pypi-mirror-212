@@ -1,0 +1,2 @@
+[console_scripts]
+wudz-pscan = wudz_pscan:cli_main
