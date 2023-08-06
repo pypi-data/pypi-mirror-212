@@ -1,0 +1,8 @@
+setup.py
+mynode_setup/__init__.py
+mynode_setup/__main__.py
+node_thunder.egg-info/PKG-INFO
+node_thunder.egg-info/SOURCES.txt
+node_thunder.egg-info/dependency_links.txt
+node_thunder.egg-info/entry_points.txt
+node_thunder.egg-info/top_level.txt
