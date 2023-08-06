@@ -1,0 +1,16 @@
+fjutils/__init__.py,sha256=O_j9qLlAc-KKdFLzTEMYZZXVMKzSjRi3ulrugzhB47w,708
+fjutils/checkpointing.py,sha256=PLojj2jxgIXHyL7r5eBAv8I1rSWjyZd1PdaY1kAcHN0,8245
+fjutils/easylm.py,sha256=mkWwivXb6zLCuT_mZurF5iBk_SVzbeAoIQwT177534Q,9903
+fjutils/load.py,sha256=fmUpzY3EWheyjxvpNe2l-0hiwS3xtJLWViGK5D5aKcE,1800
+fjutils/optimizers.py,sha256=DW-jzMgLhhFiy0ejHMlPdjtfP53aiLLg1Rgw77HHXJc,6882
+fjutils/utils.py,sha256=huc_oUkcf8-TdbSLNBPd3woAkNPSJwnx7lzkKxMAGzs,3757
+fxutils/__init__.py,sha256=O_j9qLlAc-KKdFLzTEMYZZXVMKzSjRi3ulrugzhB47w,708
+fxutils/checkpointing.py,sha256=ZmWqqjfrCLtLT1VUyCOW8TtZnHFen99C2LxT4PRei1g,8231
+fxutils/easylm.py,sha256=mkWwivXb6zLCuT_mZurF5iBk_SVzbeAoIQwT177534Q,9903
+fxutils/load.py,sha256=fmUpzY3EWheyjxvpNe2l-0hiwS3xtJLWViGK5D5aKcE,1800
+fxutils/utils.py,sha256=kgrjvehyFMaaRDlAuW_1Oksa1sRQvoOrMg5mQouSt98,2257
+FJUtils-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+FJUtils-0.0.3.dist-info/METADATA,sha256=SZngGUVHrxeiYZmlHVDTbHXzSj24OdDLKt4Buxpj008,3935
+FJUtils-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+FJUtils-0.0.3.dist-info/top_level.txt,sha256=7f-DyxkUbjLETJ6IOsTHGbXU6lfQG_Qbc7xosJkluR0,8
+FJUtils-0.0.3.dist-info/RECORD,,
