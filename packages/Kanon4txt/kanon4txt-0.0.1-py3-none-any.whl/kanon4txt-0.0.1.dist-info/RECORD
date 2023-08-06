@@ -1,0 +1,14 @@
+Kanon4txt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Kanon4txt/example.py,sha256=2PZ3Zd0yQhbkjcrFwjtrSmCkZVjFy3x7JhbSqVuf0XM,220
+Kanon4txt/k_anonym_text.py,sha256=p5zIe5Sz71-yojVx5P3zcUPtSJxEUgvIADKz_6A-5pI,7265
+Kanon4txt/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Kanon4txt/utils/anonym_utils.py,sha256=JPeHz6_5VX3iFkM6-8C2K8NIlgyGi2fr_iAkhXFoLmg,13225
+Kanon4txt/utils/cluster_utils.py,sha256=slz6slj-IMfOlr4Rx5cJd_OtgnEi9sHCxP5w-qpyJ-g,13684
+Kanon4txt/utils/llm_utils.py,sha256=3gL-if1Gd4L_5AFQFlRaX5_uW4uR306S5YayyZ3iK-w,2820
+Kanon4txt/utils/models.py,sha256=Xyx8vweTSOt-8wDogFTN8JfvFDEpaZFm1ajxTMo84tk,340
+Kanon4txt/utils/nlp_utils.py,sha256=nfhTuJvCPRBvj64up-yCI60voP1XxQifJO6wz_NtEqI,12844
+Kanon4txt/utils/utilization_utils.py,sha256=n1sW-Zpk09UFfwnYnPSl9L9dLE9Htgft3c0FKO7MZ1w,5704
+kanon4txt-0.0.1.dist-info/METADATA,sha256=h0_ELOsWHkc_M8rWUGvt428E9y6tP7PJ1snLPMaC2Lc,672
+kanon4txt-0.0.1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+kanon4txt-0.0.1.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+kanon4txt-0.0.1.dist-info/RECORD,,
