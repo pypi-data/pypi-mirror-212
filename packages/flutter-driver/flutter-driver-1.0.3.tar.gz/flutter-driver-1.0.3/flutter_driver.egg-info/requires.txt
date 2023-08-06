@@ -1,0 +1,2 @@
+aiohttp
+jsonrpc_base
