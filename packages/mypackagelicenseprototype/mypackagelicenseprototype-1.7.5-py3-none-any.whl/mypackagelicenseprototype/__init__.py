@@ -1,0 +1,2 @@
+from mypackagelicenseprototype.PackageContent import *
+
