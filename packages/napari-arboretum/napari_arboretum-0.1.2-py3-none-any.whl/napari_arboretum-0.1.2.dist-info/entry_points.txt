@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-arboretum = napari_arboretum:napari.yaml
