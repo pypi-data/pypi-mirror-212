@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pypi-mr
+Version: 0.0.2
+Summary: Check if package exists on pypi registry using simple API. Clean packages that belongs to closed/merged GitLab MRs
+Author-email: Alexander Rodionov <tandav@tandav.me>
+Project-URL: source, https://github.com/tandav/pypi-mr
+Project-URL: docs, https://tandav.github.io/pypi-mr/
+Project-URL: issues, https://github.com/tandav/pypi-mr/issues
+Project-URL: release notes, https://github.com/tandav/pypi-mr/releases
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# pypi-mr
+This package allows:
+1. check if package exists on pypi registry using [simple API](https://warehouse.pypa.io/api-reference/legacy.html#simple-project-api).
+2. clean packages that belongs to closed/merged GitLab MRs
