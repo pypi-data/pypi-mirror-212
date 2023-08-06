@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+ordinal_number/__init__.py
+ordinal_number/ordinal_number.py
+ordinal_number.egg-info/PKG-INFO
+ordinal_number.egg-info/SOURCES.txt
+ordinal_number.egg-info/dependency_links.txt
+ordinal_number.egg-info/top_level.txt
