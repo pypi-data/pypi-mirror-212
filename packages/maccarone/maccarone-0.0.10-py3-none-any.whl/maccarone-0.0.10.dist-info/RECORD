@@ -1,0 +1,17 @@
+maccarone/__init__.py,sha256=Syk5IHJqq-D-urZuQ4ZpVRunAp63T0lcyMa4MSzF7Ok,343
+maccarone/caching.mn.py,sha256=i5Gd8W-qmm4v_-Vgatbn5idYuCA_bpiT6CvjJX1Frk4,1140
+maccarone/caching.py,sha256=VcE3rvNehiYm530ca3I-Zuv0I1Kxcu_M1Q_Roo1iwMw,1306
+maccarone/loader.mn.py,sha256=J_KMFLa2zLlDmj_O1a6c0iBYahn5ETwROlJ2AWRdAxI,3122
+maccarone/loader.py,sha256=Pdj_f3HPtaxGPMz8Pn-PwriENxJQPhTE8CibxAeZBgE,3122
+maccarone/openai.py,sha256=IUtngfSzexXZcJFPpC_Se7LyMACriqQW7ZsPmXH9r1c,1802
+maccarone/preprocessor.py,sha256=orvGX4gA8jrJJaKeqpwOqpg_fqV22tM1lA1002VvuBk,4141
+maccarone/scripts/preprocess.mn.py,sha256=yaUi_4l_f_O3YDD6N97GC6svwDT9ieB06aaX3vAS_hc,1090
+maccarone/scripts/preprocess.py,sha256=_CQiwJE7ZyDxf61-U-ZzGxyb94am8TIT6xieE2NZ7Ro,1261
+maccarone/test/test_caching.py,sha256=0hcp89CtPxwh-fxKjDKWHMG0HD7gtTqqeApr98NMvEU,627
+maccarone/test/test_preprocessor.py,sha256=zskVOJhZO4thxS31jkNVFTMrZjUonUGflKxlnWuw2GQ,2523
+maccarone-0.0.10.dist-info/LICENSE,sha256=2OW7B7pFLBp34WWu-Y8755nVJvAWxFUDUzWKVgojsZo,1074
+maccarone-0.0.10.dist-info/METADATA,sha256=6nk6RmUzWfpudZgYngXYy93Fz3xdXCF7mCDIBiKY0D8,3698
+maccarone-0.0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+maccarone-0.0.10.dist-info/entry_points.txt,sha256=XIz83xROdSBjyw6fudsqFTbrcLLIsbahNTZI6EJ7lSc,71
+maccarone-0.0.10.dist-info/top_level.txt,sha256=L7Y2yTK5s0BupF9Ip5mhvJ5ke8UwCk2uzBr-aCYfJp4,10
+maccarone-0.0.10.dist-info/RECORD,,
