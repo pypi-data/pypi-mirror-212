@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: torchbricks
+Version: 0.0.4
+Summary: Decoupled and modular approach to building multi-task ML models
+Author-email: Peter Hviid Christianse <PeterHviidChristiansen@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Peter Christiansen
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/PeteHeine/torchbricks
+Keywords: torch,multi-task,machine learning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch (>=1.7)
+Requires-Dist: torchmetrics (>=0.10.0)
+
+# torchbricks
+
+[![codecov](https://codecov.io/gh/PeteHeine/torchbricks/branch/main/graph/badge.svg?token=torchbricks_token_here)](https://codecov.io/gh/PeteHeine/torchbricks)
+[![CI](https://github.com/PeteHeine/torchbricks/actions/workflows/main.yml/badge.svg)](https://github.com/PeteHeine/torchbricks/actions/workflows/main.yml)
+
+
+## Install it from PyPI
+
+```bash
+pip install torchbricks
+```
+
+## Usage
+
+```py
+## MISSING
+```
+
+```bash
+$ python -m torchbricks
+#or
+$ torchbricks
+```
+
+## Development
+
+Read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
+## Combines mamba and poetry
+Setup is described in https://stackoverflow.com/a/71110028
+
+I decided to combine the two to use mamba to easily manage pytorch+cuda and poetry to easily package to later easily package is as pypi library
+
+Apart from pytorch and cuda all libraries should be install with poetry.
+
+Consider just using mamba for installing libraries.
+
+### Install
+
+    conda create --name my_project_env --file conda-linux-64.lock
+    conda activate my_project_env
+    poetry install
+
+### Activating the environment
+
+    conda activate my_project_env
+
+# Updating the environment
+
+    # Re-generate Conda lock file(s) based on environment.yml
+    conda-lock -k explicit --conda mamba -f environment.yml
+
+    # Update Conda packages based on re-generated lock file
+    mamba update --file conda-linux-64.lock
