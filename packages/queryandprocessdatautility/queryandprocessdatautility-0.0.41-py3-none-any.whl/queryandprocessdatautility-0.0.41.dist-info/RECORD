@@ -1,0 +1,10 @@
+queryandprocessdatautility/TimeSeriesForecasting.py,sha256=zM08pWTOHiMO7pteP5bgJBzSP5WxlgAxozXghnWPs4U,7941
+queryandprocessdatautility/__init__.py,sha256=YvjWt1TyKkmElR2uKCakxr-MHLz1bTChVIr1F3pXJrc,72179
+queryandprocessdatautility/autoarimaForecast.py,sha256=bTaEptY5jBq16_EtfOI2yUmGeHTvYuP5THoBMG_dT_0,1069
+queryandprocessdatautility/autoetsForecast.py,sha256=9JIYgKtVQSUUmE5UvIZCO-dbxKgYe_0SFbA6l34JLek,1050
+queryandprocessdatautility/prophetForecast.py,sha256=HLga3Pg1IJsf4tnVgDw0Q4TFK0MKFebuccEBD5-4Efs,459
+queryandprocessdatautility-0.0.41.dist-info/LICENCE.txt,sha256=2qX9IkEUBx0VJp1Vh9O2dsRwE-IpYId0lXDyn7OVsJ8,1073
+queryandprocessdatautility-0.0.41.dist-info/METADATA,sha256=s5mJvuUlXeGT7-PUYv7lkVj28KmF3Bcc8mSaG48yivQ,549
+queryandprocessdatautility-0.0.41.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+queryandprocessdatautility-0.0.41.dist-info/top_level.txt,sha256=AkoadqVJY1CTJCQI0vRd5tDQ_DuiXJ-WLeHA9QYyNUw,27
+queryandprocessdatautility-0.0.41.dist-info/RECORD,,
