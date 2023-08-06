@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: easydags
+Version: 0.0.1
+Summary: Dags made easy
+Home-page: https://github.com/magralo/easydags
+Author: Mateo Graciano
+Author-email: magralo@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
