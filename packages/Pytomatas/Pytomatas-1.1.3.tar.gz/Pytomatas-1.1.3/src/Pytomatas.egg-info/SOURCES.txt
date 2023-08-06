@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/Pytomatas/__init__.py
+src/Pytomatas/dfa.py
+src/Pytomatas/nfa.py
+src/Pytomatas/pda.py
+src/Pytomatas/tm.py
+src/Pytomatas.egg-info/PKG-INFO
+src/Pytomatas.egg-info/SOURCES.txt
+src/Pytomatas.egg-info/dependency_links.txt
+src/Pytomatas.egg-info/top_level.txt
