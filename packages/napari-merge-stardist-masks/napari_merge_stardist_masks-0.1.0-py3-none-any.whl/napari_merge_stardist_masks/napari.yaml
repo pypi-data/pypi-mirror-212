@@ -1,0 +1,17 @@
+name: napari-merge-stardist-masks
+display_name: StarDist OPP
+contributions:
+  commands:
+    - id: napari-merge-stardist-masks.stardist_opp_sample_data
+      python_name: napari_merge_stardist_masks._sample_data:stardist_opp_sample_data
+      title: Load sample data for StarDist OPP
+    - id: napari-merge-stardist-masks.stardist_opp_widget
+      python_name: napari_merge_stardist_masks._widget:StarDistOPPWidget
+      title: StarDist OPP
+  sample_data:
+    - command: napari-merge-stardist-masks.stardist_opp_sample_data
+      display_name: StarDist OPP sample data
+      key: unique_id.1
+  widgets:
+    - command: napari-merge-stardist-masks.stardist_opp_widget
+      display_name: StarDist OPP
