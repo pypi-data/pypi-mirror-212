@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: demosdkpypi
+Version: 1.9.1
+Summary: demo SDK for the Python programming language
+Home-page: https://github.com/skyflowapi/skyflow-python/
+Author: Bharti
+Author-email: bharti.sagar@skyflow.com
+Requires-Python: >=3.7
+
+# demosdkpypi
