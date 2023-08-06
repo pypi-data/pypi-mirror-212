@@ -1,0 +1,12 @@
+ppao/__init__.py,sha256=kuZsxbFbzUiUWMrrmYeCurXBvr6qe33iUgWQsRP-YCM,342
+ppao/constants.py,sha256=NkUxUsCuZG6KXiKlbxObPVYiZCe2lgmbfPK48coY1jc,450
+ppao/custom_types.py,sha256=QmaiIVDOStpYFtzZvESa8AzFJ2aza_qRK8XjJXOkSjw,3455
+ppao/exceptions.py,sha256=9N67PcmD3SJ2jo1mKnU2L0NpjTJGiff7bYFOiQHWFZY,7190
+ppao/grouper.py,sha256=r4UoiEBWNa9yB1V6atjZ-1zMFDWGCJeMm-oHq3kWw9g,6905
+ppao/matrix.py,sha256=QXSQPaptlvsR04ee-c4cqBMHuyQV7EcLmArqtdAMrPk,8135
+ppao/settings.py,sha256=BYY3yJTdl659UsK1VjRiYrQUxZucxPWecnQ262DWPjo,2147
+ppao/solver.py,sha256=LbE8xhktqwFqPDaM2Tv0qPbXOEZP6HnC_jQGhRhMNP8,12062
+ppao-1.0.dist-info/LICENSE,sha256=NavDlSdSbSvU-IbT28w0qD53JIWjLuQY6S-Eet54oOg,1072
+ppao-1.0.dist-info/METADATA,sha256=toggzw_53KZnJGjhbOZeh9oOn388XUd83T_CxCR520w,5092
+ppao-1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+ppao-1.0.dist-info/RECORD,,
