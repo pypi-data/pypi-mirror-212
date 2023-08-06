@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+c_monocypher.c
+monocypher.c
+monocypher.h
+pyproject.toml
+setup.cfg
+setup.py
+pymonocypher.egg-info/PKG-INFO
+pymonocypher.egg-info/SOURCES.txt
+pymonocypher.egg-info/dependency_links.txt
+pymonocypher.egg-info/requires.txt
+pymonocypher.egg-info/top_level.txt
+test/__init__.py
+test/blake2-kat.json
+test/test_monocypher.py
