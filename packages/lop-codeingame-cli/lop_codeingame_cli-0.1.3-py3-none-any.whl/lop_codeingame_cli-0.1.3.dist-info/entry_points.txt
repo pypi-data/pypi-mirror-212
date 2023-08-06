@@ -1,0 +1,3 @@
+[console_scripts]
+lopdownload=lop_codeingame_cli.command.lopdownload:run
+
