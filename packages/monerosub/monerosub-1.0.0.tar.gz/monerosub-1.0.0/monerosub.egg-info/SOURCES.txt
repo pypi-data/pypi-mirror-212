@@ -1,0 +1,8 @@
+README.md
+setup.py
+monerosub/__init__.py
+monerosub/monerosub.py
+monerosub.egg-info/PKG-INFO
+monerosub.egg-info/SOURCES.txt
+monerosub.egg-info/dependency_links.txt
+monerosub.egg-info/top_level.txt

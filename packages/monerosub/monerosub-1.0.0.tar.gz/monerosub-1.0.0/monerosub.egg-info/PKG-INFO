@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: monerosub
+Version: 1.0.0
+Summary: monerosub is an easy way to create/decode monero-subscription codes.
+Home-page: https://github.com/lukeprofits/monerosub
+Author: Luke Profits
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
