@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: paquete-de-prueba
+Version: 0.0.1
+Summary: Código fuente para publicar en PYPI el ejemplo de un paquete para la clases de módulos y paquetes del bootcamp de Python avanzado para Código Facilito
+Home-page: https://github.com/natayadev/PaquetePrueba
+Author: Nataya Flores

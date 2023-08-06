@@ -1,0 +1,11 @@
+setup.py
+modulos/main.py
+modulos/modulos_matematicos/__init__.py
+modulos/modulos_matematicos/calculos_aritmeticos.py
+modulos/modulos_matematicos/modulos_estadisticos/__init__.py
+modulos/modulos_matematicos/modulos_estadisticos/calculos_desvios.py
+paquete_de_prueba.egg-info/PKG-INFO
+paquete_de_prueba.egg-info/SOURCES.txt
+paquete_de_prueba.egg-info/dependency_links.txt
+paquete_de_prueba.egg-info/requires.txt
+paquete_de_prueba.egg-info/top_level.txt
