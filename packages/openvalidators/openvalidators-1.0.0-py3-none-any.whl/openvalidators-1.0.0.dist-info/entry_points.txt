@@ -1,0 +1,3 @@
+[console_scripts]
+foundation-validator = openvalidators.neuron:main
+
