@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+gtfstools/__init__.py
+gtfstools/agency.py
+gtfstools/calendar.py
+gtfstools/calendar_dates.py
+gtfstools/gtfs.py
+gtfstools/helpers.py
+gtfstools/routes.py
+gtfstools/stop_times.py
+gtfstools/stops.py
+gtfstools/trips.py
+gtfstools.egg-info/PKG-INFO
+gtfstools.egg-info/SOURCES.txt
+gtfstools.egg-info/dependency_links.txt
+gtfstools.egg-info/top_level.txt
