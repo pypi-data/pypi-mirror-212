@@ -1,0 +1,7 @@
+cachetools
+requests
+rich
+boto3
+click
+uplink
+PyYAML
