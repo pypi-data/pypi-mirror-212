@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+boston/__init__.py
+boston/house.py
+boston.egg-info/PKG-INFO
+boston.egg-info/SOURCES.txt
+boston.egg-info/dependency_links.txt
+boston.egg-info/requires.txt
+boston.egg-info/top_level.txt
+boston/resources/boston_house_prices.csv
+boston/resources/descr.rst
