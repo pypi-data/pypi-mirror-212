@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/IPYNBrendererYT/__init__.py
+src/IPYNBrendererYT/custom_exception.py
+src/IPYNBrendererYT/logger.py
+src/IPYNBrendererYT/youtube.py
+src/IPYNBrendererYT.egg-info/PKG-INFO
+src/IPYNBrendererYT.egg-info/SOURCES.txt
+src/IPYNBrendererYT.egg-info/dependency_links.txt
+src/IPYNBrendererYT.egg-info/requires.txt
+src/IPYNBrendererYT.egg-info/top_level.txt
