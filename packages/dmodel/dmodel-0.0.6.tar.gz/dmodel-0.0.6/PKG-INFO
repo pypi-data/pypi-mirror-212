@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dmodel
+Version: 0.0.6
+Summary: models for deta space
+Author: Daniel Arantes
+Author-email: arantesdv@me.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: anyio (>=3.6.2,<4.0.0)
+Requires-Dist: dhint (>=0.0.9,<0.0.10)
+Requires-Dist: dtbase (>=0.0.4,<0.0.5)
+Requires-Dist: python-multipart (>=0.0.6,<0.0.7)
+Requires-Dist: smartjs (>=0.1.6,<0.2.0)
+Requires-Dist: typing-extensions (>=4.6.2,<5.0.0)
+Requires-Dist: uvicorn (>=0.22.0,<0.23.0)
