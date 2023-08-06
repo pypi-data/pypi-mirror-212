@@ -1,0 +1,39 @@
+- 0.4.0
+	* Upgrade dependencies (chainlib 0.4.x)
+- 0.3.1
+	* Change license to AGPL3 and copyright waived to public domain
+- 0.3.0
+	* Implement on chainlib 0.3.0
+- 0.2.12
+	* Breaking upgrade of chainlib.
+	* Implement generic block and tx.
+- 0.2.11
+	* Upgrade shep to handle exception in filestore list
+- 0.2.10
+	* Upgrade shep to guarantee state lock atomicity
+- 0.2.9
+	* Minimize instantiations of adapters in filter execution
+- 0.2.8
+	* Upgrade chainsyncer
+- 0.2.7
+	* Upgrade chainlib
+- 0.2.6
+	* Deps upgrade
+- 0.2.5
+	* Deps upgrade
+- 0.2.4
+	* Allow omission of state store sync in queue store backend
+- 0.2.2
+	* Fix missing symbol crashes related to race conditions
+- 0.2.1
+	* Receive removed race checks from chainqueue
+- 0.2.0
+	* primitive race condition handling between fs access of sync and queue
+	* re-enable throttling based on in-flight transaction count
+- 0.1.2
+	* add settings object
+- 0.1.0
+	* consume non chain-specific code 
+- 0.0.1
+	* chainqueue and chainsyncer migration
+	* environment base
