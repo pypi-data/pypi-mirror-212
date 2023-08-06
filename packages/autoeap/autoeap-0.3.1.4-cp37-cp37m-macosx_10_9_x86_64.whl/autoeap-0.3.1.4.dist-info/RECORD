@@ -1,0 +1,14 @@
+PDM.cpython-37m-darwin.so,sha256=NaNH6_3p-LMXSB9UOkQ-UFWUQv9zWIJlA0BfJO1raTs,81808
+autoeap/__init__.py,sha256=GK5bjU_bDwbHS5hr-hf92wEgQ5EsiwkpUwY5-E0viNo,207
+autoeap/aperture_to_fits.py,sha256=pwidgSAhp0m3IvrT0g-5hWpCtypLTAq-6TcyzebCCKU,2882
+autoeap/autoeapcore.py,sha256=5wCY01HkZHSqSG8o0D4_1XnhbCl-2YCM-Ao8nvf6ab4,82291
+autoeap/detrender.py,sha256=eE18_5x6DL1fTH1rrt7Edr-19_LKOnBkzZKCspLGtMM,8943
+autoeap/k2sc_stable.py,sha256=xHHGKPvDB-3259gXJxbltyYpWwON1ujEA-zO02KaJPs,17277
+autoeap/photutils_stable.py,sha256=b4Hl0EL_ttmw_RFVntiMlMmh2romUtkyGbaPSyEaNHw,61649
+autoeap/version.py,sha256=07JB4tkKwHRWLBolMfe5CVhS6JcuVTstcK-W92eF7Vg,24
+autoeap-0.3.1.4.dist-info/LICENCE,sha256=7uvxv6aHyi5e2iHtHwgK7iXLQwxOgJCmRhIl9P733LU,1080
+autoeap-0.3.1.4.dist-info/METADATA,sha256=SOBgPy9Rmp7ziPd4xC9yGJhvJraWULW2h0VwLnSQoFk,14162
+autoeap-0.3.1.4.dist-info/WHEEL,sha256=YiopvuMYSKV6Y-7cdLZE7bZlnCzK-2hOQbHfu5FfM0c,110
+autoeap-0.3.1.4.dist-info/entry_points.txt,sha256=sG99ouZQXOmDls-3A7xEP3kJupfdrOb1aP_swVGmWuA,62
+autoeap-0.3.1.4.dist-info/top_level.txt,sha256=gSsuVm6FCKJJhkrORiZWklDpuAQuLxE8jL0AE_D3Ylc,12
+autoeap-0.3.1.4.dist-info/RECORD,,
