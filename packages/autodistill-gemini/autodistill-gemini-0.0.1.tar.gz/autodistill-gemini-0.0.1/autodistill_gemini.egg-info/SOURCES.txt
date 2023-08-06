@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_gemini/__init__.py
+autodistill_gemini.egg-info/PKG-INFO
+autodistill_gemini.egg-info/SOURCES.txt
+autodistill_gemini.egg-info/dependency_links.txt
+autodistill_gemini.egg-info/requires.txt
+autodistill_gemini.egg-info/top_level.txt
