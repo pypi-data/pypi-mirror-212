@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: openkeys
+Version: 0.0.1
+Author-Email: Yevgnen Koh <wherejoystarts@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pandas>=2.0.2
+Description-Content-Type: text/markdown
+
+# openkeys
+
+
