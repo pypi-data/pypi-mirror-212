@@ -1,0 +1,9 @@
+azure-mgmt-security>=1.0.0
+azure-identity>=1.13.0
+azure-cli-core>=2.49.0
+azure-mgmt-resourcegraph>=8.0.0
+azure-mgmt-resource>=21.2.1
+azure-storage-blob>=12.16.0
+schema>=0.7.5
+cachetools>=5.3.1
+opnieuw>=1.2.1
