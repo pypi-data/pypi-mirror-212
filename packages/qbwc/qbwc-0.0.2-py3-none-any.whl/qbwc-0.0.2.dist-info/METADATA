@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: qbwc
+Version: 0.0.2
+Summary: QuickBooks Desktop Webconnector Implementation
+Home-page: https://www.github.com/bill-ash/qbwc
+Author: Bill Ash
+Author-email: bill@overco.net
+License: MIT
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.9
+License-File: LICENSE.md
+Requires-Dist: Django (>=4.2)
+Requires-Dist: lxml (>=4.9.2)
+Requires-Dist: spyne (>=2.14.0)
+
+## QBWC: Quickbooks Desktop Webconnector 
+
+**Experimental**
+
+Django package for syncing data between django application and 
+QuickBooks Desktop via the Quickbooks Webconnector (QBWC). 
+
+Implementation includes transfer services (push, pull, re-sync) for: 
+
+- gl accounts  
+- other name list
+- expenses (credit card charges)
+- customers 
+- credit cards 
+- vendors
+
+Road map: 
+
+- vendor bills
+- journal entries
+- QuickBooks Reports 
+
+## Installation 
+
+Install the latest development version from github using: 
+
+```
+pip install git+https://github.com/bill-ash/qbwc
+```
+
+or from pypi: 
+
+```
+pip install qbwc
+```
+
+
+## Example 
+
+Example directory includes application with sample apps for each of the entites mentioned above. 
+
+Repeated patterns will be abstracted in the `BaseObjectMixin` model and are likely to change.
+
+
+
+
