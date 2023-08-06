@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: predictapi
+Version: 0.0.4
+Summary: The predcit API
+Author: The predict API
+Requires-Python: >=3.7
+
