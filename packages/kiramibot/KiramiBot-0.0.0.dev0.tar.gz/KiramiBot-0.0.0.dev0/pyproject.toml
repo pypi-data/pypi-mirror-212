@@ -1,0 +1,43 @@
+[project]
+name = "KiramiBot"
+version = "0.0.0.dev0"
+description = "🌟 读作 Kirami，写作星见，简明轻快的机器人应用。"
+authors = [
+    { name = "Akirami", email = "akiramiaya@outlook.com" },
+]
+requires-python = ">=3.10,<4.0"
+readme = "README.md"
+keywords = [
+    "kirami",
+    "bot",
+    "chatbot",
+    "qq",
+    "qqbot",
+    "onebot",
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Framework :: Robot Framework",
+    "Framework :: Robot Framework :: Library",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+]
+
+[project.license]
+text = "AGPL-3.0"
+
+[project.urls]
+repository = "https://github.com/A-kirami/KiramiBot"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
