@@ -1,0 +1,7 @@
+shapes_recognition/__init__.py,sha256=a1icaSTj0q_sdqPfiRb0S96ZB-G6jFk6FmQs8aTzZEA,266
+shapes_recognition/ai_tables.cpython-310-darwin.so,sha256=CKwRFvIaEDmBLMnKb6JPWXuwoReFDBZ5EkpxhXVm9OU,656872
+shapes_recognition/pure_cython/ai_tables.cpython-310-darwin.so,sha256=CKwRFvIaEDmBLMnKb6JPWXuwoReFDBZ5EkpxhXVm9OU,656872
+shapes_recognition-2.0.0.dist-info/METADATA,sha256=M3FsyWfGJjQHbFd2IiIg9NLoGXZNuyEvdXptJTDa4lY,1155
+shapes_recognition-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+shapes_recognition-2.0.0.dist-info/top_level.txt,sha256=9sYtQ4HtoGGQTSu-HdqFzyhrd4kAPc2A3SB9ODi4o0I,19
+shapes_recognition-2.0.0.dist-info/RECORD,,
