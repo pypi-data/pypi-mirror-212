@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: abmatrix
+Version: 0.3.3
+Summary: Python module to read and parse AB Matrix files
+Author-email: Daniel Garrigan <popgendad@proton.me>
+Project-URL: Homepage, https://github.com/wisdomhealth-inc/abmatrix
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# abmatrix
+
+[![Upload Python Package](https://github.com/wisdomhealth-inc/abmatrix/actions/workflows/python-publish.yml/badge.svg)](https://github.com/wisdomhealth-inc/abmatrix/actions/workflows/python-publish.yml)  [![Test subset](https://github.com/wisdomhealth-inc/abmatrix/actions/workflows/test_subset.yml/badge.svg)](https://github.com/wisdomhealth-inc/abmatrix/actions/workflows/test_subset.yml)  [![Test extraction](https://github.com/wisdomhealth-inc/abmatrix/actions/workflows/test_extraction.yml/badge.svg)](https://github.com/wisdomhealth-inc/abmatrix/actions/workflows/test_extraction.yml)
+
+Python3 module defining a class called `abmatrix` to read and parse AB Matrix files
+
+## Module contents
+
+```python
+abmatrix.abmatrix()
+```
+
+Initialize a new, empty instance of the `abmatrix` class
+
+
+**Returns**: 
+
+Initialized instance of the `abmatrix` class.
+
+---
+
+```python
+abmatrix.abmatrix.read(filename)
+```
+
+Read an AB Matrix file, read header and lazy load genotype data. The input AB Matrix file can be compressed in `zip` format. _Coming soon_: Can read input file from S3 cloud object storage.
+
+| Parameter | Type | Required | Description |
+| --------- | ---- | -------- | ----------- |
+| `filename` | str | Yes | Path to input AB Matrix file |
+
+**Returns**:
+
+None
+
+---
+
+```python
+abmatrix.abmatrix.header()
+```
+
+Return header metadata
+
+**Returns**:
+
+Dictionary containing AB Matrix header metadata
+
+---
+
+```python
+abmatrix.abmatrix.write(filename, genotypes)
+```
+
+Write an AB Matrix file from in-memory instance of class. The `write` method only writes uncompressed text, support for both zip output and writing to S3 cloud object storage are coming soon.
+
+| Parameter | Type | Required | Description |
+| --------- | ---- | -------- | ----------- |
+| `filename` | str | Yes | Path to output AB Matrix file |
+| `genotypes` | str | Yes | The genotype matrix to write |
+
+**Returns**:
+
+None
+
+---
+
+```python
+abmatrix.abmatrix.subset(locus_list, samples=sample_list)
+```
+
+Get subset of AB Matrix data set. If a requested locus or sample ID is not present in the AB Matrix file, then the locus and/or sample is still included, it is just marked as a missing genotype.
+
+| Parameter | Type | Required | Description |
+| --------- | ---- | -------- | ----------- |
+| `locus_list` | str | Yes | List of locus IDs to subset |
+| `sample_list` | str | No | List of sample IDs to subset |
+
+**Returns**:
+
+Genotype matrix as list of dictionaries.
+
+---
+
+```python
+abmatrix.abmatrix.close()
+```
+
+Close instance of abmatrix data set
+
+**Returns**:
+
+None
+
+---
+
+## Example
+```python
+from abmatrix import abmatrix
+
+# Initialize
+myabmatrix = abmatrix.abmatrix()
+
+myabmatrix.read("test_abmatrix.zip")
+
+SNP_IDS = [
+    "442_HPS3",
+    "054_FGF4_chr12",
+    "077_TYRP_LH",
+    "077_TYRP1_SH",
+    "441_USH2A_roan",
+    "277_MC1R_cockersable_Eh",
+]
+
+genotypes = myabmatrix.subset(SNP_IDS)
+myabmatrix.write("test_abmatrix_subset.ab", genotypes)
+
+myabmatrix.close()
+```
