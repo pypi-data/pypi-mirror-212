@@ -1,0 +1,156 @@
+from http import HTTPStatus
+from typing import Any, Dict, Optional, Union
+
+import httpx
+
+from ... import errors
+from ...client import AuthenticatedClient, Client
+from ...models.updates_package_version_class import UpdatesPackageVersionClass
+from ...types import UNSET, Response, Unset
+
+
+def _get_kwargs(
+    name: str,
+    *,
+    client: AuthenticatedClient,
+    assembly_guid: Union[Unset, None, str] = UNSET,
+    version: Union[Unset, None, str] = UNSET,
+    update_class: Union[Unset, None, UpdatesPackageVersionClass] = UNSET,
+) -> Dict[str, Any]:
+    url = "{}/Packages/Installed/{Name}".format(client.base_url, Name=name)
+
+    headers: Dict[str, str] = client.get_headers()
+    cookies: Dict[str, Any] = client.get_cookies()
+
+    params: Dict[str, Any] = {}
+    params["AssemblyGuid"] = assembly_guid
+
+    params["Version"] = version
+
+    json_update_class: Union[Unset, None, str] = UNSET
+    if not isinstance(update_class, Unset):
+        json_update_class = update_class.value if update_class else None
+
+    params["UpdateClass"] = json_update_class
+
+    params = {k: v for k, v in params.items() if v is not UNSET and v is not None}
+
+    return {
+        "method": "post",
+        "url": url,
+        "headers": headers,
+        "cookies": cookies,
+        "timeout": client.get_timeout(),
+        "follow_redirects": client.follow_redirects,
+        "params": params,
+    }
+
+
+def _parse_response(*, client: Client, response: httpx.Response) -> Optional[Any]:
+    if response.status_code == HTTPStatus.OK:
+        return None
+    if response.status_code == HTTPStatus.BAD_REQUEST:
+        return None
+    if response.status_code == HTTPStatus.UNAUTHORIZED:
+        return None
+    if response.status_code == HTTPStatus.FORBIDDEN:
+        return None
+    if response.status_code == HTTPStatus.NOT_FOUND:
+        return None
+    if response.status_code == HTTPStatus.INTERNAL_SERVER_ERROR:
+        return None
+    if client.raise_on_unexpected_status:
+        raise errors.UnexpectedStatus(response.status_code, response.content)
+    else:
+        return None
+
+
+def _build_response(*, client: Client, response: httpx.Response) -> Response[Any]:
+    return Response(
+        status_code=HTTPStatus(response.status_code),
+        content=response.content,
+        headers=response.headers,
+        parsed=_parse_response(client=client, response=response),
+    )
+
+
+def sync_detailed(
+    name: str,
+    *,
+    client: AuthenticatedClient,
+    assembly_guid: Union[Unset, None, str] = UNSET,
+    version: Union[Unset, None, str] = UNSET,
+    update_class: Union[Unset, None, UpdatesPackageVersionClass] = UNSET,
+) -> Response[Any]:
+    """Installs a package
+
+     Requires authentication as administrator
+
+    Args:
+        name (str):
+        assembly_guid (Union[Unset, None, str]):
+        version (Union[Unset, None, str]):
+        update_class (Union[Unset, None, UpdatesPackageVersionClass]):
+
+    Raises:
+        errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.
+        httpx.TimeoutException: If the request takes longer than Client.timeout.
+
+    Returns:
+        Response[Any]
+    """
+
+    kwargs = _get_kwargs(
+        name=name,
+        client=client,
+        assembly_guid=assembly_guid,
+        version=version,
+        update_class=update_class,
+    )
+
+    response = httpx.request(
+        verify=client.verify_ssl,
+        **kwargs,
+    )
+
+    return _build_response(client=client, response=response)
+
+
+async def asyncio_detailed(
+    name: str,
+    *,
+    client: AuthenticatedClient,
+    assembly_guid: Union[Unset, None, str] = UNSET,
+    version: Union[Unset, None, str] = UNSET,
+    update_class: Union[Unset, None, UpdatesPackageVersionClass] = UNSET,
+) -> Response[Any]:
+    """Installs a package
+
+     Requires authentication as administrator
+
+    Args:
+        name (str):
+        assembly_guid (Union[Unset, None, str]):
+        version (Union[Unset, None, str]):
+        update_class (Union[Unset, None, UpdatesPackageVersionClass]):
+
+    Raises:
+        errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.
+        httpx.TimeoutException: If the request takes longer than Client.timeout.
+
+    Returns:
+        Response[Any]
+    """
+
+    kwargs = _get_kwargs(
+        name=name,
+        client=client,
+        assembly_guid=assembly_guid,
+        version=version,
+        update_class=update_class,
+    )
+
+    async with httpx.AsyncClient(verify=client.verify_ssl) as _client:
+        response = await _client.request(**kwargs)
+
+    return _build_response(client=client, response=response)
