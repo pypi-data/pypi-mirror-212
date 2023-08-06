@@ -1,0 +1,4 @@
+requests<3,>=2.25.1
+PyJWT<3,>=2.1.0
+cryptography<42,>=41.0.1
+cachetools<6,>=5.3.1
