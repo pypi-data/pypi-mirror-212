@@ -1,0 +1,8 @@
+KitronikPicoZIP96WheelSetup.py
+LICENSE
+README.md
+ZIP96Pico.py
+KitronikPicoZIP96.egg-info/PKG-INFO
+KitronikPicoZIP96.egg-info/SOURCES.txt
+KitronikPicoZIP96.egg-info/dependency_links.txt
+KitronikPicoZIP96.egg-info/top_level.txt
