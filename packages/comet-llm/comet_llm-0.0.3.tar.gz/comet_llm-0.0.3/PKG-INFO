@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: comet_llm
+Version: 0.0.3
+Summary: Comet logger for LLM
+Home-page: https://www.comet.ml
+Author: Comet ML Inc.
+Author-email: mail@comet.ml
+License: Proprietary
+Keywords: comet_llm
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Comet SDK for logging LLM chains
