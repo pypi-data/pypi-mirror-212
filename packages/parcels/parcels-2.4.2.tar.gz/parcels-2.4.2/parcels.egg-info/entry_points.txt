@@ -1,0 +1,2 @@
+[console_scripts]
+parcels_convert_npydir_to_netcdf = parcels.scripts.convert_npydir_to_netcdf:main
