@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: exampleproject-crida
+Version: 0.2.0
+Summary: 
+Author: Sergi Mas-Pujol
+Author-email: smas@e-crida.enaire.es
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Example of usage
+
+Last update: 05/06/2023
+
+This project aims to be used as an example of a Python 
+project structure. It is intended to be used as a guide
+
+## Structure
+
+The structure of the project is the following:
+
+```
+exampleProject
+│   README.md --> Main documentaiton
+│   data --> Static data of the project 
+|   exampleproject --> Main package of the project
+|   Notebooks --> Jupyter notebooks
+|   tests --> Unit tests
+|   utls --> Aditional functions
+```
+
