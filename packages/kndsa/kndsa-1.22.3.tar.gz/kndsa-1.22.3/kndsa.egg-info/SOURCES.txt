@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+kndsa.egg-info/PKG-INFO
+kndsa.egg-info/SOURCES.txt
+kndsa.egg-info/dependency_links.txt
+kndsa.egg-info/top_level.txt
