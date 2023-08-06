@@ -1,0 +1,5 @@
+numpy
+ase
+scipy
+cellconstructor
+python-sscha
