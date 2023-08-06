@@ -1,0 +1,2 @@
+[console_scripts]
+synthetic = synthetic.__main__:main
