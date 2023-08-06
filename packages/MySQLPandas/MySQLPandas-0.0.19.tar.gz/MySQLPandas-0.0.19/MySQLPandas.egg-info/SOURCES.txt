@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+MySQLPandas/__init__.py
+MySQLPandas/core.py
+MySQLPandas.egg-info/PKG-INFO
+MySQLPandas.egg-info/SOURCES.txt
+MySQLPandas.egg-info/dependency_links.txt
+MySQLPandas.egg-info/requires.txt
+MySQLPandas.egg-info/top_level.txt
+MySQLPandas/lib/DataFrameClass.py
+MySQLPandas/lib/ErrorClass.py
+MySQLPandas/lib/__init__.py
+tests/test_DataFrameClass.py
+tests/test_coreClass.py
