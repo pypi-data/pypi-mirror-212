@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+erdgen/__init__.py
+erdgen/__main__.py
+erdgen/erdgen.py
+erdgen.egg-info/PKG-INFO
+erdgen.egg-info/SOURCES.txt
+erdgen.egg-info/dependency_links.txt
+erdgen.egg-info/requires.txt
+erdgen.egg-info/top_level.txt
+erdgen/src/__init__.py
+erdgen/src/erdgen.py
+tests/__init__.py
+tests/test_erdgen.py
