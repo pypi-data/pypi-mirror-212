@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+DocumentInsightsGenerator/__init__.py
+DocumentInsightsGenerator/documentinsightsgenerator.py
+DocumentInsightsGenerator.egg-info/PKG-INFO
+DocumentInsightsGenerator.egg-info/SOURCES.txt
+DocumentInsightsGenerator.egg-info/dependency_links.txt
+DocumentInsightsGenerator.egg-info/requires.txt
+DocumentInsightsGenerator.egg-info/top_level.txt
+tests/__init__.py
+tests/test_documentinsightsgenerator.py

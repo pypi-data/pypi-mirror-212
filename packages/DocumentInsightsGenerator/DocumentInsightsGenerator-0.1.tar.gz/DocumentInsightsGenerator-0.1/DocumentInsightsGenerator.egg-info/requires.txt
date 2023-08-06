@@ -1,0 +1,9 @@
+spacy
+requests
+transformers
+scikit-learn
+pdfplumber
+pytesseract
+pdfminer.six
+Pillow
+docx2txt
