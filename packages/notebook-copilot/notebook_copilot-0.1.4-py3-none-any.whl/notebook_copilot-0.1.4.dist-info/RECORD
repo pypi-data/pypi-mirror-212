@@ -1,0 +1,16 @@
+notebook_copilot/__init__.py,sha256=pzBcFIa21USQG-d3RqjPs7NRe53ZDvYmaotC37UYgdU,52
+notebook_copilot/agents.py,sha256=FNGZK9qDkYDJY9FDZlK4B5ZBJU00EJNP-_HCZjwvgtE,1678
+notebook_copilot/chains.py,sha256=v-HCN00Fergt_gYPJp6hxfGu6Xpe2-jqMDhIL8R6R94,1296
+notebook_copilot/context.py,sha256=alNBFbqFdtiY8nPAj_UVUCB2NXMY9lAHYUnEfuMISWE,1944
+notebook_copilot/notebook_copilot.py,sha256=UaFCpgeP4LVW-ZRahpK43VvB7cOdo95mBSmwAVKL27A,4554
+notebook_copilot/output.py,sha256=PiisdK8IrHg9FPTtaRbYk4hB0VwZxgQQc5VMTK6bJCE,2469
+notebook_copilot/prompts.py,sha256=HM3VJ3_D7ilmNoaqq_vqz0EdXyWqd2RdvjnceKklhUc,2775
+notebook_copilot/tools.py,sha256=u0LDrx3k4sBGX5o5go3WML-adZ0yrgZkVTwOBe7j2kE,2328
+notebook_copilot/utils.py,sha256=8J-ApgecyTv0lRw_6ufyaWu4gfd6aPcnIEoKIWpj1ok,316
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_copilot.py,sha256=IJNBpMeCklPgkbow-kTdKTL2QvOcg_LtVq48VhxSsYA,2129
+notebook_copilot-0.1.4.dist-info/LICENSE,sha256=6l4XdniZfwzRsC1L2GGyXdod30hfdXhzlX7KKUjw0Js,1059
+notebook_copilot-0.1.4.dist-info/METADATA,sha256=WwU8xI74nHa0PJ7EEPfuwRgAttU74M_2Mc3sbreNAr4,4312
+notebook_copilot-0.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+notebook_copilot-0.1.4.dist-info/top_level.txt,sha256=Q19vRxywNSfg3cNY_6bRiq-B_6g6WUOWDr6aRzE9iz0,23
+notebook_copilot-0.1.4.dist-info/RECORD,,
