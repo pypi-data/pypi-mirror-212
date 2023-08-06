@@ -1,0 +1,11 @@
+cgsubmit/__init__.py,sha256=Sb_KmdIBo_gPn6c_UF_KoFDXxeASHNqmfKvGaBw2IBU,22
+cgsubmit/__main__.py,sha256=gEdIbij8_RVNdxMIkyi7IKcTzAFCc6qhcYtIXM_IWh0,1706
+cgsubmit/api/__init__.py,sha256=r5H9Aq5Bym1oiwak4wFrNG_Uzf9OGxIIoWZWUT5d0K8,18
+cgsubmit/api/api.py,sha256=qJ7l-RzAIvxMBuH6XQ_WzrDC9dBCqPiFUONGjftfW-s,817
+cgsubmit/games/__init__.py,sha256=1CNyCLYfKbpQO2L97Y1PTSlOaQH0q1s5e-bj0lN6b70,20
+cgsubmit/games/games.py,sha256=XmAh-zp46O1tJGrpeo7cT5gVBSaC_rJ4Qd39zN2N0Ko,2190
+cgsubmit-1.0.8.dist-info/LICENSE,sha256=x4AJ9w025L_xvLMV7D8J5WB1zC0Pb_E7udtGATsJMpo,1084
+cgsubmit-1.0.8.dist-info/METADATA,sha256=PfAhGFrz20bSkBrozzCVh4zC-njnGWH0WU-EdOngfy8,3333
+cgsubmit-1.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cgsubmit-1.0.8.dist-info/top_level.txt,sha256=NXqVHvtJmxxCZI68Ci_JdfgHKlzeHLBgffkVpVYmqjg,9
+cgsubmit-1.0.8.dist-info/RECORD,,
