@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+models/converted_model.tflite
+sspqdd/__init__ (DESKTOP-67JOARI's conflicted copy 2023-05-22).py
+sspqdd/__init__.py
+sspqdd/sspqdd_pkg (DESKTOP-67JOARI's conflicted copy 2023-05-22).py
+sspqdd/sspqdd_pkg.py
+sspqdd.egg-info/PKG-INFO
+sspqdd.egg-info/PKG-INFO (DESKTOP-67JOARI's conflicted copy 2023-05-22)
+sspqdd.egg-info/SOURCES (DESKTOP-67JOARI's conflicted copy 2023-05-22).txt
+sspqdd.egg-info/SOURCES.txt
+sspqdd.egg-info/dependency_links (DESKTOP-67JOARI's conflicted copy 2023-05-22).txt
+sspqdd.egg-info/dependency_links.txt
+sspqdd.egg-info/top_level (DESKTOP-67JOARI's conflicted copy 2023-05-22).txt
+sspqdd.egg-info/top_level.txt

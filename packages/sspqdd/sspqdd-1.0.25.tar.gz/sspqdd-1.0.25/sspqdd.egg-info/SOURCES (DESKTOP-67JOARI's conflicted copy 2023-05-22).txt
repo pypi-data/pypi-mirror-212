@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+models/converted_model.tflite
+sspqdd/__init__.py
+sspqdd/sspqdd_pkg.py
+sspqdd.egg-info/PKG-INFO
+sspqdd.egg-info/SOURCES.txt
+sspqdd.egg-info/dependency_links.txt
+sspqdd.egg-info/top_level.txt
