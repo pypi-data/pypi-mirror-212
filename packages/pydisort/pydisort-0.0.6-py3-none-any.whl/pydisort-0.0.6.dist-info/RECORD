@@ -1,0 +1,16 @@
+pydisort/__init__.py,sha256=JHFVSkoaW9TF7c6haLw-PUiiZ3r7f_ozjpdbxH_vuRk,24
+pydisort/isotropic_scattering.toml,sha256=EEs4zQV9z7nSD5upOK4WvUL07T7T7qrD-zsN-_o60Oc,259
+pydisort/pydisort.cpython-310-darwin.so,sha256=P9qCt_X0ocHqQFWcLScNBnQKpReNQOZQSg0_NG-T-5g,542984
+pydisort/pydisort.cpython-310-x86_64-linux-gnu.so,sha256=1Y45qgNgGEpQCYfNWb5RrSli20AtKEDZ0HSaUCVzvrY,721928
+pydisort/pydisort.cpython-311-darwin.so,sha256=yTcjMxPYImaiBQ3SEDcnFx6o8_uAwVNeaPSCX93-XUE,542984
+pydisort/pydisort.cpython-311-x86_64-linux-gnu.so,sha256=0NrgUOCcvuNwIvu9IcGXMUC1YB-Ds2xSiDokki_AtDc,726024
+pydisort/pydisort.cpython-36m-x86_64-linux-gnu.so,sha256=HiR7Iefyd8v_Zbn3j4ECl4VJ6ZYDlWkns9_4lmY8dCA,664352
+pydisort/pydisort.cpython-37m-x86_64-linux-gnu.so,sha256=rNbOY5sAhMWD3MyqaVoVKYePS7EZW_HZXGYmAu77sC0,709608
+pydisort/pydisort.cpython-38-darwin.so,sha256=5GEtWsr-e04qxU1KCNP6eJSdFhDO-WunAPptsSHMl88,548376
+pydisort/pydisort.cpython-38-x86_64-linux-gnu.so,sha256=vy9SdgBtu_2MIYTkeEKzWfe5cqu9M4VI8m4y3Pb3ll0,800328
+pydisort/pydisort.cpython-39-darwin.so,sha256=UJDU8zJ4HtQ6sKuzXlT5puiH0GoYLH-zJCAxG1oeHuY,542984
+pydisort/pydisort.cpython-39-x86_64-linux-gnu.so,sha256=rPZIKT1f4cc8NVfSYPjrm-rcs-8y46xu546Zr2el_AQ,709640
+pydisort-0.0.6.dist-info/METADATA,sha256=gGH8BYhmI8imOyeH1XbkzIqkm_2er9BywcDVhOxgs40,19721
+pydisort-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pydisort-0.0.6.dist-info/top_level.txt,sha256=-CKw1nKEiDzSuU5EGlGlmhMt5D059Yoo8p1lZB0Ntwc,9
+pydisort-0.0.6.dist-info/RECORD,,
