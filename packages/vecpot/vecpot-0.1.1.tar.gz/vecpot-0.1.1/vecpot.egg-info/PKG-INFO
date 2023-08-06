@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: vecpot
+Version: 0.1.1
+Summary: Python SDK for Vecpot(Embedding as a Service)
+Home-page: https://github.com/vecpot/vecpot-python-sdk
+Author: VecPot
+Author-email: contact@vecpot.com
+Project-URL: Bug Reports, https://github.com/vecpot/vecpot-python-sdk/issues
+Project-URL: Source, https://github.com/vecpot/vecpot-python-sdk
+Project-URL: Documentation, https://docs.vecpot.com/introduction
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# VecPot Python SDK
+
+- [**Documentation**](https://docs.vecpot.com)
+- [**PyPi Package**](https://pypi.org/project/vecpot/)
+
+## Install
+
+```bash
+$ pip install vecpot
+```
+
+## Usage
+
+```python
+import vecpot
+import os
+
+VP_API_KEY = os.getenv("VP_API_KEY")
+vp = vecpot.VecPot(api_key=VP_API_KEY)
+
+embedding_response = vp.embed(text="data")
+print(embedding_response["embeddings"])
+```
