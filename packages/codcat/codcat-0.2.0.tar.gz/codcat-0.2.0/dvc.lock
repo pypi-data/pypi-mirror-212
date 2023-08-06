@@ -1,0 +1,74 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: "python codcat/cli.py preprocess data/code-snippets.csv --tokenizer tweet\
+      \ --output data/preprocessed.csv\n"
+    deps:
+    - path: codcat/cli.py
+      md5: 20a7ea1a2fb77bd6d43babab9c6f854b
+      size: 4525
+    - path: data/code-snippets.csv
+      md5: 90a526045edbf2731f37edfc8edd645e
+      size: 13984413
+    params:
+      params.yaml:
+        preprocess.tokenizer: tweet
+    outs:
+    - path: data/preprocessed.csv
+      md5: b4ac8a71ca55faeb13334040aebd43e6
+      size: 13787825
+  split:
+    cmd:
+    - python codcat/cli.py split data/preprocessed.csv --random-state 42 --test-size
+      0.33 --output-train data/train.csv --output-test data/test.csv
+    deps:
+    - path: codcat/cli.py
+      md5: 20a7ea1a2fb77bd6d43babab9c6f854b
+      size: 4525
+    - path: data/preprocessed.csv
+      md5: b4ac8a71ca55faeb13334040aebd43e6
+      size: 13787825
+    params:
+      params.yaml:
+        split.random_state: 42
+        split.test_size: 0.33
+    outs:
+    - path: data/test.csv
+      md5: 8c33c03aa754dbc86f1681e79ff7ec37
+      size: 4680649
+    - path: data/train.csv
+      md5: 4c522193ca1ac620e1020737a80fdae0
+      size: 9186352
+  train:
+    cmd: python codcat/cli.py train data/train.csv --random-state 42 -o model.onnx
+    deps:
+    - path: codcat/cli.py
+      md5: 20a7ea1a2fb77bd6d43babab9c6f854b
+      size: 4525
+    - path: data/train.csv
+      md5: 4c522193ca1ac620e1020737a80fdae0
+      size: 9186352
+    params:
+      params.yaml:
+        train.random_state: 42
+    outs:
+    - path: model.onnx
+      md5: 4310524371795493cf61e27bd671c291
+      size: 6187159
+  evaluate:
+    cmd: python codcat/cli.py evaluate --model-path model.onnx data/test.csv --report-output
+      eval/live/metrics.json
+    deps:
+    - path: codcat/cli.py
+      md5: 20a7ea1a2fb77bd6d43babab9c6f854b
+      size: 4525
+    - path: data/test.csv
+      md5: 8c33c03aa754dbc86f1681e79ff7ec37
+      size: 4680649
+    - path: model.onnx
+      md5: 4310524371795493cf61e27bd671c291
+      size: 6187159
+    outs:
+    - path: eval/live/metrics.json
+      md5: f26096203f56f08d51d02195ad9b977f
+      size: 3120

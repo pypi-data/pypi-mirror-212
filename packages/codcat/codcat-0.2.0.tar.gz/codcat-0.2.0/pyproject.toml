@@ -1,0 +1,83 @@
+[project]
+name = "codcat"
+dynamic = ["version", "dependencies"]
+description = "Code snippets language classification tool"
+authors = [
+    {name = "Konstantin Templin", email = "1qnbhd@gmail.com"}
+]
+maintainers = [
+    {name = "Konstantin Templin", email = "1qnbhd@gmail.com"}
+]
+urls = {Repository = "https://gitlab.com/codcat/codcat"}
+readme = "README.md"
+keywords = ["code", "snippets", "classification", "language", "NLP", "ML"]
+license = {text = "MIT"}
+requires-python = ">=3.9"
+classifiers = [
+        "Intended Audience :: Science/Research",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3 :: Only",
+        "Topic :: Scientific/Engineering",
+        "Topic :: Scientific/Engineering :: Mathematics",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Topic :: Software Development",
+        "Topic :: Software Development :: Libraries",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools]
+include-package-data = true
+
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm>=6.2", "wheel"]
+
+[tool.setuptools.packages.find]
+include = ["codcat"]
+exclude = ["*tests*", "*notebooks*"]
+
+[tool.setuptools_scm]
+fallback_version = "0.0.1"
+local_scheme = "dirty-tag"
+version_scheme = "release-branch-semver"
+
+
+[tool.black]
+line-length = 80
+target-version = ['py39']
+exclude = '''
+/(
+  | \.git
+  | \.mypy_cache
+  | \.venv
+  | dist
+  | docs
+  | .tox
+  | gists
+)/
+'''
+
+[tool.isort]
+profile = 'black'
+force_grid_wrap = 2
+combine_as_imports = true
+line_length = 80
+skip = ['docs', 'dist', 'venv', '.venv', 'build', 'codcat.egg-info', 'notebooks', '.tox', 'gists']
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+addopts = "--color=yes"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]

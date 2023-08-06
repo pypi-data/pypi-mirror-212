@@ -1,0 +1,41 @@
+stages:
+  preprocess:
+    cmd: |
+      python codcat/cli.py preprocess data/code-snippets.csv --tokenizer ${preprocess.tokenizer} --output data/preprocessed.csv
+    deps:
+    - codcat/cli.py
+    - data/code-snippets.csv
+    params:
+    - preprocess.tokenizer
+    outs:
+    - data/preprocessed.csv
+  split:
+    cmd:
+      - python codcat/cli.py split data/preprocessed.csv --random-state ${split.random_state} --test-size ${split.test_size} --output-train data/train.csv --output-test data/test.csv
+    deps:
+    - codcat/cli.py
+    - data/preprocessed.csv
+    params:
+    - split.random_state
+    - split.test_size
+    outs:
+    - data/test.csv
+    - data/train.csv
+  train:
+    cmd: python codcat/cli.py train data/train.csv --random-state ${train.random_state} -o model.onnx
+    deps:
+    - codcat/cli.py
+    - data/train.csv
+    params:
+    - train.random_state
+    outs:
+    - model.onnx
+  evaluate:
+    cmd: python codcat/cli.py evaluate --model-path model.onnx data/test.csv --report-output eval/live/metrics.json
+    deps:
+    - codcat/cli.py
+    - data/test.csv
+    - model.onnx
+    metrics:
+      - eval/live/metrics.json:
+          cache: false

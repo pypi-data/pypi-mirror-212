@@ -1,0 +1,9 @@
+preprocess:
+  tokenizer: tweet
+
+split:
+  random_state: 42
+  test_size: 0.33
+
+train:
+  random_state: 42
