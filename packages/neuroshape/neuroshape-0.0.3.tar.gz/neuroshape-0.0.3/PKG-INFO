@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: neuroshape
+Version: 0.0.3
+Summary: For computing connectopic and geometric Laplacian eigenmodes and performing null hypothesis testing. As implementation is ongoing, this description is subject to rapid change.
+Home-page: https://github.com/nikitas-k/neuroshape-dev
+Author: Nikitas C. Koussis, Systems Neuroscience Group Newcastle
+Author-email: nikitas.koussis@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
