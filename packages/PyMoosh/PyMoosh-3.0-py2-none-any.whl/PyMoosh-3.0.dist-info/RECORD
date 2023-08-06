@@ -1,0 +1,14 @@
+PyMoosh/__init__.py,sha256=LKb87-WGFLqmplP1fkOZv-w4STQrkQfZ6oHyrbFLKcI,1273
+PyMoosh/core.py,sha256=wAc9gjn5P4a8vFuWfiAWWMCwupIA13H9KDmpXdJlpaw,188241
+PyMoosh/materials.py,sha256=lFqgBkWULzNMwysntXnmAE6IiwGRqb3XpzdpKcG0ceE,4373
+PyMoosh/optim.py,sha256=7Vk_OnoXUxpcvWbQVWU6N09WKvKpKw9o4juLJP04hXY,2661
+PyMoosh/optim_algo.py,sha256=ek5EoLP_F2OVDi3UyOkvRwt-jlCcEGCaKgifwYu8m4A,4571
+PyMoosh/data/material_data.json,sha256=NJMxMWNpZ7SiLXp81qFQhdnJqHpvd_a1DECJj0hYJDo,11075
+PyMoosh/data/solar.json,sha256=Hxyd-NJC6ddLRMXITerAy8r1EGTuxapeRLFURYIaByI,80345
+PyMoosh-3.0.dist-info/DESCRIPTION.rst,sha256=p_0lmHrAVJTFDCTV6ypiYH4FvxEeTl1nCGU61ZUYQ-U,2567
+PyMoosh-3.0.dist-info/METADATA,sha256=r_5Qw9ylyeoiNfPBHE7QFo5fgDwIW69gsoMFzqK9iJY,2990
+PyMoosh-3.0.dist-info/RECORD,,
+PyMoosh-3.0.dist-info/SOURCES (SFConflict antoine.moreau@uca.fr 2023-05-29-10-11-16).txt,sha256=PL2EdwmIIXeARMXTKzzrAsoqD_0Un1FNOr4yCSsbzfE,319
+PyMoosh-3.0.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+PyMoosh-3.0.dist-info/metadata.json,sha256=gdID-4nt-tH2lqdv2ZFZ7r0akz5OR1Gt_DGKUVl94YU,643
+PyMoosh-3.0.dist-info/top_level.txt,sha256=AGfuK-zUrgVOTm-OxcKnbd39SW8uCLEnOpy5UudLQ8I,8
