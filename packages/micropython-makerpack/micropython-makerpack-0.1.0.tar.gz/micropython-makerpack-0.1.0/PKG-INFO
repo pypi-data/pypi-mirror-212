@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: micropython-makerpack
+Version: 0.1.0
+Summary: Package for maker kit and every other makers.
+Author: step maker
+Author-email: pack-dev@stepmaker.co
+License: CC BY-NC-SA 4.0
+Keywords: stepmaker,step,maker,micropython,makerpack,pack,takeup
+Description-Content-Type: text/markdown
+
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+사용 방법은 [docs](https://docs.stepmaker.co/pack/support)에서 자세히 볼 수 있습니다.
