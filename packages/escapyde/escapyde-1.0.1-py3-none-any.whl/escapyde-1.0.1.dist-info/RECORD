@@ -1,0 +1,14 @@
+CHANGELOG.md,sha256=vI-_moFIC8p8oZQQDfIUw1h2HeAUkVfCEtkoPIRVwVA,5435
+LICENSE,sha256=zRT-dQHOJ4-7jTUkvvA5o8c4vw_7q3Z7bLHhmd5VhCM,1069
+escapyde/__init__.py,sha256=KlWfrUzpHHrOkVTxipmFVD_xcFrpAml2iwc8KY6qaKM,124
+escapyde/ansi.py,sha256=AXkRcj6FV388EXB1VzHwi-AKDdeHCNhuWDZEpEV739w,5302
+escapyde/colours.py,sha256=0hnhqen_d1LKfsqO6Zzv79Vxe7rJFfY2JiG4KMrOuRo,2557
+escapyde/config.py,sha256=5evgY1bhD7laF6dfSz4JW736p9WfUhfEaIADIAUAiY4,386
+escapyde/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+escapyde/examples/text.py,sha256=LmtjQysN-_QqSHuiqDI3NicU2QpOBtImEhYjnu1mvV8,2441
+escapyde/validators.py,sha256=KDkUL75L3hpN5UCT8TwEWGrcujHYTCVdYpxFdawV2dE,1134
+py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+escapyde-1.0.1.dist-info/LICENSE,sha256=zRT-dQHOJ4-7jTUkvvA5o8c4vw_7q3Z7bLHhmd5VhCM,1069
+escapyde-1.0.1.dist-info/METADATA,sha256=fdNQePysd_NrkaM-ahnYos28JCpluPMq7SQoEyoi2as,5132
+escapyde-1.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+escapyde-1.0.1.dist-info/RECORD,,
