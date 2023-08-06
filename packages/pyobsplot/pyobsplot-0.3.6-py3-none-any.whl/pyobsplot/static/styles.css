@@ -1,0 +1,29 @@
+/* js/widget/styles.css */
+.pyobsplot-plot.light svg,
+.pyobsplot-plot.light figure {
+  color: black;
+  background-color: white;
+}
+.pyobsplot-plot.dark svg,
+.pyobsplot-plot.dark figure {
+  color: white;
+  background-color: black;
+}
+.pyobsplot-plot.dark [aria-label=tip][fill=white] {
+  fill: black;
+}
+.pyobsplot-plot.current svg,
+.pyobsplot-plot.current figure {
+  color: currentColor;
+  background-color: transparent;
+}
+.pyobsplot-plot.current [aria-label=tip][fill=white] {
+  fill: white;
+  color: black;
+}
+.p-Widget:has(.pyobsplot-plot.dark) {
+  background-color: black;
+}
+.cell-output-ipywidget-background:has(.p-Widget):has(.pyobsplot-plot.current) {
+  background-color: transparent !important;
+}
