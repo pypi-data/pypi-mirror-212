@@ -1,0 +1,12 @@
+maturin
+patchelf
+sphinx
+sphinx-autoapi
+sphinx-autodoc2
+sphinx_copybutton
+sphinx_design
+sphinx_pyscript
+sphinx_rtd_theme
+sphinx_tippy
+sphinx_togglebutton
+sphinxcontrib-napoleon
