@@ -1,0 +1,13 @@
+SouPyX/__init__.py,sha256=GSQ9IwLAJBNW_p2a6TIzYwPnpQyKMI3UJhv4q2lHG50,1407
+SouPyX/core.py,sha256=FfYNHw8eIrHICp1HNfJh-SRJq5OIRz-w1WvgV9Dy40w,14653
+SouPyX/display.py,sha256=mwN1013cnuzs8QWQ391RQVZKnL_jNhVYsOVihAfBIeQ,12418
+SouPyX/effects.py,sha256=4DFmL4YNwGUVjZa7T_aob2CitpVyVwPu-AGjqBD80tI,12632
+SouPyX/models.py,sha256=kGr9VK0u8hZ6eTm_d_KekRqWCCV2Nxf0aEUMUDmNbYY,10163
+SouPyX/spatial.py,sha256=2jWHIGg5xm64ULnEML0exBH07C0aFYx5ZmLAdXXYJCA,14796
+SouPyX/synths.py,sha256=mKq-AuLZBt85QSEATSl8GWXm-YsPeenj693Th0VoViM,23919
+SouPyX/version.py,sha256=8_PCItZCw27uU35Wmz-pNyN8z1iuuqnxV9Y4NggFY6I,1342
+SouPyX-1.0.5.dist-info/LICENSE,sha256=YPRDlW-c5gv7hVpamEP5dq5IN5MoOKv5wN0OhN3dpPo,1086
+SouPyX-1.0.5.dist-info/METADATA,sha256=P-CZnrizJY8wcC3my7EdVP6026Q3KAiCyVTifif8v8Q,1184
+SouPyX-1.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+SouPyX-1.0.5.dist-info/top_level.txt,sha256=G1blgECPeiNQsDmCtKkVr37dpvx2V7tp6sY9jY3OFOk,7
+SouPyX-1.0.5.dist-info/RECORD,,
