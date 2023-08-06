@@ -1,0 +1,16 @@
+## raster
+# numpy
+rasterio>=1.1.8
+rio_toa>=0.3.0
+shapely
+xmltodict
+
+## dev
+dask[array]
+fiona
+pandas
+pyproj
+utm>=0.7.0
+geojson
+setuptools
+tqdm
