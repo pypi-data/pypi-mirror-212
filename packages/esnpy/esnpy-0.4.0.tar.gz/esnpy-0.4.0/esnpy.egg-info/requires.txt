@@ -1,0 +1,10 @@
+numpy>=1.23.0
+scipy>=1.9.3
+
+[doc]
+sphinx
+sphinx-pyproject
+
+[lint]
+black
+flake8

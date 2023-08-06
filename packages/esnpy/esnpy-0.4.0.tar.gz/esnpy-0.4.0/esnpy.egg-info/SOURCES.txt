@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+esnpy/__init__.py
+esnpy/esn.py
+esnpy/init.py
+esnpy/reader.py
+esnpy/reservoir.py
+esnpy/train.py
+esnpy/tune.py
+esnpy/type.py
+esnpy.egg-info/PKG-INFO
+esnpy.egg-info/SOURCES.txt
+esnpy.egg-info/dependency_links.txt
+esnpy.egg-info/requires.txt
+esnpy.egg-info/top_level.txt
