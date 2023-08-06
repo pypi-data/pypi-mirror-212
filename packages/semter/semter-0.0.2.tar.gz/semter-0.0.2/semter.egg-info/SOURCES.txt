@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.rst
+__init__.py
+setup.py
+semter.egg-info/PKG-INFO
+semter.egg-info/SOURCES.txt
+semter.egg-info/dependency_links.txt
+semter.egg-info/top_level.txt
