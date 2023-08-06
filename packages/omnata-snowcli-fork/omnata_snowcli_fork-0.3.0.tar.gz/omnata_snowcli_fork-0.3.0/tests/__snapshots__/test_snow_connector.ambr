@@ -1,0 +1,316 @@
+# serializer version: 1
+# name: test_create_function
+  '''
+  use database databaseValue;
+  use schema schemaValue;
+  use warehouse warehouseValue;
+  CREATE OR REPLACE  FUNCTION nameValue(string a, variant b)
+           RETURNS returnTypeValue
+           LANGUAGE PYTHON
+           RUNTIME_VERSION=3.8
+           IMPORTS=('import1, import2')
+           HANDLER='handlerValue'
+           PACKAGES=('aaa','bbb');
+  describe function nameValue(a, b);
+  '''
+# ---
+# name: test_create_procedure
+  '''
+  use database databaseValue;
+  use schema schemaValue;
+  use warehouse warehouseValue;
+  
+  CREATE OR REPLACE  PROCEDURE nameValue(string a, variant b)
+           RETURNS returnTypeValue
+           LANGUAGE PYTHON
+           RUNTIME_VERSION=3.8
+           IMPORTS=('import1, import2')
+           HANDLER='handlerValue'
+           PACKAGES=('aaa','bbb')
+           EXECUTE AS CALLER;
+  
+  
+  describe PROCEDURE nameValue(a, b);
+  '''
+# ---
+# name: test_create_stage
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  
+  create stage if not exists nameValue;
+  '''
+# ---
+# name: test_create_streamlit
+  '''
+  use role roleValue;
+  use database databaseValue;
+  use schema schemaValue;
+  use warehouse warehouseValue;
+  
+  create streamlit nameValue
+    
+    MAIN_FILE = 'fileValue'
+    QUERY_WAREHOUSE = warehouseValue;
+  
+  show streamlits;
+  describe streamlit nameValue;
+  
+  alter streamlit nameValue checkout;
+  '''
+# ---
+# name: test_create_streamlit_from_stage
+  '''
+  use role roleValue;
+  use database databaseValue;
+  use schema schemaValue;
+  use warehouse warehouseValue;
+  
+  create streamlit nameValue
+    FROM @stageValue
+    MAIN_FILE = 'fileValue'
+    QUERY_WAREHOUSE = warehouseValue;
+  
+  show streamlits;
+  describe streamlit nameValue;
+  
+  alter streamlit nameValue checkout;
+  '''
+# ---
+# name: test_deploy_streamlit
+  '''
+  use database databaseValue;
+  use schema schemaValue;
+  use role roleValue;
+  
+  CALL SYSTEM$GENERATE_STREAMLIT_URL_FROM_NAME('nameValue');
+  '''
+# ---
+# name: test_describe_function
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  desc FUNCTION signatureValue;
+  '''
+# ---
+# name: test_describe_procedure
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  desc PROCEDURE signatureValue;
+  '''
+# ---
+# name: test_describe_streamlit
+  '''
+  use database databaseValue;
+  use schema schemaValue;
+  use role roleValue;
+  
+  CALL SYSTEM$GENERATE_STREAMLIT_URL_FROM_NAME('nameValue');
+  '''
+# ---
+# name: test_drop_function
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  drop function signatureValue;
+  '''
+# ---
+# name: test_drop_procedure
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  drop procedure signatureValue;
+  '''
+# ---
+# name: test_drop_stage
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  
+  drop stage nameValue;
+  '''
+# ---
+# name: test_drop_streamlit
+  '''
+  use role roleValue;
+  use database databaseValue;
+  use schema schemaValue;
+  use warehouse warehouseValue;
+  drop streamlit "nameValue";
+  '''
+# ---
+# name: test_execute_function
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  select functionValue;
+  '''
+# ---
+# name: test_execute_procedure
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  call procedureValue;
+  '''
+# ---
+# name: test_get_stage[namedStageValue]
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  
+  get @namedStageValue file://pathValue/
+  '''
+# ---
+# name: test_get_stage[snow://embeddedStageValue]
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  
+  get snow://embeddedStageValue file://pathValue/
+  '''
+# ---
+# name: test_list_functions
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  show user functions like 'likeValue';
+  select "name", "created_on", "arguments", "language" from table(result_scan(last_query_id()));
+  '''
+# ---
+# name: test_list_procedures
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  show user procedures like 'likeValue';
+  select "name", "created_on", "arguments" from table(result_scan(last_query_id()));
+  '''
+# ---
+# name: test_list_stage[namedStageValue]
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  ls @namedStageValue;
+  '''
+# ---
+# name: test_list_stage[snow://embeddedStageValue]
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  ls snow://embeddedStageValue;
+  '''
+# ---
+# name: test_list_stages
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  show stages;
+  '''
+# ---
+# name: test_list_streamlits
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  show streamlits;
+  '''
+# ---
+# name: test_put_stage[namedStageValue]
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  
+  put file://pathValue @namedStageValue auto_compress=false parallel=parallelValue overwrite=True;
+  '''
+# ---
+# name: test_put_stage[snow://embeddedStageValue]
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  
+  put file://pathValue snow://embeddedStageValue auto_compress=false parallel=parallelValue overwrite=True;
+  '''
+# ---
+# name: test_remove_from_stage[namedStageValue]
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  
+  remove @namedStageValue/pathValue
+  '''
+# ---
+# name: test_remove_from_stage[snow://embeddedStageValue]
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  
+  remove snow://embeddedStageValue/pathValue
+  '''
+# ---
+# name: test_set_procedure_comment
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  alter PROCEDURE signatureValue SET COMMENT = $$commentValue$$;
+  '''
+# ---
+# name: test_share_streamlit
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  
+  grant usage on streamlit nameValue to role to_roleValue;
+  '''
+# ---
+# name: test_show_warehouses
+  '''
+  use role roleValue;
+  use warehouse warehouseValue;
+  use database databaseValue;
+  use schema schemaValue;
+  show warehouses;
+  '''
+# ---
