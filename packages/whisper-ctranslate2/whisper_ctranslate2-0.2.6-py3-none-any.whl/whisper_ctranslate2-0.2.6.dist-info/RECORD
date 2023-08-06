@@ -1,0 +1,12 @@
+src/whisper_ctranslate2/languages.py,sha256=AJ5GkHW12Tf0Epvaw9pfuEBI12Xwg2O3BHJzTfgormI,2846
+src/whisper_ctranslate2/live.py,sha256=Eo0EsQtTYE61ukS69eB_CbUr07kxuMBk_GmNFRKJlqw,5232
+src/whisper_ctranslate2/transcribe.py,sha256=Q66WUiMg3P3Z6kuc0W3Rruo9_t66NDR-_dfvgO-07OY,6324
+src/whisper_ctranslate2/version.py,sha256=Oz5HbwHMyE87nmwV80AZzpkJPf-wBg7eDuJr_BXZkhU,22
+src/whisper_ctranslate2/whisper_ctranslate2.py,sha256=j2JTblsQDShR_9KAcN4_3UCydTGIhoF7kteIvWGgKbY,17517
+src/whisper_ctranslate2/writers.py,sha256=mpyWOSazaVQ8UDW6tYiSKa62TeyTGFDh2zDW-308BfE,10359
+whisper_ctranslate2-0.2.6.dist-info/LICENSE,sha256=fgVgP4GS9lRk3cMciqIJSbjN3bHVBUZ13SrozrlRe0E,1066
+whisper_ctranslate2-0.2.6.dist-info/METADATA,sha256=4Q34aBFpOrTEyaV2bLQiYhz6-KyOoV8TQBwoZDY-fCc,5890
+whisper_ctranslate2-0.2.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+whisper_ctranslate2-0.2.6.dist-info/entry_points.txt,sha256=54ubaob2QkaIDOqdY7TUxqf7c-aKv0Yg9RakPSbEdbo,89
+whisper_ctranslate2-0.2.6.dist-info/top_level.txt,sha256=rEH14k9I2CCSx_FJpijDQa-2locJSGhaCDV0g62ro5w,24
+whisper_ctranslate2-0.2.6.dist-info/RECORD,,
