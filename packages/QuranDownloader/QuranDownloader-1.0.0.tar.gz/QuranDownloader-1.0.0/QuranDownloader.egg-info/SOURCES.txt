@@ -1,0 +1,12 @@
+setup.py
+QuranDownloader/__init__.py
+QuranDownloader/concurrent_req.py
+QuranDownloader/consts.py
+QuranDownloader/download_org.py
+QuranDownloader/download_verse.py
+QuranDownloader/download_word.py
+QuranDownloader/verse_key_converters.py
+QuranDownloader.egg-info/PKG-INFO
+QuranDownloader.egg-info/SOURCES.txt
+QuranDownloader.egg-info/dependency_links.txt
+QuranDownloader.egg-info/top_level.txt
