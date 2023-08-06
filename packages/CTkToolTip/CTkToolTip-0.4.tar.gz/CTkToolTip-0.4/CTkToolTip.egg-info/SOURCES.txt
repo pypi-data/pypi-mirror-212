@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+CTkToolTip/__init__.py
+CTkToolTip/ctk_tooltip.py
+CTkToolTip.egg-info/PKG-INFO
+CTkToolTip.egg-info/SOURCES.txt
+CTkToolTip.egg-info/dependency_links.txt
+CTkToolTip.egg-info/top_level.txt
