@@ -1,0 +1,2 @@
+[console_scripts]
+s3ball = s3ball.cli:main
