@@ -1,0 +1,16 @@
+numpy
+requests
+prettytable
+rich
+pydantic
+python-dotenv
+db_dtypes
+pytz
+gaohn-common-utils==0.0.23
+
+[dev]
+black
+pylint
+isort
+pytest
+mypy
