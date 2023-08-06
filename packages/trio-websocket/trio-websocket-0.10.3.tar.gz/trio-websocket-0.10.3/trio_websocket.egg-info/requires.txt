@@ -1,0 +1,3 @@
+exceptiongroup
+trio>=0.11
+wsproto>=0.14
