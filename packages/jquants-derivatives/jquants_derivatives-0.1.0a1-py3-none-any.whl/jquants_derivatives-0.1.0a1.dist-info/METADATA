@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jquants-derivatives
+Version: 0.1.0a1
+Summary: 
+Author: driller
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: jquants-api-client (>=1.2.0,<2.0.0)
+Requires-Dist: plotly (>=5.14.1,<6.0.0)
+Description-Content-Type: text/markdown
+
+# jquants-derivatives
+
