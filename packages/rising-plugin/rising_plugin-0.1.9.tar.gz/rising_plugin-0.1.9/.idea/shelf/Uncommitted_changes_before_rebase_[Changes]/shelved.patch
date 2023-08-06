@@ -1,0 +1,40 @@
+Index: pyproject.toml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[build-system]\nrequires = [\"hatchling\"]\nbuild-backend = \"hatchling.build\"\n\n[project]\nname = \"rising_plugin\"\nversion = \"0.1.6\"\nauthors = [\n  { name=\"Thomas Richardson\", email=\"thomasr37oss@gmail.com\" },\n]\ndescription = \"It is a plugin for Rising GPT\"\nreadme = \"README.md\"\ndependencies = [\n    \"langchain >= 0.0.148\",\n    \"pinecone-client >= 2.2.1\",\n    \"openai >= 0.27.4\",\n    \"pydantic>=1.2.4\",\n    \"aiohttp==3.8.4\",\n    \"langchain==0.0.167\",\n    \"requests==2.28.2\",\n    \"typer==0.7.0\",\n    \"PyYAML~=6.0\",\n    \"setuptools>=50.5.1\",\n    \"annoy==1.17.1\",\n    \"sentence-transformers==2.2.2\",\n    \"fastapi==0.95.0\",\n    \"starlette==0.26.1\",\n    \"uvicorn==0.21.1\",\n    \"httpx==0.23.3\",\n    \"simpleeval==0.9.13\",\n    \"typing-extensions==4.5.0\",\n    \"nemoguardrails==0.2.0\"\n]\nrequires-python = \">=3.7\"\nclassifiers = [\n    \"Programming Language :: Python :: 3\",\n    \"License :: OSI Approved :: MIT License\",\n    \"Operating System :: OS Independent\",\n]\n\n[project.urls]\n\"Homepage\" = \"https://github.com/pypa/sampleproject\"\n\"Bug Tracker\" = \"https://github.com/pypa/sampleproject/issues\"\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pyproject.toml b/pyproject.toml
+--- a/pyproject.toml	(revision 46fd2446d0cf1a5eda1bafe8c498ef4cef55648d)
++++ b/pyproject.toml	(date 1686172142018)
+@@ -4,23 +4,22 @@
+ 
+ [project]
+ name = "rising_plugin"
+-version = "0.1.6"
++version = "0.1.8"
+ authors = [
+   { name="Thomas Richardson", email="thomasr37oss@gmail.com" },
+ ]
+ description = "It is a plugin for Rising GPT"
+ readme = "README.md"
+ dependencies = [
+-    "langchain >= 0.0.148",
+-    "pinecone-client >= 2.2.1",
+-    "openai >= 0.27.4",
+-    "pydantic>=1.2.4",
+-    "aiohttp==3.8.4",
+     "langchain==0.0.167",
++    "pinecone-client==2.2.1",
++    "openai==0.27.4",
++    "pydantic==1.10.6",
++    "aiohttp==3.8.4",
+     "requests==2.28.2",
+     "typer==0.7.0",
+     "PyYAML~=6.0",
+-    "setuptools>=50.5.1",
++    "setuptools==65.5.1",
+     "annoy==1.17.1",
+     "sentence-transformers==2.2.2",
+     "fastapi==0.95.0",
