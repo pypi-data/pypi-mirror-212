@@ -1,0 +1,9 @@
+# Package reqs
+pydantic
+tcare_sbvalidator
+azure-identity
+azure-servicebus
+
+# Dev reqs
+aiohttp
+python-dotenv
