@@ -1,0 +1,1 @@
+docker buildx build . -t artifacts.iflytek.com/docker-private/dind-ailab-sdk:v1 --push
