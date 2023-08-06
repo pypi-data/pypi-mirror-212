@@ -1,0 +1,42 @@
+# LoReMe pipeline
+
+TODO: make a 'loreme clean' subcommand to remove downloads before uninstalling
+
+Analysis of CpG methylation calls from PacBio HiFi or ONT data. See also the [full documentation](https://salk-tm.gitlab.io/loreme/index.html)
+
+Other tools of interest: [methylartist](https://github.com/adamewing/methylartist) and [modbamtools](https://github.com/rrazaghi/modbamtools)  ([modbamtools docs](https://rrazaghi.github.io/modbamtools/)), [methplotlib](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7214038/)
+
+## Installation
+
+### Conda
+
+The recommended way to install `loreme` is with a dedicated `conda` environment:
+
+First create an environment including all dependencies:
+```
+conda create -n loreme -c conda-forge -c bioconda pbmm2 urllib3 \
+  pybedtools gff2bed seaborn pyfaidx psutil gputil tabulate \
+  cython h5py iso8601 more-itertools polars tqdm
+conda activate loreme
+```
+
+Then install with `pip`:
+```
+pip install loreme
+```
+
+Alternatively, install from the git repo:
+```
+git clone https://gitlab.com/salk-tm/loreme.git
+cd loreme
+pip install .
+```
+
+You may also wish to install `nvtop` to monitor GPU usage:
+```
+conda install -c conda-forge nvtop
+```
+
+### Check installation
+
+Check that the correct version was installed with `loreme --version`
