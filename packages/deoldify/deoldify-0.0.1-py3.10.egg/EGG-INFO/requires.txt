@@ -1,0 +1,11 @@
+wandb
+tensorboardX>=1.6
+ffmpeg
+ffmpeg-python
+yt-dlp
+jupyterlab
+opencv-python>=4.2.0.32
+Pillow>=9.5.0
+torch>=2.0.0
+torchvision
+ipywidgets
