@@ -1,0 +1,16 @@
+hugedict-2.11.0.dist-info/METADATA,sha256=KK_T8tBpH7l-UKcyH6RZ47JHsOQrt-N0atkH3VcjnQE,3299
+hugedict-2.11.0.dist-info/WHEEL,sha256=hmjWNhwmKrGfL4b8FvVMOP1Hp2Rqx0PvxihnXHTxbNs,134
+hugedict-2.11.0.dist-info/license_files/LICENSE,sha256=brmJ1GyPsyFm-KQo59ncA1Bd9lrhzsO7-l9ap6TZ1_0,1064
+hugedict/prelude.py,sha256=YnfSD7AKHN_U0Ycvd_yy7nu3RKT1GU0Ha6ZTelIqhgI,1073
+hugedict/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+hugedict/sqlitedict.py,sha256=OgAHj-WG45AbLJ-NA-0uBm-wAh7CYJNC1IRa8Ec3abI,4402
+hugedict/types.py,sha256=fWqJAkedsArB12qPpAVI11JWiW2kd5C5wo7lvIN9hk8,1456
+hugedict/misc.py,sha256=u3a7l2uSIoKpYqjfxJ4n6ahAhx2yWGsFfe__jdNFMqA,3267
+hugedict/chained_mapping.py,sha256=1-m-_lQ7iXsC5snZl-O-g60pwSDlPAnDtHNIEGKFOg8,947
+hugedict/hugedict/rocksdb.pyi,sha256=meOvXh-oTZKLCc6IXiTHcH_S5lOgUTNJ4bwtSSkxbMs,10647
+hugedict/hugedict/__init__.pyi,sha256=D3GiAUGudhJyDUxGrVeOgN6G0z9Q1R6RHHeggvz0Wk8,97
+hugedict/parallel.py,sha256=ZD2V5mNuYUp_ZvUM-9M1PENxAAQM7evsACJ6l_m5tdw,14988
+hugedict/cachedict.py,sha256=pIE_PqxjLY0YPcnJs93VOuavCEJoZl61X5oT7eVEkBo,1892
+hugedict/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hugedict/hugedict.pypy39-pp73-x86_64-linux-gnu.so,sha256=tl7l4VS8oFNr3l3xk6DLLd7tDZRXMBwZjxrC7WJUeM0,15299768
+hugedict-2.11.0.dist-info/RECORD,,
