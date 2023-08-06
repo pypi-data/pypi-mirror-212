@@ -1,0 +1,331 @@
+.\" Man page generated from reStructuredText.
+.
+.TH "SIERRA-EXEC-ENVS" "7" "Jun 08, 2023" "1.3.5" "SIERRA"
+.SH NAME
+sierra-exec-envs \- The execution environments SIERRA supports.
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.SH HPC EXECUTION ENVIRONMENT PLUGINS
+.sp
+SIERRA is capable of adapting its runtime infrastructure to a number of
+different HPC environments so that experiments can be run efficiently on
+whatever computational resources a researcher has access to. Supported
+environments that come with SIERRA are listed on this page.
+.sp
+These plugins tested with the following platforms (they may work on other
+platforms out of the box too):
+.INDENT 0.0
+.IP \(bu 2
+ln\-sierra\-platform\-plugins\-argos
+.IP \(bu 2
+ln\-sierra\-platform\-plugins\-ros1gazebo
+.UNINDENT
+.sp
+SIERRA makes the following assumptions about the HPC environments corresponding
+to the plugins listed on this page:
+.SH HPC ENVIRONMENT ASSUMPTIONS
+.TS
+center;
+|l|l|.
+_
+T{
+Assumption
+T}	T{
+Rationale
+T}
+_
+T{
+All nodes allocated to SIERRA have the same # of cores (can be less than
+the total # available on each compute node). Note that this may be \fIless\fP
+than the actual number of cores available on each node, if the HPC
+environment allows node sharing, and the job SIERRA runs in is allocated
+less than the total # cores on a given node.
+T}	T{
+Simplicity: If allocated nodes had different core counts, SIERRA would
+have to do more of the work of an HPC scheduler, and match jobs to
+nodes. May be an avenue for future improvement.
+T}
+_
+T{
+All nodes have a shared filesystem.
+T}	T{
+Standard feature on HPC environments. If for some reason this is not
+true, stage 2 outputs will have to be manually placed such that it is as
+if everything ran on a common filesystem prior to running any later
+stages.
+T}
+_
+.TE
+.SS Local HPC Plugin
+.sp
+This HPC environment can be selected via \fB\-\-exec\-env=hpc.local\fP\&.
+.sp
+This is the default HPC environment in which SIERRA will run all experiments on
+the same computer from which it was launched using GNU parallel.  The #
+simultaneous simulations will be determined by:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+# cores on machine / # threads per experimental run
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+If more simulations are requested than can be run in parallel, SIERRA will start
+additional simulations as currently running simulations finish.
+.sp
+No additional configuration/environment variables are needed with this HPC
+environment for use with SIERRA.
+.SS ARGoS Considerations
+.sp
+The # threads per experimental run is defined with
+\fB\-\-physics\-n\-engines\fP, and that option is required for this HPC environment
+during stage 1.
+.SS PBS HPC Plugin
+.sp
+This HPC environment can be selected via \fB\-\-exec\-env=hpc.pbs\fP\&.
+.sp
+In this HPC environment, SIERRA will run experiments spread across multiple
+allocated nodes by a PBS compatible scheduler such as Moab.  The following table
+describes the PBS\-SIERRA interface. Some PBS environment variables are used by
+SIERRA to configure experiments during stage 1,2 (see TOQUE\-PBS docs for
+meaning); if they are not defined SIERRA will throw an error.
+.SS PBS\-SIERRA interface
+.TS
+center;
+|l|l|.
+_
+T{
+PBS environment variable
+T}	T{
+SIERRA context
+T}
+_
+T{
+PBS_NUM_PPN
+T}	T{
+Used to calculate # threads per experimental run for each allocated
+compute node via:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+floor(PBS_NUM_PPN / \-\-exec\-jobs\-per\-node)
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+That is, \fB\-\-exec\-jobs\-per\-node\fP is required for PBS HPC environments.
+T}
+_
+T{
+PBS_NODEFILE
+T}	T{
+Obtaining the list of nodes allocated to a job which SIERRA can direct
+GNU parallel to use for experiments.
+T}
+_
+T{
+PBS_JOBID
+T}	T{
+Creating the UUID nodelist file passed to GNU parallel, guaranteeing
+no collisions (i.e., simultaneous SIERRA invocations sharing allocated
+nodes) if multiple jobs are started from the same directory.
+T}
+_
+.TE
+.sp
+The following environmental variables are used in the PBS HPC environment:
+.TS
+center;
+|l|l|.
+_
+T{
+Environment variable
+T}	T{
+Use
+T}
+_
+T{
+\fBSIERRA_ARCH\fP
+T}	T{
+Used to enable architecture/OS specific builds of simulators for maximum
+speed at runtime on clusters.
+T}
+_
+T{
+\fBPARALLEL\fP
+T}	T{
+Used to transfer environment variables into the GNU parallel
+environment. This must be always done because PBS doesn\(aqt transfer
+variables automatically, and because GNU parallel starts another level of
+child shells.
+T}
+_
+.TE
+.SS SLURM HPC Plugin
+.sp
+\fI\%https://slurm.schedmd.com/documentation.html\fP
+.sp
+This HPC environment can be selected via \fB\-\-exec\-env=hpc.slurm\fP\&.
+.sp
+In this HPC environment, SIERRA will run experiments spread across multiple
+allocated nodes by the SLURM scheduler. The following table describes the
+SLURM\-SIERRA interface. Some SLURM environment variables are used by SIERRA to
+configure experiments during stage 1,2 (see SLURM docs for meaning); if they are
+not defined SIERRA will throw an error.
+.SS SLURM\-SIERRA interface
+.TS
+center;
+|l|l|l|.
+_
+T{
+SLURM environment variable
+T}	T{
+SIERRA context
+T}	T{
+Command line override
+T}
+_
+T{
+SLURM_CPUS_PER_TASK
+T}	T{
+Used to set # threads per experimental node for each allocated compute
+node.
+T}	T{
+N/A
+T}
+_
+T{
+SLURM_TASKS_PER_NODE
+T}	T{
+Used to set # parallel jobs per allocated compute node.
+T}	T{
+\fB\-\-exec\-jobs\-per\-node\fP
+T}
+_
+T{
+SLURM_JOB_NODELIST
+T}	T{
+Obtaining the list of nodes allocated to a job which SIERRA can direct
+GNU parallel to use for experiments.
+T}	T{
+N/A
+T}
+_
+T{
+SLURM_JOB_ID
+T}	T{
+Creating the UUID nodelist file passed to GNU parallel, guaranteeing no
+collisions (i.e., simultaneous SIERRA invocations sharing allocated nodes
+if multiple jobs are started from the same directory).
+T}	T{
+N/A
+T}
+_
+.TE
+.sp
+The following environmental variables are used in the SLURM HPC environment:
+.TS
+center;
+|l|l|.
+_
+T{
+Environment variable
+T}	T{
+Use
+T}
+_
+T{
+\fBSIERRA_ARCH\fP
+T}	T{
+Used to enable architecture/OS specific builds of simulators for maximum
+speed at runtime on clusters.
+T}
+_
+T{
+\fBPARALLEL\fP
+T}	T{
+Used to transfer environment variables into the GNU parallel
+environment. This must be done even though SLURM can transfer variables
+automatically, because GNU parallel starts another level of child
+shells.
+T}
+_
+.TE
+.SS Adhoc HPC Plugin
+.sp
+This HPC environment can be selected via \fB\-\-exec\-env=hpc.adhoc\fP\&.
+.sp
+In this HPC environment, SIERRA will run experiments spread across an ad\-hoc
+network of compute nodes. SIERRA makes the following assumptions about the
+compute nodes it is allocated each invocation:
+.INDENT 0.0
+.IP \(bu 2
+All nodes have a shared filesystem.
+.UNINDENT
+.sp
+The following environmental variables are used in the Adhoc HPC environment:
+.TS
+center;
+|l|l|l|l|.
+_
+T{
+Environment variable
+T}	T{
+SIERRA context
+T}	T{
+Command line override
+T}	T{
+Notes
+T}
+_
+T{
+\fBSIERRA_NODEFILE\fP
+T}	T{
+Contains hostnames/IP address of all compute nodes SIERRA can use. Same
+format as GNU parallel \fB\-\-sshloginfile\fP\&.
+T}	T{
+\fB\-\-nodefile\fP
+T}	T{
+\fBSIERRA_NODEFILE\fP must be defined or \fB\-\-nodefile\fP passed. If
+neither is true, SIERRA will throw an error.
+T}
+_
+.TE
+.SH AUTHOR
+John Harwell
+.SH COPYRIGHT
+2022, John Harwell
+.\" Generated by docutils manpage writer.
+.
