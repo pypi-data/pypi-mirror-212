@@ -1,0 +1,13 @@
+mkdocs_caption/__init__.py,sha256=n1ZNzELBn3WbIa2zjEmDeqA87TSMsTiNIyeag9hokfE,190
+mkdocs_caption/_version.py,sha256=0E2q3bbXSYHV7qQaXVj0To-J2XdlP2Roo0TsM8oQtR4,160
+mkdocs_caption/config.py,sha256=Hvc27czfU5OYHxeH4nRdHnukyVSEnQJ4aTDiDKUtwMg,1383
+mkdocs_caption/custom.py,sha256=_tPoLdCuIVHhyIlFlACrnsJ_1oCjm5CnFxiO-XB5tdU,3297
+mkdocs_caption/helper.py,sha256=MVgWT0PHizdvKqUxqpoZxsy60KfU3FzrlmP2ahRJJPg,1838
+mkdocs_caption/image.py,sha256=Q86eXpdYX8CgtdTv0eU68OdnsP5zkIjpcEmkq8DRn7Q,2443
+mkdocs_caption/plugin.py,sha256=CM6n1mTBA-g833odq2DHGUPY-zwmPG2IG5iNBZ9Te8s,3270
+mkdocs_caption/table.py,sha256=Rq41WDvZA-bJg7Fwa0d2GthJmwfJya9mLML18d9P-KY,3758
+mkdocs_caption-0.0.1.dist-info/METADATA,sha256=NqEEPN6HcR3n_WMMxfe0OP1iWSZ1RUl7sz4MhXqDmTI,8537
+mkdocs_caption-0.0.1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+mkdocs_caption-0.0.1.dist-info/entry_points.txt,sha256=6ZFxQShpdFXgB05rwZ7hSjQr49zbVd8rGglEmArdXP0,56
+mkdocs_caption-0.0.1.dist-info/licenses/LICENSE,sha256=hxB54O32eTTCNSAAU9ae31boTb6RwyVS-xvm6qSN0YM,1070
+mkdocs_caption-0.0.1.dist-info/RECORD,,
