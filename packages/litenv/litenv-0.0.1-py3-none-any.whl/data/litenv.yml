@@ -1,0 +1,220 @@
+python: '>=3.10'
+
+channels:  
+  - pytorch
+  - conda-forge  
+  - fastai
+  - bioconda  
+  - dglteam
+  - nvidia
+
+categories:
+  utils:
+    name: 'Utilities'
+    checked: true
+    dependencies:
+      tqdm:
+        always: true
+      pyyaml:
+
+  scripting:
+    name: 'Scripting'
+    dependencies:
+      rich:
+      typer:
+      questionary:
+        channel: conda-forge
+
+  'conda-plugins':
+    name: 'Conda Plugins'
+    dependencies:
+      conda:
+
+  packaging:
+    name: 'Packaging'
+    dependencies:
+      twine:
+        note: 'for uploading to PyPI'        
+      anaconda-client:
+        note: 'for uploading to Anaconda Cloud'
+    
+    subcategories:
+      versioning:
+        packaging:
+          note: 'for handling pypa versions'
+
+  testing:
+    name: 'Testing'
+    dependencies:
+      pytest:
+  
+  jupyter:
+    name: 'Jupyter Notebooks'
+    checked: true
+    dependencies:
+      notebook:
+        channel: conda-forge
+        always: true
+      ipykernel:
+        channel: conda-forge
+        always: true
+      ipywidget:
+        channel: conda-forge
+        always: true
+      jupyterlab:
+        channel: conda-forge
+        always: true
+
+  nbdev:
+    name: 'nbdev'
+    dependencies:
+      nbdev:
+        version: '>=2.3.12'
+        channel: fastai
+
+  torch:
+    name: 'PyTorch & Deep Learning'
+    checked: true
+    dependencies:
+      pytorch:
+        pypi_name: torch
+
+      pytorch-cuda:
+        channel: pytorch
+        cuda_only: true
+        note: 'add pytorch-cuda if using a CUDA enabled GPU. You will need to remove this if you are on Apple Silicon'
+
+      pytorch-lightning:
+        pypi_name: lightning
+
+
+    subcategories:
+      ode:
+        name: 'Neural ODEs'
+        dependencies:
+          torchdiffeq:
+          torchdyn:
+            version: '==1.0.3'
+            pip_only: true
+      gnn:
+        name: 'Graph Neural Networks'
+        dependencies:
+          dgl:
+            channel: dglteam
+            note: 'dgl is not built for ARM (e.g. Apple Silicon) on dglteam. You can install it via pip.'
+            no_arm_support: true
+  
+  data:    
+    name: 'Data Science'
+    checked: true
+    dependencies:
+      scikit-learn:
+        channel: conda-forge
+      pandas:
+      numpy:
+      scipy:
+
+    subcategories:
+      ot:
+        name: 'Optimal Transport'
+        dependencies:
+          pot:
+            pip_only: true
+
+  plot:
+    name: 'Plotting'
+    checked: true
+    dependencies:
+      matplotlib:
+        channel: conda-forge
+      seaborn:
+        channel: conda-forge
+
+  single-cell:
+    name: 'Single-Cell'
+    dependencies:
+      scanpy:
+        channel: conda-forge
+      anndata:
+        channel: conda-forge
+
+
+    subcategories:
+      doublets:
+        name: 'Doublet Detection'
+        dependencies:
+          scrublet:
+            pip_only: true
+
+      clustering:
+        name: 'Clustering'
+        dependencies:
+          liedenalg:      
+
+      de:
+        name: 'Differential Expression'
+        dependencies:
+          diffxpy:
+            pip_only: true
+            note: 'requires batchglm'
+          batchglm:
+            pip_only: true
+            note: 'requires tensorflow and tensorflow probability'
+
+      gse:
+        name: 'Gene Set Enrichment'
+        dependencies:
+          gseapy:            
+            pip_only: true
+            note: 'for gene set enrichment analysis'
+    
+  krishnswamy:
+    name: 'Krishnaswamy Lab'
+    checked: true
+    dependencies:
+      phate:
+        note: 'phate requires s_gd2 which is not built for ARM (e.g. Apple Silicon) on conda-forge. You can install it via pip.'
+        no_arm_support: true
+
+      
+      
+    subcategories:
+      graphtools:
+        name: 'Graphtools'
+        dependencies:
+          graphtools:
+            pip_only: true
+            note: 'for graph diffusion'
+
+      sc:
+        name: 'Single-Cell'
+        dependencies:
+          scprep:
+            channel: bioconda
+          magic-imput:
+            pip_only: true
+          meld:
+            pip_only: true
+          degex:
+            pip_only: true
+            note: 'personal collection of utility functions developed with Scott Youlten'
+
+      ms:
+        name: 'Multiscale Analysis'
+        dependencies:
+          'git+https://github.com/KrishnaswamyLab/Multiscale_PHATE':
+            pip_only: true
+
+      ot:
+        name: 'Optimal Transport'
+        dependencies:
+          DiffusionEMD:
+              pip_only: true
+              
+      
+accelerators:
+  - mps
+  - cpu
+  - cuda
+
+
