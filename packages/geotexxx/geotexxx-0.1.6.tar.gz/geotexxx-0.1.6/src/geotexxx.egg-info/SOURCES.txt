@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/geotexxx/__init__.py
+src/geotexxx/gefxml_reader.py
+src/geotexxx.egg-info/PKG-INFO
+src/geotexxx.egg-info/SOURCES.txt
+src/geotexxx.egg-info/dependency_links.txt
+src/geotexxx.egg-info/requires.txt
+src/geotexxx.egg-info/top_level.txt
