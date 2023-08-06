@@ -1,0 +1,12 @@
+protobuf<4
+cirq-core~=1.1.0
+cirq-google~=1.1.0
+orquestra-quantum
+openfermion~=1.4
+
+[dev]
+orquestra-python-dev
+orquestra-cirq[qsim]
+
+[qsim]
+qsimcirq~=0.14.0
