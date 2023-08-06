@@ -1,0 +1,15 @@
+BDPotentiometer/__gpiozero_helpers.py,sha256=B5SCOKMpQWCyGm86dCDuniEtZQEGwAlUnGkHRZgiQJA,2947
+BDPotentiometer/__helpers.py,sha256=_OE_j9OYNibeLK5ty6fVvHO4Sz4o6JGnIs4ttrR9qcg,5232
+BDPotentiometer/__init__.py,sha256=2fNKAiKAqoDkRWQ3AeT23oOrCBeWw0DuAd4r5tikaOE,483
+BDPotentiometer/digital_potentiometer.py,sha256=qAECFwf2hVumPdgvB0Il-_bYQys6c3kk00fMxSZIzAE,18328
+BDPotentiometer/digital_wiper.py,sha256=pVTBlDN9l9LTLB7Nd8YxMaiQXYWRIFX2Y4CFiWg-9jI,7361
+BDPotentiometer/potentiometer.py,sha256=hvFZGRJF4ZBWNlwVNFcDuyxjVt36FfX6Q0DOtcvWYnc,9401
+BDPotentiometer/mcp4xxx/__init__.py,sha256=PUSzlm70gy7_p8nDZ5NYjUGMmGO4JauNpdR1XwaNbsM,357
+BDPotentiometer/mcp4xxx/mcp4xx1.py,sha256=dVarlcSjIrMdof1up3VUvVIWSefLf8OJsECQMgzQr6M,2490
+BDPotentiometer/mcp4xxx/mcp4xx2.py,sha256=Qv-lQlRSFOKrN_BNgXoloUowYJDSONYZqyC5T77He08,2523
+BDPotentiometer/mcp4xxx/mcp4xxx.py,sha256=oL79ikVivlsyoXfz69b_2dDKiqVaSXphznEQPL3OUS8,6354
+BDPotentiometer-0.0.2.dist-info/LICENSE,sha256=Fd5TBHu1ZXnkbAmG0s_S6W7qMZgNYxLzeKpwQ85XKL0,1072
+BDPotentiometer-0.0.2.dist-info/METADATA,sha256=HWId5zteZenBsUQ_MAg_anvAO34tJLJHZ94QYSbPMkM,3118
+BDPotentiometer-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+BDPotentiometer-0.0.2.dist-info/top_level.txt,sha256=Czd4E2nNms6-Mc914w7L1q5HBFwA25aCpghnDooWNyM,16
+BDPotentiometer-0.0.2.dist-info/RECORD,,
