@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: oc-orm-initializator
+Version: 1.1.0
+Summary: Django ORM intialization
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: django (==3.2.13)
+Requires-Dist: django-simple-history (==3.0.0)
+Requires-Dist: psycopg2
+
