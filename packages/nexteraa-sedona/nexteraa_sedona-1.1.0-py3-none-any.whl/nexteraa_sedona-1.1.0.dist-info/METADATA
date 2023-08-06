@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: nexteraa-sedona
+Version: 1.1.0
+Summary: Nexteraa Glue jobs
+Author: Admin
+Requires-Dist: setuptools (~=41.2.0)
+Requires-Dist: packaging (~=23.1)
+Requires-Dist: boto3 (~=1.9.47)
+Requires-Dist: pytest (~=7.3.1)
+
