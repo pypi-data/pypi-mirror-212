@@ -1,0 +1,211 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AgentInterface	AgentInterface.cpp	/^AgentInterface::AgentInterface(const std::string& name, size_t size)$/;"	f	class:vulp::spine::AgentInterface
+AgentInterface	AgentInterface.h	/^  AgentInterface(const std::string& name, size_t size);$/;"	p	class:vulp::spine::AgentInterface
+AgentInterface	AgentInterface.h	/^class AgentInterface {$/;"	c	namespace:vulp::spine
+Event	StateMachine.h	/^enum class Event : uint32_t {$/;"	c	class:vulp::spine::State
+Parameters	Spine.h	/^  struct Parameters {$/;"	s	class:vulp::spine::Spine
+PositionCommandsTest	tests/position_commands_test.cpp	/^class PositionCommandsTest : public ::testing::Test {$/;"	c	namespace:vulp::spine	file:
+Request	Request.h	/^enum class Request : uint32_t {$/;"	c	namespace:vulp::spine
+Request	request.py	/^class Request(IntEnum):$/;"	c
+Spine	Spine.cpp	/^Spine::Spine(const Parameters& params, actuation::Interface& actuation,$/;"	f	class:vulp::spine::Spine
+Spine	Spine.h	/^  Spine(const Parameters& params, actuation::Interface& interface,$/;"	p	class:vulp::spine::Spine
+Spine	Spine.h	/^class Spine {$/;"	c	namespace:vulp::spine
+Spine	tests/SpineTest.cpp	/^class Spine : public vulp::spine::Spine {$/;"	c	namespace:vulp::spine::testing	file:
+SpineError	spine_error.py	/^class SpineError(Exception):$/;"	c
+SpineInterface	spine_interface.py	/^class SpineInterface:$/;"	c
+SpineTest	tests/SpineTest.cpp	/^class SpineTest : public ::testing::Test {$/;"	c	namespace:vulp::spine	file:
+State	StateMachine.h	/^enum class State : uint32_t {$/;"	c	namespace:vulp::spine
+StateMachine	StateMachine.h	/^class StateMachine {$/;"	c	class:vulp::spine::State
+StateMachineTest	tests/StateMachineTest.cpp	/^class StateMachineTest : public ::testing::Test {$/;"	c	namespace:vulp::spine	file:
+TEST	tests/stop_commands_test.cpp	/^TEST(WriteStopCommands, SetAllCommandsToStop) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, CatchObserverErrors) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, DontRunObserversWhenStopped) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, EnteringStopClearsRequest) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, InitiallyStopped) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, NoInitialRequest) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, ObservationInitializedInConstructor) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, ObserverExceptionStopsRun) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, ResetConfiguresAction) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, ResetInitializesAction) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, SendStopsOnStartup) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, SendsStopsOnShutdown) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, SetObservationOnIdle) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, ShutdownExecutesFixedNumberOfStopCycles) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, SpineReadsAction) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/SpineTest.cpp	/^TEST_F(SpineTest, WriteObservationOnRequest) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/StateMachineTest.cpp	/^TEST_F(StateMachineTest, ObserveWhenSendingStopsFails) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/StateMachineTest.cpp	/^TEST_F(StateMachineTest, RestopsWork) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/StateMachineTest.cpp	/^TEST_F(StateMachineTest, StartsInStopState) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/StateMachineTest.cpp	/^TEST_F(StateMachineTest, Startup) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/position_commands_test.cpp	/^TEST_F(PositionCommandsTest, DontThrowIfNoServoAction) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/position_commands_test.cpp	/^TEST_F(PositionCommandsTest, ExpectFillsDictionaryKeys) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/position_commands_test.cpp	/^TEST_F(PositionCommandsTest, ForwardPositionCommands) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/position_commands_test.cpp	/^TEST_F(PositionCommandsTest, ForwardVelocityCommands) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/position_commands_test.cpp	/^TEST_F(PositionCommandsTest, StopServoIfNoAction) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/position_commands_test.cpp	/^TEST_F(PositionCommandsTest, StopServoIfNoPosition) {$/;"	f	namespace:vulp::spine
+TEST_F	tests/position_commands_test.cpp	/^TEST_F(PositionCommandsTest, StopUnknownServos) {$/;"	f	namespace:vulp::spine
+TearDown	tests/SpineTest.cpp	/^  void TearDown() {$/;"	f	class:vulp::spine::SpineTest
+TestSpineInterface	tests/spine_interface_test.py	/^class TestSpineInterface(unittest.TestCase):$/;"	c
+__all__	__init__.py	/^__all__ = [$/;"	v
+__del__	spine_interface.py	/^    def __del__(self):$/;"	m	class:SpineInterface	file:
+__init__	spine_interface.py	/^    def __init__(self, shm_name: str = "\/vulp"):$/;"	m	class:SpineInterface
+_read_dict	spine_interface.py	/^    def _read_dict(self) -> dict:$/;"	m	class:SpineInterface
+_read_request	spine_interface.py	/^    def _read_request(self) -> int:$/;"	m	class:SpineInterface
+_wait_for_spine	spine_interface.py	/^    def _wait_for_spine(self, timeout_ns: int = 100000000) -> None:$/;"	m	class:SpineInterface
+_write_dict	spine_interface.py	/^    def _write_dict(self, dictionary: dict) -> None:$/;"	m	class:SpineInterface
+_write_request	spine_interface.py	/^    def _write_request(self, request: int) -> None:$/;"	m	class:SpineInterface
+actuation_	Spine.h	/^  actuation::Interface& actuation_;$/;"	m	class:vulp::spine::Spine
+actuation_interface_	tests/SpineTest.cpp	/^  std::unique_ptr<MockInterface> actuation_interface_;$/;"	m	class:vulp::spine::SpineTest	file:
+actuation_output_	Spine.h	/^  std::future<actuation::moteus::Output> actuation_output_;$/;"	m	class:vulp::spine::Spine
+agent_interface	tests/SpineTest.cpp	/^  const AgentInterface& agent_interface() { return agent_interface_; }$/;"	f	class:vulp::spine::testing::Spine
+agent_interface_	Spine.h	/^  AgentInterface agent_interface_;$/;"	m	class:vulp::spine::Spine
+agent_interface_	tests/StateMachineTest.cpp	/^  std::unique_ptr<AgentInterface> agent_interface_;$/;"	m	class:vulp::spine::StateMachineTest	file:
+all_commands_are_stops	tests/SpineTest.cpp	/^  bool all_commands_are_stops() {$/;"	f	class:vulp::spine::testing::Spine
+allocate_file	AgentInterface.cpp	/^void allocate_file(int file_descriptor, int bytes) {$/;"	f	namespace:vulp::spine
+begin_cycle	Spine.cpp	/^void Spine::begin_cycle() {$/;"	f	class:vulp::spine::Spine
+begin_cycle	Spine.h	/^  void begin_cycle();$/;"	p	class:vulp::spine::Spine
+caught_interrupt_	Spine.h	/^  const bool& caught_interrupt_;$/;"	m	class:vulp::spine::Spine
+cpu	Spine.h	/^    int cpu = -1;$/;"	m	struct:vulp::spine::Spine::Parameters
+cycle	Spine.cpp	/^void Spine::cycle() {$/;"	f	class:vulp::spine::Spine
+cycle	Spine.h	/^  void cycle();$/;"	p	class:vulp::spine::Spine
+cycle_actuation	Spine.cpp	/^void Spine::cycle_actuation() {$/;"	f	class:vulp::spine::Spine
+cycle_actuation	Spine.h	/^  void cycle_actuation();$/;"	p	class:vulp::spine::Spine
+data	AgentInterface.h	/^  const char* data() const { return mmap_data_; }$/;"	f	class:vulp::spine::AgentInterface
+defaults	position_commands.h	/^namespace defaults {$/;"	n	namespace:vulp::spine
+dict	tests/SpineTest.cpp	/^  const palimpsest::Dictionary& dict() { return dict_; }$/;"	f	class:vulp::spine::testing::Spine
+dict_	Spine.h	/^  palimpsest::Dictionary dict_;$/;"	m	class:vulp::spine::Spine
+end_cycle	Spine.cpp	/^void Spine::end_cycle() {$/;"	f	class:vulp::spine::Spine
+end_cycle	Spine.h	/^  void end_cycle();$/;"	p	class:vulp::spine::Spine
+expect_position_commands	position_commands.h	/^inline void expect_position_commands($/;"	f	namespace:vulp::spine
+expect_timestamp	Spine.cpp	/^inline void expect_timestamp(Dictionary& action) {$/;"	f	namespace:vulp::spine
+force_event	tests/SpineTest.cpp	/^  void force_event(const Event& event) { state_machine_.process_event(event); }$/;"	f	class:vulp::spine::testing::Spine
+frequency	Spine.h	/^    unsigned frequency = 1000u;$/;"	m	struct:vulp::spine::Spine::Parameters
+frequency_	Spine.h	/^  const unsigned frequency_;$/;"	m	class:vulp::spine::Spine
+get_observation	spine_interface.py	/^    def get_observation(self) -> dict:$/;"	m	class:SpineInterface
+interface_	StateMachine.cpp	/^    : interface_(interface), state_(State::kSendStops), stop_cycles_(0u) {$/;"	p	namespace:vulp::spine	file:
+interface_	StateMachine.h	/^  AgentInterface& interface_;$/;"	m	class:vulp::spine::State::StateMachine
+ipc_buffer_	Spine.h	/^  std::vector<char> ipc_buffer_;$/;"	m	class:vulp::spine::Spine
+kAct	StateMachine.h	/^  kAct = 4,$/;"	m	class:vulp::spine::State
+kAction	Request.h	/^  kAction = 2,$/;"	m	class:vulp::spine::Request
+kAction	request.py	/^    kAction = 2$/;"	v	class:Request
+kCycleBeginning	StateMachine.h	/^  kCycleBeginning = 0,$/;"	m	class:vulp::spine::State::Event
+kCycleEnd	StateMachine.h	/^  kCycleEnd = 1,$/;"	m	class:vulp::spine::State::Event
+kError	Request.h	/^  kError = 5  \/\/ last request was invalid$/;"	m	class:vulp::spine::Request
+kError	request.py	/^    kError = 5  # last request was invalid$/;"	v	class:Request
+kIdle	StateMachine.h	/^  kIdle = 2,$/;"	m	class:vulp::spine::State
+kInterrupt	StateMachine.h	/^  kInterrupt = 2,$/;"	m	class:vulp::spine::State::Event
+kKdScale	position_commands.h	/^constexpr double kKdScale = 1.0;$/;"	m	namespace:vulp::spine::defaults
+kKpScale	position_commands.h	/^constexpr double kKpScale = 1.0;$/;"	m	namespace:vulp::spine::defaults
+kMaximumTorque	position_commands.h	/^constexpr double kMaximumTorque = 8.42;  \/\/ N.m$/;"	m	namespace:vulp::spine::defaults
+kMebibytes	Spine.h	/^constexpr size_t kMebibytes = 1 << 20;$/;"	m	namespace:vulp::spine
+kNbStopCycles	StateMachine.h	/^constexpr unsigned kNbStopCycles = 5;$/;"	m	namespace:vulp::spine
+kNone	Request.h	/^  kNone = 0,  \/\/ no active request$/;"	m	class:vulp::spine::Request
+kNone	request.py	/^    kNone = 0  # no active request$/;"	v	class:Request
+kObservation	Request.h	/^  kObservation = 1,$/;"	m	class:vulp::spine::Request
+kObservation	request.py	/^    kObservation = 1$/;"	v	class:Request
+kObserve	StateMachine.h	/^  kObserve = 3,$/;"	m	class:vulp::spine::State
+kOver	StateMachine.h	/^  kOver = 6$/;"	m	class:vulp::spine::State
+kReset	StateMachine.h	/^  kReset = 1,$/;"	m	class:vulp::spine::State
+kSendStops	StateMachine.h	/^  kSendStops = 0,$/;"	m	class:vulp::spine::State
+kShutdown	StateMachine.h	/^  kShutdown = 5,$/;"	m	class:vulp::spine::State
+kStart	Request.h	/^  kStart = 3,$/;"	m	class:vulp::spine::Request
+kStart	request.py	/^    kStart = 3$/;"	v	class:Request
+kStop	Request.h	/^  kStop = 4,$/;"	m	class:vulp::spine::Request
+kStop	request.py	/^    kStop = 4$/;"	v	class:Request
+kVelocity	position_commands.h	/^constexpr double kVelocity = 0.0;  \/\/ rad\/s$/;"	m	namespace:vulp::spine::defaults
+latest_imu_data_	Spine.h	/^  actuation::ImuData latest_imu_data_;$/;"	m	class:vulp::spine::Spine
+latest_replies_	Spine.h	/^  std::vector<actuation::moteus::ServoReply> latest_replies_;$/;"	m	class:vulp::spine::Spine
+log_dict	Spine.cpp	/^void Spine::log_dict() {$/;"	f	class:vulp::spine::Spine
+log_dict	Spine.h	/^  void log_dict();$/;"	p	class:vulp::spine::Spine
+log_path	Spine.h	/^    std::string log_path = "\/dev\/null";$/;"	m	struct:vulp::spine::Spine::Parameters
+logger_	Spine.h	/^  logging::Logger logger_;$/;"	m	class:vulp::spine::Spine
+mmap_	AgentInterface.h	/^  void* mmap_;$/;"	m	class:vulp::spine::AgentInterface
+mmap_	tests/SpineTest.cpp	/^  void* mmap_;$/;"	m	class:vulp::spine::SpineTest	file:
+mmap_data_	AgentInterface.h	/^  char* mmap_data_;$/;"	m	class:vulp::spine::AgentInterface
+mmap_request_	AgentInterface.h	/^  uint32_t* mmap_request_;$/;"	m	class:vulp::spine::AgentInterface
+mmap_size_	AgentInterface.h	/^  uint32_t* mmap_size_;$/;"	m	class:vulp::spine::AgentInterface
+name_	AgentInterface.h	/^  std::string name_;$/;"	m	class:vulp::spine::AgentInterface
+noexcept	StateMachine.h	/^  explicit StateMachine(AgentInterface& interface) noexcept;$/;"	m	class:vulp::spine::State::StateMachine
+noexcept	StateMachine.h	/^  void enter_state(const State& next_state) noexcept;$/;"	m	class:vulp::spine::State::StateMachine
+noexcept	StateMachine.h	/^  void process_event(const Event& event) noexcept;$/;"	m	class:vulp::spine::State::StateMachine
+observation_	tests/SpineTest.cpp	/^  ObserverPipeline observation_;$/;"	m	class:vulp::spine::SpineTest	file:
+observer_pipeline_	Spine.h	/^  observation::ObserverPipeline observer_pipeline_;$/;"	m	class:vulp::spine::Spine
+params_	tests/SpineTest.cpp	/^  Spine::Parameters params_;$/;"	m	class:vulp::spine::SpineTest	file:
+process_cycle_beginning	StateMachine.cpp	/^void StateMachine::process_cycle_beginning() {$/;"	f	class:vulp::spine::StateMachine
+process_cycle_beginning	StateMachine.h	/^  void process_cycle_beginning();$/;"	p	class:vulp::spine::State::StateMachine
+process_cycle_end	StateMachine.cpp	/^void StateMachine::process_cycle_end() {$/;"	f	class:vulp::spine::StateMachine
+process_cycle_end	StateMachine.h	/^  void process_cycle_end();$/;"	p	class:vulp::spine::State::StateMachine
+read_dict	tests/spine_interface_test.py	/^    def read_dict(self) -> dict:$/;"	m	class:TestSpineInterface
+read_mmap_request	tests/SpineTest.cpp	/^  Request read_mmap_request() {$/;"	f	class:vulp::spine::SpineTest
+read_request	tests/spine_interface_test.py	/^    def read_request(self) -> int:$/;"	m	class:TestSpineInterface
+request	AgentInterface.h	/^  Request request() const { return static_cast<Request>(*mmap_request_); }$/;"	f	class:vulp::spine::AgentInterface
+request	tests/StateMachineTest.cpp	/^  Request request() { return agent_interface_->request(); }$/;"	f	class:vulp::spine::StateMachineTest
+reset	Spine.cpp	/^void Spine::reset(const Dictionary& config) {$/;"	f	class:vulp::spine::Spine
+reset	Spine.h	/^  void reset(const palimpsest::Dictionary& config);$/;"	p	class:vulp::spine::Spine
+run	Spine.cpp	/^void Spine::run() {$/;"	f	class:vulp::spine::Spine
+run	Spine.h	/^  void run();$/;"	p	class:vulp::spine::Spine
+schwifty_observer_	tests/SpineTest.cpp	/^  std::shared_ptr<SchwiftyObserver> schwifty_observer_;$/;"	m	class:vulp::spine::SpineTest	file:
+serialization_buffer_	tests/SpineTest.cpp	/^  std::vector<char> serialization_buffer_;$/;"	m	class:vulp::spine::SpineTest	file:
+serialize	serialize.py	/^def serialize(obj):$/;"	f
+servo_bus_map	tests/SpineTest.cpp	/^  const std::map<int, int>& servo_bus_map() {$/;"	f	class:vulp::spine::testing::Spine
+servo_joint_map	tests/SpineTest.cpp	/^  const std::map<int, std::string>& servo_joint_map() {$/;"	f	class:vulp::spine::testing::Spine
+servo_joint_map_	tests/position_commands_test.cpp	/^  std::map<int, std::string> servo_joint_map_;$/;"	m	class:vulp::spine::PositionCommandsTest	file:
+setUp	tests/spine_interface_test.py	/^    def setUp(self, shm_name="\/vulp", size=1024):$/;"	m	class:TestSpineInterface
+set_action	spine_interface.py	/^    def set_action(self, action: dict) -> None:$/;"	m	class:SpineInterface
+set_request	AgentInterface.cpp	/^void AgentInterface::set_request(Request request) {$/;"	f	class:vulp::spine::AgentInterface
+set_request	AgentInterface.h	/^  void set_request(Request request);$/;"	p	class:vulp::spine::AgentInterface
+set_request	tests/StateMachineTest.cpp	/^  void set_request(const Request& request) {$/;"	f	class:vulp::spine::StateMachineTest
+shm_name	Spine.h	/^    std::string shm_name = "\/vulp";$/;"	m	struct:vulp::spine::Spine::Parameters
+shm_size	Spine.h	/^    size_t shm_size = 1 * kMebibytes;$/;"	m	struct:vulp::spine::Spine::Parameters
+simulate	Spine.cpp	/^void Spine::simulate(unsigned nb_substeps) {$/;"	f	class:vulp::spine::Spine
+simulate	Spine.h	/^  void simulate(unsigned nb_substeps);$/;"	p	class:vulp::spine::Spine
+size	AgentInterface.h	/^  uint32_t size() const { return *mmap_size_; }$/;"	f	class:vulp::spine::AgentInterface
+size_	AgentInterface.h	/^  size_t size_;$/;"	m	class:vulp::spine::AgentInterface
+spine	AgentInterface.cpp	/^namespace vulp::spine {$/;"	n	class:vulp	file:
+spine	AgentInterface.h	/^namespace vulp::spine {$/;"	n	class:vulp
+spine	Request.h	/^namespace vulp::spine {$/;"	n	class:vulp
+spine	Spine.cpp	/^namespace vulp::spine {$/;"	n	class:vulp	file:
+spine	Spine.h	/^namespace vulp::spine {$/;"	n	class:vulp
+spine	StateMachine.cpp	/^namespace vulp::spine {$/;"	n	class:vulp	file:
+spine	StateMachine.h	/^namespace vulp::spine {$/;"	n	class:vulp
+spine	position_commands.h	/^namespace vulp::spine {$/;"	n	class:vulp
+spine	stop_commands.h	/^namespace vulp::spine {$/;"	n	class:vulp
+spine	tests/SpineTest.cpp	/^namespace vulp::spine {$/;"	n	class:vulp	file:
+spine	tests/StateMachineTest.cpp	/^namespace vulp::spine {$/;"	n	class:vulp	file:
+spine	tests/position_commands_test.cpp	/^namespace vulp::spine {$/;"	n	class:vulp	file:
+spine	tests/stop_commands_test.cpp	/^namespace vulp::spine {$/;"	n	class:vulp	file:
+spine_	tests/SpineTest.cpp	/^  std::unique_ptr<testing::Spine> spine_;$/;"	m	class:vulp::spine::SpineTest	file:
+start	spine_interface.py	/^    def start(self, config: dict) -> None:$/;"	m	class:SpineInterface
+start_spine	tests/SpineTest.cpp	/^  void start_spine() {$/;"	f	class:vulp::spine::SpineTest
+state	tests/SpineTest.cpp	/^  const State& state() { return state_machine_.state(); }$/;"	f	class:vulp::spine::testing::Spine
+state	tests/StateMachineTest.cpp	/^  State state() { return state_machine_->state(); }$/;"	f	class:vulp::spine::StateMachineTest
+state_	StateMachine.cpp	/^    : interface_(interface), state_(State::kSendStops), stop_cycles_(0u) {$/;"	p	namespace:vulp::spine	file:
+state_	StateMachine.h	/^  State state_;$/;"	m	class:vulp::spine::State::StateMachine
+state_cycle_beginning_	Spine.h	/^  State state_cycle_beginning_;$/;"	m	class:vulp::spine::Spine
+state_cycle_end_	Spine.h	/^  State state_cycle_end_;$/;"	m	class:vulp::spine::Spine
+state_machine_	Spine.h	/^  StateMachine state_machine_;$/;"	m	class:vulp::spine::Spine
+state_machine_	tests/StateMachineTest.cpp	/^  std::unique_ptr<StateMachine> state_machine_;$/;"	m	class:vulp::spine::StateMachineTest	file:
+stop	spine_interface.py	/^    def stop(self) -> None:$/;"	m	class:SpineInterface
+stop_cycles_	StateMachine.h	/^  unsigned stop_cycles_;$/;"	m	class:vulp::spine::State::StateMachine
+test_get_observation	tests/spine_interface_test.py	/^    def test_get_observation(self):$/;"	m	class:TestSpineInterface
+test_reset	tests/spine_interface_test.py	/^    def test_reset(self):$/;"	m	class:TestSpineInterface
+test_set_action	tests/spine_interface_test.py	/^    def test_set_action(self):$/;"	m	class:TestSpineInterface
+test_wait_times_out	tests/spine_interface_test.py	/^    def test_wait_times_out(self):$/;"	m	class:TestSpineInterface
+testing	tests/SpineTest.cpp	/^namespace testing {$/;"	n	namespace:vulp::spine	file:
+wait_monkeypatch	tests/spine_interface_test.py	/^        def wait_monkeypatch(spine):$/;"	f	function:TestSpineInterface.setUp
+wait_pre_monkeypatch	tests/spine_interface_test.py	/^wait_pre_monkeypatch = SpineInterface._wait_for_spine$/;"	v
+write	AgentInterface.cpp	/^void AgentInterface::write(char* data, size_t size) {$/;"	f	class:vulp::spine::AgentInterface
+write	AgentInterface.h	/^  void write(char* data, size_t size);$/;"	p	class:vulp::spine::AgentInterface
+write_mmap_data	tests/SpineTest.cpp	/^  void write_mmap_data(const char* data, size_t size) {$/;"	f	class:vulp::spine::SpineTest
+write_mmap_dict	tests/SpineTest.cpp	/^  void write_mmap_dict(const Dictionary& dict) {$/;"	f	class:vulp::spine::SpineTest
+write_mmap_request	tests/SpineTest.cpp	/^  void write_mmap_request(Request request) {$/;"	f	class:vulp::spine::SpineTest
+write_observation	tests/spine_interface_test.py	/^    def write_observation(self, observation: dict) -> None:$/;"	m	class:TestSpineInterface
+write_position_commands	position_commands.h	/^inline void write_position_commands($/;"	f	namespace:vulp::spine
+write_request	tests/spine_interface_test.py	/^    def write_request(self, request: int) -> None:$/;"	m	class:TestSpineInterface
+~AgentInterface	AgentInterface.cpp	/^AgentInterface::~AgentInterface() {$/;"	f	class:vulp::spine::AgentInterface
+~AgentInterface	AgentInterface.h	/^  ~AgentInterface();$/;"	p	class:vulp::spine::AgentInterface
