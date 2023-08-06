@@ -1,0 +1,5 @@
+pyobjc-core>=9.2
+pyobjc-framework-CoreMedia>=9.2
+pyobjc-framework-CoreAudio>=9.2
+pyobjc-framework-Cocoa>=9.2
+pyobjc-framework-Quartz>=9.2
