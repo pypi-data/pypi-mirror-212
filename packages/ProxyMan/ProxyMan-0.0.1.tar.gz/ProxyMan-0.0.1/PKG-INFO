@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ProxyMan
+Version: 0.0.1
+Summary: A simple proxy manager for Python with WebShare API support
+Home-page: https://github.com/rawandahmad698/ProxyMan
+Author: Rawand Ahmed Shaswar
+Author-email: rawa@rawa.dev
+License: BSD 3-Clause License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
