@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/BroadSword/BroadSword.py
+src/BroadSword/__init__.py
+src/BroadSword.egg-info/PKG-INFO
+src/BroadSword.egg-info/SOURCES.txt
+src/BroadSword.egg-info/dependency_links.txt
+src/BroadSword.egg-info/requires.txt
+src/BroadSword.egg-info/top_level.txt
