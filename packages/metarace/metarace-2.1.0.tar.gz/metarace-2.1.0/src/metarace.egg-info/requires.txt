@@ -1,0 +1,9 @@
+importlib-resources
+pyserial
+python-dateutil
+pycairo
+PyGObject
+libscrc
+paho-mqtt
+xlwt
+grapheme
