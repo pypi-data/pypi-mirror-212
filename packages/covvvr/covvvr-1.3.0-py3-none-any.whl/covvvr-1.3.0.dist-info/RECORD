@@ -1,0 +1,11 @@
+covvvr/__init__.py,sha256=iVhfu4hbpruPGTAMkV7baFoUoqvtwIuQAd-pluadqvI,221
+covvvr/_exceptions.py,sha256=ocVUxIs1kX0o3q-sp75EQ1WZ7itOvp1YAyoQLG00ajQ,76
+covvvr/_types.py,sha256=xLRlAUoPV93fF2PT4UfsoUS7hLw7y0Lmp3HyDkYk52U,340
+covvvr/_wrappers.py,sha256=zAyopnAIV63daAbtyyel6IiX_7-WxzSr7brNHvp6J9A,1353
+covvvr/cvintegrator.py,sha256=XhAhbOMuK1NodFz0EJrEjQwNo4ATd30Tq0M-v-ODenI,22721
+covvvr/functions.py,sha256=deFMgFtJHOfJHJ9pVq-HV1NUuLWk6kd7ooBMsrUay3s,12676
+covvvr-1.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+covvvr-1.3.0.dist-info/METADATA,sha256=nzeUddij2mkt2RdBveju4rWLU5YNTuNBm6Sa326cvao,50076
+covvvr-1.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+covvvr-1.3.0.dist-info/top_level.txt,sha256=0VRa0PopjyhgjWQqUsF8oi3KxIE_23R5J2YRA91v0h8,7
+covvvr-1.3.0.dist-info/RECORD,,
