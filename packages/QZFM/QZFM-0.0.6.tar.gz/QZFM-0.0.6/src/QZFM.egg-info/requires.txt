@@ -1,0 +1,6 @@
+numpy
+matplotlib
+pyserial
+datetime
+tqdm
+pandas
