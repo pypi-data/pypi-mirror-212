@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_coca/__init__.py
+autodistill_coca.egg-info/PKG-INFO
+autodistill_coca.egg-info/SOURCES.txt
+autodistill_coca.egg-info/dependency_links.txt
+autodistill_coca.egg-info/requires.txt
+autodistill_coca.egg-info/top_level.txt
