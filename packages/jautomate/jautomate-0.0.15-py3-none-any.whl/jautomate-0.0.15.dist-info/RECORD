@@ -1,0 +1,14 @@
+jautomate/__init__.py,sha256=oane134vEyhlqeT5WeiovmS7xm11sJZ7S-M6-teLUS8,114
+jautomate/__main__.py,sha256=H2ugjazLkIuPE5eGDGguERKH1btVdJOS6B9oira9DxM,190
+jautomate/actions.py,sha256=wzIdvTcDqLViyd_i_0gXLyk76oFt79BpVyYTmvdZXuM,8579
+jautomate/api.py,sha256=UedG2YG8T3A9bTTylcdp71MMmyHuVEWSDozcEbyVjkQ,460
+jautomate/assets.py,sha256=-_fyU5XC4Vbr5Usu6nka8wvDVHR9Pac55YbGNJ4hQIw,1807
+jautomate/cli.py,sha256=QaEe2RzLstxzNL9AMCFlXFzbJ5rCT07Fy0IG-HOOyCQ,6697
+jautomate/commands.py,sha256=SMJN44n93xpUJxM7sodWoGc-apeMLBi3hFmXCyVdML4,4282
+jautomate/logger.py,sha256=sGKS0QkPzej-OmEzgcDywrFEJcAZEOq5Srq4bKrIUwU,1191
+jautomate/utils.py,sha256=I71o4rZsP0yJK_Kl-Ahb5azOHIfVyiBuwGibwq7E-hQ,2055
+jautomate-0.0.15.dist-info/METADATA,sha256=jDOPoRhXRNk2xFztaDwPSTyS6agCD31fv8T5fpcJSuY,2813
+jautomate-0.0.15.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jautomate-0.0.15.dist-info/entry_points.txt,sha256=3W4iZkLOEDQWE1JKgUNoGsvpKf5K0CKI6zDdZ296RUE,54
+jautomate-0.0.15.dist-info/top_level.txt,sha256=5Qy-uTYxZ8bR9cGVV_KBoCXYM3uFDdIj4iUOreWNCcM,10
+jautomate-0.0.15.dist-info/RECORD,,
