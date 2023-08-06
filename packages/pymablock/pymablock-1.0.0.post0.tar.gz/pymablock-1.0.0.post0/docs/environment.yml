@@ -1,0 +1,22 @@
+name: pymablock-docs
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - kwant
+  - myst-nb
+  - sympy
+  - numpy
+  - scipy
+  - matplotlib-base
+  - sphinx-togglebutton
+  - sphinx-copybutton
+  - pip:
+    # sphinx-book-theme is installed from a fork with a fix for the issue button
+    # TODO: remove this once https://github.com/executablebooks/sphinx-book-theme/pull/740
+    # is merged
+    - git+https://github.com/akhmerov/sphinx-book-theme.git@gitlab-issue-button
+    - sphinx-tippy
+    - ..
