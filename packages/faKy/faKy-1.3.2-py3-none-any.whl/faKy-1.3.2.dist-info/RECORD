@@ -1,0 +1,11 @@
+faKy/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+faKy/faKy.py,sha256=_fZHC2KfkoG3PnJqqEqv_8l0RRUQsb_pRbQqaFG11Rk,8053
+faKy/en_core_web_md-2.3.1/MANIFEST.in,sha256=6OkGk8FGmHAsxdWofFJuvpOwsB0f63ggwX2UThO-h-M,17
+faKy/en_core_web_md-2.3.1/PKG-INFO,sha256=OrUTTAsy3EHTjKNVvOYPtHQz-cVjjo7vzZQgC1U1y04,362
+faKy/en_core_web_md-2.3.1/meta.json,sha256=eIOWn9FtmI4qeWnREzcWVeCL1j9W05OLNBxa0rpslOI,9468
+faKy/en_core_web_md-2.3.1/setup.cfg,sha256=HEc8uu6NpfxG5_AVh5SvXOpEFMNKPPPxgMIAH144vT4,38
+faKy/en_core_web_md-2.3.1/setup.py,sha256=VVRUIi8ifNgCSu6CQ-4qRyv3vQEiA5RQFFkMQJt9BnI,1753
+faKy-1.3.2.dist-info/METADATA,sha256=ZkD13YNC59NnsnFg0pr7xlD1PbqtAE-jLCt6aqraOho,4763
+faKy-1.3.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+faKy-1.3.2.dist-info/top_level.txt,sha256=mdqwEg7XVCBw0CYrXgIPodA7o9mvTaz4fz-5rw_zRX0,5
+faKy-1.3.2.dist-info/RECORD,,
