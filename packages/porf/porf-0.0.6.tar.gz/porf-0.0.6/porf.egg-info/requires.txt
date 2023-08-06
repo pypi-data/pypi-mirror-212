@@ -1,0 +1,13 @@
+pandas
+sphinx
+sphinx_rtd_theme
+sphinx_autodoc_typehints
+nbsphinx
+myst_parser
+
+[develop]
+sphinx
+sphinx_rtd_theme
+sphinx_autodoc_typehints
+nbsphinx
+myst_parser
