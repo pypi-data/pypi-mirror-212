@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: frogger
+Version: 0.1.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: build
+Provides-Extra: test
+
+
+# Frogger
+
+This TTS is heavily cropped and packaged [coqui-ai/TTS](https://github.com/coqui-ai/TTS). If you like this then you'll love their other projects.
+
+## Running
+
+Currently it's expected to checkout whole code locally and install deps, and run http server.
+
+```bash
+git clone git@github.com:laszukdawid/frogger.git
+cd frogger
+make install
+make serve
+```

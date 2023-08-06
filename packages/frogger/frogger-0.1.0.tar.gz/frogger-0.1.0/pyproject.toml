@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+dependencies = [
+  "numpy",
+  "fastapi",
+  "uvicorn==0.21.*",
+
+  "requests",
+  "tqdm",
+  "fsspec>=2021.04.0",
+  "pyyaml",
+  "coqpit>=0.0.16",
+  "trainer==0.0.20",  # <- super big! ~620MB
+  "pysbd",
+  "librosa==0.10.0.*",  # has Numba dep. Hmmm...
+
+  # For model
+  "torchaudio",
+  "pandas",
+  "inflect==5.6.0",
+  "gruut[de,es,fr]==2.2.3",
+]
+name = "frogger"
+readme = "README.md"
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = ["black==23.1.*", "isort==5.12.*", "ruff"]
+build = ["setuptools>=61", "build", "twine"]
+test = ["pytest"]
+
+[tool.setuptools.dynamic]
+version = {attr = "frogger.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["frogger*"]
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+
+[tool.isort]
+line_length = 120
+profile = "black"
+multi_line_output = 3
+
+[tool.pytest.ini_options]
+addopts = "-p no:warnings"
+filterwarnings = [
+    #"error",
+    #"ignore::UserWarning",
+    # note the use of single quote below to denote "raw" strings in TOML
+    #'ignore:function ham\(\) is deprecated:DeprecationWarning',
+    'ignore:DeprecationWarning',
+]
