@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+spark_llm/__init__.py
+spark_llm/prompt.py
+spark_llm/spark_llm_assistant.py
+spark_llm.egg-info/PKG-INFO
+spark_llm.egg-info/SOURCES.txt
+spark_llm.egg-info/dependency_links.txt
+spark_llm.egg-info/requires.txt
+spark_llm.egg-info/top_level.txt
