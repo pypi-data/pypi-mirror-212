@@ -1,0 +1,11 @@
+hshield/__init__.py,sha256=qiElKWGHGQwr13oay1KzC8kHU358axmiEJxVzGUKSOE,51
+hshield/main.py,sha256=vi9d5vn4GA-OZ0fcqZGFNx5jePRN-Y3ZxvhVpEFgCzw,1350
+hshield/text.txt,sha256=qYuoql_GxdyMVmGjOyLprwC30PL7RmSJ-JQTAc2m99k,30
+hshield/modules/address_shield.py,sha256=_SOiNa56l4o0cIEFO943NY7T3as7Q7TOLpBswuN00i0,447
+hshield/modules/document_shield.py,sha256=ICoIkuq6y92l3USTa2ld3yVl5cVyabb3qyjmd-woTQg,495
+hshield/modules/name_shield.py,sha256=nrIg6mQuMvV4Q1o3e4tmw3gbMld0DCStSSXzH9jXuOk,391
+hshield-3.0.dist-info/entry_points.txt,sha256=WFUbNinZhNn3WsE_T__L4sztey_19ldNForEok4NbGk,45
+hshield-3.0.dist-info/LICENSE,sha256=ZggDEO2M7p9FGmOH6GqG7C-ChkWSdR0P67ZS9Au-j9w,1077
+hshield-3.0.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+hshield-3.0.dist-info/METADATA,sha256=fTbh6QUKXs9tDu_DQwYxMqiXZDfJYSU3KhB1B-2AYLY,540
+hshield-3.0.dist-info/RECORD,,
