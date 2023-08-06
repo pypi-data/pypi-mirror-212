@@ -1,0 +1,10 @@
+esgcov/__cli__.py,sha256=S24bwPwy2s5OVYNg8WFjnS2Q8PbD8SiGxsf1ENua44k,318
+esgcov/__init__.py,sha256=3oveGxAxnsLi7mPZCxc9NNEDqY4lUVAoLIhz0iaPSIc,135
+esgcov/_version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+esgcov/conf/about/__init__.yaml,sha256=Oe5q29bnMV80NOLU5fBvuTNM_XM0PMJ2a76ERzhH3gQ,288
+esgcov/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+esg_coverage-0.1.0.dist-info/LICENSE,sha256=6_-z_j5TJ7bQ5RlPwAJZ0Eqo3qWC6pMDjlLjz0R4wkE,1071
+esg_coverage-0.1.0.dist-info/METADATA,sha256=L2iK8kZiQFxECNNs5eMEnOrqc1d6-52gRGA_UKtBxQo,3319
+esg_coverage-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+esg_coverage-0.1.0.dist-info/entry_points.txt,sha256=Xttgrm3RDtGiCesj1Z0sCjo12nQGBwiqBM9f-Buv07c,46
+esg_coverage-0.1.0.dist-info/RECORD,,
