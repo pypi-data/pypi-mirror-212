@@ -1,0 +1,4 @@
+[sqlalchemy.dialects]
+pgspider=sqlalchemy_pgspider.psycopg2:PGSpiderDialect_psycopg2
+pgspider.psycopg2=sqlalchemy_pgspider.psycopg2:PGSpiderDialect_psycopg2
+
