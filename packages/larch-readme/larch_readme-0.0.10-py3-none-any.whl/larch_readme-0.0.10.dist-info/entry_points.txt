@@ -1,0 +1,4 @@
+[console_scripts]
+larch = larch.cli:cli
+larch-server = larch.server:cli
+larch-server-dryrun = larch.server:init_dryrun
