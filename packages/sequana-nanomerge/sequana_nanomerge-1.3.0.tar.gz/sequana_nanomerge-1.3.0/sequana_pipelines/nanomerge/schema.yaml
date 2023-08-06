@@ -1,0 +1,42 @@
+# Schema validator for the quality_control
+# author: Thomas Cokelaer
+
+type: map
+mapping:
+    "input_directory":
+        type: str
+        required: False
+    "input_readtag":
+        type: str
+        required: False
+    "input_pattern":
+        type: str
+        required: False
+    "summary":
+        type: str
+        required: False
+    "samplesheet":
+        type: str
+        required: True
+
+    "apptainers":
+        type: any
+        required: true
+
+    "sub_sample_summary":
+      type: map
+      mapping:
+          "percentage":
+              type: int
+              range: {min: 1 ,  max: 100}
+
+
+    "pycoqc":
+        type: map
+        mapping:
+          "options":
+            type: str
+            required: False
+
+
+
