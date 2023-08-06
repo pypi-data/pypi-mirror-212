@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_otter/__init__.py
+autodistill_otter.egg-info/PKG-INFO
+autodistill_otter.egg-info/SOURCES.txt
+autodistill_otter.egg-info/dependency_links.txt
+autodistill_otter.egg-info/requires.txt
+autodistill_otter.egg-info/top_level.txt
