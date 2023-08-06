@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "lop-codeingame-cli"
+version = "0.1.3"
+description = ""
+authors = ["machkouroke <machkour20.mo1@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "lop_codeingame_cli"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tqdm = "^4.65.0"
+requests = "^2.31.0"
+typer = "^0.9.0"
+pydantic = "^1.10.8"
+pyyaml = "^6.0"
+websocket-client = "^1.5.2"
+clint = "^0.5.1"
+
+
+[tool.poetry.scripts]
+lopdownload = "lop_codeingame_cli.command.lopdownload:run"
+
+[options.entry_points]
+lopdownload = "lop_codeingame_cli.command.lopdownload:run"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
