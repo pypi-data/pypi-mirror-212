@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+jsonQM.egg-info/PKG-INFO
+jsonQM.egg-info/SOURCES.txt
+jsonQM.egg-info/dependency_links.txt
+jsonQM.egg-info/top_level.txt
