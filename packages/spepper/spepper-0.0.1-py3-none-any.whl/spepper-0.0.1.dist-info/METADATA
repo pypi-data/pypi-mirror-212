@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: spepper
+Version: 0.0.1
+Summary: enforce style like syntax
+Requires-Dist: pycodestyle
+
