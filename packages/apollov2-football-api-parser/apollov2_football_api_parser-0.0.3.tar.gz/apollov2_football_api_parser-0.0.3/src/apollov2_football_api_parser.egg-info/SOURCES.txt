@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/apollov2/__init__.py
+src/apollov2/api_parser.py
+src/apollov2_football_api_parser.egg-info/PKG-INFO
+src/apollov2_football_api_parser.egg-info/SOURCES.txt
+src/apollov2_football_api_parser.egg-info/dependency_links.txt
+src/apollov2_football_api_parser.egg-info/top_level.txt
