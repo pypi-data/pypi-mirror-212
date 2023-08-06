@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+poseur.py
+pyproject.toml
+setup.cfg
+setup.py
+bpc_poseur.egg-info/PKG-INFO
+bpc_poseur.egg-info/SOURCES.txt
+bpc_poseur.egg-info/dependency_links.txt
+bpc_poseur.egg-info/entry_points.txt
+bpc_poseur.egg-info/requires.txt
+bpc_poseur.egg-info/top_level.txt
+docs/source/conf.py
+scripts/find_version.py
+tests/test.py
