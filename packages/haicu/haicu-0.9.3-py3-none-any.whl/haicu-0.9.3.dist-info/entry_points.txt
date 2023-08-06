@@ -1,0 +1,2 @@
+[console_scripts]
+haicu-ctl = haicu.__haicu_ctl:main
