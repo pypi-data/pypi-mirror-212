@@ -1,0 +1,7 @@
+README.md
+setup.py
+giefstat.egg-info/PKG-INFO
+giefstat.egg-info/SOURCES.txt
+giefstat.egg-info/dependency_links.txt
+giefstat.egg-info/requires.txt
+giefstat.egg-info/top_level.txt
