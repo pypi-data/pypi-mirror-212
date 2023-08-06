@@ -1,0 +1,17 @@
+sowing/lca.py,sha256=D1X9FDWHWgKMvjzcQxmO2ubLz1zEInr7pjtXavtAGJQ,3532
+sowing/node.py,sha256=5gR8cl-nkvZeSr4-sGOX7O4VZawXuOmimo15nPKf6L0,3376
+sowing/traversal.py,sha256=mMcBwZwwJOHEetPW_7RbQhprQowb6YVxtdLf0H__sWs,4315
+sowing/zipper.py,sha256=Y3nTJ-x_VapasKeZNEGIbAgbXMX1-vlTNbLAmGqdz6k,5010
+sowing/comb/binary.py,sha256=cmlAvQoZF81QIWSjzdwBPfqTK15WxakXcIKmWtJa9KY,2985
+sowing/comb/supertree.py,sha256=XaTvoA9fUyTKVII3EyfkTZS9-LJpkVbYZt_sLumUFWU,4618
+sowing/util/dataclasses.py,sha256=x9JU-8wiCJVIp48l5Whhs5nm9riYOZw4X9wGKumuK9o,451
+sowing/util/partition.py,sha256=hn96YLVDZ4qxwLGDZg2Kw-aUAwctxNp6tvRgRTMp9S8,2165
+sowing/util/rangequery.py,sha256=1fsa1_mzULh68M6iwnLULSKZ8YmX-Q6ASLTuDiv6s28,2150
+sowphy/clade.py,sha256=8bent5PJ3Pifcq9_DFc5TwcLGz5asWeY_stbXftvgP4,615
+sowphy/newick/__init__.py,sha256=N_fz9Vv82lTTDg-BJsZx0nKVqVCirfgN3oueA_MyRb8,73
+sowphy/newick/parse.py,sha256=_Avph3luHguTXUUiXzdfjss2c-jaRfLUFVbJyCCChAM,11870
+sowphy/newick/write.py,sha256=4zSj5TzD4-kobyFI3I023IOjPdB13YWDIY5ad0aIVro,1343
+sowing-0.0.2.dist-info/METADATA,sha256=vOiNsfF2Lri4KHemeIsFKBhDve4JuQ9uomHiTC8Mqfg,550
+sowing-0.0.2.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+sowing-0.0.2.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sowing-0.0.2.dist-info/RECORD,,
