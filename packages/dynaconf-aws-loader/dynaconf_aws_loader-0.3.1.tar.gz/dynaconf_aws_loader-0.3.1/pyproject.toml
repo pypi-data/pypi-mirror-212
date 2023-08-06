@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "dynaconf-aws-loader"
+version = "0.3.1"
+description = "A custom loader for Dynaconf that uses AWS Systems Manager Parameter Store as a source of truth"
+authors = [
+    "Joël Perras <joel@fictivekin.com>",
+]
+readme = "README.rst"
+packages = [{include = "dynaconf_aws_loader"}]
+license = "MIT"
+keywords = ["dynaconf", "AWS", "SSM"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = [
+    "LICENSE"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+boto3 = "^1.26"
+botocore = "^1.29"
+dynaconf = "^3.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+lovely-pytest-docker = "^0.3.1"
+boto3-stubs = {extras = ["ssm"], version = "^1.26"}
+localstack-client = "^2.1"
+pytest-env = "^0.8.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra"
+testpaths = [
+    "tests",
+]
+env = [
+    "AWS_DEFAULT_REGION=us-east-1",
+]
