@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "exampleproject_crida"
+version = "0.2.0"
+description = ""
+authors = ["Sergi Mas-Pujol <smas@e-crida.enaire.es>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
