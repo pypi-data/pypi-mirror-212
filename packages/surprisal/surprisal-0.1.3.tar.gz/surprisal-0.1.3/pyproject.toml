@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "surprisal"
+version = "0.1.3"
+description = "A package to conveniently compute surprisals for text sequences and subsequences"
+readme = "README.md"
+homepage = "https://github.com/aalok-sathe/surprisal"
+repository = "https://github.com/aalok-sathe/surprisal"
+authors = ["aalok-sathe <asathe@mit.edu>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+transformers = "^4.20.1"
+numpy = "^1.23.1"
+torch = "^1.12.0"
+plotext = "^5.0.2"
+matplotlib = "^3.5.2"
+pandas = "^1.4.3"
+openai = "^0.23.0"
+
+[tool.poetry.dev-dependencies]
+ipython = "^8.4.0"
+black = {version = "^22.6.0", allow-prereleases = true}
+ipykernel = "^6.15.1"
+ipywidgets = "^7.7.1"
+seaborn = "^0.11.2"
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
