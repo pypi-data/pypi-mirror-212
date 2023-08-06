@@ -1,0 +1,2 @@
+[console_scripts]
+autoscrum = autoscrum.__main__:main
