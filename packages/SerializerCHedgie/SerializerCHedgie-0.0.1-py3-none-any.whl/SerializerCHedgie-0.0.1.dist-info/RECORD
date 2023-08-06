@@ -1,0 +1,13 @@
+Serializer/DeserializerJSON.py,sha256=bM59cpNVkRJNeSL7rZsvvFjqvgavnHXC1UMRkeBkkRY,6296
+Serializer/DeserializerXML.py,sha256=XUUTy18iX8ijrZdiJRbR6kyroSfc6EluoSQOrI_Gb8o,6449
+Serializer/ParserJSON.py,sha256=FncJvhdnfej2lHy5Nm3uvX-pbiAoUzJN6x9sQ-9tZpE,749
+Serializer/ParserXML.py,sha256=F5jybFQfUb8b2SXD7OPPUNnHd2r4U_14e_utfZoiv0s,776
+Serializer/SerializerFactory.py,sha256=kecWHIE8GVybOFLFyBIIcNi2uxsVfH8tcqlQ8Ddk6M4,403
+Serializer/SerializerJSON.py,sha256=nFRRWsbIyIc5IxpVmtdiLRRN-tEeApeqxgieFs-bV10,8440
+Serializer/SerializerXML.py,sha256=CZvIfe0xBkGeEDJXX35N89OA-mAuWUejE_XOMk3e3Yk,8438
+Serializer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Serializer/constants.py,sha256=tSmQJCmkM2ZWZFElTiWOc0uDxWeb_rp_pt3fyCLpfQA,315
+SerializerCHedgie-0.0.1.dist-info/METADATA,sha256=bpeXCZrzCUAhBYZ9vOAHlpXJjVyqkFWA3dqmLWnZlHg,354
+SerializerCHedgie-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+SerializerCHedgie-0.0.1.dist-info/top_level.txt,sha256=_i9LuaWfBRjsGJRmxndZDrUwcLNaDmNnJ-KqSd0RVIk,11
+SerializerCHedgie-0.0.1.dist-info/RECORD,,
