@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: stb-amount
+Version: 1.0.0
+Summary: stabilize add, update and delete
+Home-page: https://github.com/reimibeta/stb_amount
+Author: ReimiBeta
+Author-email: reimi846@gmail.com
+License: MIT
+
+stabilize add, update and delete
