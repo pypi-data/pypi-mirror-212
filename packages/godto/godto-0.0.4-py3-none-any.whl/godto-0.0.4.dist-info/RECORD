@@ -1,0 +1,14 @@
+godto/__init__.py,sha256=YMxCIzGtIBjKdsuo_BzvmRA-h_hpF4020D93bGNTAC4,442
+godto/data/openapi/README.md,sha256=9fRHveMsXagFGe-xynT_1b8D4ZcGu84xqKt-z-PG3jo,94
+godto/data/openapi/v2.0/README.md,sha256=ql_ixc4I7CKg1cySLzcnmKZaAHb4c1osjXhDBRP-pMs,248
+godto/data/openapi/v2.0/schema.json,sha256=s2hxyAFiksXmbdOyA-aa7_mL_vl-CzxnwZCQNglVhqU,40247
+godto/data/openapi/v3.0/README.md,sha256=ZfBT_R0TcNtyau6Qs9UoxLTP_7rZp4xFflKazUJ8DTY,890
+godto/data/openapi/v3.0/schema.json,sha256=ZEwuXSQk2s0fmSSJq-FW1Qh63Uwct8YeyYVP_6uJgQE,35817
+godto/data/openapi/v3.0/schema.yaml,sha256=umamEFkI898qqadgkQJny10ehXYIeTniPPKEsWl9wBk,22670
+godto/openapi/README.md,sha256=Zh_hvv2RphRtFBCeBV5Xc9ISQU0-5YgnKPpUmhDdPJg,680
+godto/openapi/v3.py,sha256=mZWzpY8CsROKHKnf61bu9L0jLwGFbngZZXfbVK0mXMM,12592
+godto-0.0.4.dist-info/LICENSE,sha256=G3lig0yYU_DFJj7coAP8MNr-6A-MyNHzke0czVRCsJM,1069
+godto-0.0.4.dist-info/METADATA,sha256=Dx00IkqJIsQA_s6kjlZtFzV9oRbplqOEJuI5Lv7SS8k,2206
+godto-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+godto-0.0.4.dist-info/top_level.txt,sha256=OcQDiieJ_Q2m4bi10g4AhyrR3teCpp-ZNSSyv1DXogs,6
+godto-0.0.4.dist-info/RECORD,,
