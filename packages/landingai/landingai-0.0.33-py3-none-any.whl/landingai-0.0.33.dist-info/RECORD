@@ -1,0 +1,13 @@
+landingai/__init__.py,sha256=_uK-ud2c0ApXUVuB0P7pajgz65YYcoxS_94_WrUFlBo,225
+landingai/common.py,sha256=oBiFr4F_uvqXeaPIw8Sk0WwY0JI5tha7n1v5OazNAbU,4723
+landingai/io.py,sha256=MzEKpoFVjyqdoNI-Eb0vF6F0xsOmY_SgKsK9pUfzIPw,3683
+landingai/postprocess.py,sha256=q2GwC24DJHVYtHPJuXN_jlmC1dIT9sEa62cDhGHs-94,4522
+landingai/predict.py,sha256=yQnBBFs5r1phcGWhx1yeM_rxCoGXI6XQDm3XuI-mDMw,12230
+landingai/storage/__init__.py,sha256=k9LOSwN65MR4rq3s-94-P7cprTh7R-RPSShk-iYGkZ4,40
+landingai/storage/snowflake.py,sha256=dgVncOs9jo2KY_XarA3LL6GvcU4RT4g6DBj8B_vZZlY,4371
+landingai/vision_pipeline.py,sha256=7tGoXSEs-l7aP7jrGySmF67RG63lrGe2gVCxNXisNhQ,13862
+landingai/visualize.py,sha256=1mk--fTXkSqefJIJFwAFtF-5XpcOjtFhy-qmdVxgHac,7300
+landingai-0.0.33.dist-info/LICENSE.md,sha256=rQNSvmwvS0Hxx1gJCvJ-PDPO4SySr0ND6eTNFnIDUA4,1063
+landingai-0.0.33.dist-info/METADATA,sha256=tE5w2LJd7-0mT8p_nnabU5dXZuHOZ_zmunhRqz18KKY,6952
+landingai-0.0.33.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+landingai-0.0.33.dist-info/RECORD,,
