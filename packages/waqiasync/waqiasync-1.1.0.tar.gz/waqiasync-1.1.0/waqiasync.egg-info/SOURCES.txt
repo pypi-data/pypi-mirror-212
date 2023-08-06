@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+waqiasync/__init__.py
+waqiasync.egg-info/PKG-INFO
+waqiasync.egg-info/SOURCES.txt
+waqiasync.egg-info/dependency_links.txt
+waqiasync.egg-info/requires.txt
+waqiasync.egg-info/top_level.txt
+waqiasync.egg-info/zip-safe
