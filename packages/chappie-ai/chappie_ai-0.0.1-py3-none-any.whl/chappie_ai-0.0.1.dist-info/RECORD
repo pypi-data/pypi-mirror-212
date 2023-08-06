@@ -1,0 +1,16 @@
+chappie/__init__.py,sha256=Ar0j2MRkqrb7nYH_VE9OUdgANCkbgTIwPuiOHMZB7BQ,246
+chappie/ai/__init__.py,sha256=_5WAtJIuLvJzJH_BjpuzEUZJv2bmowfl9cMggaBVxrM,232
+chappie/ai/bot.py,sha256=n5jwaC-BmhgGUrPpV0kuIppaBYofEi10amAbJ4rFGas,34662
+chappie/ai/model.py,sha256=deWz9RUN9ENgrV9g5VMKw4bMlpxIF882kro5GVzCv_4,22856
+chappie/ai/search.py,sha256=92mOTD4h9EmZIujjJU9agGQwYmO2i1l8uVdarHHaqL8,8792
+chappie/skills/__init__.py,sha256=XK-1uhFu92hbZeJBn5SbV52Ls1UNKeI3SlrOZLyZ8do,25
+chappie/skills/chess/__init__.py,sha256=_p28kqtKlMGIbsMq3AqI0k8BzvZQ9b4ywzJdSh9y09Q,43
+chappie/skills/chess/game_interface.py,sha256=ybm8uZQoBk_K7qs7ueinvrz-8VhmP83WYwuK3nOAi0M,25798
+chappie/skills/chess/game_plumbing.py,sha256=73nDJw3lzOVdMcaoZ3P9JRY3x-sPkHDTdbFf9qvtToM,3912
+chappie/tools/__init__.py,sha256=KzADYu8F_82fsxHnGGA8vRXZmHJ2D2JzaZ45ZmAXupg,29
+chappie/tools/toolbox.py,sha256=YQwgrTlTXZ2pjr8ZVbQaPT8Sv6ZZaIO-mPWbqOo6He0,8750
+chappie_ai-0.0.1.dist-info/LICENSE,sha256=CE6PPZG26d03hxzj-mde8NeAR-Xww2752IM7lLk7ZVs,1070
+chappie_ai-0.0.1.dist-info/METADATA,sha256=53G2XFh9eYrQuTuWiJTlodamFAhB6BHe8VsN8gIS0RQ,1748
+chappie_ai-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+chappie_ai-0.0.1.dist-info/top_level.txt,sha256=JWVGBf-EF--zWgE5JCm5IkSR2FRLM3qoppJRsjsTjwg,8
+chappie_ai-0.0.1.dist-info/RECORD,,
