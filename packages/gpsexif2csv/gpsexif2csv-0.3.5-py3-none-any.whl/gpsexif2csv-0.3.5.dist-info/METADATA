@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: gpsexif2csv
+Version: 0.3.5
+Summary: Extract EXIF GPS data into CSV
+License: GPL-3.0-or-later
+Author: João Fauvel
+Author-email: jmmfauvel@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pillow (>=9.4.0,<10.0.0)
+Requires-Dist: rich (>=13.3.2,<14.0.0)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# GPSEXIF2CSV
+Extract EXIF GPS data into CSV
+
+## Installation
+`pip install gpsexif2csv`
+
+## Usage
+```
+    Usage: gpsexif2csv [OPTIONS] DIRECTORY OUTFILE  
+
+    Arguments:
+    DIRECTORY  Directory to search for images (recursively)  [required]  
+    OUTFILE    Output CSV file [required]
+
+    Options:
+    -v                              Increase logging level  [default: 0]  
+    --install-completion [bash|zsh|fish|powershell|pwsh]  Install completion for the specified shell.
+    --show-completion [bash|zsh|fish|powershell|pwsh]   Show completion for the specified shell, to copy it or customize the installation.
+    --help                                                Show this message and exit.
+```
+

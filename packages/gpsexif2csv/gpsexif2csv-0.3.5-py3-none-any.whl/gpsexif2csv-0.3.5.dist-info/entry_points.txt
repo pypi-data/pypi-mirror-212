@@ -1,0 +1,3 @@
+[console_scripts]
+gpsexif2csv=gpsexif2csv.main:app
+
