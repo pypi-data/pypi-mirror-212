@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: eqdata-generator
+Version: 0.0.3
+Summary: Command line tool to generate test data for the NTU earthquate detector
+Author: Weber Wang
+Author-email: weber0205@gmail.com
+License: GPL3
+Keywords: signals,science,electronics,data
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Description-Content-Type: text/x-rst
+
+Earthquake Detector Data Generator
+==================================
+
+this generates test data for NTU earthquake detector.
