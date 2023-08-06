@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: miplearn
+Version: 0.3.0
+Summary: Extensible Framework for Learning-Enhanced Mixed-Integer Optimization
+Home-page: https://github.com/ANL-CEEESA/MIPLearn/
+Author: Alinson S. Xavier
+Author-email: axavier@anl.gov
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+
