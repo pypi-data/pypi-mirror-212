@@ -1,0 +1,3 @@
+build_report
+prepare_data_to_be_print
+print_report

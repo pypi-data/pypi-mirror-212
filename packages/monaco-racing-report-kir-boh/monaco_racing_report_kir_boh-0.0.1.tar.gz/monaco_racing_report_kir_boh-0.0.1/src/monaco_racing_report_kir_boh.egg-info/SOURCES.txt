@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/prepare_data_to_be_print.py
+src/print_report.py
+src/build_report/__init__.py
+src/build_report/build_report.py
+src/build_report/constants.py
+src/build_report/get_info_from_files.py
+src/build_report/parser.py
+src/build_report/processing_dicts.py
+src/monaco_racing_report_kir_boh.egg-info/PKG-INFO
+src/monaco_racing_report_kir_boh.egg-info/SOURCES.txt
+src/monaco_racing_report_kir_boh.egg-info/dependency_links.txt
+src/monaco_racing_report_kir_boh.egg-info/top_level.txt
