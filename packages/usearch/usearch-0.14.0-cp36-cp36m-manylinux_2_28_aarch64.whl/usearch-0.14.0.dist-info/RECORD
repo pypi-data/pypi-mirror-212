@@ -1,0 +1,13 @@
+usearch-0.14.0.dist-info/METADATA,sha256=MQ3xs-URELzXp2Gyhk84FAMOn4LcqATIJOhEtperuSk,21373
+usearch-0.14.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+usearch-0.14.0.dist-info/top_level.txt,sha256=zFbid1SmQjk8RsbEgpqF7tTjgWdFvE2z0e1LQ2hKdPg,8
+usearch-0.14.0.dist-info/RECORD,,
+usearch-0.14.0.dist-info/WHEEL,sha256=f_b3MV11oEAjmUzD5IBK96WjFkik89vEfHnwWbHJmAc,114
+usearch./libgomp-50ff2515.so.1.0.0,sha256=ltvo9nqMyHEme1FWcIz34R0qWB2ar9SQrfIbB324mDo,343345
+usearch/synthetic.py,sha256=aNUSefqE_rNpT82g2FsAPUabeS_T4C-UOjUsP_yzkTo,976
+usearch/client.py,sha256=FLEy0YkHth4qdpsC8TePqZH_9A0ISJLhgJO8ddUDUdY,4194
+usearch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usearch/compiled.cpython-36m-aarch64-linux-gnu.so,sha256=kBBCIKrMwER6Oarr5b6i5cZmO_kfLC5Na7-OP-_nM5s,730545
+usearch/io.py,sha256=NJes_Uak-eKMFhl6r1orkLfZMQClkaXfbKPPaJjkkgA,2392
+usearch/server.py,sha256=dk7ZgC18khIWRwXtrBSrL35l2B-ucGQSJ-92ecJR9LE,3758
+usearch/index.py,sha256=0Mqfnr62g9y2LxtsbQBPFzWE7be3euEtkiO7XS8nf3w,14553
