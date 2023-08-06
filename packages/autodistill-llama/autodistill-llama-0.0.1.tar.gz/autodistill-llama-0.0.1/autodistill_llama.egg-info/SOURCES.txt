@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_llama/__init__.py
+autodistill_llama.egg-info/PKG-INFO
+autodistill_llama.egg-info/SOURCES.txt
+autodistill_llama.egg-info/dependency_links.txt
+autodistill_llama.egg-info/requires.txt
+autodistill_llama.egg-info/top_level.txt
