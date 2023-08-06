@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/ezq/__init__.py
+src/ezq/py.typed
+src/ezq.egg-info/PKG-INFO
+src/ezq.egg-info/SOURCES.txt
+src/ezq.egg-info/dependency_links.txt
+src/ezq.egg-info/requires.txt
+src/ezq.egg-info/top_level.txt
+test/test_ezq.py
+test/test_iter.py

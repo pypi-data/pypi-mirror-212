@@ -1,0 +1,10 @@
+multiprocess~=0.70.14
+
+[dev]
+black
+coverage
+mypy
+pdoc3
+pytest
+pytest-cov
+ruff
