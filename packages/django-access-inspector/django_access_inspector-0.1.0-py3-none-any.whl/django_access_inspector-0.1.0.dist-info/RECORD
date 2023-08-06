@@ -1,0 +1,16 @@
+django_access_inspector/__init__.py,sha256=42lRqFdSHTjdlahmArN5aSSVQvkjEdi36z-HyOyvIu8,80
+django_access_inspector/apps.py,sha256=NiJP_su6QWaLH7zZnY5USYfrzGtBNCcwQXRMInxXzW4,214
+django_access_inspector/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_access_inspector/management/commands/inspect_access_control.py,sha256=WpuoYiG0ALrHEeu4vQ1C7YKIAA29cN7QqHs74v5vGLA,11452
+django_access_inspector/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_access_inspector/models.py,sha256=o9OLSqCjxl-f58x1NghptLZ54jnJelBqJUiOVQBmwuQ,27
+django_access_inspector/permissions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_access_inspector/settings.py,sha256=tcjW3mGNGcvn6hMwXUrnEXz6HJxoFV4fbVbapDdq_8g,3531
+django_access_inspector/tests/management/command/test_scan_access_control.py,sha256=pUdAGCVRLAMdbI2IdlkYOdZJnVjrrrJ1w-f4iZVLcGA,1176
+django_access_inspector/tests/mocks/permissions.py,sha256=VIKPDeRazdRoB6MDgaTgs11N_p0IDGav5nB1OMveQBc,195
+django_access_inspector/tests/mocks/views.py,sha256=TobQiptyzPXKo-UGPv7GrKfclYwoGz_YZU3V365XCtg,2627
+django_access_inspector/urls.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_access_inspector/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_access_inspector-0.1.0.dist-info/METADATA,sha256=AzOZR9Rag3WWRdXQ5f3qI39q0k192t4dFapozf9-oMk,1322
+django_access_inspector-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+django_access_inspector-0.1.0.dist-info/RECORD,,
