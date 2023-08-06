@@ -1,0 +1,2 @@
+[console_scripts]
+brunotest = brunotest:brunotest_cli_entry
