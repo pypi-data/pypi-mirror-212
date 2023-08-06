@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: roicat
+Version: 0.1.0
+Summary: A library for classifying and tracking ROIs.
+Home-page: https://github.com/RichieHakim/ROICaT
+Author: Richard Hakim
+License: LICENSE
+Keywords: neuroscience,neuroimaging,machine learning,deep learning
+Provides-Extra: all
+Provides-Extra: all_latest
+Provides-Extra: core
+Provides-Extra: classification
+Provides-Extra: tracking
+License-File: LICENSE.md
+
+text/markdown
