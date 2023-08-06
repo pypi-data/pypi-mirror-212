@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: giefstat
+Version: 0.0.1
+Summary: Package for information estimation, independence test, etc.
+Home-page: https://github.com/Ulti-Dreisteine/general-information-estimation-framework
+Author: Dreisteine
+Author-email: dreisteine@163.com
+License: MIT
+Keywords: python,information estimation
+Platform: UNKNOWN
+Requires-Dist: scikit-learn
+Requires-Dist: minepy
+
+UNKNOWN
+
+
