@@ -1,0 +1,16 @@
+ncducolors/__init__.py,sha256=yoT4P7lT1U3lhlbS1waMIWEBhork9SOoVYphFWVFuMY,90
+ncducolors/__main__.py,sha256=r76CG34PSNFzpNWgD5nbdK2ZuMKO3P1CYx3E3UmvFug,9667
+ncducolors/attribute.py,sha256=gi__MQHanU7_GuVChMs_S98BAN004yNhhdm5KATfFOY,1537
+ncducolors/color.py,sha256=Mx2aRA1jEYIWkcffZK9C5TLJdbhV68_c9yfYcRkgNGE,1175
+ncducolors/config.py,sha256=vVqe6qNvy97kYGTdyvUkGcNTyus_Fd3VgMjq2q4Uey4,1751
+ncducolors/key.py,sha256=c8D3zcC11RB-zK-ZuXxLG3HraOUF4kq3uRGgvE0lArY,1223
+ncducolors/ncducolors.py,sha256=i5FNX_NhirEuQXKL1SNsanY-8J9ZccsEhgpeiEyY7Jw,5182
+ncducolors/sequence.py,sha256=kOlp161jMBLKi9hNN1cJyQiDN3JXSDIKJF3ILPJ7yhQ,3072
+ncducolors/theme.py,sha256=2xRxRHvzpmy8WeYFL_P-KBHj5ELWWjcgq3EYJsJ73Nw,991
+ncducolors/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+NcduColors-0.0.1.dist-info/LICENSE.txt,sha256=Ns05NsmTU3cNHjsgoVZZMnztRqgTXI9FWVyrALz4wro,1071
+NcduColors-0.0.1.dist-info/METADATA,sha256=Snmc14WLjtC2BKXD7aUGUm6VSyb4cKXcKZam_LlncQk,18400
+NcduColors-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+NcduColors-0.0.1.dist-info/entry_points.txt,sha256=XiVJaC4mO38ogHK-80CQlff8DsbLKxFGB8O3Ho5V1Bg,56
+NcduColors-0.0.1.dist-info/top_level.txt,sha256=TJYfejXsaqSCK3xBTErfAr5XbEeYrmZNKtLFJqTGZhg,11
+NcduColors-0.0.1.dist-info/RECORD,,
