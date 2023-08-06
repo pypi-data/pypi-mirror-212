@@ -1,0 +1,2 @@
+[console_scripts]
+agg = aggregate.scripts:main
