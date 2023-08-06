@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dcrx
+Version: 0.0.2
+Summary: Easy project setup and migration.
+Home-page: https://github.com/scorbettUM/dcrx
+Author: Sean Corbett
+Author-email: sean.corbett@umontana.edu
+Keywords: pypi,cicd,python,setup,docker,infra,devops
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dcrx
+DockerX (dcrx) is a library for creating Docker images via an SQL query-builder like API.
