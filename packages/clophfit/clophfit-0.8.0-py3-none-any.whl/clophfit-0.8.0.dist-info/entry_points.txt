@@ -1,0 +1,4 @@
+[console_scripts]
+clop = clophfit.__main__:clop
+fit_titration_global_old = clophfit.old.fit_titration_global:main
+fit_titration_old = clophfit.old.fit_titration:main
