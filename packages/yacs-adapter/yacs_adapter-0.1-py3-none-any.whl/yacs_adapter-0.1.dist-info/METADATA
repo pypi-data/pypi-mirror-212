@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: yacs-adapter
+Version: 0.1
+Summary: An adapter for YACS to improve readability and usability
+Home-page: https://github.com/codexquantum/YACS_Adapter
+Author: codexquantum
+Author-email: karllorentzcodex@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: yacs
+
+UNKNOWN
+
+
