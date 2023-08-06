@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_oneformer/__init__.py
+autodistill_oneformer.egg-info/PKG-INFO
+autodistill_oneformer.egg-info/SOURCES.txt
+autodistill_oneformer.egg-info/dependency_links.txt
+autodistill_oneformer.egg-info/requires.txt
+autodistill_oneformer.egg-info/top_level.txt
