@@ -1,0 +1,146 @@
+Metadata-Version: 2.1
+Name: mastf-libscout
+Version: 0.1.1a1
+Summary: Modified fork of LibScout for integration into MAST-F
+Author-email: MatrixEditor <not@supported.com>
+Project-URL: Repository, https://github.com/MAST-Framework/LibScout
+Project-URL: Original Repository, https://github.com/reddr/LibScout
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LibScout
+
+[![python](https://img.shields.io/badge/python-3.8+-blue.svg?logo=python&labelColor=grey)](https://www.python.org/downloads/)
+[![java](https://img.shields.io:/static/v1?logo=oracle&label=Java&message=13.0.2&color=lightblue)](https://www.python.org/downloads/)
+![Codestyle](https://img.shields.io:/static/v1?label=Codestyle&message=black&color=black)
+![License](https://img.shields.io:/static/v1?label=License&message=Apache%202.0&color=blue)
+[![Parent Repository](https://img.shields.io:/static/v1?label=Parent&message=reddr/LibScout&color=lightgrey)](https://github.com/reddr/LibScout)
+
+> **Warning**: This repository aims to provide an implementation of LibScout for Python3. For information about the original repository, visit [reddr/LibScout](https://github.com/reddr/LibScout).
+
+*This is a work in progress*
+
+#### Setup for Python CLI
+
+```python
+from LibScout.cli.entry_points import run_from_comand_line
+
+run_from_comand_line()
+```
+
+#### Installation via PIP
+
+```bash
+$ pip install mastf-libscout
+```
+
+An extensive description can be taken from the parent repository [reddr/LibScout](https://github.com/reddr/LibScout).
+
+```bash
+# Download libraries
+py cli.py -vv robot -R scripts/my-lib-repo ./scripts/library-specs/google-libraries.json
+
+# Profile one library
+py cli.py -vvv profile -a android.jar -x ./scripts/my-lib-repo/.../library.xml  \
+    --j2d-path ./scripts/dex-tools/d2j_invoke.bat \
+    ./scripts/my-lib-repo/.../file.aar
+
+# Identify libraries
+py cli.py -vvv match -a android.jar -p profiles/Android /path/to/file.apk
+```
+
+> **Note**: Python generated library profiles contain `.pylibv3` and java generated profiles `.libv3` in their file names. **!! They are not compatible to each other !!**
+
+## Examples
+
+1. Manually profile a library: (*minimum required actions*)
+```python
+from LibScout.pkg import get_framework_pt
+from LibScout.profile.caches import PickleCache
+from LibScout.core.profiler import LibProfiler
+
+# 1. Get framework package tree (from android.jar - we only need the
+# stubbed JAR file)
+tree = get_framework_pt("path/to/android.jar")
+cache = PickleCache(), # used to serialize the profile afterwards
+
+# 2. Create profiler instance
+profiler = LibProfiler(
+    cache=cache,
+    framework_pt=tree,
+    jar2dex_path="/path/to/d2j_invoke.[bat|sh]",
+    cleanup=True
+)
+
+# 3. profile library
+profile = profile.extract_fingerprints(
+    "/path/to/library.xml", "/path/to/file.[jar|aar|dex]"
+)
+
+# 4. save profile
+cache.save_profile(profile, "/path/to/destination.pylibv3")
+```
+
+2. Manually identify libraries:
+```python
+from LibScout.pkg import get_framework_pt
+from LibScout.profile.caches import PickleCache, LazyPickleCache
+from LibScout.core.matcher import LibMatcher
+
+# 1. <Same as abve> Get framework package tree
+tree = get_framework_pt("path/to/android.jar")
+
+# If you have way too much profiles, it is recommended
+# to use a LazyPickleCache() as it only stores the file
+# paths and imports the profiles if necessary.
+cache = PickleCache() or LazyPickleCache()
+
+# 2. Load compiled profiles
+for file_path in ["paths to your profiles"]:
+    cache.import_profile(file_path)
+
+# 3. Create matcher instance
+matcher = LibMatcher(cache=cache, fwpt=tree)
+
+# 4. Run LibMatcher
+stats = matcher.identify_libs("/path/to/file.apk")
+
+# 5. Inspect results
+stats.package_only_matches # dict[str, str]: only package names have matched
+stats.matches # list[LibProfileMatch]: list of full/partially matched libs
+```
+
+3. Manually download SDK files
+```python
+from LibScout.core.robot import LibRobot
+
+# 1. Create robot instance
+robot = LibRobot(
+    local_repo="/path/to/lib_repository/",
+    skip_dev=True
+)
+
+# 2. Download all available versions
+for file_path in ["paths to JSON library specs"]:
+    robot.run(file_path)
+```
+
+## Scientific Publications
+
+For technical details and large-scale evaluation results, please refer to our publications:<br>
+> - [Reliable Third-Party Library Detection in Android and its Security Applications](https://people.svv.lu/derr/publications/pdfs/derr_ccs16.pdf) (CCS'16)<br>
+>
+> - [Keep me Updated: An Empirical Study of Third-Party Library Updatability on Android](https://people.svv.lu/derr/publications/pdfs/derr_ccs17.pdf) (CCS'17)<br>
+
+If you use LibScout in a scientific publication, we would appreciate citations using these Bibtex entries: [[bib-ccs16]](https://people.svv.lu/derr/publications/bib/derr_ccs16.bib)
+[[bib-ccs17]](https://people.svv.lu/derr/publications/bib/derr_ccs17.bib)<br>
+

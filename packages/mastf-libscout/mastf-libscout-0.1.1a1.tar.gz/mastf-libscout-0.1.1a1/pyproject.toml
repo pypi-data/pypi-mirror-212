@@ -1,0 +1,40 @@
+[project]
+name = "mastf-libscout"
+version = "0.1.1-alpha1"
+description="Modified fork of LibScout for integration into MAST-F"
+readme = "README.md"
+authors = [
+  { name="MatrixEditor", email="not@supported.com" },
+]
+classifiers = [
+     # How mature is this project? Common values are
+      #   3 - Alpha
+      #   4 - Beta
+      #   5 - Production/Stable
+      'Development Status :: 3 - Alpha',
+
+      'Intended Audience :: Developers',
+      "Intended Audience :: Information Technology",
+      'Operating System :: OS Independent',
+      'License :: OSI Approved :: Apache Software License',
+
+      'Programming Language :: Python :: 3.8',
+      'Programming Language :: Python :: 3.9',
+      'Programming Language :: Python :: 3.10',
+      'Programming Language :: Python :: 3.11',
+]
+
+[project.scripts]
+LibScout = "LibScout.cli.entry_points:run_from_command_line"
+
+[project.urls]
+"Repository" = "https://github.com/MAST-Framework/LibScout"
+"Original Repository" = "https://github.com/reddr/LibScout"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["LibScout*"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
