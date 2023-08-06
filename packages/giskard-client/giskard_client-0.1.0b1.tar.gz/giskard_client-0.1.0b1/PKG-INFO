@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: giskard-client
+Version: 0.1.0b1
+Summary: Just a test library
+Author-Email: Alex Combessie <alex@giskard.ai>
+License: MIT
+Description-Content-Type: text/markdown
+
+# giskard-client
+
+Just a test library

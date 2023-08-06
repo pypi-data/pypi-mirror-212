@@ -1,0 +1,20 @@
+[project]
+name = "giskard-client"
+version = "0.1.0-beta1"
+description = "Just a test library"
+authors = [
+    { name = "Alex Combessie", email = "alex@giskard.ai" },
+]
+dependencies = []
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
