@@ -1,0 +1,15 @@
+setup.py
+malihtorovich_serializer.egg-info/PKG-INFO
+malihtorovich_serializer.egg-info/SOURCES.txt
+malihtorovich_serializer.egg-info/dependency_links.txt
+malihtorovich_serializer.egg-info/entry_points.txt
+malihtorovich_serializer.egg-info/top_level.txt
+serializer/__init__.py
+serializer/custom_serializer.py
+serializer/serializer_factory.py
+serializer/encoder/__init__.py
+serializer/encoder/constants.py
+serializer/encoder/encoder.py
+serializer/serializers/__init__.py
+serializer/serializers/json_serializer.py
+serializer/serializers/xml_serializer.py

@@ -1,0 +1,2 @@
+[console_scripts]
+custom-serialize = serializer.custom_serializer:main
