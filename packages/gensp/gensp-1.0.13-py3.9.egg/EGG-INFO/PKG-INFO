@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: gensp
+Version: 1.0.13
+Summary: 比对postgres数据库备份的数据，得出新增的存储过程
+Home-page: https://github.com/zerobyte1o1/gensp
+Author: byte
+Author-email: liufangjing_byte@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# gensp
+
+[![Coverage Status](https://coveralls.io/repos/github/yourusername/yourproject/badge.svg?branch=master)](https://github.com/zerobyte1o1/gensp?branch=main)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+> 比对postgres数据库备份的数据，得出新增的存储过程，目前不支持更新和删除，所有数据库备份区别都以新增的格式输出成存储过程。
+
+## Installation
+
+```
+pip install gensp
+```
+
+## Usage example
+
+```
+gensp help          # 帮助
+gensp login         # 配置数据库链接信息
+gensp backup        # 备份数据库
+gensp compare       # 比较两次数据库备份，并生成存储过程
+gensp clear         # 清理本地数据库备份
+```
+
+
+## Release History
+
+* v0.0.1
+    * ADD: Initial version
+
+#
+
