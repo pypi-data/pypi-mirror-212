@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: auth-token-django
+Version: 0.0.2
+Summary: Django token authentication
+Home-page: https://github.com/Shivin01/django_auth_token
+Author: Shivin Agarwal
+Author-email: shivin.agarwal15@gmail.com
+Keywords: django auth token
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: asgiref (==3.7.2)
+Requires-Dist: bleach (==6.0.0)
+Requires-Dist: certifi (==2023.5.7)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: Django (==4.2.1)
+Requires-Dist: django-filter (==23.2)
+Requires-Dist: djangorestframework (==3.14.0)
+Requires-Dist: docutils (==0.20.1)
+Requires-Dist: idna (==3.4)
+Requires-Dist: importlib-metadata (==6.6.0)
+Requires-Dist: jaraco.classes (==3.2.3)
+Requires-Dist: keyring (==23.13.1)
+Requires-Dist: Markdown (==3.4.3)
+Requires-Dist: markdown-it-py (==2.2.0)
+Requires-Dist: mdurl (==0.1.2)
+Requires-Dist: more-itertools (==9.1.0)
+Requires-Dist: pkginfo (==1.9.6)
+Requires-Dist: Pygments (==2.15.1)
+Requires-Dist: PyJWT (==2.7.0)
+Requires-Dist: pytz (==2023.3)
+Requires-Dist: readme-renderer (==37.3)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: requests-toolbelt (==1.0.0)
+Requires-Dist: rfc3986 (==2.0.0)
+Requires-Dist: rich (==13.4.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: sqlparse (==0.4.4)
+Requires-Dist: twine (==4.0.2)
+Requires-Dist: typing-extensions (==4.6.2)
+Requires-Dist: urllib3 (<2.0)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==3.15.0)
+
+# djangoauthtoken
+Django auth solution for Token creation/updation for a session.
+
+### Run make migratons command:
+
+```
+python manage.py makemigrations djangoauthtoken
+```
+
+## Run command to migrate:
+
+```
+python manage.py migrate
+```
+
+## Run command to create superuser
+
+```
+python manage.py createsuperuser
+```
+
+
+Things to do:
+
+- [X] Add api for Token.
+- [X] Add api for login.
+- [X] Add api for RefreshToken.
+- [X] Add manager for create token.
+- [X] Add serializer for user.
+- [X] Add manager for create user.
+- [X] Add api for user sign up.
+- [] Add a custom command to delete invalid tokens.
+- [] Add github Actions.
+- [] Add pypi module push in this code base.
+
+
+Twilio WebSocket Integration.
+Django Twilio integration
+Django web socket.
+Django - React web socket.
+Pypi push.
+Django app install required modules.
+Contact model.
+Call log.
+Contacts. API
+Call Log API.
+Whisper/Google speech integrate.
