@@ -1,0 +1,7 @@
+try_pyspark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+try_pyspark/sql_file_picker.py,sha256=7tU1AOHXfgyGpUFMnnOAfU-1e5qzTiAdTkP7vEG6clQ,389
+try_pyspark/test_pyspark.py,sha256=uOS2nYtprb8SQDX4Tj55ghYQdfyAKyYdIHvlT70ewpA,68
+try_pyspark-0.0.1.dist-info/METADATA,sha256=AW-n-YUOjZvfhrnfg6ZhOMKsyYo_5gV6V-y4KM9tp5w,536
+try_pyspark-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+try_pyspark-0.0.1.dist-info/top_level.txt,sha256=dyqtTwWL5HNi0aJB1cux-d7kEf1a_a0ICsJ3bXce3VE,12
+try_pyspark-0.0.1.dist-info/RECORD,,
