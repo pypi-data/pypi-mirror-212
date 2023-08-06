@@ -1,0 +1,2 @@
+[console_scripts]
+petablint = petab.petablint:main
