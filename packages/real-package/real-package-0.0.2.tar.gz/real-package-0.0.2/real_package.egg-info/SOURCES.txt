@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+real_package/__init__.py
+real_package.egg-info/PKG-INFO
+real_package.egg-info/SOURCES.txt
+real_package.egg-info/dependency_links.txt
+real_package.egg-info/top_level.txt
