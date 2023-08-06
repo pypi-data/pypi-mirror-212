@@ -1,0 +1,8 @@
+setup.py
+vtiger_cloudsdk_restapi/__init__.py
+vtiger_cloudsdk_restapi.egg-info/PKG-INFO
+vtiger_cloudsdk_restapi.egg-info/SOURCES.txt
+vtiger_cloudsdk_restapi.egg-info/dependency_links.txt
+vtiger_cloudsdk_restapi.egg-info/not-zip-safe
+vtiger_cloudsdk_restapi.egg-info/requires.txt
+vtiger_cloudsdk_restapi.egg-info/top_level.txt
