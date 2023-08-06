@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_anonymous/__init__.py
+django_anonymous/anonymizer.py
+django_anonymous/faker.py
+django_anonymous/register.py
+django_anonymous.egg-info/PKG-INFO
+django_anonymous.egg-info/SOURCES.txt
+django_anonymous.egg-info/dependency_links.txt
+django_anonymous.egg-info/requires.txt
+django_anonymous.egg-info/top_level.txt
+django_anonymous/management/__init__.py
+django_anonymous/management/commands/__init__.py
+django_anonymous/management/commands/anonymize.py
