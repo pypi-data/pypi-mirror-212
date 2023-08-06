@@ -1,0 +1,4 @@
+[console_scripts]
+afids_regrf_apply=afids_regrf.apply:main
+afids_regrf_train=afids_regrf.train:main
+
