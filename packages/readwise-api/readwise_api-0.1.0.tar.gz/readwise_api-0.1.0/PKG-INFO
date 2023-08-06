@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: readwise-api
+Version: 0.1.0
+Summary: An unofficial Python client for the Readwise Reader API.
+License: MIT
+Author: Florian Schäfer
+Author-email: florian.joh.schaefer@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.8,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+![logo](logo.png)
+
+# Readwise API
+
+An unofficial Python client for the [Readwise Reader API](https://readwise.io/reader_api).
+
+## Installation
+
+`pip install readwise-api`
+
+## Usage
+
+### Prerequisites
+
+First, you have to obtain a [Readwise access token](https://readwise.io/access_token).
+Then, the token has to be stored, either into an *.env* file or an environment variable using `export READWISE_TOKEN=<your_token>`.
+
+### Python API
+
+```python
+import readwise
+```
+
+**List all documents:**
+
+```python
+readwise.get_documents(location="new")
+```
+
+**Get a single document by its ID:**
+
+```python
+readwise.get_document_by_id("<document_id>")
+```
+
+### CLI
+
+**List all documents:**
+
+```shell
+readwise list new
+```
+
+Naturally, the output can be saved to a JSON file:
+
+```shell
+readwise list new > new_documents.json
+```
+
+**Get a single document by its ID:**
+
+
+```shell
+readwise get <document_id>
+```
