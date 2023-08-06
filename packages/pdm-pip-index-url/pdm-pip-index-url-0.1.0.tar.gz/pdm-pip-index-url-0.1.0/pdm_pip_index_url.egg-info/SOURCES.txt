@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+pdm_pip_index_url/__init__.py
+pdm_pip_index_url/plugin.py
+pdm_pip_index_url/utils.py
+pdm_pip_index_url.egg-info/PKG-INFO
+pdm_pip_index_url.egg-info/SOURCES.txt
+pdm_pip_index_url.egg-info/dependency_links.txt
+pdm_pip_index_url.egg-info/entry_points.txt
+pdm_pip_index_url.egg-info/top_level.txt
+tests/test_plugin.py
+tests/test_utils.py

@@ -1,0 +1,42 @@
+
+[project]
+name = "pdm-pip-index-url"
+version = "0.1.0"
+description = "Automatic coverter of PIP_*INDEX_URL to PDM_PYPI_* envs."
+authors = [
+    {name = "Kamil Janiec", email = "kamil.p.janiec@gmail.com"},
+]
+dependencies = [
+]
+requires-python = ">=3.7"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.urls]
+repository = "https://github.com/theredfoxlee/pdm-pip-index-url"
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.3.1",
+    "black>=23.3.0",
+    "isort>=5.11.5",
+    "ruff>=0.0.270",
+    "mypy>=1.3.0",
+    "pdm>=2.7.0",
+    "pytest-mock>=3.10.0",
+]
+
+[tool.pdm.scripts]
+linters = {composite = [
+    "black .",
+    "isort .",
+    "ruff check --fix .",
+    "mypy .",
+]}
+
+[project.entry-points.pdm]
+pip_index_url = "pdm_pip_index_url:register_plugin"
