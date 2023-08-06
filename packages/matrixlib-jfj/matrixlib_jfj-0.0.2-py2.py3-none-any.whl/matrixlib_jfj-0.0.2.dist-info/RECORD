@@ -1,0 +1,9 @@
+matrixlib_jfj/__init__.py,sha256=uKTm8dpgWHduN0WWQQjCyOHB3-njn0Du3yEJVPGHaK0,960
+matrixlib_jfj/matrix.py,sha256=CDiMGsqfQMp4JPJY2Y2dB9AaRQU0PjblbUnye2pmmco,13499
+matrixlib_jfj/utils.py,sha256=_EjT1mrdJTiC4mM0zzlMYEDtWlrokQQojcL0KQkuhCg,270
+matrixlib_jfj/vector.py,sha256=LWkiXsuwxMr3cZmcZl4uLu6Ekz37xgGcCINpacM8aiY,213
+matrixlib_jfj-0.0.2.dist-info/LICENSE.md,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+matrixlib_jfj-0.0.2.dist-info/METADATA,sha256=EnWkSjQ3KFuXscGKryf48HUNpeJvEfOeeoCvG6BKTcg,1164
+matrixlib_jfj-0.0.2.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+matrixlib_jfj-0.0.2.dist-info/top_level.txt,sha256=tT3DLyksAVikckOIqf7pw8cNLWKmvsWRZRvuAwIlM_8,14
+matrixlib_jfj-0.0.2.dist-info/RECORD,,
