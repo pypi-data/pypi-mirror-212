@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/SmartAlphaConnect.py
+src/smart_alpha_connect.egg-info/PKG-INFO
+src/smart_alpha_connect.egg-info/SOURCES.txt
+src/smart_alpha_connect.egg-info/dependency_links.txt
+src/smart_alpha_connect.egg-info/requires.txt
+src/smart_alpha_connect.egg-info/top_level.txt
