@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+fastdimr/__init__.py
+fastdimr/__version__.py
+fastdimr/wrap.py
+fastdimr.egg-info/PKG-INFO
+fastdimr.egg-info/SOURCES.txt
+fastdimr.egg-info/dependency_links.txt
+fastdimr.egg-info/not-zip-safe
+fastdimr.egg-info/requires.txt
+fastdimr.egg-info/top_level.txt
