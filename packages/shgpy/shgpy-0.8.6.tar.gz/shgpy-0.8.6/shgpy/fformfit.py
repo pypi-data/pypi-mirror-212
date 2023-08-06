@@ -1,0 +1,1371 @@
+"""Fourier fitting module for fitting RA-SHG data in Fourier space.
+
+This module provides two different methods (up to minor variations) for
+fitting RA-SHG data in Fourier space. The first is a simple
+least-square method (using `scipy.optimize.least_squares`) which is
+extremely fast and works well for simple problems. The second is
+a so-called basinhopping method (using `scipy.optimize.basinhopping`)
+which is proficient at finding the global minimum of complicated cost
+functions with many fitting parameters and local minima. See the
+relevant `scipy` documentation for more info.
+
+"""
+import sympy as sp
+from sympy.utilities.codegen import CCodeGen
+import numpy as np
+from .core import n2i
+from scipy.optimize import (
+    basinhopping,
+    least_squares,
+    dual_annealing,
+    OptimizeResult,
+)
+import tempfile
+import time
+import logging
+from warnings import warn
+import os
+import shutil
+from pathlib import Path
+import ctypes
+from math import ceil
+
+_logger = logging.getLogger(__name__)
+
+
+def _rmtree_warn(*args, **kwargs):
+    if 'onerror' not in kwargs:
+        def onerror(function, path, excinfo):
+            warn(f'{function} of {path} failed.')
+        kwargs['onerror'] = onerror
+    return shutil.rmtree(*args, **kwargs)
+
+
+def _split(a, num_per):
+    ans = []
+    for n in range(ceil(len(a)/num_per)):
+        temp = []
+        for i in range(num_per):
+            try:
+                temp.append(a[n*num_per+i])
+            except IndexError:
+                break
+        ans.append(temp)
+    return ans
+
+
+def _split_expr(expr, num_per):
+    if expr.func != sp.Add:
+        _logger.debug(f'expr has only one term:\n{expr}')
+        return [expr]
+    _logger.debug(f'expr has {len(expr.args)} terms.')
+    return [sp.Add(*g, evaluate=False) for g in _split(expr.args, num_per)]
+
+
+def _check_fform(fform):
+    if not fform.get_free_symbols():
+        message = (
+            'fFormContainer object has no free symbols to use as fitting'
+            'parameters. Is your fitting formula actually zero?'
+        )
+        warn(message)
+        ret = OptimizeResult(
+            x=np.array([]),
+            xdict={},
+            success=False,
+            status=0,
+            message=message,
+        )
+        return ret
+
+
+def _make_energy_expr(fform, fdat, free_symbols=None):
+
+    if free_symbols is None:
+        free_symbols = fform.get_free_symbols()
+
+    M = fform.get_M()
+    energy_expr = 0
+    xs = sp.MatrixSymbol('xs', len(free_symbols), 1)
+    mapping = {fs:xs[i] for i, fs in enumerate(free_symbols)}
+    mapping[sp.I] = 1j
+    start = time.time()
+    for k in fform.get_keys():
+        for m in np.arange(-M, M+1):
+            _logger.debug(f'Computing cost function term pc={k} m={m}')
+            expr0 = fform.get_pc(k)[n2i(m, M)] - fdat.get_pc(k)[n2i(m, M)]
+            energy_expr += (expr0*sp.conjugate(expr0)).xreplace(mapping)
+    _logger.debug('Cost expression evaluation took'
+                   f' {time.time()-start} seconds.')
+
+    return energy_expr
+
+
+def _make_energy_expr_list(fform, fdat, free_symbols=None):
+
+    if free_symbols is None:
+        free_symbols = fform.get_free_symbols()
+
+    M = fform.get_M()
+    energy_expr_list = []
+    xs = sp.MatrixSymbol('xs', len(free_symbols), 1)
+    mapping = {fs:xs[i] for i, fs in enumerate(free_symbols)}
+    mapping[sp.I] = 1j
+    start = time.time()
+    for k in fform.get_keys():
+        for m in np.arange(-M, M+1):
+            _logger.debug(f'Computing cost function term pc={k} m={m}')
+            expr0 = fform.get_pc(k)[n2i(m, M)] - fdat.get_pc(k)[n2i(m, M)]
+            energy_expr_list.append(
+                (expr0*sp.conjugate(expr0)).xreplace(mapping)
+            )
+    _logger.debug('Cost expression evaluation took'
+                   f' {time.time()-start} seconds.')
+
+    return energy_expr_list, xs
+
+
+def _make_denergy_expr(energy_expr):
+    xs = list(energy_expr.free_symbols)[0]
+    n = xs.shape[0]
+    return np.array([sp.diff(energy_expr, xs[i]) for i in range(n)])
+
+
+def _make_model_expr(fform, pc, m, component, free_symbols=None):
+    if free_symbols is None:
+        free_symbols = fform.get_free_symbols()
+
+    M = fform.get_M()
+    xs = sp.MatrixSymbol('xs', len(free_symbols), 1)
+    mapping = {fs:xs[i] for i, fs in enumerate(free_symbols)}
+    mapping[sp.I] = 1j
+    start = time.time()
+    _logger.debug(f'Computing cost function term pc={pc} m={m}')
+    if component == 'real':
+        model_expr = sp.re(fform.get_pc(pc)[n2i(m, M)]).xreplace(mapping)
+    elif component == 'imag':
+        model_expr = sp.im(fform.get_pc(pc)[n2i(m, M)]).xreplace(mapping)
+    _logger.debug('Cost expression evaluation took'
+                   f' {time.time()-start} seconds.')
+    return model_expr
+
+
+def _fixed_autowrap_model(
+    fform,
+    save_folder,
+    free_symbols=None,
+    method='gcc',
+    max_terms_per_file=10,
+    multiprocessing=False,
+):
+
+    codegen = CCodeGen()
+
+    if save_folder is not None:
+        if Path(save_folder).exists():
+            _rmtree_warn(save_folder)
+        Path.mkdir(Path(save_folder))
+
+    cost_func_dict = {}
+    M = fform.get_M()
+
+    for k in fform.get_keys():
+        cost_func_dict[k] = {}
+        for m in np.arange(-M, M+1):
+            cost_func_dict[k][m] = {}
+            for component in ['real', 'imag']:
+                _logger.debug('Writing code for pc={k}, m={m}')
+                full_expr = _make_model_expr(
+                    fform,
+                    k,
+                    m,
+                    component,
+                    free_symbols=free_symbols,
+                )
+                expr_chunks = _split_expr(full_expr, max_terms_per_file)
+                cost_func_dict[k][m][component] = []
+                for ei, expr in enumerate(expr_chunks):
+                    routines = []
+                    prefix = '_'.join((k, str(m), component, str(ei)))
+                    routines.append(
+                        codegen.routine(
+                            'autofunc',
+                            expr,
+                        ),
+                    )
+                    [(c_name, bad_c_code), (h_name, h_code)] = codegen.write(
+                        routines,
+                        prefix,
+                    )
+                    c_code = '#include <complex.h>\n'
+                    c_code += bad_c_code
+                    c_code = c_code.replace('conjugate', 'conj')
+
+                    write_directory = Path(tempfile.mkdtemp()).absolute()
+
+                    c_path = write_directory / Path(prefix + '.c')
+                    h_path = write_directory / Path(prefix + '.h')
+                    o_path = write_directory / Path(prefix + '.o')
+                    so_path = write_directory / Path(prefix + '.so')
+
+                    with open(c_path, 'w') as fh:
+                        fh.write(c_code)
+                        fh.write('\n')
+                    with open(h_path, 'w') as fh:
+                        fh.write(h_code)
+                        fh.write('\n')
+
+                    start = time.time()
+                    _logger.debug(f'Start compiling code for PC={k}, m={m}')
+                    os.system(f'{method} -w -c -lm {c_path} -o {o_path}')
+                    os.system(f'{method} -w -shared {o_path} -o {so_path}')
+                    _logger.debug(f'Compiling code took {time.time()-start} seconds.')
+
+                    if save_folder is not None:
+                        shutil.copy(so_path, Path(save_folder))
+
+                    cost_func_dict[k][m][component].append(
+                        _load_func(so_path, multiprocessing=multiprocessing),
+                    )
+                    _rmtree_warn(write_directory)
+
+    return cost_func_dict
+
+
+def gen_model_func(fform, save_folder, method='gcc', max_terms_per_file=10):
+    """Generate a model function (a folder of .so files) and save them to disk.
+
+    Parameters
+    ----------
+    fform : fFormContainer
+        The Fourier formula to use
+    save_folder : path_like
+        Folder to save the result.
+    method : str, optional
+        Compiler to use. Tested with gcc and clang. Default is gcc.
+    max_terms_per_file : int, optional
+        If there are too many terms per file, sometimes the compiler fails.
+        This constrains the number of terms per file. Default is 10.
+
+    Returns
+    -------
+    model_func : function
+        Result after compiling generated C code. Signature is
+        ``model_func(xs, pc, m)``, where `xs` is a ``numpy.ndarray`` of floats
+        in the order of ``fform.get_free_symbols``, `pc` is the polarization
+        combination, and `m` is the Fourier component.
+
+    """
+    cost_func_dict = _fixed_autowrap_model(
+        fform,
+        save_folder,
+        method=method,
+        max_terms_per_file=max_terms_per_file,
+    )
+
+    def model_func(xs, pc, m):
+        return sum(
+            [
+                v(xs.astype(float)) for v in cost_func_dict[pc][m]['real']
+            ]
+        ) + sum(
+            [
+                1j*v(xs.astype(float)) for v in cost_func_dict[pc][m]['imag']
+            ]
+        )
+
+    return model_func
+
+
+def load_model_func(fform, save_folder, multiprocessing=False):
+    """Load a model function generated by ``gen_model_func``
+
+    Returns
+    -------
+    model_func : function
+        Result after compiling generated C code. Signature is
+        ``model_func(xs, pc, m)``, where `xs` is a ``numpy.ndarray`` of floats
+        in the order of ``fform.get_free_symbols``, `pc` is the polarization
+        combination, and `m` is the Fourier component.
+
+    """
+    cost_func_dict = _load_func_dict(
+        fform,
+        save_folder,
+        multiprocessing=multiprocessing,
+    )
+
+    def model_func(xs, pc, m):
+        return sum(
+            [
+                v(xs.astype(float)) for v in cost_func_dict[pc][m]['real']
+            ]
+        ) + sum(
+            [
+                1j*v(xs.astype(float)) for v in cost_func_dict[pc][m]['imag']
+            ]
+        )
+
+    return model_func
+
+
+def _load_func_dict(fform, save_folder, multiprocessing=False):
+    save_folder = Path(save_folder)
+    cost_func_dict = {}
+    M = fform.get_M()
+    for k in fform.get_keys():
+        cost_func_dict[k] = {}
+        for m in np.arange(-M, M+1):
+            cost_func_dict[k][m] = {}
+            for component in ['real', 'imag']:
+                cost_func_dict[k][m][component] = []
+                for path in save_folder.glob('_'.join((k, str(m), component))+'*.so'):
+                    _logger.debug(f'Loading cost function from {path}')
+                    cost_func_dict[k][m][component].append(
+                        _load_func(path, multiprocessing=multiprocessing),
+                    )
+    return cost_func_dict
+
+
+def _fixed_autowrap(
+    energy_expr,
+    prefix,
+    save_filename=None,
+    method='gcc',
+    multiprocessing=False,
+):
+
+    codegen = CCodeGen()
+
+    routines = []
+    _logger.debug('Writing code for energy_expr')
+    routines.append(
+        codegen.routine('autofunc', energy_expr)
+    )
+    [(c_name, bad_c_code), (h_name, h_code)] = codegen.write(
+        routines,
+        prefix,
+    )
+    c_code = '#include <complex.h>\n'
+    c_code += bad_c_code
+    c_code = c_code.replace('conjugate', 'conj')
+
+    write_directory = Path(tempfile.mkdtemp()).absolute()
+
+    c_path = write_directory / Path(prefix + '.c')
+    h_path = write_directory / Path(prefix + '.h')
+    o_path = write_directory / Path(prefix + '.o')
+    so_path = write_directory / Path(prefix + '.so')
+
+    with open(c_path, 'w') as fh:
+        fh.write(c_code)
+        fh.write('\n')
+    with open(h_path, 'w') as fh:
+        fh.write(h_code)
+        fh.write('\n')
+
+    start = time.time()
+    _logger.debug('Start compiling code.')
+    os.system(f'{method} -w -c -lm {c_path} -o {o_path}')
+    os.system(f'{method} -w -shared {o_path} -o {so_path}')
+    _logger.debug(f'Compiling code took {time.time()-start} seconds.')
+
+    if save_filename is not None:
+        if Path(save_filename).exists():
+            Path(save_filename).unlink()
+        shutil.copy(so_path, save_filename)
+
+    cost_func = _load_func(so_path, multiprocessing=multiprocessing)
+
+    _rmtree_warn(write_directory)
+
+    return cost_func
+
+
+def _make_energy_func_chunked(
+    energy_expr_list,
+    prefix,
+    variable,
+    save_filename=None,
+    method='gcc',
+    multiprocessing=False,
+):
+
+    codegen = CCodeGen()
+
+    routines = []
+    for i, expr in enumerate(energy_expr_list):
+        _logger.debug(f'Writing code for expr {i} of {len(energy_expr_list)}')
+        routines.append(
+            codegen.routine('expr'+str(i), expr, argument_sequence=[variable])
+        )
+    [(c_name, bad_c_code), (h_name, h_code)] = codegen.write(
+        routines,
+        prefix,
+    )
+    c_code = '#include <complex.h>\n'
+    c_code += bad_c_code
+    c_code += """
+double autofunc(double *xs){
+
+    double autofunc_result;
+    autofunc_result = %s;
+    return autofunc_result;
+
+}
+""" % ('+'.join(['expr'+str(i)+'(xs)' for i in range(len(energy_expr_list))]))
+    c_code = c_code.replace('conjugate', 'conj')
+
+    h_code = h_code.replace('\n#endif', """double autofunc(double *xs);
+
+#endif
+""")
+
+    write_directory = Path(tempfile.mkdtemp()).absolute()
+
+    c_path = write_directory / Path(prefix + '.c')
+    h_path = write_directory / Path(prefix + '.h')
+    o_path = write_directory / Path(prefix + '.o')
+    so_path = write_directory / Path(prefix + '.so')
+
+    with open(c_path, 'w') as fh:
+        fh.write(c_code)
+        fh.write('\n')
+    with open(h_path, 'w') as fh:
+        fh.write(h_code)
+        fh.write('\n')
+
+    start = time.time()
+    _logger.debug('Start compiling code.')
+    os.system(f'{method} -w -c -lm -fPIC {c_path} -o {o_path}')
+    os.system(f'{method} -w -shared -fPIC {o_path} -o {so_path}')
+    _logger.debug(f'Compiling code took {time.time()-start} seconds.')
+
+    if save_filename is not None:
+        if Path(save_filename).exists():
+            Path(save_filename).unlink()
+        shutil.copy(so_path, save_filename)
+
+    cost_func = _load_func(so_path, multiprocessing=multiprocessing)
+
+    _rmtree_warn(write_directory)
+
+    return cost_func
+
+
+def _make_energy_func_auto(energy_expr, save_filename=None, method='gcc'):
+    energy_func = _fixed_autowrap(
+        energy_expr,
+        'SHGPY_COST_FUNC',
+        save_filename,
+        method=method,
+    )
+
+    return energy_func
+
+
+def load_func(load_cost_func_filename, multiprocessing=False):
+    """Load a cost function generated by ``gen_cost_func``"""
+    return _load_func(load_cost_func_filename, multiprocessing=multiprocessing)
+
+
+def _load_func(load_cost_func_filename, multiprocessing=False):
+
+    if multiprocessing:
+
+        def cost_func(x):
+            start = time.time()
+            c_lib = ctypes.PyDLL(load_cost_func_filename)
+            c_lib.autofunc.restype = ctypes.c_double
+            _logger.debug(f'Importing shared library took'
+                           f' {time.time()-start} seconds.')
+            c_x = x.ctypes.data_as(ctypes.POINTER(ctypes.c_double))
+            result = c_lib.autofunc(c_x)
+            _logger.debug(f'Time spent in func: {time.time()-start}')
+            return result
+
+        return cost_func
+
+    start = time.time()
+    if isinstance(load_cost_func_filename, Path):
+        load_cost_func_filename = str(load_cost_func_filename.absolute())
+    c_lib = ctypes.PyDLL(load_cost_func_filename)
+    c_lib.autofunc.restype = ctypes.c_double
+    _logger.debug(f'Importing shared library took'
+                   f' {time.time()-start} seconds.')
+
+    def cost_func(x):
+        c_x = x.ctypes.data_as(ctypes.POINTER(ctypes.c_double))
+        return c_lib.autofunc(c_x)
+
+    return cost_func
+
+
+def _make_energy_func_wrapper(fform, fdat, free_symbols=None,
+                              chunk=False, save_filename=None,
+                              method='gcc'):
+
+    if chunk:
+        energy_expr_list, xs = _make_energy_expr_list(
+            fform,
+            fdat,
+            free_symbols,
+        )
+        energy_func = _make_energy_func_chunked(
+            energy_expr_list,
+            'SHGPY_COST_FUNC',
+            variable=xs,
+            save_filename=save_filename,
+            method=method,
+        )
+        return energy_func
+
+    else:
+        energy_expr = _make_energy_expr(
+            fform,
+            fdat,
+            free_symbols,
+        )
+        energy_func = _make_energy_func_auto(
+            energy_expr,
+            save_filename,
+            method=method,
+        ) 
+        return energy_func
+
+
+def gen_cost_func(fform, fdat, argument_list=None,
+                  chunk=False, save_filename=None, method='gcc'):
+    """Generate a cost function as an .so file and save it to disk.
+
+    Parameters
+    ----------
+    fform : fFormContainer
+        The Fourier formula to use
+    fdat : fDataContainer
+        The fourier data to fit
+    argument_list : array_like of sympy.Symbol, optional
+        Specify an order for the arguments. Default is alphabetical by
+        str(sympy.Symbol).
+    chunk : bool, optional
+        Chunk the function generation into multiple steps (one for each
+        Fourier component in fform and fdat). Default is False.
+    save_filename : path_like, optional
+        Filename to save the result. Default is not to save.
+    method : str, optional
+        Compiler to use. Tested with gcc and clang. Default is gcc.
+
+    Returns
+    -------
+    cost_func : function
+        Result after compiling generated C code. Signature is
+        ``cost_func(xs)``, where `xs` is a ``numpy.ndarray`` of floats
+        in the order of ``fform.get_free_symbols``.
+
+    """
+    return _make_energy_func_wrapper(fform, fdat, free_symbols=argument_list,
+                                     chunk=chunk, save_filename=save_filename,
+                                     method=method)
+        
+        
+def _make_denergy_func_auto(denergy_expr, save_filename_prefix=None):
+    funcs = []
+    for i, expr in enumerate(denergy_expr):
+        if save_filename_prefix is None:
+            new_func = _fixed_autowrap(expr, 'SHGPY_COST_FUNC')
+        else:
+            new_func = _fixed_autowrap(expr, 'SHGPY_COST_FUNC',
+                            Path(save_filename_prefix+str(i)+'.so'))
+        funcs.append(new_func)
+    return lambda x: np.array([func(x) for func in funcs])
+
+
+def _make_energy_and_denergy_func_wrapper(fform, fdat, free_symbols=None,
+                                           chunk=False, save_filename=None,
+                                           grad_save_filename_prefix=None):
+
+    if chunk:
+        raise NotImplementedError('Chunking the gradient function is not'
+                                  ' implemented yet.')
+    else:
+        energy_expr = _make_energy_expr(fform, fdat, free_symbols)
+        denergy_expr = _make_denergy_expr(energy_expr)
+        f_energy = _make_energy_func_auto(
+            energy_expr,
+            save_filename,
+        )
+        df_energy = _make_denergy_func_auto(
+            denergy_expr,
+            grad_save_filename_prefix,
+        )
+        fdf_energy = lambda x: (f_energy(x), df_energy(x))
+
+    return fdf_energy
+
+
+def _load_energy_and_denergy_func(load_cost_func_filename,
+                                  load_grad_cost_func_filename_prefix,
+                                  multiprocessing=False):
+    f_energy = _load_func(
+        load_cost_func_filename,
+        multiprocessing=multiprocessing,
+    )
+    funcs = []
+    i = 0
+    while True:
+        new_filename = load_grad_cost_func_filename_prefix+str(i)+'.so'
+        if Path(new_filename).exists():
+            funcs.append(
+                _load_func(
+                    load_grad_cost_func_filename_prefix+str(i)+'.so',
+                    multiprocessing=multiprocessing,
+                )
+            )
+            i += 1
+        else:
+            _logger.debug('Loaded {i} gradient functions.')
+            break
+    df_energy = lambda x: np.array([func(x) for func in funcs])
+    fdf_energy = lambda x: (f_energy(x), df_energy(x))
+    return fdf_energy
+
+
+def least_squares_fit(fform, fdat, guess_dict,
+                      chunk_cost_func=False, save_cost_func_filename=None,
+                      load_cost_func_filename=None, least_sq_kwargs={}):
+    """No nonsense least-squares fit of RA-SHG data.
+
+    Parameters
+    ----------
+    fform : fFormContainer
+        Instance of class :class:`~shgpy.core.data_handler.fFormContainer`.
+        This is the (Fourier-transformed) fitting formula.
+    fdat : fDataContainer
+        Instance of class :class:`~shgpy.core.data_handler.fDataContainer`.
+        This is the (Fourier-transformed) data to fit.
+    guess_dict : dict
+        Dict of form ``{sympy.Symbol:float}``. This is the initial guess.
+    chunk_cost_func : bool, optional
+        Whether to chunk the cost function generation into multiple parts.
+        Default is False.
+    save_cost_func_filename : path-like, optional
+        If provided, save the cost function (as a shared library) at this
+        location.
+    load_cost_func_filename : path-like, optional
+        If provided, load the cost function at this location.
+    least_sq_kwargs : dict, optional
+        Dictionary of additional options to pass to
+        scipy.optimize.least_squares. Default is ``{}``.
+
+    Returns
+    -------
+    ret : scipy.optimize.OptimizeResult
+        Instance of class :class:`~scipy.optimize.OptimizeResult`.
+        See `scipy` documentation for further description. Includes
+        additional attribute ``ret.xdict`` which is a `dict` of 
+        ``{sympy.Symbol:float}`` indicating the final answer as
+        a dictionary.
+
+    """
+    check = _check_fform(fform)
+    if check:
+        return check
+    free_symbols = fform.get_free_symbols()
+
+    _logger.info('Starting energy function generation.')
+    start = time.time()
+
+    if load_cost_func_filename is not None:
+        pre_f_energy = _load_func(load_cost_func_filename)
+        f_energy = lambda x: np.sqrt(pre_f_energy(x))
+    else:
+        pre_f_energy = _make_energy_func_wrapper(
+            fform,
+            fdat,
+            free_symbols,
+            chunk_cost_func,
+            save_cost_func_filename,
+        )
+        f_energy = lambda x: np.sqrt(pre_f_energy(x))
+
+    _logger.info('Done with energy function generation. It took'
+                 f'{time.time()-start} seconds.')
+
+    x0 = [guess_dict[k] for k in free_symbols]
+
+    _logger.info('Starting least squares minimization.')
+    start = time.time()
+    ret = least_squares(f_energy, x0, **least_sq_kwargs)
+    ret.time = time.time()-start
+    ret.xdict = {k:ret.x[i] for i,k in enumerate(free_symbols)}
+    _logger.info('Done with least squares minimization. It took'
+                 f'{ret.time} seconds.')
+
+    return ret
+
+
+def least_squares_fit_with_bounds(fform, fdat, guess_dict,
+                                  bounds_dict, chunk_cost_func=False,
+                                  save_cost_func_filename=None,
+                                  load_cost_func_filename=None,
+                                  least_sq_kwargs={}):
+    """No nonsense least-squares fit of RA-SHG data.
+
+    Parameters
+    ----------
+    fform : fFormContainer
+        Instance of class :class:`~shgpy.core.data_handler.fFormContainer`.
+        This is the (Fourier-transformed) fitting formula.
+    fdat : fDataContainer
+        Instance of class :class:`~shgpy.core.data_handler.fDataContainer`.
+        This is the (Fourier-transformed) data to fit.
+    guess_dict : dict
+        Dict of form ``{sympy.Symbol:float}``. This is the initial guess.
+    bounds_dict : dict
+        Dict of form ``{sympy.Symbol:tuple}``. `tuple` should be of form
+        ``(lower_bound, upper_bound)``.
+    chunk_cost_func : bool, optional
+        Whether to chunk the cost function generation into multiple parts.
+        Default is False.
+    save_cost_func_filename : path-like, optional
+        If provided, save the cost function (as a shared library) at this
+        location.
+    load_cost_func_filename : path-like, optional
+        If provided, load the cost function at this location.
+    least_sq_kwargs : dict, optional
+        Dictionary of additional options to pass to
+        scipy.optimize.least_squares. Default is ``{}``.
+
+    Returns
+    -------
+    ret : scipy.optimize.OptimizeResult
+        Instance of class :class:`~scipy.optimize.OptimizeResult`.
+        See `scipy` documentation for further description. Includes
+        additional attribute ``ret.xdict`` which is a `dict` of 
+        ``{sympy.Symbol:float}`` indicating the final answer as
+        a dictionary.
+
+    """
+    check = _check_fform(fform)
+    if check:
+        return check
+    free_symbols = fform.get_free_symbols()
+
+    _logger.info('Starting energy function generation.')
+    start = time.time()
+
+    if load_cost_func_filename is not None:
+        pre_f_energy = _load_func(load_cost_func_filename)
+        f_energy = lambda x: np.sqrt(pre_f_energy(x))
+    else:
+        pre_f_energy = _make_energy_func_wrapper(
+            fform,
+            fdat,
+            free_symbols,
+            chunk_cost_func,
+            save_cost_func_filename,
+        )
+        f_energy = lambda x: np.sqrt(pre_f_energy(x))
+
+    _logger.info('Done with energy function generation. It took '
+                 f'{time.time()-start} seconds.')
+
+    x0 = [guess_dict[k] for k in free_symbols]
+    bounds = [
+        [bounds_dict[k][0] for k in free_symbols],
+        [bounds_dict[k][1] for k in free_symbols],
+    ]
+
+    _logger.info('Starting least squares minimization.')
+    start = time.time()
+    ret = least_squares(f_energy, x0, bounds=bounds, **least_sq_kwargs)
+    ret.time = time.time()-start
+    ret.xdict = {k:ret.x[i] for i,k in enumerate(free_symbols)}
+    _logger.info('Done with least squares minimization. It took '
+                 f'{ret.time} seconds.')
+
+    return ret
+
+
+def basinhopping_fit(fform, fdat, guess_dict, niter, method='BFGS',
+                     args=(), stepsize=0.5, basinhopping_kwargs={},
+                     chunk_cost_func=False, save_cost_func_filename=None,
+                     load_cost_func_filename=None):
+    """Basinhopping fit of RA-SHG data.
+
+    Parameters
+    ----------
+    fform : fFormContainer
+        Instance of class :class:`~shgpy.core.data_handler.fFormContainer`.
+        This is the (Fourier-transformed) fitting formula.
+    fdat : fDataContainer
+        Instance of class :class:`~shgpy.core.data_handler.fDataContainer`.
+        This is the (Fourier-transformed) data to fit.
+    guess_dict : dict
+        Dict of form ``{sympy.Symbol:float}``. This is the initial guess.
+    niter : int
+        Number of basinhopping iterations (see scipy documentation)
+    method : str, optional
+        Minimization method to use, defaults to `'BFGS'`. See scipy
+        documentation for more information.
+    args : tuple, optional
+        Additional arguments to give to the minimizer.
+    stepsize : float, optional
+        Basinhopping stepsize, defaults to `0.5`. See scipy documentation
+        for more information.
+    basinhopping_kwargs : dict, optional
+        Other options to pass to the basinhopping routine. See scipy
+        documentation for more information.
+    chunk_cost_func : bool, optional
+        Whether to chunk the cost function generation into multiple parts.
+        Default is False.
+    save_cost_func_filename : path-like, optional
+        If provided, save the cost function (as a shared library) at this
+        location.
+    load_cost_func_filename : path-like, optional
+        If provided, load the cost function at this location.
+
+    Returns
+    -------
+    ret : scipy.optimize.OptimizeResult
+        Instance of class :class:`~scipy.optimize.OptimizeResult`.
+        See `scipy` documentation for further description. Includes
+        additional attribute ``ret.xdict`` which is a `dict` of 
+        ``{sympy.Symbol:float}`` indicating the final answer as
+        a dictionary.
+
+    """
+    check = _check_fform(fform)
+    if check:
+        return check
+    free_symbols = fform.get_free_symbols()
+
+    _logger.info('Starting energy function generation.')
+    start = time.time()
+
+    if load_cost_func_filename is not None:
+        f_energy = _load_func(load_cost_func_filename)
+    else:
+        f_energy = _make_energy_func_wrapper(
+            fform,
+            fdat,
+            free_symbols,
+            chunk_cost_func,
+            save_cost_func_filename,
+        )
+
+    _logger.info('Done with energy function generation. It took '
+                 f'{time.time()-start} seconds.')
+
+    x0 = [guess_dict[k] for k in free_symbols]
+
+    minimizer_kwargs = {'method':method, 'args':args}
+    if 'minimizer_kwargs' in basinhopping_kwargs.keys():
+        minimizer_kwargs.update(
+            basinhopping_kwargs.pop('minimizer_kwargs')
+        )
+
+    _logger.info('Starting basinhopping minimization.')
+    start = time.time()
+    ret = basinhopping(
+        f_energy,
+        x0,
+        minimizer_kwargs=minimizer_kwargs,
+        niter=niter,
+        stepsize=stepsize,
+        **basinhopping_kwargs,
+    )
+    ret.time = time.time()-start
+    ret.xdict = {k:ret.x[i] for i,k in enumerate(free_symbols)}
+    _logger.info('Done with basinhopping minimization. It took '
+                 f'{ret.time} seconds.')
+
+    return ret
+
+
+def basinhopping_fit_with_bounds(fform, fdat, guess_dict, bounds_dict,
+                                 niter, method='L-BFGS-B', args=(),
+                                 stepsize=0.5, basinhopping_kwargs={},
+                                 chunk_cost_func=False,
+                                 save_cost_func_filename=None,
+                                 load_cost_func_filename=None):
+    """Basinhopping fit of RA-SHG data with bounds.
+
+    Parameters
+    ----------
+    fform : fFormContainer
+        Instance of class :class:`~shgpy.core.data_handler.fFormContainer`.
+        This is the (Fourier-transformed) fitting formula.
+    fdat : fDataContainer
+        Instance of class :class:`~shgpy.core.data_handler.fDataContainer`.
+        This is the (Fourier-transformed) data to fit.
+    guess_dict : dict
+        Dict of form ``{sympy.Symbol:float}``. This is the initial guess.
+    bounds_dict : dict
+        Dict of form ``{sympy.Symbol:tuple}``. `tuple` should be of form
+        ``(lower_bound, upper_bound)``.
+    niter : int
+        Number of basinhopping iterations (see scipy documentation)
+    method : str, optional
+        Minimization method to use, defaults to `'L-BFGS-B'`. See scipy
+        documentation for more information.
+    args : tuple, optional
+        Additional arguments to give to the minimizer.
+    stepsize : float, optional
+        Basinhopping stepsize, defaults to `0.5`. See scipy documentation
+        for more information.
+    basinhopping_kwargs : dict, optional
+        Other options to pass to the basinhopping routine. See scipy
+        documentation for more information.
+    chunk_cost_func : bool, optional
+        Whether to chunk the cost function generation into multiple parts.
+        Default is False.
+    save_cost_func_filename : path-like, optional
+        If provided, save the cost function (as a shared library) at this
+        location.
+    load_cost_func_filename : path-like, optional
+        If provided, load the cost function at this location.
+
+    Returns
+    -------
+    ret : scipy.optimize.OptimizeResult
+        Instance of class :class:`~scipy.optimize.OptimizeResult`.
+        See `scipy` documentation for further description. Includes
+        additional attribute ``ret.xdict`` which is a `dict` of 
+        ``{sympy.Symbol:float}`` indicating the final answer as
+        a dictionary.
+
+    """
+    check = _check_fform(fform)
+    if check:
+        return check
+    free_symbols = fform.get_free_symbols()
+
+    _logger.info('Starting energy function generation.')
+    start = time.time()
+ 
+    if load_cost_func_filename is not None:
+        f_energy = _load_func(load_cost_func_filename)
+    else:
+        f_energy = _make_energy_func_wrapper(
+            fform,
+            fdat,
+            free_symbols,
+            chunk_cost_func,
+            save_cost_func_filename,
+        )
+
+    _logger.info('Done with energy function generation. It took '
+                 f'{time.time()-start} seconds.')
+
+    x0 = [guess_dict[k] for k in free_symbols]
+    if bounds_dict is not None:
+        bounds = [bounds_dict[k] for k in free_symbols]
+    if bounds_dict is None:
+        bounds = None
+
+    minimizer_kwargs = {'method':method, 'bounds':bounds, 'args':args}
+    if 'minimizer_kwargs' in basinhopping_kwargs.keys():
+        minimizer_kwargs.update(
+            basinhopping_kwargs.pop('minimizer_kwargs')
+        )
+
+    start = time.time()
+    _logger.info('Starting basinhopping minimization.')
+    ret = basinhopping(
+        f_energy,
+        x0,
+        minimizer_kwargs=minimizer_kwargs,
+        niter=niter,
+        stepsize=stepsize,
+        **basinhopping_kwargs,
+    )
+    ret.time = time.time()-start
+    ret.xdict = {k:ret.x[i] for i,k in enumerate(free_symbols)}
+    _logger.info('Done with basinhopping minimization. It took '
+                 f'{ret.time} seconds.')
+
+    return ret
+
+
+def basinhopping_fit_jac(fform, fdat, guess_dict, niter, method='BFGS',
+                         args=(), stepsize=0.5, basinhopping_kwargs={},
+                         chunk_cost_func=False, save_cost_func_filename=None,
+                         grad_save_cost_func_filename_prefix=None,
+                         load_cost_func_filename=None,
+                         load_grad_cost_func_filename_prefix=None):
+    """Basinhopping fit of RA-SHG data.
+
+    Parameters
+    ----------
+    fform : fFormContainer
+        Instance of class :class:`~shgpy.core.data_handler.fFormContainer`.
+        This is the (Fourier-transformed) fitting formula.
+    fdat : fDataContainer
+        Instance of class :class:`~shgpy.core.data_handler.fDataContainer`.
+        This is the (Fourier-transformed) data to fit.
+    guess_dict : dict
+        Dict of form ``{sympy.Symbol:float}``. This is the initial guess.
+    niter : int
+        Number of basinhopping iterations (see scipy documentation)
+    method : str, optional
+        Minimization method to use, defaults to `'BFGS'`. See scipy
+        documentation for more information.
+    args : tuple, optional
+        Additional arguments to give to the minimizer.
+    stepsize : float, optional
+        Basinhopping stepsize, defaults to `0.5`. See scipy documentation
+        for more information.
+    basinhopping_kwargs : dict, optional
+        Other options to pass to the basinhopping routine. See scipy
+        documentation for more information.
+    chunk_cost_func : bool, optional
+        Whether to chunk the cost function generation into multiple parts.
+        Default is False.
+    save_cost_func_filename : path-like, optional
+        If provided, save the cost function (as a shared library) at this
+        location.
+    grad_save_cos_func_filename : path-like, optional
+        If provided, save the gradient cost functions as shared libraries
+        at the locations defined by ``...0.so``, ``...1.so``, etc.
+    load_cost_func_filename : path-like, optional
+        If provided, load the cost function at this location.
+        Must be used in tandem with ``load_grad_cost_func_filename_prefix``.
+    load_grad_cost_func_filename_prefix : path-like, optional
+        If provided, load the gradient functions defined by this prefix.
+        Must be used in tandem with ``load_cost_func_filename``.
+
+    Returns
+    -------
+    ret : scipy.optimize.OptimizeResult
+        Instance of class :class:`~scipy.optimize.OptimizeResult`.
+        See `scipy` documentation for further description. Includes
+        additional attribute ``ret.xdict`` which is a `dict` of 
+        ``{sympy.Symbol:float}`` indicating the final answer as
+        a dictionary.
+
+    Notes
+    -----
+    This function computes and supplies the gradient function to the scipy
+    basinhopping algorithm. This requires some computational power up front
+    but can speed up the minimization algorithm.
+
+    """
+    check = _check_fform(fform)
+    if check:
+        return check
+    free_symbols = fform.get_free_symbols()
+
+    _logger.info('Starting energy function generation.')
+    start = time.time()
+
+    if (load_cost_func_filename is not None
+            and load_grad_cost_func_filename_prefix is not None):
+        fdf_energy = _load_energy_and_denergy_func(
+            load_cost_func_filename,
+            load_grad_cost_func_filename_prefix,
+        )
+            
+    else:
+        fdf_energy = _make_energy_and_denergy_func_wrapper(
+            fform,
+            fdat,
+            free_symbols,
+            chunk_cost_func,
+            save_cost_func_filename,
+            grad_save_cost_func_filename_prefix,
+        )
+    _logger.info('Done with energy function generation. It took '
+                 f'{time.time()-start} seconds.')
+
+    x0 = [guess_dict[k] for k in free_symbols]
+
+    minimizer_kwargs = {'method':method, 'jac':True, 'args':args}
+    if 'minimizer_kwargs' in basinhopping_kwargs.keys():
+        minimizer_kwargs.update(
+            basinhopping_kwargs.pop('minimizer_kwargs')
+        )
+
+    _logger.info('Starting basinhopping minimization.')
+    start = time.time()
+    ret = basinhopping(
+        fdf_energy,
+        x0,
+        minimizer_kwargs=minimizer_kwargs,
+        niter=niter,
+        stepsize=stepsize,
+        **basinhopping_kwargs,
+    )
+    ret.time = time.time()-start
+    ret.xdict = {k:ret.x[i] for i,k in enumerate(free_symbols)}
+    _logger.info('Done with basinhopping minimization. It took '
+                 f'{ret.time} seconds.')
+
+    return ret
+
+
+def basinhopping_fit_jac_with_bounds(fform, fdat, guess_dict, bounds_dict,
+                                     niter, method='L-BFGS-B', args=(),
+                                     stepsize=0.5, basinhopping_kwargs={},
+                                     chunk_cost_func=False, 
+                                     save_cost_func_filename=None,
+                                     grad_save_cost_func_filename_prefix=None,
+                                     load_cost_func_filename=None,
+                                     load_grad_cost_func_filename_prefix=None):
+    """Basinhopping fit of RA-SHG data with bounds.
+
+    Parameters
+    ----------
+    fform : fFormContainer
+        Instance of class :class:`~shgpy.core.data_handler.fFormContainer`.
+        This is the (Fourier-transformed) fitting formula.
+    fdat : fDataContainer
+        Instance of class :class:`~shgpy.core.data_handler.fDataContainer`.
+        This is the (Fourier-transformed) data to fit.
+    guess_dict : dict
+        Dict of form ``{sympy.Symbol:float}``. This is the initial guess.
+    bounds_dict : dict
+        Dict of form ``{sympy.Symbol:tuple}``. `tuple` should be of form
+        ``(lower_bound, upper_bound)``.
+    niter : int
+        Number of basinhopping iterations (see scipy documentation)
+    method : str, optional
+        Minimization method to use, defaults to `'L-BFGS-B'`. See scipy
+        documentation for more information.
+    args : tuple, optional
+        Additional arguments to give to the minimizer.
+    stepsize : float, optional
+        Basinhopping stepsize, defaults to `0.5`. See scipy documentation
+        for more information.
+    basinhopping_kwargs : dict, optional
+        Other options to pass to the basinhopping routine. See scipy
+        documentation for more information.
+    chunk_cost_func : bool, optional
+        Whether to chunk the cost function generation into multiple parts.
+        Default is False.
+    save_cost_func_filename : path-like, optional
+        If provided, save the cost function (as a shared library) at this
+        location.
+    grad_save_cost_func_filename_prefix : path-like, optional
+        If provided, save the gradient cost functions as shared libraries
+        at the locations defined by ``...0.so``, ``...1.so``, etc.
+    load_cost_func_filename : path-like, optional
+        If provided, load the cost function at this location.
+        Must be used in tandem with ``load_grad_cost_func_filename_prefix``.
+    load_grad_cost_func_filename_prefix : path-like, optional
+        If provided, load the gradient functions defined by this prefix.
+        Must be used in tandem with ``load_cost_func_filename``.
+
+    Returns
+    -------
+    ret : scipy.optimize.OptimizeResult
+        Instance of class :class:`~scipy.optimize.OptimizeResult`.
+        See `scipy` documentation for further description. Includes
+        additional attribute ``ret.xdict`` which is a `dict` of 
+        ``{sympy.Symbol:float}`` indicating the final answer as
+        a dictionary.
+
+    Notes
+    -----
+    This function computes and supplies the gradient function to the scipy
+    basinhopping algorithm. This requires some computational power up front
+    but can speed up the minimization algorithm.
+
+    """
+    check = _check_fform(fform)
+    if check:
+        return check
+    free_symbols = fform.get_free_symbols()
+
+    _logger.info('Starting energy function generation.')
+    start = time.time()
+
+    if (load_cost_func_filename is not None
+            and load_grad_cost_func_filename_prefix is not None):
+        fdf_energy = _load_energy_and_denergy_func(
+            load_cost_func_filename,
+            load_grad_cost_func_filename_prefix,
+        )
+
+    else:
+        fdf_energy = _make_energy_and_denergy_func_wrapper(
+            fform,
+            fdat,
+            free_symbols,
+            chunk_cost_func,
+            save_cost_func_filename,
+            grad_save_cost_func_filename_prefix,
+        )
+    _logger.info('Done with energy function generation. It took '
+                 f'{time.time()-start} seconds.')
+
+    x0 = [guess_dict[k] for k in free_symbols]
+    if bounds_dict is not None:
+        bounds = [bounds_dict[k] for k in free_symbols]
+    if bounds_dict is None:
+        bounds = None
+
+    minimizer_kwargs = {
+        'method':method,
+        'jac':True,
+        'bounds':bounds,
+        'args':args,
+    }
+    if 'minimizer_kwargs' in basinhopping_kwargs.keys():
+        minimizer_kwargs.update(
+            basinhopping_kwargs.pop('minimizer_kwargs')
+        )
+
+    _logger.info('Starting basinhopping minimization.')
+    start = time.time()
+    ret = basinhopping(
+        fdf_energy,
+        x0,
+        minimizer_kwargs=minimizer_kwargs,
+        niter=niter,
+        stepsize=stepsize,
+        **basinhopping_kwargs,
+    )
+    ret.time = time.time()-start
+    ret.xdict = {k:ret.x[i] for i,k in enumerate(free_symbols)}
+    _logger.info('Done with basinhopping minimization. It took '
+                 f'{ret.time} seconds.')
+
+    return ret
+
+
+def dual_annealing_fit_with_bounds(
+    fform,
+    fdat,
+    guess_dict,
+    bounds_dict,
+    maxiter=1000,
+    local_search_options={},
+    initial_temp=5230,
+    restart_temp_ratio=2e-5,
+    visit=2.62,
+    accept=-5.0,
+    maxfun=1e7,
+    seed=None,
+    no_local_search=True,
+    callback=None,
+    chunk_cost_func=False,
+    save_cost_func_filename=None,
+    load_cost_func_filename=None,
+):
+    """Simulated annealing fit of RA-SHG data with bounds.
+
+    Parameters
+    ----------
+    fform : fFormContainer
+        Instance of class :class:`~shgpy.core.data_handler.fFormContainer`.
+        This is the (Fourier-transformed) fitting formula.
+    fdat : fDataContainer
+        Instance of class :class:`~shgpy.core.data_handler.fDataContainer`.
+        This is the (Fourier-transformed) data to fit.
+    guess_dict : dict
+        Dict of form ``{sympy.Symbol:float}``. This is the initial guess.
+    bounds_dict : dict
+        Dict of form ``{sympy.Symbol:tuple}``. `tuple` should be of form
+        ``(lower_bound, upper_bound)``.
+    maxiter : int
+        Maximum number of global search iterations.
+    local_search_options : dict, optional
+        Extra keyword arguments to be passed to the local minimizer.
+    initial_temp : float, optional
+        Initial temperature. Default is 5230.
+    restart_temp_ratio : float, optional
+        When the temperature reaches ``initial_temp * restart_temp_ratio``,
+        the reannealing process is triggered. Default value is 2e-5. Range
+        is (0,1).
+    visit : float, optional
+        Parameter for visiting distribution. Default value is 2.62.
+    accept : float, optional
+        Parameter for acceptance distribution. Default is -5.0.
+    maxfun : int, optional
+        Soft limit for the number of objective function calls. Default
+        is 1e7.
+    seed : {int, RandomState, Generator}, optional
+        The random seed to use.
+    no_local_search : bool, optional
+        If True, perform traditional generalized simulated annealing with
+        no local search.
+    callback : callable, optional
+        A callback function with signature ``callback(x, f, context)``
+        which will be called for all minima found.
+    x0 : ndarray, shape(n,), optional
+        Initial guess.
+    chunk_cost_func : bool, optional
+        Whether to chunk the cost function generation into multiple parts.
+        Default is False.
+    save_cost_func_filename : path-like, optional
+        If provided, save the cost function (as a shared library) at this
+        location.
+    load_cost_func_filename : path-like, optional
+        If provided, load the cost function at this location.
+
+    Returns
+    -------
+    ret : scipy.optimize.OptimizeResult
+        Instance of class :class:`~scipy.optimize.OptimizeResult`.
+        See `scipy` documentation for further description. Includes
+        additional attribute ``ret.xdict`` which is a `dict` of 
+        ``{sympy.Symbol:float}`` indicating the final answer as
+        a dictionary.
+
+    Notes
+    -----
+    See the ``scipy.optimize.dual_annealing`` documentation for more info.
+
+    """
+    check = _check_fform(fform)
+    if check:
+        return check
+    free_symbols = fform.get_free_symbols()
+
+    _logger.info('Starting energy function generation.')
+    start = time.time()
+
+    if load_cost_func_filename is not None:
+        f_energy = _load_func(load_cost_func_filename)
+
+    else:
+        f_energy = _make_energy_func_wrapper(
+            fform,
+            fdat,
+            free_symbols,
+            chunk_cost_func,
+            save_cost_func_filename,
+        )
+
+    _logger.info('Done with energy function generation. It took '
+                 f'{time.time()-start} seconds.')
+
+    x0 = [guess_dict[k] for k in free_symbols]
+    if bounds_dict is not None:
+        bounds = [bounds_dict[k] for k in free_symbols]
+    if bounds_dict is None:
+        bounds = None
+
+    start = time.time()
+    _logger.info('Starting simulated annealing.')
+    ret = dual_annealing(
+        f_energy,
+        bounds,
+        maxiter=maxiter,
+        local_search_options=local_search_options,
+        initial_temp=initial_temp,
+        restart_temp_ratio=restart_temp_ratio,
+        visit=visit,
+        accept=accept,
+        maxfun=maxfun,
+        seed=seed,
+        no_local_search=no_local_search,
+        callback=callback,
+        x0=x0,
+    )
+    ret.time = time.time()-start
+    ret.xdict = {k:ret.x[i] for i,k in enumerate(free_symbols)}
+    _logger.info(f'Done with simulated annealing. It took {ret.time} seconds.')
+
+    return ret
