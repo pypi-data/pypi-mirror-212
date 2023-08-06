@@ -1,0 +1,14 @@
+Products.CMFPlone>=5.2
+Products.membrane
+bcrypt>=2.0
+plone.api
+plone.app.dexterity
+plone.memoize
+setuptools
+zope.deprecation
+
+[archetypes]
+plone.app.referenceablebehavior>=0.7.0
+
+[test]
+plone.app.testing
