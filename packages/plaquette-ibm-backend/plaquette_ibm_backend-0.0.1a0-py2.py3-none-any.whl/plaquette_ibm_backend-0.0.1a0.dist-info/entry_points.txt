@@ -1,0 +1,2 @@
+[plaquette.device]
+ibm = plaquette_ibm_backend.backend:IBMBackend
