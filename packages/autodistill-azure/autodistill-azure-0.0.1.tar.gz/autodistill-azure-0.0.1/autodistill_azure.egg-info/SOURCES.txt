@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_azure/__init__.py
+autodistill_azure.egg-info/PKG-INFO
+autodistill_azure.egg-info/SOURCES.txt
+autodistill_azure.egg-info/dependency_links.txt
+autodistill_azure.egg-info/requires.txt
+autodistill_azure.egg-info/top_level.txt
