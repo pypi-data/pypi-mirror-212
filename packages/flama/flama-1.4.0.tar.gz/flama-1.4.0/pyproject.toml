@@ -1,0 +1,236 @@
+[build-system]
+requires = ["poetry_core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "flama"
+version = "1.4.0"
+description = "Fire up your models with the flame 🔥"
+authors = [
+    "José Antonio Perdiguero López <perdy@perdy.io>",
+    "Miguel A. Durán Olivencia <migduroli@gmail.com>"
+]
+maintainers = [
+    "José Antonio Perdiguero López <perdy@perdy.io>",
+    "Miguel A. Durán Olivencia <migduroli@gmail.com>"
+]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/vortico/flama"
+homepage = "https://flama.dev"
+documentation = "https://flama.dev/docs/"
+keywords = ["machine-learning", "ml", "ml-ops", "mlops", "api", "rest", "restful", "openapi", "tensorflow", "pytorch", "sklearn"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Application Frameworks"
+]
+include = ["flama/py.typed", "flama/templates/**/*"]
+exclude = []
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.12"
+starlette = ">=0.21.0,<1.0.0"
+click = "^8.1"
+uvicorn = "^0.22"
+Jinja2 = "^3.1.2"
+typing-extensions = { version = "^4.4", python = "<3.10" }
+importlib-metadata = { version = "^4.2", python = "<3.8" }
+pydantic = { version = "^1.10", optional = true }
+marshmallow = { version = "^3.0", optional = true }
+python-forge = { version = "^18.6", optional = true }
+apispec = { version = "^6.0", optional = true }
+typesystem = { version = "^0.4.1", optional = true }
+SQLAlchemy = { version = "^2.0", extras = ["asyncio"], optional = true }
+pyyaml = "^6.0"
+
+[tool.poetry.extras]
+pydantic = ["pydantic"]
+typesystem = ["typesystem"]
+marshmallow = ["marshmallow", "apispec"]
+pagination = ["python-forge"]
+database = ["sqlalchemy"]
+full = ["pydantic", "typesystem", "marshmallow", "apispec", "python-forge", "sqlalchemy"]
+
+[tool.poetry.scripts]
+flama = 'flama.cli.__main__:cli'
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+pytest-xdist = { version = "^3.0", extras = ["psutil"] }
+pytest-cov = "^4.0"
+pytest-asyncio = "^0.20"
+ipython = [
+    { version = "^7.0", python = ">=3.7,<3.8" },
+    { version = "^8.0", python = ">=3.8" }
+]
+isort = "^5.10"
+ruff = "^0.0.231"
+mypy = "^1.2"
+black = { version = "^22.3", extras = ["d"] }
+pre-commit = "^2.20"
+python-multipart = "^0.0.5"
+uvicorn = { version = ">=0.19.0,<1.0.0", extras = ["standard"] }
+httpx = ">=0.23,<1.0.0"
+aiosqlite = ">=0.11.0,<1.0.0"
+requests = "^2.22"
+Faker = "^8.2"
+python-forge = "^18.6"
+SQLAlchemy = { version = "^2.0", extras = ["asyncio"] }
+gevent = "^22.10"
+asyncmock = { version = "^0.4", python = ">=3.7,<3.8" }
+
+[tool.poetry.group.schemas]
+optional = true
+
+[tool.poetry.group.schemas.dependencies]
+pydantic = "^1.10"
+marshmallow = "^3.0"
+apispec = "^6.0"
+typesystem = "^0.4"
+
+[tool.poetry.group.ml]
+optional = true
+
+[tool.poetry.group.ml.dependencies]
+numpy = { version = "^1.23.0", python = ">=3.8" }
+scikit-learn = { version = "^1.1.0", python = ">=3.8" }
+tensorflow-cpu = { version = "^2.12.0", python = ">=3.8" }
+torch = { version = "^1.13.0", python = ">=3.8" }
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+atomic = true
+multi_line_output = 3
+include_trailing_comma = true
+line_length = 120
+skip_glob = [
+    "*/.venv/**",
+    "*/docs/**",
+    "*/build/**",
+    "*/dist/**",
+]
+
+[tool.ruff]
+line-length = 120
+# Enable Pyflakes and pycodestyle rules.
+select = ["E", "F"]
+ignore = ["E721"]
+exclude = [
+    ".git",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".venv",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+]
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["E402"]
+
+[tool.ruff.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+show_error_codes = true
+exclude = [
+    "\\.venv",
+    "\\.github",
+    "examples",
+    "docs",
+    "build",
+    "dist",
+    "tests",
+]
+
+[tool.pytest.ini_options]
+minversion = 3
+addopts = "--dist=loadfile --junitxml=./test-results/pytest/results.xml --no-cov-on-fail --cov-report=html --cov-report=xml --cov-report=term-missing --cov-config=pyproject.toml --cov=. --pdbcls=IPython.terminal.debugger:TerminalPdb"
+norecursedirs = [
+    "*settings*",
+    "*urls*",
+    "*docs*",
+]
+asyncio_mode = "auto"
+
+[tool.coverage.run]
+source = [
+    "flama"
+]
+branch = true
+omit = [
+    ".venv*",
+    "*settings*",
+    "*__init__.py",
+    "*__main__.py",
+    "tests/*",
+    "examples/*",
+    "flama/cli/*",
+    "flama/types/*",
+    "flama/*/types.py",
+    "flama/authentication.py",
+    "flama/middleware.py",
+    "flama/testclient.py",
+]
+
+[tool.coverage.report]
+show_missing = true
+ignore_errors = true
+fail_under = 90
+exclude_lines = [
+    "noqa",
+    "pragma: no cover",
+    "pass",
+    "\\.\\.\\.",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "def __repr__",
+    "def __str__",
+    "if cls\\.debug",
+    "if settings\\.DEBUG",
+    "if (typing\\.|t\\.)?TYPE_CHECKING:",
+]
+
+[tool.coverage.paths]
+source = [
+    "./"
+]
+
+[tool.coverage.html]
+directory = "./test-results/coverage_html/"
+
+[tool.coverage.xml]
+output = "./test-results/coverage.xml"
+
+[tool.coverage.json]
+output = "./test-results/coverage.json"
