@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ahgregate
+Version: 0.1.2
+Summary: Command line and other utilties for aggregate.
+Author-email: "Stephen J. Mildenhall" <steve@convexrisk.com>
+Maintainer-email: "Stephen J. Mildenhall" <steve@convexrisk.com>
+License: BSD-3-Clause
+Project-URL: Documentation, https://ahgregate.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/mynl/ahgregate
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Education
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+License-File: LICENSE
+
+ahgregate: tools for aggregate
+===============================
+
+This package provides tools for aggregate pricing and risk analysis.
+
+Version Log
+-----------
+
+* 0.1.0: Initial release
+
+  - strip code from rst doc files
+
+Documentation
+-------------
+
+
+Installation
+------------
+
+Clone repo. Then, from the root directory, run
+::
+
+    pip install .
+
+
+License
+-------
+
+MIT
+
+
