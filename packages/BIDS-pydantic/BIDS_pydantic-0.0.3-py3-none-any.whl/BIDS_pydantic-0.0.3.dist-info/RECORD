@@ -1,0 +1,15 @@
+bids_pydantic/__init__.py,sha256=zC4587LIWFUhd_njCYRVe84lAdzRtYh70c9ACoi8pA0,40
+bids_pydantic/bids_model_generator.py,sha256=jaWJCyqSf3C8ED2gxYeJuEbfZ8CAufbmoVL6fmBJr4k,8008
+bids_pydantic/cli.py,sha256=nzIZrTR6_VEwm2KF9Y2oeR3O-mnR8TQ6ST_ln8LJhiQ,7058
+bids_pydantic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bids_pydantic/schema_parsing.py,sha256=aKuw6R_g0je-6hmsFU3lzvhdogx_if09R-h8VMgyczM,3998
+bids_pydantic/test_bids_model_generator.py,sha256=HC_8l2Ek9dm8qNyKzheOYvJz72VA1TXgro8whHowMYw,3925
+bids_pydantic/test_schema_parsing.py,sha256=0E27fomfILDIZ-uVJdlW33PrWHCbKw8kExY9zK9yqOc,2403
+bids_pydantic/version_info.py,sha256=Un-idnDd6ivxhJ3yXsGdXvw7-fAave43l6Qex-0_Eeg,3255
+bids_pydantic/version_specific_changes.py,sha256=tahKIJ4nF4Oai6zgGIsj4M-N_y3QeY639MAEI-UOLyU,942
+BIDS_pydantic-0.0.3.dist-info/LICENSE,sha256=H-Q1-ejjyPleiZIuA302xCjXW6166RxE_hXi5WGu3q4,1084
+BIDS_pydantic-0.0.3.dist-info/METADATA,sha256=xr5Fwfgzkr1QX_aC9ryMp927PqFJk_338hqyv756h8g,7462
+BIDS_pydantic-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+BIDS_pydantic-0.0.3.dist-info/entry_points.txt,sha256=BGuuDB7mjNyUGLsVIt-X_c3eMVgaTSHNegwZAEdUrmY,58
+BIDS_pydantic-0.0.3.dist-info/top_level.txt,sha256=KppLay8NltLMtMHpuXdACl68XabwOzfMEjb2A4CbZwg,14
+BIDS_pydantic-0.0.3.dist-info/RECORD,,
