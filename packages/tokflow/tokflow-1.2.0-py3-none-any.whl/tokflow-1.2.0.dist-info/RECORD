@@ -1,0 +1,9 @@
+tokflow/__init__.py,sha256=uw5wkhOF9Cq7daM4qAWeET_lFzNbpA3nADjBxx3ADek,112
+tokflow/sentence_stop.py,sha256=j3-6FbtGjcyvurxXlEncypSJMiOipjKGamujHvybJBQ,3643
+tokflow/tok_flow.py,sha256=EWY2kWpKJ3rvjLeDD5_Jwq6Wv7bCgOTZ5QxWF7E_Q7g,13942
+tokflow/tok_flow_worker.py,sha256=wjmxMFN4Cfqg-MwrtjZYgOOiRW-e117zRbcJjCGLyEU,9571
+tokflow-1.2.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+tokflow-1.2.0.dist-info/METADATA,sha256=S6JcN76bZXTzPme-Ge2iZHDlMOCLCkLdpL8ODP5SVn0,8716
+tokflow-1.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tokflow-1.2.0.dist-info/top_level.txt,sha256=YFjbVWIeMh2AjpEf7PCgRiLJEBh2phYG_KzvRMTkacM,8
+tokflow-1.2.0.dist-info/RECORD,,
