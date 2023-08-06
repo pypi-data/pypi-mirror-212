@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: flask-sqlalchemy-whoosh
+Version: 0.0.1
+Summary: A flask extension that adds full text search capabilites to your SQLAlchemy models using the Whoosh search engine
+Project-URL: Homepage, https://github.com/Momo8289/Flask-SQLAlchemy-Whoosh
+Project-URL: Bug Tracker, https://github.com/Momo8289/Flask-SQLAlchemy-Whoosh/issues
+Author: Nick
+License-File: LICENSE
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: flask-sqlalchemy>=3.0.3
+Requires-Dist: whoosh>=2.7.4
