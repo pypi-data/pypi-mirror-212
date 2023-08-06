@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: formalmath
+Version: 0.0.1
+Summary: a python version of a formal mathematics proof verifier.
+Home-page: https://github.com/lixiang90/formalmath.git
+Author: lixiang90
+Author-email: lixiang90@github.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# formalmath
+
+A formal mathematics package.
+
+## setmm
+
+A port for [metamath](https://us.metamath.org) and set.mm.
+
+Example code:
+
+```python
+from formalmath import setmm
+lp = setmm.Constant('\\left(','(','(')
+rp = setmm.Constant('\\right)',')',')')
+ra = setmm.Constant('\\rightarrow','->','->')
+phi = setmm.Variable('\\varphi','phi','ph')
+psi = setmm.Variable('\\psi','psi','ps')
+wph = setmm.Formula("\\varphi", [phi,], metamath_code='wph')
+wps = setmm.Formula('\\psi',[psi,],metamath_code='wps')
+wi = setmm.Formula("auto",[lp,phi,ra,psi,rp],metamath_code='wi')
+print(wi.label) # result is '\\left(\\varphi\\rightarrow\\psi\\right)'
+```
+
