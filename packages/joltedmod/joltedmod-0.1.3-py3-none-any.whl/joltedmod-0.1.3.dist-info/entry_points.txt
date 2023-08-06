@@ -1,0 +1,3 @@
+[console_scripts]
+create=jolted_mod.main:main
+
