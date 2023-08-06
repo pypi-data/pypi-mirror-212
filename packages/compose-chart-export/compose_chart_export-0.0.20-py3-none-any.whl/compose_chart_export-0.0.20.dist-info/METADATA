@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: compose-chart-export
+Version: 0.0.20
+Summary: compose_agent_export for docker-compose -> helm chart
+Author: Espen
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Requires-Dist: docker-compose-parser (==0.0.20)
+Requires-Dist: model-lib (==0.0.20)
+Requires-Dist: pydantic (>=1.10.2)
+Requires-Dist: semver (==2.13.0)
+Requires-Dist: typing-extensions (>=4.3.0)
+Requires-Dist: zero-3rdparty (==0.0.20)
+
+# Compose Chart Export
+- Uses `docker-compose.yaml` to generate a helm chart
+- Supports various customizations using labels
