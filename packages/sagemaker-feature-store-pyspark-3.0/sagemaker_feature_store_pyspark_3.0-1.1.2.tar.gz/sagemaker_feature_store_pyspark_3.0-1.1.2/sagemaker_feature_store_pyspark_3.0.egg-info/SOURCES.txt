@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+bin/feature-store-pyspark-dependency-jars
+deps/jars/sagemaker-feature-store-spark-sdk.jar
+sagemaker_feature_store_pyspark_3.0.egg-info/PKG-INFO
+sagemaker_feature_store_pyspark_3.0.egg-info/SOURCES.txt
+sagemaker_feature_store_pyspark_3.0.egg-info/dependency_links.txt
+sagemaker_feature_store_pyspark_3.0.egg-info/not-zip-safe
+sagemaker_feature_store_pyspark_3.0.egg-info/top_level.txt
+src/feature_store_pyspark/FeatureStoreManager.py
+src/feature_store_pyspark/__init__.py
+src/feature_store_pyspark/wrapper.py
