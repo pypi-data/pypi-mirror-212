@@ -1,0 +1,12 @@
+pydocstyle_gitlab_code_quality/__init__.py,sha256=dVpp4LdfyYGlQn1XRC_h4ZjMA7rwU4UF5quyPtCF_OE,68
+pydocstyle_gitlab_code_quality/main.py,sha256=50CwMaAbT49UszgjhSkj_tRlXMWL6ywa-NSIuh18hZs,1958
+pydocstyle_gitlab_code_quality/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydocstyle_gitlab_code_quality/src/cq_types.py,sha256=OCHJpz0jI4s7Lxzrz3bC3aRpekE-q4H2yyfn2QkDk0E,358
+pydocstyle_gitlab_code_quality/src/encoder.py,sha256=yoktrmDykx7DByhXBhYrOkjZNfG5mRkHUXCs7FgO87M,279
+pydocstyle_gitlab_code_quality/src/hash.py,sha256=Lnza76ti-KQbpusMR3Mces5zRvDSAluydEJnPt3rRfA,302
+pydocstyle_gitlab_code_quality-0.0.1.dist-info/LICENSE.md,sha256=VdzENpvP1b9R3qpUKWHwDE9c6esDKTjuRtDjMsyU6u0,1096
+pydocstyle_gitlab_code_quality-0.0.1.dist-info/METADATA,sha256=mtL2O-xUXe4pdfrS0PXimzi5wteapbobTsn0sBRok8U,3084
+pydocstyle_gitlab_code_quality-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pydocstyle_gitlab_code_quality-0.0.1.dist-info/entry_points.txt,sha256=4Zd84xm86ZKF6Cef10fIP8NMIZH9y-LjFakQOqbLtjc,87
+pydocstyle_gitlab_code_quality-0.0.1.dist-info/top_level.txt,sha256=VIIzanoZUW1w6Em_ya4Tp8iC3KUobouQ15btUoQmoFw,31
+pydocstyle_gitlab_code_quality-0.0.1.dist-info/RECORD,,

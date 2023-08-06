@@ -1,0 +1,2 @@
+[console_scripts]
+pydocstyle-gitlab-code-quality = pydocstyle_gitlab_code_quality:main
