@@ -1,0 +1,8 @@
+spark_llm/__init__.py,sha256=BJ1Gn-5rPFifdnxONUkEhwD1xM04rNSPVy02MQJuTLE,137
+spark_llm/prompt.py,sha256=3LKIZYBXDCrBEZi-5CPUDYXctjUD6RTVlPmDno8Byeg,4959
+spark_llm/spark_llm_assistant.py,sha256=AJJEX5MDyuF32_eVkOT2JpxiIdLR8veaBHOCPODC-iI,7416
+spark_llm-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+spark_llm-0.1.0.dist-info/METADATA,sha256=KWQlkQSV9gt25w6fMdZzsKyKC_7VXDHCChjYNFMR-ds,802
+spark_llm-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+spark_llm-0.1.0.dist-info/top_level.txt,sha256=ypkbBPcgkCEokrbqHCZq7YTODdsEJ-a6W59TO7Z62YU,10
+spark_llm-0.1.0.dist-info/RECORD,,
