@@ -1,0 +1,12 @@
+readwise/__init__.py,sha256=-y0frYkc66tw9aUv321CE2lOZO-yj1gTG0m_Db5BGwQ,166
+readwise/__main__.py,sha256=Qy0L2eXSKoIKSeTXrjWHlgHPAbcGugnYDYvtK9rOi5U,67
+readwise/api.py,sha256=CEcxTktC0uTsJNbW9oeOMmHX00fvORbVwLa_isRukic,2382
+readwise/cli.py,sha256=FMn03S5fX38q-OwyxjEzGwT_c65Z0eiqkSBQSboblII,1029
+readwise/model.py,sha256=5IYDPfUYqWEh84ExP7WqTnUy8E3AEfc4to1WKAMSLE4,1241
+readwise/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+readwise/version.py,sha256=Ge4FGeqp-FiRil_LiSgl3_haz1nhKzKqq-I69MbHETw,143
+readwise_api-0.2.0.dist-info/LICENSE,sha256=PpfScHdg8SQpCKUgKpFS_A7zL_95H4TI0xIpCkH5Oxg,1072
+readwise_api-0.2.0.dist-info/METADATA,sha256=R8gEus204ZVqAsJcGXa8frm1DowJKWdp_-m5f42ieM8,1489
+readwise_api-0.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+readwise_api-0.2.0.dist-info/entry_points.txt,sha256=hK41GosOxMyhVvA6PjVYtz8chHNAfhvxvuyj-zjG4_c,50
+readwise_api-0.2.0.dist-info/RECORD,,
