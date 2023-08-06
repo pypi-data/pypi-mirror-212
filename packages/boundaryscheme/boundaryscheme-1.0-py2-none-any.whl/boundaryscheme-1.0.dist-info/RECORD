@@ -1,0 +1,17 @@
+boundaryscheme/__init__.py,sha256=M8oDtRLiNvkSMsZqV8L00Jpdc88kRqeLfxj-U4Gp6fg,137
+boundaryscheme/boundaries.py,sha256=H9AG_9_OD5KcAuMC2tRca6TMN82uUhgsnU0pMfQI2QY,6390
+boundaryscheme/complex_winding_number.py,sha256=zk7jVx0H0CnF6FIc28NLenuO2hnOack6BqJ7f3jYwVc,2605
+boundaryscheme/pyplot.py,sha256=fAM_Ldm-akZzKpkGjI_QL5BYeofy4pEtENBdbkGlfxY,23173
+boundaryscheme/schemes.py,sha256=1XEBFi3pYX5lh_hpBus8pRZOn3uL05s_YBGwQtzPQCQ,20955
+boundaryscheme/utils.py,sha256=o7NI40S4tCenwRWStwx_4yqM7ecE_UKzEZE51JOVuWQ,10942
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/draw_detKLcurve.py,sha256=W-tySABTntPeMsF7YEYROgR3rvW5zoPXnepMW_lbEX0,1995
+examples/draw_nbrzerosdetKL.py,sha256=ikl90SitCR6gJxQfJTk5yIfgA78qE5PIx0IYOSdz1K4,1401
+examples/draw_symbol.py,sha256=7KYsC-ZmelPie1XPGr3vB2Os_FR95F5EyZxAkk9i5FI,925
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_import.py,sha256=80iBE5d8gs8H1CivzVGKr75eCNHgCbc8et-MzVRbU_8,61
+boundaryscheme-1.0.dist-info/LICENSE,sha256=SqrXoSrxzI5rq4vCuEZHgAyZxqNY8xv1t_voaDW9W5k,1076
+boundaryscheme-1.0.dist-info/METADATA,sha256=LVVixc85oemgEBpm0zu3FB2G8l2lGsgxZ1m0aUdZ5ZU,1617
+boundaryscheme-1.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+boundaryscheme-1.0.dist-info/top_level.txt,sha256=Dco-RPZqw2vkC14JZpqkckaJNbRTDuBJ0zX_fXbryE8,30
+boundaryscheme-1.0.dist-info/RECORD,,
