@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+setuptools_ziglang.py
+setuptools_ziglang.egg-info/PKG-INFO
+setuptools_ziglang.egg-info/SOURCES.txt
+setuptools_ziglang.egg-info/dependency_links.txt
+setuptools_ziglang.egg-info/entry_points.txt
+setuptools_ziglang.egg-info/top_level.txt

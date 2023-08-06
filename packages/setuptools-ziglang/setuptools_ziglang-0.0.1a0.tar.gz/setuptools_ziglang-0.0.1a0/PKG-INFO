@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: setuptools_ziglang
+Version: 0.0.1a0
+Summary: Setuptools extension for building Python extensions with the Zig compiler
+Home-page: https://github.com/f-cozzocrea/setuptools-ziglang
+Author: February Cozzocrea
+Author-email: february.cozzocrea@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# setuptools-ziglang
+Setuptools extension for building Python extensions with the Zig compiler

@@ -1,0 +1,2 @@
+[distutils.commands]
+build_ext = setuptools_ziglang:build_zig_ext
