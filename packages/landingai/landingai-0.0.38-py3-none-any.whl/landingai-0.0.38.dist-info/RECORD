@@ -1,0 +1,14 @@
+landingai/__init__.py,sha256=_uK-ud2c0ApXUVuB0P7pajgz65YYcoxS_94_WrUFlBo,225
+landingai/common.py,sha256=6bvJ56tlPnnRPru-zYzEpCSyi44n2aVQQUdDRccfCDk,4729
+landingai/exceptions.py,sha256=nyoTQhkQXpRaDWA3UIoMl9n_mC5vdoAYftGp5HaUG9Y,8372
+landingai/io.py,sha256=MDIKSs4aFqyW6U70ZV2IWLA5OYGR62x3OuUl3UlYY7Q,3714
+landingai/postprocess.py,sha256=ejcSbPDtpLx75hWUnIuZTz8wyammDYS9VeudbtyyLag,4554
+landingai/predict.py,sha256=EpwIpQs5iyppqQEAJkxEWLA_4muEOi6LORVVqWzHZQ0,12573
+landingai/storage/__init__.py,sha256=k9LOSwN65MR4rq3s-94-P7cprTh7R-RPSShk-iYGkZ4,40
+landingai/storage/snowflake.py,sha256=iYlNKmRBD1ip4M_M-evSpQM6aKnrk2I3USzj0ZQA5Qk,4374
+landingai/vision_pipeline.py,sha256=Fd_sqq0MefbV4hvYZCalJj8-PN9WjFSF22gdgX9CCIw,13868
+landingai/visualize.py,sha256=OYyHKkpH8sw6NP2xDNQOcazk1fN6AP-enAKuhHZ2fEk,7367
+landingai-0.0.38.dist-info/LICENSE.md,sha256=rQNSvmwvS0Hxx1gJCvJ-PDPO4SySr0ND6eTNFnIDUA4,1063
+landingai-0.0.38.dist-info/METADATA,sha256=a_Z4G5KyK8CV7XeOnLN2w5WfwCXCATQWQIqf-PX_Ktk,7392
+landingai-0.0.38.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+landingai-0.0.38.dist-info/RECORD,,
