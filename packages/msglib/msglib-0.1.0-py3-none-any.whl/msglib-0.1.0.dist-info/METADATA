@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: msglib
+Version: 0.1.0
+Summary: 
+Author: uigctaw
+Author-email: uigctaw@metadata.social
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/x-rst
+
+======
+msglib
+======
+
+WiP
+
