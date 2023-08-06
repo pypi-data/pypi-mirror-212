@@ -1,0 +1,2 @@
+import{i as n,W as e,at as i}from"./index.aecb444c.js";const o=r=>{const a=r.input,{directUrl:t,loading:l}=n(a);return l?e.createElement(i,null):t==null?e.createElement("div",null,"-"):e.createElement("iframe",{title:"Html card","data-test-weave-id":"html-file",src:t,sandbox:"allow-same-origin allow-scripts",style:{border:"none",height:"100%",width:"100%"}})};export{o as default};
+//# sourceMappingURL=Component.2b63c4ed.js.map
