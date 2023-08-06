@@ -1,0 +1,9 @@
+bids_pydantic_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bids_pydantic_models/bids_metadata_v1_7_0.py,sha256=lmgyjGxKCXuoJGnqHY6HqErU8zSa0n5HntsQtrbLepc,116985
+bids_pydantic_models/bids_metadata_v1_8_0.py,sha256=0O6dyzjsKP83pW_m7PtHSorNBbssS9RXZygAskGdFDA,124333
+bids_pydantic_models/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BIDS_pydantic_models-0.0.3.dist-info/LICENSE,sha256=SicdTxEtwdI67l_HR22Qz3MUoVCTndcvbXRrKsPZl-A,1084
+BIDS_pydantic_models-0.0.3.dist-info/METADATA,sha256=488Zud_AfqmG9H9ECo3pJqs69Jwd-Efsnk6gxUwBqic,4090
+BIDS_pydantic_models-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+BIDS_pydantic_models-0.0.3.dist-info/top_level.txt,sha256=fJCbkeSbJQoAjXQ8zJ3o1tsyiLKakxXE8V8ZdsyVtiU,21
+BIDS_pydantic_models-0.0.3.dist-info/RECORD,,
