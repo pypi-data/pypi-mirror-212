@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+kplanes/__init__.py
+kplanes/kplanes.py
+kplanes/kplanes_configs.py
+kplanes/kplanes_field.py
+kplanes_nerfstudio.egg-info/PKG-INFO
+kplanes_nerfstudio.egg-info/SOURCES.txt
+kplanes_nerfstudio.egg-info/dependency_links.txt
+kplanes_nerfstudio.egg-info/entry_points.txt
+kplanes_nerfstudio.egg-info/requires.txt
+kplanes_nerfstudio.egg-info/top_level.txt

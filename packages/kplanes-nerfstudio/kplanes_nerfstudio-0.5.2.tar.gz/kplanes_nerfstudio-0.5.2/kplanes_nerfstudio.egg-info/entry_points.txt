@@ -1,0 +1,3 @@
+[nerfstudio.method_configs]
+kplanes = kplanes.kplanes_configs:kplanes_method
+kplanes_dynamic = kplanes.kplanes_configs:kplanes_dynamic_method
