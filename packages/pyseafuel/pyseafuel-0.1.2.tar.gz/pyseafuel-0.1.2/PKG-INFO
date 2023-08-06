@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyseafuel
+Version: 0.1.2
+Summary: Package to numerically model a methanol producing island.
+Author: Doug Keller
+Author-email: dg.kllr.jr@gmail.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.21.1,<2.0.0)
+Requires-Dist: pdoc (>=12.0.2,<13.0.0)
+Requires-Dist: scipy (>=1.7.1,<2.0.0)

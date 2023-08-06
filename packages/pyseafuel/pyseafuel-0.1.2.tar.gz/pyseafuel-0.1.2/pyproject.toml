@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pyseafuel"
+version = "0.1.2"
+description = "Package to numerically model a methanol producing island."
+authors = ["Doug Keller <dg.kllr.jr@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+numpy = "^1.21.1"
+scipy = "^1.7.1"
+pdoc = "^12.0.2"
+
+[tool.poetry.extras]
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
