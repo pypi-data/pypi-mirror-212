@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: alpaca-eval
+Version: 0.1.1
+Summary: AlpacaEval : An Automatic Evaluator of Instruction-following Models
+Author: The Alpaca Team
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Provides-Extra: analysis
+Provides-Extra: dev
+Provides-Extra: local
+Provides-Extra: api
+Provides-Extra: all
+License-File: LICENSE
