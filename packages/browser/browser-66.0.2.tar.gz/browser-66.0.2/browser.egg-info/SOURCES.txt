@@ -1,0 +1,6 @@
+README.md
+setup.py
+browser.egg-info/PKG-INFO
+browser.egg-info/SOURCES.txt
+browser.egg-info/dependency_links.txt
+browser.egg-info/top_level.txt
