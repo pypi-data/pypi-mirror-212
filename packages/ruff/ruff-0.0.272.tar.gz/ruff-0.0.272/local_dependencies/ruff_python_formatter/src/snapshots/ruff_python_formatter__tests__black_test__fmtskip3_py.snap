@@ -1,0 +1,68 @@
+---
+source: crates/ruff_python_formatter/src/lib.rs
+expression: snapshot
+input_file: crates/ruff_python_formatter/resources/test/fixtures/black/simple_cases/fmtskip3.py
+---
+## Input
+
+```py
+a  =    3
+# fmt: off
+b,    c = 1, 2
+d =    6  # fmt: skip
+e = 5
+# fmt: on
+f = ["This is a very long line that should be formatted into a clearer line ", "by rearranging."]
+```
+
+## Black Differences
+
+```diff
+--- Black
++++ Ruff
+@@ -1,10 +1,7 @@
+-a = 3
++NOT_YET_IMPLEMENTED_StmtAssign
+ # fmt: off
+-b,    c = 1, 2
+-d =    6  # fmt: skip
+-e = 5
++NOT_YET_IMPLEMENTED_StmtAssign
++NOT_YET_IMPLEMENTED_StmtAssign  # fmt: skip
++NOT_YET_IMPLEMENTED_StmtAssign
+ # fmt: on
+-f = [
+-    "This is a very long line that should be formatted into a clearer line ",
+-    "by rearranging.",
+-]
++NOT_YET_IMPLEMENTED_StmtAssign
+```
+
+## Ruff Output
+
+```py
+NOT_YET_IMPLEMENTED_StmtAssign
+# fmt: off
+NOT_YET_IMPLEMENTED_StmtAssign
+NOT_YET_IMPLEMENTED_StmtAssign  # fmt: skip
+NOT_YET_IMPLEMENTED_StmtAssign
+# fmt: on
+NOT_YET_IMPLEMENTED_StmtAssign
+```
+
+## Black Output
+
+```py
+a = 3
+# fmt: off
+b,    c = 1, 2
+d =    6  # fmt: skip
+e = 5
+# fmt: on
+f = [
+    "This is a very long line that should be formatted into a clearer line ",
+    "by rearranging.",
+]
+```
+
+
