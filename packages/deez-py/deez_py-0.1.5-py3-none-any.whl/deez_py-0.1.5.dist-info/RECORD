@@ -1,0 +1,11 @@
+README.rst,sha256=r2uBo-bhdGZ6xHGs3aIvQdD59F5VOU3xFUDt47hRTSA,3219
+deez_py/__init__.py,sha256=qZm92yLqrq1lTuNwxcj8LEL99Q5rpuRhZIpbUksxa2w,225
+deez_py/__main__.py,sha256=-D0ViSSSz-tbMvRXTPwhTL54MUj-yVS16kRFlxo70K8,163
+deez_py/deez_ast.py,sha256=002kaFw8-Koaxxd1cHQSGTHwdcR1k2Ai3n7rI_ATypI,2444
+deez_py/lexer.py,sha256=BwyYdrOcSb_Gy7JkxUgnfaGHqod7tPEOmrgUMmHl7Zg,9315
+deez_py/parser.py,sha256=a5Biy1INel6WJ_cxc9aA5gul6N97k4tVsZLTJ9OL_M0,11558
+deez_py/token_types.py,sha256=QKMh4BUvDrTAfO2LP3TZxA5MF6UX9oSyn5ya0t8VaGY,469
+deez_py/tokens.py,sha256=HmXoN3Jap4UziNOSi_Bgg3XI5Hkw2BXTqaTgPXPMnGQ,1650
+deez_py-0.1.5.dist-info/METADATA,sha256=3Je2Qp3jPC1YDpQcJqtjbW6RTkkpTCBy067EvpblBGE,4124
+deez_py-0.1.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+deez_py-0.1.5.dist-info/RECORD,,
