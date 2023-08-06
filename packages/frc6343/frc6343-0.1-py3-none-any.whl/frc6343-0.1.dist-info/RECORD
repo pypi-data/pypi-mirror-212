@@ -1,0 +1,8 @@
+frc6343/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frc6343/controller/deadband.py,sha256=oeKM9jjUZKDAKiM7VXxvORjY6jLKyVFio4sn02jrpqk,422
+frc6343/controller/guitar/guitar.py,sha256=wikoiTmIFzilMt8GSpmiMklV-3IBulK3MU4AVRnmtCw,14527
+frc6343-0.1.dist-info/LICENSE,sha256=9Ofzc7m5lpUDN-jUGkopOcLZC3cl6brz1QhKInF60yg,7169
+frc6343-0.1.dist-info/METADATA,sha256=4S1A7xrz_3QJ1oZt1pGydRAt2AtxlM4jRO4Ob2WOE24,390
+frc6343-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+frc6343-0.1.dist-info/top_level.txt,sha256=MzhrJQAWStrIcb_m8qGXuiZxoIjafVAna2Mdnw8oA_Y,8
+frc6343-0.1.dist-info/RECORD,,
