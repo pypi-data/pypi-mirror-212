@@ -1,0 +1,9 @@
+google-auth>=2.16.2
+
+[dev]
+black==22.6.0
+setuptools>=21.0.0
+wheel
+twine
+pytest
+pytest-cov
