@@ -1,0 +1,128 @@
+name: 'Setup SIERRA sample project'
+description: 'Setup SIERRA project for CI and testing'
+inputs:
+  platform:  # id of input
+    description: 'The SIERRA platform to setup for'
+    required: true
+  rosdistro:
+    description: 'The version of ROS to test with'
+    default: 'noetic'
+# outputs:
+#   time: # id of output
+#     description: 'The time we greeted you'
+runs:
+  using: 'composite'
+  steps:
+    - name: Clone sample project
+      shell: bash
+      working-directory: ../../
+      run: |
+        if [ ! -d sierra-sample-project ]; then
+        git clone https://github.com/swarm-robotics/sierra-sample-project.git
+        cd sierra-sample-project
+        else
+        cd sierra-sample-project
+        git pull
+        fi
+        git checkout devel
+
+    - name: Get number of CPU cores
+      uses: SimenB/github-actions-cpu-cores@v1
+      id: cpu-cores
+
+    ############################################################################
+    # ARGoS setup
+    ############################################################################
+    - name: Install ARGoS dependencies
+      shell: bash
+      working-directory: ../../
+      run: |
+        # 2023/01/16: || true needed because homebrew installation of whatever
+        # dependencies these packages requires manual intervention to fix, and I
+        # don't have a mac.
+        if [ "${{ runner.os }}" == "macOS" ]; then
+          brew install pkg-config cmake libpng freeimage lua qt \
+          docbook asciidoc graphviz doxygen|| true
+        elif [ "${{ runner.os }}" == "Linux" ]; then
+          sudo apt-get update
+          sudo apt-get install cmake libfreeimage-dev libfreeimageplus-dev \
+          qt5-default freeglut3-dev libxi-dev libxmu-dev liblua5.3-dev \
+          lua5.3 doxygen graphviz libgraphviz-dev asciidoc
+        fi
+
+    - name: Install ARGoS
+      if: inputs.platform == 'argos'
+      shell: bash
+      working-directory: ../../
+      run: |
+        git clone https://github.com/ilpincy/argos3.git
+        cd argos3
+        mkdir -p build && cd build
+        cmake -DARGOS_DOCUMENTATION=OFF ../src
+        make -j ${{ steps.cpu-cores.outputs.count }}
+        sudo make install
+
+    - name: Build SIERRA project for ARGoS
+      if: inputs.platform == 'argos'
+      working-directory: ../../
+      shell: bash
+      run: |
+        cd sierra-sample-project/argos
+        mkdir -p build && cd build
+        cmake -DARGOS_INSTALL_DIR=/usr/local ..
+        make -j ${{ steps.cpu-cores.outputs.count }}
+
+    ############################################################################
+    # ROS1+Gazebo setup
+    ############################################################################
+    - name: Install ROS1 platform dependency
+      if: inputs.platform == 'ros1gazebo'
+      uses: ros-tooling/setup-ros@v0.3
+      with:
+        required-ros-distributions: ${{ inputs.rosdistro }}
+
+    - name: Install SIERRA ROSbridge dependencies
+      if: inputs.platform == 'ros1gazebo'
+      working-directory: ../..
+      shell: bash
+      run: |
+        sudo apt-get install ros-${{ inputs.rosdistro }}-desktop-full
+        sudo apt-get install ros-${{ inputs.rosdistro }}-turtlebot3-description
+        sudo apt-get install ros-${{ inputs.rosdistro }}-turtlebot3-msgs
+        sudo apt-get install ros-${{ inputs.rosdistro }}-turtlebot3-gazebo
+        sudo apt-get install ros-${{ inputs.rosdistro }}-turtlebot3-bringup
+        sudo apt-get install python${{ matrix.python-version }} python${{ matrix.python-version }}-dev
+        sudo apt-get install python${{ matrix.python-version }}-venv python3-apt
+        sudo apt-get install python3-pip python3-cairo intltool python3-wheel python3-rospkg python3-empy
+
+        # 2023/1/18: You still need install these even after installing stuff
+        # with apt AND if the sysem python matches your current python. I don't
+        # know why.
+        pip3 install empy
+        pip3 install rospkg wheel pyparsing pyqt5
+        pip3 install  pyqt5 pysip numpy rospkg
+        pip3 install  matplotlib pyyaml psutil
+        pip3 install  pysip defusedxml pyparsing pydev
+        pip3 install  pyopengl opencv-python
+
+    - name: Install SIERRA ROSBridge dependency (ubuntu)
+      if: inputs.platform == 'ros1gazebo'
+      working-directory: ../..
+      shell: bash
+      run: |
+        source /opt/ros/${{ inputs.rosdistro }}/setup.bash
+
+        pip3 install catkin_tools
+        git clone https://github.com/swarm-robotics/sierra_rosbridge.git
+        cd sierra_rosbridge
+        git checkout devel
+        catkin init
+        catkin config --extend /opt/ros/${{ inputs.rosdistro }}
+        catkin config --install -DCMAKE_INSTALL_PREFIX=$HOME/.local
+        catkin build
+
+    ############################################################################
+    # ROS1+Robot setup
+    ############################################################################
+
+    # None needed for the moment--stage 1 XML generation only.

@@ -1,0 +1,73 @@
+name: 'Setup SIERRA'
+description: 'Setup SIERRA for CI and testing'
+# inputs:
+  # who-to-greet:  # id of input
+  #   description: 'Who to greet'
+  #   required: true
+  #   default: 'World'
+# outputs:
+#   time: # id of output
+#     description: 'The time we greeted you'
+runs:
+  using: 'composite'
+  steps:
+
+    ############################################################################
+    # Ubuntu setup
+    ############################################################################
+    - name: Setup python (ubuntu)
+      uses: actions/setup-python@v4
+      if: runner.os == 'Linux'
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install system deps (ubuntu)
+      if: runner.os == 'Linux'
+      shell: bash
+      run: |
+        sudo apt-get update
+        sudo apt-get install parallel cm-super texlive-fonts-recommended
+        sudo apt-get install texlive-latex-extra dvipng pssh ffmpeg xvfb
+        python3 -m pip install --upgrade pip
+        python3 -m pip install wheel
+
+    ############################################################################
+    # OSX setup
+    ############################################################################
+
+    - name: Setup python (OSX)
+      uses: actions/setup-python@v4
+      if: runner.os == 'macOS'
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - uses: nick-fields/retry@v2
+      name: Install system deps (OSX)
+      if: runner.os == 'macOS'
+      with:
+        timeout_minutes: 10000
+        max_attempts: 3
+        shell: bash
+        command: |
+          # 2023/01/16: || true needed because homebrew installation of whatever
+          # dependencies these packages requires manual intervention to fix, and I
+          # don't have a mac.
+          brew update && brew install parallel pssh ffmpeg
+          brew update && brew install --cask mactex
+          brew update && brew install --cask xquartz
+          python -m pip install --upgrade pip
+          python -m pip install wheel
+
+    ############################################################################
+    # SIERRA install
+    ############################################################################
+    - name: Install SIERRA
+      shell: bash
+      run: |
+        python -m pip install -r docs/requirements.txt
+        cd docs && make man && cd ..
+        python3 -m pip install .
+        python3 -m pip install .[devel]
+
+        which sierra-cli
+        sierra-cli --version
