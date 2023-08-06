@@ -1,0 +1,8 @@
+cwsearch_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cwsearch_utils/aggregate.py,sha256=xpLq0PDIhcRnY7nrW9vik6_Bi1TPyVctPQhuM1yy43c,23848
+cwsearch_utils/infinstor_dbutils.py,sha256=aqYSD10ToriePx07QR8LvcCkmdalVwf4BOVSQ77XL0o,1535
+cwsearch_utils/infinstor_lock.py,sha256=PRIzRgeWMJrB1g5RK3s-0WS-ODwHUJ5n8STEPvD6xcs,5512
+cwsearch_utils-0.1.60.dist-info/METADATA,sha256=s6LlWb1g9nLuu-d4oigcWtzI_mpYg0AzNePuSeBkeJ8,571
+cwsearch_utils-0.1.60.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cwsearch_utils-0.1.60.dist-info/top_level.txt,sha256=OGqL3fU8yTeTOI4vTn4QZa2PZY145LPKbmtLSjWi9kY,15
+cwsearch_utils-0.1.60.dist-info/RECORD,,
