@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qssp
+Version: 0.0.1
+Summary: A Python package for creating, manipulating and characterizing Quantum-State Stochastic Processes
+Project-URL: Homepage, https://github.com/ari-VL/qssp
+Project-URL: Bug Tracker, https://github.com/ari-VL/qssp/issues
+Author-email: David Gier <dgier@ucdavis.edu>, Ariadna Venegas-Li <avenegasli@ucdavis.edu>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# qssp
+A Python package for creating, manipulating and characterizing Quantum-State Stochastic Processes. 
