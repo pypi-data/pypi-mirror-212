@@ -1,0 +1,16 @@
+dbt_schema_builder/__init__.py,sha256=gFGjJho6AmrkgV4I_mHmQZkH1sQw5MJSW4jhQBCCdgw,93
+dbt_schema_builder/app.py,sha256=TD_k3pSQm9dUnnynycMl6C53WPTkQDzQyv87xES-gwM,6994
+dbt_schema_builder/builder.py,sha256=4dgeUvGuaGUFNNYCKf8Q8ByDVMlvNb6VxD_NPkRybJ0,24281
+dbt_schema_builder/queries.py,sha256=MA8AkdRE2F-r_lxC2Ugp0m4GNhFLf5GOwh2otsMeeIY,1002
+dbt_schema_builder/relation.py,sha256=w1VlGbJzLOOu8vFOxcTw0rdDFfamcSmCT5UiESOAvj0,9373
+dbt_schema_builder/schema.py,sha256=L8LAr8CSrr58VG4zL3t9HIoEzkyxBljQp_gR4ybIwUA,3904
+dbt_schema_builder/schema_builder.py,sha256=2-TemRqt-GfWAEUlNXsB9SUOfWQDpfLota2znZYWmYY,2714
+dbt_schema_builder/snowflake_keywords.yml,sha256=S6l8ulRMmmmpbrt-p6RE2ZvFQjExFnArmgNsgDrjvSM,1129
+dbt_schema_builder/templates/model_sql_pii.tpl,sha256=ch9IgIix4-ZEp0tHqqSXVr_VdiFZM228ZWorqt09D0Q,634
+dbt_schema_builder/templates/model_sql_safe.tpl,sha256=94D77pOrwtF6TUS7VdAIYNiXfmnFll0NhdkgRaKq5Xo,866
+dbt_schema_builder-0.4.7.dist-info/LICENSE.txt,sha256=QTW2QN7q3XszgUAXm9Dzgtu5LXYKbR1SGnqMa7ufEuY,35139
+dbt_schema_builder-0.4.7.dist-info/METADATA,sha256=coR-VCKJJ6Ng91NIVyFiCP838hU4aeAsbOEJaFH24uo,4769
+dbt_schema_builder-0.4.7.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+dbt_schema_builder-0.4.7.dist-info/entry_points.txt,sha256=gQd-bCw2kP8Nh6PBxHUejI6GtLhlryUHMAk6zwMyzes,78
+dbt_schema_builder-0.4.7.dist-info/top_level.txt,sha256=zUpbT9sirYfJkpOQKIgL3QGaNF6snnEyxPfL4h0NmKM,19
+dbt_schema_builder-0.4.7.dist-info/RECORD,,
