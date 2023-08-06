@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: conjugate
+Version: 0.0.1.1
+Summary: Conjugate - Simplify Verb Conjugation in Python
+Author: Aanjneya Moudgil
+Author-email: <aanjneya.moudgil@gmail.com>
+Keywords: python,verbs,conjugate,german,api,conjugation,konjugation,verben
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+Hi!

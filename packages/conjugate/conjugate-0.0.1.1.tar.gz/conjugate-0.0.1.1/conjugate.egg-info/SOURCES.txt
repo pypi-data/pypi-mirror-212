@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+conjugate.egg-info/PKG-INFO
+conjugate.egg-info/SOURCES.txt
+conjugate.egg-info/dependency_links.txt
+conjugate.egg-info/requires.txt
+conjugate.egg-info/top_level.txt
+src/__init__.py
+src/conjugator.py
