@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: DSE-Software-Connection-Tester
+Version: 0.0.1
+Summary: A connection testing package.
+Author: Gabi Barrientos de Reus
+Author-email: gabi@dsesoftware.nl
+Keywords: DSE Software,connection,dns,resolve,ping
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Requires: subprocess
+Requires: logging
+Requires: http
+Requires: enum
+Requires: os
+Requires: typing
+License-File: LICENSE
+
+A package that allows for testing the resolvability of a domain name and the accessibility of an ip address.
