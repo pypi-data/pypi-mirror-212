@@ -1,0 +1,5 @@
+wave
+des
+numpy
+chardet
+pillow
