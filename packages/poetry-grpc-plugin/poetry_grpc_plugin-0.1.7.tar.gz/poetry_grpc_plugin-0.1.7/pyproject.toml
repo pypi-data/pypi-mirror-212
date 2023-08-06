@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "poetry-grpc-plugin"
+version = "0.1.7"
+description = "gRPC Poetry plugin"
+authors = ["Federico Jaite <fede_654_87@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "poetry_grpc_plugin"}]
+repository = "https://github.com/fedej/poetry-grpc-plugin"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Code Generators",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+grpcio-tools = "^1.39.0"
+poetry = ">=1.2.0,<1.6"
+mypy-protobuf = ">=2.9,<4.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+isort = "^5.11.5"
+flake8 = "^3.9.2"
+mypy = "^1.2.0"
+pytest = "^7.3.1"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+grpc = "poetry_grpc_plugin.plugins:GrpcApplicationPlugin"
+
+[tool.black]
+line-length = 88
+exclude = '''
+/(
+    \.git
+  | \.github
+  | __pycache__
+  | \.mypy_cache
+  | \.venv
+  | \.vscode
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+files = ["poetry_grpc_plugin"]
+ignore_missing_imports = true
+follow_imports = "silent"
+show_column_numbers = true
+disallow_untyped_defs = true
+disallow_any_generics = true
+no_implicit_reexport = true
+no_implicit_optional = true
+strict_equality = true
+strict_optional = true
+check_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_subclassing_any = false
