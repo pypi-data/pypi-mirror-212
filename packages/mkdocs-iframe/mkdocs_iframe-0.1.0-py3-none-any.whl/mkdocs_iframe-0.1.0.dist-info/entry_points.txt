@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+iframe = mkdocs_iframe.plugin:MkDocsIframePlugin
+
