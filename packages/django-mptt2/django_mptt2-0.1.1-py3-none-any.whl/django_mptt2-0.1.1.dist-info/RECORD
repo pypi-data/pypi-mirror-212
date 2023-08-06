@@ -1,0 +1,16 @@
+mptt2/__init__.py,sha256=U1hO7CYFLZBr1yARGpPd_9SnGvI0XR-VN9SgH6ZuCkw,55
+mptt2/apps.py,sha256=PJXbmLzj-ZeTaE-KeLCtDr9xM7aLgZ5D2MditKQ1vSo,223
+mptt2/compatibility.py,sha256=RyuWSLZxHdiLWkrCbwM1T-Ne09QnulWeN2hRZQNEcU4,391
+mptt2/enums.py,sha256=HaJMgoEl4qOQxjQNA-flTBr03ZFbXyn4QqTq2i1-hPk,474
+mptt2/exceptions.py,sha256=ShNcUmP8CJkwjuBz3D4ozoxS1AECJ-L-IEMjNlu1t14,319
+mptt2/expressions.py,sha256=9xmOT94b8x8b-OZdRWIH_Xe5yrSXDKC5ELbR22rEo9I,563
+mptt2/managers.py,sha256=80gcsLTtxWfh_B7rW4p-WcsJXpoYj0vcubTOlRjb-PQ,10578
+mptt2/models.py,sha256=-QDUBrAPY_u8XTU8-VKZDJCwW5LTy1fnhw-5poLeMGs,8932
+mptt2/query.py,sha256=2AcwStavcGPQaeVU4rPv_0A_OpD9x14xwtcUmBH1yrk,5828
+mptt2/migrations/0001_initial.py,sha256=k3jWXhZnDrNfIsB-QCIdnLenGeIs5NBj5eBQIC8W6Ns,422
+mptt2/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mptt2-0.1.1.dist-info/LICENSE,sha256=mOtxaMrkU1uW1mymK2rF05Y7bbZce1GlwEWqTJIN7sI,1108
+django_mptt2-0.1.1.dist-info/METADATA,sha256=Oxy9gjxH6bvowo-adiLW3sYaaB9dliM60V5012DFQtY,2902
+django_mptt2-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_mptt2-0.1.1.dist-info/top_level.txt,sha256=Ha8AMvHRG0kQhzX8nwI4L7XPYEFGTGIf8TgR17R3tGc,6
+django_mptt2-0.1.1.dist-info/RECORD,,
