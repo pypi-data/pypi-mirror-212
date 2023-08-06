@@ -1,0 +1,9 @@
+README.md
+setup.py
+synonym_custom/__init__.py
+synonym_custom/synonym_custom.py
+synonym_custom.egg-info/PKG-INFO
+synonym_custom.egg-info/SOURCES.txt
+synonym_custom.egg-info/dependency_links.txt
+synonym_custom.egg-info/requires.txt
+synonym_custom.egg-info/top_level.txt
