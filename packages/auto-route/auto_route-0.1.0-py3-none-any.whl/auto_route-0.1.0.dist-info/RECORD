@@ -1,0 +1,10 @@
+auto_route/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_route/auto_app.py,sha256=rPe9jahMZf2hZtgfl6NAas1i8IAhW_YBmZkVyGQ11UM,3701
+auto_route/auto_route.py,sha256=ByVHjp6x64ZQO8PDsV8Kh1Kx8A1UdAAmoiiB3fCQJB0,7067
+auto_route/cli_auto_route.py,sha256=DCvoOkg_iOPC4bnmlXiNRf8PtP0jzgueJCkWmvRg53I,1608
+auto_route/create_composed_class.py,sha256=Rxtg_okUdLcrYna0Q4tDyCerWmwrmQRMtsXa5IiAt20,2657
+auto_route/streamlit_demo.py,sha256=89shq9ERdr_D6VY9vZ6CBhEhU7JnK6FmC3rcevseiWg,779
+auto_route-0.1.0.dist-info/METADATA,sha256=FkvyaCG8ARrIwFa3uYxPuuCR1mDCNHHWg8rY0GJYQiw,5027
+auto_route-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+auto_route-0.1.0.dist-info/top_level.txt,sha256=iRmd7iPVVRvXlRGQ8U0zTGURpvggowREvSNjGWTHP2c,11
+auto_route-0.1.0.dist-info/RECORD,,
