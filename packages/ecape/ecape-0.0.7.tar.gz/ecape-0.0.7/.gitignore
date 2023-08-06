@@ -1,0 +1,5 @@
+.gitignore
+.bashrc
+.idea
+*__pycache__*
+dist
