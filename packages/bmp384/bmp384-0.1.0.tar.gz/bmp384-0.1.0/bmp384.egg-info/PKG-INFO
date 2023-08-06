@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: bmp384
+Version: 0.1.0
+Summary: Raspberry Pi Pico Micropython library to interact with the Bosch BMP384 Barometric pressure sensor
+Home-page: https://github.com/cbraissant/bmp384-pico-driver
+Author: Chris Braissant
+Author-email: Chris Braissant <chrisbraissant@gmail.com>
+License: Copyright (c) 2023 Chris Braissant
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Repository, https://github.com/cbraissant/bmp384-pico-driver
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Embedded Systems
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BMP384 Pico Driver
+Micropython library for the Bosch BMP384 pressure sensor
+
+## Overview
+The BMP384 sensor is a high-resolution digital output pressure sensor manufactured by Bosch Sensortec. This driver enables seamless integration of the BMP384 sensor with the Raspberry Pi Pico.
+
+## Contributing
+Contributions to this project are welcome. If you find any issues, have suggestions for improvements, or want to add new features, feel free to open an issue or submit a pull request.
+
+## License
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code in accordance with the terms of the license.

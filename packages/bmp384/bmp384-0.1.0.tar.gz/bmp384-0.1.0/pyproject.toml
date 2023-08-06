@@ -1,0 +1,22 @@
+[project]
+name = "bmp384"
+version = "0.1.0"
+authors = [
+ { name="Chris Braissant", email="chrisbraissant@gmail.com"}
+]
+description = "Raspberry Pi Pico Micropython library to interact with the Bosch BMP384 Barometric pressure sensor"
+readme="README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Embedded Systems",
+]
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/cbraissant/bmp384-pico-driver"

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bmp384/__init__.py
+bmp384/bmp384.py
+bmp384.egg-info/PKG-INFO
+bmp384.egg-info/SOURCES.txt
+bmp384.egg-info/dependency_links.txt
+bmp384.egg-info/top_level.txt
