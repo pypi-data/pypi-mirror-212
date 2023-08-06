@@ -1,0 +1,65 @@
+# Multi-Channel-Pytorch
+> torch, torchvision, ordinal-classification
+
+This library allows to modify known network architectures (e.g. ResNet or EfficientNet) with only one line 
+of code to support ordinal classification.
+
+## Installing / Getting started
+
+Installation works with pypi.
+
+```shell
+pip install ordinal-pytorch
+```
+
+## Features
+
+Currently supported architectures:
+* AlexNet
+* ConvNeXt
+* EfficientNet
+* EfficientNetV2
+* ResNet
+* ResNeXt
+* SwinTransformer
+* VisionTransformer
+
+Currently supported loss functions:
+* CORN
+* CORAL
+* CONDOR
+
+## Usage
+
+You can add ordinal functionality to one of the previous mentioned architectures with just one line of
+code. 
+
+The following is an example of adding ordinal support to a pre-trained ResNet50 model:
+
+```python
+from ordinal_pytorch.ordinalify import ordinalify
+from torchvision.models import resnet50
+
+# Create a ResNet50 model with pretrained weights.
+model = resnet50(weights='DEFAULT')
+
+# Add ordinal classification support to the previously created model.
+model = ordinalify(model=model, num_classes=10, loss='corn')
+```
+
+This replaces the last layer of the ResNet50 model:
+
+```python
+# Last layer before ordinalifying.
+Linear(in_features=2048, out_features=1000, bias=True)
+
+# Last layer after ordinalifying.
+Linear(in_features=2048, out_features=9, bias=True)
+```
+
+**Important:** Depending on the desired loss function, the training function of the neural network must be adapted.
+Example training functions will be added later.
+
+## Licensing
+
+The code in this project is licensed under GNU General Public License v3.0.

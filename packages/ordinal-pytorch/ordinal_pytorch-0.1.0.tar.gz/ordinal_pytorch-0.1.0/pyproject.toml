@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ordinal-pytorch"
+version = "0.1.0"
+description = "Library for adding ordinal classification functionality to PyTorch models."
+license = "GPL-3.0-only"
+authors = ["Timo Michel <timo.michel1996@outlook.de>"]
+readme = "README.md"
+repository = "https://github.com/Timom1996/ordinal-pytorch"
+packages = [{include = "ordinal_pytorch"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.0.1"
+coral-pytorch = "^1.4.0"
+condor-pytorch = "^1.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
