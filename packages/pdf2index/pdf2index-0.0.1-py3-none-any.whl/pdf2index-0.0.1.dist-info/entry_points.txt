@@ -1,0 +1,2 @@
+[console_scripts]
+pdf2index = pdf2index:app
