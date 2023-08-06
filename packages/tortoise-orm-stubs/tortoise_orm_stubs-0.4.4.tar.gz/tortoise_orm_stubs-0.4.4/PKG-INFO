@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tortoise-orm-stubs
+Version: 0.4.4
+Summary: Type stubs that make tortoise-orm a lot easier to work with when using type checkers.
+Home-page: https://github.com/Ovsyanka83/tortoise-orm-stubs
+License: MIT
+Author: Stanislav Zmiev
+Author-email: szmiev2000@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: tortoise-orm
+Project-URL: Repository, https://github.com/Ovsyanka83/tortoise-orm-stubs
+Description-Content-Type: text/markdown
+
+# tortoise-orm-stubs
+
+Type stubs that make **tortoise-orm** a bit easier to work with when using type checkers.
+
+Specifically, data fields' types automatically reflect the value of null argument (i.e. become optional if you set null=True)
+
+## Installation
+
+`pip install tortoise-orm-stubs`
+
+## Disclaimer
+
+Previously **tortoise-orm-stubs** provided a lot more value but now the majority of its functionality has become a part of **tortoise-orm**. Hopefully, it will become completely unnecessary in the future.
+
