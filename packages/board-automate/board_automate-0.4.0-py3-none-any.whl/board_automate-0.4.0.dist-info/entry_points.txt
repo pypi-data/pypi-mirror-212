@@ -1,0 +1,4 @@
+[console_scripts]
+automate=automate.main:program.run
+automate-run=automate.main:program_run.run
+
