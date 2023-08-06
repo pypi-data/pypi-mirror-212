@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=45"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dpdata_abinit"
+version = "0.0.2"
+description = "Dpdata plugin of ABINIT hist file"
+dependencies = [
+    'numpy',
+    'dpdata',
+    'abipy',
+    'ase'
+]
+readme = "README.md"
+
+[project.entry-points.'dpdata.plugins']
+abihist = "dpdata_abinit:AbihistFormat"
