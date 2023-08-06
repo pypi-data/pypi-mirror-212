@@ -1,0 +1,12 @@
+xia_engine/__init__.py,sha256=M728rW2EJyfffU2yaW9VwHlZ_r6Wm1obXlcqGU-TBmI,1514
+xia_engine/acl.cpython-310-darwin.so,sha256=cTvfV71s2feO_c0dzNbEKSaqlfAy-_zCJXB7-IHegH4,409424
+xia_engine/base.cpython-310-darwin.so,sha256=6fVOFN505AZAoQhA2jHy6hJEAAjUJrmlzMHiJ-8wzpo,544472
+xia_engine/document.cpython-310-darwin.so,sha256=AnUvN8kAS8eGwJL01rXC2z83CZd7P7YmDXf_byirmxM,695720
+xia_engine/engine.cpython-310-darwin.so,sha256=2soipxQ_HnR5vxbiBYtuHuNFP-3Zt4rDunItZt08uvE,781720
+xia_engine/exception.cpython-310-darwin.so,sha256=OsmkddP5ZF2v9pUGEo3Qq8k0c7M1hJKrei0pBMLqBI0,252608
+xia_engine/fields.cpython-310-darwin.so,sha256=q4tzqmOLlNHRyNNH-pfGkMRrEt02ae8ubnoQCVCPHlE,409312
+xia_engine-0.8.23.dist-info/LICENSE.txt,sha256=uYnvfTF5TW6hakbLwlmA14uetnfEmRohRS_PHhU5dY4,151
+xia_engine-0.8.23.dist-info/METADATA,sha256=nH7UO2FxdOUICbCfc7ScIu8IVO4Ug65n005ICk4_x0s,710
+xia_engine-0.8.23.dist-info/WHEEL,sha256=rzbs02GRkYUvH8P22R0CP8i1s-A3wFwzwDKQstzz7K8,109
+xia_engine-0.8.23.dist-info/top_level.txt,sha256=Q896WUzHNHm14oiEaw7BbLcGbvHkKPKEQOBa8Z06dbk,11
+xia_engine-0.8.23.dist-info/RECORD,,
