@@ -1,0 +1,7 @@
+pandas<3,>=2.0.2
+matplotlib<4,>=3.7.1
+seaborn<1,>=0.12.2
+
+[dev]
+pytest
+pytest-cov
