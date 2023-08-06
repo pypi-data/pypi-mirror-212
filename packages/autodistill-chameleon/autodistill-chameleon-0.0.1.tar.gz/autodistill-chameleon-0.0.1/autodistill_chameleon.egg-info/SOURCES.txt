@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_chameleon/__init__.py
+autodistill_chameleon.egg-info/PKG-INFO
+autodistill_chameleon.egg-info/SOURCES.txt
+autodistill_chameleon.egg-info/dependency_links.txt
+autodistill_chameleon.egg-info/requires.txt
+autodistill_chameleon.egg-info/top_level.txt
