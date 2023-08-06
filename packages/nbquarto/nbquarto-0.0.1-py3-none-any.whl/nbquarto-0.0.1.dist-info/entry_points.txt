@@ -1,0 +1,2 @@
+[console_scripts]
+nbquarto-process = nbquarto.cli:main
