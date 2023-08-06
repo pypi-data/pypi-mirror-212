@@ -1,0 +1,13 @@
+nmrtoolbox/ConfigObject.py,sha256=IxSB2sW0gZbXjheWLAtaiBDibN_3pzO4vKyRaTU16Uo,9345
+nmrtoolbox/__init__.py,sha256=_yyCYgtYGIo-MCY9-GgiHtO07ZMsN2GJqoTLZTI37ZM,87
+nmrtoolbox/mask.py,sha256=fX-jpDRD4j1RCNYJBjTJVCuM3N5xdxZMbOUwotMMk5g,10925
+nmrtoolbox/peak.py,sha256=dYQqwnS92n1uh2MFAg6soi8FL3xt2ol1ZjuUUd1siZU,36029
+nmrtoolbox/roc.py,sha256=8hYUeyCQwKldVr01NYPuS_nbHYbJ9j8UmnsfXxvkbcY,24475
+nmrtoolbox/spectrum.py,sha256=F6xXG4y0cSOeA8HDLxM7I0P5gXDP49T_QJonH9LaY6I,2003
+nmrtoolbox/strip_plot.py,sha256=fNWDs2ittx2g0I2zxcRDVdSn1aSfUEvYQoijRn6XEzA,46621
+nmrtoolbox/util.py,sha256=WDw8F_cZZC-zatbSCPLiVEhgO4GrDwIM7UhXjbNElKE,8823
+nmrtoolbox-11.1.dist-info/METADATA,sha256=efbl7ykKjIyrttvu60Sun3SVsoK1Ts94dAb1-U2ExpA,5763
+nmrtoolbox-11.1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+nmrtoolbox-11.1.dist-info/entry_points.txt,sha256=tkXX1AAFfNlwSqu5I0RPOMaL3LURrkdXyUlFbCC3jaA,55
+nmrtoolbox-11.1.dist-info/licenses/LICENSE,sha256=K6PGRxmD4gJN0iSeM7CWTvaa5aGBhImQm1lJfs94PR0,1182
+nmrtoolbox-11.1.dist-info/RECORD,,
