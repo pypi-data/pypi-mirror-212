@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+gelatian/__init__.py
+gelatian/common.py
+gelatian/gelatian.py
+gelatian.egg-info/PKG-INFO
+gelatian.egg-info/SOURCES.txt
+gelatian.egg-info/dependency_links.txt
+gelatian.egg-info/not-zip-safe
+gelatian.egg-info/top_level.txt
+tests/test_gelatian.py
