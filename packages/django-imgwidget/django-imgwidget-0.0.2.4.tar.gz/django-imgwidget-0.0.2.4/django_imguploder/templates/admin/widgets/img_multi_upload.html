@@ -1,0 +1,72 @@
+{% load static %}
+<html>
+<head>
+    <script src="{% static 'admin/js/jquery.min.js' %}"></script>
+</head>
+<body>
+<div class="file-button" id="upload_image_{{ widget.name }}"
+     style="background-image:  url('{% static 'admin/imgs/add.png' %}');">
+    <input type="{{ widget.type }}"
+           data-widgetname="{{ widget.name }}"
+           onchange="uploadImage(this)"
+           accept="image/*"
+           multiple>
+    <textarea id="{{ widget.name }}" name="{{ widget.name }}" style="display: none"></textarea>
+    <div id="outerdiv" class="big-img-box">
+        <div id="innerdiv" style="position:absolute;">
+            <img id="bigimg" src="" alt="大图"/></div>
+    </div>
+</div>
+<script type="text/javascript">
+    function uploadImage(obj) {
+        var name = $(obj).data('widgetname');
+        let i;
+        var formData = new FormData();
+        var files = $(obj)[0].files;//获取模板定义的图片上传按钮的文件
+        for (i = 0; i < files.length; i++) {
+            var ext = files[i].name.slice(files[i].name.lastIndexOf(".") + 1).toLowerCase();
+            if ("png" === ext || "jpg" === ext || "jpeg" === ext || "gif" === ext) {
+                formData.append(files[i].name, files[i]);
+            }
+        }
+        if (formData) {
+            //必须加上csrftoken ，否则验证不通过，ajax请求无效
+            $.ajax({
+                url: '{% url 'upload_image' %}',
+                dataType: 'json',// 返回值类型 一般设置为json
+                type: 'POST',
+                processData: false,
+                contentType: false,
+                data: formData,
+                async: false,
+                success: function (resp) {
+                    //动态添加HTML元素，显示上传的图片
+                    if (resp.code === 200) {
+                        var reuslt_image = resp.data.image_list;
+                        for (i = 0; i < reuslt_image.length; i++) {
+                            add_selected_img(reuslt_image[i], name);
+                        }
+                        $(obj).val("");
+                    }
+                },
+                error: function (error) {
+                    alert("上传图片失败", error);
+                }
+            })
+        }
+    }
+
+    $(function () {
+        var model_image_list = '{{ widget.widget_img_urls }}'.split(",")
+        if (model_image_list[0] !== '') {
+            if (model_image_list.length > 0) {
+                for (let i = 0; i < model_image_list.length; i++) {
+                    add_selected_img(model_image_list[i], "{{ widget.name }}");
+                }
+            }
+        }
+    })
+
+</script>
+</body>
+</html>
