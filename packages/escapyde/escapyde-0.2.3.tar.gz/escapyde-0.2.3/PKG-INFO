@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: escapyde
+Version: 0.2.3
+Summary: Yet another ANSI escape sequence library for Python - now modernised!
+Home-page: https://pypi.org/project/escapyde/
+License: MIT
+Keywords: ansi,console,terminal,escape,sequence,colour,color
+Author: Lari Liuhamo
+Author-email: lari.liuhamo+pypi@gmail.com
+Maintainer: Lari Liuhamo
+Maintainer-email: lari.liuhamo+pypi@gmail.com
+Requires-Python: >=3.9.0,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: IronPython
+Classifier: Programming Language :: Python :: Implementation :: Jython
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: Stackless
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Communications
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Console Fonts
+Classifier: Topic :: Terminals
+Classifier: Typing :: Typed
+Project-URL: Changelog, https://github.com/Diapolo10/escapyde/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://github.com/Diapolo10/escapyde/tree/main/docs
+Project-URL: Repository, https://github.com/Diapolo10/escapyde
+Project-URL: Source code, https://github.com/Diapolo10/escapyde
+Project-URL: Tracker, https://github.com/Diapolo10/escapyde/issues
+Description-Content-Type: text/markdown
+
+# escapyde
+
+Yet another ANSI escape sequence library for Python - now modernised!
+
+## Installation
+
+The package is readily available on PyPI. There are no dependencies, but Python 3.9 or newer is required.
+
+On Windows:
+
+```sh
+py -m pip install escapyde
+```
+
+On other platforms:
+
+```sh
+pip3 install escapyde
+```
+
+## Usage
+
+```py
+import escapyde
+from escapyde.examples.text import SKULL
+
+some_text = "Hello, world!"
+
+print(f"I want to print this red: {escapyde.FRED | some_text}, and this yellow: {escapyde.FYELLOW | 'Hi!'}.")
+
+print(f"Here's a cyan skull:\n{escapyde.FCYAN | SKULL}")
+```
+
+As can be seen, the example works perfectly fine:
+
+![A screenshot of the example run on IPython on Windows.](./docs/readme_screenshot.png "Not bad, not bad at all.")
+
