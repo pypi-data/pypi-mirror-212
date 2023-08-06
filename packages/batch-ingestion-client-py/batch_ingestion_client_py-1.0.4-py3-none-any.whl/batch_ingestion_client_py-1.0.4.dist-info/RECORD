@@ -1,0 +1,10 @@
+batch_ingestion_client_py/__init__.py,sha256=jigY-QoewDHsKpjwf1txGcpheUMijPcc9DKnwRnzrMI,254
+batch_ingestion_client_py/curl.py,sha256=Z9IDBcBpiBPIFuZoqPRTW3GCaOKC8zD3JwlC8OuvJC4,1436
+batch_ingestion_client_py/data.py,sha256=kN6fD_GwGstGqTy3XOecY8XSM8WJRSDoKIOks4cXEO0,5271
+batch_ingestion_client_py/lib.py,sha256=Xt0cbGeyH964sboUKRJovbnAvG0wxcYGe8T5LKyXkh0,1946
+batch_ingestion_client_py/response.py,sha256=hLU43L0_dkSI-YAxxUlzugNEhEmnAtOI8McjC8--PS0,1561
+batch_ingestion_client_py-1.0.4.dist-info/LICENSE,sha256=Kw4qm04mvvDsxFFuo9HySEqja91HTmC5fkumF5zYmD0,1069
+batch_ingestion_client_py-1.0.4.dist-info/METADATA,sha256=Hx4XxYwAYQqX5RJ30mP9z4YYezDXJodSO-aAIVSuQf8,1974
+batch_ingestion_client_py-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+batch_ingestion_client_py-1.0.4.dist-info/top_level.txt,sha256=H22JBC7BWf5jCQqDXna4JEQZuhGrItdZWm2W5lVnU0c,26
+batch_ingestion_client_py-1.0.4.dist-info/RECORD,,
