@@ -1,0 +1,13 @@
+mande_integration_gisel/__init__.py,sha256=yPadSD8iX2_tpAeQelgQZc7ZCLE7hitpx1e491-Lg-0,28964
+mande_integration_gisel/command.py,sha256=Lqn3rihR9JnAxhvIYptE43crptKUjnUjfiVz1klg7eE,691
+mande_integration_gisel/config/__init__.py,sha256=9t9XMWZWs0wSaFuUSCGAS-AvHrNtjP3OTwQWWsB4dP8,188
+mande_integration_gisel/config/selectors.py,sha256=rqgjkPoSvA9_byhqsd0wr-tkmtQlUPfM4aJW3inx0jA,464
+mande_integration_gisel/config/types.py,sha256=bnE9iv2cILTws0QTlga2TOpNqFzb2tU6nRCJyP5ztJ8,2128
+mande_integration_gisel/config/variables.py,sha256=g92A_v29sWRWKIKEz8bnc9av1jhYkIXuzoFTkJRXYYU,185
+mande_integration_gisel/main.py,sha256=pV0WNaQferKz2HtA_W2LKgmaLxn6ewspdNvbpVIOVD0,2763
+mande_integration_gisel/organizations.py,sha256=7HVqN8bWFxqVOTpYNx5tdiAsGUy4npPL3YTapORr0O8,229
+mande_integration_gisel/utils/__init__.py,sha256=3hx9iNF1ER7G0p66k7BB-meY1XT0BwyT_9UPXgBS6eQ,2051
+mande_integration_gisel-1.0.7.dist-info/METADATA,sha256=KSPe92fyaQDFXu7U8JIMo7n_Sips3Gjf2nJUcWBaHy0,680
+mande_integration_gisel-1.0.7.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+mande_integration_gisel-1.0.7.dist-info/entry_points.txt,sha256=up9YoZellGX7WfIXfyGP2FSUpFRSdZCECUyMKKuEfco,58
+mande_integration_gisel-1.0.7.dist-info/RECORD,,
