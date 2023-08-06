@@ -1,0 +1,2 @@
+[su6]
+demo = su6_plugin_demo.cli
