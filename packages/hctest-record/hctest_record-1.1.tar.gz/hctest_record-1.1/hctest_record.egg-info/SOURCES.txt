@@ -1,0 +1,8 @@
+setup.py
+hc_record/__init__.py
+hc_record/record.py
+hctest_record.egg-info/PKG-INFO
+hctest_record.egg-info/SOURCES.txt
+hctest_record.egg-info/dependency_links.txt
+hctest_record.egg-info/requires.txt
+hctest_record.egg-info/top_level.txt
