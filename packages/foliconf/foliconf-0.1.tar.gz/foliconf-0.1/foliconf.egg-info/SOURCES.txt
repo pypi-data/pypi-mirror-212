@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+setup.py
+foliconf/__init__.py
+foliconf/__main__.py
+foliconf.egg-info/PKG-INFO
+foliconf.egg-info/SOURCES.txt
+foliconf.egg-info/dependency_links.txt
+foliconf.egg-info/requires.txt
+foliconf.egg-info/top_level.txt
