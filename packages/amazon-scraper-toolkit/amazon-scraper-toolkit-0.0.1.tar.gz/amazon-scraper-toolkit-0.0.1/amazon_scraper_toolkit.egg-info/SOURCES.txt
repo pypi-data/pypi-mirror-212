@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+amazon_scrape_toolkit/__init__.py
+amazon_scrape_toolkit/main.py
+amazon_scraper_toolkit.egg-info/PKG-INFO
+amazon_scraper_toolkit.egg-info/SOURCES.txt
+amazon_scraper_toolkit.egg-info/dependency_links.txt
+amazon_scraper_toolkit.egg-info/requires.txt
+amazon_scraper_toolkit.egg-info/top_level.txt

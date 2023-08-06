@@ -1,0 +1,8 @@
+beautifulsoup4
+requests
+lxml
+
+[dev]
+black
+pylint
+pep8
