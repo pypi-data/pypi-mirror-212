@@ -1,0 +1,2 @@
+[console_scripts]
+emulsion = emulsion.__main__:main
