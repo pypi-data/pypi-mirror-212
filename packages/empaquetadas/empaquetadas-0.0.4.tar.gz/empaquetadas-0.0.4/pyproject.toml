@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "empaquetadas"
+version = "0.0.4"
+description = "Package to calculate what would have happened if you had invested your pesos"
+requires-python = ""
+readme = "README.md"
+license.file = "LICENSE"
+authors = [{ name = "Rafael Sanabria", email = "rafael.d.sanabria@gmail.com" }]
+dependencies = []
+classifiers = []
