@@ -1,0 +1,15 @@
+matchcode_toolkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matchcode_toolkit/fingerprinting.py,sha256=hjD8wg8Kq245TnYwUBnt-o6cxCZ4fq9jYzPgAulIauA,4315
+matchcode_toolkit/halohash.py,sha256=oOpWCC3TMAie2yN6eltW38mK9iHljc-jQ2xBo_IEnNg,14288
+matchcode_toolkit/plugin_fingerprint.py,sha256=KXWdlu7L1YtbCf4jQIwb5kQoNbhf5sTJJOsHKFcnJBE,1427
+matchcode_toolkit/pipelines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matchcode_toolkit/pipelines/scan_and_fingerprint_package.py,sha256=iXzb_-7KQS-3XySRLTIWVqVGVsTkd1ZRu2yzYlaZG-c,2443
+matchcode_toolkit-1.0.0.dist-info/AUTHORS.rst,sha256=Caok5IoMLS5vbgUvR642BW-EUywHFSPQQlqDbZH79Lw,104
+matchcode_toolkit-1.0.0.dist-info/CHANGELOG.rst,sha256=uHTrTRbxl19zkl0-ZWyU3KfFKU8-L0T-kCfep0-f3D0,69
+matchcode_toolkit-1.0.0.dist-info/METADATA,sha256=anK8892yvIyep8TFDvbyQq3X_-JVKD4jmr-cDzw9p3w,3638
+matchcode_toolkit-1.0.0.dist-info/NOTICE,sha256=SM7ELF-ckyHeexaDSX7P2EqDbjYkb6S8c_CWcsdMyXM,752
+matchcode_toolkit-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+matchcode_toolkit-1.0.0.dist-info/apache-2.0.LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+matchcode_toolkit-1.0.0.dist-info/entry_points.txt,sha256=qqE5AqvyQrFN9LOKyZeomh2vmSdrPFf00niljyCgNLQ,222
+matchcode_toolkit-1.0.0.dist-info/top_level.txt,sha256=4XM4p9mBCopb7wG5ZYFlmSQa1MuIakdxp7qQewQ2hlo,18
+matchcode_toolkit-1.0.0.dist-info/RECORD,,
