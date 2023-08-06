@@ -1,0 +1,46 @@
+title: Scientific Python Development Guide
+email: guide@scientific-python.org
+description: >-
+  This guide is maintained by the scientific Python community for the benefit of
+  fellow scientists and research software engineers.
+url: "https://learn.scientific-python.org"
+github_username: scientific-python
+source: docs
+
+# Build settings
+markdown: kramdown
+theme: "just-the-docs"
+plugins:
+  - jekyll-feed
+
+# Theme settings
+
+color_scheme: skhep
+
+logo: "/assets/images/logo.svg"
+
+# Enable or disable the site search
+search_enabled: true
+
+# Aux links for the upper right navigation
+aux_links:
+  "Scientific Python Cookie":
+    - "//github.com/scientific-python/cookie"
+
+gh_edit_link: true
+gh_edit_link_text: "View source for this page on GitHub."
+gh_edit_repository: "https://github.com/scientific-python/cookie"
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree" # "tree" or "edit"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

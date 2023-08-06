@@ -1,0 +1,25 @@
+{
+  "project_name": "package",
+  "org": "org",
+  "url": "https://github.com/{{ cookiecutter.org }}/{{ cookiecutter.project_name }}",
+  "full_name": "My Name",
+  "project_type": [
+    "hatch",
+    "setuptools",
+    "setuptools621",
+    "pybind11",
+    "skbuild",
+    "mesonpy",
+    "poetry",
+    "flit",
+    "pdm",
+    "trampolim",
+    "whey",
+    "maturin"
+  ],
+  "email": "me@email.com",
+  "project_short_description": "A great package.",
+  "year": "{% now 'utc', '%Y' %}",
+  "license": ["BSD", "Apache", "MIT"],
+  "_extensions": ["jinja2_time.TimeExtension"]
+}
