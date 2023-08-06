@@ -1,0 +1,9 @@
+systemdspawner/__init__.py,sha256=6DOUP_tX6PpewmwiP0iIYvUzP3g30FqXak1eBWSy2Gc,85
+systemdspawner/systemd.py,sha256=09CBB545p2wB_tuegOSAyjGfyqitWux_g7MDRRmc5Dg,8577
+systemdspawner/systemdspawner.py,sha256=KwXEbaFicz_fXc4EKTaFRNNf0gRh_GgZI1pz72AgDpg,11937
+jupyterhub_systemdspawner-1.0.1.dist-info/LICENSE,sha256=iHnKwx1qJa6IAYBWnqTYDKmyTqnnOnO1YEqXEfF0Sik,1528
+jupyterhub_systemdspawner-1.0.1.dist-info/METADATA,sha256=0sMvvtxuRxPqc5YT93a4ELnOmVbi-UZi3ADoXQQ7lkI,16055
+jupyterhub_systemdspawner-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jupyterhub_systemdspawner-1.0.1.dist-info/entry_points.txt,sha256=Y2rGYfnKlOU5D9vp8alUlqCeTyzmGNWY_CUDGMWuuBQ,109
+jupyterhub_systemdspawner-1.0.1.dist-info/top_level.txt,sha256=Tc31c4pd60hcANN7jxsrbi8c4pKYtWehZ5nNl-ZusP0,15
+jupyterhub_systemdspawner-1.0.1.dist-info/RECORD,,
