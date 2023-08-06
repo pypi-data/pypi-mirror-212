@@ -1,0 +1,1953 @@
+{
+  "dist/lib/components/ColorLegends/WebVizColorLegend.js": {
+    "description": "",
+    "displayName": "ColorLegendWrapper",
+    "methods": [],
+    "props": {
+      "colorTables": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": ""
+      },
+      "min": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "max": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "colorName": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "horizontal": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "discreteData": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
+      "reverseRange": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "isModal": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "cssLegendStyles": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "isRangeShown": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "legendFontSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "tickFontSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "numberOfTicks": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "legendScaleSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "openColorSelector": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "dist/lib/components/ColorLegends/WebVizContinuousLegend.js": {
+    "description": "",
+    "displayName": "ContinuousLegendWrapper",
+    "methods": [],
+    "props": {
+      "min": {
+        "type": {
+          "name": "number"
+        },
+        "required": true,
+        "description": ""
+      },
+      "max": {
+        "type": {
+          "name": "number"
+        },
+        "required": true,
+        "description": ""
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "cssLegendStyles": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "colorName": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      },
+      "horizontal": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "colorTables": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": ""
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "isRangeShown": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "legendFontSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "tickFontSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "numberOfTicks": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "legendScaleSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "dist/lib/components/ColorLegends/WebVizDiscreteLegend.js": {
+    "description": "",
+    "displayName": "DiscreteLegendWrapper",
+    "methods": [],
+    "props": {
+      "discreteData": {
+        "type": {
+          "name": "any"
+        },
+        "required": true,
+        "description": ""
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "cssLegendStyles": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "colorName": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      },
+      "colorTables": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "array"
+            }
+          ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "horizontal": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "dist/lib/components/GroupTree/GroupTree.js": {
+    "description": "",
+    "displayName": "GroupTree",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "data": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": "Array of JSON objects describing group tree data."
+      },
+      "edge_options": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "node_options": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "dist/lib/components/HistoryMatch/HistoryMatch.js": {
+    "description": "",
+    "displayName": "HistoryMatch",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      },
+      "height": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "800",
+          "computed": false
+        }
+      },
+      "data": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "dist/lib/components/Map/Map.js": {
+    "description": "",
+    "displayName": "Map",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "data": {
+        "type": {
+          "name": "object"
+        },
+        "required": true,
+        "description": "The data the Map component should render (JSON format)."
+      },
+      "height": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The height of the Map component",
+        "defaultValue": {
+          "value": "800",
+          "computed": false
+        }
+      },
+      "layerNames": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "The name of individual layers",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      }
+    }
+  },
+  "dist/lib/components/Morris/Morris.js": {
+    "description": "",
+    "displayName": "Morris",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      },
+      "parameter": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "output": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "parameters": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "height": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "800",
+          "computed": false
+        }
+      }
+    }
+  },
+  "dist/lib/components/PriorPosteriorDistribution/PriorPosteriorDistribution.js": {
+    "description": "",
+    "displayName": "PriorPosteriorDistribution",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      },
+      "height": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "700",
+          "computed": false
+        }
+      },
+      "data": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{ iterations: [], labels: [], values: [] }",
+          "computed": false
+        }
+      }
+    }
+  },
+  "dist/lib/components/SubsurfaceViewer/DashSubsurfaceViewer.js": {
+    "description": "",
+    "displayName": "DashSubsurfaceViewer",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "resources": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "any"
+          }
+        },
+        "required": false,
+        "description": "Resource dictionary made available in the DeckGL specification as an enum.\nThe values can be accessed like this: `\"@@#resources.resourceId\"`, where\n`resourceId` is the key in the `resources` dict. For more information,\nsee the DeckGL documentation on enums in the json spec:\nhttps://deck.gl/docs/api-reference/json/conversion-reference#enumerations-and-using-the--prefix"
+      },
+      "layers": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "objectOf",
+            "value": {
+              "name": "any"
+            }
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "bounds": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Coordinate boundary for the view defined as [left, bottom, right, top].\nIt can be either an array or a callback returning [number, number, number, number]."
+      },
+      "views": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Views configuration for map. If not specified, all the layers will be\ndisplayed in a single 2D viewport.\nExample:\n     views = {\n         \"layout\": [1, 1],\n         \"showLabel\": false,\n         \"viewports\": [\n             {\n                 \"id\": \"view_1\",\n                 \"name\"?: \"View 1\"\n                 \"show3D\"?: false,\n                 \"layerIds\": [\"layer-ids\"],\n                 \"isSync?\": true,\n             }\n         ]\n     }",
+        "defaultValue": {
+          "value": "{\n    layout: [1, 1],\n    showLabel: false,\n    viewports: [{ id: \"main-view\", show3D: false, layerIds: [] }],\n}",
+          "computed": false
+        }
+      },
+      "coords": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "visible": {
+              "name": "bool",
+              "description": "Toggle component visibility.",
+              "required": false
+            },
+            "multiPicking": {
+              "name": "bool",
+              "description": "Enable or disable multi picking. Might have a performance penalty.\nSee https://deck.gl/docs/api-reference/core/deck#pickmultipleobjects",
+              "required": false
+            },
+            "pickDepth": {
+              "name": "number",
+              "description": "Number of objects to pick. The more objects picked, the more picking operations will be done.\nSee https://deck.gl/docs/api-reference/core/deck#pickmultipleobjects",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "Parameters for the InfoCard component"
+      },
+      "scale": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "visible": {
+              "name": "bool",
+              "description": "Toggle component visibility.",
+              "required": false
+            },
+            "incrementValue": {
+              "name": "number",
+              "description": "Increment value for the scale.",
+              "required": false
+            },
+            "widthPerUnit": {
+              "name": "number",
+              "description": "Scale bar width in pixels per unit value.",
+              "required": false
+            },
+            "cssStyle": {
+              "name": "objectOf",
+              "value": {
+                "name": "any"
+              },
+              "description": "Scale bar css style can be used for positioning.",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "Parameters for the Distance Scale component"
+      },
+      "coordinateUnit": {
+        "type": {
+          "name": "enum",
+          "computed": true,
+          "value": "convert().possibilities()"
+        },
+        "required": false,
+        "description": "Parameters for the Distance Scale component\nUnit for the scale ruler"
+      },
+      "colorTables": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Prop containing color table data"
+      },
+      "editedData": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "any"
+          }
+        },
+        "required": false,
+        "description": "Prop containing edited data from layers"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "For reacting to prop changes"
+      },
+      "checkDatafileSchema": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Validate JSON datafile against schema",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "onMouseEvent": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "For get mouse events"
+      },
+      "children": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "dist/lib/components/SubsurfaceViewer/SubsurfaceViewer.js": {
+    "description": "",
+    "displayName": "SubsurfaceViewer",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "resources": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "any"
+          }
+        },
+        "required": false,
+        "description": "Resource dictionary made available in the DeckGL specification as an enum.\nThe values can be accessed like this: `\"@@#resources.resourceId\"`, where\n`resourceId` is the key in the `resources` dict. For more information,\nsee the DeckGL documentation on enums in the json spec:\nhttps://deck.gl/docs/api-reference/json/conversion-reference#enumerations-and-using-the--prefix"
+      },
+      "layers": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "objectOf",
+            "value": {
+              "name": "any"
+            }
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "bounds": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Coordinate boundary for the view defined as [left, bottom, right, top].\nIt can be either an array or a callback returning [number, number, number, number]."
+      },
+      "views": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Views configuration for map. If not specified, all the layers will be\ndisplayed in a single 2D viewport.\nExample:\n     views = {\n         \"layout\": [1, 1],\n         \"showLabel\": false,\n         \"viewports\": [\n             {\n                 \"id\": \"view_1\",\n                 \"name\"?: \"View 1\"\n                 \"show3D\"?: false,\n                 \"layerIds\": [\"layer-ids\"],\n                 \"isSync?\": true,\n             }\n         ]\n     }",
+        "defaultValue": {
+          "value": "{\n    layout: [1, 1],\n    showLabel: false,\n    viewports: [{ id: \"main-view\", show3D: false, layerIds: [] }],\n}",
+          "computed": false
+        }
+      },
+      "coords": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "visible": {
+              "name": "bool",
+              "description": "Toggle component visibility.",
+              "required": false
+            },
+            "multiPicking": {
+              "name": "bool",
+              "description": "Enable or disable multi picking. Might have a performance penalty.\nSee https://deck.gl/docs/api-reference/core/deck#pickmultipleobjects",
+              "required": false
+            },
+            "pickDepth": {
+              "name": "number",
+              "description": "Number of objects to pick. The more objects picked, the more picking operations will be done.\nSee https://deck.gl/docs/api-reference/core/deck#pickmultipleobjects",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "Parameters for the InfoCard component"
+      },
+      "scale": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "visible": {
+              "name": "bool",
+              "description": "Toggle component visibility.",
+              "required": false
+            },
+            "incrementValue": {
+              "name": "number",
+              "description": "Increment value for the scale.",
+              "required": false
+            },
+            "widthPerUnit": {
+              "name": "number",
+              "description": "Scale bar width in pixels per unit value.",
+              "required": false
+            },
+            "cssStyle": {
+              "name": "objectOf",
+              "value": {
+                "name": "any"
+              },
+              "description": "Scale bar css style can be used for positioning.",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "Parameters for the Distance Scale component"
+      },
+      "coordinateUnit": {
+        "type": {
+          "name": "enum",
+          "computed": true,
+          "value": "convert().possibilities()"
+        },
+        "required": false,
+        "description": "Parameters for the Distance Scale component\nUnit for the scale ruler"
+      },
+      "toolbar": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "visible": {
+              "name": "bool",
+              "description": "Toggle toolbar visibility",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "@obsolete Toolbar should be added as annotation. This prop has no function."
+      },
+      "legend": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "visible": {
+              "name": "bool",
+              "description": "Toggle component visibility.",
+              "required": false
+            },
+            "cssStyle": {
+              "name": "objectOf",
+              "value": {
+                "name": "any"
+              },
+              "description": "Legend css style can be used for positioning.",
+              "required": false
+            },
+            "horizontal": {
+              "name": "bool",
+              "description": "Orientation of color legend",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "@obsolete Legends should be added as annotations. This prop has no function."
+      },
+      "colorTables": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Prop containing color table data"
+      },
+      "editedData": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "any"
+          }
+        },
+        "required": false,
+        "description": "Prop containing edited data from layers"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "For reacting to prop changes"
+      },
+      "checkDatafileSchema": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Validate JSON datafile against schema",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "onMouseEvent": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "For get mouse events"
+      }
+    }
+  },
+  "dist/lib/components/VectorCalculator/VectorCalculator.js": {
+    "description": "VectorCalculator is a component that allows to calculate new vectors by creating a mathematical expression\nbased existing vectors.\n\nNew calculated vectors are created by writing a mathematical equation with single character variables,\nwhere each variable is assigned a vector from the set of existing vectors.\n\nThe component provides a list of valid expressions which can be used externally to calculate the wanted\nvector data.\n\nThe component can handle validation of the mathematical equations internally or externally. External\nvalidation can be utilized to obtain coherent parsing in the component and the user.",
+    "displayName": "VectorCalculator",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "vectors": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "Existing vectors for vector selector"
+      },
+      "expressions": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": "import { ExpressionTypePropTypes, ExternalParseDataPropTypes, } from \"./utils/VectorCalculatorTypes\";",
+            "computed": true
+          }
+        },
+        "required": true,
+        "description": "Pre-defined vector calculator expressions.\nEach expression consist of an expression name, mathematical expression string with variables\nand a map of character variables and the corresponding vector name."
+      },
+      "isDashControlled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Set True when component is utilized by Dash plugin.\nWhen controlled in Dash, the user must provide an external expression parser responsible for\nvalidation of the active mathematical expression and provide the parsing data for the\nexternalParseData prop.\nIf set to false, an internal JS-parser library is utilized for validation of the mathematical\nexpressions.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "maxExpressionDescriptionLength": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Set maximal number of characters for expression description text",
+        "defaultValue": {
+          "value": "50",
+          "computed": false
+        }
+      },
+      "externalParseData": {
+        "type": {
+          "name": "shape",
+          "value": "import { ExpressionTypePropTypes, ExternalParseDataPropTypes, } from \"./utils/VectorCalculatorTypes\";",
+          "computed": true
+        },
+        "required": false,
+        "description": "Data for external parsing of mathematical expression"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "dist/lib/components/VectorSelector/VectorSelector.js": {
+    "description": "",
+    "displayName": "VectorSelector",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "maxNumSelectedNodes": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The max number of tags that can be selected.",
+        "defaultValue": {
+          "value": "-1",
+          "computed": false
+        }
+      },
+      "delimiter": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The delimiter used to separate input levels.",
+        "defaultValue": {
+          "value": "\":\"",
+          "computed": false
+        }
+      },
+      "numMetaNodes": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The number of meta data used. Meta data is not shown as text in the final tag but used\nto set properties like border color or icons.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "data": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "A JSON object holding all tags."
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "showSuggestions": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Stating of suggestions should be shown or not.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "selectedTags": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Selected tags.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "placeholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Placeholder text for input field.",
+        "defaultValue": {
+          "value": "\"Add new tag...\"",
+          "computed": false
+        }
+      },
+      "numSecondsUntilSuggestionsAreShown": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of seconds until suggestions are shown.",
+        "defaultValue": {
+          "value": "0.5",
+          "computed": false
+        }
+      },
+      "lineBreakAfterTag": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If set to true, tags will be separated by a line break.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "caseInsensitiveMatching": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Set to true if case-wise incorrect values should be accepted anyways."
+      },
+      "useBetaFeatures": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Set to true to enable beta features."
+      },
+      "customVectorDefinitions": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "type": {
+                "name": "string",
+                "required": true
+              },
+              "description": {
+                "name": "string",
+                "required": true
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "An object containing custom vector type definitions.",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`."
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "\"selectedNodes\"",
+                "computed": false
+              },
+              {
+                "value": "\"selectedTags\"",
+                "computed": false
+              },
+              {
+                "value": "\"selectedIds\"",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "[\"selectedNodes\", \"selectedTags\", \"selectedIds\"]",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "\"local\"",
+              "computed": false
+            },
+            {
+              "value": "\"session\"",
+              "computed": false
+            },
+            {
+              "value": "\"memory\"",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "\"local\"",
+          "computed": false
+        }
+      }
+    }
+  },
+  "dist/lib/components/WellCompletions/WellCompletions.js": {
+    "description": "",
+    "displayName": "WellCompletions",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      },
+      "data": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "dist/lib/components/WellLogViewer/SyncLogViewer.js": {
+    "description": "",
+    "displayName": "SyncLogViewer",
+    "methods": [
+      {
+        "name": "updateReadoutPanel",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onInfo",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          },
+          {
+            "name": "x",
+            "type": null
+          },
+          {
+            "name": "logController",
+            "type": null
+          },
+          {
+            "name": "iFrom",
+            "type": null
+          },
+          {
+            "name": "iTo",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onCreateController",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          },
+          {
+            "name": "controller",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onTrackScroll",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onTrackSelection",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onContentRescale",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onContentSelection",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onTemplateChanged",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onChangePrimaryAxis",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "value",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onZoomSliderChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "value",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onScrollerScroll",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          },
+          {
+            "name": "x",
+            "type": null
+          },
+          {
+            "name": "y",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "setSliderValue",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "syncTrackScrollPos",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "syncTrackSelection",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "getCommonContentBaseDomain",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "syncContentBaseDomain",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "makeFlattingCoeffs",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "syncContentScrollPos",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "syncContentSelection",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "syncTemplate",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "iView",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "setControllersZoom",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "setControllersSelection",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onInfoGroupClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "trackId",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "createView",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "createSpacer",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "index",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "createRightPanel",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "welllogs": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "Array of JSON objects describing well log data"
+      },
+      "templates": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "Prop containing track template data"
+      },
+      "colorTables": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "Prop containing color table data"
+      },
+      "wellpicks": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Well Picks data array"
+      },
+      "patternsTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Patterns table"
+      },
+      "patterns": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Horizon to pattern index map"
+      },
+      "wellpickFlatting": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Horizon names for wellpick flatting (pan and zoom)"
+      },
+      "spacers": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "number"
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Set to true or to array of spaser widths if WellLogSpacers should be used"
+      },
+      "wellDistances": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Distanses between wells to show on the spacers"
+      },
+      "horizontal": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Orientation of the track plots on the screen. Default is false"
+      },
+      "primaryAxis": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Primary axis id: \" md\", \"tvd\", \"time\"..."
+      },
+      "axisTitles": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Log mnemonics for axes"
+      },
+      "axisMnemos": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Names for axes"
+      },
+      "maxContentZoom": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The maximum zoom value"
+      },
+      "domain": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "number"
+          }
+        },
+        "required": false,
+        "description": "Initial visible interval of the log data"
+      },
+      "selection": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "number"
+          }
+        },
+        "required": false,
+        "description": "Initial selected interval of the log data"
+      },
+      "viewTitles": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "object"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Set to true for default titles or to array of individial welllog titles"
+      },
+      "welllogOptions": {
+        "type": {
+          "name": "custom",
+          "raw": "WellLogViewOptions_propTypes"
+        },
+        "required": false,
+        "description": "WellLogView additional options"
+      },
+      "readoutOptions": {
+        "type": {
+          "name": "custom",
+          "raw": "InfoOptions_propTypes"
+        },
+        "required": false,
+        "description": "Options for readout panel"
+      },
+      "syncTrackPos": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Synchronize the first visible track number in views"
+      },
+      "syncContentDomain": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Synchronize the visible area in views"
+      },
+      "syncContentSelection": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Synchronize the selection (current mouse hover) in views"
+      },
+      "syncTemplate": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Synchronize templates in views"
+      }
+    }
+  },
+  "dist/lib/components/WellLogViewer/WellLogViewer.js": {
+    "description": "",
+    "displayName": "WellLogViewer",
+    "methods": [
+      {
+        "name": "updateReadoutPanel",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onInfo",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "x",
+            "type": null
+          },
+          {
+            "name": "logController",
+            "type": null
+          },
+          {
+            "name": "iFrom",
+            "type": null
+          },
+          {
+            "name": "iTo",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onCreateController",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "controller",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onContentRescale",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onContentSelection",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onTemplateChanged",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onChangePrimaryAxis",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "value",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "onZoomSliderChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "value",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "setSliderValue",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onInfoGroupClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "trackId",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "welllog": {
+        "type": {
+          "name": "object"
+        },
+        "required": true,
+        "description": "An object from JSON file describing well log data"
+      },
+      "template": {
+        "type": {
+          "name": "object"
+        },
+        "required": true,
+        "description": "Prop containing track template data"
+      },
+      "colorTables": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "Prop containing color table data"
+      },
+      "horizontal": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Orientation of the track plots on the screen. Default is false"
+      },
+      "domain": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "number"
+          }
+        },
+        "required": false,
+        "description": "Initial visible interval of the log data"
+      },
+      "selection": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "number"
+          }
+        },
+        "required": false,
+        "description": "Initial selected interval of the log data"
+      },
+      "wellpick": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Well picks data"
+      },
+      "primaryAxis": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Primary axis id: \" md\", \"tvd\", \"time\"..."
+      },
+      "axisTitles": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Log mnemonics for axes"
+      },
+      "axisMnemos": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Names for axes"
+      },
+      "maxContentZoom": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The maximum zoom value"
+      },
+      "viewTitle": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Set to true for default titles or to array of individial welllog titles"
+      },
+      "options": {
+        "type": {
+          "name": "custom",
+          "raw": "WellLogViewOptions_propTypes"
+        },
+        "required": false,
+        "description": "WellLogView additional options"
+      },
+      "readoutOptions": {
+        "type": {
+          "name": "custom",
+          "raw": "InfoOptions_propTypes"
+        },
+        "required": false,
+        "description": "Options for readout panel"
+      }
+    }
+  }
+}
