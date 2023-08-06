@@ -1,0 +1,10 @@
+README.md
+setup.py
+aiearth/openapi/__init__.py
+aiearth/openapi/enums.py
+aiearth/openapi/models/__init__.py
+aiearth_openapi.egg-info/PKG-INFO
+aiearth_openapi.egg-info/SOURCES.txt
+aiearth_openapi.egg-info/dependency_links.txt
+aiearth_openapi.egg-info/requires.txt
+aiearth_openapi.egg-info/top_level.txt
