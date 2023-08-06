@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: odoo13-addons-oca-manufacture-reporting
+Version: 13.0.20230606.0
+Summary: Meta package for oca-manufacture-reporting Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 13.0
+Requires-Dist: odoo13-addon-mrp-bom-current-stock
+Requires-Dist: odoo13-addon-mrp-bom-matrix-report
+Requires-Dist: odoo13-addon-mrp-bom-structure-report-level-1
+Requires-Dist: odoo13-addon-mrp-bom-structure-xlsx
+Requires-Dist: odoo13-addon-mrp-bom-structure-xlsx-level-1
+Requires-Dist: odoo13-addon-mrp-flattened-bom-xlsx
+Requires-Dist: odoo13-addon-mrp-flattened-bom-xlsx-direct-materials-cost
+
+UNKNOWN
+
