@@ -1,0 +1,9 @@
+py_csv_xls/__init__.py,sha256=WZqC511Bm2I66phT-HgjyaKOAEOMxceWmAOxjXnyDig,177
+py_csv_xls/csvsniffer.py,sha256=feCW-9JVLiXpLuceRpB99GuqA9iG0xlDEinBCZc3Ny4,2786
+py_csv_xls/excelworker.py,sha256=0A2TFZ82rCU8Fdqanh_Sgi3NRRUmkG8VycOgtPegy3w,2767
+py_csv_xls/exception.py,sha256=GI4QjBCy_DVip9bdqeUlL__Vm7N77XDFL7Jf4diwUF8,289
+py_csv_xls-0.0.6.dist-info/LICENSE,sha256=Ut1dcllziH2t_J6sl9eANMOran528rnKaI93VoUALjE,1062
+py_csv_xls-0.0.6.dist-info/METADATA,sha256=MaLRbol3U9C3k5ioAMiPsyKTCnF1J2IWUem3EKoFetc,1571
+py_csv_xls-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+py_csv_xls-0.0.6.dist-info/top_level.txt,sha256=4Q99fWhZGp4mEgYPcLyNzR8hQFPa5rcyx-0f7SnAOpo,11
+py_csv_xls-0.0.6.dist-info/RECORD,,
