@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+metadata.json
+setup.py
+generaltool/__init__.py
+generaltool/enforce_literal.py
+generaltool.egg-info/PKG-INFO
+generaltool.egg-info/SOURCES.txt
+generaltool.egg-info/dependency_links.txt
+generaltool.egg-info/top_level.txt
+generaltool/test/test_generaltool.py
+generaltool/test/test_literal.py
