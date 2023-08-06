@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: defillamaAPI
+Version: 0.0.2
+Summary: defillama API Module
+Home-page: https://github.com/jafark92/defillamaAPI
+Author: Jafar Sadiq
+Author-email: Jafar Sadiq <jsadiqk92@gmail.com>
+License: Apache License 2.0
+Project-URL: Homepage, https://github.com/jafark92/defillamaAPI
+Project-URL: Bug Tracker, https://github.com/jafark92/defillamaAPI/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.18.4)
+
+# defillamaAPI
+Under Development
+API Collection of DefiLlama (https://defillama.com/docs/api) - Unofficial
+
+### Installation:
+
+use pip to install:
+
+``` 
+pip install defillamaAPI
+```
+
+### Example usage:
+
+```
+from defillamaAPI import TVL
+
+# initialize TVL api client
+defillama_tvl = TVL()
+
+# Get all protocols data
+response = defillama_tvl.get_protocols()
+
+```
+
+-------
+
+Task ToDo
+-> Add remaining endpoints
+-> User can select if he wants pandas dataframe or just response json
+-> Test with other versions of python ( Although used only requests and time module with no fancy methods)
