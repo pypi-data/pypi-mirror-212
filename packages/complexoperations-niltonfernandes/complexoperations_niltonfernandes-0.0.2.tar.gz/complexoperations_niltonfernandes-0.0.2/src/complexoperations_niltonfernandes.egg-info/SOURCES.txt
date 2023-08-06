@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/complexoperations/JustSomeMath.py
+src/complexoperations/__init__.py
+src/complexoperations_niltonfernandes.egg-info/PKG-INFO
+src/complexoperations_niltonfernandes.egg-info/SOURCES.txt
+src/complexoperations_niltonfernandes.egg-info/dependency_links.txt
+src/complexoperations_niltonfernandes.egg-info/top_level.txt
+src/test/test_JustSomeMath.py
