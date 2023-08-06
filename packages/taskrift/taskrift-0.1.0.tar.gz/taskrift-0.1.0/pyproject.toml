@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "taskrift"
+version = "0.1.0"
+description = "A dynamic and intuitive todo CLI for seamless task management and productivity enhancement."
+authors = ["Supreet Praharaj <supreet.praharaj.pro@gmail.com>"]
+readme = "README.md"
+packages = [{include = "taskrift"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "0.9.0"}
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.1"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
