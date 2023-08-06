@@ -1,0 +1,13 @@
+qase_pytest-5.0.0-py3.9-nspkg.pth,sha256=wY3WD0aJJ9D3oZoOCUdDANtrfmDEMsYfGnG5H58JPbU,539
+qaseio/pytest/__init__.py,sha256=InH46Ocxl7ke4FT0-rOQ9v_WleqFvSdcFkQlYw2kWOE,8427
+qaseio/pytest/conftest.py,sha256=44mmP9-yhsoMKh4lAKujwvdG3nEvJn8ZQag3-W4CLYc,6018
+qaseio/pytest/options.py,sha256=xyqoYCqJ7cGf54QWtEiZZylkWiif7tqosz-1gpXdWhk,5477
+qaseio/pytest/plugin.py,sha256=WHGHWluBQDV7mrWgYUuW4RON2CpH3tgg2yQyQri_Jrw,9873
+qase_pytest-5.0.0.dist-info/AUTHORS.rst,sha256=59yhOsDH3yEqKSaBSTXoCOkiswYlFC3i3cahJu9TBxw,154
+qase_pytest-5.0.0.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+qase_pytest-5.0.0.dist-info/METADATA,sha256=EVkP4ibdvtWuFZ65dEEG7wn4ENVYM2Tc-ehyuMFqptU,6611
+qase_pytest-5.0.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+qase_pytest-5.0.0.dist-info/entry_points.txt,sha256=vFzE5B8ExpttrEwTS9fmXdAuKFh9FvM8Es773WcVoOw,49
+qase_pytest-5.0.0.dist-info/namespace_packages.txt,sha256=keRvf1O-Wqp_5utcMOmxaX_kLGqHnuamAY58LtJywl8,7
+qase_pytest-5.0.0.dist-info/top_level.txt,sha256=keRvf1O-Wqp_5utcMOmxaX_kLGqHnuamAY58LtJywl8,7
+qase_pytest-5.0.0.dist-info/RECORD,,
