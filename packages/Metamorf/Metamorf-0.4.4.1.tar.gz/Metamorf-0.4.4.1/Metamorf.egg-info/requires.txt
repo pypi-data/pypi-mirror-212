@@ -1,0 +1,6 @@
+snowflake-connector-python
+PyYAML
+Flask
+psycopg2
+mysql-connector-python
+fdb
