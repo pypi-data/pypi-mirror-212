@@ -1,0 +1,7 @@
+promptrix
+requests
+tiktoken
+pyyaml
+
+[:python_version < "3.9"]
+importlib-metadata
