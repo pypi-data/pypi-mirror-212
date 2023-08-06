@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: splathash
+Version: 1.0.0
+Summary: A Django USSD Framework.
+Home-page: https://www.nalosolutions.com/
+Author: Nalo Solutions
+Author-email: technicaloperations@nalosolutions.com
+License: Proprietary
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: Django (>=3.2)
+
+Splathash
+=========
+
+A Django USSD framework package.
+
+Requirements
+------------
+
+- Python 3.8+
+- Django 4.2, 4.1, 4.0, 3.2
+
+We **highly recommend** and only officially support the latest patch release of
+each Python and Django series.
+
+Installation
+------------
+
+1. Install using `pip`...
+
+    .. code-block:: bash
+
+        pip install splathash
+
+2. Add "splathash" to your INSTALLED_APPS setting like this:
+
+    .. code-block:: python
+
+        INSTALLED_APPS = [
+            ...,
+            "splathash",
+        ]
+
+3. Include the splathash URLconf in your project urls.py like this:
+
+    .. code-block::
+
+        path("splathash/", include("splathash.urls")),
+
+4. Run ``python manage.py migrate`` to apply migrations.
+
+5. Start the development server and visit http://127.0.0.1:8000/splathash/playground/
+   to test your USSD endpoint (you'll need to login with a user in the admin panel first).
+
+Contributing and development
+----------------------------
+
+1. To start contributing to **Splathash**, clone the repository's develop branch:
+
+    .. code-block:: bash
+
+        git clone -b develop https://github.com/nalo-solutions/splathash
+
+2. Create a virtual env with all development dependencies.
+
+    .. code-block:: bash
+
+        cd splathash
+        python3 -m venv venv
+        source venv/bin/activate
+        pip install -r requirements.txt
+
+3. In the main project directory, you'll find the `splathash` folder, which serves as both the main package itself and a Django app within the `testproject` Django project. Additionally, the `testapp` is another Django app within the `testproject` setup.
+This project is designed to facilitate testing of the `splathash` package within a Django project. To run the development server, use the following command:
+
+    .. code-block:: bash
+
+        python manage.py runserver
+
+4. Run the tests with:
+
+    .. code-block:: bash
+
+        pytest
+
+Committing your code
+--------------------
+
+Before committing please make sure you have installed the `pre-commit` hooks in your local git repository:
+
+.. code-block:: bash
+
+    pre-commit install
+
+This will ensure that your code is cleaned before you commit it.
+
+Creating releases
+-----------------
+
+1. Update the version number with this command(Replace <part> with the part of the version you want to increment. For example: *patch, minor or major*):
+
+    .. code-block:: bash
+
+        bump2version <part>
+
+2. Merge new a release into main to trigger the workflow.
+
+

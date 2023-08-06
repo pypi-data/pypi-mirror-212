@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>USSD Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="justify-content-center container mt-4">
+        <h3>USSD Playground</h3>
+        <div>Help: *</div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Please input data here</p>
+                    <hr>
+                    <form id="form" action="" method="post">
+                        <div class="mb-3">
+                            <label for="endpoint" class="form-label">URL Endpoint</label>
+                            <input type="text" placeholder="eg. /ussd" class="form-control" id="endpoint">
+                        </div>
+                        <div class="mb-3">
+                            <label for="NETWORK" class="form-label">Network</label>
+                            <select class="form-control" id="network">
+                                <option>MTN</option>
+                                <option>Vodafone</option>
+                                <option>AirtelTigo</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="MSISDN" class="form-label">Phone Number</label>
+                            <input type="tel" placeholder="eg. 233541234567" class="form-control" id="msisdn">
+                        </div>
+                        <div class="mb-3">
+                            <label for="data" class="form-label">User Data</label>
+                            <input type="text" class="form-control" id="data" aria-describedby="userDataHelp">
+                            <div id="userDataHelp" class="form-text">
+                                Enter your responses in this text field.
+                            </div>
+                        </div>
+                        <input type="hidden" class="form-control" id="user-id">
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="session-start"
+                                aria-describedby="sessionHelp">
+                            <label class="form-check-label" for="session-start">Start Session</label>
+                            <div id="sessionHelp" class="form-text">
+                                Remember to uncheck this box after first submission.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col">
+                    <p>Response</p>
+                    <hr>
+                    <div id="response">
+                        Waiting for session to start
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function sanitizeEndpoint(endpoint) {
+            return endpoint.endsWith("/") ? endpoint : endpoint + "/";
+        }
+
+        function sanitizePhoneNumber(number) {
+            if (number.startsWith("0"))
+                return "233" + number.substring(1);
+
+            if (number.startsWith("+"))
+                return number.substring(1);
+
+            return number;
+        }
+
+        function callService({ endpoint, data }) {
+            return fetch(endpoint, {
+                body: JSON.stringify(data),
+                method: 'POST',
+                credentials: 'same-origin',
+                headers: {
+                    'Content-Type': 'application/json',
+                    "X-CSRFToken": '{{ csrf_token }}',
+                },
+            })
+                .then((response) => response.json());
+        }
+
+        function updateDOM({ response }) {
+            let responseDiv = document.getElementById('response');
+            responseDiv.innerText = response;
+        }
+
+        const f = document.getElementById("form");
+        f.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            let msisdn = document.getElementById('msisdn').value;
+            let network = document.getElementById('network').value;
+            let userData = document.getElementById('data').value;
+            let sessionStart = document.getElementById('session-start').checked;
+            let userID = document.getElementById('user-id').value;
+
+            let endpoint = document.getElementById('endpoint').value;
+
+            callService({
+                endpoint: sanitizeEndpoint(endpoint),
+                data: {
+                    "USERID": userID,
+                    "MSISDN": sanitizePhoneNumber(msisdn),
+                    "USERDATA": userData,
+                    "MSGTYPE": sessionStart,
+                    "NETWORK": network,
+                }
+            }).then((response_json) => response_json.MSG).then(response => updateDOM({ response }));
+        });
+    </script>
+</body>
+
+</html>
