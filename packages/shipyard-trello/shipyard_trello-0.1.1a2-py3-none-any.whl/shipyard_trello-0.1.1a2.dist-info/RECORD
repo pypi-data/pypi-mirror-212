@@ -1,0 +1,8 @@
+shipyard_trello/__init__.py,sha256=5yX461ntsxG3uEVXl8wMVGUdIO1bTQzTgUK9hrKik8U,32
+shipyard_trello/cli/add_comment.py,sha256=duWsIrQgcVNMlzltMkrcW9cuNLtrggXBOD_GEe97u70,1156
+shipyard_trello/cli/create_card.py,sha256=r60xmJ8i7bWK5TtEv5_M7jbBmkILH8i5tYJHnbieCQI,1450
+shipyard_trello/cli/edit_card.py,sha256=boR1XH1YMPNyev8h5nw5PEEp5qDwYPCUuFa6l0oqguU,1617
+shipyard_trello/trello.py,sha256=RA3bcQKj-A1YngxUQ5cp2cMvVgwhKgs7rMjvNVf25E8,9368
+shipyard_trello-0.1.1a2.dist-info/METADATA,sha256=bayOUBCJhqeXkxmRkMjz8j5ZWd4x7gGXCd1IrAoMQ34,540
+shipyard_trello-0.1.1a2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+shipyard_trello-0.1.1a2.dist-info/RECORD,,

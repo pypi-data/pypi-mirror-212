@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: shipyard-trello
+Version: 0.1.1a2
+Summary: A local client for connecting a working with Trello.
+Author: JR
+Author-email: johnathan.rodriguez@shipyardapp.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: shipyard-templates (==0.1.4)
+Description-Content-Type: text/markdown
+
+
