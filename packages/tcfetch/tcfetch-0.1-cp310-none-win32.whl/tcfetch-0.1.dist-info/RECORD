@@ -1,0 +1,5 @@
+tcfetch-0.1.dist-info/METADATA,sha256=oAdermEVjQeCgkw62ZR3hlIbothLvhRBu2G044GZN4U,332
+tcfetch-0.1.dist-info/WHEEL,sha256=agIHSEUCMZpDG4zI0KgFzos8VuTVCtkaFim8jvqZO9Q,91
+tcfetch/__init__.py,sha256=xNYGJOI2oNXceDU1_ePNWIiIcYwT3s49lcmG2e7C_PE,111
+tcfetch/tcfetch.cp310-win32.pyd,sha256=FiCchKEVjV4FM_T3JAfw3lT0FRawPfzaIZdjiWVvirg,4792320
+tcfetch-0.1.dist-info/RECORD,,
