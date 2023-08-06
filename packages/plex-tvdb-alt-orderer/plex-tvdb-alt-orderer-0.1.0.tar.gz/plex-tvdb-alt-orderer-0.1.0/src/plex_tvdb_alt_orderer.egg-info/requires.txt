@@ -1,0 +1,5 @@
+click
+inquirer
+plexapi
+progress
+tvdb_v4_official
