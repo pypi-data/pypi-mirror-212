@@ -1,0 +1,14 @@
+uunet/__init__.py,sha256=HOwzA-EKiv4ZMhPNpZ19XLNqH1vTDsqd7_LXyk5SYtY,19
+uunet/_multinet.pypy39-pp73-win_amd64.pyd,sha256=quZpfjAPoTAo7PRjnR7Z03CcK6NlAxI0QbYs5lX5lXk,778240
+uunet/multinet.py,sha256=0UwUXO_OQPRsRAxPvfNomr4qym1JNpKMEjjWWJpkr8s,34110
+uunet/data/aucs.mpx,sha256=DDv1Cx3HYa5ocYZtCl1SUcA81lLQiPh8ESBJ5Qnq5Ao,20882
+uunet/data/bankwiring.mpx,sha256=Sh8WEwEm81eTC2uVDAghNZ4Ygb0Bpycfy0AD6SfYmrQ,2093
+uunet/data/book.mpx,sha256=ih_OdGzUhqSj589zSrcCVNwD7OnjcutXyrZ58Krp2cY,553
+uunet/data/florentine.mpx,sha256=x_unUEHPOE5P1cF9wf_OEu24kBvLBBfPnHrCUGiLees,1421
+uunet/data/monastery.mpx,sha256=-YBjyHHsv9zl9nqNrZp6netrTivzP2scmsYkH9F_wyg,15532
+uunet/data/tailorshop.mpx,sha256=8HaSERn-PJ2lBDlENLYjLJ-7yLEmK8H8yxXAV1cEJhA,13692
+uunet-2.1.1.dist-info/LICENSE,sha256=bR2Wj7Il7KNny38LiDGrASo12StUfpReF--OewXD5cw,10349
+uunet-2.1.1.dist-info/METADATA,sha256=NS8VAbX5qpWFyuKPY8MjKsmMZQ0NGBCm2OpK_MNi__U,2673
+uunet-2.1.1.dist-info/WHEEL,sha256=QQY0XPJVcbNrDwRnZBTwtxGbMWJnHaWRpMJLfPEPCFM,107
+uunet-2.1.1.dist-info/top_level.txt,sha256=h82D_WUVMUjGXPNhuhCkP0yidDyv0KDPcObssynQoJU,6
+uunet-2.1.1.dist-info/RECORD,,
