@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tradingindicators
+Version: 1.0.1
+Summary: Calculator for the most important trading indicators.
+Home-page: https://github.com/array-drian/tradingindicators
+Author: Array-drian
+Author-email: adrian.mahn@gmx.net
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TradingIndicators
+> This python package is used to calulate the following trading indicators: Relative Strength Index(RSI), Simple Moving Average(MA), Smoothed Moving Average(SMMA), Exponential Moving Average(EMA), Moving Average Convergence Divergence(MACD), Bollinger Bands, Fibonacci Retracements, Fibonacce Extensions.
+
+## Getting started
+    pip install tradingindicators
+    pip install -r requirements.txt
+    
+## Import package to your project
+    from tradingindicators import indicators
+## Examples
+> Examples can be found on Github inside the `/examples` directory.
