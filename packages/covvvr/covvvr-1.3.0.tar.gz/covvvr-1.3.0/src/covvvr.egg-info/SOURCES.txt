@@ -1,0 +1,17 @@
+.gitattributes
+.gitignore
+CITATION.cff
+LICENSE
+README.md
+pyproject.toml
+src/covvvr/__init__.py
+src/covvvr/_exceptions.py
+src/covvvr/_types.py
+src/covvvr/_wrappers.py
+src/covvvr/cvintegrator.py
+src/covvvr/functions.py
+src/covvvr.egg-info/PKG-INFO
+src/covvvr.egg-info/SOURCES.txt
+src/covvvr.egg-info/dependency_links.txt
+src/covvvr.egg-info/requires.txt
+src/covvvr.egg-info/top_level.txt
