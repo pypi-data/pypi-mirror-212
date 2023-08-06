@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "eidolon"
+version = "0.1.0"
+description = "A utility to concurrently make HTTP requests, with an optional rate limit. Powered by asyncio and aiohttp"
+authors = ["Sphericalkat <amolele@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+aiohttp = {extras = ["speedups"], version = "^3.8.4"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

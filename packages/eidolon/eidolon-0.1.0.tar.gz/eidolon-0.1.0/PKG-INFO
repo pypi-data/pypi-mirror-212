@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: eidolon
+Version: 0.1.0
+Summary: A utility to concurrently make HTTP requests, with an optional rate limit. Powered by asyncio and aiohttp
+License: MIT
+Author: Sphericalkat
+Author-email: amolele@gmail.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp[speedups] (>=3.8.4,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Eidolon
+A utility to concurrently make HTTP requests, with an optional rate limit. Powered by asyncio and aiohttp.
