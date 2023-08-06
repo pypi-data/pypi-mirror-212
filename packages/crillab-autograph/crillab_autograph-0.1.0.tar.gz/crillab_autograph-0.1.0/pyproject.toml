@@ -1,0 +1,50 @@
+[project]
+name = "crillab-autograph"
+version = "0.1.0"
+description = "AUtogRAPH - A Unified libRary for drAwing Plots in pytHon"
+keywords = [
+    "visualization plots",
+]
+readme = "README.md"
+authors = [
+    { name = "Thibault Falque, Romain Wallon, Hugues Wattez" },
+    { email = "metrics@cril.fr" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+]
+dependencies = [
+    "Cython",
+    "Pillow",
+    "cycler",
+    "kiwisolver",
+    "matplotlib",
+    "nose",
+    "numpy",
+    "pip",
+    "plotly",
+    "pyparsing",
+    "python-dateutil",
+    "retrying",
+    "seaborn",
+    "setuptools",
+    "six",
+]
+requires-python = ">=3.10"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/crillab/autograph"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
