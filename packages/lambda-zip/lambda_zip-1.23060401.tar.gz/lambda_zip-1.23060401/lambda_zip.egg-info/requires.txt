@@ -1,0 +1,5 @@
+boto3
+GitPython
+packaging
+pyyaml
+toml

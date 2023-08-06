@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+lambda_zip/__init__.py
+lambda_zip/aws_lambda_function.py
+lambda_zip/aws_lambda_layer.py
+lambda_zip/aws_lambda_layer_version.py
+lambda_zip.egg-info/PKG-INFO
+lambda_zip.egg-info/SOURCES.txt
+lambda_zip.egg-info/dependency_links.txt
+lambda_zip.egg-info/entry_points.txt
+lambda_zip.egg-info/requires.txt
+lambda_zip.egg-info/top_level.txt
