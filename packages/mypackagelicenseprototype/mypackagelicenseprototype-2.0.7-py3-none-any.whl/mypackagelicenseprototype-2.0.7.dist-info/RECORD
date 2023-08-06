@@ -1,0 +1,11 @@
+mypackagelicenseprototype/PackageContent.py,sha256=3-cUIN1SNYLIGJpPsdCwq7TvVKDmAfqoL4fhRu8emvs,2520
+mypackagelicenseprototype/PackageContentOld.py,sha256=r1QR71SzTg8UPbwveQJ80Sfj1uu-iFmEt9-azQPyw5o,140
+mypackagelicenseprototype/__init__.py,sha256=p-MTtFmMR8liEgb9nTGc3uKplgcHi82XjOC_NBxZMrY,31
+mypackagelicenseprototype/pyarmor_runtime_000000/__init__.py,sha256=e4cbXB0RJFUcI-O6CteGhRGokuQ2C_wadQKHPvlqF6c,103
+mypackagelicenseprototype/submodule/SubmoduleContent.py,sha256=zjPPT9BTowqyb_p-SYwcLY8GadFjuh8oPfXX80r_pcM,124
+mypackagelicenseprototype/submodule/__init__.py,sha256=R6BGM-6RIVOU45qPMZaENalYgeF9SD1R68NOmOAJ4Cw,33
+mypackagelicenseprototype-2.0.7.dist-info/LICENSE,sha256=MFjy2DRESBKfGwSsA2dSPSYX9psqdp3IvVGe7AEEhkM,1085
+mypackagelicenseprototype-2.0.7.dist-info/METADATA,sha256=PErFUG4maLkLUS_zXjN5NOaCdTXw2krdxae7wA1Ht2I,887
+mypackagelicenseprototype-2.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mypackagelicenseprototype-2.0.7.dist-info/top_level.txt,sha256=_Q0yM1hCg8ClYW5tjn-WmYvLZGCGs4TaESHpRbB0tEQ,26
+mypackagelicenseprototype-2.0.7.dist-info/RECORD,,
