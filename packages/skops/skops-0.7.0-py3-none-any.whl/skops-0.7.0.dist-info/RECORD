@@ -1,0 +1,10 @@
+skops/__init__.py,sha256=8Iq0bUGisbHr6yYazUnb_k8TVoGFrJx4Dl_MQOLRxlg,1087
+skops/_min_dependencies.py,sha256=DSmP-1DgU2qU0sFa5Mryhny0_5ol5OHorFbRbnFZI1M,2412
+skops/conftest.py,sha256=-vy4QVmNh2cnE2SX6cHoXfNffcVTtnWFitr12EaMZ0s,1527
+skops/card/default_template.md,sha256=tayhKQ6ESVszIyLJDXGm7Gz1B517fH56UtCoGf7vFL4,1261
+skops-0.7.0.dist-info/LICENSE,sha256=sUW0GXR0ejB9XfeGywkVbs3nxLhqJdwlu5D6LM2PIgU,1084
+skops-0.7.0.dist-info/METADATA,sha256=Umj5je1VMbPkgO66dNkuY8o41YHcbp0bWj4CqI9txTs,5924
+skops-0.7.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+skops-0.7.0.dist-info/entry_points.txt,sha256=L4TCxlQxoaNJ_r00tyV3I-s1hifvLhU9OqZB3brKBL0,56
+skops-0.7.0.dist-info/top_level.txt,sha256=ZhD6aoqH17aisjbBtz5CpdwqFdNCyxgXjkmOcJrll24,6
+skops-0.7.0.dist-info/RECORD,,
