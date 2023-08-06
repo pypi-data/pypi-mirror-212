@@ -1,0 +1,32 @@
+from setuptools import setup, find_packages
+
+with open('README.md', 'r', encoding='utf-8') as f:
+    long_description = f.read()
+
+setup(
+    author="Subhradeep Rang",
+    author_email="srang992@gmail.com",
+    python_requires='>=3.7',
+    classifiers=[
+            'Development Status :: 2 - Pre-Alpha',
+            'Intended Audience :: Developers',
+            'License :: OSI Approved :: MIT License',
+            'Natural Language :: English',
+            'Programming Language :: Python :: 3',
+            'Programming Language :: Python :: 3.7',
+            'Programming Language :: Python :: 3.8',
+            'Programming Language :: Python :: 3.9',
+            'Programming Language :: Python :: 3.10',
+    ],
+    description="Package containing icons taken from ionicons website.",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    license="MIT license",
+    keywords='ionicons_python',
+    name='ionicons_python',
+    version='0.1.3',
+    packages=find_packages(),
+    package_data={'ionicons_python': ['icons/*.svg']},
+    url='https://github.com/srang992/ionicons_python',
+    zip_safe=False,
+)
