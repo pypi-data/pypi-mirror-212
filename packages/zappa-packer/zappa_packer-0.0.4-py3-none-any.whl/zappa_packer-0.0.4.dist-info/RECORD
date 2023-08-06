@@ -1,0 +1,12 @@
+zappa_packer/__init__.py,sha256=H6j1x93mAGAjY9thY1YmrS-1WA6wjwCtNPDrDMK95mg,1441
+zappa_packer/cli.py,sha256=dtIQezmqncURs3iF8lxx32bu-nQFVou0HEI6z1ZuKlY,32173
+zappa_packer/handler.py,sha256=FuxTqMQAsdQKl5Ql6f3YRf983sw0-Kn_jyiQUpuNN-I,25419
+zappa_packer/middleware.py,sha256=Fe71dQjN70wDX65k_RaOedSyy-vWkX3K3xsuSq8zqak,2071
+zappa_packer/utilities.py,sha256=9etKX4ZwY8bDkAHXdPxbjaK9rUOjlex0BRsEH_1-2vw,4662
+zappa_packer/wsgi.py,sha256=HPp7e20w6wL7JoF8dy6_hGN4x1I81Snjt_DLGAyBKGQ,6789
+zappa_packer/zappa.py,sha256=Uj3EKbi3hUxlsYQH4AqrWmlL_ML2vKcyCAHU64e8ug4,30114
+zappa_packer-0.0.4.dist-info/METADATA,sha256=dbpABr4gq6maZnPqxBB0wTgXIctiF6m0C_hbxq28UD4,2690
+zappa_packer-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+zappa_packer-0.0.4.dist-info/entry_points.txt,sha256=4-99-gRyQwQsB3B8b3Odq7O-1v-yVaFk3LwYf16Yddw,86
+zappa_packer-0.0.4.dist-info/top_level.txt,sha256=Bw8k36o15eOx3xTDWo5R4OWD0qLrKy8LwWudMnQD-M8,13
+zappa_packer-0.0.4.dist-info/RECORD,,
