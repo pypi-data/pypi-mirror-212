@@ -1,0 +1,17 @@
+sumatra_client/__init__.py,sha256=g-0KM8WMMSeK5P54G2xtcpDeO2hOWlAw1II2aQ8paQA,373
+sumatra_client/admin.py,sha256=bys--tDQF9AsWOcIoOl2Llh6ob6er7nK0NI746IB2b4,5568
+sumatra_client/auth.py,sha256=6jYyRJ4U6XfIVAi0LWF2En5e5IAmjOx2AyRkEGjCjaQ,9612
+sumatra_client/cli.py,sha256=_FHis1pcWLHrV7PfxqX7ej2een6-mFUF2UG8Qirxbpw,23855
+sumatra_client/client.py,sha256=kTgkO_ycVifAZa5wJDdV_EdLeBIQR-qxJaxFTVmi3a4,99304
+sumatra_client/config.py,sha256=eyTyvb9M_VFt0L-nZhgmrvU71_ULXuYhNj2kqVcMqcg,8677
+sumatra_client/workspace.py,sha256=yqZ1XNAEpyCRWKIam9aXXAxKkjgwIxx2ivz-vXM9Lzs,4367
+sumatra_client/certs/cert1.pem,sha256=UJdYaqOHzTxPZeHPg1opalBM6IvzqE5vrKh7l64f0dE,1574
+sumatra_client/certs/chain1.pem,sha256=UBB4rqramzLEg3smp-W4VTZ7AKb3PhB40t681sWy83Y,3749
+sumatra_client/certs/fullchain1.pem,sha256=xX6IIqwLVRN9xa15xGWqV-63TO1no5k_oakMR4T8bqk,5323
+sumatra_client/certs/privkey1.pem,sha256=O_8MtuOirEujTK0HMlLdDAJhQjHl2lR3YOmLx1O-_58,241
+sumatra_client-1.3.0rc2.dist-info/LICENSE,sha256=EEGNAyoNpErzMv4uT1juHhdSu_sP8Exe_ZF2lLuc71I,167
+sumatra_client-1.3.0rc2.dist-info/METADATA,sha256=9dewuHRrQgYR8DeF5OGHzETSMrlBrQwiPRJQOJ2H_iE,797
+sumatra_client-1.3.0rc2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sumatra_client-1.3.0rc2.dist-info/entry_points.txt,sha256=djmr1AgvK_htS3PAMq9P3sUnQChLQuF79_ip12mPRC0,52
+sumatra_client-1.3.0rc2.dist-info/top_level.txt,sha256=0PUr_fONzruk_U6ZB0wrLhNxpdh0ys2ttCuwUjspghQ,15
+sumatra_client-1.3.0rc2.dist-info/RECORD,,
