@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pygame = "==2.4.0"
+moderngl = "*"
+
+[dev-packages]
+pytest-ordering = "*"
+flake8 = "*"
+autopep8 = "*"
+sphinx = "*"
+pyinstaller = "*"
+sphinx-rtd-theme = "*"
+sphinx-intl = "*"
+twine = "*"
+pytest = "*"
+pyautogui = "*"
+pytest-mock = "*"
+pytest-cov = "*"
+pytest-logbook = "*"
+mkdocs = "*"
+mkdocs-material = "*"
+click = "*"
+build = "*"
+
+[requires]
+python_version = "3.11"
