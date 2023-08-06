@@ -1,0 +1,9 @@
+LICENSE
+README.md
+index.rst
+pyproject.toml
+setup.py
+actuarialmath.egg-info/PKG-INFO
+actuarialmath.egg-info/SOURCES.txt
+actuarialmath.egg-info/dependency_links.txt
+actuarialmath.egg-info/top_level.txt
