@@ -1,0 +1,26 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file alias="PyAs_main_window.svg">resources/PyAs_main_window.svg</file>
+    <file alias="file_open.svg">resources/file_open.svg</file>
+    <file alias="file_save.svg">resources/file_save.svg</file>
+    <file alias="file_exit.svg">resources/file_exit.svg</file>
+    <file alias="operation_flip_horizontal.svg">resources/operation_flip_horizontal.svg</file>
+    <file alias="operation_flip_vertical.svg">resources/operation_flip_vertical.svg</file>
+    <file alias="operation_clockwise_rotation_90.svg">resources/operation_clockwise_rotation_90.svg</file>
+    <file alias="operation_anticlockwise_rotation_90.svg">resources/operation_anticlockwise_rotation_90.svg</file>
+    <file alias="operation_FFT.svg">resources/operation_FFT.svg</file>
+    <file alias="operation_iFFT.svg">resources/operation_iFFT.svg</file>
+    <file alias="operation_FFTShift.svg">resources/operation_FFTShift.svg</file>
+    <file alias="operation_iFFTShift.svg">resources/operation_iFFTShift.svg</file>
+    <file alias="figure_change_title.svg">resources/figure_change_title.svg</file>
+    <file alias="figure_show_title_within_image.svg">resources/figure_show_title_within_image.svg</file>
+    <file alias="operation_reset.svg">resources/operation_reset.svg</file>
+    <file alias="operation_conjugate.svg">resources/operation_conjugate.svg</file>
+    <file alias="operation_reshape.svg">resources/operation_reshape.svg</file>
+    <file alias="operation_squeeze.svg">resources/operation_squeeze.svg</file>
+    <file alias="operation_permute.svg">resources/operation_permute.svg</file>
+    <file alias="view_playVideo.svg">resources/view_playVideo.svg</file>  
+    <file alias="help_content.svg">resources/help_content.svg</file>
+    <file alias="help_about.svg">resources/help_about.svg</file>
+</qresource>
+</RCC>

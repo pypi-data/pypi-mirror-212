@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: PyArrShow
+Version: 1.0.7
+Summary: Python ArrayShow for MRI data visualization.
+Author-email: "Kaixuan,Zhao" <kaixuan_zhao@163.com>
+Project-URL: Homepage, https://github.com/15625148866/PyArrShow
+Project-URL: Bug Tracker, https://github.com/15625148866/PyArrShow/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyArrShow
+
+## About
+
+Python is presently the leading language for MRI data processing and reconstruction, such as in fastMRI challenge, etc. Due to MRI data usually containing multiple dimensional aspects, such as width-height-slice-coil-dynamic-modalities(such as different b-values in DWI, and different TE images in multi-echo GRE/SE sequence), visualization of processed or reconstructed results requires checking MRI data along specific dimensions,  and this need can not be simply satisfied by standard matplotlib. Additionally, in the data preparation stage, visually checking multi-dimensional inputs and outputs is quite important and necessary.
+
+PyArrShow attempts to provide a Python tool with a similar functionality as the Matlab arrShow project. 
+
+## Installation
+
+Use the package manager pip to install PyArrShow.
+
+```
+pip install PyArrShow
+```
+
+#### Installing Directly from Source
+
+If you want to install directly from the GitHub source, clone the repository, navigate to the PyArrShow root directory and run
+
+```
+pip install -e .
+```
+
+## Examples
+
+Here is an code example for PyArrShow
+
+```
+import  pyas 
+import numpy as np
+5d_nparray = np.random.rand(256,344,10,5,8)
+pyas.PyArrShow().show(a)
+```
+
+## License
+
+PyArrShow is MIT licensed, as found in the LICENSE file.
