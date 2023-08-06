@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "h21ak9-poetry-test"
+version = "1.1.0"
+description = ""
+authors = ["h21ak9 <h21ak9@gmail.com>"]
+readme = "README.md"
+packages = [{include = "h21ak9_poetry_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
