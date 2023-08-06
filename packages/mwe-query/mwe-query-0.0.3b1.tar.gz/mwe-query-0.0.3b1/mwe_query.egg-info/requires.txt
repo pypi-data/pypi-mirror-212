@@ -1,0 +1,4 @@
+BaseXClient
+alpino-query>=2.1.8
+requests
+sastadev
