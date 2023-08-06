@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: lib-for-messanger
+Version: 0.8
+Summary: library for my messenger
+Home-page: https://github.com/VPG1/lib_for_messanger
+Author: Kirill Malihtorovich
+Author-email: mmalihtorovic@gmail.com
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
