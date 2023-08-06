@@ -1,0 +1,3 @@
+[console_scripts]
+fabric-virt-tools-cli=fabric_virt_tools.virt_tools_cli:virt_tools_cli
+
