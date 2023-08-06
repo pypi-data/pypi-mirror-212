@@ -1,0 +1,13 @@
+dask
+deprecated
+edt
+matplotlib
+numba
+numpy
+openpnm
+pandas
+psutil
+rich
+scikit-image
+scipy
+tqdm
