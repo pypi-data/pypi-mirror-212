@@ -1,0 +1,9 @@
+seabird_growth_rate/__init__.py,sha256=E8emEu2mMtgV_Xdg4kWXMyf1jYbwzTeDTVH7e3qs4Lw,246
+seabird_growth_rate/calculate_growth_rates.py,sha256=66yiSF7Pg5snnXLy3rzk5qI7k_gIjfghXPv9NeSzaQU,5120
+seabird_growth_rate/example_diversity_alpha_and_beta.py,sha256=7VNNfOK25OEtUqH1zxs8LPKM2PCJAxbsqHe0bhBTn6k,1443
+seabird_growth_rate/hierarchical_resample.py,sha256=X1Jyirq7n6c6acNBywT3Vdo730AUG6TffCOhfqdZHTA,2843
+seabird_growth_rate/plot_log_linear_tendency.py,sha256=wYjG-usUVDw1pEinnxjiw9MClWQI1LPdx6lDsAr0fsM,3436
+seabird_growth_rate-0.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+seabird_growth_rate-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+seabird_growth_rate-0.1.0.dist-info/METADATA,sha256=bOZoSDo_KLcT7-PriQYB3mGtjwknKWcFFh2mwiN8JVQ,1418
+seabird_growth_rate-0.1.0.dist-info/RECORD,,
