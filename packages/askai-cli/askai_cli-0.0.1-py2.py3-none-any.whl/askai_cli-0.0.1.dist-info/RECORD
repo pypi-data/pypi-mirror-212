@@ -1,0 +1,11 @@
+askai_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+askai_cli/cli.py,sha256=bJ9PY1etraEQgwMaXbwMI1nWjD_3_2qE18z1eeYXY6A,3340
+askai_cli/google_client.py,sha256=nR6TffqVuSnwBSXnm-BF3xSnl93Rxv3SE_Qg3XNz6AA,526
+askai_cli/load_properties.py,sha256=2rCJoVV7oIE2WbrWTM9vlcbvbjO1Y6vls3HyRLVJKvw,418
+askai_cli/log_response.py,sha256=1SmcWL3EVR09cGplUW2UPW6o86tQPofzDkLZ-30itT4,599
+askai_cli/openai_client.py,sha256=E8GV3wnF_bd0731L09YF6b9yan6Y7y6A-T2nmUy7vOo,1343
+askai_cli-0.0.1.dist-info/METADATA,sha256=BdOoKMbqpLkc7dthrDdZIgPT80CGM1ZIH_L1jlsaAkU,644
+askai_cli-0.0.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+askai_cli-0.0.1.dist-info/entry_points.txt,sha256=GRhYSLqHxF2asB8meyu3s4X1CbgTuOGtamzarPpkwCY,44
+askai_cli-0.0.1.dist-info/top_level.txt,sha256=W_BYj1ygrl6a7pKK8JiKpP9QaemCR4WfltTXHOWOI8k,10
+askai_cli-0.0.1.dist-info/RECORD,,

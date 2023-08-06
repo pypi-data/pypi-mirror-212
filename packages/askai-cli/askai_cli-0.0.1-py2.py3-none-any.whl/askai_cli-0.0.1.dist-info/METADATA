@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: askai-cli
+Version: 0.0.1
+Summary: A command line interface to query OpenAI and Google AI services
+Home-page: https://github.com/chasedputnam/askai-cli
+Author: Chase Putnam
+Author-email: Chase Putnam <chasedputnam@gmail.com>
+Project-URL: Homepage, https://github.com/chasedputnam/askai-cli
+Project-URL: Bug Tracker, https://github.com/chasedputnam/askai-cli/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: click
+Requires-Dist: requests
+

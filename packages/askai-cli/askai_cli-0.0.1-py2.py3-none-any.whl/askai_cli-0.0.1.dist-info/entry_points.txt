@@ -1,0 +1,2 @@
+[console_scripts]
+askai = askai_cli.cli:cli
