@@ -1,0 +1,8 @@
+_chronogram.cp37-win_amd64.pyd,sha256=qSa0Sm2eYO6tefvnom91_yDgRHoxBdv9xQ7HheUW62Q,818176
+_chronogram_avx.cp37-win_amd64.pyd,sha256=KwhlReVwsN10tPw1q5MJxhZ7PgG8CtzruipSvK7_7kA,839680
+_chronogram_avx2.cp37-win_amd64.pyd,sha256=nA_ptNgsoTaVkk1MQky4gzH-KLCpaRQisyKbu8-RVsg,841728
+chronogram/__init__.py,sha256=dBn5at5oS0ryfjvI9uSCwjFz-f6zyyYoX7LV3xm1U18,1267
+chronogram-0.2.0.dist-info/METADATA,sha256=8GXgt83KvoSiMELPzBD9STtb6JlnpRTq_lzWvA3nCPI,1216
+chronogram-0.2.0.dist-info/WHEEL,sha256=bipuClDp75Tl92wOCbNQvfy8uWiHgUDTfxkDCRx_slY,101
+chronogram-0.2.0.dist-info/top_level.txt,sha256=0tMdtcn0XZy1-5TMeAgIfP-t892YLHcw9wIi6ZdVvB0,56
+chronogram-0.2.0.dist-info/RECORD,,
