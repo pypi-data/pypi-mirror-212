@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ManuscriptMonitor"
+version = "0.4.2"
+description = "a tool for keeping a ongoing CaptureOne tethered workflow in sync with a guide sheet"
+authors = ["David Flood <davidfloodii@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+watchfiles = "^0.2.0"
+natsort = "^8.1.0"
+rich = "^11.2.0"
+pandas = "^1.4.1"
+PySimpleGUI = "^4.47.0"
+openpyxl = "^3.0.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
