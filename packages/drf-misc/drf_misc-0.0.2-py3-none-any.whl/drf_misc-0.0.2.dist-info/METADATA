@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: drf-misc
+Version: 0.0.2
+Summary: A small Django DRF extension library which includes some useful utilities, APIs, Serializers and Services.
+Project-URL: Homepage, https://github.com/abhishm20/drf-misc
+Project-URL: Bug Tracker, https://github.com/abhishm20/drf-misc/issues
+Author-email: Abhishek Sharma <abhishm20@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# drf-misc
+
+A Django DRF extension library which helps Caching, providing services, Rest APIs etc.
