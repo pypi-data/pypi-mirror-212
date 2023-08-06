@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+dataqualityx/AlterUtil.py
+dataqualityx/DateUtil.py
+dataqualityx/DbUtil.py
+dataqualityx/__init__.py
+dataqualityx/app.py
+dataqualityx.egg-info/PKG-INFO
+dataqualityx.egg-info/SOURCES.txt
+dataqualityx.egg-info/dependency_links.txt
+dataqualityx.egg-info/entry_points.txt
+dataqualityx.egg-info/top_level.txt

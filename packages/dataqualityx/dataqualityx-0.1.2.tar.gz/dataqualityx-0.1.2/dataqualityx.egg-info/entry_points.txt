@@ -1,0 +1,2 @@
+[console_scripts]
+dataqualityx = dataqualityx.app:main
