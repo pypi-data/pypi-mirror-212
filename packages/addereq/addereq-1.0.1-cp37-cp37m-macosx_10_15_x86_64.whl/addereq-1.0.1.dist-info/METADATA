@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: addereq
+Version: 1.0.1
+Summary: 地震前兆数据自动处理框架
+Author-email: WANG Qinglin <chd_wql@qq.com>
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# addereq
+
+地震前兆自动分析框架
+
+## 主要功能
+
+从地震系统Oracle前兆数据库中获取数据，并进行绘图，对接各种地球物理分析方法，方便自动化操作。
+
+## 主要模块
+
+1. Fetching模块
+2. Plotting模块
+
+## 联系作者
+
+<chd_wql@qq.com>
