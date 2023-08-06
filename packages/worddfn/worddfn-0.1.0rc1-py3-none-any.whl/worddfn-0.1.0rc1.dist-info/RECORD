@@ -1,0 +1,9 @@
+worddfn/__init__.py,sha256=9nixZb9lFjFQvbG9Q11wvWamgwFTwVrV0QxTzWAolNc,25
+worddfn/__main__.py,sha256=6qmNEX6DjaHe0R8Dbd3PGz06XdmVeTKkV5SNpIF0fvY,23198
+worddfn/dictionaryAPI.py,sha256=VYZyXSiatm75ZnRI8kBhQiDOYdO7C97PgjMQfY5aBSY,3859
+worddfn/setting.py,sha256=ZpUzLll_P554zw24RwFUHoWNyRWBo35mmf4JGlW0Pdw,2465
+worddfn-0.1.0rc1.dist-info/METADATA,sha256=Qu0T5iz0H6hFm8n3yPnTCtApkeE3rZj_1nadF3w6JKk,9084
+worddfn-0.1.0rc1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+worddfn-0.1.0rc1.dist-info/entry_points.txt,sha256=P_JMuIaaEbhD_U_8HSZyJME5owZFm-ScR3z7vi4zSpU,47
+worddfn-0.1.0rc1.dist-info/licenses/LICENSE,sha256=riaAy6gOQqpeyk0brT67FjmxlKSSG4Z2oSqQv9VzYSg,1077
+worddfn-0.1.0rc1.dist-info/RECORD,,
