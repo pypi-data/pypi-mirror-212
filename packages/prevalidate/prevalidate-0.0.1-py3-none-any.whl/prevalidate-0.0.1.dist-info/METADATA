@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: prevalidate
+Version: 0.0.1
+Summary: 
+Author: Joey Dreijer
+Author-email: joeydreijer@gmail.com
+Requires-Python: >=3.8.1,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: azure-identity (>=1.13.0,<2.0.0)
+Requires-Dist: azure-mgmt-loganalytics (==13.0.0b6)
+Requires-Dist: azure-monitor-query (>=1.2.0,<2.0.0)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Requires-Dist: pythonnet (>=3.0.1,<4.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Prevalidate
+
+## Installation
+```
+# install poetry if not done before (ie. pip install poetry)
+git clone https://github.com/d3vzer0/prevalidate.git
+cd prevalidate
+poetry install
+```
+
+## Commands
+### Example
+prevalidate sentinel unittest ../path_to_usecases ../path_to_schema
+
+### Help
+```
+Usage: python -m prevalidate.main sentinel [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  sync      Sync Log Analytics workspace tables/fields
+  unittest
+```

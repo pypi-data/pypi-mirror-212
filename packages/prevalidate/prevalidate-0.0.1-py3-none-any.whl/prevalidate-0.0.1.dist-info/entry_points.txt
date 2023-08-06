@@ -1,0 +1,3 @@
+[console_scripts]
+prevalidate=prevalidate.main:app
+
