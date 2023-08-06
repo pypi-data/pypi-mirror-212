@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        matter-tool=matter_tool.__main__:main
+    
