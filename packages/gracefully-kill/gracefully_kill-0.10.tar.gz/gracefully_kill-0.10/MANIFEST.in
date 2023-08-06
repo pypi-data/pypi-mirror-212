@@ -1,0 +1,3 @@
+include gracefully_kill/requirements.txt
+include gracefully_kill/thirdparty.json
+include gracefully_kill/README.MD

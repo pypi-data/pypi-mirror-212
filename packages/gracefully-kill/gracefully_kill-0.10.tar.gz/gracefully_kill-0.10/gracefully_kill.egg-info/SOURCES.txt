@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gracefully_kill/README.MD
+gracefully_kill/__init__.py
+gracefully_kill/requirements.txt
+gracefully_kill/thirdparty.json
+gracefully_kill.egg-info/PKG-INFO
+gracefully_kill.egg-info/SOURCES.txt
+gracefully_kill.egg-info/dependency_links.txt
+gracefully_kill.egg-info/requires.txt
+gracefully_kill.egg-info/top_level.txt
