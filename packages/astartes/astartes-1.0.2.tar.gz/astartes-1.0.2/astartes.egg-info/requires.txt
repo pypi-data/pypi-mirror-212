@@ -1,0 +1,17 @@
+scikit_learn
+numpy
+scipy
+
+[demos]
+plotly
+tabulate
+py2opsin
+kaleido
+
+[dev]
+black
+isort
+pytest
+
+[molecules]
+aimsim
