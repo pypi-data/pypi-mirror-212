@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+bspc/__init__.py
+bspc/classes.py
+bspc/query.py
+bspcpy.egg-info/PKG-INFO
+bspcpy.egg-info/SOURCES.txt
+bspcpy.egg-info/dependency_links.txt
+bspcpy.egg-info/top_level.txt
