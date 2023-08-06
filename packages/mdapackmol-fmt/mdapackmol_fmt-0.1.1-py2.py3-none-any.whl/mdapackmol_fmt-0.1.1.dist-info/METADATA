@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: mdapackmol-fmt
+Version: 0.1.1
+Summary: An MDAnalysis wrapper around Packmol
+Home-page: https://github.com/richardjgowers/mdapackmol
+Author: Richard J Gowers
+Author-email: richardjgowers@gmail.com
+License: GNU General Public License v3
+Keywords: mdapackmol
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: mdanalysis
+
+==========
+MDAPackmol
+==========
+
+.. |travis| image:: https://travis-ci.com/MDAnalysis/MDAPackmol.svg?branch=master
+    :target: https://travis-ci.com/MDAnalysis/MDAPackmol 
+.. |coveralls| image:: https://coveralls.io/repos/github/MDAnalysis/MDAPackmol/badge.svg?branch=master
+    :target: https://coveralls.io/github/MDAnalysis/MDAPackmol?
+
+|travis| |coveralls|
+
+-----
+
+## Why this fork?
+
+MDAPackmol-fmt is a fork of the original MDAPackmol code adapted to the FillMyTubes code. 
+
+## MDAPackmol
+
+An MDAnalysis_ wrapper around Packmol_
+
+* Allows combining MDAnalysis and Packmol
+
+* Preserves the topology information (bonds etc) of your system after Packmol
+
+* Free software: GNU General Public License v3
+
+.. _MDAnalysis: https://www.mdanalysis.org
+.. _Packmol: http://m3g.iqm.unicamp.br/packmol/home.shtml
+
+Usage Example
+-------------
+
+.. code-block:: python
+
+   import MDAnalysis as mda
+   import mdapackmol
+   
+   # load individual molecule files
+   water = mda.Universe('water.pdb')
+   urea = mda.Universe('urea.pdb')
+   
+   # call Packmol with MDAnalysis objects as arguments
+   # the 'instructions' allow for any valid Packmol commands
+   system = mdapackmol.packmol(
+       [mdapackmol.PackmolStructure(
+           water, number=1000,
+           instructions=['inside box 0. 0. 0. 40. 40. 40.']),
+        mdapackmol.PackmolStructure(
+           urea, number=400,
+           instructions=['inside box 0. 0. 0. 40. 40. 40.'])]
+   )
+   
+   # the returned system is a MDAnalysis Universe
+   # with all topology information from building blocks retained
+   # which can then be saved into any format
+   # eg to Lammps data file:
+   system.atoms.write('topology.data')
+
+
+Citing
+------
+
+If you find mdapackmol useful for you, please cite the following sources:
+
+ * L Martinez, R Andrade, E G Birgin, J M Martinez, "Packmol: A package for building initial configurations for molecular dynamics simulations". Journal of Computational Chemistry, 30, 2157-2164, 2009. 
+ 
+ * R J Gowers, M Linke, J Barnoud, T J E Reddy, M N Melo, S L Seyler, D L Dotson, J Domanski, S Buchoux, I M Kenney, and O Beckstein. "MDAnalysis: A Python package for the rapid analysis of molecular dynamics simulations." In S. Benthall and S. Rostrup, editors, Proceedings of the 15th Python in Science Conference, pages 102-109, Austin, TX, 2016.
+
+
+
+
