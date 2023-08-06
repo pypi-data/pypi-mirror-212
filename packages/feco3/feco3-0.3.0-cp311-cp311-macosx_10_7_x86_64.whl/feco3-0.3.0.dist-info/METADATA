@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: feco3
+Version: 0.3.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: File Formats
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Text Processing
+Requires-Dist: pyarrow ; extra == 'arrow'
+Provides-Extra: arrow
+License-File: LICENSE
+Summary: A Rust-backed Python library for parsing .fec files.
+Keywords: fec,fec-file,rust,pyo3,arrow,pyarrow
+Author-email: Nick Crews <nicholas.b.crews@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/NickCrews/feco3
+
+# FECo3
+
+A .FEC file parser in rust, with python bindings
+
+Still in alpha.
+
+## Related projects
+
+Please open an issue or PR if you'd like to add or edit this list.
+
+- [FECfile](https://github.com/esonderegger/fecfile)
+  Fairly well maintained parser in python
+- [FastFEC](https://github.com/washingtonpost/FastFEC)
+  A FEC file parser in C.
+- [fec-loader](https://github.com/PublicI/fec-loader)
+  Node.js tools and CLI to discover, convert and load raw FEC filings into a database.
+- [Fech](https://github.com/dwillis/Fech)
+  Ruby downloader and parser. Moderately recently maintained?
+- [fech-sources](https://github.com/dwillis/fech-sources)
+  Schema definitions for the various line codes. Used by Fech and some other parsers.
+- [nyt-pyfec](https://github.com/newsdev/nyt-pyfec)
+  Old, unmaintained python parser
+- [fec2json](https://github.com/newsdev/fec2json)
+  Not complete parser written in python
+
+## Bibliography
+
+Parsing FEC files is an obscure, poorly documented task.
+
+The FEC publishes technical documentation for the files.
+
+1. Go to https://www.fec.gov/data/browse-data/?tab=bulk-data
+2. Expand the "Electronically filed reports (.fec files)" section.
+3. Click the download link.
+4. Do the same for the "Paper filed reports (.fec files)" section.
+
