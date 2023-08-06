@@ -1,0 +1,4 @@
+nltk
+pandas
+pyttsx3
+speechrecognition

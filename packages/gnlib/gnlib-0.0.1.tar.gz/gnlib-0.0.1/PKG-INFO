@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gnlib
+Version: 0.0.1
+Summary: Command analyzer for pandas first version and it has assistant its will be cool
+Author: sliwGN team
+Author-email: giokhvichia69@gmail.com
+Keywords: python,data,analyze,information,simplicity,assistant
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

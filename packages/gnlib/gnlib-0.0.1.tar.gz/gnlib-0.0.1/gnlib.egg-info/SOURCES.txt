@@ -1,0 +1,8 @@
+setup.py
+gnlib/__init__.py
+gnlib/gnlib.py
+gnlib.egg-info/PKG-INFO
+gnlib.egg-info/SOURCES.txt
+gnlib.egg-info/dependency_links.txt
+gnlib.egg-info/requires.txt
+gnlib.egg-info/top_level.txt
