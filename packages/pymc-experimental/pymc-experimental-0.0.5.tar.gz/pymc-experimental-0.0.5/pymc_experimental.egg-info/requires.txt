@@ -1,0 +1,16 @@
+pymc>=5.4.1
+
+[complete]
+dask[complete]
+xhistogram
+
+[dask_histogram]
+dask[complete]
+xhistogram
+
+[dev]
+dask[all]
+blackjax
+
+[histogram]
+xhistogram
