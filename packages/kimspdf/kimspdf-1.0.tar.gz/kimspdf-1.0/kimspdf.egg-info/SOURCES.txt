@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+kimspdf/__init__.py
+kimspdf/pdf2image.py
+kimspdf/pdf2text.py
+kimspdf.egg-info/PKG-INFO
+kimspdf.egg-info/SOURCES.txt
+kimspdf.egg-info/dependency_links.txt
+kimspdf.egg-info/top_level.txt
