@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+whats2df/README.MD
+whats2df/__init__.py
+whats2df/requirements.txt
+whats2df/thirdparty.json
+whats2df/whats2df.py
+whats2df.egg-info/PKG-INFO
+whats2df.egg-info/SOURCES.txt
+whats2df.egg-info/dependency_links.txt
+whats2df.egg-info/requires.txt
+whats2df.egg-info/top_level.txt
