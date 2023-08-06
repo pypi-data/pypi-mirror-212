@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/BIDS_pydantic_models.egg-info/PKG-INFO
+src/BIDS_pydantic_models.egg-info/SOURCES.txt
+src/BIDS_pydantic_models.egg-info/dependency_links.txt
+src/BIDS_pydantic_models.egg-info/requires.txt
+src/BIDS_pydantic_models.egg-info/top_level.txt
+src/bids_pydantic_models/__init__.py
+src/bids_pydantic_models/bids_metadata_v1_7_0.py
+src/bids_pydantic_models/bids_metadata_v1_8_0.py
