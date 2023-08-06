@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+akms_hash/__init__.py
+akms_hash/main.py
+akms_hash.egg-info/PKG-INFO
+akms_hash.egg-info/SOURCES.txt
+akms_hash.egg-info/dependency_links.txt
+akms_hash.egg-info/top_level.txt

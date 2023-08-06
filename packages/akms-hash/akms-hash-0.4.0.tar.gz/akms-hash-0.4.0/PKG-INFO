@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: akms-hash
+Version: 0.4.0
+Summary: An API Key hashing library
+Home-page: https://github.com/apinanyogaratnam/akms-hash
+Author: apinanyogaratnam
+Author-email: apinanapinan@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+AKMS Hash
+
+[![Downloads](https://static.pepy.tech/personalized-badge/akms-hash?period=total&units=none&left_color=grey&right_color=blue&left_text=Downloads)](https://pepy.tech/project/akms-hash)
+
+An API Key hashing library.
