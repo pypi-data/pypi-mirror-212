@@ -1,0 +1,3 @@
+[console_scripts]
+pytyper-weather-forecast=pytyper_weather_forecast.main:app
+
