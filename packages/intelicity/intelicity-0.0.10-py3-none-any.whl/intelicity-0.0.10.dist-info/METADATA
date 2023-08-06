@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: intelicity
+Version: 0.0.10
+Summary: a library for reading and managing data from the Intelicity server
+Author: Me
+Author-email: Felipe Rodrigues Peixoto da Silva <frps2003@gmail.com>
+License: MIT
+Project-URL: Homepage, https://inteli.city/
+Project-URL: project, https://github.com/Comunalti/Intelicity_Library
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+a library that deals with files from intelicity server
