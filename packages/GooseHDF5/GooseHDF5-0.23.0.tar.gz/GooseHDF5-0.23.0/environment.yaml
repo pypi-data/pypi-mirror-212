@@ -1,0 +1,14 @@
+channels:
+- conda-forge
+dependencies:
+- click
+- furo
+- h5py
+- numpy
+- prettytable
+- python
+- pyyaml
+- sphinx
+- sphinx-argparse
+- termcolor
+- typing-extensions >=4.5.0
