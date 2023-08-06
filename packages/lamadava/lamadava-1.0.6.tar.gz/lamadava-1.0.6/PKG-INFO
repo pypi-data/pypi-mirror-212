@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: lamadava
+Version: 1.0.6
+Summary: Lamadava client, for Python 3.
+Home-page: https://lamadava.com
+Author: Lamadava
+Author-email: support@lamadava.com
+License: MIT
+Keywords: instagram private api,instagram-private-api,instagram api,instagram-api,instagram,instagram-scraper,instagram-client,instagram-stories,instagram-feed,instagram-reels,instagram-insights,downloader,uploader,videos,photos,albums,igtv,reels,stories,pictures,instagram-user-photos,instagram-photos,instagram-metadata,instagram-downloader,instagram-uploader
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Lamadava client, for Python 3
+
+![PyPI](https://img.shields.io/pypi/v/lamadava)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lamadava)
+
+[![Downloads](https://pepy.tech/badge/lamadava)](https://pepy.tech/project/lamadava)
+[![Downloads](https://pepy.tech/badge/lamadava/month)](https://pepy.tech/project/lamadava)
+[![Downloads](https://pepy.tech/badge/lamadava/week)](https://pepy.tech/project/lamadava)
+
+
+## Installation
+
+```
+pip install lamadava
+```
+
+## Usage
+
+Create token https://lamadava.com/tokens and copy "Access key"
+
+```
+from lamadava import Client
+cl = Client(token="<ACCESS_KEY>")
+user = cl.user_by_username_v2("instagram")
+print(user)
+```
