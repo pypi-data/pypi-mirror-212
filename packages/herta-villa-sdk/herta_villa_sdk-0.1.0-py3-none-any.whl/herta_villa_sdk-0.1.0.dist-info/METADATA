@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: herta-villa-sdk
+Version: 0.1.0
+Summary: 大别野「黑塔」Python SDK
+Author-Email: MingxuanGame <MingxuanGame@outlook.com>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: aiohttp>=3.8.4
+Requires-Dist: pydantic>=1.10.8
+Description-Content-Type: text/markdown
+
+# Herta-villa-SDK
+
+大别野「黑塔」Python SDK
+
+## 交流
+
+前往大别野「斩尽芜杂」（`aaUeZqd`）
