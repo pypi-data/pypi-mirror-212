@@ -1,0 +1,17 @@
+boto3
+dask[complete]
+devtools
+google-cloud-storage
+grpcio-status==1.48.2
+image
+ipywidgets
+ipywidgets==8.0.4
+kaggle
+matplotlib
+numpy
+opencv-python
+pandas
+protobuf==3.20.3
+pydantic
+requests
+scikit-image
