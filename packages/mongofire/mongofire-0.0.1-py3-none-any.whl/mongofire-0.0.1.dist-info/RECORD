@@ -1,0 +1,14 @@
+mongofire/__init__.py,sha256=bEj4hOv3Kpk1Dzg5ioCAYgwJuKs0tzktpNpjz4HgCgU,77
+mongofire/collection.py,sha256=xZYa74FpC877ygcUfLrTG5WZgQ4UIoNAz7B1zw1XhzA,756
+mongofire/document.py,sha256=GbaTXXP_E_n1TSkS-I2IfWA_Bq-9EJlE3yiIzNPbZos,1544
+mongofire/errors.py,sha256=WCD4iNjgQgX7FbW2A00_qn9JbMYMxvyCyyj-mXdPXik,87
+mongofire/field.py,sha256=O27lnjdDdlL1mUxpc50G1zyJecetmaLCOJivDUOvUB4,4116
+mongofire/mongodb.py,sha256=GfAirmbtJ5wemaqRCkh3mQiD4oYGnG6SzWMowI-vK7s,524
+mongofire/mongofire.py,sha256=2uU9QD2l6lZ6wZsKiLzw3p56-2gWposh_rZ-64p7o7Y,1038
+mongofire/query.py,sha256=t4C_Ose-sI7kALCA9LXQNG7nBY7NmhxRp3V858qhiQk,2347
+mongofire/results.py,sha256=XdF0BWbLJhQgNNGWpjqB4WdBbClUjY9Yn6wK-l29PpQ,1388
+mongofire-0.0.1.dist-info/LICENSE,sha256=75dCIxiMXKbeuUJPoUlt_K_BUaytTxyj0CTIic-3lS4,1071
+mongofire-0.0.1.dist-info/METADATA,sha256=rfWNxGU4DBWEfnbQy5I1VZawkzxoOeL0GJybySLKZjg,4028
+mongofire-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mongofire-0.0.1.dist-info/top_level.txt,sha256=ua7hOahTHLJ8u4MuHQP1jl04NjfLaz1kp0jwdSQGFK4,10
+mongofire-0.0.1.dist-info/RECORD,,
