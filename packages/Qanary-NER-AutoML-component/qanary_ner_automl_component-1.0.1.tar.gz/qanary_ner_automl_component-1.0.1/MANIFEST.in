@@ -1,0 +1,4 @@
+graft AutomationServiceBackend
+graft ExampleBodies
+include *.yml
+include .env
