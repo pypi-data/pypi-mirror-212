@@ -1,0 +1,9 @@
+setup.py
+easy_logs/__init__.py
+easy_logs/_configurations.py
+easy_logs/_logging_utils.py
+easy_logs/main.py
+easy_logs.egg-info/PKG-INFO
+easy_logs.egg-info/SOURCES.txt
+easy_logs.egg-info/dependency_links.txt
+easy_logs.egg-info/top_level.txt
