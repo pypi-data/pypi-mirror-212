@@ -1,0 +1,8 @@
+{
+  "src/tests.py::test_no": true,
+  "tests/main.py::test_no": true,
+  "tests/main.py": true,
+  "tests/test_su6.py::test_no": true,
+  "tests/test_su6.py::test_black": true,
+  "tests/test_cli.py::test_loading_state_without_load_config": true
+}
