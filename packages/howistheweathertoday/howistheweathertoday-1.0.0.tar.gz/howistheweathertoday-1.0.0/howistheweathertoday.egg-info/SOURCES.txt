@@ -1,0 +1,8 @@
+setup.py
+howistheweathertoday/__init__.py
+howistheweathertoday/howistheweathertoday.py
+howistheweathertoday.egg-info/PKG-INFO
+howistheweathertoday.egg-info/SOURCES.txt
+howistheweathertoday.egg-info/dependency_links.txt
+howistheweathertoday.egg-info/requires.txt
+howistheweathertoday.egg-info/top_level.txt
