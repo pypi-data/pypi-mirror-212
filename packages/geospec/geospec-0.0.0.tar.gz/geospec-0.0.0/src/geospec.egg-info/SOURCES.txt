@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/geospec/__init__.py
+src/geospec/main.py
+src/geospec.egg-info/PKG-INFO
+src/geospec.egg-info/SOURCES.txt
+src/geospec.egg-info/dependency_links.txt
+src/geospec.egg-info/top_level.txt
