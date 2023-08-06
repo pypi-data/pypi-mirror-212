@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+api_to_yaml.egg-info/PKG-INFO
+api_to_yaml.egg-info/SOURCES.txt
+api_to_yaml.egg-info/dependency_links.txt
+api_to_yaml.egg-info/top_level.txt
