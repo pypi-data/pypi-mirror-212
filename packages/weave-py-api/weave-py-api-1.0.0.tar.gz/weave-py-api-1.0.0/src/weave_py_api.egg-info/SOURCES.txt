@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/weave_py_api.egg-info/PKG-INFO
+src/weave_py_api.egg-info/SOURCES.txt
+src/weave_py_api.egg-info/dependency_links.txt
+src/weave_py_api.egg-info/requires.txt
+src/weave_py_api.egg-info/top_level.txt
+src/weaveapi/config.toml
