@@ -1,0 +1,10 @@
+README.md
+setup.py
+mail_notification/__init__.py
+mail_notification/connection.py
+mouritech_mail_notification.egg-info/PKG-INFO
+mouritech_mail_notification.egg-info/SOURCES.txt
+mouritech_mail_notification.egg-info/dependency_links.txt
+mouritech_mail_notification.egg-info/not-zip-safe
+mouritech_mail_notification.egg-info/requires.txt
+mouritech_mail_notification.egg-info/top_level.txt
