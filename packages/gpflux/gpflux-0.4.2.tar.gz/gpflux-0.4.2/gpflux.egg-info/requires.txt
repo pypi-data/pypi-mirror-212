@@ -1,0 +1,11 @@
+deprecated
+gpflow>=2.6.3
+numpy
+scipy
+tensorflow-probability<0.20.0,>=0.13.0
+
+[:platform_system != "Darwin" or platform_machine != "arm64"]
+tensorflow<2.13.0,>=2.5.0
+
+[:platform_system == "Darwin" and platform_machine == "arm64"]
+tensorflow-macos<2.13.0,>=2.5.0
