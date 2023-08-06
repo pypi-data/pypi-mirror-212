@@ -1,0 +1,10 @@
+pytest_django_ifactory/__init__.py,sha256=garGjkB0WYuNZs6Uae9_EL8tWF4ufAaS_HL1kfF_Vas,251
+pytest_django_ifactory/defaults.py,sha256=K0TC10nMVV-gRmqX6HIX4iK9fcBwMprbifItNb-mxgQ,4654
+pytest_django_ifactory/ifactory.py,sha256=H10d3n1t4nupea03oq2OBZpndg4jcIruJOlxdIp5I6c,5865
+pytest_django_ifactory/plugin.py,sha256=bW69mBPQhAGUSWKPTMLurhZmIlTYrmLms7W7gtTPCAc,763
+pytest_django_ifactory-1.1.0.dist-info/LICENSE,sha256=0l7H2m7b3FbIbOlypVP-qCcDGq9q6OhlHtW3SMZumqU,1517
+pytest_django_ifactory-1.1.0.dist-info/METADATA,sha256=VThb8vQBb_18HVgLtmEA8CrdlXyFVO9KpDQb00AaUYE,7142
+pytest_django_ifactory-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytest_django_ifactory-1.1.0.dist-info/entry_points.txt,sha256=SakP8hQmRLTfdw2NRU4Pbp_J6c1icXsSoHkscPW6-zk,59
+pytest_django_ifactory-1.1.0.dist-info/top_level.txt,sha256=2BVyyi1Dz3vZUTBYjgKgZfdtuNtMzaOrd1A82XxweK0,23
+pytest_django_ifactory-1.1.0.dist-info/RECORD,,
