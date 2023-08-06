@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: kaaslibdinges
+Version: 0.0.1
+Summary: very basic DS tools
+Home-page: 
+Author: Tim Oosterling
+Author-email: 
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*
+License-File: LICENCE.txt
+Requires-Dist: matplotlib (>=2.2.0)
+
+My Package is a Python package that provides classes for visualizing data in a DataFrame and fixing missing values (NaN) using various strategies.
+
+
+Change Log
+==========
+
+0.0.1 (2023/06/06)
+-------------------
+- First Release
