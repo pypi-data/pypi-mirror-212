@@ -1,0 +1,99 @@
+# mkdocs-annexes-integration
+
+This is a plugin that transforms annex files into images or code blocks to be integrated in Markdown pages for MkDocs.
+
+## Setup
+
+### Before installing
+
+Before installing this plugin you need to install `poppler-utils` as it is used by `pdf2image` that is required to use this plugin.
+
+#### Install on Linux :
+
+Note: *It depend on your Linux OS*
+
+``` sh
+sudo apt-get install poppler-utils
+```
+
+``` sh
+sudo yum install poppler-utils
+```
+
+#### Install on MacOS :
+
+``` sh
+brew install poppler
+```
+
+#### Install on Windows :
+
+On Windows, you can download the latest binary release of Poppler from the official website and extract the files to a folder. Then, add the folder to the system's PATH environment variable.
+
+### Installing using pip:
+
+`pip install mkdocs-annexes-integration`
+
+## Config
+
+You need to activate the plugin in `mkdocs.yml`:
+
+```yaml
+plugins:
+  - annexes-integration:
+      annexes: # Required (at least 1)
+        - Title of the annex A1: path/A/to/an/annex1.pdf # A path to an annex with it's title
+        - Title of the annex A2: path/A/to/an/annex2.pdf # Another path to an annex in same folder as the first
+        - Title of the annex B1: path/B/to/an/annex1.pdf # Another path to an annex but in different folder as the first two
+        - Title of the code file annex:
+            src: ../src/path/to/a/code/file.py
+            dest: dest/path/to/a/code/file.py
+        - Title of the code directory annex:
+            src: ../src/path/to/a/code/directory
+            dest: dest/path/to/a/code/directory
+        # others annexes...
+      temp_dir: "folder_name" # Optional --> Default : temp_annexes
+      enabled_if_env: ENABLE_ANNEXES_INTEGRATION # Optional
+```
+
+As you can see, there are two possible ways to integrate an annex: using a simple path or a source path and a destination path. **Both paths need to be relative to `docs_dir`, though**.
+
+Set at least one annex to use this plugin. If you don't have any annex don't add this plugin to the mkdocs plugins list in config file mkdocs.yml
+
+- `annexes` - A list of all the annexes documents. The path from `docs_dir` to an annex file or directory associated to it's title. Each file in a directory will integrated in subsection of the same document with a heading 2 containing the relative path of the file from the given directory.
+- `temp_dir` - The temp directory used to generate markdown file for each annex before rendering to HTML. Only set this option if you already have a temp_annexes folder in the root directory (same as mkdocs.yml), which, you should not normally.
+- `enabled_if_env` - Setting this option will enable the build only if there is an environment variable set to 1. Integrations of PDF can slow down build process and it's pretty useful to be fast when doing modification to mkdocs files when doing mkdocs serve.
+
+## Usage
+
+Using the command `mkdocs build` or `mkdocs serve` will trigger the plugin if it as been set correctly in config file.
+
+This plugin is intended to be used with `mkdocs-with-pdf` plugin but can be used as it is.
+
+## Support
+
+This plugin currently support two type of files :
+
+- **PDF files**: The plugin will convert each page of the PDF into images to be integrated on a page
+
+- **Code files**: The plugin will put the content of the code file into a codeblock to be integrated on a page
+
+Currently supported code files are :
+ - CSharp (.cs)
+ - CSS (.css)
+ - Dart (.dart)
+ - HTML (.html)
+ - Javascript (.js)
+ - JSON (.json)
+ - PHP (.php)
+ - Python (.py)
+
+## License
+
+This project is under MIT license see: `license` file for more detail.
+
+## See Also
+
+- [gitlab repo](http://www.gitlab.org/cfpt-mkdocs-plugins/mkdocs-annexes-integration/)
+- [mkdocs website](http://www.mkdocs.org/)
+- [mkdocs with-pdf plugin](https://github.com/orzih/mkdocs-with-pdf)
