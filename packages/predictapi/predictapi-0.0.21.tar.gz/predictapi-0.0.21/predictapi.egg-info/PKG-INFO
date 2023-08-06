@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: predictapi
+Version: 0.0.21
+Summary: The predict API
+Author: The predict API
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# The predict API
+
+## Intro
+
+The predict API enables to project a data set over a projection horizon, using an innovative stochastic approach.
+
+It requires a data set of historical values (stock prices, financial indices, cryptocurrency prices, sensor dataâ€¦ or any other time-series data) and a projection horizon (which corresponds to the length of time for which you want to project the data set, it needs to be expressed in the same time base as the data set).
+
+You will also need one or several confidence levels for the quantiles you want to retrieve.
+
+## Website
+https://predictapi.app/
+
+## Example
+```
+from predictapi import Predictor
+
+p = Predictor(api_key="your_api_key")
+
+data = [518.4, 559.9, 553.1, 524.5, 567.6, 531.7, 576.4, 514.4]
+horizon = 5
+cls = [0.2, 0.5, 0.8]
+
+quantiles = p.predict(data=data, horizon=horizon, cls=cls)
+print(quantiles)
+```
+
+This example will return:
+```
+{
+    'quantiles':{
+        '0.2': 442.09145288443017,
+        '0.5': 508.35032746021085,
+        '0.8': 585.0916378202178
+    }
+}
+```
+
+`your_api_key` must be replaced by your Rapid Api key that you can obtain [here](https://rapidapi.com/candyup/api/predict7/pricing). 
+
+## Inputs of the `predict` function
+|Name|Type|Description|
+|-|-|-|
+|`data`|`array`|A data set of historical values: stock prices, financial indices, cryptocurrency prices, sensor dataâ€¦ or any other time-series data|
+|`horizon`|`integer`|A projection horizon which corresponds to the length of time for which you want to project the data set. It needs to be expressed in the same time base as the data set|
+|`cls`|`array`|One or several confidence levels for the quantiles you want to retrieve (between 0.0 to 1.0)|
+
+The quantile function of a probability distribution is the inverse of the cumulative distribution function:
+â†’ Q(x) = F^-1^(x) = inf{y: x â‰¤ F(y)}  where F(x) = P(X â‰¤ x)
+
+## Response of the `predict` function
+The result is a JSON object. The JSON object has keys that correspond to the quantiles at confidence levels specified as input.
+
+# Practical example
+Here's an example code in Python to retrieve quartiles of the 30-day apple stock projection, using 10-year daily history:
+
+```
+from predictapi import Predictor
+import yfinance as yf
+
+data_df = yf.download("AAPL", start="2012-12-31", end="2022-12-31", interval="1d", progress=False)
+data = data_df["Close"].tolist()
+
+print("The number of values in the historical data set is:", len(data))
+print("The last value which would be projected is:", data[-1])
+
+horizon = 30
+cls = [0.25, 0.5, 0.75]
+
+p = Predictor(api_key="f61f619a9fmsh4adb0398b0c87a9p1231bajsn76ce266ca8f5")
+
+quantiles = p.predict(data=data, horizon=horizon, cls=cls)
+
+print(f'The 3 quartiles at horizon {horizon} days are:', [q for cl, q in quantiles.items()])
+```
+
+Here is the result:
+
+```
+The number of values in the historical data set is: 2519
+The last value which would be projected is: 129.92999267578125
+The 3 quartiles at horizon 30 days are: [124.61287199924642, 133.19434735827977, 142.13910859087554]
+```
