@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/phfetch/__init__.py
+src/phfetch/core.py
+src/phfetch/query.py
+src/phfetch/utils.py
+src/phfetch.egg-info/PKG-INFO
+src/phfetch.egg-info/SOURCES.txt
+src/phfetch.egg-info/dependency_links.txt
+src/phfetch.egg-info/requires.txt
+src/phfetch.egg-info/top_level.txt
