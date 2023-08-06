@@ -1,0 +1,8 @@
+mads_datasets/__init__.py,sha256=XZAp241AV_OWcA7aagc64HHqTR9pgbSHSonsLwT2TNo,164
+mads_datasets/datasetfactory.py,sha256=FFhNjS7uKAgokmUiAgkUSCfnP42YB_qmdhPiII2jpAA,15296
+mads_datasets/datasets.py,sha256=UBjtudvDothTEEfdlI8qkProh6rAATT5CTfBIFoK1bU,4995
+mads_datasets/datatools.py,sha256=DOhB3-eXTucB-BAHPfEUu1fPI59720BnPLfdWzgTQI8,4778
+mads_datasets/settings.py,sha256=xWV-AFlxP2UoIXNLIXxybEBbOYnlu7K7C5Zjqy6W1Ig,3251
+mads_datasets-0.1.2.dist-info/METADATA,sha256=lRnOd0PlhP9OCmpIbjQIJY_itffLZLhIdOrIItRSmMM,778
+mads_datasets-0.1.2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+mads_datasets-0.1.2.dist-info/RECORD,,
