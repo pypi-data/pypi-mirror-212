@@ -1,0 +1,48 @@
+[project]
+name = "pylena"
+description = "Image processing library"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "EPITA Research Laboratory (LRE)", email = "baptiste.esteban@epita.fr"}
+]
+classifiers = [
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: C++",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Scientific/Engineering :: Image Processing"
+]
+dependencies = [
+    "numpy",
+    "numba"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+packaging = ["auditwheel", "patchelf"]
+doc = ["sphinx", "sphinx_rtd_theme", "sphinx_gallery", "scikit-image", "matplotlib", "imagecodecs>=2021.11.20", "pandas", "sphinxcontrib-bibtex"]
+tests = ["pytest"]
+
+[project.urls]
+homepage = "http://olena.pages.lre.epita.fr/pylena/"
+documentation = "http://olena.pages.lre.epita.fr/pylena/"
+repository = "https://gitlab.lre.epita.fr/olena/pylena"
+"Bug Tracker" = "https://gitlab.lre.epita.fr/olena/pylena/-/issues"
+changelog = "http://olena.pages.lre.epita.fr/pylena/changelog.html"
+
+[tool.setuptools.dynamic]
+version = {attr = "pylena._version.__version__"}
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel", "conan==2.0.4", "cmake>=3.15.0", "pybind11==2.9.2"]
+build-backend = "setuptools.build_meta"
+
+# Development tools
+
+[tool.coverage.report]
+exclude_lines = [
+    "# coverage: disable"
+]
