@@ -1,0 +1,14 @@
+bas_geoplot/__init__.py,sha256=MNBS7W7JKkwWvAyhEjchU8JE_QJ6wuSLhrox3ZE8TLg,194
+bas_geoplot/cli.py,sha256=Y90Y_feQ2YaER723xMe9fsijcX-aJhpXC3s5QVctn4Q,5358
+bas_geoplot/interactive.py,sha256=yLSdv2tD0B4I-Brp7l5-FpcHE9mK0rmlfBfUxaAVmXc,34748
+bas_geoplot/static.py,sha256=bmuAsb_YjKzOHHYBlRVnUqp9HAhSDnvULmABn-UYzJY,9658
+bas_geoplot/utils.py,sha256=TBAOai4YLfcDHAIf1KNrcQb8vXwGtsImFRyXbUJeF1w,2201
+bas_geoplot/config/interactive.json,sha256=rJdUcwvurlJrMd1DUTACrEVERMRt2IDRFTQmXa-L0Ho,7342
+bas_geoplot/config/static.json,sha256=D8FacphIL0eNwd3ZstdPylYnd-hxtxyE7zYQXPi8e-Q,4536
+bas_geoplot-0.0.19.data/data/interactive.json,sha256=rJdUcwvurlJrMd1DUTACrEVERMRt2IDRFTQmXa-L0Ho,7342
+bas_geoplot-0.0.19.data/data/static.json,sha256=D8FacphIL0eNwd3ZstdPylYnd-hxtxyE7zYQXPi8e-Q,4536
+bas_geoplot-0.0.19.dist-info/METADATA,sha256=NMztwpHrNG9I0kI5WZWuyOXkeyWgtSLmyIZz5m35KE8,3099
+bas_geoplot-0.0.19.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bas_geoplot-0.0.19.dist-info/entry_points.txt,sha256=c01L1eTuheeToGeWPpegPYnZtsMcl0jakpFF88jZeDQ,61
+bas_geoplot-0.0.19.dist-info/top_level.txt,sha256=mg4HCwsVWXQWNP25JJoXhd8NzhLJ2ZV9X1yUYpHvtJA,12
+bas_geoplot-0.0.19.dist-info/RECORD,,
