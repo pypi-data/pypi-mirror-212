@@ -1,0 +1,3 @@
+[console_scripts]
+sb = slackabet.cli:main
+slackabet = slackabet.cli:main
