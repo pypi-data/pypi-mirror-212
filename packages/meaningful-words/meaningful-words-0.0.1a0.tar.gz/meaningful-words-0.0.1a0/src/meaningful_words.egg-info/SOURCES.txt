@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/meaningful_words/__init__.py
+src/meaningful_words/functions.py
+src/meaningful_words.egg-info/PKG-INFO
+src/meaningful_words.egg-info/SOURCES.txt
+src/meaningful_words.egg-info/dependency_links.txt
+src/meaningful_words.egg-info/requires.txt
+src/meaningful_words.egg-info/top_level.txt
