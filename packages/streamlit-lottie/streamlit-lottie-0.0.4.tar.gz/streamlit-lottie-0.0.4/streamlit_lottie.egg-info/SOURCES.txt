@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+streamlit_lottie/__init__.py
+streamlit_lottie/url.py
+streamlit_lottie/utils.py
+streamlit_lottie.egg-info/PKG-INFO
+streamlit_lottie.egg-info/SOURCES.txt
+streamlit_lottie.egg-info/dependency_links.txt
+streamlit_lottie.egg-info/requires.txt
+streamlit_lottie.egg-info/top_level.txt
