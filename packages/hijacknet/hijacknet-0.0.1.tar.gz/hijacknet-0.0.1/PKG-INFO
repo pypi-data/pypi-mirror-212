@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: hijacknet
+Version: 0.0.1
+Summary: Simple line-based networking
+Project-URL: Documentation, https://github.com/unknown/hijacknet#readme
+Project-URL: Issues, https://github.com/unknown/hijacknet/issues
+Project-URL: Source, https://github.com/unknown/hijacknet
+Author-email: Cyclic3 <cyclic3.git@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# hijacknet
+
+[![PyPI - Version](https://img.shields.io/pypi/v/hijacknet.svg)](https://pypi.org/project/hijacknet)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hijacknet.svg)](https://pypi.org/project/hijacknet)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install hijacknet
+```
+
+## License
+
+`hijacknet` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
