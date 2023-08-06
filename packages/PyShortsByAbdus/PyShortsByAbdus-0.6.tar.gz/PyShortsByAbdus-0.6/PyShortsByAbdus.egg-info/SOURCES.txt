@@ -1,0 +1,9 @@
+setup.py
+PyShortsByAbdus.egg-info/PKG-INFO
+PyShortsByAbdus.egg-info/SOURCES.txt
+PyShortsByAbdus.egg-info/dependency_links.txt
+PyShortsByAbdus.egg-info/requires.txt
+PyShortsByAbdus.egg-info/top_level.txt
+pyshorts/__init__.py
+pyshorts/funcs.py
+pyshorts/non_use_funcs.py
