@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+alegrapy/__init__.py
+alegrapy/actions.py
+alegrapy/contacts.py
+alegrapy/invoices.py
+alegrapy/items.py
+alegrapy/payments.py
+alegrapy/session.py
+alegrapy.egg-info/PKG-INFO
+alegrapy.egg-info/SOURCES.txt
+alegrapy.egg-info/dependency_links.txt
+alegrapy.egg-info/requires.txt
+alegrapy.egg-info/top_level.txt
