@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+titulosuagrm/__init__.py
+titulosuagrm/consulta.py
+titulosuagrm.egg-info/PKG-INFO
+titulosuagrm.egg-info/SOURCES.txt
+titulosuagrm.egg-info/dependency_links.txt
+titulosuagrm.egg-info/requires.txt
+titulosuagrm.egg-info/top_level.txt
