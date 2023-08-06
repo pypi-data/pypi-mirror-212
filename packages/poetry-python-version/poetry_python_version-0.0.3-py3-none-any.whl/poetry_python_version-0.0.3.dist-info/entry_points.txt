@@ -1,0 +1,3 @@
+[poetry.plugin]
+poetry_python_version=poetry_python_version.plugins:PythonVersionPlugin
+
