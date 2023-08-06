@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pidtoo
+Version: 0.0.1
+Summary: A Python Library for resolving FHIR Identities and Entities
+Home-page: https://pidtoo.com
+Author: Ron Sweeney
+Author-email: ron@pidtoo.com
+Project-URL: Docs, https://docs.pidttoo.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pidtoo
+Python Package for Resolving Duplicate Entities in FHIR Repositories
+
+
+
