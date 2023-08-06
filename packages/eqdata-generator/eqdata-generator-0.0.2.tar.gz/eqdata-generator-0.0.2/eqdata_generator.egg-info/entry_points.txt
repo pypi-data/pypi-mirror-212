@@ -1,0 +1,2 @@
+[console_scripts]
+eqd-generate = eqdata_generator.cli:cli
