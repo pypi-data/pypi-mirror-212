@@ -1,0 +1,7 @@
+fastnumbers
+fire
+pyfromroot
+pytermgui
+readchar
+scipy
+sshkeyboard
