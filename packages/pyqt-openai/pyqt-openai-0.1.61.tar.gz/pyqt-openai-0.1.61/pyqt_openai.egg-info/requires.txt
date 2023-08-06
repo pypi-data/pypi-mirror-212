@@ -1,0 +1,7 @@
+PyQt5>=5.14
+PySide6
+qtpy
+aiohttp
+openai
+pyperclip
+stability_sdk
