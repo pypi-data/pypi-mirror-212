@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+isikukood/__init__.py
+isikukood/assertions.py
+isikukood/errors.py
+isikukood/functions.py
+isikukood/isikukood.py
+isikukood.egg-info/PKG-INFO
+isikukood.egg-info/SOURCES.txt
+isikukood.egg-info/dependency_links.txt
+isikukood.egg-info/requires.txt
+isikukood.egg-info/top_level.txt
