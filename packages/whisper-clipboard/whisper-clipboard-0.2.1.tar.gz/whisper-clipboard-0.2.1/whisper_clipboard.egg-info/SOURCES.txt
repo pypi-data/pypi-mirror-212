@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+transcribe.py
+whisper_clipboard.egg-info/PKG-INFO
+whisper_clipboard.egg-info/SOURCES.txt
+whisper_clipboard.egg-info/dependency_links.txt
+whisper_clipboard.egg-info/entry_points.txt
+whisper_clipboard.egg-info/requires.txt
+whisper_clipboard.egg-info/top_level.txt
