@@ -1,0 +1,120 @@
+from . import db
+from jinja2 import Template
+from typing import Union, Iterable
+
+COMMON_COLS = ['id', 'create_by', 'update_by', 'create_time', 'update_time', 'del_flag']
+
+
+class Coder:
+    comma1 = ','
+    comma2 = '，'
+    sql = '''
+    SELECT column_name, data_type, character_maximum_length, NUMERIC_precision, NUMERIC_scale, column_key FROM information_schema.columns
+     WHERE table_schema = (SELECT DATABASE())
+       AND table_name = ? 
+    '''
+    template = '''from mysqlx.orm import Model
+from decimal import Decimal
+from datetime import date, datetime
+  
+{% for meta in metas %}
+class {{meta.class_name}}(Model):
+    __pk__ = '{{meta.pk}}'
+    __table__ = '{{meta.table}}'
+    
+    def __init__(self,{% for item in meta.columns %}{% if loop.last %} {{item.COLUMN_NAME}}: {{item.DATA_TYPE}} = None{% else %} {{item.COLUMN_NAME}}: {{item.DATA_TYPE}} = None,{% endif %}{% endfor %}): 
+        super().__init__({% for super_column in meta.super_columns %}{% if loop.first %}{{super_column}}={{super_column}}{% else %}, {{super_column}}={{super_column}}{% endif %}{% endfor %}) {% for item in meta.self_columns %}
+        self.{{item.COLUMN_NAME}} = {{item.COLUMN_NAME}} {% endfor %}
+        
+{% endfor %}
+'''
+
+    def __init__(self, user: str, password: str, database: str, host='127.0.0.1', port=3306, use_unicode=True, pool_size=1, show_sql=True, **kwargs):
+        db.init_db(user, password, database, host, port, pool_size, use_unicode, show_sql, **kwargs)
+
+    def generate_with_schema(self, schema: str = None, path: str = None):
+        if schema:
+            db.execute('use %s' % schema)
+        tables = db.select('show tables')
+        tables = [table['Tables_in_investment'] for table in tables]
+        self.generate_with_tables(tables=tables, path=path)
+
+    def generate_with_tables(self, tables: Union[str, Iterable[str]], path: str = None):
+        metas = None
+        only_one_table = False
+        if isinstance(tables, str):
+            if self.comma1 in tables:
+                tables = tables.split(self.comma1)
+            elif self.comma2 in tables:
+                tables = tables.split(self.comma2)
+            else:
+                only_one_table = True
+                metas = [self._get_table_meta(tables)]
+
+        if not only_one_table:
+            if not isinstance(tables, set):
+                tables = set(tables)
+            metas = [self._get_table_meta(table.strip()) for table in tables]
+
+        no_pk_tables = [meta for meta in metas if isinstance(meta, str)]
+        if len(no_pk_tables) > 0:
+            print("There isn't primary key in the tables %s, it will not generate model class." % no_pk_tables)
+
+        metas = [meta for meta in metas if isinstance(meta, dict)]
+        if len(metas) > 0:
+            self._generate({'metas': metas}, path)
+
+    def _get_table_meta(self, table: str):
+        pk = None
+        super_columns = []
+        columns = db.do_select(self.sql, table)
+        for col in columns:
+            if col['COLUMN_KEY'] == 'PRI':
+                pk = col['COLUMN_NAME']
+
+            if col['COLUMN_NAME'] in COMMON_COLS:
+                super_columns.append(col['COLUMN_NAME'])
+
+            if col['DATA_TYPE'] in ('tinyint', 'bigint'):
+                col['DATA_TYPE'] = 'int'
+            elif col['DATA_TYPE'] == 'double':
+                col['DATA_TYPE'] = 'float'
+            elif col['DATA_TYPE'] == 'decimal':
+                col['DATA_TYPE'] = 'Decimal'
+            elif col['DATA_TYPE'] in ('char', 'varchar', 'text'):
+                col['DATA_TYPE'] = 'str'
+
+        if pk is None:
+            return table
+
+        class_name = self._get_class_name(table)
+        return {
+            'pk': pk,
+            'table': table,
+            'class_name': class_name,
+            'columns': columns,
+            'self_columns': [col for col in columns if col['COLUMN_NAME'] not in COMMON_COLS],
+            'super_columns': super_columns
+        }
+
+    def _generate(self, metas: dict, path: str):
+        tpl = Template(self.template)
+        r = tpl.render(**metas)
+        if path:
+            suffix = '.py'
+            path = path if path.endswith(suffix) else path + suffix
+            with open(path, 'w', encoding='utf-8') as f:
+                f.write(r)
+            print('Model文件已生成：%s' % path)
+        else:
+            print(r)
+
+    @staticmethod
+    def _get_class_name(table):
+        if '_' not in table:
+            return table.capitalize()
+
+        names = table.split('_')
+        names = [name.capitalize() for name in names]
+        return ''.join(names)
+
