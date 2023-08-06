@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: sportradar-api
+Version: 0.2.6
+Summary: Lightweight wrapper for Sportradar API
+Home-page: https://felipeall.github.io/sportradar-api
+License: MIT
+Author: Felipe Allegretti
+Author-email: felipe@allegretti.me
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: flatten-json (==0.1.13)
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: requests (==2.28.2)
+Project-URL: Repository, https://github.com/felipeall/sportradar-api
+Description-Content-Type: text/markdown
+
+# Sportradar API
+Lightweight wrapper for [Sportradar API](https://developer.sportradar.com/docs/read/Home)
+
+## Set up
+1. Register on [Sportradar Developer](https://developer.sportradar.com/member/register)
+2. Generate an API Key
+
+## Installation
+````bash
+pip install sportradar-api
+````
+
+## Usage
+
+````python
+from sportradar_api import SoccerExtended
+
+sportradar = SoccerExtended(api_key='SPORTRADAR_API_KEY')
+````
