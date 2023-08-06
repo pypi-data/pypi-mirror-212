@@ -1,0 +1,3 @@
+pytelegrambotapi
+paramiko
+pyyaml
