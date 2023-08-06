@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: streamlit-disqus-darkmode
+Version: 0.11
+Summary: A streamlit component to embed Disqus in your applications.
+Home-page: https://github.com/leonfresh/streamlit-disqus-darkmode
+Author: leonfresh
+Author-email: 
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ðŸ’¬ Streamlit Disqus
+
+[![GitHub][github_badge]][github_link] [![PyPI][pypi_badge]][pypi_link]
+
+## Installation
+
+```sh
+pip install streamlit-disqus-darkmode
+```
+
+## Getting started
+
+```python
+from streamlit_disqus_darkmode import st_disqus
+
+st_disqus("streamlit-disqus-demo")
+```
+
+## Demo
+
+[![Open in Streamlit][share_badge]][share_link]
+
+[![Preview][share_img]][share_link]
+
+[share_badge]: https://static.streamlit.io/badges/streamlit_badge_black_white.svg
+[share_link]: https://share.streamlit.io/okld/streamlit-gallery/main?p=disqus
+[share_img]: https://raw.githubusercontent.com/okld/streamlit-disqus/main/preview.png
+[github_badge]: https://badgen.net/badge/icon/GitHub?icon=github&color=black&label
+[github_link]: https://github.com/okld/streamlit-disqus
+[pypi_badge]: https://badgen.net/pypi/v/streamlit-disqus?icon=pypi&color=black&label
+[pypi_link]: https://pypi.org/project/streamlit-disqus
