@@ -1,0 +1,14 @@
+numpy
+scipy
+matplotlib
+obspy
+sigpropy>=1.0.0
+pandas
+swprepost
+PyQt5
+
+[dev]
+coverage
+tox
+sphinx
+sphinx_rtd_theme
