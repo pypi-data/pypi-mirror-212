@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: skcyto
+Version: 0.0.1
+Summary: "Flow cytometry for sk-learn
+Home-page: https://github.com/MSHelm/skcyto
+Download-URL: https://github.com/MSHelm/skcyto
+Maintainer: Martin Helm
+Maintainer-email: martin@bio-ai.org
+License: new BSD
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: tests
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+.. -*- mode: rst -*-
+
+|Travis|_ |AppVeyor|_ |Codecov|_ |CircleCI|_ |ReadTheDocs|_
+
+.. |Travis| image:: https://travis-ci.org/scikit-learn-contrib/project-template.svg?branch=master
+.. _Travis: https://travis-ci.org/scikit-learn-contrib/project-template
+
+.. |AppVeyor| image:: https://ci.appveyor.com/api/projects/status/coy2qqaqr1rnnt5y/branch/master?svg=true
+.. _AppVeyor: https://ci.appveyor.com/project/glemaitre/project-template
+
+.. |Codecov| image:: https://codecov.io/gh/scikit-learn-contrib/project-template/branch/master/graph/badge.svg
+.. _Codecov: https://codecov.io/gh/scikit-learn-contrib/project-template
+
+.. |CircleCI| image:: https://circleci.com/gh/scikit-learn-contrib/project-template.svg?style=shield&circle-token=:circle-token
+.. _CircleCI: https://circleci.com/gh/scikit-learn-contrib/project-template/tree/master
+
+.. |ReadTheDocs| image:: https://readthedocs.org/projects/skflowsom/badge/?version=latest
+.. _ReadTheDocs: https://skflowsom.readthedocs.io/en/latest/?badge=latest
+
+sk-cyto - Flow cytometry algorithms for scikit-learn
+============================================================
+
+
+**sk-cyto** brings flow cytometry to scikit-learn.
+
+.. _documentation: https://skcyto.readthedocs.io/en/latest/quick_start.html
+
+
+
+

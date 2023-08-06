@@ -1,0 +1,2 @@
+skcyto/logicle_c.cpython-310-x86_64-linux-gnu.so
+skflowsom/logicle_c.cpython-310-x86_64-linux-gnu.so
