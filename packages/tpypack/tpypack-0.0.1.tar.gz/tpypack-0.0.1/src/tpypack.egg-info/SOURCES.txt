@@ -1,0 +1,9 @@
+pyproject.toml
+setup.cfg
+setup.py
+src/tpypack/__init__.py
+src/tpypack/example.py
+src/tpypack.egg-info/PKG-INFO
+src/tpypack.egg-info/SOURCES.txt
+src/tpypack.egg-info/dependency_links.txt
+src/tpypack.egg-info/top_level.txt
