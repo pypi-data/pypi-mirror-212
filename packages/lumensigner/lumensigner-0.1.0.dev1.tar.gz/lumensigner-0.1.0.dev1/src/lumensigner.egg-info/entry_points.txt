@@ -1,0 +1,3 @@
+[console_scripts]
+lumensigner = lumensigner.cli:start
+
