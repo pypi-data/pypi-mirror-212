@@ -1,0 +1,4 @@
+sphinx
+furo==2023.5.20
+myst_parser
+sphinx-autoapi>=2.1.0, <3

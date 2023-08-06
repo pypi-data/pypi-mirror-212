@@ -1,0 +1,23 @@
+logging_level: "INFO"
+source_path: "/home/denis/PycharmProjects/jekyll-to-hugo/my_test_data/_posts"
+output_path: "/home/denis/Projects/NucuLabsDev/content/posts"
+converter: "wordpress_markdown_converter"
+converter_options:
+  enable_regex_heuristics: true
+  author_rewrite: "Denis Nuțiu"
+  links_rewrite:
+    - source: "http://localhost/"
+      target: "/"
+    - source: "https://nuculabs.wordpress.com/"
+      target: "https://nuculabs.dev/posts/"
+    - source: "https://twitter.com/metonymyqt"
+      target: "https://twitter.com/nuculabs"
+  header_fields_drop:
+    - restapi_import_id
+    - original_post_id
+    - timeline_notification
+    - wordads_ufa
+    - spay_email
+    - amp_status
+    - advanced_seo_description
+    - publicize_twitter_user
