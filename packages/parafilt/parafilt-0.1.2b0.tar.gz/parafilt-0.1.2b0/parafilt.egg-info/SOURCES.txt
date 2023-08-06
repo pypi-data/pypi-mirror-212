@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+parafilt/__init__.py
+parafilt/base.py
+parafilt/filters.py
+parafilt/version.py
+parafilt.egg-info/PKG-INFO
+parafilt.egg-info/SOURCES.txt
+parafilt.egg-info/dependency_links.txt
+parafilt.egg-info/requires.txt
+parafilt.egg-info/top_level.txt
