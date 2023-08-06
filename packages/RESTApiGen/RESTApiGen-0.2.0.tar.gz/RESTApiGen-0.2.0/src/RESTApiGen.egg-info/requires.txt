@@ -1,0 +1,9 @@
+pymysql>=1.0.2
+inflect
+flask
+flask-sqlalchemy
+flask-restful
+flask-blueprint
+flask-marshmallow
+marshmallow-sqlalchemy
+cryptography
