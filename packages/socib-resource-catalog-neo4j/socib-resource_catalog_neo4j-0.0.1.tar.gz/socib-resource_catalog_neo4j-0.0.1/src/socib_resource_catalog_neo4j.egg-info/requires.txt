@@ -1,0 +1,15 @@
+appdirs
+avro
+beautifulsoup4
+coloredlogs
+everett
+everett[ini]
+everett[yaml]
+neo4j
+neomodel
+orcid
+parquet
+profilehooks
+requests
+urldecode
+validators

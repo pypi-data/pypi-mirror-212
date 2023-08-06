@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+src/socib/__init__.py
+src/socib/test_example resource_webpage.py
+src/socib/test_example_onlyone_resource_type.py
+src/socib_resource_catalog_neo4j.egg-info/PKG-INFO
+src/socib_resource_catalog_neo4j.egg-info/SOURCES.txt
+src/socib_resource_catalog_neo4j.egg-info/dependency_links.txt
+src/socib_resource_catalog_neo4j.egg-info/requires.txt
+src/socib_resource_catalog_neo4j.egg-info/top_level.txt

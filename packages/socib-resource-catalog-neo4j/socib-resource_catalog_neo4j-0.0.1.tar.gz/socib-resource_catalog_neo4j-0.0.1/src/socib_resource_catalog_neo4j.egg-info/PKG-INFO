@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: socib-resource-catalog-neo4j
+Version: 0.0.1
+Summary: Package supporting conceptual model of SOCIB over neo4j
+Author: Miguel Angel Alcalde Velado
+Author-email: maalcalde@socib.es
+License: SOCIB - SOFTWARE LICENSE
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
