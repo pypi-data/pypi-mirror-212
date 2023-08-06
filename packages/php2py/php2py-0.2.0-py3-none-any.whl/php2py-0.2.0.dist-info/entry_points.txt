@@ -1,0 +1,3 @@
+[console_scripts]
+php2py=php2py.cli:cli
+
