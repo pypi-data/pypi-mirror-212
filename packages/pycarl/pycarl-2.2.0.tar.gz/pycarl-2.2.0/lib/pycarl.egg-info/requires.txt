@@ -1,0 +1,4 @@
+
+[doc]
+Sphinx
+sphinx-bootstrap-theme
