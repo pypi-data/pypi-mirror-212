@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: composabl-dev
+Version: 0.2.1.dev8
+Summary: The official release of the Composabl Python SDK.
+Home-page: https://composabl.ai/
+Author: Composabl
+Author-email: info@composabl.ai
+License: Closed Source
+Requires-Python: >=3.7
+Requires-Dist: networkx (==3.1)
+Requires-Dist: torch (==2.0.1)
+Requires-Dist: dapr (==1.10.0)
+Requires-Dist: docker (==6.0.1)
+Requires-Dist: grpcio (==1.51.3)
+Requires-Dist: grpcio-tools (==1.51.3)
+Requires-Dist: grpcio-reflection (==1.51.3)
+Requires-Dist: kubernetes (==26.1.0)
+Requires-Dist: pytest-asyncio (==0.21.0)
+Requires-Dist: autorom[accept-rom-license] (==0.4.2)
+Requires-Dist: gymnasium[atari,box2d] (==0.26.3)
+Requires-Dist: ray[rllib] (==2.4.0)
+
+Composabl empowers your Subject Matter experts to build and deploy Autonomous Agents.
