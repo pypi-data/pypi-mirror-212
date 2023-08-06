@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/decryptogame/__init__.py
+src/decryptogame/game.py
+src/decryptogame.egg-info/PKG-INFO
+src/decryptogame.egg-info/SOURCES.txt
+src/decryptogame.egg-info/dependency_links.txt
+src/decryptogame.egg-info/top_level.txt
+tests/test_game.py
