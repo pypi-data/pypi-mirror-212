@@ -1,0 +1,2 @@
+allauth
+dj_rest_auth
