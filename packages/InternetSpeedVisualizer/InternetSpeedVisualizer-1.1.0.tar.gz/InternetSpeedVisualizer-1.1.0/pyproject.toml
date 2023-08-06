@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "InternetSpeedVisualizer"
+version = "1.1.0"
+dependencies = [
+    "matplotlib",
+    "pandas"
+]
+authors = [
+  { name="Andreas Menzel", email="mail@andreas-menzel.com" },
+]
+description = "InternetSpeedVisualizer is a powerful tool designed to help you visualize and analyze your Internet speed data, collected using the InternetSpeedLogger. "
+readme = "README.md"
+keywords = [
+    "speedtest", "speedtest_cli",
+    "internet", "internet speed",
+    "logger", "monitor", "visualizer", "visualize"
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+InternetSpeedVisualizer = "InternetSpeedVisualizer.InternetSpeedVisualizer:main"
+
+[project.urls]
+"Repository" = "https://github.com/Andreas-Menzel/InternetSpeedVisualizer"
+"Bug Tracker" = "https://github.com/Andreas-Menzel/InternetSpeedVisualizer/issues"

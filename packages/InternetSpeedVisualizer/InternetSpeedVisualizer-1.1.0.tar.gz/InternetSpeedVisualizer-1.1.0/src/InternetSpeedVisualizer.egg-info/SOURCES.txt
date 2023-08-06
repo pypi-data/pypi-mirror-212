@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/InternetSpeedVisualizer/InternetSpeedVisualizer.py
+src/InternetSpeedVisualizer/__init__.py
+src/InternetSpeedVisualizer.egg-info/PKG-INFO
+src/InternetSpeedVisualizer.egg-info/SOURCES.txt
+src/InternetSpeedVisualizer.egg-info/dependency_links.txt
+src/InternetSpeedVisualizer.egg-info/entry_points.txt
+src/InternetSpeedVisualizer.egg-info/requires.txt
+src/InternetSpeedVisualizer.egg-info/top_level.txt
