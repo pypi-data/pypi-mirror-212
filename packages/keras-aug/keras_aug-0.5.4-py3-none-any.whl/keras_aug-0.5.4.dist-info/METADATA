@@ -1,0 +1,595 @@
+Metadata-Version: 2.1
+Name: keras-aug
+Version: 0.5.4
+Summary: A library that includes pure TF/Keras preprocessing and augmentation layers
+Author: Hongyu, Chiu (james77777778)
+License: Copyright 2023 The KerasAug Authors. All rights reserved.
+        
+                                         Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright 2015, The TensorFlow Authors.
+           Copyright 2022, The KerasCV Authors.
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: homepage, https://github.com/james77777778/keras-aug
+Project-URL: repository, https://github.com/james77777778/keras-aug
+Project-URL: documentation, https://kerasaug.readthedocs.io/en/latest/
+Keywords: tensorflow,keras,keras-cv,preprocessing,augmentation
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pycocotools
+Requires-Dist: tensorflow
+Requires-Dist: keras-cv
+Provides-Extra: examples
+Requires-Dist: matplotlib ; extra == 'examples'
+Requires-Dist: opencv-python ; extra == 'examples'
+Requires-Dist: tensorflow-datasets ; extra == 'examples'
+Provides-Extra: tests
+Requires-Dist: ruff ; extra == 'tests'
+Requires-Dist: black[jupyter] ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-xdist[psutil] ; extra == 'tests'
+
+<!-- markdownlint-disable MD033 -->
+# KerasAug
+
+![Python](https://img.shields.io/badge/python-v3.8.0+-success.svg)
+![Tensorflow](https://img.shields.io/badge/tensorflow-v2.12.0+-success.svg)
+![KerasCV](https://img.shields.io/badge/keras_cv-v0.5.0+-success.svg)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/james77777778/keras-aug/actions.yml?label=tests)](https://github.com/james77777778/keras-aug/actions/workflows/actions.yml?query=branch%3Amain++)
+[![codecov](https://codecov.io/gh/james77777778/keras-aug/branch/main/graph/badge.svg?token=81ELI3VH7H)](https://codecov.io/gh/james77777778/keras-aug)
+[![PyPI](https://img.shields.io/pypi/v/keras-aug)](https://pypi.org/project/keras-aug/)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/keras-aug)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/james77777778/keras-aug/issues)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://james77777778-keras-aug-streamlit-appapp-mxd7v1.streamlit.app/)
+
+## Description
+
+KerasAug is a library that includes pure TF/Keras preprocessing and augmentation layers, providing support for various data types such as images, labels, bounding boxes, segmentation masks, and more.
+
+<div align="center">
+<img width="45%" src="https://user-images.githubusercontent.com/20734616/238531125-f0a07f50-423b-4be2-9dcd-a3cc459a261c.gif"> <img width="45%" src="https://user-images.githubusercontent.com/20734616/238531295-22cd5567-0709-46d5-bf31-7baad05b91d2.gif">
+</div>
+
+> **Note**
+> left: the visualization of the layers in KerasAug; right: the visualization of the YOLOV8 pipeline using KerasAug
+
+KerasAug aims to provide fast, robust and user-friendly preprocessing and augmentation layers, facilitating seamless integration with TensorFlow, Keras and KerasCV.
+
+KerasAug is:
+
+- 🚀 faster than [KerasCV](https://github.com/keras-team/keras-cv) which is an official Keras library
+- 🧰 supporting various data types, including **images, labels, bounding boxes, segmentation masks**, and more.
+- ❤️ dependent only on TensorFlow and KerasCV
+- 🌟 seamlessly integrating with the `tf.data` and `tf.keras.Model` APIs
+- 🔥 compatible with GPU
+
+Check out the demo website powered by Streamlit:
+
+<a href="https://james77777778-keras-aug-streamlit-appapp-mxd7v1.streamlit.app/"><img width="50%" align="right" src="https://user-images.githubusercontent.com/20734616/242836830-bd0a457d-fa6f-410c-a267-af628f5bb5ec.JPG"></a>
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://james77777778-keras-aug-streamlit-appapp-mxd7v1.streamlit.app/)
+
+- Apply a transformation to the default or uploaded image
+- Adjust the arguments of the specified layer
+
+## Why KerasAug?
+
+1. KerasAug is generally faster than KerasCV
+
+    > RandomCropAndResize in KerasAug exhibits a remarkable speed-up of **+1342%** compared to KerasAug. See [keras-aug/benchmarks](https://github.com/james77777778/keras-aug/tree/main/benchmarks) for more details.
+
+2. The APIs of KerasAug are highly stable compared to KerasCV
+
+    > KerasCV struggles to reproduce the YOLOV8 training pipeline, whereas KerasAug executes it flawlessly. See [Quickstart](https://github.com/james77777778/keras-aug/tree/main#quickstart) for more details.
+
+3. KerasAug comes with built-in support for mixed precision training
+
+    > All layers in KerasAug can run with `tf.keras.mixed_precision.set_global_policy('mixed_float16')`
+
+4. KerasAug offers the functionality of sanitizing bounding boxes, ensuring the validity
+
+    > The current layers in KerasAug support the sanitizing process by incorporating the `bounding_box_min_area_ratio` and `bounding_box_max_aspect_ratio` arguments.
+
+    <div align="center"><img width="60%" src="https://user-images.githubusercontent.com/20734616/238520600-34f0b7b5-d9ee-4483-859a-51e9644ded4c.jpg"></div>
+
+    > **Note**
+    > The degenerate bounding boxes (those located at the bottom of the image) are removed.
+
+## Installation
+
+```bash
+pip install keras-aug keras-cv tensorflow --upgrade
+```
+
+> **Warning**
+> KerasAug is NOT compatible with `keras-cv < 0.5.0`.
+
+## Quickstart
+
+<details>
+<summary>Rock, Paper and Scissors Image Classification</summary>
+
+```python
+import keras_aug
+import keras_cv
+import tensorflow as tf
+import tensorflow_datasets as tfds
+from tensorflow import keras
+
+# Create a preprocessing pipeline using KerasAug
+BATCH_SIZE = 16
+NUM_CLASSES = 3
+augmenter = keras.Sequential(
+    [
+        keras_aug.layers.RandomFlip(),
+        keras_aug.layers.RandAugment(
+            value_range=(0, 255),
+            augmentations_per_image=3,
+            magnitude=15,  # [0, 30]
+            magnitude_stddev=0.15,
+        ),
+        keras_aug.layers.CutMix(),
+    ]
+)
+
+
+def preprocess_data(images, labels, augment=False):
+    labels = tf.one_hot(labels, NUM_CLASSES)
+    inputs = {"images": images, "labels": labels}
+    outputs = augmenter(inputs) if augment else inputs
+    return outputs["images"], outputs["labels"]
+
+
+train_dataset, test_dataset = tfds.load(
+    "rock_paper_scissors", as_supervised=True, split=["train", "test"]
+)
+train_dataset = (
+    train_dataset.batch(BATCH_SIZE)
+    .map(
+        lambda x, y: preprocess_data(x, y, augment=True),
+        num_parallel_calls=tf.data.AUTOTUNE,
+    )
+    .prefetch(tf.data.AUTOTUNE)
+)
+test_dataset = (
+    test_dataset.batch(BATCH_SIZE)
+    .map(preprocess_data, num_parallel_calls=tf.data.AUTOTUNE)
+    .prefetch(tf.data.AUTOTUNE)
+)
+
+# Create a model using a pretrained backbone
+backbone = keras_cv.models.EfficientNetV2Backbone.from_preset(
+    "efficientnetv2_b0_imagenet"
+)
+model = keras_cv.models.ImageClassifier(
+    backbone=backbone,
+    num_classes=NUM_CLASSES,
+    activation="softmax",
+)
+model.compile(
+    loss="categorical_crossentropy",
+    optimizer=keras.optimizers.Adam(learning_rate=1e-5),
+    metrics=["accuracy"],
+)
+
+# Train your model
+model.fit(
+    train_dataset,
+    validation_data=test_dataset,
+    epochs=8,
+)
+```
+
+```bash
+# KerasCV Quickstart
+...
+Epoch 8/8
+158/158 [==============================] - 39s 242ms/step - loss: 0.7930 - accuracy: 0.7171 - val_loss: 0.2488 - val_accuracy: 0.9946
+
+# KerasAug Quickstart
+...
+Epoch 8/8
+158/158 [==============================] - 34s 215ms/step - loss: 0.7680 - accuracy: 0.7567 - val_loss: 0.2639 - val_accuracy: 1.0000
+```
+
+KerasAug runs faster (215ms/step vs. 242ms/step) than KerasCV and achieves better performance.
+
+</details>
+
+<details>
+<summary>YOLOV8 Training Pipeline Demo</summary>
+
+```python
+import keras_aug
+import keras_cv
+import tensorflow as tf
+import tensorflow_datasets as tfds
+from tensorflow import keras
+
+BATCH_SIZE = 16
+OUTPUT_PATH = "output.png"
+IMAGE_HEIGHT = 640
+IMAGE_WIDTH = 640
+FILL_VALUE = 114
+
+
+def visualize_dataset(
+    inputs, value_range, rows, cols, bounding_box_format, path
+):
+    inputs = next(iter(inputs.take(1)))
+    images, bounding_boxes = inputs["images"], inputs["bounding_boxes"]
+    keras_cv.visualization.plot_bounding_box_gallery(
+        images,
+        value_range=value_range,
+        rows=rows,
+        cols=cols,
+        y_true=bounding_boxes,
+        scale=5,
+        font_scale=0.7,
+        bounding_box_format=bounding_box_format,
+        path=path,
+        dpi=150,
+    )
+
+
+def unpackage_raw_tfds_inputs(inputs, bounding_box_format):
+    image = inputs["image"]
+    boxes = keras_cv.bounding_box.convert_format(
+        inputs["objects"]["bbox"],
+        images=image,
+        source="rel_yxyx",
+        target=bounding_box_format,
+    )
+    bounding_boxes = {
+        "classes": tf.cast(inputs["objects"]["label"], dtype=tf.float32),
+        "boxes": tf.cast(boxes, dtype=tf.float32),
+    }
+    return {
+        "images": tf.cast(image, tf.float32),
+        "bounding_boxes": bounding_boxes,
+    }
+
+
+def load_pascal_voc(split, dataset, bounding_box_format):
+    ds = tfds.load(dataset, split=split, with_info=False, shuffle_files=False)
+    ds = ds.map(
+        lambda x: unpackage_raw_tfds_inputs(
+            x, bounding_box_format=bounding_box_format
+        ),
+        num_parallel_calls=tf.data.AUTOTUNE,
+    )
+    return ds
+
+
+augmenter = keras.Sequential(
+    layers=[
+        keras_aug.layers.Resize(
+            IMAGE_HEIGHT,
+            IMAGE_WIDTH,
+            pad_to_aspect_ratio=True,
+            padding_value=FILL_VALUE,
+            bounding_box_format="xywh",
+        ),
+        keras_aug.layers.Mosaic(
+            IMAGE_HEIGHT * 2,
+            IMAGE_WIDTH * 2,
+            fill_value=FILL_VALUE,
+            bounding_box_format="xywh",
+        ),
+        keras_aug.layers.RandomAffine(
+            translation_height_factor=0.1,
+            translation_width_factor=0.1,
+            zoom_height_factor=0.5,
+            same_zoom_factor=True,
+            fill_value=FILL_VALUE,
+            bounding_box_format="xywh",
+            bounding_box_min_area_ratio=0.1,
+            bounding_box_max_aspect_ratio=100.0,
+        ),
+        keras_aug.layers.Resize(
+            IMAGE_HEIGHT, IMAGE_WIDTH, bounding_box_format="xywh"
+        ),
+        # TODO: Blur, MedianBlur
+        keras_aug.layers.RandomApply(keras_aug.layers.Grayscale(), rate=0.01),
+        keras_aug.layers.RandomApply(
+            keras_aug.layers.RandomCLAHE(value_range=(0, 255)), rate=0.01
+        ),
+        keras_aug.layers.RandomHSV(
+            value_range=(0, 255),
+            hue_factor=0.015,
+            saturation_factor=0.7,
+            value_factor=0.4,
+        ),
+        keras_aug.layers.RandomFlip(bounding_box_format="xywh"),
+    ]
+)
+
+
+train_ds = load_pascal_voc(
+    split="train", dataset="voc/2007", bounding_box_format="xywh"
+)
+train_ds = train_ds.ragged_batch(BATCH_SIZE, drop_remainder=True)
+train_ds = train_ds.map(augmenter, num_parallel_calls=tf.data.AUTOTUNE)
+visualize_dataset(
+    train_ds,
+    bounding_box_format="xywh",
+    value_range=(0, 255),
+    rows=2,
+    cols=2,
+    path=OUTPUT_PATH,
+)
+```
+
+<div align="center"><img src="https://user-images.githubusercontent.com/20734616/238531295-22cd5567-0709-46d5-bf31-7baad05b91d2.gif">
+</div>
+
+</details>
+
+## Benchmark
+
+KerasAug is generally faster than KerasCV.
+
+| Type           | Layer                    | KerasAug | KerasCV   |        |
+|----------------|--------------------------|----------|-----------|--------|
+| Geometry       | RandomHFlip              | 2148     | 1859      | +15%   |
+|                | RandomVFlip              | 2182     | 2075      | +5%    |
+|                | RandomRotate             | 2451     | 1829      | +34%   |
+|                | RandomAffine             | 2141     | 1240      | +73%   |
+|                | RandomCropAndResize      | 3014     | 209       | +1342% |
+|                | Resize (224, 224)        | 2853     | 213       | +1239% |
+| Intensity      | RandomBrightness         | 3028     | 3097      | close  |
+|                | RandomContrast           | 2806     | 2645      | +6%    |
+|                | RandomBrightnessContrast | 3068     | 612       | +401%  |
+|                | RandomColorJitter        | 1932     | 1221      | +58%   |
+|                | RandomGaussianBlur       | 2758     | 207       | +1232% |
+|                | Grayscale                | 2841     | 2872      | close  |
+|                | Equalize                 | 206      | 139       | +48%   |
+|                | AutoContrast             | 3116     | 2991      | +4%    |
+|                | Posterize                | 2917     | 2445      | +19%   |
+|                | Solarize                 | 3025     | 2882      | +5%    |
+|                | Sharpness                | 2969     | 2915      | close  |
+| Regularization | RandomCutout             | 3222     | 3268      | close  |
+|                | RandomGridMask           | 947      | 197       | +381%  |
+| Mix            | CutMix                   | 2671     | 2445      | +9%    |
+|                | MixUp                    | 2593     | 1996      | +29%   |
+| Auto           | AugMix                   | 83       | X (Error) | X      |
+|                | RandAugment              | 282      | 249       | +13%   |
+
+> **Note**
+> FPS (frames per second)
+
+Please refer to [benchmarks/README.md](benchmarks/README.md) for more details.
+
+## Citing KerasAug
+
+```bibtex
+@misc{wood2022kerascv,
+  title={KerasCV},
+  author={Wood, Luke and Tan, Zhenyu and Stenbit, Ian and Bischof, Jonathan and Zhu, Scott and Chollet, Fran\c{c}ois and others},
+  year={2022},
+  howpublished={\url{https://github.com/keras-team/keras-cv}},
+}
+```
+
+```bibtex
+@misc{chiu2023kerasaug,
+  title={KerasAug},
+  author={Hongyu, Chiu},
+  year={2023},
+  howpublished={\url{https://github.com/james77777778/keras-aug}},
+}
+```
