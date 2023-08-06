@@ -1,0 +1,13 @@
+cookiecutter_maker/__init__.py,sha256=tgHKlPIz6r-ZTqcPmNtALatzcpwSxWTZKdiYoWc7lRs,263
+cookiecutter_maker/_version.py,sha256=wz7Y4SGYrAkGpS3AYBuUkK_zxtj3nrAEMOwuQ2PdpQ4,93
+cookiecutter_maker/api.py,sha256=zHHo7-4y_Fqf--wGztcDD2NpDlHN_T71OnPxxxinBJU,50
+cookiecutter_maker/exc.py,sha256=1O61woqsBIpU1QFwvTR-u7Yz7gWnFFUvt_4_U4giiNw,75
+cookiecutter_maker/maker.py,sha256=onRrDJHanC-EKi0LrpjZZ92ePM-Pfl5H966PjX75xfw,10718
+cookiecutter_maker/strutils.py,sha256=ySnmnCBxDm8grjqTg7X7XqVnCY-Ffjgmd7ZpeKUPh_U,1234
+cookiecutter_maker/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+cookiecutter_maker-0.3.1.dist-info/AUTHORS.rst,sha256=ROrEuLM7jAJnyn4FKyYG8vfwtw5hcpdBOwWnnBRzWTM,509
+cookiecutter_maker-0.3.1.dist-info/LICENSE.txt,sha256=kTw8O8KT4QrCg-n0F33j3lGESe-hyptI1pKxgr_zSLI,1128
+cookiecutter_maker-0.3.1.dist-info/METADATA,sha256=F82UmTlz6HgY5iGbs2bt0KhgSyKXPrGTZJecPW7PAh8,7048
+cookiecutter_maker-0.3.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+cookiecutter_maker-0.3.1.dist-info/top_level.txt,sha256=bVsUBOhd6OXbxvCd3jC2_07K9voWuzJxYPqwbqljsKI,19
+cookiecutter_maker-0.3.1.dist-info/RECORD,,
