@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: adam-sdk
+Version: 0.0.1
+Summary: SDK for robot Adam
+Home-page: https://github.com/Adam-Software/Adam-SDK
+Author: Adam Software
+Author-email: a@nesterof.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# Servo-Control-Manager
