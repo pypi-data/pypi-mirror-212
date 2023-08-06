@@ -1,0 +1,6 @@
+README.md
+setup.py
+nu.egg-info/PKG-INFO
+nu.egg-info/SOURCES.txt
+nu.egg-info/dependency_links.txt
+nu.egg-info/top_level.txt
