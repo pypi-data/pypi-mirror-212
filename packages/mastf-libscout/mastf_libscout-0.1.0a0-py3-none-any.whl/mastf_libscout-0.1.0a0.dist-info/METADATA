@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mastf-libscout
+Version: 0.1.0a0
+Summary: Modified fork of LibScout for integration into MAST-F
+Author-email: MatrixEditor <not@supported.com>
+Project-URL: Repository, https://github.com/MAST-Framework/LibScout
+Project-URL: Original Repository, https://github.com/reddr/LibScout
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+

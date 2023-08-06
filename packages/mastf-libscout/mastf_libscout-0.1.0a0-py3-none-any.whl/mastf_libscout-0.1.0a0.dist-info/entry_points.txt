@@ -1,0 +1,2 @@
+[console_scripts]
+LibScout = LibScout.cli.entry_points:run_from_command_line
