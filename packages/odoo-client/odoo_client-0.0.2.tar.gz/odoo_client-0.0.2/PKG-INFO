@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: odoo_client
+Version: 0.0.2
+Summary: Simple API wrapper for Odoo's External API
+Author: Michael Farwell
+Author-email: mike@lie-nielsen.com
+Keywords: python,odoo,api
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+
+Simple API wrapper for Odoo's External API
