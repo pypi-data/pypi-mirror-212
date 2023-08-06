@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_tag2text/__init__.py
+autodistill_tag2text.egg-info/PKG-INFO
+autodistill_tag2text.egg-info/SOURCES.txt
+autodistill_tag2text.egg-info/dependency_links.txt
+autodistill_tag2text.egg-info/requires.txt
+autodistill_tag2text.egg-info/top_level.txt
