@@ -1,0 +1,3 @@
+StrangeSerializerLab3
+StrangeSerializerLab3/StrangeJSON
+StrangeSerializerLab3/StrangeXML
