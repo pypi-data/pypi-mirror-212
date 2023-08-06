@@ -1,0 +1,7 @@
+fastapi
+netunicorn-base>=0.3.0
+uvicorn
+asyncpg
+pyyaml
+returns
+aiohttp
