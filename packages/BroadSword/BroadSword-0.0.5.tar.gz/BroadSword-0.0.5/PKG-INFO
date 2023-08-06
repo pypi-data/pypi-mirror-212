@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: BroadSword
+Version: 0.0.5
+Summary: Python script to broaden calculated spectra from Wien2k and compare to experimental data at the REIXS Beamline at the Canadian Light Source, Saskatoon, Canada.
+Home-page: https://github.com/Cody-Somers/BroadSword
+Author: Cody Somers
+Author-email: cas003@usask.ca
+Project-URL: Beamline Information, https://reixs.lightsource.ca
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BroadSword
+Hoping to turn BroadSword into Python code
