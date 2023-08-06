@@ -1,0 +1,2 @@
+[certbot.plugins]
+dns-solidserver = certbot_dns_solidserver.dns_solidserver:Authenticator
