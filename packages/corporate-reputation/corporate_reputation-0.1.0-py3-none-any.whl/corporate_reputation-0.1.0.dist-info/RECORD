@@ -1,0 +1,10 @@
+corprep/__cli__.py,sha256=6izGCJq2SYoCfHpoEZfuGOrwAThVhzDBeCrxUYuevjo,319
+corprep/__init__.py,sha256=3oveGxAxnsLi7mPZCxc9NNEDqY4lUVAoLIhz0iaPSIc,135
+corprep/_version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+corprep/conf/about/__init__.yaml,sha256=SK9-QK3U4q0af3oqVMZYBNHFHahL4mrgqd9qIyVKX38,338
+corprep/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+corporate_reputation-0.1.0.dist-info/LICENSE,sha256=6_-z_j5TJ7bQ5RlPwAJZ0Eqo3qWC6pMDjlLjz0R4wkE,1071
+corporate_reputation-0.1.0.dist-info/METADATA,sha256=WpkIUVFD8UD8lN1Zf_IRGgiYcppxsyq7LomEuhV6kcI,4392
+corporate_reputation-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+corporate_reputation-0.1.0.dist-info/entry_points.txt,sha256=hejxSNSfvA14MSnjoJ75yTMxBYpj7liEhodEpJRro7g,48
+corporate_reputation-0.1.0.dist-info/RECORD,,
