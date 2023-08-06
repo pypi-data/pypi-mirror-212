@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+autodistill_detic/__init__.py
+autodistill_detic/detic_model.py
+autodistill_detic.egg-info/PKG-INFO
+autodistill_detic.egg-info/SOURCES.txt
+autodistill_detic.egg-info/dependency_links.txt
+autodistill_detic.egg-info/requires.txt
+autodistill_detic.egg-info/top_level.txt
+test/test_hello.py
