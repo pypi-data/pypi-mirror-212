@@ -1,0 +1,62 @@
+Version 0.6.1     06 Jun 2023
+
+	* Fix checktabs to be safe for file named '-'.
+	* Update requests dependency for CVE-2023-32681.
+
+Version 0.6.0     09 Apr 2023
+
+	* Add new SubscriptionType enumeration.
+	* Rewrite request-related tests to use the responses framework.
+
+Version 0.5.4     26 Feb 2023
+
+	* Upgrade all dependencies to the latest major version.
+	* Pull Sphinx fields from metadata rather than parsing pyproject.toml.
+
+Version 0.5.3     30 Dec 2022
+
+	* Convert to latest readthedocs.io standard.
+	* Add NOTICE file to sdist, alongside existing LICENSE file.
+	* Automate the existing manual release process using GitHub Actions.
+	* Adjust GHA build to run MacOS and Windows tests only on latest Python.
+
+Version 0.5.2     24 Oct 2022
+
+	* Refactor the run script and pre-commit hooks to reduce duplication.
+	* Rework the GitHub Actions build process to pull out shared code.
+
+Version 0.5.1     05 Sep 2022
+
+	* Upgrade to Poetry v1.2.0 and make related build process changes.
+	* Upgrade to Pylint v2.15.0 and address warnings.
+	* Fix Pylint's configured class-attribute-naming-style to be snake_case.
+	* Add dependency caching to GitHub Actions workflow.
+	* Fix the GitHub Actions matrix build to properly target Windows and MacOS.
+	* Update various dependencies for the developer environment.
+
+Version 0.5.0     24 Jun 2022
+
+	* Refactor out a SmartAppConfigManager that can be overridden.
+
+Version 0.4.1     19 Jun 2022
+
+	* Updates to published documentation.
+
+Version 0.4.0     18 Jun 2022
+
+	* Add for_type() and filter() on event.
+	* Add token()/app_id()/location_id() on requests.
+	* Add convenience methods for config on requests.
+
+Version 0.3.0     18 Jun 2022
+
+	* Add convenience methods for config on updated app.
+
+Version 0.2.0     17 Jun 2022
+	
+	* Add convenience methods for config on installed app.
+
+Version 0.1.0     17 Jun 2022
+
+	* Initial public release
+
