@@ -1,0 +1,10 @@
+gemseo>=5
+numpy
+petsc4py>=3
+scipy
+
+[test]
+covdefaults
+pytest
+pytest-cov
+pytest-xdist
