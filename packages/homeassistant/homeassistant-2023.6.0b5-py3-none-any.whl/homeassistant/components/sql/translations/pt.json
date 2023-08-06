@@ -1,0 +1,55 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Conta j\u00e1 configurada"
+        },
+        "error": {
+            "column_invalid": "A coluna `{column}` n\u00e3o \u00e9 devolvida pela consulta",
+            "db_url_invalid": "URL da base de dados inv\u00e1lido"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "name": "Nome",
+                    "query": "Consulta Select",
+                    "unit_of_measurement": "Unidade de Medida",
+                    "value_template": "Modelo de valor"
+                },
+                "data_description": {
+                    "column": "Coluna para a consulta devolvida a apresentar como estado",
+                    "db_url": "URL da base de dados, deixar em branco para utilizar a base de dados do gravador do Home Assistant",
+                    "name": "Nome que ser\u00e1 utilizado para a entrada de configura\u00e7\u00e3o e tamb\u00e9m para o sensor",
+                    "query": "A consulta a executar, tem de come\u00e7ar por 'SELECT'",
+                    "unit_of_measurement": "Unidade de Medida (opcional)",
+                    "value_template": "Modelo de valor (opcional)"
+                }
+            }
+        }
+    },
+    "options": {
+        "error": {
+            "column_invalid": "A coluna `{column}` n\u00e3o \u00e9 devolvida pela consulta",
+            "db_url_invalid": "URL da base de dados inv\u00e1lido",
+            "query_invalid": "Busca SQL In\u00e1lida"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "column": "Coluna",
+                    "name": "Nome",
+                    "query": "Consulta Select",
+                    "unit_of_measurement": "Unidade de Medida",
+                    "value_template": "Modelo de valor"
+                },
+                "data_description": {
+                    "column": "Coluna para a consulta devolvida a apresentar como estado",
+                    "db_url": "URL da base de dados, deixar em branco para utilizar a base de dados do gravador do Home Assistant",
+                    "name": "Nome que ser\u00e1 utilizado para a entrada de configura\u00e7\u00e3o e tamb\u00e9m para o sensor",
+                    "query": "A consulta a executar, tem de come\u00e7ar por 'SELECT'",
+                    "unit_of_measurement": "Unidade de Medida (opcional)",
+                    "value_template": "Modelo de valor (opcional)"
+                }
+            }
+        }
+    }
+}
