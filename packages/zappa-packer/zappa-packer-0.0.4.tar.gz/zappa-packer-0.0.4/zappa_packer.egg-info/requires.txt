@@ -1,0 +1,11 @@
+hjson
+pip>=9.0.1
+python-dateutil
+python-slugify
+pyyaml
+requests>=2.20.0
+toml
+tqdm
+troposphere>=3.0
+werkzeug
+wheel

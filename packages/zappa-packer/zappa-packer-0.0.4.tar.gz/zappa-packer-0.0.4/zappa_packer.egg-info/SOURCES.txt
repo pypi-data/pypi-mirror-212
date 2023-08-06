@@ -1,0 +1,16 @@
+README.md
+setup.py
+tests/test.py
+zappa_packer/__init__.py
+zappa_packer/cli.py
+zappa_packer/handler.py
+zappa_packer/middleware.py
+zappa_packer/utilities.py
+zappa_packer/wsgi.py
+zappa_packer/zappa.py
+zappa_packer.egg-info/PKG-INFO
+zappa_packer.egg-info/SOURCES.txt
+zappa_packer.egg-info/dependency_links.txt
+zappa_packer.egg-info/entry_points.txt
+zappa_packer.egg-info/requires.txt
+zappa_packer.egg-info/top_level.txt

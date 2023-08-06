@@ -1,0 +1,3 @@
+[console_scripts]
+zappa-packer = zappa_packer.cli:handle
+zp = zappa_packer.cli:handle
