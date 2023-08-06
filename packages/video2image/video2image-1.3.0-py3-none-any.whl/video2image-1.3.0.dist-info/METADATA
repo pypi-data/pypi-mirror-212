@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: video2image
+Version: 1.3.0
+Summary: A Python script to extract frames from video files.
+Home-page: https://github.com/sakthivelj/video2image
+Author: Sakthivel J
+Author-email: sakthivel1023@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: opencv-python
+
+UNKNOWN
+
+
