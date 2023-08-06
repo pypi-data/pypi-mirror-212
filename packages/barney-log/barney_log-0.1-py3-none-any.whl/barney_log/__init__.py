@@ -1,0 +1,1 @@
+from .barney_log import console_info, console_error, console_debug

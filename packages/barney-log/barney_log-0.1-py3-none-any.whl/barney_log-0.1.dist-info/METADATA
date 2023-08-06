@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: barney-log
+Version: 0.1
+Summary: A logging library for Python
+Home-page: UNKNOWN
+Author: Barney Liu
+Author-email: bernayliu708@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: datetime
+Requires-Dist: logging
+Requires-Dist: os
+Requires-Dist: sys
+
+UNKNOWN
+
+
