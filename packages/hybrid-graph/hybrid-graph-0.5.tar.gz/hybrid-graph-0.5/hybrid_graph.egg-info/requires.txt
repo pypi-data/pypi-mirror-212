@@ -1,0 +1,14 @@
+torch
+torch_scatter
+torch_sparse
+torch_geometric==2.2.0
+ipdb==0.13.13
+ipython==8.13.2
+matplotlib==3.7.1
+networkx==3.1
+numpy==1.24.2
+pytorch_lightning==1.9.3
+PyYAML==6.0
+scikit_learn==1.2.1
+seaborn==0.12.2
+torchmetrics==0.11.1
