@@ -1,0 +1,2 @@
+[console_scripts]
+jepop = jepop.jepop:main
