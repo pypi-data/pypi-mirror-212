@@ -1,0 +1,2 @@
+[console_scripts]
+logcat-color = logcatcolor.main:main
