@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: netunicorn-director-infrastructure
+Version: 0.3.1
+Summary: netunicorn infrastructure module
+Author-email: Roman Beltiukov <rbeltiukov@ucsb.edu>
+License: MIT
+Keywords: netunicorn
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: netunicorn-base (>=0.3.0)
+Requires-Dist: uvicorn
+Requires-Dist: asyncpg
+Requires-Dist: pyyaml
+Requires-Dist: returns
+Requires-Dist: aiohttp
+
+# netunicorn infrastructure module
+This module is responsible for connection to deployment systems
+via system-specific connectors.
+
+## Installation
+```bash
+pip install netunicorn-director-infrastructure
+```
+
+Then, install all required connectors (specific to your infrastructure)
+
+## Usage
+Start the infrastructure module with the following command:
+```bash
+python -m netunicorn.director.infrastructure -f /path/to/config.yml
+```
+
+See confiuration-example.yml for configuration example.
