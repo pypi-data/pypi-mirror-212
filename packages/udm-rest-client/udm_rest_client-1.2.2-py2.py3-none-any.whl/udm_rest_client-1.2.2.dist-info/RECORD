@@ -1,0 +1,11 @@
+udm_rest_client/__init__.py,sha256=-V5G0SWUPQN2JoD8QJhf7ZpLUhs2nZ5oIOHwMji6ZeY,769
+udm_rest_client/base.py,sha256=EA25tj7o1V7C_-Tcm15X43HssRF-cOVwgtKRAqIhOpM,12359
+udm_rest_client/base_http.py,sha256=wjfxZb8TUf3atRQcjmXJKqlOyYkjncqxpXpUBA_Pj9g,50483
+udm_rest_client/exceptions.py,sha256=nl8ETORTOagXDYBKdjPD5tSm5BxDCzMa1cnVThmdOCU,3458
+udm_rest_client/udm.py,sha256=FgwQaKxuij8hRbMP8cC5KWoJ0G-EiNwgD5hNvU5Efew,10023
+udm_rest_client-1.2.2.data/scripts/update_openapi_client,sha256=2SLSc-VX9aPHZuKbiWV7ii-MM-fdarL7jfZAhBT4H_o,10987
+udm_rest_client-1.2.2.dist-info/LICENSE,sha256=575xMDoQkn7PO-oGmpjEFobSfijdYGtXmPX9tENl370,1147
+udm_rest_client-1.2.2.dist-info/METADATA,sha256=KHCfz6A2fZuaLlab-R-Xs62NVd1hmAr9Ld-JrSxVbsU,13001
+udm_rest_client-1.2.2.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+udm_rest_client-1.2.2.dist-info/top_level.txt,sha256=HlRJ7f4jnXxkCvyBR-3fehu8wo3rrD36ROnoT_pEmMA,16
+udm_rest_client-1.2.2.dist-info/RECORD,,
