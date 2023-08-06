@@ -1,0 +1,10 @@
+README.md
+setup.py
+faons/__init__.py
+faons/cli.py
+faons.egg-info/PKG-INFO
+faons.egg-info/SOURCES.txt
+faons.egg-info/dependency_links.txt
+faons.egg-info/entry_points.txt
+faons.egg-info/requires.txt
+faons.egg-info/top_level.txt
