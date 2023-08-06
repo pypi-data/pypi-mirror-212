@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pysurprisal
+Version: 0.1.0
+Summary: Calculate surprisal for words in text.
+Home-page: https://github.com/capjamesg/pysurprisal
+Author: capjamesg
+Author-email: jamesg@jamesg.blog
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.md
+
+# Surprisal
+
+An implementation of surprisal in Python.
+
+## Installation
+
+```bash
+pip install surprisal
+```
+
+## Usage
+
+```python
+from pysurprisal import Surprisal
+
+text = "..."
+
+# calculate surprisal for each word in the text
+data = Surprisal(text)
+surprisals = data.calculate_surprisals()
+
+# get the top 10 most surprising words
+top_k = data.get_top_k(10)
+
+# print dictionary of all surprisals
+# key = word, value = surprisal
+print(surprisals.surprisals)
+```
+
+## Contributors
+
+- capjamesg
+
+## License
+
+This project is licensed under an [MIT license](LICENSE.md).

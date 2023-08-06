@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+pysurprisal/__init__.py
+pysurprisal/core.py
+pysurprisal.egg-info/PKG-INFO
+pysurprisal.egg-info/SOURCES.txt
+pysurprisal.egg-info/dependency_links.txt
+pysurprisal.egg-info/requires.txt
+pysurprisal.egg-info/top_level.txt
