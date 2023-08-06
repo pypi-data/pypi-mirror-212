@@ -1,0 +1,11 @@
+ez_cqrs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ez_cqrs/aggregate.py,sha256=Cy9AepGgVEPaxeNqjgp_NHF01Pi-6d3h4Bo3DGt25-c,3254
+ez_cqrs/cqrs.py,sha256=O4pLTPBlR6c9_NA3nJA0e2ShA7SSWAA3NEObDF60RZA,3515
+ez_cqrs/error.py,sha256=q1u2KrLMhsCGN4j823wkR56KXiU7lvXgNqduQzAmDjQ,2150
+ez_cqrs/event.py,sha256=WKOf1V7XDKDrfolmsP42cs8dfYO8NemQOS0NVRs5yQM,1058
+ez_cqrs/query.py,sha256=q4JJp6T18O9op9Yo5oCUAu60920c_KPJe_JCP6OzT-g,1209
+ez_cqrs/store.py,sha256=cdW2Q0LTWuXXXX-3TvvutOlUIa1WK7yD830nEelEq64,1471
+ez_cqrs-0.1.0.dist-info/METADATA,sha256=i1hVz9m-dQMsLD9IP99NjiKEmfaetLyJY6TNuxA7UGk,838
+ez_cqrs-0.1.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+ez_cqrs-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ez_cqrs-0.1.0.dist-info/RECORD,,
