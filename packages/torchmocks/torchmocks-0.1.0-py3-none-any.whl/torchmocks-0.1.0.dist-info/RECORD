@@ -1,0 +1,13 @@
+torchmocks/__init__.py,sha256=jVqWw7LPWOc9BY8a4u9I71RFJZJIN3CyhO37nLTo7yY,103
+torchmocks/torchmocks.py,sha256=RuR2LpRuCDe87lX1OcIFjmhn8vlT0AQV5WlvsWc-wkQ,2102
+torchmocks/nn/activation.py,sha256=oTilCJ6Q7tfJGa4PAXIqMHUlP0p5r_ottHC3qxCRQ0A,1600
+torchmocks/nn/conv.py,sha256=RBOpgzYOqcz-gI-rH5QAQXHZqdYMt8jExAToKYd0gZ0,4229
+torchmocks/nn/dropout.py,sha256=tSeC4YVhFIm-64KdAK0rzDbfBIN4P9JKO31A2HzIWTo,317
+torchmocks/nn/embedding.py,sha256=Cl-3rWSk2EZqQiy94SXoaMQO3LQn_KaxF24_6ARnalk,622
+torchmocks/nn/linear.py,sha256=QmEXfgHnazZZIu0O92lvt1y0FaL-7zHscXf5sZCDKUI,2152
+torchmocks/nn/normalization.py,sha256=hSy27yZtUpo0a8VzSvEiaBO6XGOFe2yaVAjg_1E0rCM,1341
+torchmocks/nn/pooling.py,sha256=i7sI7v_ST1foGRvl5ZTfULE-Fx2iFoOVeA-dlsLwqGk,2955
+torchmocks-0.1.0.dist-info/METADATA,sha256=1lqDJ6ngjsmBjQrT4wm57GclaWSd3HG3A-su93TkwRE,2299
+torchmocks-0.1.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+torchmocks-0.1.0.dist-info/licenses/LICENSE,sha256=qQLE_uMWaNfBNDNIlkKxJ6lD_KghNgON3npg48TyGfo,1072
+torchmocks-0.1.0.dist-info/RECORD,,
