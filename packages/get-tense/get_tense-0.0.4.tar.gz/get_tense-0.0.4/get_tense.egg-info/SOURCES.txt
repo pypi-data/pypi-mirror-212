@@ -1,0 +1,10 @@
+README.md
+setup.py
+get_tense/__init__.py
+get_tense/get_tense.py
+get_tense/past_tense_verbs
+get_tense.egg-info/PKG-INFO
+get_tense.egg-info/SOURCES.txt
+get_tense.egg-info/dependency_links.txt
+get_tense.egg-info/requires.txt
+get_tense.egg-info/top_level.txt
