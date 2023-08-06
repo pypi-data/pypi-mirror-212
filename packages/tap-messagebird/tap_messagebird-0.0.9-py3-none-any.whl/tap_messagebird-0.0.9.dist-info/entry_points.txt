@@ -1,0 +1,3 @@
+[console_scripts]
+tap-messagebird=tap_messagebird.tap:TapMessagebird.cli
+
