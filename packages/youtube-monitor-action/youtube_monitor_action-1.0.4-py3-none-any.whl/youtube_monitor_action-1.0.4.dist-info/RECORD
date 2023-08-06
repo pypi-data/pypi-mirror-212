@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=hLYbyxUS111W81qePozFeMAh2xB2aVwKreCYf3OuIA4,194
+LICENSE,sha256=rIdOGOqX9lqNUKBR98kWTE6yQVVQ0uIzqHUs7hQiIho,1086
+youtube_monitor_action/__init__.py,sha256=CiZhHezso4ThjjwTZPxi5wJoFbdhm2EGJV2NyeY-nN4,140
+youtube_monitor_action/__main__.py,sha256=l5JTb-G0QNba01p94KKH34nwstCKLBDW_rUL-mxp7Mc,9665
+youtube_monitor_action/_logging_utils.py,sha256=_9wu4_5YnrS9w2sCEEJBYfBHjRRKXqu0b3EtYobECA4,2355
+youtube_monitor_action-1.0.4.dist-info/entry_points.txt,sha256=29cCae1yt9QVdhSO-sg-Nd1On3paJAsFGh7vg74yWZ4,79
+youtube_monitor_action-1.0.4.dist-info/LICENSE,sha256=rIdOGOqX9lqNUKBR98kWTE6yQVVQ0uIzqHUs7hQiIho,1086
+youtube_monitor_action-1.0.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+youtube_monitor_action-1.0.4.dist-info/METADATA,sha256=2-yGfR_kHBFOgKDzltfzhzMsp49IKYUKJZ4oDdJh614,1913
+youtube_monitor_action-1.0.4.dist-info/RECORD,,
