@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: TeamsGraphApi
+Version: 0.0.1
+Summary: wrapper for teams graph api's
+Project-URL: Homepage, https://github.com/Ajay7415/graphapi
+Project-URL: Bug Tracker, https://github.com/Ajay7415/graphapi/issues
+Author-email: Ajay Vishwakarma <ajay.vishwakarma@codiant.com>
+License-File: LICENCE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.

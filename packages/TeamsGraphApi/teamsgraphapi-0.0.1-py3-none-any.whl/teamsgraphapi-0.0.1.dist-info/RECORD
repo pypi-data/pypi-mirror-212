@@ -1,0 +1,7 @@
+src/graphapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/graphapi/auth.py,sha256=3QyB_EHrXMlcHxZR8xB1JNipXmoT9f8Bve3q3WqYJL8,229
+src/graphapi/graph.py,sha256=RscVlxk8B2mRwPduX9jJuU9CRj7QcIzpNkmxvxMz914,2578
+teamsgraphapi-0.0.1.dist-info/METADATA,sha256=tUaSb1mSKYBILLVC3ijOZejxI05MT36T81fgcsEkF9U,690
+teamsgraphapi-0.0.1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+teamsgraphapi-0.0.1.dist-info/licenses/LICENCE,sha256=_DFlQrZ_GWaKI4Y-CafvvEHUcLXq8fLefF38tFikNZU,1061
+teamsgraphapi-0.0.1.dist-info/RECORD,,
