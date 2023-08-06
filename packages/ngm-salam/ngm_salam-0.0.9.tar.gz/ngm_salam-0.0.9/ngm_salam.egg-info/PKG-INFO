@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ngm-salam
+Version: 0.0.9
+Summary: Just a demo project
+Project-URL: Homepage, https://github.com/ngmaibulat/training-python-packaging
+Project-URL: Documentation, https://github.com/ngmaibulat/training-python-packaging
+Project-URL: Changes, https://github.com/ngmaibulat/training-python-packaging
+Keywords: sample,project
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+### Install
+
+```bash
+pip install ngm-salam==0.0.10
+```
+
+### Commands:
+
+```bash
+salam
+```
