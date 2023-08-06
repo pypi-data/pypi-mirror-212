@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dfmodule_DSTemplate
+Version: 0.0.1
+Summary: dfmodule for DE -> DS code transition
+Home-page: https://github.com/Data-Flower/dfmodule_DSTemplate
+Author: SG, JH
+Author-email: rimmoyee@example.com
+Keywords: dfmodule_DS, dfmodule, dfmodule_DSTemplate
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
