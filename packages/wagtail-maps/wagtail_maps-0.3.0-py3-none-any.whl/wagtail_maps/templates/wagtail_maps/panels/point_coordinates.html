@@ -1,0 +1,20 @@
+{% load i18n wagtailadmin_tags %}
+{% include "wagtailadmin/panels/field_row_panel.html" %}
+
+<button type="button" class="button button-secondary w-100" data-a11y-dialog-show="{{ dialog_id }}">
+  {% translate "Coordinates from geo URI…" %}
+</button>
+
+{% translate "Coordinates of the point" as dialog_title %}
+{% dialog id=dialog_id classname="geo-dialog" icon_name="map-pin" title=dialog_title %}
+<div data-controller="geo-coordinates" data-geo-coordinates-prefix-value="{{ self.form.prefix }}" data-geo-coordinates-dialog-id-value="{{ dialog_id }}">
+    <p>{% translate "Enter the geo URI of your point to set its latitude and longitude accordingly." %}</p>
+    <form class="geo-dialog__form-group" data-action="geo-coordinates#set:prevent">
+      <input type="text" name="geo-uri" placeholder="geo:1.0,2.0" autofocus data-geo-coordinates-target="input">
+      <button type="submit" class="button">{% translate "Set coordinates" %}</button>
+    </form>
+    <p class="error-message" data-geo-coordinates-target="errorMessage" hidden>
+      {% translate "Unable to parse the geo URI. Verify that it is in the form of <code>geo:1.0,2.0</code>." %}
+    </p>
+  </div>
+{% enddialog %}

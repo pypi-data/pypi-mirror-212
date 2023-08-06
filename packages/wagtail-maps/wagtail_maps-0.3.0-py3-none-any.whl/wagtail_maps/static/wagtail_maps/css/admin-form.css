@@ -1,0 +1,29 @@
+.w-100 {
+  width: 100%;
+}
+
+.geo-dialog .w-dialog__content {
+  min-height: auto;
+}
+
+.geo-dialog__form-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.geo-dialog__form-group > input {
+  flex: 1 1 auto;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width:100em) {
+  .geo-dialog__form-group > input {
+    width: 1%;
+    min-width: 0;
+    margin-right: 2em;
+    margin-bottom: 0;
+  }
+}

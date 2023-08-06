@@ -1,0 +1,8 @@
+{% load i18n wagtailcore_tags %}{% spaceless %}
+{% if content %}
+<h5 class="leaflet-popup-header">
+  {% if url %}<a href="{{ url }}">{{ title }}</a>{% else %}{{ title }}{% endif %}
+</h5>
+<div class="leaflet-popup-body">{{ content|richtext }}</div>
+{% endif %}
+{% endspaceless %}
