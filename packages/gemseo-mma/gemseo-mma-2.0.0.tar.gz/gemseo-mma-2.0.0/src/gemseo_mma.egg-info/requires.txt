@@ -1,0 +1,9 @@
+gemseo>=5
+numpy
+scipy
+
+[test]
+covdefaults
+pytest
+pytest-cov
+pytest-xdist
