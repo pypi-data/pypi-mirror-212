@@ -1,0 +1,14 @@
+neuroimager/__init__.py,sha256=0k0epvYuwdmy_lI_v01NmyQTpBjTrw2elqs2jNfRWVo,149
+neuroimager/pipes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neuroimager/pipes/brainage.py,sha256=I_N8OXjbX5s-fdD90vACn5hd3jVwt6iWEj4can7PerY,1212
+neuroimager/pipes/cca.py,sha256=ex96_qk-Y1pMAX_JCjAQhM8yNh7GpZiQaroIcMdlW1o,7085
+neuroimager/plotting/__init__.py,sha256=XyYlEs-4HJ663uNf1rArHFo8wqBMgrxK29dRgEcT6ME,72
+neuroimager/plotting/plot.py,sha256=hffCbJRmg_VrwVsmzhuPkic-qYzSvd0QlPInczEjx7Q,1020
+neuroimager/utils/__init__.py,sha256=JGnxlHSxxIRFAEwgj_Zj6fHA4n1U6CJG8JwwtnxkrZc,240
+neuroimager/utils/atlas.py,sha256=bdiTCX7aDzAf3Safj-67wH7Vf5vdx8r4dl6XO7KfFlo,1136
+neuroimager/utils/fc.py,sha256=-woeUrFk7HXVMtklgGKU3w4rwEOJFmDDQQ6C7hPadXo,4150
+neuroimager-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+neuroimager-0.0.4.dist-info/METADATA,sha256=ci6aaIhLpcwfexTf2QS0G86bjHPX46u4lJ9f-xw47UA,829
+neuroimager-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+neuroimager-0.0.4.dist-info/top_level.txt,sha256=gGIDI5wk2_Ji9xorIX-HwVzAwK157KAS-zBfhE7jpyI,12
+neuroimager-0.0.4.dist-info/RECORD,,

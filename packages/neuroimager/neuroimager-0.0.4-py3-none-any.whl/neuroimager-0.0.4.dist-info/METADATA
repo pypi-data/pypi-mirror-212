@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: neuroimager
+Version: 0.0.4
+Summary: A collection of utilities used for MRI data analysis
+Home-page: https://github.com/Wetiqe/neuroimager
+Author: Wetiqe
+Author-email: jzni132134@gmail.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Requires-Dist: sklearn
+
+# neuroimager
+
+A collection of utilities used for MRI data analysis
