@@ -1,0 +1,17 @@
+apapi/__init__.py,sha256=fS_6C_TKwTLgIshCBCPK7-8J9drfJYZeCFA7npNOHdE,702
+apapi/__main__.py,sha256=WF4cfVjmrPXP7aSmYBWFdUszkyGNBwlOb8LKXHD04fM,9579
+apapi/__version__.py,sha256=b9-cM_g4xZRY3g66J0ToKrBdIvRlQwP9YIn-zhqEOsE,377
+apapi/alm.py,sha256=dm4z-Kc1ljd-T9cl7j8z28fUyqA48BB4TJYSCODQS6s,6448
+apapi/audit.py,sha256=p3iT-oQCKwx1S2Lxgm6IfXlyse_8iA2UOXq_DGrLE3c,2544
+apapi/authentication.py,sha256=8bsqrPrJNNbXPiCOvLuDh0kn-bYlLgx_79K-e_XG-_g,8191
+apapi/basic_connection.py,sha256=_YMEEg2zZeLrY8csvmHVkuMbeLWwUJLMqv7HIFPDfb8,1722
+apapi/bulk.py,sha256=qtqj4GHghOoBv6rA2G2EbyEsrzlgM6buPCvZOn70J3g,14779
+apapi/connection.py,sha256=94LWfn9DIYZIr6bUClWNvJv_uoq4rlOkWmCzi9zhgkY,467
+apapi/transactional.py,sha256=xlaOrAqq1i46tcWKvxQNigb_Ihi524XBX-MT8-ecahg,19813
+apapi/utils.py,sha256=bcqRHT9uDozIH-6UicfEwqKQBuzoRgAqITjIXbuj51M,4408
+apapi-0.5.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+apapi-0.5.0.dist-info/METADATA,sha256=l-z-sTqFfAJj1V0-GRV-oHv7SPrG-hd3Chq_TkN-TJs,4337
+apapi-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+apapi-0.5.0.dist-info/entry_points.txt,sha256=eMw2tkLLIBujmga1hNBREThWy1M5lwH_tgcs5eY1sk4,46
+apapi-0.5.0.dist-info/top_level.txt,sha256=4ZpvKlEAXewTRVhxHDQYk3c-HRex4ravqiyTFrvWWoI,6
+apapi-0.5.0.dist-info/RECORD,,
