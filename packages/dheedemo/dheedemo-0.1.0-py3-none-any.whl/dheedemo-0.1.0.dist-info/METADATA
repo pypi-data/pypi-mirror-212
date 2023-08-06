@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dheedemo
+Version: 0.1.0
+Summary: Dhee observability client
+Home-page: UNKNOWN
+Author: Datalens
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
