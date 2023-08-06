@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+fakeset/__init__.py
+fakeset.egg-info/PKG-INFO
+fakeset.egg-info/SOURCES.txt
+fakeset.egg-info/dependency_links.txt
+fakeset.egg-info/top_level.txt
