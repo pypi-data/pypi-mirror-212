@@ -1,0 +1,10 @@
+README.md
+setup.py
+hello/__init__.py
+hello/index.py
+hello50.egg-info/PKG-INFO
+hello50.egg-info/SOURCES.txt
+hello50.egg-info/dependency_links.txt
+hello50.egg-info/requires.txt
+hello50.egg-info/top_level.txt
+hello/db/quran_simple.json
