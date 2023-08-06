@@ -1,0 +1,1 @@
+from djangoauthtoken.middleware.token_authentication import CustomTokenAuthentication
