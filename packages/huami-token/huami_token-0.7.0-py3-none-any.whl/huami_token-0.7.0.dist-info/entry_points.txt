@@ -1,0 +1,3 @@
+[console_scripts]
+huami_token=huami_token:main
+
