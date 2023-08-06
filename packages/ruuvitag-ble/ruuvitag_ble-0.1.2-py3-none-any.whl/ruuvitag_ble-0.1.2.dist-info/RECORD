@@ -1,0 +1,8 @@
+ruuvitag_ble/__init__.py,sha256=RVB-mwFXf7BtKfKWGYZpea5zy-DYXDHW6JbbYnp0_tQ,124
+ruuvitag_ble/df5_decoder.py,sha256=z73u14TxbgcHV2qm-p-I9vYvMaqR_Fg-2hsgerqZGnM,2208
+ruuvitag_ble/parser.py,sha256=mxmxqe3XaR8E3DPnsedpWhQ7qzYdu2Vjaiu_o8RqA4I,2445
+ruuvitag_ble/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ruuvitag_ble-0.1.2.dist-info/METADATA,sha256=bNlZOCuWPtC93CIq12C2IF69VFcr56q1_j19dbY8iKg,877
+ruuvitag_ble-0.1.2.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+ruuvitag_ble-0.1.2.dist-info/licenses/LICENSE,sha256=glmrKnQruUqfWQ8AcDoHHvhxukkapYjuuJGWZOsWQuM,1070
+ruuvitag_ble-0.1.2.dist-info/RECORD,,
