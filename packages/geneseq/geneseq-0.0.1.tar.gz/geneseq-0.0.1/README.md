@@ -1,0 +1,3 @@
+# Genseq
+
+Process genomic data
