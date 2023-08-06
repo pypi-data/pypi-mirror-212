@@ -1,0 +1,4 @@
+abipy
+ase
+dpdata
+numpy
