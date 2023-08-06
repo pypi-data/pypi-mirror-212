@@ -1,0 +1,10 @@
+# eco_ask
+
+.env檔請填入以下資訊
+```
+LINE_CHANNEL_TOKEN=
+LINE_CHANNEL_SECRET=
+OPENAI_KEY=
+GOOGLE_API_KEY=
+IMGUR_ID=
+```
