@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: batch_ingestion_client_py
+Version: 1.0.4
+Summary: A client for the BatchIngestion mediawiki API
+Author: QuentinJanuel
+Author-email: <quentinjanuelkij@gmail.com>
+Keywords: python,mediawiki,batchingestion,wikidata,wikibase,api,client
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# BatchIngestion Python Client
+
+This is a Python client library for the [BatchIngestion](https://gitlab.the-qa-company.com/FrozenMink/batchingestionextension) MediaWiki extension, which provides an API to ingest many entities at once. This library allows you to easily ingest entities in bulk, either by parsing them from JSON or by creating them using Python objects.
+
+## Installation
+
+You can install this library using [pip](https://pypi.org/project/batch-ingestion-client-py/):
+
+```bash
+pip install batch-ingestion-client-py==1.0.4
+```
+
+## Usage
+
+```python
+from batch_ingestion_client_py import (
+    BatchIngestor,
+    Entity,
+    ValueInLanguage,
+)
+
+ingestor = BatchIngestor(
+    base_url="https://your-wiki.com",
+    username="your-username",
+    password="your-password",
+)
+
+example1 = ingestor.ingest([
+    Entity.parse({
+        "type": "item",
+        "labels": {
+            "en": {
+                "language": "en",
+                "value": "Hello, world!",
+            },
+        },
+    })
+])
+
+print(example1)
+
+example2 = ingestor.ingest([
+    Entity(
+        type="item",
+        labels={
+            "en": ValueInLanguage(
+                language="en",
+                value="Hello, world!",
+            ),
+        },
+    ),
+])
+
+print(example2)
+```
+
+## Contributing
+
+If you'd like to contribute to this library, please feel free to submit a pull request.
