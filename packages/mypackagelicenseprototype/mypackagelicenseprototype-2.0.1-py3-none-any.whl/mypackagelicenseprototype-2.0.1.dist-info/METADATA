@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mypackagelicenseprototype
+Version: 2.0.1
+Summary: Description of your package
+Home-page: https://github.com/da-roth/PackageLicensePrototype
+Author: Daniel Roth
+Author-email: daniel-roth@posteo.org
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+
