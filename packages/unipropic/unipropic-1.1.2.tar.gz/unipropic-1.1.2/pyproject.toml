@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "unipropic"
+version = "1.1.2"
+description = "A CLI app that automatically puts a profile image in all your accounts."
+authors = ["kutu-dev"]
+license = "MIT License"
+readme = "README.md"
+keywords = ["web", "utility", "automation", "profile"]
+homepage = "https://github.com/kutu-dev/unipropic"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: OS Independent",
+    "Topic :: Utilities",
+    "Topic :: Internet",
+    "Environment :: Web Environment"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+colorama = "^0.4.6"
+webdriver-manager = "^3.8.5"
+selenium = "^4.8.3"
+tomlkit = "^0.11.7"
+inquirer = "^3.1.3"
+
+[tool.poetry.scripts]
+unipropic = "unipropic.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
