@@ -1,0 +1,1 @@
+recursive-include dist/parent/pyarmor_runtime_000000 *.pyd
