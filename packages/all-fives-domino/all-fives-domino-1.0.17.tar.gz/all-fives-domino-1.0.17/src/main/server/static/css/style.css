@@ -1,0 +1,51 @@
+* {
+    --block-size: 40px;
+}
+
+.face {
+    width: var(--block-size);
+    height: var(--block-size);
+    padding: 3px;
+}
+
+.attached-pieces {
+    display: inline-block;
+}
+
+.face:nth-child(2) {
+    border-left: 1px solid #222222;
+}
+
+.piece {
+    transform-origin: left;
+    display: inline-block;
+}
+
+.piece-display {
+    border: 1px solid #222222;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: white;
+    margin: 3px;
+}
+
+body {
+    overflow: hidden;
+}
+
+img.resource {
+    position: absolute;
+    left: -1000px;
+    visibility: hidden;
+}
+
+#board {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3c3c3c;
+    image-rendering: pixelated;
+    z-index: -1;
+}
