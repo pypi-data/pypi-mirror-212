@@ -1,0 +1,8 @@
+
+[test]
+pre-commit
+pylint==3.0.0a6
+pytest-cov
+coverage
+python-coveralls
+coveralls
