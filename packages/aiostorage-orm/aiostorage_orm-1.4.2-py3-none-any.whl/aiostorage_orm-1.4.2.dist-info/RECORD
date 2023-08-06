@@ -1,0 +1,14 @@
+aiostorage_orm/__init__.py,sha256=5UJNg_floTkD2dBYfvaftJjj3Llz1yExr63QIS3x5iw,443
+aiostorage_orm/aiostorage_frame.py,sha256=pjKEwdajRrze3_IL7gukLAYZ7zt3hoX7nuSc9hZ-8S8,648
+aiostorage_orm/aiostorage_item.py,sha256=tkP4V5k50iTtAAt06uel3EOcyW-kQiVo3WZJ1wmpo6I,2897
+aiostorage_orm/aiostorage_orm.py,sha256=Phs6qZn7oe9byJ0IF4f3FGTQuiEOHHUTuMSG11X7xdY,1101
+aiostorage_orm/exceptions.py,sha256=FGCMfePq3wzzYUMi-VUfVLlvaP3ZsSzdA1n2zV8XgPM,164
+aiostorage_orm/operation_result.py,sha256=auxsYnzkBprjjNmoCG4pVRhq__I5ixd4mqVdlRGNWb4,956
+aiostorage_orm/redis_impl/__init__.py,sha256=OFZN0uHXIJ-2F7Gv1B_r6gG7QdcXIpKglvAp940QzCA,120
+aiostorage_orm/redis_impl/aioredis_frame.py,sha256=O6AGS3X2ZHdvMIum54QfU52nzqJs1p0xWAFAGH_c_ho,9630
+aiostorage_orm/redis_impl/aioredis_item.py,sha256=azz33bEoFjOGtZFtBkQpjyTkeLPNIH77qjgfjF4LnAA,20134
+aiostorage_orm/redis_impl/aioredis_orm.py,sha256=Q8V5aV1PIEyanp3P1vVqWVYMqTh_XBws5zflDFudzbo,4441
+aiostorage_orm-1.4.2.dist-info/METADATA,sha256=mfZ5yVZW9ouT712_sSnii9O7xc8HMK1RqTiuJoAsd_c,13422
+aiostorage_orm-1.4.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aiostorage_orm-1.4.2.dist-info/top_level.txt,sha256=YcyXzs80PXmzH35KBmhGYcJPIWL5QarVSErSLMKHM9o,15
+aiostorage_orm-1.4.2.dist-info/RECORD,,
