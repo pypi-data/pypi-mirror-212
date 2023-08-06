@@ -1,0 +1,36 @@
+_yaml:
+  _version: 0.1.0
+  app: UnCli
+  app_version: 0.2.0
+  doc: un_yaml
+  doc_version: 0.1.0
+  handlers:
+    doc:
+      module: un_yaml.wrapper
+      method: Wrapper
+    uri:
+      module: self
+      method: get_resource
+      key: _resource
+argsets:
+  remote:
+    arguments:
+      - $ref: "#/variables/dir"
+      - $ref: "#/variables/uri"
+commands:
+  list:
+    arguments:
+      - $ref: "#/variables/uri"
+    help: List members of a resource
+  get:
+    $ref: "#/argsets/remote"
+    help: Get contents of remote URI into directory (and gitignore it)
+variables:
+  dir:
+    name: dir
+    help: Local directory
+    type: Path
+  uri:
+    name: uri
+    help: URI of resource to list
+    type: UnUri
