@@ -1,0 +1,2 @@
+[run]
+omit = codes/perturbationS.py
