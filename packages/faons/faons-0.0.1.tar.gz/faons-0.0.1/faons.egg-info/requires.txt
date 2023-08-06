@@ -1,0 +1,6 @@
+click
+SQLAlchemy
+sqlalchemy_utils
+uvicorn
+fastapi
+db-sqlite3
