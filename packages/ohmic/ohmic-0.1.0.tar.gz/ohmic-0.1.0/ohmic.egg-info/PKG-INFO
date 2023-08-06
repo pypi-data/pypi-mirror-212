@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ohmic
+Version: 0.1.0
+Summary: Python tools for Electric Power Quality
+Home-page: UNKNOWN
+Author: OtoSense
+License: apache-2.0
+Description: 
+        # ohmic
+        Python tools for Electric Power Quality
+        
+        
+        To install:	```pip install ohmic```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
