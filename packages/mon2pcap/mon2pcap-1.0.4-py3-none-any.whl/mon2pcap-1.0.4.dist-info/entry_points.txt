@@ -1,0 +1,3 @@
+[console_scripts]
+mon2pcap=mon2pcap.console:run
+
