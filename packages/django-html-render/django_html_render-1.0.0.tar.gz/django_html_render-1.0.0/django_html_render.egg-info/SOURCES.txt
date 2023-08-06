@@ -1,0 +1,8 @@
+setup.py
+django_html_render/__init__.py
+django_html_render/html_render.py
+django_html_render.egg-info/PKG-INFO
+django_html_render.egg-info/SOURCES.txt
+django_html_render.egg-info/dependency_links.txt
+django_html_render.egg-info/requires.txt
+django_html_render.egg-info/top_level.txt
