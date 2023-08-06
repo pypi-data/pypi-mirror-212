@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+mediana_rest_sdk.egg-info/PKG-INFO
+mediana_rest_sdk.egg-info/SOURCES.txt
+mediana_rest_sdk.egg-info/dependency_links.txt
+mediana_rest_sdk.egg-info/top_level.txt
