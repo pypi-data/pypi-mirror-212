@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: test_graphql_sdk
+Version: 0.0.3
+Summary: Python sdk for airstack apis
+Home-page: https://github.com/Airstack-xyz/airstack-python-sdk
+Author: Sarvesh
+Author-email: sarveshsingh.03@gmail.com
+Project-URL: Bug Tracker, https://github.com/Airstack-xyz/airstack-python-sdk/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# airstack-python-sdk
+
+The Airstack Python SDK is a library that allows Python developers to integrate Airstack's blockchain functionalities into their applications. With this SDK, developers can perform various tasks, such as querying and fetching data from smart contracts, displaying NFT assets.
+
+# Installation
+
+`pip3 install test-graphql-sdk`
+
+# Getting started
+To use the SDK you will need airstack api-key, which you can find in your profile setting section in airstack web, once you have it you can initialise the Airstackclient with the api-key.
+```python
+from test-graphql-sdk import AirstackClient
+
+api_client = AirstackClient(api_key='api-key')
+
+```
+
+# Methods
+## execute_query
+The execute query method query the data and return the data in asynchronous, it returns below data
+- `data`: data returned by the query
+- `status_code`: status code of the query response
+- `error`: any error that occurred while loading the query
+
+### Example
+```python
+from execute_query import AirstackClient
+
+api_client = AirstackClient(api_key='api-key')
+
+data, status_code, error = await api_client.execute_query(query=query, variables=variables)
+```
+
+## execute_paginated_query
+**Note:** pagination methods only works with queries that has support for pagination, and the query passed to method must have a cursor as argument for it to work.
+
+The `execute_paginated_query` method provides a simple way to paginate the data returned by a query. It works the same as the `execute_query` method, but also returns an object with the following properties:
+
+- `data`: data returned by the query
+- `status_code`: status code of the query response
+- `error`: any error that occurred while loading the query
+- `has_next_page`: a boolean indicating whether there is another page of data after the current page
+- `has_prev_page`: a boolean indicating whether there is another page of data before the current page
+- `get_next_page`: a function that can be called to fetch the next page of data
+- `get_prev_page`: a function that can be called to fetch the previous page of data
+
+### Example
+```python
+from execute_query import AirstackClient
+
+api_client = AirstackClient(api_key='api-key')
+
+data, status_code, error, has_next_page, has_prev_page, get_next_page,
+get_prev_page = await api_client.execute_paginated_query(query=query, variables=variables)
+
+if has_next_page:
+    next_page_response, next_page_status, next_page_error, has_next_page, has_prev_page, get_next_page, get_prev_page = await get_next_page()
+
+if has_prev_page:
+    prev_page_response, prev_page_status, prev_page_error, has_next_page, has_prev_page, get_next_page, get_prev_page = await get_prev_page()
+```
+
+
+
+
+
+
