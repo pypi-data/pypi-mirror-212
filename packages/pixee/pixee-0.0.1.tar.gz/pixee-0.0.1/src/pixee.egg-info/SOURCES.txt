@@ -1,0 +1,8 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/pixee.egg-info/PKG-INFO
+src/pixee.egg-info/SOURCES.txt
+src/pixee.egg-info/dependency_links.txt
+src/pixee.egg-info/top_level.txt
