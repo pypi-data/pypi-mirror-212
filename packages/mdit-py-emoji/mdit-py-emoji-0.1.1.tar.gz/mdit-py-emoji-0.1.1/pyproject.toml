@@ -1,0 +1,37 @@
+[project]
+name = "mdit-py-emoji"
+version = "0.1.1"
+description = "Emoji plugin for markdown-it-py."
+authors = [
+    { name = "BlueGlassBlock", email = "blueglassblock@outlook.com" },
+]
+dependencies = [
+    "markdown-it-py<4.0.0,>=1.0.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=22.8.0",
+    "isort>=5.10.1",
+    "pytest>=7.1.3",
+    "pytest-cov>=3.0.0",
+]
+
+[tool.pytest.ini_options]
+python_files = "mdit-py-emoji/test.py"
+addopts = "--cov=mdit_py_emoji --cov-report xml"
