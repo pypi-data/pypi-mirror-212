@@ -1,0 +1,11 @@
+bayes_lol_client/__init__.py,sha256=hvobansLilmFsF-7VjJ4Di_0K9SO3gIDqbpD9Pggcn8,221
+bayes_lol_client/api.py,sha256=dUzWZMzgU-etiQdW7zTfh7yqZFcuXUM7BCTqW7DBVqc,8917
+bayes_lol_client/emh.py,sha256=AgYsAU67NDYxN4BETqTodEGw1gR-HWaWbRBRjwjz6Gk,6521
+bayes_lol_client/errors.py,sha256=__6BkPqMzQxIx9sF7BiLpncLjJtI4q64hRfw8dqCTAM,567
+bayes_lol_client/historic.py,sha256=3comxWjX5Lijndv1LtKgsCURj_-BrR2HoTwBTzGK7lg,5158
+bayes_lol_client/sleep.py,sha256=2ip8_YSbgXtqHhHt1W8S05gC-QsgqoaOGqNedax3ips,990
+bayes_lol_client/utils.py,sha256=593pJapXAErsBcd5UOxnkMnNFomY3L_gOtEZzYXYPlA,1866
+bayes_lol_client-1.0.2.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+bayes_lol_client-1.0.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+bayes_lol_client-1.0.2.dist-info/METADATA,sha256=_l7QFqwYH-YDZ4MugmAx361VVAOieI6xFbguhrGXNws,1325
+bayes_lol_client-1.0.2.dist-info/RECORD,,
