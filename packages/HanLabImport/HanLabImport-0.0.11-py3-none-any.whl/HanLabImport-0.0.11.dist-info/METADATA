@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: HanLabImport
+Version: 0.0.11
+Summary: Import tools for DNPLab specific to the Han Lab
+Home-page: https://github.com/Bridge12Technologies/HanLabImport
+Author: Thorsten Maly
+Author-email: tmaly@bridge12.com
+Project-URL: Tracker, https://github.com/Bridge12Technologies/HanLabImport/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.24)
+
+[![http://dnplab.net](https://img.shields.io/pypi/v/dnplab)](https://pypi.org/project/dnplab/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dnplab)](https://www.python.org/downloads/)
+[![Downloads](https://pepy.tech/badge/dnplab/month)](https://pepy.tech/project/dnplab)
+
+HanLabImport is a support package for DNPLab to import data recorded in the lab of Prof. Song-I Han.
+
+For more information about DNPLab vist: www.dnplab.org
+
+# Features
+
+  - Import different experiment types (DNP, DNP Power Build-Up, ELDOR, T1e, T2e measurements)
+  - Create N-dimensional data objects using DNPLab
+
+# Installation
+
+HanLabImport can be easily installed via pip:
+
+```console
+pip install HanLabImport
+```
+# Documenation
+
+Find the online documentation for DNPLab at: http://docs.dnplab.net
+
+# Developement 
+
+  - Clone the git repository from https://github.com/HanLabImport/HanLabImport
+dir
+
