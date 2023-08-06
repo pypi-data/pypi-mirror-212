@@ -1,0 +1,2 @@
+[console_scripts]
+migrate = src.migrate:main
