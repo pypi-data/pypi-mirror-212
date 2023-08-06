@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: logstream
+Version: 1.0.0
+Summary: operating system syslog data and/or tail log files.
+Home-page: https://gitlab.com/krink/logstream
+Author: Karl Rink
+Author-email: karl@rink.us
+Project-URL: Bug Tracker, https://gitlab.com/krink/logstream/issues
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Python command line tool to logstream operating syslog data and/or log files.
