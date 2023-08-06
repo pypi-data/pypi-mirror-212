@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: web-etc
+Version: 0.2.0
+Summary: 
+Author: Brandon Geraci
+Author-email: brandon.geraci@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fastapi (>=0.95.2,<0.96.0)
+Requires-Dist: jinja2 (>=3.0.3,<4.0.0)
+Requires-Dist: pam (>=0.2.0,<0.3.0)
+Requires-Dist: python-dotenv (>=0.19.2,<0.20.0)
+Requires-Dist: python-multipart (>=0.0.5,<0.0.6)
+Requires-Dist: uvicorn (>=0.15.0,<0.16.0)

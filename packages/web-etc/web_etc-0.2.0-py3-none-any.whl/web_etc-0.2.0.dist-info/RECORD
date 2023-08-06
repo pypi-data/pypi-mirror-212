@@ -1,0 +1,7 @@
+web_etc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_etc/main.py,sha256=b_6Yz8XmsmXvu7dTpxq2mn7TySgt8Ry143XqR86vEaA,10308
+web_etc/templates/index.html,sha256=_ZMbBN5dJe1uqaZqsB7iYdQ0GR4DiUUxkfQ-jRowiKM,2963
+web_etc/templates/login.html,sha256=-ivBLslsMdjo714YzlsjAlJxtKVw9BP8Xz_iyPNxqZQ,500
+web_etc-0.2.0.dist-info/METADATA,sha256=D118m7YAdB--q1PCPWJQhJK04Zg15WWKNg6Yc2aeMrA,657
+web_etc-0.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+web_etc-0.2.0.dist-info/RECORD,,
