@@ -1,0 +1,14 @@
+# Version info
+_version.py
+
+# Ignore dynaconf secret files
+.catleg_secrets.*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Unit test / coverage reports
+.coverage
+
