@@ -1,0 +1,10 @@
+ez_cqrs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ez_cqrs/components.py,sha256=PDNcfvl3i3MxajEEMkKIAKcXlKpgE1UtuLLjhqBVjSU,1453
+ez_cqrs/error.py,sha256=irVzb5jj6Gf_L9Ulif2fcTagpn1qsjPn-OMPasM1du0,1107
+ez_cqrs/handler.py,sha256=p9GQIUYuEWVbUO7cl1AL5Q2_OUNNyxRCC8u2C0smBlE,1369
+ez_cqrs/ops.py,sha256=H_gtkL6Z-o08Gv_tDGU0ZhUspGWpkOayjt7HIKTNwkY,895
+ez_cqrs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ez_cqrs-0.2.0.dist-info/METADATA,sha256=UxbfriF9IACsIQ_41SBY3IC6mUcE8Bt4uoILnwgbg1M,837
+ez_cqrs-0.2.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+ez_cqrs-0.2.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ez_cqrs-0.2.0.dist-info/RECORD,,
