@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqdconvert"
+version = "1.2.0"
+description = "convert any audio or video files from one extension to another!"
+authors = [
+    { name="sqdnoises" }
+]
+
+readme = "README.md"
+license = { file = "LICENSE" }
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+requires-python = ">=3.8"
+dependencies = [
+    "yaspin",
+    "luddite"
+]
+
+[project.scripts]
+sqdconvert = "sqdconvert.__main__:main"

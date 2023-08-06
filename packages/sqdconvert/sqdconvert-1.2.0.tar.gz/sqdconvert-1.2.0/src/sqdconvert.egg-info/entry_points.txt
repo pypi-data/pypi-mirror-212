@@ -1,0 +1,2 @@
+[console_scripts]
+sqdconvert = sqdconvert.__main__:main
