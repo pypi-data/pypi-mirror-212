@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+api_parser.egg-info/PKG-INFO
+api_parser.egg-info/SOURCES.txt
+api_parser.egg-info/dependency_links.txt
+api_parser.egg-info/top_level.txt
