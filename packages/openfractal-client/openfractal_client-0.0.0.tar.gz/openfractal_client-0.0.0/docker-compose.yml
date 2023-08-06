@@ -1,0 +1,26 @@
+version: "3"
+services:
+  opf_client:
+    build:
+      context: ./
+    image: ghcr.io/opendrugdiscovery/openfractal-client:dev-local
+    # environment:
+    #   # Server
+    #   QCA_FRACTAL_URI: http://backend:7777
+    #   QCA_USERNAME: compute_user
+    #   QCA_PASSWORD: compute_password
+    #   QCA_VERIFY: false
+    #   # Manager
+    #   MANAGER_NAME: demo_manager
+    #   QUEUE_TAGS: '["*"]'
+    #   # Common
+    #   QCA_ADAPTER: pool
+    #   QCA_TASKS_PER_WORKER: 4
+    #   QCA_CORES_PER_WORKER: 16
+    #   QCA_MEMORY_PER_WORKER: 16
+    #   QCA_MAX_WORKERS: 1
+    #   QCA_RETRIES: 5
+    #   QCA_VERBOSE: true
+    #   # Cluster
+    #   QCA_NODE_EXCLUSIVITY: false
+    #   QCA_SCHEDULER: local

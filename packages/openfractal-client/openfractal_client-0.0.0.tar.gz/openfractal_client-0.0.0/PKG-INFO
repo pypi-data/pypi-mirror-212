@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: openfractal_client
+Version: 0.0.0
+Summary: A Python client based on QCPortal for Open Drug Discovery (ODD) QM large scale data generation.
+Author-email: Hadrien Mary <hadrien@valencediscovery.com>
+License: Apache
+Project-URL: Source Code, https://github.com/OpenDrugDiscovery/openfractal-client
+Project-URL: Bug Tracker, https://github.com/OpenDrugDiscovery/openfractal-client/issues
+Project-URL: Documentation, https://github.com/OpenDrugDiscovery/openfractal-client
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# openfractal-client
+
+[![test](https://github.com/OpenDrugDiscovery/openfractal-client/actions/workflows/test.yml/badge.svg)](https://github.com/OpenDrugDiscovery/openfractal-client/actions/workflows/test.yml)
+[![release](https://github.com/OpenDrugDiscovery/openfractal-client/actions/workflows/release.yml/badge.svg)](https://github.com/OpenDrugDiscovery/openfractal-client/actions/workflows/release.yml)
+[![docker](https://github.com/OpenDrugDiscovery/openfractal-client/actions/workflows/docker.yml/badge.svg)](https://github.com/OpenDrugDiscovery/openfractal-client/actions/workflows/docker.yml)
+[![code-check](https://github.com/OpenDrugDiscovery/openfractal-client/actions/workflows/code-check.yml/badge.svg)](https://github.com/OpenDrugDiscovery/openfractal-client/actions/workflows/code-check.yml)
+[![doc](https://github.com/OpenDrugDiscovery/openfractal-client/actions/workflows/doc.yml/badge.svg)](https://github.com/OpenDrugDiscovery/openfractal-client/actions/workflows/doc.yml)
+
+A Python client based on [QCPortal](https://github.com/MolSSI/QCFractal) for Open Drug Discovery (ODD) QM large scale data generation.
+
+## Development lifecycle
+
+### Setup dev environment
+
+```bash
+micromamba create -n openfractal -f env.yml
+micromamba activate openfractal
+
+# Install the git version of QCPortal
+pip install --no-deps git+https://github.com/MolSSI/QCFractal.git@c00627258f9344b4b35a7583ee4a9cc5ff2de3e8#subdirectory=qcportal
+pip install --no-deps git+https://github.com/MolSSI/QCFractal.git@c00627258f9344b4b35a7583ee4a9cc5ff2de3e8#subdirectory=qcfractalcompute
+
+# Install openfractal-client lib
+pip install -e .
+```
+
+### Tests
+
+You can run tests locally with:
+
+```bash
+pytest
+```
+
+## Changelogs
+
+See the latest changelogs at [CHANGELOG.md](./CHANGELOG.md).
+
+## License
+
+Under the Apache-2.0 license. See [LICENSE](LICENSE).

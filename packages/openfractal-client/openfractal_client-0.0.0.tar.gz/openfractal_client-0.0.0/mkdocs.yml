@@ -1,0 +1,70 @@
+site_name: "openfractal-client"
+site_description: "A Python client based on QCPortal for Open Drug Discovery (ODD) QM large scale data generation."
+repo_url: "https://github.com/OpenDrugDiscovery/openfractal-client"
+repo_name: "OpenDrugDiscovery/openfractal-client"
+copyright: Copyright 2020 - 2023 Valence Discovery
+
+site_url: ""
+remote_branch: "gh-pages"
+use_directory_urls: false
+docs_dir: "docs"
+
+# Fail on warnings to detect issues with types and docstring
+strict: true
+
+nav:
+  - Overview: index.md
+  - License: license.md
+
+theme:
+  name: material
+  # NOTE(hadim): to customize the material primary and secondary
+  # color check `docs/assets/css/datamol-custom.css`.
+  features:
+    - navigation.expand
+
+markdown_extensions:
+  - admonition
+  - markdown_include.include
+  - pymdownx.emoji
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  # For `tab_length=2` in the markdown extension
+  # See https://github.com/mkdocs/mkdocs/issues/545
+  - mdx_truly_sane_lists
+  - toc:
+      permalink: true
+      toc_depth: 4
+
+watch:
+  - openfractal_client/
+
+plugins:
+  - search
+
+  - mkdocstrings:
+      handlers:
+        python:
+          setup_commands:
+            - import sys
+            - sys.path.append("docs")
+            - sys.path.append("openfractal_client")
+          options:
+            new_path_syntax: true
+            show_root_heading: false
+            heading_level: 3
+            show_root_full_path: false
+
+  - mkdocs-jupyter:
+      execute: false
+      # kernel_name: python3
+
+  - mike:
+      version_selector: true
+
+extra:
+  version:
+    # Multi versioning provider for mkdocs-material (used for the JS selector)
+    provider: mike
