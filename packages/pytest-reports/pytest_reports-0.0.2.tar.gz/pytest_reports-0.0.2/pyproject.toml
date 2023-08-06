@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "pytest-reports"
+version = "0.0.2"
+description = "An interesting python package"
+authors = ["Mark Hoo <markhoo@foxmail.com>"]
+readme = "README.md"
+license = "Apache-2.0"
+homepage = "https://github.com/MarkHoo/pytest_reports"
+repository = "https://github.com/MarkHoo/pytest_reports"
+
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Operating System :: Unix",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX",
+    "Framework :: Pytest",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+
+packages = [
+    { include = "pytest_reports" },
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/MarkHoo/pytest_reports/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
