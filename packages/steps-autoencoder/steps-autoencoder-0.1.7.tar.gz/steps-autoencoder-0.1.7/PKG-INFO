@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: steps-autoencoder
+Version: 0.1.7
+Summary: An Autoencoder for Steps Data
+Home-page: https://github.com/Hekler-Designing-Health-Lab/steps-autoencoder
+Author: Junghwan Park
+Author-email: jup014@ucsd.edu
+License-File: LICENSE
