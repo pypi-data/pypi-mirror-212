@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fibo_gavin_baker/__init__.py
+src/fibo_gavin_baker/fibo_gavin_baker.py
+src/fibo_gavin_baker.egg-info/PKG-INFO
+src/fibo_gavin_baker.egg-info/SOURCES.txt
+src/fibo_gavin_baker.egg-info/dependency_links.txt
+src/fibo_gavin_baker.egg-info/top_level.txt

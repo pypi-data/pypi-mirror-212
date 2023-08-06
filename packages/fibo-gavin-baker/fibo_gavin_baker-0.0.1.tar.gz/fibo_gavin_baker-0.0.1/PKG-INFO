@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fibo_gavin_baker
+Version: 0.0.1
+Summary: This package does amazing things.
+Home-page: https://github.com/gavinbaker999/Projects
+Author: Gavin Baker
+Author-email: "Gavin Baker" <endhousesoftware999@gmail.com>
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fibo_gavin_baker python package
+
+This package does amazing things.
+
+## Installation
+
+'''shell
+$ python -m pip install fibo_gavin_baker
+'''
