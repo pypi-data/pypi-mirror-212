@@ -1,0 +1,11 @@
+README.md
+setup.py
+STEM/__init__.py
+STEM/evaluate.py
+STEM/model.py
+STEM/utils.py
+scSTEM.egg-info/PKG-INFO
+scSTEM.egg-info/SOURCES.txt
+scSTEM.egg-info/dependency_links.txt
+scSTEM.egg-info/requires.txt
+scSTEM.egg-info/top_level.txt
