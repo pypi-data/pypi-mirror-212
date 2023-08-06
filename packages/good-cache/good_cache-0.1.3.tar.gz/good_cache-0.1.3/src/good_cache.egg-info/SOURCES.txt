@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/good_cache.egg-info/PKG-INFO
+src/good_cache.egg-info/SOURCES.txt
+src/good_cache.egg-info/dependency_links.txt
+src/good_cache.egg-info/requires.txt
+src/good_cache.egg-info/top_level.txt
