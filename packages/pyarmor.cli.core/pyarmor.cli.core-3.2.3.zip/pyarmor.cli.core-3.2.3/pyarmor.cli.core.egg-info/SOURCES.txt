@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+../../src-v8/cli/core/__init__.py
+../../src-v8/cli/core/pyarmor_runtime.so
+../../src-v8/cli/core/pytransform3.so
+pyarmor.cli.core.egg-info/PKG-INFO
+pyarmor.cli.core.egg-info/SOURCES.txt
+pyarmor.cli.core.egg-info/dependency_links.txt
+pyarmor.cli.core.egg-info/top_level.txt
