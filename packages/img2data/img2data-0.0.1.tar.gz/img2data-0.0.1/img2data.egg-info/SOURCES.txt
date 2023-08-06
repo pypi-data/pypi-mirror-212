@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+img2data/__init__.py
+img2data/img2data.py
+img2data.egg-info/PKG-INFO
+img2data.egg-info/SOURCES.txt
+img2data.egg-info/dependency_links.txt
+img2data.egg-info/requires.txt
+img2data.egg-info/top_level.txt
