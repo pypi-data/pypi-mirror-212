@@ -1,0 +1,9 @@
+README.md,sha256=9Ak5GkBj744H5W75nU3MYZhbz-R9Mv6kHteHQP1yoI0,3401
+model_composer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model_composer/_tensorflow.py,sha256=RtiLJaAgvoT1AZjy2sNn-nM0d5G51zrJOCeHElkpzuA,9607
+model_composer/_utils.py,sha256=DV8ryb1qgG3gzGqHZ7OCtnGxoV2N_uCrZjMHu45dVL4,4576
+model_composer/interface.py,sha256=L-qy4BCjNwKQhn48lSxuanqyq3GEgXw9rLSdVabgWeU,1481
+model_composer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model_composer-0.1.0.dist-info/METADATA,sha256=tnN_iuM-vJdHR_FYi6BLuPG89DXp1w5Tjpuolji0wis,4063
+model_composer-0.1.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+model_composer-0.1.0.dist-info/RECORD,,
