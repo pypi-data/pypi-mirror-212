@@ -1,0 +1,884 @@
+# Translations template for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-05-31 20:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: fietsboek/actions.py:250
+msgid "email.verify_mail.subject"
+msgstr ""
+
+#: fietsboek/actions.py:253
+msgid "email.verify.text"
+msgstr ""
+
+#: fietsboek/util.py:304
+msgid "password_constraint.mismatch"
+msgstr ""
+
+#: fietsboek/util.py:306
+msgid "password_constraint.length"
+msgstr ""
+
+#: fietsboek/models/track.py:579
+msgid "tooltip.table.length"
+msgstr ""
+
+#: fietsboek/models/track.py:580
+msgid "tooltip.table.uphill"
+msgstr ""
+
+#: fietsboek/models/track.py:581
+msgid "tooltip.table.downhill"
+msgstr ""
+
+#: fietsboek/models/track.py:582
+msgid "tooltip.table.moving_time"
+msgstr ""
+
+#: fietsboek/models/track.py:583
+msgid "tooltip.table.stopped_time"
+msgstr ""
+
+#: fietsboek/models/track.py:585
+msgid "tooltip.table.max_speed"
+msgstr ""
+
+#: fietsboek/models/track.py:589
+msgid "tooltip.table.avg_speed"
+msgstr ""
+
+#: fietsboek/templates/admin.jinja2:5
+msgid "page.admin.title"
+msgstr ""
+
+#: fietsboek/templates/admin.jinja2:7
+msgid "page.admin.badges"
+msgstr ""
+
+#: fietsboek/templates/admin.jinja2:23
+msgid "page.admin.badge.edit"
+msgstr ""
+
+#: fietsboek/templates/admin.jinja2:29
+msgid "page.admin.badge.delete_badge"
+msgstr ""
+
+#: fietsboek/templates/admin.jinja2:37
+msgid "page.admin.badges.badge_title"
+msgstr ""
+
+#: fietsboek/templates/admin.jinja2:41
+msgid "page.admin.badges.badge_image"
+msgstr ""
+
+#: fietsboek/templates/admin.jinja2:45
+msgid "page.admin.badges.add_badge"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:4
+msgid "page.browse.title"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:11
+msgid "page.browse.filter.search_terms"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:20
+msgid "page.browse.filter.tags"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:27
+msgid "page.browse.filter.tagged_person"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:34
+msgid "page.browse.filter.length_minimum"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:40
+msgid "page.browse.filter.length_boundaries"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:46
+msgid "page.browse.filter.length_maximum"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:59
+msgid "page.browse.filter.date_boundaries"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:73
+msgid "page.browse.filter.type.organic"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:74
+msgid "page.browse.filter.type.synthetic"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:86
+msgid "page.browse.filter.my_tracks.only"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:87
+msgid "page.browse.filter.friends_tracks_only"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:88
+msgid "page.browse.filter.me_tagged_only"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:98
+msgid "page.browse.filters.apply"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:102
+msgid "page.browse.filters.clear_all"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:105
+msgid "page.browse.filters.expand_advanced"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:110 fietsboek/templates/browse.jinja2:111
+msgid "page.browse.sort.date"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:112 fietsboek/templates/browse.jinja2:113
+msgid "page.browse.sort.length"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:114 fietsboek/templates/browse.jinja2:115
+msgid "page.browse.sort.duration"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:132
+msgid "page.browse.organic_tooltip"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:134
+msgid "page.browse.synthetic_tooltip"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:142 fietsboek/templates/details.jinja2:90
+#: fietsboek/templates/profile.jinja2:15
+msgid "page.details.date"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:144 fietsboek/templates/details.jinja2:104
+#: fietsboek/templates/profile.jinja2:17
+msgid "page.details.length"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:149 fietsboek/templates/details.jinja2:95
+#: fietsboek/templates/profile.jinja2:21
+msgid "page.details.start_time"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:151 fietsboek/templates/details.jinja2:99
+#: fietsboek/templates/profile.jinja2:23
+msgid "page.details.end_time"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:156 fietsboek/templates/details.jinja2:108
+#: fietsboek/templates/profile.jinja2:27
+msgid "page.details.uphill"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:158 fietsboek/templates/details.jinja2:112
+#: fietsboek/templates/profile.jinja2:29
+msgid "page.details.downhill"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:163 fietsboek/templates/details.jinja2:117
+#: fietsboek/templates/profile.jinja2:33
+msgid "page.details.moving_time"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:165 fietsboek/templates/details.jinja2:121
+#: fietsboek/templates/profile.jinja2:35
+msgid "page.details.stopped_time"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:169 fietsboek/templates/details.jinja2:125
+#: fietsboek/templates/profile.jinja2:39
+msgid "page.details.max_speed"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:171 fietsboek/templates/details.jinja2:129
+#: fietsboek/templates/profile.jinja2:41
+msgid "page.details.avg_speed"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:189
+msgid "page.browse.download_multiple"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:191
+msgid "page.browse.no_results"
+msgstr ""
+
+#: fietsboek/templates/browse.jinja2:193
+msgid "page.browse.no_tracks"
+msgstr ""
+
+#: fietsboek/templates/create_account.jinja2:5
+msgid "page.create_account.title"
+msgstr ""
+
+#: fietsboek/templates/create_account.jinja2:13
+msgid "page.create_account.email_invalid"
+msgstr ""
+
+#: fietsboek/templates/create_account.jinja2:15
+msgid "page.create_account.email"
+msgstr ""
+
+#: fietsboek/templates/create_account.jinja2:24
+msgid "page.create_account.name_invalid"
+msgstr ""
+
+#: fietsboek/templates/create_account.jinja2:26
+msgid "page.create_account.name"
+msgstr ""
+
+#: fietsboek/templates/create_account.jinja2:35
+msgid "page.create_account.password_invalid"
+msgstr ""
+
+#: fietsboek/templates/create_account.jinja2:37
+msgid "page.create_account.password"
+msgstr ""
+
+#: fietsboek/templates/create_account.jinja2:46
+msgid "page.create_account.password_must_match"
+msgstr ""
+
+#: fietsboek/templates/create_account.jinja2:48
+msgid "page.create_account.repeat_password"
+msgstr ""
+
+#: fietsboek/templates/create_account.jinja2:54
+msgid "page.create_account.create"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:6
+msgid "page.details.title"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:9
+msgid "page.details.edit"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:10
+msgid "page.details.share"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:11
+msgid "page.details.delete"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:17
+msgid "page.details.sharelink.title"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:21
+msgid "page.details.sharelink.info"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:28
+msgid "page.details.sharelink.invalidate"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:30
+msgid "page.details.sharelink.close"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:40
+msgid "page.details.delete.title"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:44
+msgid "page.details.delete.info"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:49
+msgid "page.details.delete.delete"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:51
+msgid "page.details.delete.close"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:70
+msgid "page.details.tags"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:80 fietsboek/templates/edit.jinja2:10
+#: fietsboek/templates/finish_upload.jinja2:10
+msgid "page.noscript"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:85
+msgid "page.details.download"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:174
+msgid "page.details.comments"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:178
+msgid "page.details.comments.author"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:195
+msgid "page.details.comments.new.title"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:198
+msgid "page.details.comments.new.input_title"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:199
+msgid "page.details.comments.new.input_comment"
+msgstr ""
+
+#: fietsboek/templates/details.jinja2:202
+msgid "page.details.comments.new.submit"
+msgstr ""
+
+#: fietsboek/templates/edit.jinja2:8
+msgid "page.edit.title"
+msgstr ""
+
+#: fietsboek/templates/edit.jinja2:16
+msgid "page.edit.form.submit"
+msgstr ""
+
+#: fietsboek/templates/edit.jinja2:17
+msgid "page.edit.form.cancel"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:3
+msgid "page.track.form.title"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:7
+msgid "page.track.form.date"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:12
+msgid "page.track.form.visibility"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:14
+msgid "page.track.form.visibility.private"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:15
+msgid "page.track.form.visibility.friends"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:16
+msgid "page.track.form.visibility.friends_tagged"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:17
+msgid "page.track.form.visibility.logged_in"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:18
+msgid "page.track.form.visibility.public"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:21
+msgid "page.track.form.visibility.info"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:25
+msgid "page.track.form.type"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:27
+msgid "page.track.form.type.organic"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:28
+msgid "page.track.form.type.synthetic"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:32
+msgid "page.track.form.tags"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:50
+msgid "page.track.form.add_tag"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:55
+msgid "page.track.form.tagged_people"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:70
+msgid "page.track.form.add_friend"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:90
+msgid "page.track.form.badges"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:101
+msgid "page.track.form.description"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:108
+#: fietsboek/templates/edit_form.jinja2:122
+msgid "page.track.form.remove_image"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:117
+msgid "page.track.form.select_images"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:133
+msgid "page.track.form.image_description_modal"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:140
+msgid "page.track.form.image_description_modal.save"
+msgstr ""
+
+#: fietsboek/templates/edit_form.jinja2:166
+msgid "page.track.form.transformer.enable"
+msgstr ""
+
+#: fietsboek/templates/finish_upload.jinja2:8
+#: fietsboek/templates/upload.jinja2:6
+msgid "page.upload.title"
+msgstr ""
+
+#: fietsboek/templates/finish_upload.jinja2:16
+#: fietsboek/templates/upload.jinja2:13
+msgid "page.upload.form.submit"
+msgstr ""
+
+#: fietsboek/templates/finish_upload.jinja2:17
+msgid "page.upload.form.cancel"
+msgstr ""
+
+#: fietsboek/templates/home.jinja2:6
+msgid "page.home.title"
+msgstr ""
+
+#: fietsboek/templates/home.jinja2:17
+msgid "page.home.unfinished_uploads"
+msgstr ""
+
+#: fietsboek/templates/home.jinja2:31 fietsboek/templates/home.jinja2:38
+#: fietsboek/templates/home.jinja2:56
+msgid "page.home.summary.track"
+msgid_plural "page.home.summary.tracks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: fietsboek/templates/home.jinja2:56
+msgid "page.home.total"
+msgstr ""
+
+#: fietsboek/templates/layout.jinja2:43
+msgid "page.navbar.toggle"
+msgstr ""
+
+#: fietsboek/templates/layout.jinja2:54
+msgid "page.navbar.home"
+msgstr ""
+
+#: fietsboek/templates/layout.jinja2:57
+msgid "page.navbar.browse"
+msgstr ""
+
+#: fietsboek/templates/layout.jinja2:61
+msgid "page.navbar.upload"
+msgstr ""
+
+#: fietsboek/templates/layout.jinja2:70
+msgid "page.navbar.user"
+msgstr ""
+
+#: fietsboek/templates/layout.jinja2:74
+msgid "page.navbar.welcome_user"
+msgstr ""
+
+#: fietsboek/templates/layout.jinja2:77
+msgid "page.navbar.logout"
+msgstr ""
+
+#: fietsboek/templates/layout.jinja2:80
+msgid "page.navbar.profile"
+msgstr ""
+
+#: fietsboek/templates/layout.jinja2:83
+msgid "page.navbar.user_data"
+msgstr ""
+
+#: fietsboek/templates/layout.jinja2:87
+msgid "page.navbar.admin"
+msgstr ""
+
+#: fietsboek/templates/layout.jinja2:93
+msgid "page.navbar.login"
+msgstr ""
+
+#: fietsboek/templates/layout.jinja2:97
+msgid "page.navbar.create_account"
+msgstr ""
+
+#: fietsboek/templates/login.jinja2:7
+msgid "page.login.title"
+msgstr ""
+
+#: fietsboek/templates/login.jinja2:13
+msgid "page.login.email"
+msgstr ""
+
+#: fietsboek/templates/login.jinja2:21
+msgid "page.login.password"
+msgstr ""
+
+#: fietsboek/templates/login.jinja2:30
+msgid "page.login.remember-me"
+msgstr ""
+
+#: fietsboek/templates/login.jinja2:38
+msgid "page.login.submit"
+msgstr ""
+
+#: fietsboek/templates/login.jinja2:43
+msgid "page.login.forgot_password"
+msgstr ""
+
+#: fietsboek/templates/login.jinja2:45
+msgid "page.login.resend_verification"
+msgstr ""
+
+#: fietsboek/templates/password_reset.jinja2:5
+msgid "page.password_reset.title"
+msgstr ""
+
+#: fietsboek/templates/password_reset.jinja2:11
+msgid "page.password_reset.password"
+msgstr ""
+
+#: fietsboek/templates/password_reset.jinja2:13
+msgid "page.password_reset.password_invalid"
+msgstr ""
+
+#: fietsboek/templates/password_reset.jinja2:22
+msgid "page.password_reset.repeat_password"
+msgstr ""
+
+#: fietsboek/templates/password_reset.jinja2:24
+msgid "page.password_reset.password_mismatch"
+msgstr ""
+
+#: fietsboek/templates/password_reset.jinja2:30
+msgid "page.password_reset.reset"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:66
+msgid "page.profile.length"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:70
+msgid "page.profile.uphill"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:74
+msgid "page.profile.downhill"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:78
+msgid "page.profile.moving_time"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:82
+msgid "page.profile.stopped_time"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:86
+msgid "page.profile.max_speed"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:90
+msgid "page.profile.avg_speed"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:94
+msgid "page.profile.number_of_tracks"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:100
+msgid "page.profile.longest_distance_track"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:105
+msgid "page.profile.shortest_distance_track"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:110
+msgid "page.profile.longest_duration_track"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:115
+msgid "page.profile.shortest_duration_track"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:135
+msgid "page.profile.heatmap"
+msgstr ""
+
+#: fietsboek/templates/profile.jinja2:140
+msgid "page.profile.tilehunt"
+msgstr ""
+
+#: fietsboek/templates/request_password.jinja2:5
+msgid "page.request_password.title"
+msgstr ""
+
+#: fietsboek/templates/request_password.jinja2:6
+msgid "page.request_password.info"
+msgstr ""
+
+#: fietsboek/templates/request_password.jinja2:12
+msgid "page.request_password.email"
+msgstr ""
+
+#: fietsboek/templates/request_password.jinja2:17
+msgid "page.request_password.request"
+msgstr ""
+
+#: fietsboek/templates/resend_verification.jinja2:5
+msgid "page.resend_verification.title"
+msgstr ""
+
+#: fietsboek/templates/resend_verification.jinja2:6
+msgid "page.resend_verification.info"
+msgstr ""
+
+#: fietsboek/templates/resend_verification.jinja2:12
+msgid "page.resend_verification.email"
+msgstr ""
+
+#: fietsboek/templates/resend_verification.jinja2:17
+msgid "page.resend_verification.request"
+msgstr ""
+
+#: fietsboek/templates/upload.jinja2:9
+msgid "page.upload.form.gpx"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:7
+msgid "page.my_profile.title"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:11
+msgid "page.my_profile.personal_data"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:16
+msgid "page.my_profile.personal_data.name"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:21
+msgid "page.my_profile.personal_data.password_invalid"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:23
+msgid "page.my_profile.personal_data.password"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:28
+msgid "page.my_profile.personal_data.password_must_match"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:30
+msgid "page.my_profile.personal_data.repeat_password"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:33
+msgid "page.my_profile.personal_data.save"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:38
+msgid "page.my_profile.friends"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:46
+msgid "page.my_profile.unfriend"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:56
+msgid "page.my_profile.accept_friend"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:73
+msgid "page.my_profile.friend_request_email"
+msgstr ""
+
+#: fietsboek/templates/user_data.jinja2:77
+msgid "page.my_profile.send_friend_request"
+msgstr ""
+
+#: fietsboek/transformers/breaks.py:31
+msgid "transformers.remove-breaks.title"
+msgstr ""
+
+#: fietsboek/transformers/breaks.py:35
+msgid "transformers.remove-breaks.description"
+msgstr ""
+
+#: fietsboek/transformers/elevation.py:42
+msgid "transformers.fix-null-elevation.title"
+msgstr ""
+
+#: fietsboek/transformers/elevation.py:46
+msgid "transformers.fix-null-elevation.description"
+msgstr ""
+
+#: fietsboek/transformers/elevation.py:115
+msgid "transformers.fix-elevation-jumps"
+msgstr ""
+
+#: fietsboek/transformers/elevation.py:119
+msgid "transformers.fix-elevation-jumps.description"
+msgstr ""
+
+#: fietsboek/views/account.py:53
+msgid "flash.invalid_name"
+msgstr ""
+
+#: fietsboek/views/account.py:58
+msgid "flash.invalid_email"
+msgstr ""
+
+#: fietsboek/views/account.py:67
+msgid "flash.a_confirmation_link_has_been_sent"
+msgstr ""
+
+#: fietsboek/views/admin.py:48
+msgid "flash.badge_added"
+msgstr ""
+
+#: fietsboek/views/admin.py:72
+msgid "flash.badge_modified"
+msgstr ""
+
+#: fietsboek/views/admin.py:92
+msgid "flash.badge_deleted"
+msgstr ""
+
+#: fietsboek/views/default.py:115
+msgid "flash.invalid_credentials"
+msgstr ""
+
+#: fietsboek/views/default.py:119
+msgid "flash.account_not_verified"
+msgstr ""
+
+#: fietsboek/views/default.py:122
+msgid "flash.logged_in"
+msgstr ""
+
+#: fietsboek/views/default.py:142
+msgid "flash.logged_out"
+msgstr ""
+
+#: fietsboek/views/default.py:172
+msgid "flash.reset_invalid_email"
+msgstr ""
+
+#: fietsboek/views/default.py:177
+msgid "flash.password_token_generated"
+msgstr ""
+
+#: fietsboek/views/default.py:182
+msgid "page.password_reset.email.subject"
+msgstr ""
+
+#: fietsboek/views/default.py:185
+msgid "page.password_reset.email.body"
+msgstr ""
+
+#: fietsboek/views/default.py:224
+msgid "flash.resend_verification_email_fail"
+msgstr ""
+
+#: fietsboek/views/default.py:229
+msgid "flash.verification_token_generated"
+msgstr ""
+
+#: fietsboek/views/default.py:249
+msgid "flash.token_expired"
+msgstr ""
+
+#: fietsboek/views/default.py:255
+msgid "flash.email_verified"
+msgstr ""
+
+#: fietsboek/views/default.py:269
+msgid "flash.password_updated"
+msgstr ""
+
+#: fietsboek/views/detail.py:155
+msgid "flash.track_deleted"
+msgstr ""
+
+#: fietsboek/views/upload.py:52
+msgid "flash.no_file_selected"
+msgstr ""
+
+#: fietsboek/views/upload.py:62
+msgid "flash.invalid_file"
+msgstr ""
+
+#: fietsboek/views/upload.py:188
+msgid "flash.upload_success"
+msgstr ""
+
+#: fietsboek/views/upload.py:207
+msgid "flash.upload_cancelled"
+msgstr ""
+
+#: fietsboek/views/user_data.py:60
+msgid "flash.personal_data_updated"
+msgstr ""
+
+#: fietsboek/views/user_data.py:78
+msgid "flash.friend_not_found"
+msgstr ""
+
+#: fietsboek/views/user_data.py:84
+msgid "flash.friend_already_exists"
+msgstr ""
+
+#: fietsboek/views/user_data.py:92
+msgid "flash.friend_added"
+msgstr ""
+
+#: fietsboek/views/user_data.py:102
+msgid "flash.friend_request_sent"
+msgstr ""
+
