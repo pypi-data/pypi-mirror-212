@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+include requirements.txt
+include .gitignore
+include .pylintrc
+include .coveragerc
+recursive-include rate_limit *.py
