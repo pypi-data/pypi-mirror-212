@@ -1,0 +1,3 @@
+[console_scripts]
+dagcli = dagcli.ty:app
+dk = dagcli.ty:app
