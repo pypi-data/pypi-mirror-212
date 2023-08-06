@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: remlalib
+Version: 1.0.2
+Summary: REMLA23 - Team 13 - Lib
+Home-page: https://github.com/remla23-team13/lib
+Download-URL: https://github.com/remla23-team13/lib
+Author: Team 13
+Author-email: gasparsantosrocha@gmail.com
+License: MIT
+Keywords: REMLA,Versioning
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
+Requires-Dist: setuptools
+
+REMLA23 - Team 13 - Lib
