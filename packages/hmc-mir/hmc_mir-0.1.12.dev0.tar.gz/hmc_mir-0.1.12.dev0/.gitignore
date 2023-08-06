@@ -1,0 +1,11 @@
+.DS_Store
+
+build
+_autosummary
+dist
+
+*.pyc
+*.egg-info
+
+*.so
+*.c
