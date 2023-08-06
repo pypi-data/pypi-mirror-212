@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: django-restframework-base64-image-field
+Version: 1.0.0
+Summary: django rest-framework convert image upload to base64
+Home-page: https://github.com/reimibeta/django_restframework_base64_image_field
+Author: ReimiBeta
+Author-email: reimi846@gmail.com
+License: MIT
+License-File: LICENSE

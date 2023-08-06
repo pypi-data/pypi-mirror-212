@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+django_restframework_base64_image_field/__init__.py
+django_restframework_base64_image_field/base64_image_field.py
+django_restframework_base64_image_field.egg-info/PKG-INFO
+django_restframework_base64_image_field.egg-info/SOURCES.txt
+django_restframework_base64_image_field.egg-info/dependency_links.txt
+django_restframework_base64_image_field.egg-info/requires.txt
+django_restframework_base64_image_field.egg-info/top_level.txt
