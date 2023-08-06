@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: alpaca-eval
+Version: 0.1.1
+Summary: AlpacaEval : An Automatic Evaluator of Instruction-following Models
+Author: The Alpaca Team
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: datasets
+Requires-Dist: openai
+Requires-Dist: pandas
+Requires-Dist: tiktoken (>=0.3.2)
+Requires-Dist: fire
+Provides-Extra: all
+Requires-Dist: accelerate ; extra == 'all'
+Requires-Dist: transformers ; extra == 'all'
+Requires-Dist: bitsandbytes ; extra == 'all'
+Requires-Dist: xformers ; extra == 'all'
+Requires-Dist: peft ; extra == 'all'
+Requires-Dist: optimum ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: anthropic ; extra == 'all'
+Requires-Dist: huggingface-hub ; extra == 'all'
+Requires-Dist: cohere ; extra == 'all'
+Requires-Dist: seaborn ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Requires-Dist: jupyterlab ; extra == 'all'
+Requires-Dist: pre-commit (>=3.2.0) ; extra == 'all'
+Requires-Dist: black (>=23.1.0) ; extra == 'all'
+Requires-Dist: isort ; extra == 'all'
+Provides-Extra: analysis
+Requires-Dist: seaborn ; extra == 'analysis'
+Requires-Dist: matplotlib ; extra == 'analysis'
+Requires-Dist: jupyterlab ; extra == 'analysis'
+Provides-Extra: api
+Requires-Dist: anthropic ; extra == 'api'
+Requires-Dist: huggingface-hub ; extra == 'api'
+Requires-Dist: cohere ; extra == 'api'
+Provides-Extra: dev
+Requires-Dist: pre-commit (>=3.2.0) ; extra == 'dev'
+Requires-Dist: black (>=23.1.0) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Provides-Extra: local
+Requires-Dist: accelerate ; extra == 'local'
+Requires-Dist: transformers ; extra == 'local'
+Requires-Dist: bitsandbytes ; extra == 'local'
+Requires-Dist: xformers ; extra == 'local'
+Requires-Dist: peft ; extra == 'local'
+Requires-Dist: optimum ; extra == 'local'
+Requires-Dist: scipy ; extra == 'local'
+
