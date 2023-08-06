@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: xroute-env
+Version: 0.0.0
+Summary: A standard API for reinforcement learning in detailed routing.
+License: BSD-3-Clause
+Project-URL: Homepage, https://xplan-lab.org/
+Project-URL: Repository, https://github.com/xplanlab/xroute_env
+Project-URL: Documentation, https://github.com/xplanlab/xroute_env
+Project-URL: Bug Report, https://github.com/xplanlab/xroute_env/issues
+Keywords: Reinforcement Learning,VLSI,EDA,RL,AI,detailed routing,gymnasium
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# xroute_env
+RL environment for detailed routing.
+
+## Quickstart
+
+### Installation
+
+To interact with the xroute environment, you need to download the simulator first:
+
+| Operating System | Download Link |
+| --- | --- |
+| Ubuntu 22.04 | [Download](https://drive.google.com/file/d/1-Zxd0HiOHclNtwCON5wOM78eCzsPrOBB/view?usp=sharing) |
+
+Then, put the simulator in the `third_party/openroad` folder.
+
+### Launch Algorithm Backend
+
+[DQN](./baseline/DQN/README.md)
+
+[PPO](./baseline/DQN/PPO.md)
+
+### Launch Simulator
+
+Run the following command to get launch script:
+
+```bash
+cd examples
+python3 init.py [start_port][worker_num]
+```
+
+start_port: the listen port number of the first worker instance.
+
+worker_num: the number of worker instances.
+
