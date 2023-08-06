@@ -1,0 +1,2 @@
+[console_scripts]
+sextant = sextant.cli:main

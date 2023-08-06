@@ -1,0 +1,5 @@
+components:
+  - istio-ingress
+  - tests
+responses:
+  host: "pinkunicorn.dev"

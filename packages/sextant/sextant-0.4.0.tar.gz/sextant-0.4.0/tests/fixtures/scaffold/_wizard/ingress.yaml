@@ -1,0 +1,19 @@
+name: istio-ingress
+description: Provides istio-ingress capabilities
+modules:
+  - "ingress.istio:1.0"
+conflicts:
+  - nginx-ingress
+templates:
+  service: |2
+    {{ include "ingress.istio.default" . }}
+  deployment: |
+    # Fictional sidecar for testing priorities
+    # This will NOT get the | indent.
+    {{ include "ingress.istio.sidecar" . }}
+values: |
+  ingress:
+    enabled: true
+    hostname: __host__
+questions:
+  - host

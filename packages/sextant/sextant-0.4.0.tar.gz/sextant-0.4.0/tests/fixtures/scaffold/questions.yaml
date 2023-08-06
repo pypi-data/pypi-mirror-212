@@ -1,0 +1,3 @@
+public_port: "Please input the public port used for your service."
+debug: "Should debug be enabled by default (true/false)?"
+host: "Please input the hostname for this service."

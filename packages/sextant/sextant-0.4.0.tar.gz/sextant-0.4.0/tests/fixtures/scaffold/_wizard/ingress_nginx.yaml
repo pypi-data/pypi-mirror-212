@@ -1,0 +1,16 @@
+name: nginx-ingress
+description: Provides istio-ingress capabilities
+modules:
+  - "ingress.nginx:1.0"
+conflicts:
+  - tests
+priority: 10
+templates:
+  service: |2
+    {{ include "ingress.nginx.default" . }}
+values: |
+  ingress:
+    enabled: true
+    hostname: __host__
+questions:
+  - host

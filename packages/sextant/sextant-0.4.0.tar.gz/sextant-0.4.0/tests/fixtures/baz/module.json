@@ -1,0 +1,21 @@
+{
+    "namespace": "baz",
+    "modules": [
+        {
+            "name": "drunk-unicorn",
+            "version": "1.0",
+            "depends": [
+                "bar.beer:2.0"
+            ]
+        },
+        {
+            "name": "sitting-pangolin",
+            "version": "1.0",
+            "depends": [
+                "bar.beer:1.0",
+                "bar.stool:0.5",
+                "foo.pangolin:1.0"
+            ]
+        }
+    ]
+}

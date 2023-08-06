@@ -1,0 +1,29 @@
+{
+    "namespace": "bar",
+    "modules": [
+        {
+            "name": "beer",
+            "version": "1.0",
+            "depends": []
+        },
+        {
+            "name": "beer",
+            "version": "2.0",
+            "depends": [
+                "bar.stool:1.0"
+            ]
+        },
+        {
+            "name": "stool",
+            "version": "0.5",
+            "depends": []
+        },
+        {
+            "name": "stool",
+            "version": "1.0",
+            "depends": [
+                "foo.unicorn:1.1"
+            ]
+        }
+    ]
+}

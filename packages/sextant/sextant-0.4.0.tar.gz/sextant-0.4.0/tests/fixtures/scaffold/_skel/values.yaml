@@ -1,0 +1,7 @@
+# Sample general values.yaml file.
+# Values from components will be injected here:
+# replace: values
+
+# Insert common values here
+world:
+  peace: true

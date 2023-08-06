@@ -1,0 +1,12 @@
+Version 0.3.0
+* Add scaffolding of charts via the sextant create-charts command
+* Drop python 3.7, 3.8 compatibility
+* Add CHANGELOG
+
+Version 0.2.0
+* vendoring improvements and bugfixes
+* Add the 'sextant update' command implementation
+* Added README
+
+Version 0.1.0
+* First release

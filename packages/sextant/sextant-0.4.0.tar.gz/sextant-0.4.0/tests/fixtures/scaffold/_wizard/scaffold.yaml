@@ -1,0 +1,38 @@
+name: tests
+description: fixture module for sextant tests
+modules:
+  - "lamp.common:1.0"
+  - "lamp.httpd:1.0"
+priority: 1
+templates:
+  deployment: |
+    {{- include "lamp.httpd.container" . }}
+    ## Add any additional volumes for apache configuration here.
+    ## Indentation level: 10
+    {{- include "lamp.phpfpm.container" . }}
+    {{- if .Values.monitoring.enabled . }}
+    {{- include "lamp.httpd.exporter" . }}
+    {{- include "lamp.phpfpm.exporter" . }}
+    {{- end }}
+  volumes: |
+    # httpd custom configuration.
+    {{- include "lamp.httpd.volume" . }}
+    # Shared unix socket
+    {{- include "lamp.common.socket" . }}
+    # Application configuration, in /srv/app/config.json
+    {{- include "lamp.phpfpm.volume" . }}
+  configmap: |
+    {{ include "lamp.phpfpm.configmap" . }}
+    {{ include "lamp.httpd.configmap" . }}
+  np_ingress: |
+    {{- include "lamp.networkpolicy.ingress" . -}}
+values: |
+  # Sample values
+  app:
+    port: __public_port__
+  debug:
+    enabled: __debug__
+  monitoring:
+    enabled: true
+
+# questions is omitted on purpose.

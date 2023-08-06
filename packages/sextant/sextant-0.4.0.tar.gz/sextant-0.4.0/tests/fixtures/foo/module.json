@@ -1,0 +1,22 @@
+{
+    "namespace": "foo",
+    "modules": [
+        {
+            "name": "pangolin",
+            "version": "1.0",
+            "depends": []
+        },
+        {
+            "name": "unicorn",
+            "version": "1.0",
+            "depends": []
+        },
+        {
+            "name": "unicorn",
+            "version": "1.1",
+            "depends": [
+                "bar.beer:2.0"
+            ]
+        }
+    ]
+}

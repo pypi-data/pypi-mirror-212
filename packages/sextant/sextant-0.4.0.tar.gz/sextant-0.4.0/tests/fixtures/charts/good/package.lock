@@ -1,0 +1,22 @@
+[
+    {
+        "namespace": "bar",
+        "module": "beer",
+        "version": "1.0.0"
+    },
+    {
+        "namespace": "baz",
+        "module": "sitting-pangolin",
+        "version": "1.0.0"
+    },
+    {
+        "namespace": "bar",
+        "module": "stool",
+        "version": "0.5.1"
+    },
+    {
+        "namespace": "foo",
+        "module": "pangolin",
+        "version": "1.0.0"
+    }
+]
