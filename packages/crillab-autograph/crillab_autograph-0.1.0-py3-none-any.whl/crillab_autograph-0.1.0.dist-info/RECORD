@@ -1,0 +1,12 @@
+autograph/__init__.py,sha256=Po69XYI1sKRyj7lIcmATEk_TNITqd1Ws5UPn2oL3mHI,2914
+autograph/core/__init__.py,sha256=y6kOvq8tjnLSvvUPQuJNTrrD79_VdkSbZZ4HiB1mHUw,1953
+autograph/core/enumstyle.py,sha256=lNKi5gnvBYH1p9ODQgRuHYuYbZk47Rv7MHDWb2_bePo,3605
+autograph/core/plot.py,sha256=t8C0i4b4MqmOIL13jP3vqqXm3Z7O1HF0cu1Oc-STPGI,8680
+autograph/core/style.py,sha256=Kyp-aUL5wUBW6ogsheiI5PxwsCU6v9MswhAClLV1DYU,7066
+autograph/wrapper/__init__.py,sha256=kHSLIxR5ozxSFwBC7xQrPIJJ6JMWJh9mwnj4NQ_InUo,1954
+autograph/wrapper/mpl.py,sha256=ASaCm-ZXXvpgzxwxr9Kf5eXJ-Ub120uhdpudtWB203U,10728
+autograph/wrapper/plotly.py,sha256=MR_RnvusZoz01iFNQkoXBZFoGMSgV-UxQvd2PXsg_Lg,9892
+crillab_autograph-0.1.0.dist-info/METADATA,sha256=KoEaiduruULSTBCKTcqbTGJtDljoyTRUK3_9ojR6egY,1540
+crillab_autograph-0.1.0.dist-info/WHEEL,sha256=m6kf1fJuo48rT4uxh0SeA_FsGq51BpCh_8VNBKVwYQA,90
+crillab_autograph-0.1.0.dist-info/licenses/LICENSE.md,sha256=8IZlIq7rMQxLgaMVB6D-HYs_o6rLblxn-ybkRXdpLlc,1134
+crillab_autograph-0.1.0.dist-info/RECORD,,
