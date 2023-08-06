@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: WindowsContextMenu
+Version: 0.1
+Summary: Python library that simplifies the process of creating and managing context menu entries in Windows
+Home-page: https://github.com/username/nombre_de_tu_paquete
+Author:  Beltran Offerrall
+Author-email: offerrallps4@gmail.com
+License-File: LICENSE

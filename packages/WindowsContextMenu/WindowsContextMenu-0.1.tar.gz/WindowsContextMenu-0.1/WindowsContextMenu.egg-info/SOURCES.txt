@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+WindowsContextMenu/__init__.py
+WindowsContextMenu/menu_operations.py
+WindowsContextMenu/registry_editor.py
+WindowsContextMenu/utils.py
+WindowsContextMenu.egg-info/PKG-INFO
+WindowsContextMenu.egg-info/SOURCES.txt
+WindowsContextMenu.egg-info/dependency_links.txt
+WindowsContextMenu.egg-info/top_level.txt
