@@ -1,0 +1,3 @@
+[console_scripts]
+jcalapi=run:main
+
