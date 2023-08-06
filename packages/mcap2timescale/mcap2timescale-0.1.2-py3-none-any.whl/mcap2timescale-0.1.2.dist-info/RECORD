@@ -1,0 +1,10 @@
+mcap2timescale/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcap2timescale/job.py,sha256=1SCeufXmsAYgEBxk5Y2_FzZexISBi-hPdbCcmDUnrrA,1558
+mcap2timescale/main.py,sha256=26NldDCBKN45PY7bvYMwMwo9aBYJpvw2VCe5kzNRznY,704
+mcap2timescale/rosbag.py,sha256=Mswp3x0mxatcNopCEUKR5Fczfz80Olgql020zNeo7VQ,5514
+mcap2timescale/timescale.py,sha256=KVSHl3Ovk3NMu-2dVGMy2-5vmSKgvEKmFu7ahri2efs,3142
+mcap2timescale-0.1.2.dist-info/METADATA,sha256=tdydrXQKPB0JHiAclcoyEHiCTjVaLidYsVj6e2YSrOY,3061
+mcap2timescale-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mcap2timescale-0.1.2.dist-info/entry_points.txt,sha256=8_9CkwEQVXEJb6sgiCoQIDCbNUDJPpNTrWwX3by7ml0,63
+mcap2timescale-0.1.2.dist-info/top_level.txt,sha256=bjYWZ_JPi-P7HA1n0xOBiyo3W9AAgPd99kHYNrxs1v4,15
+mcap2timescale-0.1.2.dist-info/RECORD,,
