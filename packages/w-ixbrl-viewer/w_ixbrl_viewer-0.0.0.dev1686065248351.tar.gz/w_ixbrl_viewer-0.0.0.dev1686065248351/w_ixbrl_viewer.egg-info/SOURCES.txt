@@ -1,0 +1,6 @@
+module.py
+setup.py
+w_ixbrl_viewer.egg-info/PKG-INFO
+w_ixbrl_viewer.egg-info/SOURCES.txt
+w_ixbrl_viewer.egg-info/dependency_links.txt
+w_ixbrl_viewer.egg-info/top_level.txt
