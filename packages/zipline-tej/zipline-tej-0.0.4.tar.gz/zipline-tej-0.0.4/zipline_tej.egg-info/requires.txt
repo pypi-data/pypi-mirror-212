@@ -1,0 +1,10 @@
+pandas==1.2.5
+numpy==1.22.3
+exchange-calendar==3.3.0
+requests>=2.7.0
+inflection>=0.3.1
+python-dateutil
+six
+more-itertools
+tejapi
+matplotlib
