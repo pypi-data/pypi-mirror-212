@@ -1,0 +1,13 @@
+pyautoreloadserver/__init__.py,sha256=m_8PoDazHaucsA_4UIcdZwtSdd3GgPxWJj5Eaoxsvkw,173
+pyautoreloadserver/__main__.py,sha256=wu5N2wk8mvBgyvr2ghmQf4prezAe0_i-p123VVreyYc,62
+pyautoreloadserver/cli.py,sha256=oUhYklKbypW0_s9qUumSOSBZpjLphhil_JSkJGcK2qg,822
+pyautoreloadserver/pyautoreloadserver.py,sha256=MkZGrAo7J0VFXH4SCiA_Crda6z_BjlbIU8ExNATEF44,1358
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/client.py,sha256=e7owNk3sDUJFhLMIzf931H0gXDfy5LwhuDtjNiL4FGM,440
+tests/test_auto_reload_http_server.py,sha256=6laNgWuFOr63VNPSF3y8_5ORYFeneygZYy6NwcO6y4c,3312
+pyautoreloadserver-0.0.1.dist-info/LICENSE,sha256=S2wIihH0sE15GOX1r6_Jvfx3jXc9mCiiIhTFkh3LUOI,1064
+pyautoreloadserver-0.0.1.dist-info/METADATA,sha256=VT1SQKUI1crYjs3Q_ZKtwuHXKC284pQpOsUogwgDeOs,3782
+pyautoreloadserver-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyautoreloadserver-0.0.1.dist-info/entry_points.txt,sha256=xemI9Kpzn_uuANW_kacfQhcVgzOF_4WS3fRUzE-BRFs,67
+pyautoreloadserver-0.0.1.dist-info/top_level.txt,sha256=85Tn3CUa5AfL_YjZWdyBQ_h9YUqovxb_ajHJ_JpVIcU,25
+pyautoreloadserver-0.0.1.dist-info/RECORD,,
