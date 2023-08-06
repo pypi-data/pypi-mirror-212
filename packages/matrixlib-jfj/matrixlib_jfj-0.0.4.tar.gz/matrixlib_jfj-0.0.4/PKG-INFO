@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: matrixlib_jfj
+Version: 0.0.4
+Summary: A library that deals with matrix and vector operations.
+Author: Jemma Starecki
+Author-email: Jemma Starecki <starecki.j@shaw.ca>
+License: GNU General Public License v3 (GPLv3)
+Project-URL: homepage, https://github.com/JemmaFromJupiter/Matrixlib
+Project-URL: Issue Tracker, https://github.com/JemmaFromJupiter/Matrixlib/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: <4,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Matrixlib
+A basic library for matrix and vector operations. Any feedback is highly encouraged. I enjoy trying to create modules and programs that work with mathematical functions and data. I also like looking into higher end modules and researching the processes and programs they use to perform tasks. Any feedback will be taken and acted upon.
