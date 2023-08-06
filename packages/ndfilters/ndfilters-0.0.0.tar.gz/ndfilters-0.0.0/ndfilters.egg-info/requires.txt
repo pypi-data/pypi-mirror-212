@@ -1,0 +1,17 @@
+numpy
+numba
+
+[doc]
+pytest
+scipy
+pooch
+matplotlib
+graphviz
+sphinx-autodoc-typehints
+pydata-sphinx-theme
+jupyter-sphinx
+sphinx-favicon
+
+[test]
+pytest
+scipy
