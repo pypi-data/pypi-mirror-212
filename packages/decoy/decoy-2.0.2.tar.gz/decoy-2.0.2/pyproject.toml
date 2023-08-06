@@ -1,0 +1,97 @@
+[tool.poetry]
+name = "decoy"
+version = "2.0.2"
+description = "Opinionated mocking library for Python"
+authors = ["Mike Cousins <mike@cousins.io>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/mcous/decoy"
+homepage = "https://mike.cousins.io/decoy/"
+documentation = "https://mike.cousins.io/decoy/"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Testing :: Mocking",
+    "Typing :: Typed",
+]
+
+[tool.poetry.urls]
+"Changelog" = "https://github.com/mcous/decoy/releases"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+coverage = { extras = ["toml"], version = "^7.1.0" }
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.0.13"
+mkdocstrings = { extras = ["python"], version = ">=0.20,<0.23" }
+mypy = "^1.0.1"
+poethepoet = ">=0.18.1,<0.20.0"
+pytest = "^7.0.1"
+pytest-asyncio = ">=0.20.3,<0.22.0"
+pytest-mypy-plugins = "^1.10.1"
+pytest-xdist = "^3.0.2"
+ruff = ">=0.0.247,<0.0.271"
+
+[tool.poe.tasks]
+all = [ "check", "lint", "format-check", "test-once", "coverage", "docs-build", "build" ]
+check = "mypy"
+lint = "ruff check ."
+format = "black ."
+format-check = "black . --check"
+test = "pytest -f"
+test-once = "coverage run --branch --source=decoy -m pytest --mypy-same-process"
+coverage = "coverage report"
+coverage-xml = "coverage xml"
+docs = "mkdocs serve"
+docs-build = "mkdocs build"
+build = "poetry build"
+check-ci = [ "check", "lint", "format-check" ]
+test-ci = [ "test-once", "coverage-xml" ]
+build-ci = ["docs-build", "build"]
+
+[tool.poetry.plugins."pytest11"]
+"decoy" = "decoy.pytest_plugin"
+
+[tool.pytest.ini_options]
+addopts = "--color=yes --mypy-ini-file=tests/typing/mypy.ini"
+asyncio_mode = "auto"
+
+[tool.mypy]
+files = ["decoy", "tests"]
+plugins = ["decoy/mypy/plugin.py"]
+strict = true
+show_error_codes = true
+
+[tool.coverage.report]
+exclude_lines = ["@overload", "if TYPE_CHECKING:"]
+
+[tool.ruff]
+extend-exclude = [".cache"]
+ignore = [
+    "ANN101",
+    "ANN102",
+    "ANN401",
+    "D107",
+]
+select = [
+    "ANN",
+    "B",
+    "D",
+    "E",
+    "F",
+    "RUF",
+    "W",
+]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
