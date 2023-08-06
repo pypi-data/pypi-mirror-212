@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ibm-generative-ai
+Version: 0.1.15
+Summary: IBM Generative AI is a Python library built on IBM's large language model REST interface.
+Author-email: Lee Martie <lee.martie@ibm.com>, Ana Fucs <ana.fucs@ibm.com>, Veronique Demers <vdemers@ibm.com>, Mairead O'Neill <moneill@ibm.com>, Mirian Silva <mirianfrsilva@ibm.com>, Onkar Bhardwaj <onkarbhardwaj@ibm.com>, James Sutton <james.sutton@uk.ibm.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: urllib3 (<2)
+Requires-Dist: requests (>=2.28.2)
+Requires-Dist: pydantic (>=1.10.6)
+Requires-Dist: python-dotenv (>=1.0.0)
+Requires-Dist: aiohttp (>=3.8.4)
+Requires-Dist: pyyaml (>=0.2.5)
+Requires-Dist: httpx (>=0.24.0)
+Requires-Dist: aiolimiter (>=1.0.0)
+Requires-Dist: tqdm (>=4.65.0)
+Provides-Extra: all
+Requires-Dist: ibm-generative-ai[huggingface,langchain,localserver,pandas] ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pytest (>=7.2.2) ; extra == 'dev'
+Requires-Dist: pytest-dotenv (>=0.5.2) ; extra == 'dev'
+Requires-Dist: pre-commit (>=3.2.0) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=4.0.0) ; extra == 'dev'
+Requires-Dist: sphinx (>=6.1.3) ; extra == 'dev'
+Requires-Dist: furo (>=2022.12.7) ; extra == 'dev'
+Requires-Dist: twine (>=4.0.2) ; extra == 'dev'
+Requires-Dist: pytest-asyncio (>=0.20.3) ; extra == 'dev'
+Requires-Dist: pytest-mock (>=3.10.0) ; extra == 'dev'
+Requires-Dist: setuptools-scm (>=7.1.0) ; extra == 'dev'
+Requires-Dist: pytest-httpx (>=0.22.0) ; extra == 'dev'
+Provides-Extra: huggingface
+Requires-Dist: datasets (>=2.11.0) ; extra == 'huggingface'
+Provides-Extra: langchain
+Requires-Dist: langchain (<=0.0.150,>=0.0.123) ; extra == 'langchain'
+Provides-Extra: localserver
+Requires-Dist: uvicorn (>=0.21.1) ; extra == 'localserver'
+Requires-Dist: fastapi (>=0.95.1) ; extra == 'localserver'
+Provides-Extra: pandas
+Requires-Dist: pandas (>=2.0.0) ; extra == 'pandas'
+
