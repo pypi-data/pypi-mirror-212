@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: PyOdbDesignLib
+Version: 0.0.1
+Summary: Thin Python3 wrapper for the (C++) OdbDesignLib
+Project-URL: Homepage, https://nam20485.github.io/OdbDesign/
+Project-URL: Repository, https://github.com/nam20485/OdbDesign
+Project-URL: Bug Tracker, https://github.com/nam20485/OdbDesign/issues
+Author-email: Nathan Miller <nmiller217+odbdesign@gmail.com>
+Maintainer-email: Nathan Miller <nmiller217@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Nathan Miller
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: Odb,Odb++
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# PyOdbDesignLib
+
+## Description
+
+Thin Python3 wrapper for the (C++) OdbDesignLib.
+
+## OdbDesignLib
+
+A free open source cross-platform C++ library for parsing ODB++ Design archives and building net list product models with a Python server exposing a REST API, all packaged inside of a Docker image.
+
+* [GitHub](https://github.com/nam20485/odbdesign)
+* [License](https://github.com/nam20485/OdbDesign/blob/c0c8b6e4b93e1c7d4d5e65c7ad25157c883f8bfb/LICENSE)
+* [Contact](mailto:nmiller217@gmail.com?subject=OdbDesign)
