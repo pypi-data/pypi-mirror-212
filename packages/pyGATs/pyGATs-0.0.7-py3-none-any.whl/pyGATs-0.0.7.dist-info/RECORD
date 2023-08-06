@@ -1,0 +1,10 @@
+pygats/__init__.py,sha256=qrF8VMR6rCgFcnOaOz6R0d8fa8UTrNp7A9Ie4OKrLSk,206
+pygats/formatters.py,sha256=h5qxJtN0P3eOWQ6l4r8Q8qXYcZQ-93_smxuGXAQNy0U,1426
+pygats/misc.py,sha256=29HwcWmDTLDdMLIDCxnmQ8NfjDGHv1sKIIP3phca87I,1612
+pygats/pygats.py,sha256=g7xsdHIfuaA7TMznQprBmI4ibpZoo2aiwPz151AEX7M,19722
+pygats/recog.py,sha256=qgybQ_BPszol5yHHAWPxroeS7wpPjX-RtYqo_SpGSTg,14822
+pyGATs-0.0.7.dist-info/LICENSE,sha256=ZWPe614cBNBYGtd-R2l7DteDXtC2rgKcaSu41y-KHIA,1067
+pyGATs-0.0.7.dist-info/METADATA,sha256=48mCKKvOhQf-qx2OAkQgLcoYOuJJUnBjFcI6c-m9JJ8,3012
+pyGATs-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyGATs-0.0.7.dist-info/top_level.txt,sha256=Gl6vom7VCcRvcEJuEFq91lYm2ity3l1k96qVBtKZKQk,7
+pyGATs-0.0.7.dist-info/RECORD,,
