@@ -1,0 +1,5 @@
+#!python
+from to_xspf import cli
+
+if __name__ == '__main__':
+    cli()
