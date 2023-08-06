@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+PandasColorPrinter/LICENSE
+PandasColorPrinter/README.MD
+PandasColorPrinter/__init__.py
+PandasColorPrinter/requirements.txt
+PandasColorPrinter/thirdparty.json
+PandasColorPrinter.egg-info/PKG-INFO
+PandasColorPrinter.egg-info/SOURCES.txt
+PandasColorPrinter.egg-info/dependency_links.txt
+PandasColorPrinter.egg-info/requires.txt
+PandasColorPrinter.egg-info/top_level.txt
