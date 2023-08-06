@@ -1,0 +1,6 @@
+openai
+tiktoken
+requests
+azure-cognitiveservices-speech
+spacy
+numpy
