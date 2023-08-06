@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: eth-interface
+Version: 0.1.2
+Summary: EIP165 interface
+Home-page: https://git.defalsify.org/eth-interface
+Author: Louis Holbrook
+Author-email: dev@holbrook.no
+License: AGPL3
+Keywords: ethereum
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Internet
+Requires-Python: >=3.8
