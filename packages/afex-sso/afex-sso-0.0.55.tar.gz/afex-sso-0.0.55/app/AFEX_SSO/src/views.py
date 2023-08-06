@@ -1,0 +1,55 @@
+import base64
+
+from django.conf import settings as app_settings
+from django.shortcuts import redirect
+from django.views import View
+from .get_hash_key import get_hash_key
+from .sso import SSO
+
+
+sso = SSO()
+sso_url = app_settings.SSO_URL
+api_key = app_settings.SSO_API_KEY
+secret_key = app_settings.SSO_SECRET_KEY
+
+
+class LoginView(View):
+
+    def get(self, request, *kwargs):
+        request_url = base64.b64encode(
+            request.build_absolute_uri().encode('utf-8')
+        ).decode('utf-8')
+        if 'q' in request.GET.keys():
+            ses_id = request.GET.get('q')
+            hash = get_hash_key(
+                api_key=api_key,
+                secret_key=secret_key,
+                idempotency_key=ses_id
+            )
+            validate_sso = sso.check_credentials(
+                sp_api_key=api_key,
+                sp_hash_key=hash,
+                session_key=ses_id
+            )
+            try:
+                response_data = validate_sso['data']
+            except:
+                return redirect(f"{sso_url}?qz={request_url}")
+
+            user_data = response_data.get('user')
+            if user_data.get('email') and not User.objects.filter(email=user_data.get('email')).exists():
+                user = User.objects.create(
+                    email=user_data.get('email'),
+                    username=user_data.get('email'),
+                    first_name=user_data.get('first_name'),
+                    last_name=user_data.get('last_name'),
+                )
+            else:
+                user = User.objects.get(email=user_data.get('email'))
+            login(request, user)
+
+            return redirect("admin:index")
+
+        elif 'ec' in request.GET.keys() or 'next' in request.GET.keys():
+            return redirect(f"/?ec={request.GET.get('ec')}")
+        return redirect(f"{sso_url}?qz={request_url}")
