@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: faKy
+Version: 2.1.0
+Summary: faKy is a Python library for text analysis. It provides functions for readability, complexity, sentiment, and statistical analysis in the scope of fake news detection.
+Author: Sandro Barres Hamers
+Author-email: sbarreshamers@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: pandas (==1.3.4)
+Requires-Dist: spacy-readability (==1.4.1)
+Requires-Dist: nltk (==3.7)
+Requires-Dist: vaderSentiment (==3.3.2)
+Provides-Extra: vader
+Requires-Dist: vaderSentiment ; extra == 'vader'
+
+# faKy: Feature Extraction Library for Fake News Analysis
+faKy is an advanced feature extraction library explicitly designed for analyzing and detecting fake news. It provides a comprehensive set of functions to compute various linguistic features essential for identifying fake news articles. With faKy, you can calculate readability scores, and information complexity, perform sentiment analysis using VADER, extract named entities, and apply part-of-speech tags. Additionally, faKy offers a Dunn test function for testing the significance between multiple independent variables.
+
+Our goal with faKy is to contribute to developing more sophisticated and interpretable machine learning models and deepen our understanding of the underlying linguistic features that define fake news.
+
+## Installation
+Before utilizing faKy, ensure that you have the necessary dependencies installed. Please refer to the requirements.txt file for detailed information. In particular, make sure you have spaCy and en_core_web_md installed in your terminal or kernel by executing the following commands:
+
+```shell
+pip install spacy
+pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.3.1/en_core_web_md-2.3.1.tar.gz
+```
+To verify the successful installation of en_core_web_md, you can use the command 
+```shell
+!pip list
+```
+Once en_core_web_md is correctly installed, you can proceed to install faKy using the following command:
+```python
+!pip install faKy==2.0.1
+```
+faKy automatically installs the required dependencies, including NLTK.
+## Getting Started with faKy
+faKy allows you to compute features based on text objects, enabling you to extract features for all text objects within a dataframe. Here is an example code block demonstrating the usage:
+
+First, import the faKy library, and the required functions:
+```python
+from faKy.faKy import process_text_readability, process_text_complexity
+```
+Next, apply the process_text_readability function to your dataframe:
+```python
+    dummy_df['readability'] = dummy_df['text-object'].apply(process_text_readability)
+```
+After applying this function to your dataframe, the features will be extracted and added as a new column, as shown in the example below:
+
+![Alt Text](./faKy_df.png)
+
+
+# faKy functionality
+Here is a summary of the available functions in faKy:
+| Function Name             | Usage                                                                                                                                                            |
+|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| readability_computation   | Computes the Flesch-Kincaid Reading Ease score for a spaCy document using the Readability class. Returns the original document object.                           |
+| process_text_readability  | Takes a text string as input, processes it with spaCy's NLP pipeline, and computes the Flesch-Kincaid Reading Ease score. Returns the score.                       |
+| compress_doc              | Compresses the serialized form of a spaCy Doc object using gzip, calculates the compressed size, and sets the compressed size to the custom "compressed_size" attribute of the Doc object. Returns the Doc object. |
+| process_text_complexity   | Takes a text string as input, processes it with spaCy's custom NLP pipeline, and computes the compressed size. Returns the compressed size of the string in bits. |
+| VADER_score               | Takes a text input and calculates the sentiment scores using the VADER sentiment analysis tool. Returns a dictionary of sentiment scores.                          |
+| process_text_vader        | Takes a text input, applies the VADER sentiment analysis model, and returns the negative, neutral, positive, and compound sentiment scores as separate variables.  |
+| count_named_entities      | Takes a text input, identifies named entities using spaCy, and returns the count of named entities in the text.                                                 |
+| count_ner_labels          | Takes a text input, identifies named entities using spaCy, and returns a dictionary of named entity label counts.                                               |
+| create_input_vector_NER   | Takes a dictionary of named entity recognition (NER) label counts and creates an input vector with the count for each NER label. Returns the input vector.         |
+| count_pos                 | Counts the number of parts of speech (POS) in a given text. Returns a dictionary with the count of each POS.                                                    |
+| create_input_vector_pos   | Takes a dictionary of POS tag counts and creates an input vector of zeros. Returns the input vector.                                                             |
+| values_by_label           | Takes a DataFrame, a feature, a list of labels, and a label column name. Returns a list of lists containing the values of the feature for each label.             |
+| dunn_table                | Takes a DataFrame of Dunn's test results and creates a new DataFrame with pairwise comparisons between groups. Returns the new DataFrame.                           |
+    
