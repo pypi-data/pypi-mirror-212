@@ -1,0 +1,16 @@
+README.md
+setup.py
+jgp_report_creditos/__init__.py
+jgp_report_creditos/report.py
+jgp_report_creditos/test.py
+jgp_report_creditos.egg-info/PKG-INFO
+jgp_report_creditos.egg-info/SOURCES.txt
+jgp_report_creditos.egg-info/dependency_links.txt
+jgp_report_creditos.egg-info/top_level.txt
+jgp_report_creditos/core/__init__.py
+jgp_report_creditos/core/contrato/__init__.py
+jgp_report_creditos/core/contrato/v1/__init__.py
+jgp_report_creditos/core/contrato/v1/base.py
+jgp_report_creditos/core/contrato/v1/contratos.py
+jgp_report_creditos/core/exception/__init__.py
+jgp_report_creditos/core/exception/exception.py
