@@ -1,0 +1,43 @@
+[tool.poetry]
+authors = ["Ivan Choo <ivan@horangi.com>"]
+description = "A library for parsing simple query expression."
+name = "tgr-wdn-query-lang"
+packages = [
+  {include = "tgr_wdn_query_lang", from = "src"},
+]
+version = "1.1.7"
+readme = "COPYRIGHT"
+
+[tool.poetry.dependencies]
+antlr4-python3-runtime = "^4.9.2"
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+black = "^21.4b2"
+click = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pytest = "*"
+twine = "*"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.isort]
+multi_line_output = 3
+profile = "black"
+src_paths = ["src", "test"]
+
+[tool.black]
+exclude = '''
+(
+/(
+|\.venv
+|\.mypy_cache
+|\.pytest_cache
+|\.vscode
+|)/
+)cdk
+'''
