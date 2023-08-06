@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+autodistill_owl_vit/__init__.py
+autodistill_owl_vit/owlvit.py
+autodistill_owl_vit.egg-info/PKG-INFO
+autodistill_owl_vit.egg-info/SOURCES.txt
+autodistill_owl_vit.egg-info/dependency_links.txt
+autodistill_owl_vit.egg-info/requires.txt
+autodistill_owl_vit.egg-info/top_level.txt
+test/test_hello.py
