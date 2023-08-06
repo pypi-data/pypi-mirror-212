@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "ntp-manager"
+version = "0.9.1"
+description = ""
+authors = ["zhengmy <zhengmy@ion.ac.cn>"]
+readme = "README.md"
+packages = [{include = "ntp_manager"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+shapely = "^2.0.1"
+orjson = "^3.8.7"
+numpy = "^1.24"
+mat73 = "^0.60"
+
+fire = "^0.5.0"
+alive-progress = "^3.1.0"
+imagesize = "^1.4.1"
+geojson = "^3.0.1"
+
+pywebview = [
+    {extras = ["qt"], version = "^4.1", platform = "linux"},
+    {version = "^4.1", platform = "win32"}
+]
+qypy = [
+    { version = "^0.9.2", platform = "linux" }
+]
+pythonnet = { version = "^3.0", platform = "win32" }
+pygobject = {version = "^3.44.1", platform = "linux"}
+
+fastapi = {version = "^0.96", optional = true}
+uvicorn = {extras = ["standard"], version = "^0.22", optional = true}
+python-multipart = {version = "^0.0.6", optional = true}
+h5py = "^3.8.0"
+pymysql = "^1.0.3"
+aiomysql = "^0.1.1"
+pyserde = "^0.10"
+
+[tool.poetry.extras]
+web = ["fastapi", "uvicorn", "python-multipart"]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3"
+autopep8 = "^2.0.2"
+ipykernel = "^6.22.0"
+matplotlib = "^3.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+web = "ntp_manager.web:main"
+checkntp = "ntp_manager.gui:main"
+
+
+[[tool.poetry.source]]
+name = "nhp-pypi"
+url = "http://10.20.34.150:9998/"
