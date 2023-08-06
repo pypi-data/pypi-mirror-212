@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+jp_config.egg-info/PKG-INFO
+jp_config.egg-info/SOURCES.txt
+jp_config.egg-info/dependency_links.txt
+jp_config.egg-info/top_level.txt
