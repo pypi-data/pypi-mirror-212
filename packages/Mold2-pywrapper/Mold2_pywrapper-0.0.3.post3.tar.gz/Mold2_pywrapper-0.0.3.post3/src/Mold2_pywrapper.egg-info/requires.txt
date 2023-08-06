@@ -1,0 +1,14 @@
+more-itertools
+pandas
+rdkit
+requests
+pystow
+bounded-pool-executor
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+
+[testing]
+pytest

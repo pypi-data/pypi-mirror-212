@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/Mold2_pywrapper/__init__.py
+src/Mold2_pywrapper/descriptors.json
+src/Mold2_pywrapper/mold2_wrapper.py
+src/Mold2_pywrapper.egg-info/PKG-INFO
+src/Mold2_pywrapper.egg-info/SOURCES.txt
+src/Mold2_pywrapper.egg-info/dependency_links.txt
+src/Mold2_pywrapper.egg-info/requires.txt
+src/Mold2_pywrapper.egg-info/top_level.txt
+src/mold2_pywrapper.egg-info/PKG-INFO
+src/mold2_pywrapper.egg-info/SOURCES.txt
+src/mold2_pywrapper.egg-info/dependency_links.txt
+src/mold2_pywrapper.egg-info/requires.txt
+src/mold2_pywrapper.egg-info/top_level.txt
