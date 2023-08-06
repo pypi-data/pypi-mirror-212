@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+selenium2df_locate_element/README.MD
+selenium2df_locate_element/__init__.py
+selenium2df_locate_element/requirements.txt
+selenium2df_locate_element/thirdparty.json
+selenium2df_locate_element.egg-info/PKG-INFO
+selenium2df_locate_element.egg-info/SOURCES.txt
+selenium2df_locate_element.egg-info/dependency_links.txt
+selenium2df_locate_element.egg-info/requires.txt
+selenium2df_locate_element.egg-info/top_level.txt

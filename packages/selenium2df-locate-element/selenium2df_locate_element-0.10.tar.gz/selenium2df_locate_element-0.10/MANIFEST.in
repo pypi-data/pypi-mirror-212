@@ -1,0 +1,3 @@
+include selenium2df_locate_element/requirements.txt
+include selenium2df_locate_element/thirdparty.json
+include selenium2df_locate_element/README.MD
