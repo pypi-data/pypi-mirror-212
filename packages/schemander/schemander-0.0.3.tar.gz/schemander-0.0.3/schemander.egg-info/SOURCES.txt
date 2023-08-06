@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+schemander.py
+schemander.egg-info/PKG-INFO
+schemander.egg-info/SOURCES.txt
+schemander.egg-info/dependency_links.txt
+schemander.egg-info/requires.txt
+schemander.egg-info/top_level.txt

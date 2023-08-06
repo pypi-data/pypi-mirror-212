@@ -1,0 +1,12 @@
+PyJWT
+phonenumbers>=3.12.32
+
+[dev]
+black
+build
+mypy
+pytest
+pytest-cov
+python-lsp-server[all]
+types-PyJWT
+twine
