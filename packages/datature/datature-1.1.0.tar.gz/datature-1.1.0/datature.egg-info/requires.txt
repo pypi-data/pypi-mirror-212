@@ -1,0 +1,17 @@
+requests
+google-crc32c
+pyhumps
+pyyaml
+inquirer
+halo
+filetype
+opencv-python
+alive-progress
+pydicom
+nibabel
+pillow
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinx_markdown_builder
