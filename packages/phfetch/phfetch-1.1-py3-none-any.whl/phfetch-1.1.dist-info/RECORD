@@ -1,0 +1,9 @@
+phfetch/__init__.py,sha256=VqvC_9GoMwKYSCAHnYRPnKbojbHO8ukQyPWRyqs6bQM,414
+phfetch/core.py,sha256=FGGZcoD458rQSX2Xn-PZmvdkk6pR-e36Jh0cWqUlo7E,8889
+phfetch/query.py,sha256=_B6ly0tVsmFkqi4fbzu-07LztCHX4_Ezhja4z5dvW2A,2609
+phfetch/utils.py,sha256=GXVhIEYIRQeB2jnffGChD2jz1leoap2QOiR84PQfKfo,3984
+phfetch-1.1.dist-info/LICENSE,sha256=TL_fh2NV0qxdlEcXUMvS8m6f0-JZxCIizZjx5UxwOC4,1064
+phfetch-1.1.dist-info/METADATA,sha256=5eOkU1fP0c-mj_HdpsQ9881t4EHUHygXT29cjZOH57M,1892
+phfetch-1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+phfetch-1.1.dist-info/top_level.txt,sha256=mxj-vlwYAlzJ2gcdgRXmAD5139JuTNHTgY3V8jNZBmg,8
+phfetch-1.1.dist-info/RECORD,,
