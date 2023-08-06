@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: dl-myo
+Version: 0.1.0
+Summary: A replacement middleware to MyoConnect for Myo Armband
+Project-URL: Homepage, https://github.com/iomz/dl-myo
+Project-URL: Bug Tracker, https://github.com/iomz/dl-myo/issues
+Author-email: Iori Mizutani <iori.mizutani@gmail.com>
+Maintainer-email: Iori Mizutani <iori.mizutani@gmail.com>
+License-File: LICENSE
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Requires-Python: >=3.11
+Requires-Dist: aenum
+Requires-Dist: bleak
+Description-Content-Type: text/markdown
+
+# dl-myo (Dongle-less Myo)
+
+[![PyPI Version](https://badge.fury.io/py/dl-myo.svg)](https://badge.fury.io/py/dl-myo)
+[![Build Status](https://github.com/iomz/dl-myo/workflows/Build/badge.svg)](https://github.com/iomz/dl-myo/actions?query=workflow%3ABuild)
+
+dl-myo is a replacement to MyoConnect for Myo Armband without an official Myo dongle.
+
+If you are fed up with the dongle and still need to use Myo anyway this is the right stuff to grab.
+
+This project is a reimplementation of [Dongleless-myo](https://github.com/iomz/Dongleless-myo) (originally created by [@mamo91] and enhanced by [@MyrikLD]) using [Bleak](https://github.com/hbldh/bleak) instead of [bluepy](https://github.com/IanHarvey/bluepy), and therefore supports asyncio on multiple platforms.
+
+## Platform Support
+
+|       Linux        |    Raspberry Pi    |       macOS        |      Windows       |
+| :----------------: | :----------------: | :----------------: | :----------------: |
+| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+
+## Install
+
+```bash
+pip install dl-myo
+```
+
+## Example
+
+```bash
+python examples/sample.py
+```
