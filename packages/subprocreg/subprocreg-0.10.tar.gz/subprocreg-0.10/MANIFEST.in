@@ -1,0 +1,3 @@
+include subprocreg/requirements.txt
+include subprocreg/thirdparty.json
+include subprocreg/README.MD
