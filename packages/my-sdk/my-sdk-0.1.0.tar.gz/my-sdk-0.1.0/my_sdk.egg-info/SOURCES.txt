@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+my_sdk.egg-info/PKG-INFO
+my_sdk.egg-info/SOURCES.txt
+my_sdk.egg-info/dependency_links.txt
+my_sdk.egg-info/requires.txt
+my_sdk.egg-info/top_level.txt
+vecpot/__init__.py
+vecpot/client.py
+vecpot/exceptions.py
