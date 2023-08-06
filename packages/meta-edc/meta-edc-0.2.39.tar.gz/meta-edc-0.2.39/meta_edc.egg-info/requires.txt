@@ -1,0 +1,5 @@
+edc==0.4.96
+edc-egfr==0.1.10
+edc-microscopy==0.1.1
+canned-views
+beautifulsoup4
