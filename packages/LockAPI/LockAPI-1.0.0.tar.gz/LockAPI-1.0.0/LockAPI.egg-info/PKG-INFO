@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: LockAPI
+Version: 1.0.0
+Summary: A package for creating and managing locks
+Home-page: 
+Author: Aleph Firmino
+Author-email: alephfirmino@protonmail.com
+License: MIT
+
+A client and server implementation for managing locks using a REST API.
