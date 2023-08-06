@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mpdbg"
+version = "0.1.2"
+description = "Display MPD's current song's cover art on top of wallpaper"
+authors = ["dragonwit <dragonwit@dragonwit.dev>"]
+readme = "README.md"
+license = "GPL-3.0-only"
+homepage = "https://git.dragonwit.dev/dragonwit/mpdbg-py"
+repository = "https://git.dragonwit.dev/dragonwit/mpdbg-py"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+python-mpd2 = "^3.1.0"
+click = "^8.1.3"
+pillow = "^9.5.0"
+
+[tool.poetry.scripts]
+mpdbg = "mpdbg.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
