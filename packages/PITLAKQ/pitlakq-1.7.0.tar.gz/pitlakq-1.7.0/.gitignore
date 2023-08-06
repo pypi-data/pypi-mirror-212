@@ -1,0 +1,7 @@
+w2/build/**
+**/__pycache__/**
+*.egg-info
+*.mod
+tests/test_bathymetry/**
+publications/*
+**.so

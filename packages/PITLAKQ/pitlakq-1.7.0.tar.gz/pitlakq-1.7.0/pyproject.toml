@@ -1,0 +1,85 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "PITLAKQ"
+version = "1.7.0"
+authors = [
+  { name="Mike Müller", email="mmueller@hydrocomputing.com" },
+]
+description = "The Pit Lake Hydrodynamic and Water Quality Model"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "libpitlakq",
+    "jupyterlab",
+    "numpy",
+    "matplotlib",
+    "netcdf4",
+    "openpyxl",
+    "pandas",
+    "pyro4",
+    "python",
+    "pywin32; sys_platform == 'win32'",
+    "pyyaml",
+    "scipy",
+    "xlsxwriter",
+    "zodb",
+]
+
+[project.scripts]
+pitlakq = "pitlakq.metamodel.running.run_pitlakq:main"
+
+[project.urls]
+"Homepage" = "http://www.pitlakq.com"
+"Documentation" = "https://github.com/pypa/sampleproject/issues"
+
+
+[tool.hatch.build.targets.sdist]
+packages = ["src/pitlakq"]
+include = [
+    "*.txt",
+    "*.yaml",
+    ".pitlakq_sample",
+    "*.dat",
+    "*.ini",
+    "*.nc",
+    "phreeqc2linux",
+    "phreeqc2mac",
+    "phreeqc2win.exe"
+]
+exclude = [
+    "/.git",
+    "/w2",
+    "tests",
+    "/publications",
+    "/tut",
+    "/conda_package",
+    "/buildutils",
+    "/dist",
+    "/docs/",
+    "/external_licenses",
+]
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "/src/pitlakq",
+]
+packages = ["src/pitlakq"]
