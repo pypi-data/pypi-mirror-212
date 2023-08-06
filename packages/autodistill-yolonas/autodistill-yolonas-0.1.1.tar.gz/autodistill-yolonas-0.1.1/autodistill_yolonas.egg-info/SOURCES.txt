@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+autodistill_yolonas/__init__.py
+autodistill_yolonas/yolonas_model.py
+autodistill_yolonas.egg-info/PKG-INFO
+autodistill_yolonas.egg-info/SOURCES.txt
+autodistill_yolonas.egg-info/dependency_links.txt
+autodistill_yolonas.egg-info/requires.txt
+autodistill_yolonas.egg-info/top_level.txt
