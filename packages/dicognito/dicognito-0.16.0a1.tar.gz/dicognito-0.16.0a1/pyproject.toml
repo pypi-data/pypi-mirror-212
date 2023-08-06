@@ -1,0 +1,53 @@
+[tool.black]
+line-length = 120
+target_version = ['py37', 'py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.tox
+    | \.venv
+    | build
+    | dist
+  )/
+)
+'''
+[tool.mypy]
+show_error_codes=true
+show_error_context=true
+show_column_numbers=true
+pretty=true
+color_output=true
+
+warn_unreachable=true
+allow_redefinition=false
+
+# treat Optional per PEP 484
+strict_optional=true
+
+strict=true
+
+[[tool.mypy.overrides]]
+module="pydicom.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module="pytest."
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module="tests.*"
+allow_untyped_defs = true
+
+[tool.pylama]
+linters = "mccabe,pycodestyle,pyflakes"
+skip = ".tox/*"
+
+[tool.pylama.linter.pycodestyle]
+ignore = "E203,W503"
+max_line_length = 120
+
+[tool.pytest.ini_options]
+xfail_strict=true
