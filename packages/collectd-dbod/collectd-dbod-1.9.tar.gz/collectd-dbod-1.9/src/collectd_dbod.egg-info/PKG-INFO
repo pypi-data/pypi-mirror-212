@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: collectd-dbod
+Version: 1.9
+Summary: Collectd plugins for DBoD
+Home-page: https://gitlab.cern.ch/db/collectd/collectd-dbod
+Author: Damian Moskalik
+Author-email: damian.moskalik@cern.ch
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
