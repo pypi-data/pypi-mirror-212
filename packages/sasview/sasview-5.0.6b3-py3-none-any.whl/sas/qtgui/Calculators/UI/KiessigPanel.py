@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file '.\src\sas\qtgui\Calculators\UI\KiessigPanel.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_KiessigPanel(object):
+    def setupUi(self, KiessigPanel):
+        KiessigPanel.setObjectName("KiessigPanel")
+        KiessigPanel.resize(365, 197)
+        KiessigPanel.setFocusPolicy(QtCore.Qt.TabFocus)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/res/ball.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        KiessigPanel.setWindowIcon(icon)
+        KiessigPanel.setToolTip("")
+        self.gridLayout_3 = QtWidgets.QGridLayout(KiessigPanel)
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.groupBox = QtWidgets.QGroupBox(KiessigPanel)
+        self.groupBox.setObjectName("groupBox")
+        self.gridLayout = QtWidgets.QGridLayout(self.groupBox)
+        self.gridLayout.setObjectName("gridLayout")
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label = QtWidgets.QLabel(self.groupBox)
+        self.label.setObjectName("label")
+        self.horizontalLayout.addWidget(self.label)
+        self.deltaq_in = QtWidgets.QLineEdit(self.groupBox)
+        self.deltaq_in.setMinimumSize(QtCore.QSize(77, 21))
+        self.deltaq_in.setBaseSize(QtCore.QSize(77, 21))
+        self.deltaq_in.setObjectName("deltaq_in")
+        self.horizontalLayout.addWidget(self.deltaq_in)
+        self.label_2 = QtWidgets.QLabel(self.groupBox)
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout.addWidget(self.label_2)
+        self.gridLayout.addLayout(self.horizontalLayout, 0, 0, 1, 1)
+        self.gridLayout_3.addWidget(self.groupBox, 0, 0, 1, 3)
+        self.groupBox_2 = QtWidgets.QGroupBox(KiessigPanel)
+        self.groupBox_2.setObjectName("groupBox_2")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.groupBox_2)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label_3 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_3.setObjectName("label_3")
+        self.horizontalLayout_2.addWidget(self.label_3)
+        self.lengthscale_out = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lengthscale_out.setMinimumSize(QtCore.QSize(77, 21))
+        self.lengthscale_out.setBaseSize(QtCore.QSize(77, 21))
+        self.lengthscale_out.setReadOnly(True)
+        self.lengthscale_out.setObjectName("lengthscale_out")
+        self.horizontalLayout_2.addWidget(self.lengthscale_out)
+        self.label_4 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_4.setObjectName("label_4")
+        self.horizontalLayout_2.addWidget(self.label_4)
+        self.gridLayout_2.addLayout(self.horizontalLayout_2, 0, 0, 1, 1)
+        self.gridLayout_3.addWidget(self.groupBox_2, 1, 0, 1, 3)
+        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem, 2, 2, 1, 1)
+        self.closeButton = QtWidgets.QPushButton(KiessigPanel)
+        self.closeButton.setObjectName("closeButton")
+        self.gridLayout_3.addWidget(self.closeButton, 3, 1, 1, 1)
+        self.helpButton = QtWidgets.QPushButton(KiessigPanel)
+        self.helpButton.setObjectName("helpButton")
+        self.gridLayout_3.addWidget(self.helpButton, 3, 2, 1, 1)
+        self.computeButton = QtWidgets.QPushButton(KiessigPanel)
+        self.computeButton.setObjectName("computeButton")
+        self.gridLayout_3.addWidget(self.computeButton, 3, 0, 1, 1)
+
+        self.retranslateUi(KiessigPanel)
+        QtCore.QMetaObject.connectSlotsByName(KiessigPanel)
+
+    def retranslateUi(self, KiessigPanel):
+        _translate = QtCore.QCoreApplication.translate
+        KiessigPanel.setWindowTitle(_translate("KiessigPanel", "Dialog"))
+        self.groupBox.setTitle(_translate("KiessigPanel", "Input"))
+        self.label.setText(_translate("KiessigPanel", "Kiessig Fringe Width (Delta Q)"))
+        self.label_2.setText(_translate("KiessigPanel", "1/Å"))
+        self.groupBox_2.setTitle(_translate("KiessigPanel", "Output"))
+        self.label_3.setText(_translate("KiessigPanel", "Thickness (or Diameter)               "))
+        self.label_4.setText(_translate("KiessigPanel", "   Å"))
+        self.closeButton.setToolTip(_translate("KiessigPanel", "<html><head/><body><p>Close this window.</p></body></html>"))
+        self.closeButton.setText(_translate("KiessigPanel", "Close"))
+        self.helpButton.setToolTip(_translate("KiessigPanel", "<html><head/><body><p>Help using the Kiessing fringe calculator.</p></body></html>"))
+        self.helpButton.setText(_translate("KiessigPanel", "Help"))
+        self.computeButton.setToolTip(_translate("KiessigPanel", "<html><head/><body><p>Compute the thickness or diameter.</p></body></html>"))
+        self.computeButton.setText(_translate("KiessigPanel", "Compute"))
+

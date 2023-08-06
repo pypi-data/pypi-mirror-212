@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file '.\src\sas\qtgui\Utilities\UI\GridPanelUI.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_GridPanelUI(object):
+    def setupUi(self, GridPanelUI):
+        GridPanelUI.setObjectName("GridPanelUI")
+        GridPanelUI.resize(939, 330)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(GridPanelUI.sizePolicy().hasHeightForWidth())
+        GridPanelUI.setSizePolicy(sizePolicy)
+        self.centralwidget = QtWidgets.QWidget(GridPanelUI)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.centralwidget)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
+        self.tabWidget.setTabPosition(QtWidgets.QTabWidget.South)
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setObjectName("tab")
+        self.gridLayout = QtWidgets.QGridLayout(self.tab)
+        self.gridLayout.setObjectName("gridLayout")
+        self.tblParams = QtWidgets.QTableWidget(self.tab)
+        self.tblParams.setContextMenuPolicy(QtCore.Qt.CustomContextMenu)
+        self.tblParams.setAlternatingRowColors(True)
+        self.tblParams.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
+        self.tblParams.setObjectName("tblParams")
+        self.tblParams.setColumnCount(0)
+        self.tblParams.setRowCount(0)
+        self.gridLayout.addWidget(self.tblParams, 0, 0, 1, 1)
+        self.tabWidget.addTab(self.tab, "")
+        self.gridLayout_2.addWidget(self.tabWidget, 0, 0, 1, 1)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem)
+        self.cmdPlot = QtWidgets.QPushButton(self.centralwidget)
+        self.cmdPlot.setObjectName("cmdPlot")
+        self.horizontalLayout.addWidget(self.cmdPlot)
+        self.cmdOK = QtWidgets.QPushButton(self.centralwidget)
+        self.cmdOK.setObjectName("cmdOK")
+        self.horizontalLayout.addWidget(self.cmdOK)
+        self.cmdHelp = QtWidgets.QPushButton(self.centralwidget)
+        self.cmdHelp.setObjectName("cmdHelp")
+        self.horizontalLayout.addWidget(self.cmdHelp)
+        self.gridLayout_2.addLayout(self.horizontalLayout, 1, 0, 1, 1)
+        GridPanelUI.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(GridPanelUI)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 510, 26))
+        self.menubar.setObjectName("menubar")
+        self.menuFile = QtWidgets.QMenu(self.menubar)
+        self.menuFile.setObjectName("menuFile")
+        GridPanelUI.setMenuBar(self.menubar)
+        self.actionOpen = QtWidgets.QAction(GridPanelUI)
+        self.actionOpen.setObjectName("actionOpen")
+        self.actionOpen_with_Excel = QtWidgets.QAction(GridPanelUI)
+        self.actionOpen_with_Excel.setObjectName("actionOpen_with_Excel")
+        self.actionSave = QtWidgets.QAction(GridPanelUI)
+        self.actionSave.setObjectName("actionSave")
+        self.menuFile.addAction(self.actionOpen)
+        self.menuFile.addAction(self.actionOpen_with_Excel)
+        self.menuFile.addSeparator()
+        self.menuFile.addAction(self.actionSave)
+        self.menubar.addAction(self.menuFile.menuAction())
+
+        self.retranslateUi(GridPanelUI)
+        self.tabWidget.setCurrentIndex(0)
+        self.cmdOK.clicked.connect(GridPanelUI.close)
+        QtCore.QMetaObject.connectSlotsByName(GridPanelUI)
+
+    def retranslateUi(self, GridPanelUI):
+        _translate = QtCore.QCoreApplication.translate
+        GridPanelUI.setWindowTitle(_translate("GridPanelUI", "Batch Fitting Results"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("GridPanelUI", "Tab 1"))
+        self.cmdPlot.setText(_translate("GridPanelUI", "Plot"))
+        self.cmdOK.setText(_translate("GridPanelUI", "Close"))
+        self.cmdHelp.setText(_translate("GridPanelUI", "Help"))
+        self.menuFile.setTitle(_translate("GridPanelUI", "File"))
+        self.actionOpen.setText(_translate("GridPanelUI", "Open"))
+        self.actionOpen_with_Excel.setText(_translate("GridPanelUI", "Open with Excel"))
+        self.actionSave.setText(_translate("GridPanelUI", "Save"))
+

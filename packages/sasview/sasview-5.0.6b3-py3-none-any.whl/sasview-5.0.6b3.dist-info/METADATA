@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sasview
+Version: 5.0.6b3
+Summary: SasView application
+Home-page: http://sasview.org
+Download-URL: https://github.com/SasView/sasview.git
+Author: SasView Team
+Author-email: developers@sasview.org
+License: PSF
+Keywords: small-angle x-ray and neutron scattering analysis
+License-File: LICENSE.TXT
+Requires-Dist: bumps (>=0.7.5.9)
+Requires-Dist: periodictable (>=1.5.0)
+Requires-Dist: pyparsing (>=2.0.0)
+Requires-Dist: lxml
+Requires-Dist: h5py
+Requires-Dist: sasmodels (==1.0.7)
+Requires-Dist: qt5reactor
+Requires-Dist: twisted
+Requires-Dist: typing-extensions (>=4.5.0)
+Requires-Dist: pyopenssl
+Requires-Dist: cryptography (<39.0)
+Requires-Dist: html5lib
+Requires-Dist: reportlab
+
