@@ -1,0 +1,8 @@
+ase
+numpy
+py3Dmol
+pynauty
+scipy
+pandas
+mendeleev
+sqlalchemy<2.0.0
