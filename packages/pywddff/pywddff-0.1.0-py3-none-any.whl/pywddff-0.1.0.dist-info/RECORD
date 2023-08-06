@@ -1,0 +1,14 @@
+pywddff/__init__.py,sha256=NSs8h4XJ4Ux8cgiOXkE-Jpms-3kXFOS7SXSrji1P5ac,111
+pywddff/coefs.py,sha256=MuteEq5D8Z_BaSXrj13joGJxQSeQupMxMmccrnvOrRI,10893
+pywddff/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywddff/data/camels_subset.pkl,sha256=HwBbqsygWPC0E8I4x-f_nuUgrJWzm1Mrul27zetYTA0,23893760
+pywddff/data/scaling_dict.pkl,sha256=NgMmOkuOVWP_FxnvdDAJCW1-3WkW_WUDsohpoz1MsEY,41831
+pywddff/data/wavelet_dict.pkl,sha256=a43okg0jzWyWqVWd2ECxm14IEd4yhPoQVcodt6JYUYM,41831
+pywddff/datasets.py,sha256=pWAWn0rGvVpTbtdhZR2-RoHgMmWeJYcwvgXDHtqtL4I,1159
+pywddff/filters.py,sha256=agGPWIcnZaNxWbJBNJro5vw3cUh1iEg_16CfTEPu_H8,3325
+pywddff/pywddff.py,sha256=qyWQ4fASKkCmh4diAroXB8BdFd-W0ytiWYUwmm4846g,15820
+pywddff/utils.py,sha256=fItsDQZF0gZh6YD-83bCPKyVN_NbKWiW0ZoouZNBEBI,18508
+pywddff-0.1.0.dist-info/LICENSE,sha256=_fwSUnqGe3vFkvYPaiGMRPzdWLgpvfZdknSJGcpGkDo,1089
+pywddff-0.1.0.dist-info/METADATA,sha256=mbF2RfaV2wi14H2C6lDANUQOr-_ZsBAMj3dfrWwacEI,5067
+pywddff-0.1.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+pywddff-0.1.0.dist-info/RECORD,,
