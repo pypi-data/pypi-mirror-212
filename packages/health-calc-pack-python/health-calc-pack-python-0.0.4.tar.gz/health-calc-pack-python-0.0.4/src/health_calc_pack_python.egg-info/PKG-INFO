@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: health-calc-pack-python
+Version: 0.0.4
+Summary: Health calculations package
+Author-email: Nilton Fernandes <niltonfernandesj@gmail.com>
+Project-URL: Homepage, https://github.com/niltonfernandesj/health-calc-pack-python
+Project-URL: Bug Tracker, https://github.com/niltonfernandesj/health-calc-pack-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# health-calc-pack-python
+Package for personal health data calculation
