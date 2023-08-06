@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "health-calc-pack-python"
+version = "0.0.1"
+authors = [
+  { name="Nilton Fernandes", email="niltonfernandesj@gmail.com" },
+]
+description = "Health calculations package"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/niltonfernandesj/health-calc-pack-python"
+"Bug Tracker" = "https://github.com/niltonfernandesj/health-calc-pack-python/issues"
