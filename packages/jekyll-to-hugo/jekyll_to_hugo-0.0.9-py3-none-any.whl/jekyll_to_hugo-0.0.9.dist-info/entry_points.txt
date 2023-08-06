@@ -1,0 +1,2 @@
+[console_scripts]
+jekyll-to-hugo = app.main:main
