@@ -1,0 +1,440 @@
+Metadata-Version: 2.1
+Name: cncd-package
+Version: 0.1.1
+Summary: A Python package for CNCD
+Home-page: https://github.com/shahzaib-raza/cncd
+Author: Shahzaib Raza
+Author-email: shahzaib.raza@cncd.org
+License: BSD 2-clause
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.24.1)
+Requires-Dist: pandas (>=1.5.3)
+
+# Download
+pip install cncd-package
+
+# Loading the QC checks class
+
+
+```python
+from cncd_package.QC import QC_Check
+```
+
+# Reading data
+
+sharing paths of different datasets:
+* \\cncd-dc1\DATA SCIENCE DEPARTMENT\1_phenotype_data\3_master_files_entry_1_entry_2_raw\april_2023\entry_1\updated_master_cad_2nd_entry_april_2023.csv
+* \\cncd-dc1\DATA SCIENCE DEPARTMENT\1_phenotype_data\3_master_files_entry_1_entry_2_raw\april_2023\entry_1\updated_master_dm_2nd_entry_april_2023.csv
+* \\cncd-dc1\DATA SCIENCE DEPARTMENT\1_phenotype_data\3_master_files_entry_1_entry_2_raw\april_2023\entry_1\updated_master_hf_1st_entry_april_2023.csv
+* \\cncd-dc1\DATA SCIENCE DEPARTMENT\1_phenotype_data\3_master_files_entry_1_entry_2_raw\april_2023\entry_1\updated_master_nafld_1st_entry_april_2023.csv
+* \\cncd-dc1\DATA SCIENCE DEPARTMENT\1_phenotype_data\3_master_files_entry_1_entry_2_raw\april_2023\entry_1\updated_master_pgr_1st_entry_april_2023.csv
+* \\cncd-dc1\DATA SCIENCE DEPARTMENT\1_phenotype_data\3_master_files_entry_1_entry_2_raw\april_2023\entry_1\updated_master_promis_1st_entry_april_2023.csv
+* \\cncd-dc1\DATA SCIENCE DEPARTMENT\1_phenotype_data\3_master_files_entry_1_entry_2_raw\april_2023\entry_1\updated_master_stroke_1st_entry_april_2023.csv
+
+
+```python
+import pandas as pd
+import warnings
+
+warnings.simplefilter('ignore')
+
+promis_data = pd.read_csv(r"\\cncd-dc1\DATA SCIENCE DEPARTMENT\1_phenotype_data\3_master_files_entry_1_entry_2_raw\april_2023\entry_1\updated_master_promis_1st_entry_april_2023.csv")
+```
+
+# Doing QC
+
+
+```python
+qc = QC_Check(dataframe=promis_data, project_id="PROMIS")
+```
+
+### Age Check
+
+
+```python
+qc.age_check().head()
+```
+
+
+
+
+<div>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>study_id</th>
+      <th>age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>D969</td>
+      <td>106.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LY6648</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>LY6753</td>
+      <td>99.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>LZ6394</td>
+      <td>96.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>V3629</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+### Gender Checks
+
+
+```python
+qc.gender_check(gender='male')
+```
+
+
+
+
+<div>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>study_id</th>
+      <th>gender</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>LY7080</td>
+      <td>2.0</td>
+      <td>MR</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LY7094</td>
+      <td>2.0</td>
+      <td>MR</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>LY7470</td>
+      <td>2.0</td>
+      <td>MR</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>V2125</td>
+      <td>2.0</td>
+      <td>MR</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>V2134</td>
+      <td>2.0</td>
+      <td>MR</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>R891</td>
+      <td>2.0</td>
+      <td>MR</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>R1052</td>
+      <td>2.0</td>
+      <td>MR</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>R1560</td>
+      <td>2.0</td>
+      <td>MR</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>R1577</td>
+      <td>2.0</td>
+      <td>MR</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>R1658</td>
+      <td>2.0</td>
+      <td>MR</td>
+    </tr>
+  </tbody>
+</table>
+<p>70 rows Ã— 4 columns</p>
+</div>
+
+
+
+
+```python
+qc.gender_check(gender='female')
+```
+
+
+
+
+<div>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>study_id</th>
+      <th>gender</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>K1884</td>
+      <td>1.0</td>
+      <td>BIBI</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LY2898</td>
+      <td>1.0</td>
+      <td>BIBI</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>LY2903</td>
+      <td>1.0</td>
+      <td>BIBI</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>LY2910</td>
+      <td>1.0</td>
+      <td>BANO</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>LY3855</td>
+      <td>1.0</td>
+      <td>BIBI</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>HZ93</td>
+      <td>1.0</td>
+      <td>BIBI</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>PZ6</td>
+      <td>1.0</td>
+      <td>BIBI</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>PY27</td>
+      <td>1.0</td>
+      <td>BIBI</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>SM191</td>
+      <td>1.0</td>
+      <td>BB</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>RZ9</td>
+      <td>1.0</td>
+      <td>BIBI</td>
+    </tr>
+  </tbody>
+</table>
+<p>90 rows Ã— 4 columns</p>
+</div>
+
+
+
+### Check QC status
+
+
+```python
+qc.check_qc_status()
+```
+
+
+
+
+<div>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>study_id</th>
+      <th>status</th>
+      <th>mi</th>
+      <th>pre_mi</th>
+      <th>st_elevation</th>
+      <th>troponin_positive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>D1</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>D2</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>D4</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>D5</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>D6</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>82820</th>
+      <td>RZ111</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>82827</th>
+      <td>RZ118</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>82828</th>
+      <td>RZ119</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>82830</th>
+      <td>RZ121</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>82831</th>
+      <td>RZ122</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>31966 rows Ã— 6 columns</p>
+</div>
+
+
+
+
+```python
+
+```
