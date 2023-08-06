@@ -1,0 +1,8 @@
+_chronogram.cpython-39-x86_64-linux-gnu.so,sha256=bIjuJeqhbfZr2bDI3pAb0wO7jISUjq4BQOQklHtsDQs,26803704
+_chronogram_avx2.cpython-39-x86_64-linux-gnu.so,sha256=4LAGq6eDYjcM_zeAUTffcHf6RvE1D4WxsZY38K3PX3U,27684984
+_chronogram_avx.cpython-39-x86_64-linux-gnu.so,sha256=SlxgX8yXBcVL8MJfosMiX2FJFR6vcDGRsbOUdN1wMZY,27719664
+chronogram-0.2.0.dist-info/METADATA,sha256=KA8d0P3nZ_LZ-7WbEKXQFL9V0fDA9XB-HS0SV13_IwU,1190
+chronogram-0.2.0.dist-info/RECORD,,
+chronogram-0.2.0.dist-info/top_level.txt,sha256=0tMdtcn0XZy1-5TMeAgIfP-t892YLHcw9wIi6ZdVvB0,56
+chronogram-0.2.0.dist-info/WHEEL,sha256=QSK99oJHZ5OD0kXw0lOM2wKosPFP5cmehycCIX3llvk,148
+chronogram/__init__.py,sha256=MSi3OUgZXUD79oX3DpgxLaM9UcejFtt8z8xYSjteoYA,1236
