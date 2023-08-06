@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gaohn-common-utils"
+version = "0.0.23"
+authors = [
+  { name="Gao Hongnan", email="hongnangao@gmail.com" },
+]
+description = "A small utility package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "requests",
+    "prettytable",
+    "rich",
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "pandas",
+    "google-cloud-storage==2.8.0",
+    "google-cloud-bigquery==3.10.0"
+]
+
+[project.optional-dependencies]
+dev = ["black", "pylint", "isort", "pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/gao-hongnan/common-utils"
+"Bug Tracker" = "https://github.com/gao-hongnan/common-utils/issues"

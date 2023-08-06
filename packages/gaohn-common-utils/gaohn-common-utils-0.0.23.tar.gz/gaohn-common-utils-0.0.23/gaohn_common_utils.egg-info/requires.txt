@@ -1,0 +1,16 @@
+numpy
+requests
+prettytable
+rich
+torch
+torchvision
+torchaudio
+pandas
+google-cloud-storage==2.8.0
+google-cloud-bigquery==3.10.0
+
+[dev]
+black
+pylint
+isort
+pytest
