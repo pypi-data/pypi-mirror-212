@@ -1,0 +1,6 @@
+force_processor_bindings/__init__.py,sha256=H1MjsGZRtRwbvO0MsBVUU_zD1Yxp6PTp3MPUiyj16L4,93
+force_processor_bindings/model.py,sha256=htvue1cGz6Zt0Wx9t-L6ydDhtT-AoMYHtvN-YAoZ3FI,1907
+force_processor_bindings/workflows.py,sha256=QRuGcIR0Whr0ScIuD7VAtKZQfOZFSK3EVQOVpmxqAQQ,4754
+eodc_faas_force-2023.6.1.dist-info/METADATA,sha256=D9IygfFXg84sjNm2p0bxtNgqh3bD5u3oOVi87RBd4oU,684
+eodc_faas_force-2023.6.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+eodc_faas_force-2023.6.1.dist-info/RECORD,,
