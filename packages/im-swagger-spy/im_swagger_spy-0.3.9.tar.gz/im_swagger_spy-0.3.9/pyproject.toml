@@ -1,0 +1,153 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "im-swagger-spy"
+description = "im-swagger-spy: pytest plugin for matching methods in swagger with those used in tests"
+readme = "README.md"
+authors = [
+    { name = "Korobov Valerii", email = "v.korobov@corp.mail.ru" },
+]
+
+keywords = ["swagger", "pytest", "pytest plugin", "plugin", "requests"]
+
+requires-python = ">=3.8"
+
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Framework :: Pytest',
+    'Intended Audience :: Developers',
+    "License :: OSI Approved :: MIT License",
+    'Topic :: Software Development :: Quality Assurance',
+    'Topic :: Software Development :: Testing',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+
+dependencies = [
+    "Jinja2>=3.0.0",
+    "peewee>=3.0.0",
+    "pytest>=7.0.0",
+    "PyYAML>=6.0",
+    "requests>=2.26.0"
+]
+
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/dasshit/im-swagger-spy"
+Tracker = "https://github.com/dasshit/im-swagger-spy/issues"
+Source = "https://github.com/dasshit/im-swagger-spy"
+
+[project.scripts]
+im_swagger_spy = "im_swagger_spy.__main__:cli"
+
+[project.entry-points.pytest11]
+im_swagger_spy = "im_swagger_spy.plugin"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+allow-ambiguous-features = true
+
+[tool.hatch.version]
+path = "im_swagger_spy/__init__.py"
+
+[tool.hatch.build]
+skip-excluded-dirs = true
+exclude = [
+    "/tests",
+    "/openapi_example",
+]
+
+[tool.hatch.envs.default]
+python = "3.11"
+skip-install = false
+features = [
+  "dev",
+]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311", "312"]
+
+[tool.hatch.envs.test.scripts]
+run = "pytest"
+
+[tool.hatch.envs.test-last.scripts]
+run = "pytest"
+
+[tool.ruff]
+fix = true
+line-length = 88
+target-version = "py311"
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+    "Q",  # flake8-quotes
+]
+ignore = ["C901"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-vv --cov=im_swagger_spy --cov-report=term-missing:skip-covered"
+testpaths = "/tests"
+
+log_cli = true
+log_cli_level = "DEBUG"
+# https://docs.python.org/3/library/logging.html#module-logging
+log_cli_format = "[%(asctime)s] [%(levelname)s] [%(name)s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%H:%M:%S"
+
+[tool.coverage.run]
+parallel = true
+branch = true
+concurrency = [
+    "multiprocessing",
+    "thread"
+]
+source = [
+    "im_swagger_spy",
+    "tests"
+]
+context = '${CONTEXT}'
+omit = [
+    "**/__init__.py",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+exclude_lines = [
+    ".*# pragma: no cover",
+    "if __name__ == .__main__.:",
+    "self.logger",
+    "def __repr__",
+    "lambda: None",
+    "from .*",
+    "import .*",
+    '@(abc\.)?abstractmethod',
+    "raise NotImplementedError",
+    'raise AssertionError',
+    'raise ValueError',
+    'logger\..*',
+    "pass",
+    '\.\.\.',
+]
+omit = [
+    '*/__about__.py',
+    '*/__main__.py',
+    '*/__init__.py',
+    '*/annotations.py',
+]

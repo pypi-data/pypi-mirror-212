@@ -1,0 +1,5 @@
+Jinja2>=3.0.0
+peewee>=3.0.0
+pytest>=7.0.0
+PyYAML>=6.0
+requests>=2.26.0

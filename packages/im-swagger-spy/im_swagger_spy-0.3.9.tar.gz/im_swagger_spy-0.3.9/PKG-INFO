@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: im-swagger-spy
+Version: 0.3.9
+Summary: im-swagger-spy: pytest plugin for matching methods in swagger with those used in tests
+Project-URL: Homepage, https://github.com/dasshit/im-swagger-spy
+Project-URL: Tracker, https://github.com/dasshit/im-swagger-spy/issues
+Project-URL: Source, https://github.com/dasshit/im-swagger-spy
+Author-email: Korobov Valerii <v.korobov@corp.mail.ru>
+Keywords: plugin,pytest,pytest plugin,requests,swagger
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.8
+Requires-Dist: jinja2>=3.0.0
+Requires-Dist: peewee>=3.0.0
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: requests>=2.26.0
+Description-Content-Type: text/markdown
+
+# im-swagger-spy
+
+pytest plugin for matching methods in swagger with those used in tests
+
+## Установка
+
+```bash
+pip install git+https://github.com/dasshit/im-swagger-spy.git
+```
+
+## Использование
+
+Есть несколько вариантов использования
+
+### Вариант №1
+
+pytest.ini
+```ini
+[pytest]
+addopts = --swagger-url http://localhost/client/v101/u/api.yaml # Адрес, с которого можно получить swagger.json|yaml или openapi.json|yaml
+            --swagger-prefix /api/v101                          # Префикс к path методов из документации
+            --swagger-name test.ru                              # Название сервиса (для отчета)
+            --swagger-report  reports/                          # Путь к папке для сохранения отчета
+```
+conftest.py
+```python
+import pytest
+import requests
+
+
+@pytest.fixture(scope='session')
+def session(swagger_http_spy):
+
+    session = requests.Session()
+
+    swagger_http_spy.register_as_hook(session)
+
+    yield session # Запросы этой сессии попадут в отчет
+``` 
+CI
+```bash
+pytest tests/
+python -m im_swagger_spy build
+```
+
+### Другие примеры
+
+Можно посмотреть в example/
