@@ -1,0 +1,11 @@
+stripe_api_client/__init__.py,sha256=_5xoxBvqik7-PeMx5hwvFygQoUHpV34lQIJj__e4LaA,26
+stripe_api_client/client.py,sha256=xxntRjYVIxhKdVSMXapJ1-H163jPOmcLNJ38BwjbCAo,1345
+stripe_api_client/resources/__init__.py,sha256=WimdCRXGE62IaHmWc4jCLdSFd99E70cEKThVDYy7qrk,117
+stripe_api_client/resources/base.py,sha256=8KqrNqI0i44pErvHD3KYNB18k0_rNPJjoK1c51x6glA,1412
+stripe_api_client/resources/charges.py,sha256=jzD5-4yV1b_OjQq5WYjY_Rt8U7KcinifQ-9jWrwAHA8,538
+stripe_api_client/resources/customers.py,sha256=7_y8K0XWpfXVC87f86aYUbCNWfZwQ-Xk1TkbpRf9YLk,1093
+stripe_api_client/resources/payment_methods.py,sha256=OF-HmLZ5zzALRHWeu4R3lSF2Q0ylNy_NjFiNARnqPSI,589
+stripe_api_client/utils.py,sha256=uxj6ntFpLrGm2ZogIsLW6p8xX983TSUrRXLO95PpN4Y,255
+stripe_api_client-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+stripe_api_client-0.1.1.dist-info/METADATA,sha256=9b_phyQ-sDNpuLpYVqRZp21JJZ4tTZhIiSRcYQ-NRkE,439
+stripe_api_client-0.1.1.dist-info/RECORD,,
