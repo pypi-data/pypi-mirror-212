@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+EventEngine/__init__.py
+EventEngine/Core/_Event.py
+EventEngine/Core/_Topic.py
+EventEngine/Core/_Topic_c.py
+EventEngine/Core/__init__.py
+EventEngine/cpp/topic_api.cpp
+PyEventEngine.egg-info/PKG-INFO
+PyEventEngine.egg-info/SOURCES.txt
+PyEventEngine.egg-info/dependency_links.txt
+PyEventEngine.egg-info/top_level.txt
