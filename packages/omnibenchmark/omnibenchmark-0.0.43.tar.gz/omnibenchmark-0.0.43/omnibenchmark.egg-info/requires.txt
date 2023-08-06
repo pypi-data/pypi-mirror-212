@@ -1,0 +1,13 @@
+renku==2.4.1
+requests
+iteration_utilities
+typeguard==3.0.2
+trycast
+lxml
+python-gitlab
+
+[dev]
+black
+bumpver
+pytest
+mypy
