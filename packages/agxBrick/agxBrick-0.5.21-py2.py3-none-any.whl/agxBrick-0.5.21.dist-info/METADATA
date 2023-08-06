@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: agxBrick
+Version: 0.5.21
+Summary: Core framework, API and runtime, for generic data modelling, and construction of domain specific modelling APIs/formats. Specifically supporting modelling of simulation components.
+Author: Algoryx
+Author-email: brick@app.algoryx.se
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.7
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: coloredlogs (>=15.0)
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Description-Content-Type: text/markdown
+
+# AGXBrick
+
+## Developer
+
+The development of AGXBrick can be require different levels of local source build.
+
+- If you do not need to edit the .NET implementation or the local agxBrick python package (`brick/python`), you should not need to do anything other than install the current released version of `agxBrick` python package.
+- If you need to develop the .NET implementation you should setup your environment using the `setup_env.bat/bash` file found in the brick root catalogue, the `setup_env.bat/bash` file found in the agx root catalogue and the ` setup_local_brick_dev_env.bat/bash` found in the agx/brick catalogue.
+- `AGXBrick` and `Brick` are two separate libraries, and by default the `AGXBrick` development and build will use a released version of the `Brick` dependency.
+- In some cases you also need edit the `Brick` source code. In order to have a fast iteration cycle we have a mechanism to use `Brick` as a source code dependency instead of as package dependency (`ProjectReference` vs `PackageReference`). For this to work you need to do the following:
+  - Check out the `Brick` source code repository locally
+  - Create/edit the file `brick/LocalBuildConfig.props`. This must do two things:
+    - Set `BRICK_VERSION` to empty string
+    - Set `BRICK_SOURCE_DIR` to the location of the local Brick source code root directory
+
+So for example
+```xml
+<Project>
+  <PropertyGroup>
+    <BRICK_VERSION></BRICK_VERSION>
+    <BRICK_SOURCE_DIR>/Users/nils/Work/brick</BRICK_SOURCE_DIR>
+  </PropertyGroup>
+</Project>
+```
+
+
+
+### Algoryx NuGet package registry
+
+AGXBrick depends on Brick, which is distributed using the private Algoryx NuGet package registry. In order to configure this for your current user, please run the following:
+
+```sh
+dotnet nuget add source "https://git.algoryx.se/api/v4/projects/241/packages/nuget/index.json" --name AlgoryxGitLab --username <GITLAB_USERNAME-or-DEPLOY_TOKEN_USERNAME> --password  <GITLAB_PERSONAL_ACCESS_TOKEN-or-DEPLOY_TOKEN> --store-password-in-clear-text
+```
+
+See https://docs.gitlab.com/ee/user/packages/nuget_repository
+
+NOTE: Clear text password is currently required for non-windows platforms
+
+```
+error: Password encryption is not supported on .NET Core for this platform. The following feed try to use an encrypted password: 'Algoryx'. You can use a clear text password as a workaround.
+error:   Encryption is not supported on non-Windows platforms.
+```
+
+We currently distribute shared read-only credentals to the NuGet package registry via the Wiki on the [Algoryx Artifact Registry](https://git.algoryx.se/algoryx/artifact-registry) project.
+
+Use this wiki link to access credentials: https://git.algoryx.se/algoryx/artifact-registry/-/wikis/shared-readonly-credentials
+
+
+### TODO: Describe the following
+
+- csproj config
+- debugging
+- agxViewer, agxBrickViewer, python
+- dist, model files
+
+
+
+## Release and versioning
+
+Versions are [semver](https://semver.org/) with v prefix, example: v0.1.2.
+
+Packages are built automatically by CI pipeline on tags.
+
+Creating a tagged release is triggered by:
+
+- Create an Gitlab Merge Request
+- Update the version in `release.json`
+- Add changelog entries in `CHANGELOG.md`
+- When the MR is accepted and merged, the CI pipeline will automatically create the tag, and then build the tag artifacts
+
+NOTES:
+
+- The Brick version is specified in `brick/BuildConfig.props`
+
+### GitLab CI pipeline tokens
+
+The CI pipeline use the Gitlab API to deliver versioned releases. This is done using the `CI_RELEASE_TOKEN` CI variable. The token is an API token with `api` scope. It is not sufficient with `read_api`, since the CI job commits tags and creates releases via the API.
+
+The current token expiry is `Dec 1, 2023 12:00am GMT+0100`
