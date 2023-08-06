@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: geolat
+Version: 0.0.1
+Summary: python package for learning interactive mapping
+Home-page: https://github.com/fiopiohoho/geolat
+Author: Ferdinan Aurifio
+Author-email: ferdinan.aurifio@gmail.com
+License: MIT license
+Keywords: geolat
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# geolat
+
+
+[![image](https://img.shields.io/pypi/v/geolat.svg)](https://pypi.python.org/pypi/geolat)
+[![image](https://img.shields.io/conda/vn/conda-forge/geolat.svg)](https://anaconda.org/conda-forge/geolat)
+
+
+**python package for learning interactive mapping**
+
+
+-   Free software: MIT license
+-   Documentation: https://fiopiohoho.github.io/geolat
+    
+
+## Features
+
+-   TODO
