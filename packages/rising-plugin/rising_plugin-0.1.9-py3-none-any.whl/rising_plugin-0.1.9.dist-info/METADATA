@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: rising_plugin
+Version: 0.1.9
+Summary: It is a plugin for Rising GPT
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Thomas Richardson <thomasr37oss@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: aiohttp==3.8.4
+Requires-Dist: annoy==1.17.1
+Requires-Dist: fastapi==0.95.0
+Requires-Dist: httpx==0.23.3
+Requires-Dist: langchain==0.0.167
+Requires-Dist: nemoguardrails==0.2.0
+Requires-Dist: openai==0.27.4
+Requires-Dist: pinecone-client==2.2.1
+Requires-Dist: pydantic==1.10.6
+Requires-Dist: pyyaml~=6.0
+Requires-Dist: requests==2.28.2
+Requires-Dist: sentence-transformers==2.2.2
+Requires-Dist: setuptools==65.5.1
+Requires-Dist: simpleeval==0.9.13
+Requires-Dist: starlette==0.26.1
+Requires-Dist: typer==0.7.0
+Requires-Dist: typing-extensions==4.5.0
+Requires-Dist: uvicorn==0.21.1
+Description-Content-Type: text/markdown
+
+# RisingPlugin
+It is a plugin for the goal of this project is to develop a phone operating system that replaces the traditional UI of an Android-based smartphone with ChatGPT. The AI will manage control of all apps via plugins, which can be prompted by the user.
+
+Develop a langchain plugin that sends Android system notifications to the user. Should be able to use a langchain agent.
+Allow user to launch browser app on a specific webpage or to search an image , and others more. 
