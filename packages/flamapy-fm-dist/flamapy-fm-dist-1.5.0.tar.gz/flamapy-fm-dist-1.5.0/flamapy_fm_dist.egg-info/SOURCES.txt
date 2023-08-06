@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+flamapy/interfaces/__init__.py
+flamapy/interfaces/command_line/__init__.py
+flamapy/interfaces/python/FLAMAFeatureModel.py
+flamapy/interfaces/python/__init__.py
+flamapy/interfaces/rest/operations_routes.py
+flamapy_fm_dist.egg-info/PKG-INFO
+flamapy_fm_dist.egg-info/SOURCES.txt
+flamapy_fm_dist.egg-info/dependency_links.txt
+flamapy_fm_dist.egg-info/entry_points.txt
+flamapy_fm_dist.egg-info/requires.txt
+flamapy_fm_dist.egg-info/top_level.txt
