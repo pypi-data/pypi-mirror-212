@@ -1,0 +1,10 @@
+README.md
+setup.py
+scrapgpt/__init__.py
+scrapgpt/scrapgpt.py
+scrapgpt.egg-info/PKG-INFO
+scrapgpt.egg-info/SOURCES.txt
+scrapgpt.egg-info/dependency_links.txt
+scrapgpt.egg-info/not-zip-safe
+scrapgpt.egg-info/requires.txt
+scrapgpt.egg-info/top_level.txt
