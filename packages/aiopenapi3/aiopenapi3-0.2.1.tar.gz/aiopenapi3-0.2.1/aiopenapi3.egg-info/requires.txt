@@ -1,0 +1,33 @@
+PyYaml
+pydantic<=1.11.0
+pydantic[email]
+yarl==1.8.1
+httpx
+more-itertools
+jmespath
+
+[:python_version < "3.8"]
+typing_extensions
+
+[:python_version < "3.9"]
+pathlib3x
+
+[auth]
+httpx-auth
+
+[socks]
+httpx_socks
+
+[tests]
+pytest
+pytest-asyncio
+pytest-httpx
+pytest-cov
+fastapi-versioning
+hypercorn
+uvloop
+flask
+flask_bootstrap
+flask_wtf
+wtforms
+asgiref
