@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pytyper-weather-forecast"
+version = "0.2.0"
+description = "Weather Forecasting Package"
+authors = ["anugoyal998 <anugoyal998@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pytyper_weather_forecast"}]
+
+[tool.poetry.scripts]
+pytyper-weather-forecast = "pytyper_weather_forecast.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = {extras = ["all"], version = "^0.9.0"}
+requests = "^2.31.0"
+geopy = "^2.3.0"
+nominatim = "^0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
