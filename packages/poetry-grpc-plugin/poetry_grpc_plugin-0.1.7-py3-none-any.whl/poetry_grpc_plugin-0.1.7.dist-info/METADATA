@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: poetry-grpc-plugin
+Version: 0.1.7
+Summary: gRPC Poetry plugin
+Home-page: https://github.com/fedej/poetry-grpc-plugin
+License: MIT
+Author: Federico Jaite
+Author-email: fede_654_87@hotmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Dist: grpcio-tools (>=1.39.0,<2.0.0)
+Requires-Dist: mypy-protobuf (>=2.9,<4.0)
+Requires-Dist: poetry (>=1.2.0,<1.6)
+Project-URL: Repository, https://github.com/fedej/poetry-grpc-plugin
+Description-Content-Type: text/markdown
+
+# Poetry gRPC plugin
+
+A [**Poetry**](https://python-poetry.org/) plugin to run the Protocol Buffers compiler with gRPC support.
+
+### Installing the plugin
+
+Requires Poetry version `1.2.0` or above
+
+```shell
+poetry self add poetry-grpc-plugin
+```
+
+### Usage
+
+To run it manually:
+
+```console
+poetry help protoc
+
+Usage:
+  protoc [options]
+
+Options:
+      --proto_path[=PROTO_PATH]            Base path for protobuf resources. [default: "<module_name>"]
+      --python_out[=PYTHON_OUT]            Output path for generated protobuf wrappers. [default: "."]
+      --grpc_python_out[=GRPC_PYTHON_OUT]  Output path for generated gRPC wrappers. Defaults to same path as python_out
+      --mypy_out[=MYPY_OUT]                Output path for mypy type information for generated protobuf wrappers. Defaults to same path as python_out.
+      --mypy_grpc_out[=MYPY_GRPC_OUT]      Output path for mypy type information for generated gRPC wrappers. Defaults to same path as grpc_python_out.
+      ...
+```
+
+Run on `poetry update`
+
+```toml
+[tool.poetry-grpc-plugin]
+```
+
+Additional config
+
+```toml
+[tool.poetry-grpc-plugin]
+proto_path = "protos" # Defaults to module name
+python_out = "."      # Defaults to .
+```
+Settings in `pyproject.toml` will be used as defaults for manual execution with `poetry protoc`.
