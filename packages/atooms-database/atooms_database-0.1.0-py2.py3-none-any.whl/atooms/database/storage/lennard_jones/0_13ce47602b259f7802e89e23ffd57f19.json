@@ -1,0 +1,11 @@
+{
+    "fmt": "xyz",
+    "density": 1.0,
+    "number_of_particles": 256,
+    "potential_energy_per_particle": -3.8079776291909284,
+    "md5_hash": "13ce47602b259f7802e89e23ffd57f19",
+    "model": "lennard_jones",
+    "version": 0,
+    "path": "lennard_jones/0_13ce47602b259f7802e89e23ffd57f19.xyz",
+    "format": null
+}
