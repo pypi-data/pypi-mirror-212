@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyuart
+Version: 0.0.5
+Summary: a simple UART library for python3
+Home-page: https://github.com/arkedge/pyuart
+Author: Tsuyoshi Hamada
+Author-email: hamada@arkedgespace.com
+License: MIT
+Keywords: pyuart uart
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyserial
+
+pyuart
+
