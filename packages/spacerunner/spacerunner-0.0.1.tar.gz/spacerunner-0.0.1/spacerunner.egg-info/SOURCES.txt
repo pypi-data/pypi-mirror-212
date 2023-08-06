@@ -1,0 +1,6 @@
+README.md
+setup.py
+spacerunner.egg-info/PKG-INFO
+spacerunner.egg-info/SOURCES.txt
+spacerunner.egg-info/dependency_links.txt
+spacerunner.egg-info/top_level.txt
