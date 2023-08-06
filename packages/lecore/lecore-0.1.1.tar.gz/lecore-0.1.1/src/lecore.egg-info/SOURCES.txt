@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/lecore/Looger.py
+src/lecore/__init__.py
+src/lecore.egg-info/PKG-INFO
+src/lecore.egg-info/SOURCES.txt
+src/lecore.egg-info/dependency_links.txt
+src/lecore.egg-info/requires.txt
+src/lecore.egg-info/top_level.txt
+src/lecore/LeBin/RegisterMap.py
+src/lecore/LeBin/SerialCom.py
+src/lecore/LeBin/UpgradeFirmware.py
+src/lecore/LeBin/VisualLeBin.py
+src/lecore/LeBin/__init__.py
+tests/test_looger.py
