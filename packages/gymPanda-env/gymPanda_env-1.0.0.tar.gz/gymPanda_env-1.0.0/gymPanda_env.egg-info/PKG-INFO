@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gymPanda-env
+Version: 1.0.0
+Summary: A OpenAI Gym Env for Panda arm
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# This is my first gym env
+
