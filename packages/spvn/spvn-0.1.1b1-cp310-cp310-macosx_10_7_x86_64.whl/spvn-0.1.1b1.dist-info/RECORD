@@ -1,0 +1,9 @@
+spvn-0.1.1b1.dist-info/METADATA,sha256=H7lGFbySypJFKoU_BetC36N01omF8XPlgzJ_sNl325s,6115
+spvn-0.1.1b1.dist-info/WHEEL,sha256=sTC-xZN5jVPed2tt3c1E4M4N6Gjpm8VLWDwaGtx9Fc4,105
+spvn-0.1.1b1.dist-info/license_files/LICENSE.txt,sha256=M2uYSAy2GM02XIUVZapv_1__739FMfiHEu2FsjI87lM,1114
+spvn/__init__.py,sha256=A0_KYduLplsslDkIkyJg9hI7rA8rXuEznlfDK4uUxTY,36
+spvn/types.py,sha256=BXYBTw22GzZErZbrYMPIkLB7z_PIV3bICWhyiepWU1g,855
+spvn/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spvn/__main__.py,sha256=8kLDp7wBzFgMJM3GVfw3av7EfksNzfTZalOJlaSageA,565
+spvn-0.1.1b1.data/scripts/spvn,sha256=HWQTA-9785Vawy0DTVl3RH7mC9zHGYgxcknQkxPMGuA,4277112
+spvn-0.1.1b1.dist-info/RECORD,,
