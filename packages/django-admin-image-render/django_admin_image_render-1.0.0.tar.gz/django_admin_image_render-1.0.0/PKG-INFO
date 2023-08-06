@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: django_admin_image_render
+Version: 1.0.0
+Summary: django render image for admin list
+Home-page: https://github.com/reimibeta/django_admin_image_render
+Author: ReimiBeta
+Author-email: reimi846@gmail.com
+License: MIT
+
+django render image for admin list
