@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: h21ak9-poetry-test
+Version: 1.0.3
+Summary: 
+Author: h21ak9
+Author-email: h21ak9@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
