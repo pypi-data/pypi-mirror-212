@@ -1,0 +1,116 @@
+[tool.poetry]
+name = "numalogic"
+version = "0.4.0.post1"
+description = "Collection of operational Machine Learning models and tools."
+authors = ["Numalogic Developers"]
+packages = [{ include = "numalogic" }]
+readme = "README.md"
+license = "Apache-2.0"
+maintainers = [
+    "Avik Basu <avikbasu93@gmail.com>",
+    "Vigith Maurice <vigith@gmail.com>",
+]
+classifiers = [
+    "Topic :: Software Development :: Libraries",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10"
+]
+repository = "https://github.com/numaproj/numalogic"
+documentation = "https://numalogic.numaproj.io/"
+homepage = "https://numalogic.numaproj.io/"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.11"
+numpy = "^1.23"
+pandas = "^2.0"
+scikit-learn = "^1.2"
+omegaconf = "^2.3.0"
+cachetools = "^5.3.0"
+
+# extras
+mlflow-skinny = { version = ">2.0, <3.0", optional = true }
+redis = {extras = ["hiredis"], version = "^4.5.4", optional = true}
+pynumaflow = { version = "~0.4", optional = true }
+
+[tool.poetry.extras]
+mlflow = ["mlflow-skinny"]
+redis = ["redis"]
+numaflow = ["pynumaflow"]
+
+[tool.poetry.group.torch]
+optional = true
+
+[tool.poetry.group.torch.dependencies]
+pytorch-lightning = "^2.0"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = "^3.4.2"
+black = "^23.0"
+pytest = "^7.1"
+pytest-cov = "^4.0"
+torchinfo = "^1.7.2"
+ruff = "^0.0.264"
+pre-commit = "^3.3.1"
+fakeredis = "^2.11.2"
+freezegun = "^1.2.2"
+
+[tool.poetry.group.jupyter]
+optional = true
+
+[tool.poetry.group.jupyter.dependencies]
+jupyter = "^1.0.0"
+ipykernel = "^6.15.1"
+nb-black = "^1.0.7"
+ipympl = "^0.9.1"
+ipython-autotime = "^0.3.1"
+
+[tool.black]
+line-length = 100
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.idea
+  | _build
+  | buck-out
+  | build
+  | dist
+  | examples/.*/venv
+  | tests/.*/setup.py
+)/
+'''
+
+[tool.ruff]
+line-length = 100
+src = ["numalogic", "tests"]
+select = ["E", "F", "W", "C901", "NPY", "RUF", "TRY", "G", "PLE", "PLW", "UP", "ICN", "RET", "Q" , "PLR", "D"]
+ignore = ["TRY003", "TRY301", "RUF100", "D100", "D104", "PLR2004", "D102", "D401", "D107", "D205"]
+target-version = "py39"
+show-fixes = true
+show-source = true
+
+[tool.ruff.per-file-ignores]
+"tests/*" = ["D101"]
+
+[tool.ruff.pylint]
+max-args = 15
+max-statements = 30
+
+[tool.ruff.pydocstyle]
+convention = "numpy"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
