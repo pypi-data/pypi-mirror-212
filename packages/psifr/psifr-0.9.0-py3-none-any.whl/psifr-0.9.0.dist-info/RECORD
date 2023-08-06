@@ -1,0 +1,12 @@
+psifr/__init__.py,sha256=cFqbkzxlWU18CaDCcqvhg5x_1256u3cIQgqhLDJsNUk,35
+psifr/fr.py,sha256=uFjaJu0hBF-BnnfVL1og9gKJnQmL6SzMqARgqhj3mIk,65710
+psifr/maskers.py,sha256=dyQIhfCxK_K-QUkAWWshbWqRr_QSgOf3YxkK9BwQ_z0,13627
+psifr/measures.py,sha256=vAgOLKTQM0umABdJ6o8UbECNJS3MY0SghBhPhLocr_0,12731
+psifr/stats.py,sha256=rRJjF0qQqZGH-2wfdRhbbsb2tAukh-vWnd78tUDSxeQ,32940
+psifr/data/Morton2013.csv,sha256=UTWCFPsUbyg_n-XzxDk_AyxzCZePVPdPbp2rKob_Zzo,4050433
+psifr/distances/Morton2013.npz,sha256=_x2ShtUGLQ6-YQrsY1b7QCS7JTiv2G1LDrqfT8tdptI,4802050
+psifr-0.9.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+psifr-0.9.0.dist-info/METADATA,sha256=VUYdNAhO_UAgSkaUjpd3eDy1DY81AOOlk2wd73xr2jk,6138
+psifr-0.9.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+psifr-0.9.0.dist-info/top_level.txt,sha256=joLOLwjtNqS09LDcIC9ZvBcYumehmcPiUsYf__RVAsc,6
+psifr-0.9.0.dist-info/RECORD,,
