@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyciactions/IWorkflow.py
+pyciactions/__init__.py
+pyciactions/generate.py
+pyciactions.egg-info/PKG-INFO
+pyciactions.egg-info/SOURCES.txt
+pyciactions.egg-info/dependency_links.txt
+pyciactions.egg-info/requires.txt
+pyciactions.egg-info/top_level.txt
