@@ -1,0 +1,9 @@
+numpy
+scipy
+netCDF4
+matplotlib
+pooch
+cftime
+Cython
+fsspec
+xarray>=0.21.1
