@@ -1,0 +1,2 @@
+[console_scripts]
+bahire-hasab = bahire_hasab.__main__:main
