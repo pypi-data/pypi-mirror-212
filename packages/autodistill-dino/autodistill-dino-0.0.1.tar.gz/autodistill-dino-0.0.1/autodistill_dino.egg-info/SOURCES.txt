@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_dino/__init__.py
+autodistill_dino.egg-info/PKG-INFO
+autodistill_dino.egg-info/SOURCES.txt
+autodistill_dino.egg-info/dependency_links.txt
+autodistill_dino.egg-info/requires.txt
+autodistill_dino.egg-info/top_level.txt
