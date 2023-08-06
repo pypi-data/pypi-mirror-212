@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_decomposition.py,sha256=Lrl5AyzT07LKfbAwX02LIGEXwF6W9nW1CNeHlGE8qdc,1381
+tests/test_vqls.py,sha256=dKXCx4XAHsVRcK_3qAaNs2vCaGdVtTRIJMAx3E1Jf5U,3482
+vqls_prototype/__init__.py,sha256=VbHRmzc_pgTVT8yGll6c6Nf_8L3lFBtD_v3nzYiQdMs,920
+vqls_prototype/__version__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+vqls_prototype/hadamard_test.py,sha256=OTZp215oTicdBlcmJi6FutBAtisSse_XF8OJzlyMoa4,14855
+vqls_prototype/matrix_decomposition.py,sha256=bZvloFinav9WKoixUjCzeoxMR5jhbZLhHfvRloUXrpw,11833
+vqls_prototype/variational_linear_solver.py,sha256=w3bIYJhkQGEDHV3LonqSVSlaVksVBZt2555r_uZiR8I,2639
+vqls_prototype/vqls.py,sha256=KLWIS7V4gDDYQryk1oMVdGUxeuh77VvCFm2qrdp2x9Y,31049
+vqls_prototype-0.1.0.dist-info/LICENSE.txt,sha256=Krv4TsgcxTMfI8ZVWT3ixgLsmB58KPNPdbq8gR4oVtQ,11416
+vqls_prototype-0.1.0.dist-info/METADATA,sha256=4dU_6bRnID5J4QRNtVmHO4AyxfdhfZHXLd3yT7YVccw,3192
+vqls_prototype-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vqls_prototype-0.1.0.dist-info/top_level.txt,sha256=PiVKNa_PvKtfRHs289-4xJkFpT7Uy_jTdQZ8uCGSacs,21
+vqls_prototype-0.1.0.dist-info/RECORD,,
