@@ -1,0 +1,11 @@
+fyCursor/__init__.py,sha256=1bVacdgC3kMD_ddSn2vMyS1odlThfIoQh0QxviyH5dw,1374
+fyCursor/__main__.py,sha256=GuC92HKVY-w3-uCOya-8ZAPBQklh79N5LpQXmGUXAv0,1623
+fyCursor/core/__init__.py,sha256=YWebMke7GEFDJKWiZrwVQdIBsC3wGfgmbs1vjYykSVc,148
+fyCursor/core/cursor.py,sha256=uLJHTQjvROajQ7GxiLiEioBzVlMG8H-8CfdswRvo88U,4342
+fyCursor/core/fields.py,sha256=uXMafAueWGIBz1rDfISLDG-SjsBkeDWta45b1m7FH5g,738
+fyCursor/core/table.py,sha256=k28cqkOwXPZ2OArwEORUBRRhZ6zh-fXwbilPB2OIB50,2269
+fyCursor-0.1.1.dist-info/LICENSE,sha256=Y5Ng4C6VlMpll-WvYpHfpfi5M0WEPJoVCfvz6UUSB50,1067
+fyCursor-0.1.1.dist-info/METADATA,sha256=BDJ4H2BP1TOTwWyUA0gMe_gPHA3evEwsCx_72yqMD0o,821
+fyCursor-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fyCursor-0.1.1.dist-info/top_level.txt,sha256=qDeUaVwrY-X5RSO3_KtekhEFFvqDjJeoRT3owkGs9Sg,9
+fyCursor-0.1.1.dist-info/RECORD,,
