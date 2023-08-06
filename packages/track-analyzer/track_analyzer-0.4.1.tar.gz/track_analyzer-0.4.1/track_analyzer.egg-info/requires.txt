@@ -1,0 +1,12 @@
+pandas
+matplotlib
+scikit-image
+scipy
+seaborn>=0.12
+lmfit
+tifffile
+jupyter
+ipyfilechooser
+ipywidgets
+tqdm
+shapely
