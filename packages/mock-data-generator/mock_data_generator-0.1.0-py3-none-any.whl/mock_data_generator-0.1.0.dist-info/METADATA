@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mock-data-generator
+Version: 0.1.0
+Summary: Generate mock data using json schema supplied.
+License: MIT
+Author: Rahul Auti
+Author-email: rahulsmtauti@gmail.com
+Requires-Python: >=3.11.3,<3.12.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: faker (>=18.9.0,<19.0.0)
+Requires-Dist: jsonschema (>=4.17.3,<5.0.0)
+Requires-Dist: lxml (>=4.9.2,<5.0.0)
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (>=2.0.2,<3.0.0)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
