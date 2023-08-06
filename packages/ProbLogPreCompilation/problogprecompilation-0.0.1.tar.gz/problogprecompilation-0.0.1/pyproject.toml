@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ProbLogPreCompilation"
+version = "0.0.1"
+authors = [
+  { name="Marc Roig Vilamala", email="marc.roig.vilamala@gmail.com" },
+]
+description = "A tool that allows for the easy re-use of pre-compiled ACs in ProbLog, allowing for a faster evaluation of repeated queries."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["problog"]
+
+[project.urls]
+"Homepage" = "https://github.com/MarcRoigVilamala/PreCompilation"
+"Bug Tracker" = "https://github.com/MarcRoigVilamala/PreCompilation/issues"

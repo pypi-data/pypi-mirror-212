@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ProbLogPreCompilation
+Version: 0.0.1
+Summary: A tool that allows for the easy re-use of pre-compiled ACs in ProbLog, allowing for a faster evaluation of repeated queries.
+Project-URL: Homepage, https://github.com/MarcRoigVilamala/PreCompilation
+Project-URL: Bug Tracker, https://github.com/MarcRoigVilamala/PreCompilation/issues
+Author-email: Marc Roig Vilamala <marc.roig.vilamala@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2019 Marc Roig Vilamala
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: problog
+Description-Content-Type: text/markdown
+
+# PreCompilation
+
+This project allows the use of PreCompilation of ProbLog, which can be useful when trying to perform queries on ProbLog 
+with the same logic rules but different knowledge bases.
+
+It can also be used in a Markov Chain scenario by providing the output of the last operation back into the system.
+
+For examples on how to use this system, check [examples](examples).
+ 
