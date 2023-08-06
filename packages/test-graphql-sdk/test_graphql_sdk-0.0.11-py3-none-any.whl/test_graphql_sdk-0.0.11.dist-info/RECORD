@@ -1,0 +1,9 @@
+airstack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airstack/constant.py,sha256=OLP9WFgDqAzLxrK18zVXs1pwSjOolZiFAPPvmUqC8aA,308
+airstack/execute_query.py,sha256=a3Lrnh-VT0oGST8uorMdUPcs9K-0j87G2RWM5hC_bLQ,6370
+airstack/generic.py,sha256=SOEY_0nOhD73MWnLkfuyeS7N5IeiXMtYQYUoGCgLIs0,5805
+airstack/send_request.py,sha256=xKQ7FXEBBDWcv-WAfGfaA6z0E_c4uk-UZwmbHJJN654,1816
+test_graphql_sdk-0.0.11.dist-info/METADATA,sha256=-fcl0scu4S95QTcfep29HfaaZD4Z907bgYUn7flIaJQ,3134
+test_graphql_sdk-0.0.11.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+test_graphql_sdk-0.0.11.dist-info/top_level.txt,sha256=kiFkey3OGgW4T6JDQlAFBHGuU0jkSxIGPszcGA6Itoo,9
+test_graphql_sdk-0.0.11.dist-info/RECORD,,
