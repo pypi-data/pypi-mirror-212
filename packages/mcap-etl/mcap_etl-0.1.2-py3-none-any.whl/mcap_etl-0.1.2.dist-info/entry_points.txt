@@ -1,0 +1,2 @@
+[console_scripts]
+mcap_etl = mcap_etl.main:main
