@@ -1,0 +1,1 @@
+include *requirements.txt LICENSE WAIVER WAIVER.asc CHANGELOG chaind/eth/data/config/* chaind/eth/data/config/syncer/*

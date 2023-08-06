@@ -1,0 +1,4 @@
+[console_scripts]
+chaind-eth-queuer = chaind.eth.runnable.queuer:main
+chaind-eth-send = chaind.eth.runnable.send:main
+chaind-eth-syncer = chaind.eth.runnable.syncer:main
