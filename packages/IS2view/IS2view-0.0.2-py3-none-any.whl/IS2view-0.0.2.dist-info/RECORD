@@ -1,0 +1,11 @@
+IS2view/IS2view.py,sha256=IWTNELrfuvedQZCLsX2CCWkXHk9RsbK95D4UOayp5C4,75103
+IS2view/__init__.py,sha256=hektna_G-NNZRA-X0WVMzFVd4HKkP37Obp2ZV8Ys5ZI,538
+IS2view/convert.py,sha256=oZUW4LLmejTfFQelkdmIdsmwG_S6cvN9QlDXf_3bejo,3636
+IS2view/io.py,sha256=KTm-R0AsnqvwektPcy-QXdY4J3cUFAmV7uriuUc6W34,3766
+IS2view/utilities.py,sha256=Na0MFqXniAOpGvuqiGAy5nRLPMnCDCSe7veyIyYPPRE,45988
+IS2view/version.py,sha256=UGuBp40r_Vf82qIftyeF-oDIKfRhJPu08lnMwCpBC2U,395
+IS2view-0.0.2.dist-info/LICENSE,sha256=QeJHFTJFvXH2oC4tewT_OP8D8FXLzquN9W7WXAjvoWk,1074
+IS2view-0.0.2.dist-info/METADATA,sha256=-MoTwrle7jDTjUc2O7KddL4LMe4906tAbgGT9hWfeTg,4071
+IS2view-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+IS2view-0.0.2.dist-info/top_level.txt,sha256=bkia8vEyy_k2BTQW3XdtPo493cYP-YkOthbmXVh_opg,8
+IS2view-0.0.2.dist-info/RECORD,,
