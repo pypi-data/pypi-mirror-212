@@ -1,0 +1,5 @@
+click
+pandas<2,>=1
+requests
+pyspark
+typing_extensions
