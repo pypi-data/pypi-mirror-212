@@ -1,0 +1,28 @@
+#[build-system]
+#requires = ['setuptools>=42']
+#build-backend = 'setuptools.build_meta'
+
+[tool.poetry]
+name = "pypi-packaging-tutorial"
+version = "0.1.2"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.txt"
+packages = [{include = "pypi_packaging_tutorial"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[metadata]
+name = 'pypi_pyckyging_tutorial'
+version = '0.1.0'
+author = 'your name'
+author_email = 'your_email@example.com'
+description = 'A simple Python package'
+long_description = ['file: README.md', 'LICENSE.txt']
+long_description_content_type = 'text/markdown'
+url = 'https://github.com/k4144/pypi_packaging_turorial'
