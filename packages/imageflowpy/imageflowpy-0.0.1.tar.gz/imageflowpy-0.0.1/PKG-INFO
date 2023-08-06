@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: imageflowpy
+Version: 0.0.1
+Summary: Library that generates images of basically anything.
+Home-page: 
+Author: skrvt
+Author-email: skrvtbusiness@gmail.com
+License: MIT
+Keywords: image generator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Imageflow is a library that generates images of basically anything. For example:
+- Generating a random picture of Billie Eilish.
+- More will be added soon.
+
+How to use:
+# Generate a random picture of Billie Eilish.
+```
+import imageflow-py as imageflow
+
+imageflow.billie_eilish()
+```
+
+Authors of Imageflow:
+- bqa
+- hellrisen
+
+Author of the Python Wrapper for Imageflow:
+- skrvt
+
+Change Log for Imageflow
+
+***********************
+0.0.1 (07.06.2023)
+------------------
+[ADDED]
+- Generate a random image of Billie Eilish
+
+[FIXED]
+***********************

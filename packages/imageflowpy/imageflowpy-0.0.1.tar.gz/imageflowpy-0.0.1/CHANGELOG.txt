@@ -1,0 +1,10 @@
+Change Log for Imageflow
+
+***********************
+0.0.1 (07.06.2023)
+------------------
+[ADDED]
+- Generate a random image of Billie Eilish
+
+[FIXED]
+***********************
