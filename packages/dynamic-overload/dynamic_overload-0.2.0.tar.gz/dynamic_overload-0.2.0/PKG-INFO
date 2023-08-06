@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: dynamic_overload
+Version: 0.2.0
+Summary: A basic package that allows to overload functions and class functions dynamically depending on the input types.
+Home-page: https://github.com/ferranSanchezLlado/dynamic_overload.git
+Author: Ferran Sanchez Llado
+Author-email: ferransll@gmail.com
+License: MIT
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE
+
+# Dynamic Overload
+
+Dynamic Overload is a python package that allows you to overload functions and classes using dynamic dispatch depending on the type of the arguments. This allows you to write more readable code and avoid using isinstance and type checks.
+
+The package also detects collisions between the overloads and warns the user about them without breaking the code. In case of collision, the first overload is used. So, its recomended that you put the most specific overloads first before the more general ones.
+
+## Installation
+
+Requires python 3.10 or higher
+
+```bash
+pip install dynamic-overload
+```
+
+## Usage
+
+For functions:
+```python
+from dynamic_overload import overload
+from typing import Iterable
+
+@overload
+def flatten(x: Iterable[int]) -> Iterable[int]:
+    return [y for l in x for y in flatten(l)]
+
+@overload
+def flatten(x: int) -> Iterable[int]:
+    yield x
+
+assert list(flatten([1, [2, 3], 4])) == [1, 2, 3, 4]
+assert list(flatten(1)) == [1]
+```
+
+For classes:
+```python
+from dynamic_overload import OverloadMeta
+
+class Integer(metaclass=OverloadMeta):
+    x: int
+
+    def __init__(self, x: int):
+        self.x = x
+
+    def __init__(self, x: str):
+        self.x = int(x)
+
+    def __init__(self, x: float):
+        self.x = int(x)
+
+assert Integer(1).x == 1
+assert Integer('1').x == 1
+assert Integer(1.0).x == 1
+```
+
+The package also supports inheritance similar to python [abc](https://docs.python.org/3/library/abc.html) module. So the previous example can be rewritten as:
+```python
+from dynamic_overload import Overload
+
+class Integer(Overload):
+    x: int
+
+    def __init__(self, x: int):
+        self.x = x
+
+    def __init__(self, x: str):
+        self.x = int(x)
+
+    def __init__(self, x: float):
+        self.x = int(x)
+
+assert Integer(1).x == 1
+assert Integer('1').x == 1
+assert Integer(1.0).x == 1
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

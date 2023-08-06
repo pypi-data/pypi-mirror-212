@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/dynamic_overload/__init__.py
+src/dynamic_overload/overload.py
+src/dynamic_overload/py.typed
+src/dynamic_overload.egg-info/PKG-INFO
+src/dynamic_overload.egg-info/SOURCES.txt
+src/dynamic_overload.egg-info/dependency_links.txt
+src/dynamic_overload.egg-info/not-zip-safe
+src/dynamic_overload.egg-info/requires.txt
+src/dynamic_overload.egg-info/top_level.txt
+tests/test_classes.py
+tests/test_functions.py
