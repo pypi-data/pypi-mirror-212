@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: interpreters-3-12
+Version: 0.0.1.0
+Summary: Use this module to try out multiple interpreters and a per-interpreter GIL in Python 3.12.  Do not use this for anything important.
+Author-email: Eric Snow <ericsnowcurrently@gmail.com>
+Project-URL: Homepage, https://github.com/ericsnowcurrently/interpreters
+Project-URL: Bug Tracker, https://github.com/ericsnowcurrently/interpreters/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Setup
+
+To use this directory you must first build the development
+version of CPython on your machine by following the instructions
+[here](https://devguide.python.org/getting-started/setup-building). (This can seem intimidating but the instructions
+are very clear and meticulous and you are likely to succeed on your
+first try).
+
+Once you install the CPython development version (make sure you make
+any necessary path adjustments), when you run ``python --version`` 
+you should see something like this:
+
+```
+Python 3.12.0a7+
+```
+
+### Testing the Examples
+
+After cloning this repo, use `pip` or `pipx` to (globally) install the `hatch`
+build system.
+
+Move to the root directory of the cloned repo and run:
+
+```
+hatch shell
+```
+
+This configures and enters a virtual environment. Now move to the
+`examples` directory and you can run:
+
+```
+pytest
+ruff check .
+mypy .
+```
