@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: autora-experimentalist-sampler-inequality
+Version: 1.0.1
+Summary: AutoRA Inequality Sampler
+Author-email: "Chad C. Williams" <cwilliams.uca@gmail.com>, Younes Strittmatter <younes_strittmatter@brown.com>
+License: MIT License
+Project-URL: homepage, http://www.empiricalresearch.ai
+Project-URL: repository, https://github.com/AutoResearch/autora-experimentalist-sampler-inequality
+Project-URL: documentation, https://autoresearch.github.io/autora/
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: autora-core
+Provides-Extra: dev
+Requires-Dist: autora-core[dev] ; extra == 'dev'
+
+# AutoRA Inequality Sampler
+
+`autora-experimentalist-inequailtysampler` is a Python module for sampling data built on AutoRA.
+
+Website: [https://autoresearch.github.io/autora/](https://autoresearch.github.io/autora/)
+
+## User Guide
+
+You will need:
+
+- `python` 3.8 or greater: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+- `graphviz` (optional, required for computation graph visualizations): 
+  [https://graphviz.org/download/](https://graphviz.org/download/)
+
+Install the inequality sampler as part of the `autora` package:
+
+```shell
+pip install -U "autora[experimentalist-inequality-sampler]"
+```
+
+> It is recommended to use a `python` environment manager like `virtualenv`.
+
+Check your installation by running:
+
+```shell
+python -c "from autora.experimentalist.sampler.inequality import summed_inequality_sampler"
+```
