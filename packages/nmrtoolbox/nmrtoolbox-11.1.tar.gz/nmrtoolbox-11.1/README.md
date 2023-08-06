@@ -1,0 +1,110 @@
+# nmrtoolbox
+
+## Introduction
+This is a simple utility that provides modules for working with NMRPipe peak tables and performing a receiver operator characteristic (ROC) analysis to quantify the quality of the "recovered" peaks relative to a control set of "synthetic" peaks.  The modules in this package are as follows:
+- `nmrtoolbox.peak`: classes for reading in peak tables (currently supports both synthetically generated and recovered peak tables from NMRPipe)
+- `nmrtoolbox.roc`: perform receiver operator characteristic (ROC) analysis of a recovered peak table relative to a synthetic peak table
+- `nmrtoolbox.mask`: define regions of a spectrum that contain signal or are empty
+- `nmrtoolbox.util`: various supporting utilities used by other modules
+- `nmrtoolbox.strip_plot`: generate color coded strip plots that correspond to the true positive and false positive peaks classified by an ROC analysis
+
+## Applications
+
+### Example #1 - Formal Workflow
+The tools in this package are utilized by the [NUScon](https://nuscon.org/home) software package.  You can access NUScon on the NMRbox platform (free for academic, government, and non-profit users).  Running `nuscon -h` will provide instructions on how to run the NUScon evaluation workflow, which directly utilizes the tools presented here in the `nmrtoolbox` package.
+
+### Example #2 - Kick the Tires
+
+```commandline
+from nmrtoolbox.roc import roc
+from nmrtoolbox.strip_plot import strip_plot
+
+# perform ROC analysis and specify filtering criteria
+my_roc = roc(
+    recPeaks=<file-recovered.tab>,
+    synPeaks=<file-synthetic.tab>,
+    cluster_type=1,
+    chi2prob=.75,
+    vol_height_mismatch=True,
+    maxLW_percent_SW=0.25,
+)
+
+# show and plot results
+my_roc.print_stats()
+my_roc.plot_roc()
+
+# generate strip plots
+strip_plot(
+    recSpectrum=<file-recovered-spectrum.ft3>,
+    sumSpectrum=<file-sum-spectrum.ft3>,
+    empSpectrum=<file-empirical-spectrum.ft3>,
+    empPeaks=<file-empirical.tab>,
+    roc_obj=my_roc,
+)
+```
+
+The roc function supports the following filter criteria:
+- `number`
+- `height` 
+- `abs_height` 
+- `roi_list` 
+- `index`
+- `cluster_type`
+- `mask_file`
+- `chi2prob`
+- `outlier`
+- `vol_height_mismatch`
+- `maxLW_percent_SW`
+
+
+Note: Filtering by `mask` requires the external use of NMRPipe to generate a mask file indicating where the spectrum is empty.  This binary data is converted by [Connjur Spectrum Translator](https://nmrbox.nmrhub.org/software/spectrum-translator) into a "tabular" format file (i.e. plain text) which is then read in by `nmrtoolbox.mask`.
+
+
+The strip plot function shown above will make pairwise comparisons among the following 3 types of input spectra (all of which are fundamental to the NUScon workflow):
+- empSpectrum: empirical spectrum, this reference is typically obtained by FT processing of a uniformly collected experiment
+- sumSpectrum: sum spectrum, this control is typically obtained by FT processing the uniformly sampled time domain data of the empirical data augmented with synthetic peaks
+- recSpectrum: recovered spectrum, typically obtained by processing a nonuniformly sampled version of the empirical time data augmented with the synthetic time data
+
+In addition, the corresponding peak tables are also accepted as inputs:
+- empPeaks: empirical peaks, peak table from the empirical spectrum
+- synPeaks: synthetic peaks, peak table of just the synthetic peaks used to build the sum spectrum
+- recPeaks: recovered peaks, peak table from the NUS reconstruction of the synthetic and empirical data
+
+Example data from NUScon archive is available on NMRbox at '/NUScon/archive'
+
+
+## Changelog
+v11
+- major upgrades to strip_plot module
+- PeakTable and Spectrum classes use enumerated types to define valid input formats
+- PeakTable and Spectrum classes offer .read() methods to handle multiple input types
+- rename roc input parameters to be consistent with PeakTable and Spectrum classes
+- universal change to variable naming: "injected" is no longer used. "synthetic" refers to only the synthetic peaks/spectra and "sum" refers to "empirical" + "synthetic" peaks/spectra
+
+v10
+- major change: ROC now sorts peaks by absolute value of intensity (previously used intensity from largest positive down to largest negative)
+- new module added for generating strip plots
+- add more options for peak table filtering
+
+v9
+- change in internal data model for storing metadata in Peak, PeakTable, Mask, ROC, and ROI classes
+- allow roc class to accept Mask object (not just mask file)
+- approximate maximum LW for injected peaks from X1/X3, etc. parameters in the injected peak table
+- function to write NMRPipe peak table to file
+
+v8
+- change to MIT license
+- box_radius for mask filtering is multidimensional
+- improved input options for setting carrier frequency
+- axis labels used to verify compatibility of Peak, Mask, ROI, and ROC objects
+
+v7
+- addition of `roc` module
+- addition of `mask` module
+
+v6
+- rename package as `nmrtoolbox`
+- use subclasses to handle NMRPipe peak tables coming from genSimTab or from the peak picker
+
+v5
+- new Axis class for containing metadata from peak table header
