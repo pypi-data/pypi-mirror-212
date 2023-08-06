@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: radstar
+Version: 0.1.0
+Summary: rapid application development environment
+License-File: LICENSE
+Provides-Extra: jsonrpc
+Requires-Dist: requests ; extra == 'jsonrpc'
+
