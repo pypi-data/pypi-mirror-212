@@ -1,0 +1,51 @@
+# AUTO GENERATED FILE - DO NOT EDIT
+
+from dash.development.base_component import Component, _explicitize_args
+
+
+class Accordion(Component):
+    """An Accordion component.
+Lazy loaded ComponentTemplate
+
+@param {
+	id,
+ accordionHeadings,
+ children,
+} [props={}]
+@return {*}
+
+Keyword arguments:
+
+- children (list of a list of or a singular dash component, string or numbers; optional):
+    Array of accordion children.
+
+- id (string; optional):
+    The ID of this component, used to identify dash components in
+    callbacks. The ID needs to be unique across all of the components
+    in an app.
+
+- accordionHeadings (list of strings; optional):
+    Array of accordion headings.
+
+- bannerSections (list of number | a value equal to: nulls; optional):
+    Array that determines the creation of banners for each section.
+    Each item in the array corresponds to a section on the page. If an
+    item is an integer, a banner with a button is created.  The button
+    focuses on the child content with the corresponding index. If an
+    item is None, no banner is created for that section."""
+    _children_props = []
+    _base_nodes = ['children']
+    _namespace = 'uk_gov_dash_components'
+    _type = 'Accordion'
+    @_explicitize_args
+    def __init__(self, children=None, id=Component.UNDEFINED, accordionHeadings=Component.UNDEFINED, bannerSections=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'id', 'accordionHeadings', 'bannerSections']
+        self._valid_wildcard_attributes =            []
+        self.available_properties = ['children', 'id', 'accordionHeadings', 'bannerSections']
+        self.available_wildcard_properties =            []
+        _explicit_args = kwargs.pop('_explicit_args')
+        _locals = locals()
+        _locals.update(kwargs)  # For wildcard attrs and excess named props
+        args = {k: _locals[k] for k in _explicit_args if k != 'children'}
+
+        super(Accordion, self).__init__(children=children, **args)
