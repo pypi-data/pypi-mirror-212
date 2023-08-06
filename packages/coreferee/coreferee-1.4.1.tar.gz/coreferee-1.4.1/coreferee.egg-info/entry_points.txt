@@ -1,0 +1,2 @@
+[spacy_factories]
+coreferee = coreferee.manager:CorefereeBroker
