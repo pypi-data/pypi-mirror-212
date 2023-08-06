@@ -1,0 +1,23 @@
+CHANGES
+=======
+
+1.0.1
+-----
+
+* fix: add CLI to package
+* fix: show all when all segs are deselected
+* fix: "X" command tip should show for segmentation
+* docs: how to install
+* docs: add PyPI badge
+* docs: show what it looks like
+
+1.0.0
+-----
+
+* chore: remove testing file
+* fix: make zoomto work on y and x axes as well
+* feat: spacebar zooms in
+* feat: add mag indicator and let image go to almost full screen
+* docs: how to use microviewer
+* feat: microviewer working + cli
+* Initial commit
