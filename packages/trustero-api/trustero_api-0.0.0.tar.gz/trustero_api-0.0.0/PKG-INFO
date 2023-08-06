@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: trustero-api
+Version: 0.0.0
+Summary: Trustero Receptor API Python Proto File Bindings
+Home-page: https://pypi.org/project/python/
+License: Apache-2.0
+Author: Alex Gonopolskiy
+Author-email: alex@trustero.com
+Requires-Python: >=3.11,<4
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: docs
+Requires-Dist: importlib-metadata (>=6.0.0,<7.0.0) ; extra == "docs"
+Requires-Dist: protobuf (>=4.23.2,<5.0.0)
+Requires-Dist: sphinx (>=6.1.3,<7.0.0) ; extra == "docs"
+Requires-Dist: sphinx-autoapi (>=2.0.1,<3.0.0) ; extra == "docs"
+Requires-Dist: types-protobuf (>=4.23.0.1,<5.0.0.0)
+Project-URL: Repository, https://github.com/trustalex/https://github.com/trustero/api
+Description-Content-Type: text/markdown
+
+# Trustero Api Python Bindings
+
+[![pypi](https://img.shields.io/pypi/v/python.svg)](https://pypi.org/project/python/)
+[![license](https://img.shields.io/pypi/l/python.svg)](https://github.com/trustalex/https://github.com/trustero/api/blob/main/LICENSE)
+[![wheel](https://img.shields.io/pypi/wheel/python.svg)](https://pypi.org/project/python/)
+[![python](https://img.shields.io/pypi/pyversions/python.svg)](https://pypi.org/project/python/)
+[![Test Suite](https://github.com/trustalex/https://github.com/trustero/api/workflows/Test%20Suite/badge.svg)](https://github.com/https://github.com/trustero/api/actions?query=workflow%3A%22Test+Suite%22)
+[![docs](https://readthedocs.org/projects/python/badge/?version=stable&style=flat)](https://python.readthedocs.io/en/stable/)
+[![coverage](https://coveralls.io/repos/github/https://github.com/trustero/api/badge.svg?branch=main)](https://coveralls.io/github/trustalex/https://github.com/trustero/api?branch=main)
+
+Trustero Receptor API Python Proto File Bindings
+
+
