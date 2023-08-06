@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_flan/__init__.py
+autodistill_flan.egg-info/PKG-INFO
+autodistill_flan.egg-info/SOURCES.txt
+autodistill_flan.egg-info/dependency_links.txt
+autodistill_flan.egg-info/requires.txt
+autodistill_flan.egg-info/top_level.txt
