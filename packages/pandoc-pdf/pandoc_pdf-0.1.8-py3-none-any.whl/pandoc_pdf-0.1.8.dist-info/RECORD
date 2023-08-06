@@ -1,0 +1,13 @@
+pandoc_pdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pandoc_pdf/main.py,sha256=Hja4_i4U1mvObqiWSxrQQ2MhtuyB0QHCrYHndx4L7GI,2777
+pandoc_pdf_utils/default_config/deeplists.tex,sha256=3KyEg1eKvdeighibGbLql_lNO19EE4vG48d8qPfhaF8,802
+pandoc_pdf_utils/default_config/defaults.yml,sha256=YQFdK3VUeH9QOEo3vGP5ouvy9XBBrfWU2jgpXzni2cU,773
+pandoc_pdf_utils/default_config/header.tex,sha256=0xugF18DBCAv3ryS30JL1PNVRbSrlm0Q65wcdHLKEFY,670
+pandoc_pdf_utils/default_config/setting.yml,sha256=0BiEU5RSeQPSntY4dlspseur6LJLZq2hhDCzsW1MUNE,179
+pandoc_pdf_utils/env.py,sha256=-5oD8nY2vtYmz52oTug2ojdEn9oAQ35HIxlY7DZ3bdA,184
+pandoc_pdf_utils/functions.py,sha256=XhpH4_5hdriZw9BGcV6qAxyAYF4BKd5Fp8CJjscNjFk,4105
+pandoc_pdf-0.1.8.dist-info/entry_points.txt,sha256=zV6Q54kG_iN4EoY1h3FUqE_P_Aha36FE3c7bsNII1yE,57
+pandoc_pdf-0.1.8.dist-info/LICENSE,sha256=8FyxQ4ssOe-Ed1fSkkrSy_2ZXYSwUhyDvSVlnkOm-ww,1060
+pandoc_pdf-0.1.8.dist-info/WHEEL,sha256=Jaj29f-PvHzZb5kImTcJS9QszpaO6CVzAqOolIz_WEw,90
+pandoc_pdf-0.1.8.dist-info/METADATA,sha256=TwuSVItOgJQ2mgqlsb3cH5-wLJzHy78mo3SJr2d9-sk,384
+pandoc_pdf-0.1.8.dist-info/RECORD,,
