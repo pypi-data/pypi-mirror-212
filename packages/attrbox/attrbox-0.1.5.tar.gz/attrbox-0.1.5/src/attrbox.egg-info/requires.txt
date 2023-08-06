@@ -1,0 +1,12 @@
+docopt==0.6.2
+tomli>=1.1.0
+
+[dev]
+black
+coverage
+mypy
+pdm
+pdoc3
+pytest-cov
+pytest
+ruff
