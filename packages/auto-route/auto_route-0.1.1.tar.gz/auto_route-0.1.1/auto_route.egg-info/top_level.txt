@@ -1,0 +1,2 @@
+auto_app
+auto_route
