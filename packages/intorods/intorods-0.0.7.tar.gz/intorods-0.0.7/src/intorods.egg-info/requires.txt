@@ -1,0 +1,6 @@
+cryptography
+paramiko
+python-irodsclient
+pyyaml
+pysmb
+jsonschema
