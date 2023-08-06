@@ -1,0 +1,13 @@
+setup.py
+Kirill_SerializerAndFuncs/Serializers_factory.py
+Kirill_SerializerAndFuncs/__init__.py
+Kirill_SerializerAndFuncs/base_serializer.py
+Kirill_SerializerAndFuncs/dict_serializer.py
+Kirill_SerializerAndFuncs/json_serializer.py
+Kirill_SerializerAndFuncs/type_constants.py
+Kirill_SerializerAndFuncs/xml_serializer.py
+Kirill_SerializerAndFuncs.egg-info/PKG-INFO
+Kirill_SerializerAndFuncs.egg-info/SOURCES.txt
+Kirill_SerializerAndFuncs.egg-info/dependency_links.txt
+Kirill_SerializerAndFuncs.egg-info/requires.txt
+Kirill_SerializerAndFuncs.egg-info/top_level.txt
