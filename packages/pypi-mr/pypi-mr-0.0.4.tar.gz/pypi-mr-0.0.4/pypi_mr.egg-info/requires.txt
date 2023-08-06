@@ -1,0 +1,7 @@
+requests
+packaging
+
+[dev]
+bumpver
+pre-commit
+pytest
