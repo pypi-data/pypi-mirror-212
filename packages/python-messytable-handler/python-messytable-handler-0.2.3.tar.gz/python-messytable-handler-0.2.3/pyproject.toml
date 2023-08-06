@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-messytable-handler"
+version = "0.2.3"
+authors = [{ name = 'Open Knowledge Foundation', email = 'info@okfn.org' }]
+maintainers = [{ name = "David Harcombe", email = "david.harcombe@gmail.com" }]
+description = "Parse messy tabular data in various formats. Updated clone of okfn/messytables."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+ "Programming Language :: Python :: 3",
+ "Operating System :: OS Independent",
+]
+license = { text = "MIT" }
+dependencies = [
+ 'xlrd>=0.8.0',
+ 'python-magic>=0.4.12',
+ 'chardet>=2.3.0',
+ 'python-dateutil>=1.5.0',
+ 'lxml>=3.2',
+ 'requests',
+ 'six>=1.9',
+ 'html5lib',
+ 'json-table-schema>=0.2, <=0.2.1',
+]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = ["messytables*"]
+exclude = ["docs*", "tests*"]
+
+# [tool.setuptools]
+# packages = ["messytables"]
+
+# [tool.setuptools.packages.find]
+# # where = ["."]  # list of folders that contain the packages (["."] by default)
+# include = ["messytables"]  # package names should match these glob patterns (["*"] by default)
+# exclude = ["test*/**", 'horror*/**']  # exclude packages matching these glob patterns (empty by default)
+# namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+
+[project.urls]
+"Homepage" = "https://github.com/davidharcombe/messytables"
+"Bug Tracker" = "https://github.com/davidharcombe/messytables/issues"
