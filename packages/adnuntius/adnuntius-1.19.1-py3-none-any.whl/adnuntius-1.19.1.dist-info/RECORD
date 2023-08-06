@@ -1,0 +1,9 @@
+adnuntius/__init__.py,sha256=RpcrQoR9OTKxJcUGch7tBAck5gXFRixMwDygqyMiSto,23
+adnuntius/api.py,sha256=bmS7aaaAwJxmBZ8nicxxIOenqeun1B5vrfMtPbkbSFY,43952
+adnuntius/compare_json.py,sha256=2iJLqcCm4LrLtWmOR_9Ox_ahHfzEpBoL0HvBU3SopOQ,5210
+adnuntius/util.py,sha256=UivvAcDZYiNduqGVAKwvTnjuQRqBqJQ2yUiNiOCJtg8,1912
+adnuntius-1.19.1.dist-info/LICENSE.txt,sha256=DY8RdMqHb8ngAnE1yeyyHW4s4-DJitTDqRb1MwoHn8E,1068
+adnuntius-1.19.1.dist-info/METADATA,sha256=jLu7lFQ2uaK9Si84MXnj6Vvn5tR_u8WhPmyVi90fcEU,537
+adnuntius-1.19.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+adnuntius-1.19.1.dist-info/top_level.txt,sha256=ukXYb4EKVOVGsmugCnbZvc0bX6MY5JS1cue58t7vJYA,10
+adnuntius-1.19.1.dist-info/RECORD,,
