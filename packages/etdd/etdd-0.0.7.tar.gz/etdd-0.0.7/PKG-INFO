@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: etdd
+Version: 0.0.7
+Summary: eTDD framework
+Home-page: https://github.com/neubertm/TDD_framework
+Author: Milan Neubert, Felipe Bombardelli
+Author-email: felipebombardelli@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Opa
+
+
+
+Example 1
+
+from etdd import TDD, full_main
+
+tdd = TDD(main=full_main, envpath="envpath.ini")
+tdd.download_from_git("https://github.com/neubertm/TDD_framework.git")
+
+
+test = tdd.test("TDD_framework/TESTs/BitInverter_Tpkg/src/test.cpp", "BitInverter")
+test.files = ["TDD_framework/project/BitInverter/BitInverter.*", "TDD_framework/TESTs/BitInverter_Tpkg/src/MemLeakDetection*.h"]
+test.compile = ["BitInverter.c"]
+
+tdd.menu()
+
+
