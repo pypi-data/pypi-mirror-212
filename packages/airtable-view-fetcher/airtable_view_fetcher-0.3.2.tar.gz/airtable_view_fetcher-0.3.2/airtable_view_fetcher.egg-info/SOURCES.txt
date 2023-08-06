@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+airtable_view_fetcher/__init__.py
+airtable_view_fetcher/fetch_airtable_data.py
+airtable_view_fetcher.egg-info/PKG-INFO
+airtable_view_fetcher.egg-info/SOURCES.txt
+airtable_view_fetcher.egg-info/dependency_links.txt
+airtable_view_fetcher.egg-info/entry_points.txt
+airtable_view_fetcher.egg-info/requires.txt
+airtable_view_fetcher.egg-info/top_level.txt
