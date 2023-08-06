@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+yolo2labelme.py
+yolo2labelme.egg-info/PKG-INFO
+yolo2labelme.egg-info/SOURCES.txt
+yolo2labelme.egg-info/dependency_links.txt
+yolo2labelme.egg-info/entry_points.txt
+yolo2labelme.egg-info/top_level.txt
