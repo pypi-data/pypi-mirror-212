@@ -1,0 +1,11 @@
+[project]
+name = 'tpypackaging'
+version = '0.0.1'
+description = 'Package for testing'
+
+[build-system]
+requires = ["setuptools>=42", "wheel", "numpy"]   # PEP 508 specifications.
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ['src']

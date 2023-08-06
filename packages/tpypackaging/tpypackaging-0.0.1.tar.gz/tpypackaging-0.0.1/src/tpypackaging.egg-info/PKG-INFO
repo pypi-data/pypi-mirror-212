@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: tpypackaging
+Version: 0.0.1
+Summary: Package for testing
+Author: Innowise
+Requires-Python: >=3.6

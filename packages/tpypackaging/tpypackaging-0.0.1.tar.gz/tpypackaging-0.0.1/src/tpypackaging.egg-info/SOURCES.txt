@@ -1,0 +1,7 @@
+pyproject.toml
+setup.cfg
+setup.py
+src/tpypackaging.egg-info/PKG-INFO
+src/tpypackaging.egg-info/SOURCES.txt
+src/tpypackaging.egg-info/dependency_links.txt
+src/tpypackaging.egg-info/top_level.txt
