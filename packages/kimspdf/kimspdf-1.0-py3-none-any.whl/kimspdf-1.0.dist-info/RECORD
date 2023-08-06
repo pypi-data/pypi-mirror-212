@@ -1,0 +1,8 @@
+kimspdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kimspdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kimspdf/pdf2text.py,sha256=DMhtkwTpxRDm9GkWTOJ1ATCpxrL6MZ18vYvTIEa2_nM,45
+kimspdf-1.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+kimspdf-1.0.dist-info/METADATA,sha256=b-ohp_BjuMvtbyiqFReqdXA7ODQ1i7SakhyR-3vOs4M,115
+kimspdf-1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+kimspdf-1.0.dist-info/top_level.txt,sha256=MLwgRo-3pf3VH9fEoIMLKeuZh5CHPM1CGzG08jiwQgA,8
+kimspdf-1.0.dist-info/RECORD,,
