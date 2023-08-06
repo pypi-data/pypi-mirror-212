@@ -1,0 +1,342 @@
+use ruff_diagnostics::{AutofixKind, Diagnostic, DiagnosticKind, Fix, Violation};
+use ruff_macros::{derive_message_formats, violation};
+use ruff_python_semantic::binding::Binding;
+
+use crate::autofix;
+use crate::checkers::ast::Checker;
+use crate::importer::StmtImport;
+use crate::registry::AsRule;
+use crate::rules::isort::{categorize, ImportSection, ImportType};
+
+/// ## What it does
+/// Checks for first-party imports that are only used for type annotations, but
+/// aren't defined in a type-checking block.
+///
+/// ## Why is this bad?
+/// Unused imports add a performance overhead at runtime, and risk creating
+/// import cycles.
+///
+/// ## Example
+/// ```python
+/// from __future__ import annotations
+///
+/// import A
+///
+///
+/// def foo(a: A) -> int:
+///     return len(a)
+/// ```
+///
+/// Use instead:
+/// ```python
+/// from __future__ import annotations
+///
+/// from typing import TYPE_CHECKING
+///
+/// if TYPE_CHECKING:
+///     import A
+///
+///
+/// def foo(a: A) -> int:
+///     return len(a)
+/// ```
+///
+/// ## References
+/// - [PEP 536](https://peps.python.org/pep-0563/#runtime-annotation-resolution-and-type-checking)
+#[violation]
+pub struct TypingOnlyFirstPartyImport {
+    qualified_name: String,
+}
+
+impl Violation for TypingOnlyFirstPartyImport {
+    const AUTOFIX: AutofixKind = AutofixKind::Sometimes;
+
+    #[derive_message_formats]
+    fn message(&self) -> String {
+        format!(
+            "Move application import `{}` into a type-checking block",
+            self.qualified_name
+        )
+    }
+
+    fn autofix_title(&self) -> Option<String> {
+        Some("Move into type-checking block".to_string())
+    }
+}
+
+/// ## What it does
+/// Checks for third-party imports that are only used for type annotations, but
+/// aren't defined in a type-checking block.
+///
+/// ## Why is this bad?
+/// Unused imports add a performance overhead at runtime, and risk creating
+/// import cycles.
+///
+/// ## Example
+/// ```python
+/// from __future__ import annotations
+///
+/// import pandas as pd
+///
+///
+/// def foo(df: pd.DataFrame) -> int:
+///     return len(df)
+/// ```
+///
+/// Use instead:
+/// ```python
+/// from __future__ import annotations
+///
+/// from typing import TYPE_CHECKING
+///
+/// if TYPE_CHECKING:
+///     import pandas as pd
+///
+///
+/// def foo(df: pd.DataFrame) -> int:
+///     return len(df)
+/// ```
+///
+/// ## References
+/// - [PEP 536](https://peps.python.org/pep-0563/#runtime-annotation-resolution-and-type-checking)
+#[violation]
+pub struct TypingOnlyThirdPartyImport {
+    qualified_name: String,
+}
+
+impl Violation for TypingOnlyThirdPartyImport {
+    const AUTOFIX: AutofixKind = AutofixKind::Sometimes;
+
+    #[derive_message_formats]
+    fn message(&self) -> String {
+        format!(
+            "Move third-party import `{}` into a type-checking block",
+            self.qualified_name
+        )
+    }
+
+    fn autofix_title(&self) -> Option<String> {
+        Some("Move into type-checking block".to_string())
+    }
+}
+
+/// ## What it does
+/// Checks for standard library imports that are only used for type
+/// annotations, but aren't defined in a type-checking block.
+///
+/// ## Why is this bad?
+/// Unused imports add a performance overhead at runtime, and risk creating
+/// import cycles.
+///
+/// ## Example
+/// ```python
+/// from __future__ import annotations
+///
+/// from pathlib import Path
+///
+///
+/// def foo(path: Path) -> str:
+///     return str(path)
+/// ```
+///
+/// Use instead:
+/// ```python
+/// from __future__ import annotations
+///
+/// from typing import TYPE_CHECKING
+///
+/// if TYPE_CHECKING:
+///     from pathlib import Path
+///
+///
+/// def foo(path: Path) -> str:
+///     return str(path)
+/// ```
+///
+/// ## References
+/// - [PEP 536](https://peps.python.org/pep-0563/#runtime-annotation-resolution-and-type-checking)
+#[violation]
+pub struct TypingOnlyStandardLibraryImport {
+    qualified_name: String,
+}
+
+impl Violation for TypingOnlyStandardLibraryImport {
+    const AUTOFIX: AutofixKind = AutofixKind::Sometimes;
+
+    #[derive_message_formats]
+    fn message(&self) -> String {
+        format!(
+            "Move standard library import `{}` into a type-checking block",
+            self.qualified_name
+        )
+    }
+
+    fn autofix_title(&self) -> Option<String> {
+        Some("Move into type-checking block".to_string())
+    }
+}
+
+/// Return `true` if `this` is implicitly loaded via importing `that`.
+fn is_implicit_import(this: &Binding, that: &Binding) -> bool {
+    let Some(this_module) = this.module_name() else {
+        return false;
+    };
+    let Some(that_module) = that.module_name() else {
+        return false;
+    };
+    this_module == that_module
+}
+
+/// Return `true` if `name` is exempt from typing-only enforcement.
+fn is_exempt(name: &str, exempt_modules: &[&str]) -> bool {
+    let mut name = name;
+    loop {
+        if exempt_modules.contains(&name) {
+            return true;
+        }
+        match name.rfind('.') {
+            Some(idx) => {
+                name = &name[..idx];
+            }
+            None => return false,
+        }
+    }
+}
+
+/// TCH001, TCH002, TCH003
+pub(crate) fn typing_only_runtime_import(
+    checker: &Checker,
+    binding: &Binding,
+    runtime_imports: &[&Binding],
+    diagnostics: &mut Vec<Diagnostic>,
+) {
+    // If we're in un-strict mode, don't flag typing-only imports that are
+    // implicitly loaded by way of a valid runtime import.
+    if !checker.settings.flake8_type_checking.strict
+        && runtime_imports
+            .iter()
+            .any(|import| is_implicit_import(binding, import))
+    {
+        return;
+    }
+
+    let Some(qualified_name) = binding.qualified_name() else {
+        return;
+    };
+
+    if is_exempt(
+        qualified_name,
+        &checker
+            .settings
+            .flake8_type_checking
+            .exempt_modules
+            .iter()
+            .map(String::as_str)
+            .collect::<Vec<_>>(),
+    ) {
+        return;
+    }
+
+    let Some(reference_id) = binding.references.first() else {
+        return;
+    };
+
+    if binding.context.is_runtime()
+        && binding.is_used()
+        && binding.references().all(|reference_id| {
+            checker
+                .semantic_model()
+                .references
+                .resolve(reference_id)
+                .context()
+                .is_typing()
+        })
+    {
+        // Extract the module base and level from the full name.
+        // Ex) `foo.bar.baz` -> `foo`, `0`
+        // Ex) `.foo.bar.baz` -> `foo`, `1`
+        let level = qualified_name
+            .chars()
+            .take_while(|c| *c == '.')
+            .count()
+            .try_into()
+            .unwrap();
+
+        // Categorize the import.
+        let kind: DiagnosticKind = match categorize(
+            qualified_name,
+            Some(level),
+            &checker.settings.src,
+            checker.package(),
+            &checker.settings.isort.known_modules,
+            checker.settings.target_version,
+        ) {
+            ImportSection::Known(ImportType::LocalFolder | ImportType::FirstParty) => {
+                TypingOnlyFirstPartyImport {
+                    qualified_name: qualified_name.to_string(),
+                }
+                .into()
+            }
+            ImportSection::Known(ImportType::ThirdParty) | ImportSection::UserDefined(_) => {
+                TypingOnlyThirdPartyImport {
+                    qualified_name: qualified_name.to_string(),
+                }
+                .into()
+            }
+            ImportSection::Known(ImportType::StandardLibrary) => TypingOnlyStandardLibraryImport {
+                qualified_name: qualified_name.to_string(),
+            }
+            .into(),
+
+            ImportSection::Known(ImportType::Future) => {
+                unreachable!("`__future__` imports should be marked as used")
+            }
+        };
+
+        let mut diagnostic = Diagnostic::new(
+            kind,
+            binding.trimmed_range(checker.semantic_model(), checker.locator),
+        );
+        if let Some(range) = binding.parent_range(checker.semantic_model()) {
+            diagnostic.set_parent(range.start());
+        }
+
+        if checker.patch(diagnostic.kind.rule()) {
+            diagnostic.try_set_fix(|| {
+                // Step 1) Remove the import.
+                // SAFETY: All non-builtin bindings have a source.
+                let source = binding.source.unwrap();
+                let stmt = checker.semantic_model().stmts[source];
+                let parent = checker.semantic_model().stmts.parent(stmt);
+                let remove_import_edit = autofix::edits::remove_unused_imports(
+                    std::iter::once(qualified_name),
+                    stmt,
+                    parent,
+                    checker.locator,
+                    checker.indexer,
+                    checker.stylist,
+                )?;
+
+                // Step 2) Add the import to a `TYPE_CHECKING` block.
+                let reference = checker.semantic_model().references.resolve(*reference_id);
+                let add_import_edit = checker.importer.typing_import_edit(
+                    &StmtImport {
+                        stmt,
+                        qualified_name,
+                    },
+                    reference.range().start(),
+                    checker.semantic_model(),
+                )?;
+
+                Ok(
+                    Fix::suggested_edits(remove_import_edit, add_import_edit.into_edits())
+                        .isolate(checker.isolation(parent)),
+                )
+            });
+        }
+
+        if checker.enabled(diagnostic.kind.rule()) {
+            diagnostics.push(diagnostic);
+        }
+    }
+}

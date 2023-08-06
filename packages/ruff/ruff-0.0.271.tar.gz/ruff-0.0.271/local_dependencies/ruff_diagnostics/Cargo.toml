@@ -1,0 +1,15 @@
+[package]
+name = "ruff_diagnostics"
+version = "0.0.0"
+publish = false
+edition = "2021"
+rust-version = "1.70"
+
+[lib]
+
+[dependencies]
+ruff_text_size = { git = "https://github.com/astral-sh/RustPython-Parser.git", rev = "7a3eedbf6fb4ea7068a1bf7fe0e97e963ea95ffd" }
+
+anyhow = { version = "1.0.69" }
+log = { version = "0.4.17" }
+serde = { version = "1.0.152", features = ["derive"] , optional = true}

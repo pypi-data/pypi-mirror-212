@@ -1,0 +1,21 @@
+[package]
+name = "ruff_python_formatter"
+version = "0.0.0"
+publish = false
+edition = "2021"
+rust-version = "1.70"
+
+[dependencies]
+ruff_formatter = { path = "../ruff_formatter" }
+ruff_newlines = { path = "../ruff_newlines" }
+ruff_python_ast = { path = "../ruff_python_ast" }
+ruff_text_size = { git = "https://github.com/astral-sh/RustPython-Parser.git", rev = "7a3eedbf6fb4ea7068a1bf7fe0e97e963ea95ffd" }
+
+anyhow = { version = "1.0.69" }
+clap = { version = "4.1.8", features = ["derive"] }
+countme = "3.0.1"
+is-macro = { version = "0.2.2" }
+itertools = { version = "0.10.5" }
+once_cell = { version = "1.17.1" }
+rustc-hash = { version = "1.1.0" }
+rustpython-parser = { git = "https://github.com/astral-sh/RustPython-Parser.git", rev = "7a3eedbf6fb4ea7068a1bf7fe0e97e963ea95ffd", default-features = false, features = ["full-lexer", "all-nodes-with-ranges"] }

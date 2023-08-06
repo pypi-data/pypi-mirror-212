@@ -1,0 +1,10 @@
+[package]
+name = "ruff_textwrap"
+version = "0.0.0"
+publish = false
+edition = "2021"
+rust-version = "1.70"
+
+[dependencies]
+ruff_newlines = { path = "../ruff_newlines" }
+ruff_text_size = { git = "https://github.com/astral-sh/RustPython-Parser.git", rev = "7a3eedbf6fb4ea7068a1bf7fe0e97e963ea95ffd" }
