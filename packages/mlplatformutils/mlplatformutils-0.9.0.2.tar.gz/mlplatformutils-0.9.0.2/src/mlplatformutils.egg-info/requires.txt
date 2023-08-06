@@ -1,0 +1,4 @@
+applicationinsights
+gremlinpython
+azureml-core
+azure-identity
