@@ -1,0 +1,1 @@
+from plog.models.log_model import LogModel, ObjectModel
