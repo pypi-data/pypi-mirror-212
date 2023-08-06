@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cmaps
+Version: 2.0.1
+Home-page: 
+Author: Hao Huang
+Author-email: hhuangwx@gmail.com
+License: LICENSE
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: packaging
+
