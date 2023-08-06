@@ -1,0 +1,11 @@
+README.md
+setup.py
+lib_for_messanger/__init__.py
+lib_for_messanger/chat.py
+lib_for_messanger/file_service.py
+lib_for_messanger/message.py
+lib_for_messanger/user.py
+lib_for_messanger.egg-info/PKG-INFO
+lib_for_messanger.egg-info/SOURCES.txt
+lib_for_messanger.egg-info/dependency_links.txt
+lib_for_messanger.egg-info/top_level.txt
