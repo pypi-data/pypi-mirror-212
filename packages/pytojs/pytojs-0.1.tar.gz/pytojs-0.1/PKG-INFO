@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pytojs
+Version: 0.1
+Summary: JavaScript to Python Translator & JavaScript interpreter written in 100% pure Python. (Fork from js2py)
+Home-page: https://github.com/jo-project/pytojs
+Author: jo-project
+Author-email: jo.project.0911@gmail.com
+License: MIT
+License-File: LICENSE.md
+
+Translates JavaScript to Python code. pytojs is able to translate and execute virtually any JavaScript code.
+
+pytojs is written in pure python and does not have any dependencies. Basically an implementation of JavaScript core in pure python.
+
+
+    import pytojs
+
+    f = pytojs.eval_js( "function $(name) {return name.length}" )
+
+    f("Hello world")
+
+    # returns 11
+
+Now also supports ECMA 6 through pytojs.eval_js6(js6_code)!
+
+More examples at: https://github.com/PiotrDabkowski/pytojs
