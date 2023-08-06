@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "multi-channel-pytorch"
+version = "0.2.1"
+description = "Library for adding multi channel functionality to PyTorch models."
+license = "GPL-3.0-only"
+authors = ["Timo Michel <timo.michel1996@outlook.de>"]
+readme = "README.md"
+repository = "https://github.com/Timom1996/multi-channel-pytorch"
+packages = [{include = "multi_channel_pytorch"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
