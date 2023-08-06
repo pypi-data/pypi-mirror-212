@@ -1,0 +1,2 @@
+bleak==0.20.2
+nest_asyncio==1.5.6
