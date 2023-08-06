@@ -1,0 +1,79 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "violet-simulator"
+version = "0.2.4"
+description = "A smol simulator framework built on top of PyGame"
+requires-python = ">=3.9"
+readme = "README.md"
+dependencies = [
+    "pygame>=2.4.0",
+    "polars>=0.17.11",
+    "pyserde[toml]>=0.10.4",
+    "typing-extensions>=4.5.0",
+]
+authors = [
+    { name = "Storm Timmermans", email = "stormtimmermans@icloud.com" },
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://violet.m-rots.com"
+repository = "https://github.com/m-rots/violet"
+documentation = "https://api.violet.m-rots.com/vi"
+
+[tool.pdm.build]
+includes = [
+    "vi",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pdoc>=13.1.1",
+]
+
+[tool.pyright]
+include = [
+    "examples",
+    "vi",
+]
+typeCheckingMode = "strict"
+
+[tool.ruff]
+ignore = [
+    "E501",
+]
+select = [
+    "C",
+    "E",
+    "F",
+    "I",
+    "W",
+    "YTT",
+    "B",
+    "Q",
+    "PLE",
+    "PLR",
+    "PLW",
+    "PIE",
+    "PYI",
+    "TID",
+    "ISC",
+    "TCH",
+    "C4",
+]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = [
+    "F401",
+]
+
+[tool.ruff.isort]
+lines-after-imports = 2
+combine-as-imports = true
