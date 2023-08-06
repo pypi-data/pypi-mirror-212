@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: mcap2timescale
+Version: 0.1.0
+Summary: Transform mcap (or rosbag) files into a Timescale database
+Home-page: https://github.com/SensorSurf/mcap2timescale
+Author: SensorSurf
+Author-email: support@sensorsurf.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/SensorSurf/mcap2timescale/issues
+Project-URL: Source, https://github.com/SensorSurf/mcap2timescale
+Keywords: ros,ros1,rosbag,mcap,timescale,etl,timeseries,database,etl
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: boto3 (==1.26.138)
+Requires-Dist: botocore (==1.29.138)
+Requires-Dist: jmespath (==1.0.1)
+Requires-Dist: lz4 (==4.3.2)
+Requires-Dist: mcap (==1.0.2)
+Requires-Dist: numpy (==1.23.1)
+Requires-Dist: pandas (==2.0.1)
+Requires-Dist: psycopg2-binary (==2.9.6)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2023.3)
+Requires-Dist: rosbags (==0.9.15)
+Requires-Dist: ruamel.yaml.clib (==0.2.7)
+Requires-Dist: ruamel.yaml (==0.17.26)
+Requires-Dist: s3transfer (==0.6.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tzdata (==2023.3)
+Requires-Dist: urllib3 (==1.26.15)
+Requires-Dist: zstandard (==0.21.0)
+
+MCAP and ROS bags are a common format used to log data in the ROS ecosystem, capturing messages from various topics and nodes. However, analyzing and querying data directly from these files can be challenging, especially when dealing with large datasets. mcap2timescale simplifies this process by converting topic data into a TimescaleDB database, which is optimized for time-series data storage and querying.
+
