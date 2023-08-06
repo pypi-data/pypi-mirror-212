@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "diffable-sql"
+version = "0.2.0"
+description = "Output normalised diffable database schemas"
+authors = ["Tom Forbes <tom@tomforb.es>"]
+readme = "README.md"
+packages = [{include = "diffable_sql"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+SQLAlchemy = "^2.0.15"
+click = "^8.1.3"
+psycopg2-binary = { version = "^2.9", optional = true }
+
+[tool.poetry.scripts]
+diffable-sql = "diffable_sql.cli:cli"
+
+[tool.poetry.extras]
+postgres = ["psycopg2-binary"]
+
+[tool.poetry.group.dev.dependencies]
+sqlalchemy = {extras = ["postgresql"], version = "^2.0.15"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ["py39"]
+line-length = 120
+
+[tool.isort]
+py_version = 39
+line_length = 120
