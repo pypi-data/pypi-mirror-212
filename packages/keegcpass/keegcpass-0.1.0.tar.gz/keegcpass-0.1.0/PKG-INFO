@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: keegcpass
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/andyvk85/KeeGCPass
+License: MIT
+Author: Andy Koch
+Author-email: andyvk85@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: google-cloud-secret-manager (>=2.16,<3.0)
+Requires-Dist: pydantic (>=1.10,<2.0)
+Requires-Dist: pykeepass (>=4.0,<5.0)
+Project-URL: Repository, https://github.com/andyvk85/KeeGCPass
+Description-Content-Type: text/markdown
+
+
