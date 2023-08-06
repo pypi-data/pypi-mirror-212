@@ -1,0 +1,8 @@
+deepchecks_installer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepchecks_installer/cli.py,sha256=6zaovQa0dR9zGXDm5-tMk02RLPsMVYq3h7yIiSKRoMQ,756
+deepchecks_installer/deploy-oss.sh,sha256=EPuX9FfXajRtLT8m0nbX51-siPkAXKrEVxHWzzFEoBk,7440
+deepchecks_installer-0.3.dist-info/METADATA,sha256=YUlf_k0yMz61v-O7SsvxDMQSP8rtzafWGjXl4egJxT4,87
+deepchecks_installer-0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+deepchecks_installer-0.3.dist-info/entry_points.txt,sha256=YehA2OqFpt8kLU-5gSYasOMLZUX9tfvOJxgrvYmrixY,71
+deepchecks_installer-0.3.dist-info/top_level.txt,sha256=rdtbl-zQPPS6HkQOEa7LMGUoYUjVGu00d0TqZHBqVd8,21
+deepchecks_installer-0.3.dist-info/RECORD,,
