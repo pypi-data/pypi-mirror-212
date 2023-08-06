@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pygav
+Version: 0.2.0
+Summary: Useful stuff
+Author: Nikos Gavalas
+License: DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                            Version 2, December 2004
+        
+         Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+        
+         Everyone is permitted to copy and distribute verbatim or modified
+         copies of this license document, and changing it is allowed as long
+         as the name is changed.
+        
+                    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+           TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+        
+          0. You just DO WHAT THE FUCK YOU WANT TO.
+        
+Project-URL: Homepage, https://github.com/nikosgavalas/pygav
+Keywords: utilities
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (<3,>=2.0.2)
+Requires-Dist: matplotlib (<4,>=3.7.1)
+Requires-Dist: seaborn (<1,>=0.12.2)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+![tests status](https://github.com/nikosgavalas/pygav/actions/workflows/main.yml/badge.svg)
+
+Some random python stuff I find useful.
+
+To run tests: Install `pytest` and run `pytest`.
+
+<!-- How to publish this package (notes to my future self):
+1. make sure you have `build` and `twine` installed
+2. `python -m build`
+3. `twine check dist/*`
+4. `twine upload -r testpypi dist/*`
+5. check everything is fine on testpypi
+6. `twine upload dist/*` -->
