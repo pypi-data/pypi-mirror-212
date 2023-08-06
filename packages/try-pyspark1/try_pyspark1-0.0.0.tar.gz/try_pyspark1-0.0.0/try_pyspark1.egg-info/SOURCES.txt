@@ -1,0 +1,9 @@
+setup.py
+./master_sql_folder/new.sql
+try_pyspark1/__init__.py
+try_pyspark1/sql_file_picker.py
+try_pyspark1/test_pyspark.py
+try_pyspark1.egg-info/PKG-INFO
+try_pyspark1.egg-info/SOURCES.txt
+try_pyspark1.egg-info/dependency_links.txt
+try_pyspark1.egg-info/top_level.txt
