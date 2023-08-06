@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+requirements.txt
+setup.cfg
+src/GitSubmoduleExample.egg-info/PKG-INFO
+src/GitSubmoduleExample.egg-info/SOURCES.txt
+src/GitSubmoduleExample.egg-info/dependency_links.txt
+src/GitSubmoduleExample.egg-info/requires.txt
+src/GitSubmoduleExample.egg-info/top_level.txt
+src/gitsubmoduleexample/__init__.py
+src/gitsubmoduleexample/gitsubmoduleexample.py
+tests/test_gitsubmoduleexample.py
