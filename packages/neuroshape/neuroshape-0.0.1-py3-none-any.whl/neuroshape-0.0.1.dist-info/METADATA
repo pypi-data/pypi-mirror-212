@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: neuroshape
+Version: 0.0.1
+Summary: A toolbox for computing LBOs of brainmaps, as well as their gradients, projecting, resampling and comparing brain maps
+Author-email: Systems Neuroscience Group Newcastle <nikitas.koussis@gmail.com>
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+The ``shape`` toolbox is etc
