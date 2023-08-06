@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Stockstir"
+version = "1.0.3"
+authors = [
+	{ name="PatzEdi", email="edwardferrari717@gmail.com" },
+]
+description = "Instantly and easily gather stock data in real time of any company in any of your python scripts"
+readme = "README.md"
+keywords = ["stocks", "stockmanagement", "stockdata", "stockmarkettool"]
+requires-python = ">=3.9"
+classifiers = [
+		"Programming Language :: Python :: 3",
+		"License :: OSI Approved :: MIT License",
+		"Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/PatzEdi"
+"Repository" = "https://github.com/PatzEdi/Stockstir"
+"Bug Tracker" = "https://github.com/PatzEdi/Stockstir/issues"
