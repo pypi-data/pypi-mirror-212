@@ -1,0 +1,30 @@
+/*
+    See the JupyterLab Developer Guide for useful CSS Patterns:
+
+    https://jupyterlab.readthedocs.io/en/stable/developer/css.html
+*/
+
+.settings-Editor {
+  font-family: var(--jp-code-font-family);
+  font-size: var(--jp-code-font-size);
+  line-height: var(--jp-code-line-height);
+  color: var(--jp-content-font-color1);
+  background-color: var(--jp-layout-color1);
+}
+
+.jp-liveupdate-settings {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.jp-liveupdate-settings-regex-textarea {
+  resize: none;
+  padding: .2em;
+  width: 100%;
+  margin-bottom: 10px;
+
+}

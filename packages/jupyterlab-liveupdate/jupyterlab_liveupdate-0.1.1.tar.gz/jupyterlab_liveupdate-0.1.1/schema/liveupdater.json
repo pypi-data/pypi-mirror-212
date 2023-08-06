@@ -1,0 +1,51 @@
+{
+  "jupyter.lab.setting-icon-label": "Live Updater",
+  "title": "Live Updater",
+  "description": "Live Updater settings.",
+  "properties": {
+    "watchedFilesPatterns": {
+      "title": "Files to watch (pattern)",
+      "description": "Patterns for the files to watch",
+      "items": {
+          "type": "string"
+      },
+      "type": "array",
+      "default": ["*.js"]
+    },
+    "watchedSpecificDirs": {
+      "title": "Watch in specific folders",
+      "description": "What folders to watch for file changes. If empty, falls back to the current workspace root.",
+      "items": {
+          "type": "string"
+      },
+      "type": "array",
+      "default": ["lib", "src"]
+    },
+    "excludedDirs": {
+      "title": "Excluded directories",
+      "description": "Directories to exclude from watching",
+      "items": {
+          "type": "string"
+      },
+      "type": "array",
+      "default": ["node_modules", ".git", ".vscode", ".ipynb_checkpoints"]
+    },
+    "excludedFiles": {
+      "title": "Excluded files",
+      "description": "Files to exclude from watching",
+      "items": {
+          "type": "string"
+      },
+      "type": "array",
+      "default": []
+    },
+    "displayWatchStatus": {
+      "type": "boolean",
+      "title": "Display watch status",
+      "description": "Display the current watch status of a file in the panel",
+      "default": false
+    }
+  },
+  "additionalProperties": false,
+  "type": "object"
+}
