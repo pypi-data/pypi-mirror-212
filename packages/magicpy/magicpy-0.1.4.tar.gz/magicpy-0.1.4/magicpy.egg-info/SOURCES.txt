@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+magicpy/__init__.py
+magicpy/magicpy.py
+magicpy/utils.py
+magicpy.egg-info/PKG-INFO
+magicpy.egg-info/SOURCES.txt
+magicpy.egg-info/dependency_links.txt
+magicpy.egg-info/requires.txt
+magicpy.egg-info/top_level.txt
