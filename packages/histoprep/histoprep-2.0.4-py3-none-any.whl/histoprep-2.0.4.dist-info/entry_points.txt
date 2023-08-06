@@ -1,0 +1,3 @@
+[console_scripts]
+HistoPrep=histoprep._cli:cut_slides
+
