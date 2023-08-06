@@ -1,0 +1,119 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "contactId": {
+            "type": "string"
+        },
+        "contact": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "href": {
+                    "type": "string"
+                },
+                "msisdn": {
+                    "type": "integer"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "customDetails": {
+                    "type": "object",
+                    "properties": {
+                        "custom1": {
+                            "type": ["null","string"]
+                        },
+                        "custom2": {
+                            "type": ["null","string"]
+                        },
+                        "custom3": {
+                            "type": ["null","string"]
+                        },
+                        "custom4": {
+                            "type": ["null","string"]
+                        }
+                    }
+                },
+                "createdDatetime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "updatedDatetime": {
+                    "type": [
+                        "null",
+                        "string"
+                    ],
+                    "format": "date-time"
+                }
+            }
+        },
+        "channels": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "platformId": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "createdDatetime": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "updatedDatetime": {
+                        "type": "string",
+                        "format": "date-time"
+                    }
+                }
+            }
+        },
+        "status": {
+            "type": "string"
+        },
+        "createdDatetime": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "updatedDatetime": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "lastReceivedDatetime": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "lastUsedChannelId": {
+            "type": "string"
+        },
+        "lastUsedPlatformId": {
+            "type": "string"
+        },
+        "messages": {
+            "type": "object",
+            "properties": {
+                "totalCount": {
+                    "type": "integer"
+                },
+                "href": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
