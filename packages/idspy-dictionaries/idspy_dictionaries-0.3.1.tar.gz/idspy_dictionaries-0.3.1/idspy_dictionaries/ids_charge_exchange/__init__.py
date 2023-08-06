@@ -1,0 +1,46 @@
+#__version__='0.3.1'
+#__imas_commit__='dd6854b4d07'
+#__imas_version__='3.7.1'
+from idspy_dictionaries.ids_charge_exchange.idspy_charge_exchange import (
+    ChargeExchange,
+    ChargeExchangeChannel,
+    ChargeExchangeChannelBes,
+    ChargeExchangeChannelIon,
+    ChargeExchangeChannelIonFast,
+    ChargeExchangeChannelProcessedLine,
+    ChargeExchangeChannelSpectrum,
+    Code,
+    DetectorAperture,
+    Identifier,
+    IdentifierStatic,
+    IdsProperties,
+    Library,
+    Rzphi0DStatic,
+    Rzphi1DDynamicAos1,
+    SignalFlt1D,
+    SignalFlt2D,
+    X1X21DStatic,
+    Xyz0DStatic,
+)
+
+__all__ = [
+    "ChargeExchange",
+    "ChargeExchangeChannel",
+    "ChargeExchangeChannelBes",
+    "ChargeExchangeChannelIon",
+    "ChargeExchangeChannelIonFast",
+    "ChargeExchangeChannelProcessedLine",
+    "ChargeExchangeChannelSpectrum",
+    "Code",
+    "DetectorAperture",
+    "Identifier",
+    "IdentifierStatic",
+    "IdsProperties",
+    "Library",
+    "Rzphi0DStatic",
+    "Rzphi1DDynamicAos1",
+    "SignalFlt1D",
+    "SignalFlt2D",
+    "X1X21DStatic",
+    "Xyz0DStatic",
+]

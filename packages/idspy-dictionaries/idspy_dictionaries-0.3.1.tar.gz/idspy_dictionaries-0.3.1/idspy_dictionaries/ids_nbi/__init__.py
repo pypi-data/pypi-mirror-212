@@ -1,0 +1,46 @@
+#__version__='0.3.1'
+#__imas_commit__='dd6854b4d07'
+#__imas_version__='3.7.1'
+from idspy_dictionaries.ids_nbi.idspy_nbi import (
+    Code,
+    DetectorAperture,
+    IdsProperties,
+    Library,
+    Nbi,
+    NbiUnit,
+    NbiUnitBeamletsGroup,
+    NbiUnitBeamletsGroupBeamlets,
+    NbiUnitBeamletsGroupDivergence,
+    NbiUnitBeamletsGroupFocus,
+    NbiUnitBeamletsGroupTilting,
+    PlasmaCompositionSpecies,
+    Rzphi0DDynamicAos3,
+    Rzphi0DStatic,
+    Rzphi1DStatic,
+    SignalFlt1D,
+    SignalFlt2D,
+    X1X21DStatic,
+    Xyz0DStatic,
+)
+
+__all__ = [
+    "Code",
+    "DetectorAperture",
+    "IdsProperties",
+    "Library",
+    "Nbi",
+    "NbiUnit",
+    "NbiUnitBeamletsGroup",
+    "NbiUnitBeamletsGroupBeamlets",
+    "NbiUnitBeamletsGroupDivergence",
+    "NbiUnitBeamletsGroupFocus",
+    "NbiUnitBeamletsGroupTilting",
+    "PlasmaCompositionSpecies",
+    "Rzphi0DDynamicAos3",
+    "Rzphi0DStatic",
+    "Rzphi1DStatic",
+    "SignalFlt1D",
+    "SignalFlt2D",
+    "X1X21DStatic",
+    "Xyz0DStatic",
+]

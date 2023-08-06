@@ -1,0 +1,48 @@
+#__version__='0.3.1'
+#__imas_commit__='dd6854b4d07'
+#__imas_version__='3.7.1'
+from idspy_dictionaries.ids_core_profiles.idspy_core_profiles import (
+    BTorVacuum1,
+    Code,
+    CoreProfileIons,
+    CoreProfileNeutral,
+    CoreProfiles,
+    CoreProfiles1DFit,
+    CoreProfilesGlobalQuantities,
+    CoreProfilesGlobalQuantitiesIon,
+    CoreProfilesIonsChargeStates2,
+    CoreProfilesNeutralState,
+    CoreProfilesProfiles1D,
+    CoreProfilesProfiles1DElectrons,
+    CoreProfilesVectorComponents1,
+    CoreProfilesVectorComponents2,
+    CoreProfilesVectorComponents3,
+    CoreRadialGrid,
+    IdentifierDynamicAos3,
+    IdsProperties,
+    Library,
+    PlasmaCompositionNeutralElement,
+)
+
+__all__ = [
+    "BTorVacuum1",
+    "Code",
+    "CoreProfileIons",
+    "CoreProfileNeutral",
+    "CoreProfiles",
+    "CoreProfiles1DFit",
+    "CoreProfilesGlobalQuantities",
+    "CoreProfilesGlobalQuantitiesIon",
+    "CoreProfilesIonsChargeStates2",
+    "CoreProfilesNeutralState",
+    "CoreProfilesProfiles1D",
+    "CoreProfilesProfiles1DElectrons",
+    "CoreProfilesVectorComponents1",
+    "CoreProfilesVectorComponents2",
+    "CoreProfilesVectorComponents3",
+    "CoreRadialGrid",
+    "IdentifierDynamicAos3",
+    "IdsProperties",
+    "Library",
+    "PlasmaCompositionNeutralElement",
+]
