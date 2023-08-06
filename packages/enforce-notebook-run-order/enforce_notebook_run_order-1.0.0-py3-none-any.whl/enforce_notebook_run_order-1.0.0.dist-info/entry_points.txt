@@ -1,0 +1,3 @@
+[console_scripts]
+enforce-notebook-run-order=enforce_notebook_run_order:cli
+
