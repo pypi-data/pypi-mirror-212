@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fastapi_register_model_router.egg-info/PKG-INFO
+fastapi_register_model_router.egg-info/SOURCES.txt
+fastapi_register_model_router.egg-info/dependency_links.txt
+fastapi_register_model_router.egg-info/requires.txt
+fastapi_register_model_router.egg-info/top_level.txt
+src/__init__.py
+src/base_register.py
+src/constants.py
+src/exceptions.py
+src/logger.py
+src/schema.py
+src/utils.py
