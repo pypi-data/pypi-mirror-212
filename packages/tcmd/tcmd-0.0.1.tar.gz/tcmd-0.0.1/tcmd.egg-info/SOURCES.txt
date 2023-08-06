@@ -1,0 +1,11 @@
+LICENSE
+README.md
+main.py
+setup.cfg
+setup.py
+tcmd.egg-info/PKG-INFO
+tcmd.egg-info/SOURCES.txt
+tcmd.egg-info/dependency_links.txt
+tcmd.egg-info/entry_points.txt
+tcmd.egg-info/requires.txt
+tcmd.egg-info/top_level.txt
