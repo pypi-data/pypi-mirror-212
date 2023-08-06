@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+Algorithm-Selection/metadata_derivation.py
+Algorithm-Selection/metalearning.py
+Algorithm-Selection/preprocessing.py
+Algorithm-Selection/metadata/distance.csv
+Algorithm_Selection.egg-info/PKG-INFO
+Algorithm_Selection.egg-info/SOURCES.txt
+Algorithm_Selection.egg-info/dependency_links.txt
+Algorithm_Selection.egg-info/requires.txt
+Algorithm_Selection.egg-info/top_level.txt
