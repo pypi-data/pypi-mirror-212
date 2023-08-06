@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+AstroInstrumentAD/dispersion_analysis.py
+AstroInstrumentAD/dispersion_functions.py
+AstroInstrumentAD.egg-info/PKG-INFO
+AstroInstrumentAD.egg-info/SOURCES.txt
+AstroInstrumentAD.egg-info/dependency_links.txt
+AstroInstrumentAD.egg-info/requires.txt
+AstroInstrumentAD.egg-info/top_level.txt

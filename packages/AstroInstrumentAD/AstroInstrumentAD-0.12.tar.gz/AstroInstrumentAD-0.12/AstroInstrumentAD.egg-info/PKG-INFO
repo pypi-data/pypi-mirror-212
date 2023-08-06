@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: AstroInstrumentAD
+Version: 0.12
+Summary: TYPE YOUR DESCRIPTION HERE
+Home-page: https://github.com/JamianStephan/AstroInstrumentAD
+Download-URL: https://github.com/JamianStephan/AstroInstrumentAD/archive/refs/tags/v0.1.zip
+Author: Jay Stephan
+Author-email: Jay.Stephan@stfc.ac.uk
+License: MIT
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE.txt
