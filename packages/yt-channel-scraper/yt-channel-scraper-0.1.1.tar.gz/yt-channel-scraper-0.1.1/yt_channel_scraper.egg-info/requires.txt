@@ -1,0 +1,5 @@
+scrapetube
+youtube-transcript-api
+requests
+beautifulsoup4
+pytube

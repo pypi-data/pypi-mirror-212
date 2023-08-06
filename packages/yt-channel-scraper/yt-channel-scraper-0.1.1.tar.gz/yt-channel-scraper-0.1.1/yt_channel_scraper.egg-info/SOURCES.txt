@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+tests/test_get_channel_id.py
+tests/test_get_video_ids.py
+tests/test_get_video_transcript.py
+yt_channel_scraper/__init__.py
+yt_channel_scraper/youtube_downloader.py
+yt_channel_scraper/yt_channel_scraper.py
+yt_channel_scraper.egg-info/PKG-INFO
+yt_channel_scraper.egg-info/SOURCES.txt
+yt_channel_scraper.egg-info/dependency_links.txt
+yt_channel_scraper.egg-info/requires.txt
+yt_channel_scraper.egg-info/top_level.txt
