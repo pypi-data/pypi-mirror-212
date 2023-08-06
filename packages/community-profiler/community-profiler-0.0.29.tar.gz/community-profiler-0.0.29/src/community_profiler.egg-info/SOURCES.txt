@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+src/community_profiler/__init__.py
+src/community_profiler/cli.py
+src/community_profiler/profiler.py
+src/community_profiler/util.py
+src/community_profiler.egg-info/PKG-INFO
+src/community_profiler.egg-info/SOURCES.txt
+src/community_profiler.egg-info/dependency_links.txt
+src/community_profiler.egg-info/entry_points.txt
+src/community_profiler.egg-info/requires.txt
+src/community_profiler.egg-info/top_level.txt
