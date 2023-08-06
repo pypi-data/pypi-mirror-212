@@ -1,0 +1,9 @@
+LICENSE
+README.md
+prettyc.py
+setup.py
+prettyc.egg-info/PKG-INFO
+prettyc.egg-info/SOURCES.txt
+prettyc.egg-info/dependency_links.txt
+prettyc.egg-info/entry_points.txt
+prettyc.egg-info/top_level.txt
