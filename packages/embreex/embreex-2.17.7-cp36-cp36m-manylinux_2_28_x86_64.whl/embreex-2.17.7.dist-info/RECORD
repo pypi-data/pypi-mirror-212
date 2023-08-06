@@ -1,0 +1,12 @@
+embreex-2.17.7.dist-info/METADATA,sha256=kUCx05mmNeIV65kWBamTI6CNwVrigtWOJaOs9dldpzc,1382
+embreex-2.17.7.dist-info/LICENSE,sha256=_xuYAn05ET9sP82cOw68xgsUW5orgvVnD0RL4wKKkA4,1299
+embreex-2.17.7.dist-info/RECORD,,
+embreex-2.17.7.dist-info/top_level.txt,sha256=fB9vEUuy_aahgn1vzf73EKCJDS4_hgqOSZhrTSnpHxo,8
+embreex-2.17.7.dist-info/WHEEL,sha256=2o5WOWabEixCANJsjbRq-k-ysmAqlETlAIL-KeeJn3k,113
+embreex/rtcore_scene.cpython-36m-x86_64-linux-gnu.so,sha256=8aYdT6pNoamY9Yy24eI1_Ze3j3MYe9ugZGaXG_l5IxY,514905
+embreex/mesh_construction.cpython-36m-x86_64-linux-gnu.so,sha256=OrUJs8ljYithPyZz0tvBp1a2Oy4N1MmctAqL8WFYzms,403865
+embreex/triangles.cpython-36m-x86_64-linux-gnu.so,sha256=fiUezAokH5fU56MJrmVZpLLGyXEpuK1N52nyQNt5xkI,100057
+embreex/rtcore.cpython-36m-x86_64-linux-gnu.so,sha256=RhmnK9ruxBdnMIempQXKo5hc2F0rD3-TMgaCaWP6MZI,231697
+embreex.libs/libtbb-1f9ff2d0.so.2,sha256=d9NmMBmlWGDMd3eFM_w6tQkJmqBBKUp5rQOjF4-Z2A8,2071001
+embreex.libs/libembree-4458e9e2.so.2,sha256=Sa3O0YjKyLxIKVhsFq8khf6ppU1N62soEd26VPXMunQ,37410153
+embreex.libs/libtbbmalloc-ceb46550.so.2,sha256=hK_nNyUTDypPrqHHNPPtosKr1ygPt1qvEOUwDXYqsUo,784473
