@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: SwarmML
+Version: 1.0
+Summary: Feature Selection with PSO
+Home-page: https://github.com/SalehAhmad1/SwarmML
+Author: Saleh Ahmad
+Author-email: salehahmad2106@gmail.com
+License: UNKNOWN
+Keywords: feature selection,particle swarm optimization,PSO,machine learning,data science
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: readme-md
+Requires-Dist: sklearn
+
+# SwarmML
+## A python package that utilizes Particle Swarm Optimization for Feature Selection
+
+SwarmML is a Python package that implements Particle Swarm Optimization (PSO) for feature selection. It can be used to improve the performance of classification and regression tasks by automatically selecting the most informative features from a given dataset.
+
+## Features
+- Performs feature selection using Particle Swarm Optimization.
+- Supports both classification and regression tasks.
+- Provides customizable parameters for PSO algorithm.
+- Simple and easy to use package.
+
+## Installation
+You can install SwarmML using pip:
+```
+pip install SwarmML
+```
+
+## Examples
+
+### Example 1
+
+```
+import SwarmML
+from sklearn.datasets import load_iris
+
+X,Y = load_iris(return_X_y=True)
+
+obj = SwarmML.FeatureSelection.Particle_Swarm_Optimization('Classification')
+Best_Features, Best_Score = obj.run(X, Y)
+```
+
