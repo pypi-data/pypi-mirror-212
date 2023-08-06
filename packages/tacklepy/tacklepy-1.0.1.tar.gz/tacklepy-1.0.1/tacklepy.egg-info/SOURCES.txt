@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+tacklepy.egg-info/PKG-INFO
+tacklepy.egg-info/SOURCES.txt
+tacklepy.egg-info/dependency_links.txt
+tacklepy.egg-info/requires.txt
+tacklepy.egg-info/top_level.txt
