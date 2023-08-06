@@ -1,0 +1,82 @@
+DEFAULT_PROJECT_OPPORTUNITY_QUERY = """
+SELECT
+    Project_Account__r.Business_Name__c,
+    Project_Account__r.Name,
+    CurrencyIsoCode,
+
+    Invoicing_Country_Code__c,
+    Operation_Coordinator__r.Name,
+    Operation_Coordinator_Sub__r.Name,
+    CreatedDate,
+    LastModifiedDate,
+    Opportunity__r.Opportunity_Name_Short__c,
+    Opportunity__r.StageName,
+    Opportunity__r.LeadSource,
+    Project_Account__r.BillingCountryCode,
+    FRM_MSProjectCode__c,
+    Name,
+    Id,
+    Start_Date__c,
+    Operation_Coordinator__r.Controller__c,
+    Operation_Coordinator_Sub__r.Controller_SUB__c,
+    Profit_Center__c,
+    Cost_Center__c,
+    Opportunity__r.Probability,
+    Opportunity__r.Tier_Short__c,
+    Opportunity__r.JiraComponentURL__c,
+    (
+        SELECT
+            Id,
+            CreatedDate,
+            LastModifiedDate,
+            Duration_months__c,
+            ProductNew__r.Name,
+            Starting_Date__c,
+            Cost_Center__c,
+            Profit_Center__c,
+            Business_Unit__c,
+            Quantity__c,
+            UnitPrice__c,
+            Total_Price__c,
+            Ending_Date__c,
+            Department__c,
+            Sales_Order_Item__c,
+            End_Date__c,
+            Revenue_Type__c,
+            Effort__c,
+            Total_Billing_Amount_Billing_Lines__c,
+            MS_PLI_Name__c,
+            SapNetAmount__c,
+            Country__c
+        FROM
+            Project_Line_Items__r
+    )
+FROM
+    Project__c
+"""
+# Project__c   WHERE Id = 'a003X000015kaPxQAI'
+
+DEFAULT_PROJECT_BILLING_LINE_QUERY = """
+SELECT
+    Id,
+    Name,
+    Project_Line_Item__r.Project__c,
+    CurrencyIsoCode,
+    CreatedDate,
+    LastModifiedDate,
+    Biling_Ammount__c,
+    Billing_Date__c,
+    Billing_Period_Ending_Date__c,
+    Billing_Period_Starting_Date__c,
+    Hourly_Price__c,
+    Revenue_Dedication__c,
+    BillingPlanAmount__c,
+    BillingPlanBillingDate__c,
+    BillingPlanItem__c,
+    BillingPlanServiceEndDate__c,
+    BillingPlanServiceStartDate__c
+FROM
+    Billing_Line__c
+WHERE
+    Project_Line_Item__r.Project__c IN ('{project_id}')
+"""
