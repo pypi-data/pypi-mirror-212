@@ -1,0 +1,11 @@
+proofs/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+proofs/_modidx.py,sha256=sDr4QfOCFWYoiUFqrvvr0ozUL0UhpExwWmiAajY9Sj0,1336
+proofs/assistant.py,sha256=NwbMPTZ4gUS8aZvjvW6qDQSYwlWFEUQsuF0cOBnai9Q,146
+proofs/core.py,sha256=Y5KjCpOmuP8Ayc_CXXWjwJ8k9g8Q4KzJ00wLRWFe_JA,7706
+proofs/polynomials.py,sha256=TtsnGpIQzPLlO1lrw7P4f6ocQwOrivobvELIZdd35NU,155
+proofs-0.0.2.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+proofs-0.0.2.dist-info/METADATA,sha256=w2zv7DNbkAmDON6I-jlJueKIR2sMOZMwwb_Q7RCiwEQ,9745
+proofs-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+proofs-0.0.2.dist-info/entry_points.txt,sha256=JsusxN_Tljo5ZHzeEXJcZpPY0I_TPcWEPHsjEfmSfW0,55
+proofs-0.0.2.dist-info/top_level.txt,sha256=FwzldLuCxcEJhvUfBzov42wJ09kf_OSTunkWnDnzhJ4,7
+proofs-0.0.2.dist-info/RECORD,,
