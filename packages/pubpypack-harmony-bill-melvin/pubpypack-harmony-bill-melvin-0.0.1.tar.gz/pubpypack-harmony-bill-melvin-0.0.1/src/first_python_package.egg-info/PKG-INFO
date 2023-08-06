@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: first-python-package
+Version: 0.0.1
+Summary: This package does nothing but exist.
+Home-page: https://github.com/wmelvin/first-python-package
+Author: Bill Melvin
+Author-email: "Bill Melvin" <bill@billmelvin.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# first-python-package
+ 
+This package does nothing but exist.
+ 
+## Installation
+ 
+```shell
+$ python -m pip install first-python-package
+```
