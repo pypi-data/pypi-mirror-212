@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+autoscrum/__init__.py
+autoscrum/__main__.py
+autoscrum/autoscrum.py
+autoscrum/controller.py
+autoscrum.egg-info/PKG-INFO
+autoscrum.egg-info/SOURCES.txt
+autoscrum.egg-info/dependency_links.txt
+autoscrum.egg-info/entry_points.txt
+autoscrum.egg-info/requires.txt
+autoscrum.egg-info/top_level.txt
+autoscrum/data/featurizer.hbs
+autoscrum/data/taskalizer.hbs
+tests/test_autoscrum.py

@@ -1,0 +1,11 @@
+guidance
+pathlib
+datetime
+
+[dev]
+black
+build
+bumpversion
+isort
+pip-tools
+pytest
