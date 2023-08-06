@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/SPyOD.egg-info/PKG-INFO
+src/SPyOD.egg-info/SOURCES.txt
+src/SPyOD.egg-info/dependency_links.txt
+src/SPyOD.egg-info/top_level.txt
+src/spyod/__init__.py
+src/spyod/findpairs.py
+src/spyod/spod.py
