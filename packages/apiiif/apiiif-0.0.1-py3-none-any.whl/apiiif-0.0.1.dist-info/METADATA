@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: apiiif
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/d-flood/apiiif#readme
+Project-URL: Issues, https://github.com/d-flood/apiiif/issues
+Project-URL: Source, https://github.com/d-flood/apiiif
+Author-email: David Flood <d-flood@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: pydantic==1.10.8
+Description-Content-Type: text/markdown
+
+# apiiif
+
+[![PyPI - Version](https://img.shields.io/pypi/v/apiiif.svg)](https://pypi.org/project/apiiif)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/apiiif.svg)](https://pypi.org/project/apiiif)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install apiiif
+```
+
+## License
+
+`apiiif` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
