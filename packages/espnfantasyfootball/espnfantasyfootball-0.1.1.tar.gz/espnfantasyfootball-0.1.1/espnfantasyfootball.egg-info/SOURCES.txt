@@ -1,0 +1,9 @@
+README.md
+setup.py
+espnfantasyfootball/__init__.py
+espnfantasyfootball/espnfantasyfootball.py
+espnfantasyfootball.egg-info/PKG-INFO
+espnfantasyfootball.egg-info/SOURCES.txt
+espnfantasyfootball.egg-info/dependency_links.txt
+espnfantasyfootball.egg-info/requires.txt
+espnfantasyfootball.egg-info/top_level.txt
