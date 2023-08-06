@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: m3-learning
+Version: 0.0.17
+Summary: Tutorials, Projects, and datasets from the M3-learning research group
+Home-page: https://github.com/jagar2/m3_learning.git
+Author: Joshua C. Agar
+Author-email: jca92@drexel.edu
+License: BSD-3-Clause
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: autopep8 (==2.0.0)
+Requires-Dist: BGlib (==0.0.3)
+Requires-Dist: gdown (==4.5.3)
+Requires-Dist: h5py (==3.7.0)
+Requires-Dist: imageio (==2.22.3)
+Requires-Dist: jupyter (==1.0.0)
+Requires-Dist: matplotlib (==3.6.2)
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: pandas (==1.5.1)
+Requires-Dist: Pillow (==9.3.0)
+Requires-Dist: protobuf (==3.19.6)
+Requires-Dist: pyUSID (==0.0.10)
+Requires-Dist: scikit-image (==0.19.3)
+Requires-Dist: scikit-learn (==1.1.3)
+Requires-Dist: scipy (==1.9.3)
+Requires-Dist: seaborn (==0.12.1)
+Requires-Dist: sidpy (==0.11)
+Requires-Dist: wget (==3.2)
+Requires-Dist: zenodopy (==0.3.0)
+Requires-Dist: hyperspy (==1.7.4)
+Requires-Dist: jupyter-book
+Requires-Dist: opencv-python
+Requires-Dist: torch
+Requires-Dist: py-cpuinfo
+Requires-Dist: tensorflow
+Requires-Dist: imutils
+Requires-Dist: plotly
+Requires-Dist: xrayutilities
+
