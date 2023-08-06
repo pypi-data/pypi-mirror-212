@@ -1,0 +1,139 @@
+from __future__ import annotations
+
+import logging
+
+from prettyqt import constants, core, eventfilters, widgets
+from prettyqt.qt import QtCore
+
+
+logger = logging.getLogger(__name__)
+
+
+class DebugMode(eventfilters.BaseEventFilter):
+    ID = "debug_mode"
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.list = widgets.ListWidget(
+            entered=self._on_entered, item_clicked=self._on_clicked, mouse_tracking=True
+        )
+        self.frame = widgets.Frame(frame_shape="box", frame_shadow="plain")
+        # self.frame.setGeometry(0, 0, 1920, 1080)
+        self.frame.setObjectName("testframe")
+        self.frame.setStyleSheet("#testframe {border: 5px solid green;}")
+        self.frame.setWindowFlags(
+            QtCore.Qt.WindowType.FramelessWindowHint
+            | QtCore.Qt.WindowType.Tool
+            | QtCore.Qt.WindowType.WindowTransparentForInput
+            | QtCore.Qt.WindowType.WindowDoesNotAcceptFocus
+            | QtCore.Qt.WindowType.WindowStaysOnTopHint
+        )
+        # self.frame.setWindowOpacity(0.5)
+        # self.mask = widgets.Widget()
+        # self.mask.set_background_color("green")
+
+    def eventFilter(self, source: QtCore.QObject, event: QtCore.QEvent) -> bool:
+        border_keys = [constants.Key.Key_Control, constants.Key.Key_Alt]
+        match event.type():
+            case core.Event.Type.KeyPress if event.key() in border_keys:
+                with widgets.app().edit_stylesheet() as ss:
+                    ss.QWidget.border.setValue("1px solid red")
+            case core.Event.Type.KeyRelease if event.key() in border_keys:
+                widgets.app().setStyleSheet("")
+            case core.Event.Type.MouseButtonPress:
+                mods = widgets.Application.query_keyboard_modifiers()
+                if "ctrl" in mods:
+                    pos = source.mapToGlobal(event.pos())
+                    candidates = widgets.Application.widgets_at(pos)
+                    self.list.clear()
+                    for candidate in candidates:
+                        self.list.add_item(f"{candidate!r}", data={"user": candidate})
+                    self.list.show()
+                    return True
+                elif "alt" in mods:
+                    from prettyqt import ipython
+
+                    self.frame.hide()
+                    console = ipython.InProcessIPythonWidget(self)
+                    console.show()
+                    pos = source.mapToGlobal(event.pos())
+                    widgets.Application.sleep(1)
+                    variables = {}
+                    i = 0
+                    for w in widgets.Application.widgets_at(pos):
+                        if (name := w.objectName()) and name not in variables:
+                            variables[name] = w
+                        else:
+                            name = f"{type(w).__name__}_{i}".lower()
+                            variables[name] = w
+                            i += 1
+                    console.push_vars(dict(app=widgets.app(), **variables))
+            # case QtCore.QEvent.Type.ToolTip if source.isWidgetType():
+            #     metaobj = core.MetaObject(source.metaObject())
+            #     lines = [
+            #         f"{k}: {v!r}"
+            #         for k, v in metaobj.get_property_values(source).items()
+            #         if not k == "toolTip"
+            #     ]
+            #     source.setToolTip("<br>".join(lines))
+
+        return False
+
+    def _on_clicked(self, item):
+        from prettyqt import debugging
+
+        logger.debug(f"clicked on {item}")
+        widget = item.get_data("user")
+        self.editor = debugging.QObjectDetailsDialog(widget)
+        self.list.hide()
+        self.frame.hide()
+        self.editor.show()
+
+    def _on_entered(self, index):
+        widget = index.data(constants.USER_ROLE)
+        # logger.info(widget)
+        for item in self.list:
+            candidate = item.get_data("user")
+            if candidate != widget:
+                pass
+                # effect = widgets.GraphicsOpacityEffect(candidate, opacity=0.5)
+            else:
+                # effect = widgets.GraphicsOpacityEffect(candidate, opacity=0.7)
+                # self.mask.setParent(widget)
+                # self.mask.setGeometry(widget.geometry())
+                # self.mask.show()
+                # print("hfd")
+                # rect = widget.contentsRect()
+                # top_left = rect.topLeft()
+                # bottom_right = rect.bottomRight()
+                # top_left = widget.mapToGlobal(top_left)
+                # bottom_right = widget.mapToGlobal(bottom_right)
+
+                # rect = core.Rect(top_left, bottom_right)
+                # whole_frame_region = gui.Region(rect)
+                # inner_region = gui.Region(rect.marginsRemoved(core.Margins(5, 5, 5, 5)))
+                # inner_frame_region = whole_frame_region.subtracted(inner_region)
+                # self.frame.setMask(inner_frame_region)
+                self.frame.resize(widget.size())
+                self.frame.setParent(widget)
+                self.frame.show()
+
+        # with widget.edit_palette() as palette:
+        #     palette.setColor(
+        #         gui.Palette.ColorRole.Base,
+        #         widget.palette().color(gui.Palette.ColorRole.Highlight),
+        #     )
+
+
+if __name__ == "__main__":
+    app = widgets.app()
+    container = widgets.Widget()
+    container.set_layout("horizontal")
+    w = widgets.PlainTextEdit(parent=container)
+    w2 = widgets.RadioButton(parent=container)
+    container.box.add(w)
+    container.box.add(w2)
+    container.show()
+    with app.debug_mode():
+        app.sleep(1)
+        app.main_loop()
