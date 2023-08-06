@@ -1,0 +1,1 @@
+from predictapi import predict
