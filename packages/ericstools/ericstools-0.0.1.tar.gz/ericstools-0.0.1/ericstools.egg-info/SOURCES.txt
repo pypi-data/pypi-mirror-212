@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+ericstools/__init__.py
+ericstools/fftconvolve.py
+ericstools/utils.py
+ericstools.egg-info/PKG-INFO
+ericstools.egg-info/SOURCES.txt
+ericstools.egg-info/dependency_links.txt
+ericstools.egg-info/requires.txt
+ericstools.egg-info/top_level.txt

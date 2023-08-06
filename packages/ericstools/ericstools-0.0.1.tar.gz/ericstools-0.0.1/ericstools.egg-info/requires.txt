@@ -1,0 +1,6 @@
+numpy
+scipy
+matplotlib
+hydra-core
+scikit-image
+pandas
