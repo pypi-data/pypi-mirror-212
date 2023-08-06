@@ -1,0 +1,3 @@
+[console_scripts]
+diffable-sql=diffable_sql.cli:cli
+
