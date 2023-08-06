@@ -1,0 +1,10 @@
+freckle_client/__init__.py,sha256=e0K4tKrcgQVXhvKUnQbbqEfkGOLC8GBlY6nD_MxaGa4,96
+freckle_client/client.py,sha256=P27GT4SzYRjVccWGWoHJjSi8TBQdACmcrl751k-dC6w,5293
+freckle_client/exceptions.py,sha256=m2phOSdlTFNnk8PpZogbvOg0ai2767v9c2WN1QxoF_M,393
+freckle_client/tests/__init__.py,sha256=-g1Mkjz4aR_WO7_-sZGBC0diIMwAA1DlmIjK3HWDA0c,32
+python_freckle_client-0.5.0.dist-info/AUTHORS,sha256=4KEZtJGh0XN5id0IdkgAiPQJVvrpLC75TzqTxkcIV9o,239
+python_freckle_client-0.5.0.dist-info/LICENSE,sha256=dChYERyC_HeMARVm0GcsQm4utW8qQogdGIIUQjEbzyQ,1083
+python_freckle_client-0.5.0.dist-info/METADATA,sha256=xFCtp2sr5QBJQnZo4RNqBoi89weumiVvD5ZakfKfjm4,2271
+python_freckle_client-0.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+python_freckle_client-0.5.0.dist-info/top_level.txt,sha256=spswcgdcUEUWJpRWcc14jsoqS_CMmxxNN9jCOxM3GD8,15
+python_freckle_client-0.5.0.dist-info/RECORD,,
