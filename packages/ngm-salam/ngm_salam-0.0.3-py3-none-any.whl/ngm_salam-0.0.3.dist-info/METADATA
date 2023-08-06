@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ngm-salam
+Version: 0.0.3
+Summary: Just a demo project
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: psutil
+
+### Install
+
+```bash
+pip install ngm-salam==0.0.2
+```
