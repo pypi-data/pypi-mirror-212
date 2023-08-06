@@ -1,0 +1,16 @@
+[tool.cibuildwheel.linux]
+before-all = "yum install -y freerdp-devel"
+test-command = "echo 'installed'"
+repair-wheel-command = "auditwheel repair --lib-sdir . -w {dest_dir} {wheel}"
+
+[[tool.cibuildwheel.overrides]]
+select = "*-musllinux*"
+before-all = "apk add freerdp-dev"
+
+[tool.cibuildwheel.macos]
+before-all = "brew install freerdp"
+test-command = "echo 'installed'"
+
+[tool.cibuildwheel.windows]
+before-build = "pip install delvewheel"
+repair-wheel-command = "delvewheel repair -w {dest_dir} {wheel}"

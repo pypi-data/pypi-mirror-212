@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyfreerdp
+Version: 0.0.1
+Summary: Python wrapper for FreeRDP
+Home-page: https://github.com/LeeEirc
+Author: Eric
+Author-email: xplzv@126.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython

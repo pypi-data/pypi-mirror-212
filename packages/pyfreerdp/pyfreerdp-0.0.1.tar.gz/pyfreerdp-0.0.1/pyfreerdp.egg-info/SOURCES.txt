@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pyfreerdp.egg-info/PKG-INFO
+pyfreerdp.egg-info/SOURCES.txt
+pyfreerdp.egg-info/dependency_links.txt
+pyfreerdp.egg-info/top_level.txt
+src/pyfreerdp/bind.c
+src/pyfreerdp/libpyfreerdp.c
+src/pyfreerdp/libpyfreerdp.h
