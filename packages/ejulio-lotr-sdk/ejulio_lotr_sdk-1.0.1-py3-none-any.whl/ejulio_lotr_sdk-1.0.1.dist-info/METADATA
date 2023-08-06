@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ejulio-lotr-sdk
+Version: 1.0.1
+Summary: A SDK for The Lord of the Rings
+Home-page: https://github.com/ejulio/julio-batista-sdk
+Author: Júlio César Batista
+Author-email: julio.batista@outlook.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: requests (==2.31.0)
+
+A SDK for The Lord of the Rings

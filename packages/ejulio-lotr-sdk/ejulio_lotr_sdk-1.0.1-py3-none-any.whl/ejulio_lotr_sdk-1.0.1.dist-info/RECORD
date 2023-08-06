@@ -1,0 +1,10 @@
+lotr_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lotr_sdk/client.py,sha256=APCYJxWEGKQ-I-kvtiDBhLIcveifiQhIaVNp1Ii4t6Q,2625
+lotr_sdk/fps.py,sha256=qTgroHUqI1To-gjSTbS623K0BUp0DkRDJz2CGwCofuM,2922
+lotr_sdk/http_client.py,sha256=voPoz8N1uXUySyRZVko6qflgKr3MKDlRtYiAdivVKDg,2987
+lotr_sdk/movie.py,sha256=Lse8vqNsNAjhk1yUUUVdiV764V7G-MFnY5IcV1qzZb0,862
+lotr_sdk/quote.py,sha256=oTM7zPZ-H7cd7TKFwsWUizQmVPBzCjdIIP46tVUH4_U,392
+ejulio_lotr_sdk-1.0.1.dist-info/METADATA,sha256=n3YHAzJNVZq6UcVy58TR5FTnH6OYLH2wGfEqxQovKD0,496
+ejulio_lotr_sdk-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ejulio_lotr_sdk-1.0.1.dist-info/top_level.txt,sha256=R20VBjrla6oNQDSMiu2gCEK8IpnuRC3Vtx_07u2ULI4,9
+ejulio_lotr_sdk-1.0.1.dist-info/RECORD,,
