@@ -1,0 +1,10 @@
+pylibrb-0.0.8.dist-info/METADATA,sha256=5A2EWneSORN-jOJ8NJARW-xbJb8b_VzYfr4GW_pDuMQ,2849
+pylibrb-0.0.8.dist-info/LICENSE,sha256=-cN1ob5KQfe3AwHdg8kcuJ5BVnR4hZt37vN1pS14JQU,18091
+pylibrb-0.0.8.dist-info/WHEEL,sha256=SzMENWQgLQGyreqxi0Mfm4PqsBMeAIxJ5YpvIZKWbXw,146
+pylibrb-0.0.8.dist-info/top_level.txt,sha256=4zlIxFBgsYuCHYfYxcZUMHOKA8CLUw4-C8DV8OTDP78,8
+pylibrb-0.0.8.dist-info/RECORD,,
+pylibrb-0.0.8.data/data/VERSION,sha256=CM2QiEICclYGiuUIJbKSOagcqGl9WSXDl2ub1bBely4,5
+pylibrb/__init__.py,sha256=gY1NRboTEIzU_4FmkKVSSJCTviTO0PzxZSFitv2Gfjw,2150
+pylibrb/pylibrb_ext.cpython-311-x86_64-linux-gnu.so,sha256=iFTLwofqRktd_qxcGRGXyNwpaxp98gX6CelkgfHCHic,547640
+pylibrb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylibrb/pylibrb_ext.pyi,sha256=AKtPbE7YdVYijV43QAqgdQiuuDc_iv1i3BGxGRI3Syc,36397
