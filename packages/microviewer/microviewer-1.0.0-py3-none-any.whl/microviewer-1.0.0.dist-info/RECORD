@@ -1,0 +1,14 @@
+microviewer/__init__.py,sha256=xOAL0lN9_3URNlWSF6HaXMkTH26X26wBxouKyPXL2Jg,5037
+microviewer/datacube.js,sha256=B7EKXCTRbsG4yiT5yG7hNFHCmEBQ0VWgCmB0GGcdyW0,34695
+microviewer/favicon.ico,sha256=8RCYH66guSVNHRqU2YSmlovh9pvQBrqyd1rWzPIM2Bs,1911
+microviewer/index.html,sha256=Ntnt4wDUMem6tyOP_lNPP6PDubULwqmCbLme9K7KMF4,18823
+microviewer/jquery-3.7.0.min.js,sha256=2Pmvv0kuTBOenSvLm6bvfBSSHrUJ-3A7x6P5Ebd07_g,87462
+microviewer/requirements.txt,sha256=SL_Nkf2QGj9PXMOt7tGZKhfgpd_p_9xz_i33F-fBvXE,11
+microviewer-1.0.0.dist-info/AUTHORS,sha256=Aa4H7O3dtmfq0lF_eATudy11i8K6QAI8LykzASr9bL0,52
+microviewer-1.0.0.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+microviewer-1.0.0.dist-info/METADATA,sha256=KcUNOZfCtdH_Ep7o39yYjQmgZ-GIzjuh9hZ0UZkji7g,2126
+microviewer-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+microviewer-1.0.0.dist-info/entry_points.txt,sha256=ZrA_THAdV2L1Ld9P92a2uBEc7b9TdDzA2HsRwffp2WQ,47
+microviewer-1.0.0.dist-info/pbr.json,sha256=4FOaOTqL8y3xD8vPXgeCZu_NGv5p6MoDVOu3feT1MTk,46
+microviewer-1.0.0.dist-info/top_level.txt,sha256=0pfYlJoCuUCk5tFplvuAh4KPQF-RHMMVhUPnVAEcMSQ,12
+microviewer-1.0.0.dist-info/RECORD,,
