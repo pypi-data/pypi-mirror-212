@@ -1,0 +1,3 @@
+[console_scripts]
+ff_fasttext_cli=ff_fasttext_api.scripts.ff_fasttext:main
+

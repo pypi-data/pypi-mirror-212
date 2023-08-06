@@ -1,0 +1,11 @@
+ff_fasttext_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ff_fasttext_api/healthcheck.py,sha256=E1HAyJa7G9TC1TwoO8IR4BsCSCEJl38OIvuWtEQXREQ,1235
+ff_fasttext_api/logger.py,sha256=96kPgW6lFn38cU58Y8dyqqYpaUBka83Pr9qGZmXuSKY,516
+ff_fasttext_api/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ff_fasttext_api/scripts/ff_fasttext.py,sha256=YYuIlD50Ub_3A6gpWq2pwVStpJV-Dx2arH0PRYFSafs,1157
+ff_fasttext_api/server.py,sha256=D9Mn2a0sOsZZIgItGdwF6DYIAaSrrPSwN8A3DU73iZw,3253
+ff_fasttext_api-0.0.1.dist-info/entry_points.txt,sha256=-aJ4orFIe8WTzFhzN8NQscXBSqiFz8olk550ae6j2kY,76
+ff_fasttext_api-0.0.1.dist-info/LICENSE,sha256=akyfjAH-8Flt5VKrcz0DNZtXOnLCjSY7jF4KWkd3u3g,1068
+ff_fasttext_api-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ff_fasttext_api-0.0.1.dist-info/METADATA,sha256=OxLBuh-008OWvM5WEqZ8tQru1LoCSvd6pmAtcXLenW8,964
+ff_fasttext_api-0.0.1.dist-info/RECORD,,
