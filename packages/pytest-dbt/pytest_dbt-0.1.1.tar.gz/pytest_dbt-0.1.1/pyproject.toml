@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "pytest-dbt"
+version = "0.1.1"
+description = "Unit test dbt models with standard python tooling"
+authors = ["Anup Kalburgi <anupkalburgi@gmail.com>"]
+readme = "README.md"
+license = "MPL-2.0"
+packages = [{include = "pytest_dbt"}]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Framework :: Pytest",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: POSIX",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: MacOS :: MacOS X",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
+  "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^7.0.0"
+sqlglot = "^13.3.0"
+pandas = "^2.0.1"
+
+
+[tool.poetry.dev-dependencies]
+black = "^23.3.0"
+
+[project.urls]
+Homepage = "https://github.com/anupkalburgi/pytest_dbt"
+Tracker = "https://github.com/anupkalburgi/pytest_dbt/issues"
+Source = "https://github.com/anupkalburgi/pytest_dbt"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins.pytest11]
+pytest_dbt = "pytest_dbt.pytest_dbt"
+
+
+[tool.black]
+target-version = ['py38']
