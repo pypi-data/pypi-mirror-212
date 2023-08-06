@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+zhousf_lib.egg-info/PKG-INFO
+zhousf_lib.egg-info/SOURCES.txt
+zhousf_lib.egg-info/dependency_links.txt
+zhousf_lib.egg-info/requires.txt
+zhousf_lib.egg-info/top_level.txt
