@@ -1,0 +1,8 @@
+setup.py
+cncd_package/QC.py
+cncd_package/__init__.py
+cncd_package.egg-info/PKG-INFO
+cncd_package.egg-info/SOURCES.txt
+cncd_package.egg-info/dependency_links.txt
+cncd_package.egg-info/requires.txt
+cncd_package.egg-info/top_level.txt
