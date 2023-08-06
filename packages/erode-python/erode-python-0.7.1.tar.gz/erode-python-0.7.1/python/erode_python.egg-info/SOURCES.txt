@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+python/erode_python.egg-info/PKG-INFO
+python/erode_python.egg-info/SOURCES.txt
+python/erode_python.egg-info/dependency_links.txt
+python/erode_python.egg-info/requires.txt
+python/erode_python.egg-info/top_level.txt
