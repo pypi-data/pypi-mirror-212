@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ngm-salam
+Version: 0.0.2
+Requires-Dist: requests
+Requires-Dist: psutil
+
