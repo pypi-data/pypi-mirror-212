@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pinyintokenizer/__init__.py
+pinyintokenizer.egg-info/PKG-INFO
+pinyintokenizer.egg-info/SOURCES.txt
+pinyintokenizer.egg-info/dependency_links.txt
+pinyintokenizer.egg-info/requires.txt
+pinyintokenizer.egg-info/top_level.txt
