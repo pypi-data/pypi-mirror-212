@@ -1,0 +1,10 @@
+src/unipropic/__init__.py,sha256=PfsiHfU0uQNPH1FtUNCTXKTZy-pm2DSkopRfpVmOvIw,304
+src/unipropic/config_manager.py,sha256=MeUfbq3Nd-3YTwVi-ERn_ULMJW46WdsIZuZ7-vvYZEw,3461
+src/unipropic/main.py,sha256=3aRcaI3DQhrPYUjjH2yVXhZVgbzT6rzFv1EVQ_d5KBg,6639
+src/unipropic/messages.py,sha256=IjXO4_f2P4HCWcPhD9f2C2sCaTVbMcSZsMIP6u56X3M,811
+src/unipropic/webdriver_handlers.py,sha256=lpvyiXJEw8TkUDJdMgEfLIuoOPmeaZc-2PWCgdrqgrs,29036
+unipropic-1.0.0.dist-info/entry_points.txt,sha256=hkEtg9tZdJ4fNE7oEl5Hqg9QMEB81L_E85bGICYACVo,49
+unipropic-1.0.0.dist-info/LICENSE.txt,sha256=11cuTfQrs0bP-JFszp-v1ucujf_nW_KF7cvns-ecJMo,1061
+unipropic-1.0.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+unipropic-1.0.0.dist-info/METADATA,sha256=Yx6jjav9FyzrQ0D3GFdX5MzWjRs274_s5w3_lcGEPa8,2479
+unipropic-1.0.0.dist-info/RECORD,,
