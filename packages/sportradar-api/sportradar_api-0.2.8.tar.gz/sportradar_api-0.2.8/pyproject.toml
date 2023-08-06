@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "sportradar-api"
+version = "0.2.8"
+description = "Lightweight wrapper for Sportradar API"
+authors = ["Felipe Allegretti <felipe@allegretti.me>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://felipeall.github.io/sportradar-api"
+repository = "https://github.com/felipeall/sportradar-api"
+classifiers = [
+    "Topic :: Software Development :: Libraries",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+packages = [{include = "sportradar_api"}]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "1.5.3"
+flatten-json = "0.1.13"
+requests = "2.31.0"
+urllib3 = "1.26.16"
+
+[tool.poetry.group.dev.dependencies]
+black = "23.1.0"
+isort = "5.12.0"
+pyproject-flake8 = "6.0.0.post1"
+jupyter = "1.0.0"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "1.4.2"
+mkdocstrings = {extras = ["python"], version = "0.20.0"}
+mkdocs-material = "9.0.14"
+mkdocs-minify-plugin = "0.6.2"
+mkdocs-git-revision-date-localized-plugin = "1.1.0"
+mkdocs-git-authors-plugin = "0.7.0"
+
+[tool.black]
+line-length = 120
+verbose = true
+preview = true
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 120
