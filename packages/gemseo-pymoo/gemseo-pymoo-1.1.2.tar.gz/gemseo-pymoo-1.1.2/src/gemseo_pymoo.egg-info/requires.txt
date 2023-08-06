@@ -1,0 +1,12 @@
+gemseo>=5
+h5py
+pymoo==0.5.0
+matplotlib
+numpy<1.24
+pandas
+
+[test]
+covdefaults
+pytest
+pytest-cov
+pytest-xdist

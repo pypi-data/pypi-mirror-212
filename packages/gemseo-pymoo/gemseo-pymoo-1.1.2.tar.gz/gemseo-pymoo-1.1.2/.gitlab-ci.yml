@@ -1,0 +1,6 @@
+include:
+  - remote: "https://gitlab.com/gemseo/dev/ci-includes/-/raw/main/plugin.yml"
+
+.test-env-names:
+  - py38-coverage
+  - py39-coverage
