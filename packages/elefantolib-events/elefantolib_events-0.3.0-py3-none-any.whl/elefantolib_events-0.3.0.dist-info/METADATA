@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: elefantolib-events
+Version: 0.3.0
+Summary: 
+Author: Aibar
+Author-email: bekaybar@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aio-pika (>=9.1.2,<10.0.0)
+Requires-Dist: orjson (>=3.9.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+
