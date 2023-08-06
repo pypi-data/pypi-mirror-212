@@ -1,0 +1,14 @@
+huntflow_webhook_models-0.0.5.dist-info/METADATA,sha256=ub71kItqd3qDpiiXrInjnU03xH7-rfwisdgRFKq2-Fo,648
+huntflow_webhook_models-0.0.5.dist-info/WHEEL,sha256=m6kf1fJuo48rT4uxh0SeA_FsGq51BpCh_8VNBKVwYQA,90
+huntflow_webhook_models-0.0.5.dist-info/licenses/LICENSE,sha256=nVjoAOihsqFGIxcf13atg2GYH6o-OftHmpkIazoA5ZQ,1071
+huntflow_webhook_models/__init__.py,sha256=I-Vf2ji32BYT-f_FQoP9t61ff8cBcig1e6FvV1XGqQU,122
+huntflow_webhook_models/applicant.py,sha256=rA_PwRVFBaIzzMwUkpR8OQrzTrD2y_JR77xGNfPpP6U,666
+huntflow_webhook_models/base.py,sha256=jgkqovYggUlZXLkKxlCptpeNDnf_XohgpTBuyGMEnQw,1331
+huntflow_webhook_models/common_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+huntflow_webhook_models/common_models/applicant.py,sha256=zH9Iz1NI7tAjx0KoKzmmN3NixMzvTlInmR9xYpwFTRw,6585
+huntflow_webhook_models/common_models/calendar_event.py,sha256=t46O5K1i-WzHi6bfFJ0mdCRdZSa2dHXUxO08MSlqnPI,5459
+huntflow_webhook_models/common_models/hf_base.py,sha256=O6S3tVLYVW1OG4CLb3YO8c3eCM5YBTiBMyjAocTdJjo,669
+huntflow_webhook_models/common_models/survey_questionary.py,sha256=-CFwAhI85B0h7o64XCsZHb8aEuXTCYDmTsWCw2BVNIo,2950
+huntflow_webhook_models/common_models/vacancy.py,sha256=zpfNp3EaI2JtX71LpZa_HjJjRDhwMHbT9TQpT-VNl1E,3252
+huntflow_webhook_models/consts.py,sha256=nxC_xisYeKVawnkgUV-cGZ1fSVRR6CEJTeGLD7YWVE4,1638
+huntflow_webhook_models-0.0.5.dist-info/RECORD,,
