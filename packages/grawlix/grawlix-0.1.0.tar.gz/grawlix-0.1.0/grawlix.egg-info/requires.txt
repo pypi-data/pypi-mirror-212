@@ -1,0 +1,10 @@
+appdirs
+beautifulsoup4
+blackboxprotobuf
+EbookLib
+httpx
+importlib-resources
+lxml
+pycryptodome
+rich
+tomli
