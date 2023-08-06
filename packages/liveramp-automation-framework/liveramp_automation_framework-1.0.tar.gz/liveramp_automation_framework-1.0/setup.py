@@ -1,0 +1,33 @@
+from setuptools import setup
+
+setup(
+    name='liveramp_automation_framework',
+    version='1.0',
+    description='liveramp_automation_framework',
+    author='Jasmine Qian',
+    author_email='jasmine.qian@liveramp.com',
+    packages=['liveramp_autoamtion'],
+    install_requires=[
+        # 'dependency1',
+        # 'dependency2',
+        'pytest',
+        'pytest-bdd',
+        'pytest-playwright',
+        'allure-pytest-bdd',
+        'allure-python-commons',
+        'google',
+        'google-api-core',
+        'google-auth',
+        'google-cloud-bigquery',
+        'google-cloud-core',
+        'google-cloud-storage',
+        'google-crc32c',
+        'google-resumable-media',
+        'googleapis-common-protos',
+        'PyYAML',
+        'pytest-json-report',
+        'pytest-json',
+        'pytest-xdist',
+        'requests',
+    ],
+)
