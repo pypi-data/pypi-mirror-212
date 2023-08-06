@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: s3ball
+Version: 0.1.1
+Summary: S3 to tarball and vice versa
+Author-email: Illia Shestakov <i.shestakov@abstract-technology.de>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/Abstract-Tech/s3ball
+Project-URL: Bug Tracker, https://github.com/Abstract-Tech/s3ball/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+S3 to tarball and vice versa
+============================
+
+Usage
+-----
+
+.. code:: sh
+
+   # download
+   s3ball download bucket > bucket.tar
+
+   # upload
+   s3ball upload bucket < bucket.tar

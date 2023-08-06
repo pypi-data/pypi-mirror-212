@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "s3ball"
+authors = [
+    {name = "Illia Shestakov", email = "i.shestakov@abstract-technology.de"},
+]
+description = "S3 to tarball and vice versa"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+dependencies = [
+    "click",
+    "minio",
+    "pydantic",
+]
+dynamic = ["version", "readme"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools.dynamic]
+version = {attr = "s3ball.VERSION"}
+readme = {file = ["README.rst"]}
+
+[project.scripts]
+s3ball = "s3ball.cli:main"
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[project.urls]
+"Homepage" = "https://github.com/Abstract-Tech/s3ball"
+"Bug Tracker" = "https://github.com/Abstract-Tech/s3ball/issues"
