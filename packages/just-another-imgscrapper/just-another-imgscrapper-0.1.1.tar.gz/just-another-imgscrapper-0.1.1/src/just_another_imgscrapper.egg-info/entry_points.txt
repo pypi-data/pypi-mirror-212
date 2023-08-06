@@ -1,0 +1,2 @@
+[console_scripts]
+imgscrapper = imgscrapper.__main__:main
