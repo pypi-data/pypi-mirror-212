@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+static_frame_pyodide/__init__.py
+static_frame_pyodide.egg-info/PKG-INFO
+static_frame_pyodide.egg-info/SOURCES.txt
+static_frame_pyodide.egg-info/dependency_links.txt
+static_frame_pyodide.egg-info/top_level.txt
