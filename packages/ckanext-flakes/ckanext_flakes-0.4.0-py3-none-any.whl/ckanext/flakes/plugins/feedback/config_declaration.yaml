@@ -1,0 +1,10 @@
+version: 1
+groups:
+  - annotation: ckanext-flakes feedback
+    options:
+      - key: ckanext.flakes_feedback.enable_views
+        type: bool
+        default: false
+        example: "true"
+        description: |
+          Use default pages for package feedbacks
