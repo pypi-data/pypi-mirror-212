@@ -1,0 +1,11 @@
+napari_data_preview/__init__.py,sha256=eWtG-Xlnx-EDcukevoDvcByqwGe9iAS1eo1l3yI5ASU,193
+napari_data_preview/_dock_widget.py,sha256=bNcqu-FzK843iGGyavZbfUziQHhf-Wq0XID3aTiU8a0,31763
+napari_data_preview/_reader.py,sha256=rWfMHVCYSRf-vyMkdUeLAHlQclXkd1uqnxQz6301KFM,81598
+napari_data_preview/_version.py,sha256=5c8Su2rIo8Y0hWKQ_35U42zxOQ30YNfGZF4yjXeaJlw,215
+napari_data_preview/napari.yaml,sha256=uJAB7TVWZBhPB7gtTFocjpw7B9peUWjgN_s_UZDlR7g,572
+napari_data_preview-0.0.3a0.dist-info/LICENSE,sha256=SePCoq1mnCqlUrg2SW6XvPUtI1-3n-rqn9vEEMpjXcU,1104
+napari_data_preview-0.0.3a0.dist-info/METADATA,sha256=E2yVrWLxMLMCVybuWe1WByXFUJarq8QjtINTTB7LITM,1868
+napari_data_preview-0.0.3a0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+napari_data_preview-0.0.3a0.dist-info/entry_points.txt,sha256=64nP9JxN8hiy6kQUXZkYkWnZP75weEM73n4lVCUbOZg,72
+napari_data_preview-0.0.3a0.dist-info/top_level.txt,sha256=aHzX1C5g1HJQZ7N9YXweT5zqAF4--n2UhThDWR0rZIA,20
+napari_data_preview-0.0.3a0.dist-info/RECORD,,

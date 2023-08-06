@@ -1,0 +1,21 @@
+name: napari-data-preview
+schema_version: 0.0.3-alpha
+contributions:
+
+  readers:
+  - command: napari-data-preview.napari_get_reader
+    filename_patterns:
+    - '*'
+    accepts_directories: true
+
+  commands:
+  - id: napari-data-preview.DataPreview
+    title: Open my widget
+    python_name: napari_data_preview:DataPreview
+  - id: napari-data-preview.napari_get_reader
+    title: Get Reader
+    python_name: napari_data_preview._reader:napari_get_reader
+
+  widgets:
+  - command: napari-data-preview.DataPreview
+    display_name: Lightsheet data preview

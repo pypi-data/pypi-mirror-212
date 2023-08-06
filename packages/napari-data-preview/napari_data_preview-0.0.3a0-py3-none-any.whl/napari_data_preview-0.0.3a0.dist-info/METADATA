@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: napari-data-preview
+Version: 0.0.3a0
+Summary: Preview lightsheet microscopes acquisition, and allow the creation of an XML for importing the data into TeraStitcher.
+Home-page: https://github.com/WyssCenter/napari-data-preview
+Author: Vivien Gaillet, Jules Scholler
+Author-email: jules.scholler@wysscenter.ch
+License: MPL-2.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: napari
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: napari[all]
+Requires-Dist: lxml
+Requires-Dist: napari-tools-menu
+Requires-Dist: magic-class
+Requires-Dist: napari-plugin-engine (>=0.1.4)
+Requires-Dist: dask
+Requires-Dist: tifffile
+Requires-Dist: dask-image
+Requires-Dist: elementpath
+Requires-Dist: tk (>=0.1.0)
+Requires-Dist: zarr
+Requires-Dist: scikit-image
+Requires-Dist: PySimpleGUI
+Requires-Dist: pytest-shutil
+
+# napari-data-preview
+
+Preview lightsheet microscopes acquisition, and allow the creation of an XML for importing the data into TeraStitcher.
+
+This package is very experimental, and you should expect bug/errors.
+
+## Installation
+
+You can install `napari-data-preview` via [pip]:
+
+    pip install napari-data-preview
+
+To install latest development version :
+
+    pip install git+https://github.com/WyssCenter/napari-data-preview.git

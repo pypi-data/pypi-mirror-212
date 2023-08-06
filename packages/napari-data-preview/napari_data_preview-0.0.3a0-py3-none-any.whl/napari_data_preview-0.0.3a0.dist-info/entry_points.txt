@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-data-preview = napari_data_preview:napari.yaml
