@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_yolov6/__init__.py
+autodistill_yolov6.egg-info/PKG-INFO
+autodistill_yolov6.egg-info/SOURCES.txt
+autodistill_yolov6.egg-info/dependency_links.txt
+autodistill_yolov6.egg-info/requires.txt
+autodistill_yolov6.egg-info/top_level.txt

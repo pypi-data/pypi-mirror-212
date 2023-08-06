@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: autodistill-yolov6
+Version: 0.0.1
+Author: Roboflow
+Author-email: support@roboflow.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+
+# Autodistill autodistill-yolov6
+
+![Autodistill banner](https://raw.githubusercontent.com/autodistill/autodistill/main/docs/assets/banner.png)
+
+The autodistill-yolov6 package integrates with the [Autodistill ecosystem](https://autodistill.com), a framework for distilling large models into smaller, edge-ready models.
+
+If you are interested in implementing the autodistill-yolov6 package for use with Autodistill, leave an issue on the main [Autodistill GitHub repository](https://github.com/autodistill/autodistill) to discuss getting started.
+    
