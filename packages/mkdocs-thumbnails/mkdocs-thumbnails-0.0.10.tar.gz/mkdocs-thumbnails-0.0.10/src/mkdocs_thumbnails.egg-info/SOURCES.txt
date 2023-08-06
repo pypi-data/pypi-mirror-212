@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mkdocs_thumbnails.egg-info/PKG-INFO
+src/mkdocs_thumbnails.egg-info/SOURCES.txt
+src/mkdocs_thumbnails.egg-info/dependency_links.txt
+src/mkdocs_thumbnails.egg-info/entry_points.txt
+src/mkdocs_thumbnails.egg-info/requires.txt
+src/mkdocs_thumbnails.egg-info/top_level.txt
+src/thumbnails/__init__.py
+src/thumbnails/plugin.py
+src/thumbnails/thumbnail.py
