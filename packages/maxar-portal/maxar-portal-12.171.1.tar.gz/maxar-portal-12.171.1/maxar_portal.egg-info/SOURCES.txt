@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+maxar_portal.egg-info/PKG-INFO
+maxar_portal.egg-info/SOURCES.txt
+maxar_portal.egg-info/dependency_links.txt
+maxar_portal.egg-info/top_level.txt
