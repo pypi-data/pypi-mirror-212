@@ -1,0 +1,19 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "openassist"
+version = "2.2.7"
+description = "OpenAssist is a module for Python that allows you to create an AI assistant using import openai with ease."
+authors = ["Free Zoloft <mybusinessemaildbb@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+include = ["README.md"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^0.27.6"
+
+[build]
+sdist = ["python", "setup.py", "sdist", "--formats", "gztar"]

@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: openassist
+Version: 2.2.7
+Summary: OpenAssist is a module for Python that allows you to create an AI assistant using import openai with ease.
+License: MIT
+Author: Free Zoloft
+Author-email: mybusinessemaildbb@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: openai (>=0.27.6,<0.28.0)
+Description-Content-Type: text/markdown
+
+# OpenAssist
+
+OpenAssist is a module for Python that allows you to create an AI assistant using openai with ease.
+
+## Installation
+
+```bash
+pip install openassist
+```
+
+## Roles.txt Format Example:
+
+```python
+# This is the format for the text contents of the file used picked openassist.Roles is instantiated - It defaults to roles.txt
+
+"""
+dog:You are a dog, talk like one to anything the user says next
+cat:You are a cat talk like one to anything the user says next
+pirate:You are a pirate talk like one to anything the user says next
+"""
+```
+
+## Usage
+
+```python
+# ROLES :                  'system' = System Guide, 'assistant' = Ai Assistant, 'user' = User
+# DEFAULT GPT DICT :       {'role': 'system', 'content': 'You are a friendly assistant.'}
+# DEFAULT ROLES FILE :     'roles.txt'
+# COMING SOON :            Parameters to be added to chat_completion() and completion() functions (temperature, top_p, max_tokens, stop) etc,..
+
+"""
+Example Of Importing -
+    import openassist as OpenAssist - Import the module as OpenAssist
+    or
+    from openassist import OpenAIResponse, Roles, Memory - Import the classes individually (note case sensitivity)
+
+Example Of Initializing Classes -
+    Memory1 = OpenAssist.Memory() - Initialize the memory list
+    Roles = OpenAssist.Roles("roles.txt") - Initialize the roles list with the specified file/path
+
+Example Of OpenAI Completions -
+    OpenAIRes = OpenAssist.OpenAIResponse(api_key, model_id="gpt-4") - Initialize the OpenAIResponse class (model_id is optional but defaults to gpt-4)
+    OpenAIRes.chat_completion(Memory1.return_list()) - Run the OpenAI Chat Completion function
+    OpenAIRes.completion(prompt, max_tokens=100) - Run the OpenAI Completion function
+
+OpenAIResponse -
+    chat_completion(memory_list) - Run the OpenAI Chat Completion function
+    completion(prompt, max_tokens=100) - Run the OpenAI Completion function (max_tokens is optional but defaults to 100)
+
+Roles -
+    [Roles.] - Instance Name
+    add(role_name, role_content, as_role) - Add a role to the roles list
+    remove(role_name) - Remove a role from the roles list
+    view() - View the roles list
+    select(role_name) - Get a selected role from the roles list
+    random() - Get a random role from the roles list
+    format(role, content) - Format content into a role dictionary (role can be 'system', 'assistant', or 'user')
+
+Memory -
+    [Memory1.] - Instance Name
+    add(dictionary) - Add a dictionary to the memory list
+    remove(dictionary) - Remove a dictionary from the memory list
+    remove_index(index) - Remove a dictionary from the memory list in the specified index
+    insert(index, dictionary) - Insert a dictionary into the memory list at the specified index
+    clear() - Clear the memory list
+    view_list() - View the memory list
+    return_list() - Return the memory list
+    edit(dictionary, index) - Edit a dictionary in the memory list at the specified index
+    get_index(dictionary) - Get the index of a dictionary in the memory list
+"""
+```
+
+## Dev Log:
+
+```python
+# 2.2.6 - Initial Release
+# 2.2.7 - Added max_tokens parameter to chat_completion() and completion() functions
+```
