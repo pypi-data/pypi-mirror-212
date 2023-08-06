@@ -1,0 +1,7 @@
+numpy
+xarray
+holoviews
+panel
+hvplot
+datashader
+bokeh
