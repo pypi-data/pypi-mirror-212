@@ -1,0 +1,11 @@
+django_pg_jsonschema/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pg_jsonschema/__init__.py,sha256=1nUmeHyaSIHTUS2aBEy79CPfqf_eQ7CkVQpOL7DGd40,243
+django_pg_jsonschema/apps.py,sha256=g1QYrUK4mBBGMXEYxvMlfTwi1_-aKg-YPiRhWlBo9ak,438
+django_pg_jsonschema/configuration.py,sha256=vTU8YIxHcwhAlDsrfvPk6UbnMzQWxRI1HO6NFiwMuYw,267
+django_pg_jsonschema/fields.py,sha256=v_fc3b_vvC9X_h-p1Tqc_DoIMBKBfH_6yYbetzN2GMs,6134
+django_pg_jsonschema/signals.py,sha256=T2h09ITkuR91Hr6Ut37fAg9thdXjjSTQq8XaViYaVTY,1374
+django_pg_jsonschema/sql.py,sha256=-rV2f0uefumo43CVExCF_wiKNIVzlVQ6pil9WndeFrw,477
+django_pg_jsonschema-0.1.0.dist-info/LICENSE,sha256=ta-rNuT5vy6P83bA-cP8waHn_cPuacbCwq8MjcacL5s,550
+django_pg_jsonschema-0.1.0.dist-info/METADATA,sha256=V4m_qJGI0dOf5J5W5FWRv8ao-jx-LrSwZv-4DZYSHp8,3922
+django_pg_jsonschema-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+django_pg_jsonschema-0.1.0.dist-info/RECORD,,
