@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: zpenv
+Version: 1.1.0
+Summary: Gestionnaire d'environnement virtuel
+Author: 
+License: UNKNOWN
+Platform: ALL
+Description-Content-Type: text/markdown
+Requires-Dist: zpp-args
+Requires-Dist: zpp-config
+Requires-Dist: psutil
+
+# zpenv
+
+## Description
+
+Gestionnaire d'environnement virtuel
+
+## Utilisation
+
+Exemples d'utilisation
+
+
