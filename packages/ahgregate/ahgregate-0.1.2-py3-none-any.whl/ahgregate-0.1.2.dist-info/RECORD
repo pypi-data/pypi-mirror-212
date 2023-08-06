@@ -1,0 +1,11 @@
+ahgregate/__init__.py,sha256=waTS7FjkM2AbsJyXB6xkM_vuxxjWpgdKJDmHHP2s6NA,248
+ahgregate/_version.py,sha256=QYN7TnYM7p6IuK0ctZg999jxHnkydqf7ORSJtpgDnac,164
+ahgregate/scripts.py,sha256=DCXOIqytUqJaBm2pJ79YUjGztw9F0Gwb1i-T-iuX1vs,4277
+ahgregate/test.py,sha256=ih-Pu-_N6JLSa-DJAs-plBU7LOKqR7xpg2KN57JmMU8,3200
+ahgregate/workers.py,sha256=XhFkpcRrWqRJZl5K-MLDq8wL46QysJAM4DlPVoLt9Vk,2318
+ahgregate-0.1.2.dist-info/LICENSE,sha256=VgAerKBz6TM8XmWibneBcl_KGd0el-_k4LQqCi9dct4,1099
+ahgregate-0.1.2.dist-info/METADATA,sha256=9eOeB4Y-Coi4ly_jBdisjNoUFSmYCoRT75mJA6JlMn4,2224
+ahgregate-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ahgregate-0.1.2.dist-info/entry_points.txt,sha256=71_prm1DI4sh1B3JE0FEb-E2SCcT-l4Pk5JyRRm3Ujk,47
+ahgregate-0.1.2.dist-info/top_level.txt,sha256=q6uFNfomDSynhCsKn6aTv5kLwaBcAlF-77INZ79kBak,10
+ahgregate-0.1.2.dist-info/RECORD,,
