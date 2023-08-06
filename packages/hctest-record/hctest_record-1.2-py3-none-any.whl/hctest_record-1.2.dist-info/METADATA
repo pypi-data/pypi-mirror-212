@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hctest-record
+Version: 1.2
+Summary: 获取用例运行中的数据，并保存起来
+Home-page: https://github.com/pypa/sampleproject
+Author: cf
+Author-email: dingjun_baby@yeah.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+
+UNKNOWN
+
