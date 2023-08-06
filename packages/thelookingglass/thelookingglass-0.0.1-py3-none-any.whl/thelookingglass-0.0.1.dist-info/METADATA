@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: thelookingglass
+Version: 0.0.1
+Summary: 
+License: The Unlicence
+Author: Luís Miranda
+Author-email: luistm@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# The Looking Glass
+
+## Requirements
+
+You will need the following installed in your machine.
+
+- [Poetry](https://python-poetry.org)
+- [Poetry Plugin: Export](https://github.com/python-poetry/poetry-plugin-export)
+- [Poetry Plugin: up](https://github.com/MousaZeidBaker/poetry-plugin-up)
+
+

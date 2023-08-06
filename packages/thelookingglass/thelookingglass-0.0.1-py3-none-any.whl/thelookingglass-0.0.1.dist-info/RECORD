@@ -1,0 +1,12 @@
+thelookingglass/__init__.py,sha256=RAKZtlJ6JR0cNklQYdPn8M4G3slADSS27YBYBw3JUz8,24
+thelookingglass/application/__init__.py,sha256=CDe_b8BWcRL4OScnoIYCk9cj8NbX7ZfD5ibK9ctQoQI,35
+thelookingglass/application/application_test.py,sha256=2LR4LPyS4RPb5wlqm137eaiMYe0UMcExlN4EYT9uNNI,57
+thelookingglass/infrastructure/__init__.py,sha256=--5EBDQHFhjfejbIpnc7tkiv5mEcScUB7lqzOJiArWk,48
+thelookingglass/infrastructure/application_test.py,sha256=XgpX2VgcHjHkBxx5ooG46yg3QgyrRWkJ9xUKcAkM7RM,98
+thelookingglass/ui/__init__.py,sha256=4k28-nsj-ayOhShKz7GVyN-fvf0VIgGHhn7TbDH86yg,48
+thelookingglass/ui/cli/__init__.py,sha256=2gmwJcVIU1Gvi3d5O7-6MeG10_8HCuZbHQ4-PoxpVmY,81
+thelookingglass/ui/http/__init__.py,sha256=3iWW32dzBb3gvsb2ni9wvzvJjGuvLV8SLLMKjp2Xb3I,73
+thelookingglass-0.0.1.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+thelookingglass-0.0.1.dist-info/METADATA,sha256=9tcguRCiErBofBNHfHs9VfrM93qBgfQJkf-D7F5ww20,703
+thelookingglass-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+thelookingglass-0.0.1.dist-info/RECORD,,
