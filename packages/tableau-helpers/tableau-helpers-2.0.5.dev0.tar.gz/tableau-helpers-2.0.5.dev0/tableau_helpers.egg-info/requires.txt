@@ -1,0 +1,10 @@
+tableauhyperapi>=0.0.14109
+tableauserverclient>=0.17.0
+python-dotenv
+
+[sys-certs]
+pip-system-certs>=4.0
+
+[test]
+pytest
+pylint

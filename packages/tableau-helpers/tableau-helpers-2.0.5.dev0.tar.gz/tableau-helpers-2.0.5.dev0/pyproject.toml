@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=67.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="tableau-helpers"
+description="A collection of helpers to reduce boilerplate with Tableau APIs."
+readme="README.md"
+requires-python = ">=3.4"
+license={text="MIT License"}
+dependencies = [
+    "tableauhyperapi>=0.0.14109",
+    "tableauserverclient>=0.17.0",
+    "python-dotenv",
+]
+dynamic = ["version"]
+
+[project.scripts]
+csv-to-hyper = "tableau_helpers.cli.csv_to_hyper:entry_point"
+upload-hyper = "tableau_helpers.cli.upload_hyper:entry_point"
+
+[tool.setuptools.dynamic]
+version ={attr = "tableau_helpers.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["tableau_helpers*"]
+exclude = ["tests*"]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pylint"
+]
+
+sys-certs = [ "pip-system-certs>=4.0" ]
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: integration tests which require a tableau-server",
+]
