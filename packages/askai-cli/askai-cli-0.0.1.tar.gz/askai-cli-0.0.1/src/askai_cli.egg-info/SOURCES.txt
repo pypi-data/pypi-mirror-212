@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+src/askai_cli/__init__.py
+src/askai_cli/cli.py
+src/askai_cli/google_client.py
+src/askai_cli/load_properties.py
+src/askai_cli/log_response.py
+src/askai_cli/openai_client.py
+src/askai_cli.egg-info/PKG-INFO
+src/askai_cli.egg-info/SOURCES.txt
+src/askai_cli.egg-info/dependency_links.txt
+src/askai_cli.egg-info/entry_points.txt
+src/askai_cli.egg-info/requires.txt
+src/askai_cli.egg-info/top_level.txt
+tests/test_openai_client.py
