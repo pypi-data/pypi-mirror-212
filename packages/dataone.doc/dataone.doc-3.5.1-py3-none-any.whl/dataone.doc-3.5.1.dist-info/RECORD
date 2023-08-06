@@ -1,0 +1,8 @@
+d1_doc/Makefile,sha256=ySiRBLgUP7cs8vzzwzVCSwefBzTYLfzwF0JoOjDLR6s,6362
+d1_doc/__init__.py,sha256=JgbxRmYnYcNHJDL6Nnj8mzrE3HSeMwBVVFWeplD47hk,1047
+d1_doc/build-all.py,sha256=YE59r6TmPa4nFclIAoNwOQvfo2RpLAP-Otyl9-HEClg,8766
+d1_doc/gen-command-help.py,sha256=X0y7xNzLasWyjK47Ok3KzP3SC1M4VSptkIh7YJ_bR8c,4316
+dataone.doc-3.5.1.dist-info/METADATA,sha256=fH_jkfQuT3TocVwQJWJDCrCYa7iTkal3M70zDC7QVZA,1092
+dataone.doc-3.5.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dataone.doc-3.5.1.dist-info/top_level.txt,sha256=4whaSZZrTLtK4U9S-0DeWC1ibQ0K1_spM0tHUVmjwno,7
+dataone.doc-3.5.1.dist-info/RECORD,,

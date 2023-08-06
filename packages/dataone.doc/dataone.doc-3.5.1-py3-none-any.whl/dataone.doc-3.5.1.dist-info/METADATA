@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dataone.doc
+Version: 3.5.1
+Summary: Documentation for the DataONE Python products
+Home-page: https://github.com/DataONEorg/d1_python
+Author: DataONE Project
+Author-email: developers@dataone.org
+License: Apache License, Version 2.0
+Keywords: DataONE documentation APIs common client server member-node coordinating-node
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: dataone.cli (>=3.5.1)
+Requires-Dist: dataone.onedrive (>=3.5.1)
+Requires-Dist: dataone.dev (>=3.5.1)
+Requires-Dist: dataone.gmn (>=3.5.1)
+Requires-Dist: dataone.libclient (>=3.5.1)
+Requires-Dist: dataone.common (>=3.5.1)
+Requires-Dist: dataone.scimeta (>=3.5.1)
+Requires-Dist: dataone.test (>=3.5.1)
+Requires-Dist: dataone.util (>=3.5.1)
+Requires-Dist: sphinx-argparse (>=0.3.1)
+Requires-Dist: sphinx-better-theme (>=0.1.5)
+
