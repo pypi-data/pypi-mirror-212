@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+soundmonitor.egg-info/PKG-INFO
+soundmonitor.egg-info/SOURCES.txt
+soundmonitor.egg-info/dependency_links.txt
+soundmonitor.egg-info/top_level.txt
