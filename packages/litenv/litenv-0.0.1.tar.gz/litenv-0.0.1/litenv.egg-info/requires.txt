@@ -1,0 +1,6 @@
+rich
+typer
+questionary
+pyyaml
+
+[dev]
