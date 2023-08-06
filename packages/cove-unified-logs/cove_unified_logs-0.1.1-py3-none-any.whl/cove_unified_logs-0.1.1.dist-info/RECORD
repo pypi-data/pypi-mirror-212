@@ -1,0 +1,13 @@
+cove_unified_logs/__init__.py,sha256=8Ms5cJuPEW3blmneeVGWMQoRr4Lftg9dMghNLt6UGCU,72
+cove_unified_logs/cloud_logger.py,sha256=lg8M7UzL1nvB5ZDZvC95-6wU7rg3UM6Vbk_6l4ZpX1U,5938
+cove_unified_logs/console_logger.py,sha256=80dWBtdL18YO8oXHJ6NegcZicHc1sNMSMjIgdHZ4yp8,785
+cove_unified_logs/log_consumer.py,sha256=7PqfTAfQk2QR-wO6suuVfBicYeCP8nzOqj5bk-Udl1Q,1799
+cove_unified_logs/log_producer.py,sha256=_zc6EWCpcUbqZyNhRlvgMmybjVudz_7iBf4Pxy83sIo,1656
+cove_unified_logs/logger.py,sha256=l-M1D2ntn5nyqH4ThcgvAOkj9v2OfjjTfXLpM3BWD5o,2291
+cove_unified_logs/middleware.py,sha256=z4r2dqIA-Mm_6Oyy8tlFE4qKsvioTYkh49WQuZBvKW0,865
+cove_unified_logs/unified_logger.py,sha256=yfDviL4DwyIHSj2xBzZwPgUPtxsmmwpdyQWnWSTZKDw,1570
+cove_unified_logs-0.1.1.dist-info/LICENSE,sha256=7wMyc69dW7cr351BGmNoJg-CUKwF28I7nPgK4WCQ5b4,783
+cove_unified_logs-0.1.1.dist-info/METADATA,sha256=9G-erinTeRiZRuAgmhuAhAdnhQ0piB2gX-mdHeiuT5g,5398
+cove_unified_logs-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cove_unified_logs-0.1.1.dist-info/top_level.txt,sha256=WqNeShB5FtBgyGFIMACT4ihfB3kiWPkElT8DdXqupoc,18
+cove_unified_logs-0.1.1.dist-info/RECORD,,
