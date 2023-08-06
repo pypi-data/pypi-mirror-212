@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: lung-analysis-pipeline
+Version: 0.0.9
+Summary: A lung analysis pipeline
+Home-page: UNKNOWN
+Author: Olivia Zhang
+Author-email: <olivia.zhang@ucla.edu>
+License: UNKNOWN
+Description: A lung analysis pipeline for normalization, detection, segmentation, and feature extraction
+Platform: UNKNOWN
