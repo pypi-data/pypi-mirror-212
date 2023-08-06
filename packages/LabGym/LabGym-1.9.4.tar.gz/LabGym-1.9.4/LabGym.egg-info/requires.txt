@@ -1,0 +1,16 @@
+tensorflow
+matplotlib
+opencv-contrib-python
+opencv-python
+openpyxl
+pandas
+pathlib
+scikit-learn
+scikit-image
+seaborn
+wxPython
+natsort
+scikit_posthocs
+PyQt5
+torch
+torchvision
