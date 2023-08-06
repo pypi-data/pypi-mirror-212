@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: zhousf-lib
+Version: 0.1
+Summary: a python library of zhousf
+Home-page: https://github.com/MrZhousf/ZhousfLib
+Author: zhousf
+Author-email: 442553199@qq.com
+License: MIT
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (<=1.24.3)
+
+# ZhousfLib
+python常用工具库
