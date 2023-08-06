@@ -1,0 +1,6 @@
+scrapy_s3logstorage/__init__.py,sha256=G90CTsTkoFDk3RHGnV6yhNvw-C678QvDoxoIWgIzc5o,36
+scrapy_s3logstorage/extension.py,sha256=014f-LsGA3N9-IGKoUsPeTf3SJtTyd4p9A3KWFkZqvE,3354
+scrapy_s3logstorage-0.1.1.dist-info/LICENSE,sha256=0Rn9ai4tQx_7u6IB7gfvx6uN_ww6U-0Ci_KAYqEOIlk,1072
+scrapy_s3logstorage-0.1.1.dist-info/METADATA,sha256=miTGmBbtd9roq0lD2OPIg933rNkpBT-SNnVOjUa8EH0,2444
+scrapy_s3logstorage-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+scrapy_s3logstorage-0.1.1.dist-info/RECORD,,
