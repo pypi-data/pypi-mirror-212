@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: silicron
+Version: 0.0.4
+Summary: Give chatbots memory.
+Home-page: https://github.com/michaelliangau
+Author: Michael Liang
+Author-email: michaelliang15@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests (~=2.28)
+Requires-Dist: tqdm (~=4.64)
+
+# Silicron
+
+Easily build contextual chat apps.
+
+## Usage
+
+TODO
