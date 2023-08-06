@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: architect-py
+Version: 0.1.0
+Summary: Client library for the Architect trading platform.
+Project-URL: Homepage, https://verbose-journey-9kzk3z6.pages.github.io/architect-py/
+Author-email: Architect Financial Technologies <support@architect.xyz>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: asyncio>=3.4
+Requires-Dist: websockets>=11
+Description-Content-Type: text/markdown
+
+# architect-py

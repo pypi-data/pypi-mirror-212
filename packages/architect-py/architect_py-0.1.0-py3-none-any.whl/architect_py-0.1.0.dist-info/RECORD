@@ -1,0 +1,11 @@
+architect_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+architect_py/client.py,sha256=w1kyqCoyqMC96Derc8dCv9JOqUTXqgE9UYlLpXjMxAs,7495
+architect_py/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+architect_py/examples/market_making_example.py,sha256=JjBr1X0V5HLqNyvYWmMNK1IsS08gerA8vJJf-iN99tw,1596
+architect_py/examples/netidx_example.py,sha256=l2w-KrGiEismw-Ph2XNvE48RDc4NuYVgRG2buApq0WA,302
+architect_py/examples/print_book_example.py,sha256=UTg0wHZ7kIZhp4c2Z5FuY2qzmig02aEE5FhBqFNM5kI,1186
+architect_py/examples/simple_order_example.py,sha256=TeC7eb3c9gkaWXfFWH-ljiyEma5dLO-Xv20g33joWSo,610
+architect_py-0.1.0.dist-info/METADATA,sha256=rLn0uJDE-Yqor3VCmV8Lx2bFBU9adXcLbMkjAtDLON0,633
+architect_py-0.1.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+architect_py-0.1.0.dist-info/licenses/LICENSE,sha256=6P0_5gYN8iPWPZeqA9nxiO3tRQmcSA1ijAVR7C8j1SI,11362
+architect_py-0.1.0.dist-info/RECORD,,
