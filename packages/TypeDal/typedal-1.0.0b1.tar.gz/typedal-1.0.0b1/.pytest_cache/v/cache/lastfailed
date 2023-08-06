@@ -1,0 +1,4 @@
+{
+  "tests/main.py::test_Fail": true,
+  "tests/test_main.py::test_Fail": true
+}
