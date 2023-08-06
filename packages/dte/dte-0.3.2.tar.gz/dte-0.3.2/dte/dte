@@ -1,0 +1,1409 @@
+#!/usr/bin/env python
+from enum import Enum
+from collections import OrderedDict
+from datetime import datetime, date, timedelta, time
+from dateutil.relativedelta import relativedelta, MO, TU, WE, TH, FR, SA, SU
+from dateutil.rrule import rrule, YEARLY
+from json.decoder import JSONDecodeError
+from ply.lex import TOKEN
+from time import sleep, mktime
+from types import SimpleNamespace as Namespace
+import appdirs
+import calendar
+import code  # noqa: F401
+import dateutil
+import json
+import os
+import os.path as op
+import re
+import sys
+import traceback
+
+import signal
+signal.signal(signal.SIGINT, lambda s, _: sys.exit(0))
+
+def exception_handler(func):
+    def inner_function(*args, **kwargs):
+        try:
+            func(*args, **kwargs)
+        except TypeError:
+            print('='*10)
+            traceback.print_exc()
+            print('='*10)
+    return inner_function
+
+def read_write_get_config():
+    config_dir = appdirs.user_config_dir()
+    dte_config_dir = config_dir + '/dte'
+    dte_config_file = dte_config_dir + '/config.json'
+    default_config = {
+            "timestamp_unit": "seconds",
+            "clock": "24",
+            "datetime_output_format": "ISO8601",
+            "comparison_tolerance_seconds": 0.001,
+            "basedate_output_format": "%Y-%b",
+            "decimal_places": 2,
+            }
+    if not op.exists(dte_config_dir):
+        os.mkdir(dte_config_dir)
+
+    if op.exists(dte_config_file):
+        try:
+            config_dict = json.load(open(dte_config_file))
+            updated = False
+            for k, v in default_config.items():
+                if k not in config_dict:
+                    config_dict.update({k: v})
+                    updated = True
+            if updated:
+                json.dump(config_dict, open(dte_config_file, 'w'), indent=4)
+        except JSONDecodeError:
+            print('Configuration file is malformed.\n' +
+                  'Falling back to default configuration', file=sys.stderr)
+            config_dict = default_config
+    else:
+        json.dump(default_config, open(dte_config_file, 'w'), indent=4)
+        config_dict = default_config
+    return config_dict
+
+
+config = Namespace(**read_write_get_config())
+
+HELP = '''
+SYNTAX
+
+
+OBJECTS
+
+    DELTA
+
+            a timedelta object can be interpreted as
+            chain of (amount, unit) consisting of a
+            number followed by a time unit in ISO format,
+            with case input relaxed except for
+            differentiating months and minutes:
+
+                1D+1d  # case insensitive
+
+                3M+3m  # except for months and minutes
+
+               -2m+2s  # accepts negative numbers
+
+                10Y3s  # join them together instead of adding
+
+     1 hour 3 minutes  # fully spelled out durations
+                       | are also interepreted
+
+                10h30  # omit the last unit and dte will
+                       | interpret it as the immediately
+                       | smaller unit
+
+    DATETIME
+
+            a datetime object represents a point in
+            time. Can be interpreted in various forms
+            such as follows:
+
+                1611269086 # unix timestamp in seconds
+                2020/12/31 22:22
+                2020 Jan 12
+                2020 December 20
+                2020/12/31 22:22:22
+                2020/12/31
+                today
+
+            it can also represent time only:
+
+                22:22:22
+                22:22
+                22h:22
+                22H:22
+                22m:22
+                22:22s
+                22:22m
+                6 pm
+                6h:20 am
+                6h20 am
+
+    BASEDATE
+
+            a basedate object is a point in time that
+            represents the beginning of a month:
+
+                2014 Jan
+                Jan 2014
+
+    INTEGERS
+
+        Integers by themselves are interpreted as unix timestamps.
+                
+            1  : is interpreted as the point in time one second 
+                 after Epoch.
+
+VARIABLES
+
+            there are four built-in variables, all
+            case insensitive:
+
+                T or today
+                YD or yesterday
+                TM or tomorrow
+                N  or now
+
+            but you can also assign objects to a
+            named variable, like so:
+                foo=1d
+                bar=YD
+
+OPERATORS
+            +  : adds deltas to points in time
+            -  : takes de difference between two points
+                 in time and stores a delta
+
+ < <= > == !=  : compares two points in time or two durations
+                 and returns a boolean
+
+KEYWORDS
+            in   : the `in` keyword has two purposes,
+                   interpreting a DELTA object and a unit
+                   and converting the former into the latter
+                   such as:
+
+                   1d3h in seconds
+
+                   it can also convert a point in time to a
+                   unix timestamp, which can be configured in
+                   seconds or milliseconds using the config
+                   file:
+
+                   1970 Jan 1 in unix
+
+            until: takes a point in time and a unit and shows
+                   the the amount of the unit until the time
+                   point:
+
+                   seconds until 3000 Apr 25
+
+FUNCTIONS / ATTRIBUTES
+
+    wait DELTA           : sleeps for the duration
+
+    wait UNTIL TIME_POINT: sleeps until the time point
+
+    next WEEKDAY         : returns the date for the next weekday
+
+    last WEEKDAY         : returns the date for the last weekday
+
+    weekday TIME_POINT   : returns weekday for time point
+    TIME_POINT.weekday   |
+
+STDIN & ARGUMENTS
+
+       Both the standard input and the arguments can be used to run expressions
+
+'''
+
+n = None
+
+
+def replace(replacee, replacement, string):
+    return re.sub(replacee, replacement, string)
+
+
+relativedelta_days = [MO, TU, WE, TH, FR, SA, SU]
+
+days = list(calendar.day_name)
+months = list(calendar.month_name)[1:]
+days_abbrev = list(calendar.day_abbr)
+months_abbrev = list(calendar.month_abbr)[1:]
+
+days_en = [
+           'Monday',
+           'Tuesday',
+           'Wednesday',
+           'Thursday',
+           'Friday',
+           'Saturday',
+           'Sunday'
+           ]
+days_en_abbrev = [d[:3] for d in days_en]
+days_en_abbrev_max = [d[:2] for d in days_en]
+months_en = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December'
+        ]
+months_en_abbrev = [m[:3] for m in months_en]
+
+tokens = (
+    'PLUS', 'MINUS', 'EQUALS',
+    'LPAREN', 'RPAREN',
+    'UNIT',
+    'INDEXABLE_OP',
+    'IN',
+    'WAIT',
+    'UNTIL',
+    'SINCE',
+    'GT', 'GE', 'LT', 'LE', 'EQ', 'NE',
+    'OR', 'AND',
+    'TO',
+    'NAME',
+    'ORDINAL',
+    'INTEGER',
+    'YEAR',
+    'MONTH',
+    'MONTH_LITERAL',
+    'WEEKDAY_LITERAL',
+    'BASEDATE',
+    'DELTA',
+    'WEEKDAY',
+    'PERIOD',
+    'SEMICOLON',
+    'COLON',
+    'DATETIME',
+    )
+
+# Tokens
+
+t_COLON = r':'
+t_SEMICOLON = r';'
+t_PERIOD = r'\.'
+t_PLUS = r'\+'
+t_MINUS = r'-'
+t_EQUALS = r'='
+t_LPAREN = r'\('
+t_RPAREN = r'\)'
+t_GT = r'>'
+t_GE = r'>='
+t_LT = r'<'
+t_LE = r'<='
+t_EQ = r'=='
+t_NE = r'!='
+t_IN = r'(?i:in)'
+t_UNTIL = r'(?i:until)'
+t_SINCE = r'(?i:since)'
+t_WAIT = r'(?i:wait)'
+t_MONTH_LITERAL = r'(?i:month)'
+t_WEEKDAY_LITERAL = r'(?i:weekday)'
+t_OR = '(?i:or)'
+t_AND = '(?i:and)'
+t_TO = '(?i:to)'
+
+reserved = [
+            r'in',
+            r'next|last',
+            r'seconds|minutes|hours|days|weeks',
+            r'wait',
+            r'until',
+            r'and|or',
+            r'to(?!morrow|day)',
+            r'since',
+            r'month',
+            r'weekday',
+            r'unix',
+        ]
+
+
+def is_reserved(k):
+    for r in reserved:
+        if re.match('(?i)'+r, k):
+            return True
+
+
+REGEX_ALL_MONTHS = r'|'.join(months) + r'|' + \
+                   r'|'.join(months_abbrev) + r'|' + \
+                   r'|'.join(months_en_abbrev)
+REGEX_DOY = r'(\d+(?!:)(?:\W)\d+(?!:)(?:\W)\d+|\d+[\W\s]+(?:' + \
+        REGEX_ALL_MONTHS + \
+        r')(?:\s|[^\w\+])+\d+)(?:st|nd|rd|th)?'
+REGEX_0_23 = r'(2[0-3]|1?[0-9]|00)'
+REGEX_0_59 = r'([0-5]?[0-9])'
+
+DATETIME_REGEX = \
+    fr'(?i:(?:{REGEX_DOY}\s?|' + \
+    r'(?:(1[0-2]|[0-9])\s*([aApP][mM])|' + \
+    fr'{REGEX_0_59}([hHm])?' + \
+    f'(?::{REGEX_0_59}([msS])?' + \
+    f'(?::(?:{REGEX_0_59}([sS])?))?' + \
+    r'))(?:\s*([aApP][mM]))?' + \
+    '){1,2})'
+
+@TOKEN(DATETIME_REGEX)
+def t_DATETIME(t):
+    date_str,\
+        zeroth_val,\
+        zeroth_ampm,\
+        first_val,\
+        first_unit,\
+        second_val,\
+        second_unit,\
+        third_val,\
+        third_unit,\
+        ampm = re.search(DATETIME_REGEX, t.value).groups()
+
+    if zeroth_val and zeroth_ampm:
+        le_time = datetime.strptime(
+                f'{zeroth_val} {zeroth_ampm}', '%I %p').time()
+        if not date_str:
+            t.value = le_time
+            return t
+    else:
+        le_time = None
+
+    if t.value.count(':') == 1 and \
+            not first_unit and not second_unit \
+            and not third_unit and not third_val:
+        first_unit = 'h'
+
+    if ampm is not None and \
+            (first_unit == 'h' or
+                first_unit == 'H' or
+                second_unit == 'm' or
+                third_val) and \
+            int(first_val) > 12:
+        print('Conflicting 24-hour time in 12-hour clock', file=sys.stderr)
+
+    if date_str:
+        if any(month.lower() in date_str.lower()
+                for month in months_abbrev + months):
+            y, b, d = replace(r'[\W\s]+', ' ', date_str).split(' ')
+            try:
+                date = datetime.strptime(f'{y.zfill(4)}-{b}-{d}', '%Y-%b-%d')
+            except ValueError:
+                try:
+                    date = datetime.strptime(
+                            f'{y.zfill(4)}-{b}-{d}', '%Y-%B-%d')
+                except ValueError:
+                    print(f'Invalid syntax: {date_str}', file=sys.stderr)
+        else:
+            y, M, d = replace(r'\D', '-', date_str).split('-')
+            date = datetime.strptime(
+                    f'{y.zfill(4)}-{M}-{d}', '%Y-%m-%d').date()
+        if [zeroth_val, first_val, second_val, third_val] == [None]*4:
+            t.value = date
+            return t
+    else:
+        date = datetime.today()
+    semicolon_count = t.value.count(':')
+    is_HMS = semicolon_count == 2
+    is_HM = 'h' == first_unit or \
+            'H' == first_unit or \
+            'm' == second_unit or \
+            (third_unit is not None and
+                ('s' == third_unit or 'S' == third_unit))
+    if ampm is not None and \
+            (first_unit == 'h' or first_unit == 'H' or
+                second_unit == 'm'):
+        if first_val != '12':
+            if ampm.lower() == 'pm':
+                first_val = f'{(int(first_val)+12)}'
+        else:
+            if ampm.lower() == 'am':
+                first_val = 0
+
+    H_or_M, M_or_S, S = (first_val, second_val, third_val)
+    if is_HMS:
+        le_time = datetime.strptime(
+                f'{H_or_M}:{M_or_S}:{S}', '%H:%M:%S').time()
+    elif is_HM:
+        le_time = datetime.strptime(f'{H_or_M}:{M_or_S}', '%H:%M').time()
+    elif le_time is not None:
+        pass
+    else:
+        le_time = datetime.strptime(f'{H_or_M}:{M_or_S}', '%M:%S').time()
+    t.value = le_time if not date_str else datetime.combine(date, le_time)
+    return t
+
+
+unit_map = {
+        's': 'seconds',
+        'S': 'seconds',
+        'm': 'minutes',
+        'h': 'hours',
+        'H': 'hours',
+        'd': 'days',
+        'D': 'days',
+        'w': 'weeks',
+        'W': 'weeks',
+        'M': 'months',
+        'y': 'years',
+        'Y': 'years',
+        }
+
+SHORT_UNITS_STR = ''.join(unit_map.keys())
+LONG_UNITS_STR = '(?:'+'?|'.join(set(unit_map.values()))+'?)'
+FLOATING_POINT = r'((?:\d*[.])?\d+)'
+EXCLUDE_TAIL = '(?!ec|t|ep|ay)'
+UNFINISHED_LAST_UNIT_DELTA = \
+   fr'(?:[ \t]*{FLOATING_POINT}\s*({LONG_UNITS_STR}|[{SHORT_UNITS_STR}]{EXCLUDE_TAIL})'
+OMITTABLE_LAST_UNIT_DELTA = f'{UNFINISHED_LAST_UNIT_DELTA}?)'
+DELTA_TOKEN = f'{UNFINISHED_LAST_UNIT_DELTA}){OMITTABLE_LAST_UNIT_DELTA}*'
+
+
+@TOKEN(DELTA_TOKEN)
+def t_DELTA(t):
+    units_vals = OrderedDict()
+    matches = re.findall(OMITTABLE_LAST_UNIT_DELTA, t.value)
+    for v, u in matches:
+        unit_key = u if u in 'mM' else u.lower()
+        if unit_key in units_vals:
+            units_vals[unit_key] += float(v) if v else 1
+        else:
+            units_vals.update({unit_key: float(v) if v else 1})
+    t.value = parse_units(units_vals)
+    if '' in units_vals:
+        u, _ = list(units_vals.items())[list(units_vals.keys()).index('')-1]
+        next_unit_index = SHORT_UNITS_STR.index(u)-1
+        if next_unit_index == -1:
+            print('Invalid delta', file=sys.stderr)
+        next_unit = SHORT_UNITS_STR[next_unit_index]
+        if next_unit.lower() == u.lower():
+            next_unit = SHORT_UNITS_STR[SHORT_UNITS_STR.index(u)-2]
+        t.value += parse_units({next_unit: units_vals['']})
+    return t
+
+
+def get_month_index_by_name(month_name):
+    for month_collection in (months, months_abbrev, months_en_abbrev):
+        for month in month_collection:
+            if month.lower() == month_name.lower():
+                return month_collection.index(month) + 1
+
+
+t_NAME = '(?!' + '|'.join(reserved) + ')([a-zA-Z_][a-zA-Z0-9_]*)' 
+
+# @TOKEN(_NAME)
+# def t_NAME(t):
+#     return t
+
+
+REGEX_1_12 = '(1[0-2]|[1-9])'
+REGEX_1_12_OPTIONALLY_PADDED = '(1[0-2]|0?[0-9])'
+BASEDATE_REGEX = r'(?i:(?:' + \
+        r'('+REGEX_ALL_MONTHS+r')(?!:|\+|;)\W+(\d+)|' + \
+        r'(\d+)(?!:|\+|;)\W('+REGEX_ALL_MONTHS+')|' + \
+        r'(\d+)(?!:|\+|;)\W'+REGEX_1_12_OPTIONALLY_PADDED + \
+        '))'
+
+@TOKEN(BASEDATE_REGEX)
+def t_BASEDATE(t):
+    m1, y1, y2, m2, y3, m3 = re.search(BASEDATE_REGEX, t.value).groups()
+    if m1:
+        month = m1
+        year = y1
+    if m2:
+        month = m2
+        year = y2
+    if m3:
+        month = m3
+        year = y3
+    year = int(year)
+    month_index = get_month_index_by_name(month)
+    if not month_index:
+        month_index = int(month)
+    t.value = Basedate(year, month_index)
+    return t
+
+
+def t_UNIT(t):
+    r'(?i:seconds|minutes|hours|days|weeks|months|years|unix)'
+    return t
+
+
+WEEKDAY_TOKEN = r'(?i:Monday|Tuesday|Wednesday|Thursday|Friday|' + \
+    'Saturday|Sunday|Mon(?!th)|Tue|Wed|Thu|Fri|Sat|Sun)'
+
+
+@TOKEN(WEEKDAY_TOKEN)
+def t_WEEKDAY(t):
+    t.value = Weekday(t.value)
+    return t
+
+
+@TOKEN(r'(?i:' + '|'.join(months) + '|'.join(months_abbrev) + ')')
+def t_MONTH(t):
+    t.value = Month(t.value)
+    return t
+
+
+class Indexable(Enum):
+    FIRST = 1
+    SECOND = 2
+    THIRD = 3
+    FOURTH = 4
+    FIFTH = 5
+    NEXT = 0
+    LAST = float("inf")
+    PREVIOUS = -1
+
+
+ordinalIndexables = [
+        Indexable.FIRST,
+        Indexable.SECOND,
+        Indexable.THIRD,
+        Indexable.FOURTH,
+        Indexable.FIFTH
+        ]
+
+
+def t_INDEXABLE_OP(t):
+    r'(?i:(next|last|first|prev(ious)?|1st|2nd|3rd|4th|5th|first|second|third|fourth|fifth))'
+    t.value = t.value.lower()
+    if t.value.startswith('previous'):
+        t.value = Indexable.PREVIOUS
+    if t.value == 'next':
+        t.value = Indexable.NEXT
+    if t.value == 'last':
+        t.value = Indexable.LAST
+    if t.value in ['first', '1st']:
+        t.value = Indexable.FIRST
+    if t.value in ['second', '2nd']:
+        t.value = Indexable.SECOND
+    if t.value in ['third', '3rd']:
+        t.value = Indexable.THIRD
+    if t.value in ['fourth', '4th']:
+        t.value = Indexable.FOURTH
+    if t.value in ['fifth', '5th']:
+        t.value = Indexable.FIFTH
+    return t
+
+
+def get_closest_month(month):
+    counter_next = 0
+    counter_prev = 0
+    next_date = names['n']
+    for _ in range(7):
+        next_date += relativedelta(months=1)
+        counter_next += 1
+        cur_month_name = months[next_date.month-1].lower() 
+        short_cur_month_name = cur_month_name[:3]
+        if month.name in [cur_month_name, short_cur_month_name]:
+            break
+    prev_date = names['n']
+    for _ in range(7):
+        prev_date += relativedelta(months=-1)
+        counter_prev += 1
+        cur_month_name = months[prev_date.month-1].lower() 
+        short_cur_month_name = cur_month_name[:3]
+        if month.name in [cur_month_name, short_cur_month_name]:
+            break
+    if counter_next < counter_prev:
+        return next_date.date().replace(day=1)
+    return prev_date.date().replace(day=1)
+
+
+def get_closest_week_day(week_day):
+    counter_next = 0
+    counter_prev = 0
+    next_date = names['n']
+    if days[next_date.weekday()] == week_day.lower() or \
+       days_abbrev[next_date.weekday()].lower() == week_day.lower():
+        return next_date.date()
+    else:
+        for _ in range(7):
+            next_date += timedelta(days=1)
+            counter_next += 1
+            if days[next_date.weekday()].lower() == week_day.lower():
+                break
+            if days_abbrev[next_date.weekday()].lower() == week_day.lower():
+                break
+        prev_date = names['n']
+        for _ in range(7):
+            prev_date += timedelta(days=-1)
+            counter_prev += 1
+            if days[prev_date.weekday()].lower() == week_day.lower():
+                break
+            if days_abbrev[prev_date.weekday()].lower() == week_day.lower():
+                break
+        if counter_next < counter_prev:
+            return next_date.date()
+        return prev_date.date()
+
+
+def parse_units(units_vals):
+    parsed = timedelta()
+    for unit, val in units_vals.items():
+        if unit == '':
+            continue
+        short = unit in unit_map
+        singular = unit + 's' in set(unit_map.values())
+        if singular:
+            unit += 's'
+        if short:
+            if unit.lower() == 'y':
+                parsed += relativedelta(years=units_vals[unit])
+            elif unit == 'M':
+                parsed += relativedelta(months=units_vals[unit])
+            else:
+                parsed += timedelta(**{unit_map[unit]: val})
+        else:
+            try:
+                parsed += timedelta(**{unit: val})
+            except TypeError:
+                parsed += relativedelta(**{unit: val})
+    return parsed
+
+
+def t_INTEGER(t):
+    r'\d+'
+    t.value = int(t.value)
+    return t
+
+
+t_ignore = ' \t'
+t_ignore_COMMENT = r'\s*\#.*'
+
+
+def t_newline(t):
+    r'\n+'
+    t.lexer.lineno += t.value.count('\n')
+
+
+def t_error(t):
+    print(f'Illegal character {t.value[0]!r}', file=sys.stderr)
+    t.lexer.skip(1)
+
+
+import ply.lex as lex  # noqa: E402
+lex.lex(debug=False)
+
+def wait(t):
+    now = names['n']
+    if isinstance(t, datetime):
+        delta = t - now
+    elif isinstance(t, date):
+        delta = datetime.combine(t, datetime.min.time()) - now
+    elif isinstance(t, time):
+        delta = datetime.combine(now.date(), t) - now
+    elif isinstance(t, timedelta):
+        delta = t
+    else:
+        print('Wait accepts a time point or time delta only', file=sys.stderr)
+    if delta > timedelta(0):
+        sleep(delta.total_seconds())
+
+
+def weekday(t):
+    if type(t) == date or type(t) == datetime:
+        return days[t.weekday()]
+    elif type(t) == timedelta:
+        return days[(names['n']+t).weekday()]
+    elif type(t) == list:
+        return [weekday(e) for e in t]
+    else:
+        print('Can\'t get day of week of object of type' , file=sys.stderr+
+                        str(type(t)))
+
+
+def is_000(obj):
+    return obj.hour == obj.minute == obj.second == 0 if type(obj) == datetime \
+            else type(obj) == date
+
+
+class Weekday:
+    def __init__(self, name):
+        self.name = name
+
+    def __str__(self):
+        return self.name
+
+
+class Month:
+    def __init__(self, name):
+        self.name = name
+
+    def __str__(self):
+        return self.name
+
+
+class Basedate:
+    def __init__(self, year, month):
+        self.year = year
+        self.month = month
+
+    def to_datetime(self):
+        return datetime(self.year, self.month, 1)
+
+    def __str__(self):
+        return datetime(self.year, self.month, 1).strftime(
+                config.basedate_output_format)
+
+
+names = {
+            'day': lambda t: t.day,
+            'month': lambda t: t.month,
+            'year': lambda t: t.year,
+            'hour': lambda t: t.hour,
+            'minute': lambda t: t.minute,
+            'second': lambda t: t.second,
+            'weekday': lambda t: weekday(t),
+            'dayofweek': lambda t: weekday(t),
+            'help': lambda: print(HELP),
+        }
+
+
+precedence = (
+                ('right',
+                    'UMINUS',
+                ),  # noqa: E124
+                ('left',
+                    'UNIT',
+                    'PLUS',
+                    'MINUS',
+                ),  # noqa: E124
+        )
+
+
+def p_statement_wait(p):
+    '''statement : WAIT UNTIL expression
+                 | WAIT DELTA
+                 '''
+    if len(p) > 3:
+        wait(p[3])
+    else:
+        wait(p[2])
+
+
+def p_statements(p):
+    'statement : statement SEMICOLON statement'
+
+
+def p_expression_weekday_literal_expression(p):
+    '''expression : WEEKDAY_LITERAL expression
+                 '''
+    p[0] = weekday(p[2])
+
+
+def p_statement_invalid_assignment(p):
+    '''statement : WEEKDAY EQUALS expression
+                 '''
+    print(f'Can\'t assign expression to {p[1]} keyword', file=sys.stderr)
+
+@exception_handler
+def statement_assign(p):
+    global n
+    n = None
+    if is_reserved(p[1]):
+        print('Can\'t use reserved keyword', file=sys.stderr)
+    names[p[1]] = p[3]
+
+def p_statement_assign(p):
+    'statement : NAME EQUALS expression'
+    statement_assign(p)
+
+
+def normalize(t):
+    if type(t) == datetime and \
+            is_000(t):
+        t = t.date()
+    if type(t) == relativedelta:
+        tr = []
+        if t.years != 0:
+            tr += [f'{t.years} year{"s" if abs(t.years) != 1 else ""}']
+        if t.months != 0:
+            tr += [f'{t.months} month{"s" if abs(t.months) != 1 else ""}']
+        if t.days == t.hours == t.minutes == t.seconds == 0:
+            ta = ''
+        else:
+            ta = str(timedelta(days=t.days, hours=t.hours, minutes=t.minutes, seconds=t.seconds))
+        t = ''
+        if tr:
+            t += ', '.join(tr)
+        if ta:
+            t += ', ' + ta
+    return t
+
+@exception_handler
+def expression_expression_point(p):
+    try:
+        p[0] = datetime.combine(p[1], p[2])
+    except TypeError:
+        p[0] = datetime.combine(p[2], p[1])
+
+def p_expression_expression_point(p):
+    'expression : expression point'
+    expression_expression_point(p)
+
+@exception_handler
+def point_name(p):
+    if p[1] not in names:
+        print(f'{p[1]} is not loaded')
+        return
+    if callable(names[p[1]]):
+        p[0] = normalize(names[p[1]]())
+    else:
+        p[0] = names[p[1]]
+
+def p_point_name(p):
+    'point : NAME'
+    point_name(p)
+
+@exception_handler
+def statement_expr(p):
+    if type(p[1]) is Weekday:
+        p[1] = get_closest_week_day(str(p[1]))
+    if type(p[1]) is Month:
+        closest_month = get_closest_month(p[1])
+        p[1] = Basedate(closest_month.year, closest_month.month)
+    if type(p[1]) == dateutil._common.weekday:
+        p[1] = (names['n'] - relativedelta(weekday=p[1])).date()
+    if p[1] is not None:
+        if config.datetime_output_format != 'ISO8601':
+            print(normalize(p[1]).strftime(config.datetime_output_format))
+        elif config.clock != '24' and type(p[1]) == time:
+            print(normalize(p[1]).strftime('%I %p'))
+        elif isinstance(p[1], float):
+            print('{:.{d}f}'.format(p[1], d=config.decimal_places))
+        elif type(p[1]) == list:
+            print('\r\n'.join([str(normalize(e)) for e in p[1]]))
+        else:
+            print(normalize(p[1]))
+        names['_'] = p[1]
+
+
+def p_statement_expr(p):
+    'statement : expression'
+    statement_expr(p)
+
+def p_filter(p):
+    '''filter : NAME INTEGER
+              | NAME LT INTEGER
+              | NAME GT INTEGER
+              | NAME LE INTEGER
+              | NAME GE INTEGER
+              | NAME EQUALS INTEGER
+              | WEEKDAY
+              | filter filter
+              '''
+              # | NAME NE INTEGER
+    p[0] = p[1:]
+
+
+def p_range(p):
+    '''range : INTEGER TO INTEGER
+             | BASEDATE TO BASEDATE
+             | DATETIME TO BASEDATE
+             | BASEDATE TO DATETIME
+             | DATETIME TO DATETIME
+             | BASEDATE TO INTEGER
+             | INTEGER TO BASEDATE
+             '''
+    p[0] = p[1:]
+
+def parse_filter(filtr):
+    filter_args = {}
+    for condition in filtr:
+        if type(condition) == Weekday:
+            condition = [condition]
+        if type(condition[0]) == Weekday:
+            if 'byweekday' not in filter_args:
+                filter_args['byweekday'] = []
+            try:
+                weekday_ix = [wd.lower() for wd in days].index(condition[0].name)
+            except ValueError:
+                weekday_ix = [wd.lower() for wd in days_abbrev].index(condition[0].name)
+            filter_args['byweekday'] += [relativedelta_days[weekday_ix]]
+        elif condition[0] == 'day':
+            if 'bymonthday' not in filter_args:
+                filter_args['bymonthday'] = []
+            if condition[1] == '>':
+                filter_args['bymonthday'] += list(range(condition[2]+1,32)) 
+            elif condition[1] == '<':
+                filter_args['bymonthday'] += list(range(1,condition[2])) 
+            elif condition[1] == '<=':
+                filter_args['bymonthday'] += list(range(1,condition[2]+1)) 
+            elif condition[1] == '>=':
+                filter_args['bymonthday'] += list(range(condition[2],32)) 
+            elif condition[1] == '==':
+                filter_args['bymonthday'] += [condition[2]]
+            elif condition[1] == '!=':
+                filter_args['bymonthday'] += [d for d in range(0,32) if d != condition[2]]
+            else:
+                filter_args['bymonthday'] += [condition[1]]
+    return filter_args
+
+
+def resolve_range(r):
+    assert r[1] == 'to'
+    s,e = None,None
+    if type(r[0]) == Basedate:
+        s = r[0].to_datetime()
+    if type(r[2]) == Basedate:
+        e = r[2].to_datetime()
+    if type(r[0]) == int:
+        s = datetime(r[0], 1, 1)
+    if type(r[2]) == int:
+        e = datetime(r[2], 1, 1)
+    return s,e
+
+@exception_handler
+def statement_predicate_in(p):
+    filter_args = parse_filter(p[1])
+    if type(p[3]) == Basedate:
+        filter_args['dtstart'] = p[3].to_datetime()
+        filter_args['until'] = p[3].to_datetime() + \
+                relativedelta(months=1) - timedelta(days=1)
+    if type(p[3]) == list and p[3][1] == 'to': # range
+        start, end = resolve_range(p[3])
+        filter_args['dtstart'] = start
+        filter_args['until'] = end
+    if type(p[3]) == int: # year
+        filter_args['dtstart'] = datetime(p[3],1,1)
+        filter_args['until'] = datetime(p[3]+1,1,1)-timedelta(days=1)
+    p[0] = list(rrule(YEARLY, **filter_args))
+
+def p_statement_predicate_in(p):
+    '''expression : filter IN INTEGER
+                  | filter IN BASEDATE 
+                  | filter IN range
+                  '''
+    statement_predicate_in(p)
+
+
+def time2timedelta(n):
+    return timedelta(hours=n.hour, minutes=n.minute, seconds=n.second)
+
+@exception_handler
+def expression_binop(p):
+    if type(p[1]) == str:
+        p[1] = Weekday(p[1])
+
+    if type(p[3]) == str:
+        p[3] = Weekday(p[3])
+
+    if type(p[1]) == Month:
+       p[1] = get_closest_month(p[1])
+
+    if type(p[3]) == Month:
+       p[3] = get_closest_month(p[3])
+
+    if type(p[3]) == Basedate:
+        p[3] = p[3].to_datetime()
+
+    if type(p[1]) == Basedate:
+        p[1] = p[1].to_datetime()
+
+    if type(p[1]) == time and type(p[3]) == timedelta:
+        p[1] = time2timedelta(p[1])
+
+    if type(p[3]) == time and type(p[1]) == timedelta:
+        p[3] = time2timedelta(p[3])
+
+    if type(p[3]) == date and type(p[1]) == timedelta:
+        p[3] = datetime.combine(p[3], datetime.min.time())
+
+    if type(p[1]) == date and type(p[3]) == timedelta:
+        p[1] = datetime.combine(p[1], datetime.min.time())
+
+    if type(p[1]) == date and type(p[3]) == datetime:
+        p[1] = datetime.combine(p[1], datetime.min.time())
+
+    if type(p[3]) == date and type(p[1]) == datetime:
+        p[3] = datetime.combine(p[3], datetime.min.time())
+
+    if type(p[1]) == type(p[3]) == date and p[2] == '+':  # noqa: E721
+        print(f'Can\'t add two dates: {p[1]} + {p[3]}', file=sys.stderr)
+
+    if p[1] is None or p[3] is None:
+        print(f'In {p[2]} expression, both operands are None', file=sys.stderr)
+
+    if type(p[1]) == Weekday:
+        p[1] = get_closest_week_day(str(p[1]))
+    if type(p[3]) == Weekday:
+        p[3] = get_closest_week_day(str(p[3]))
+    if p[2] == '+':
+        p[0] = p[1] + p[3]
+    elif p[2] == '-':
+        p[0] = p[1] - p[3]
+
+def p_expression_binop(p):
+    '''expression : expression PLUS expression
+                  | expression MINUS expression
+                  '''
+    expression_binop(p)
+
+@exception_handler
+def expression_comparison(p):
+    if type(p[1]) == date and type(p[3]) == datetime:
+        p[1] = datetime.combine(p[1], datetime.min.time())
+
+    if type(p[3]) == date and type(p[1]) == datetime:
+        p[3] = datetime.combine(p[3], datetime.min.time())
+
+    if type(p[1]) == Weekday and type(p[3]) == date:
+        p[0] = weekday(p[3]).lower().startswith(p[1].name.lower())
+        if p[2] == '!=':
+            p[0] = not p[0]
+        elif p[2] == '==':
+            pass
+        else:
+            print('To be implemented', file=sys.stderr)
+        return
+
+    if type(p[3]) == Weekday and type(p[1]) == date:
+        p[0] = weekday(p[1]).lower().startswith(p[3].name.lower())
+        if p[2] == '!=':
+            p[0] = not p[0]
+        elif p[2] == '==':
+            pass
+        else:
+            print('To be implemented', file=sys.stderr)
+        return
+
+    try:
+        if p[2] == '<':
+            p[0] = p[1] < p[3]
+        if p[2] == '>':
+            p[0] = p[1] > p[3]
+        if p[2] == '>=':
+            p[0] = p[1] >= p[3]
+        if p[2] == '<=':
+            p[0] = p[1] <= p[3]
+        if p[2] == '==':
+            try:
+                p[0] = p[1] == p[3] or \
+                    abs((p[3] - p[1]).total_seconds()) < \
+                    config.comparison_tolerance_seconds
+            except TypeError:
+                p[0] = False
+        if p[2] == '!=':
+            p[0] = p[1] != p[3]
+        if type(p[1]) == datetime and \
+                is_000(p[1]):
+            p[1] = p[1].date()
+        if type(p[3]) == datetime and \
+                is_000(p[3]):
+            p[3] = p[3].date()
+    except TypeError as e:
+        print(str(e))
+
+
+def p_expression_comparison(p):
+    '''expression : expression GT expression
+                  | expression LT expression
+                  | expression GE expression
+                  | expression LE expression
+                  | expression EQ expression
+                  | expression NE expression
+                  '''
+    expression_comparison(p)
+
+
+def get_extremity_weekday_of_year(direction, weekday, year):
+    if type(weekday) is Weekday:
+        weekday = weekday.name
+    if direction == Indexable.LAST:
+        target = date(year+1, 1, 1) - timedelta(days=1)
+    elif direction in ordinalIndexables:
+        target = date(year, 1, 1)
+    try:
+       weekday_ix = [wd.lower() for wd in days].index(weekday)
+    except ValueError:
+        weekday_ix = [wd.lower() for wd in days_abbrev].index(weekday)
+    while target.weekday() != weekday_ix:
+        if direction in ordinalIndexables:
+            target += timedelta(days=1)
+        elif direction == Indexable.LAST:
+            target -= timedelta(days=1)
+    if direction == Indexable.SECOND:
+        target += timedelta(days=7)
+    if direction == Indexable.THIRD:
+        target += timedelta(days=14)
+    if direction == Indexable.FOURTH:
+        target += timedelta(days=21)
+    if direction == Indexable.FIFTH:
+        target += timedelta(days=28)
+    return target
+
+
+def get_extremity_weekday_of_basedate(direction, weekday, basedate):
+    if type(weekday) is Weekday:
+        weekday = weekday.name
+    if direction == Indexable.LAST:
+        target = basedate + relativedelta(months=1, days=-1)
+    elif direction in ordinalIndexables:
+        target = basedate
+    try:
+        weekday_ix = [wd.lower() for wd in days].index(weekday)
+    except ValueError:
+        weekday_ix = [wd.lower() for wd in days_abbrev].index(weekday)
+    while target.weekday() != weekday_ix:
+        if direction in ordinalIndexables:
+            target += timedelta(days=1)
+        elif direction == Indexable.LAST:
+            target -= timedelta(days=1)
+    if direction == Indexable.SECOND:
+        target += timedelta(days=7)
+    if direction == Indexable.THIRD:
+        target += timedelta(days=14)
+    if direction == Indexable.FOURTH:
+        target += timedelta(days=21)
+    if direction == Indexable.FIFTH:
+        target += timedelta(days=28)
+    if target.month == basedate.month:
+        return target
+
+
+def common_weekday_to_string(common_weekday):
+    for ix, d in enumerate(relativedelta_days):
+        if d == common_weekday:
+            return days[ix]
+
+
+def string_to_common_weekday(weekday):
+    for ix, d in enumerate(days):
+        if d.lower() == weekday.lower():
+            return relativedelta_days[ix]
+
+
+def cyclic(t, direction):
+    cyclic_direction = names['n']
+    found = False
+    for i in range(7):
+        cyclic_direction += timedelta(days=direction)
+        if days[cyclic_direction.weekday()].lower().startswith(str(t).lower()):
+            found = True
+            break
+    if not found:
+        print('Cyclic operation fatal error', file=sys.stderr)
+    return cyclic_direction.date()
+
+
+def get_relative_basedate(direction):
+    cyclic_direction = names['n']
+    reference_month = cyclic_direction.month
+    while reference_month == cyclic_direction.month:
+        cyclic_direction += timedelta(days=direction)
+    return datetime(cyclic_direction.year, cyclic_direction.month, 1)
+
+@exception_handler
+def point_relativeindex(p):
+    direction, operand = p[1]
+    if len(p) > 2:
+        if type(p[3]) == int:
+            p[0] = get_extremity_weekday_of_year(direction, operand, p[3])
+        if type(p[3]) == Basedate:
+            p[3] = p[3].to_datetime()
+        if type(p[3]) == datetime:
+            p[0] = get_extremity_weekday_of_basedate(direction, operand, p[3])
+        if type(p[3]) == Month:
+            closest_month = get_closest_month(p[3])
+            p[0] = get_extremity_weekday_of_basedate(
+                    direction, operand, closest_month)
+        if type(p[3]) == tuple:
+            direction2, operand2 = p[3]
+            leap2 = 1 if direction2 == Indexable.NEXT else -1
+            p[3] = get_relative_basedate(leap2)
+            p_point_relativeindex(p)
+    elif direction in [Indexable.NEXT, Indexable.LAST]:
+        leap = 1 if direction == Indexable.NEXT else -1
+        if operand == 'month':
+            p[0] = get_relative_basedate(leap)
+        else:
+            p[0] = cyclic(operand, leap)
+
+def p_point_relativeindex(p):
+    '''point : relativeindex IN MONTH
+             | relativeindex IN INTEGER
+             | relativeindex IN BASEDATE
+             | relativeindex IN relativeindex
+             | relativeindex
+             '''
+    point_relativeindex(p)
+
+
+def p_relativeindex_indexable_op(p):
+    '''relativeindex : INDEXABLE_OP WEEKDAY
+                     | INDEXABLE_OP MONTH_LITERAL
+                     '''
+    p[0] = (p[1], p[2])
+
+
+def delta_to_unit(delta, unit):
+    total_seconds = delta.total_seconds()
+    if unit == 'seconds':
+        return total_seconds
+    if unit == 'minutes':
+        return total_seconds / 60
+    if unit == 'hours':
+        return total_seconds / 60 / 60
+    if unit == 'days':
+        return total_seconds / 60 / 60 / 24
+    if unit == 'weeks':
+        return total_seconds / 60 / 60 / 24 / 7
+    if unit in ['months', 'years']:
+        print('Invalid conversion', file=sys.stderr)
+
+@exception_handler
+def expression_unit_until_point(p):
+    if p[1].lower() in unit_map.values():
+        if type(p[3]) == str:
+            if p[3] in names:
+                p[3] = datetime.combine(names[p[3]], datetime.min.time())
+            else:
+                print('{p[3]} is unrecognized', file=sys.stderr)
+        if type(p[3]) == Weekday:
+            p[3] = get_closest_week_day(p[3].name)
+        if type(p[3]) == Basedate:
+           p[3] = p[3].to_datetime()
+        if type(p[3]) == datetime:
+            delta = p[3] - names['n']
+        timeflag = False
+        if type(p[3]) == time:
+            delta = datetime.combine(datetime.today(), p[3]) - names['n']
+            timeflag = True
+        if type(p[3]) == date:
+            delta = datetime.combine(p[3], datetime.min.time()) - \
+                names['n']
+
+        p[0] = delta_to_unit(delta, p[1].lower())
+        if p[2] == 'since':
+            p[0] = -p[0]
+        if timeflag:
+            if p[0] < 0:
+                p[3] = datetime.combine(datetime.today(), p[3]) + \
+                         timedelta(days=1 if p[2] == 'until' else -1)
+                p_expression_unit_until_point(p)
+
+    else:
+        print('Invalid syntax: {p[1]} {p[2]} {p[3]}', file=sys.stderr)
+
+def p_expression_unit_until_point(p):
+    '''expression : UNIT UNTIL expression
+                  | UNIT SINCE expression
+                  | UNIT SINCE NAME
+                  | UNIT UNTIL NAME
+                  '''
+    expression_unit_until_point(p)
+
+def p_expression_generic(p):
+    '''expression : DELTA
+                  | timestamp
+                  | point
+                  '''
+    p[0] = p[1]
+
+@exception_handler
+def timestamp_integer(p):
+    if config.timestamp_unit == 'seconds':
+        ts = int(p[1])
+    else:
+        ts = int(p[1])/1000
+    p[0] = datetime.fromtimestamp(ts)
+
+def p_timestamp_integer(p):
+    'timestamp : INTEGER'
+    timestamp_integer(p)
+
+
+def p_expression_point_in_unit(p):
+    'expression : UNIT IN DELTA'
+    aux = p[3]
+    p[3] = p[1]
+    p[1] = aux
+    p_statement_expression_in_unit(p)
+
+
+@exception_handler
+def statement_expression_in_unit(p):
+    to_unix = p[3] == 'unix'
+    if type(p[1]) == timedelta and to_unix:
+        print('Can\'t convert timedelta to unix timestamp', file=sys.stderr)
+    if to_unix:
+        p[0] = int(mktime(p[1].timetuple()))
+    if p[3].lower() in unit_map.values():
+        p[0] = delta_to_unit(p[1], p[3].lower())
+
+def p_statement_expression_in_unit(p):
+    'expression : expression IN UNIT'
+    statement_expression_in_unit(p)
+
+
+def p_point(p):
+    '''point : timestamp
+             | BASEDATE
+             | DATETIME
+             | MONTH
+             | WEEKDAY
+             | YEAR
+             '''
+    p[0] = p[1]
+
+
+def p_expression_get_weekday(p):
+    'expression : expression PERIOD WEEKDAY_LITERAL'
+    p[0] = weekday(p[1])
+
+
+def p_expression_get_attribute(p):
+    'expression : expression PERIOD NAME'
+    p[0] = names[p[3]](p[1])
+
+
+def p_expression_group(p):
+    'expression : LPAREN expression RPAREN'
+    p[0] = p[2]
+
+
+def p_expression_uminus(p):
+    'expression : MINUS DELTA %prec UMINUS'
+    p[0] = -p[2]
+
+
+import ply.yacc as yacc  # noqa: E402
+yacc.yacc(errorlog=yacc.NullLogger())
+
+
+def current_time_routine():
+    for n in ['n', 'now', 'N', 'NOW']:
+        names[n] = datetime.now()
+    for t in ['t', 'today', 'T', 'TODAY']:
+        names[t] = datetime.today().date()
+    for tm in ['tm', 'tomorrow', 'TOMORROW', 'TM']:
+        names[tm] = datetime.today().date() + timedelta(days=1)
+    for yd in ['yd', 'yesterday', 'YESTERDAY', 'YD']:
+        names[yd] = datetime.today().date() - timedelta(days=1)
+
+
+def interactive():
+    import cmd
+
+    class CmdParse(cmd.Cmd):
+        prompt = ''
+        commands = []
+
+        def default(self, line):
+            if line == 'EOF':
+                exit(0)
+            if line.startswith('#'):
+                return
+            current_time_routine()
+            yacc.parse(line)
+            self.commands.append(line)
+
+        def do_help(self, line):
+            print(HELP)
+
+        def do_exit(self, line):
+            return True
+    CmdParse().cmdloop()
+
+
+if __name__ == '__main__':
+    if len(sys.argv) > 1:
+        if sys.argv[1] in ['-h', '--help']:
+            print(HELP)
+        else:
+            current_time_routine()
+            yacc.parse(' '.join(sys.argv[1:]))
+    else:
+        interactive()
