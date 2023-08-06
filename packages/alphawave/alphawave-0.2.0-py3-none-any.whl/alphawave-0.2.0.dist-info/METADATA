@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: alphawave
+Version: 0.2.0
+Summary: AlphaWave - a very opinionated client for interfacing with Large Language Models (LLM)
+Author-email: Steven Ickman <author@example.com>, Bruce DAmbrosio <bruce.dambrosio@gmail.com>
+Project-URL: Homepage, https://github.com/Stevenic/alphawave-py
+Project-URL: Bug Tracker, https://github.com/Stevenic/alphawave-py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: promptrix
+Requires-Dist: requests
+Requires-Dist: tiktoken
+Requires-Dist: pyyaml
+Requires-Dist: pyee
+Requires-Dist: importlib-metadata ; python_version < "3.9"
+
+# AlphaWave
+AlphaWave is a conversation manager for LLMs
