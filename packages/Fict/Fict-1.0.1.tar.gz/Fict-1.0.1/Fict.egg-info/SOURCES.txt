@@ -1,0 +1,11 @@
+README.md
+fict
+setup.py
+Fict.egg-info/PKG-INFO
+Fict.egg-info/SOURCES.txt
+Fict.egg-info/dependency_links.txt
+Fict.egg-info/requires.txt
+Fict.egg-info/top_level.txt
+lib/__init__.py
+lib/core.py
+lib/fileobj.py
