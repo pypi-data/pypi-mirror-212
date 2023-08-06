@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+certbot_dns_solidserver/__init__.py
+certbot_dns_solidserver/dns_solidserver.py
+certbot_dns_solidserver.egg-info/PKG-INFO
+certbot_dns_solidserver.egg-info/SOURCES.txt
+certbot_dns_solidserver.egg-info/dependency_links.txt
+certbot_dns_solidserver.egg-info/entry_points.txt
+certbot_dns_solidserver.egg-info/requires.txt
+certbot_dns_solidserver.egg-info/top_level.txt
