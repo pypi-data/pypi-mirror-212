@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sasview
+Version: 5.0.6b3
+Summary: SasView application
+Home-page: http://sasview.org
+Download-URL: https://github.com/SasView/sasview.git
+Author: SasView Team
+Author-email: developers@sasview.org
+License: PSF
+Keywords: small-angle x-ray and neutron scattering analysis
+License-File: LICENSE.TXT

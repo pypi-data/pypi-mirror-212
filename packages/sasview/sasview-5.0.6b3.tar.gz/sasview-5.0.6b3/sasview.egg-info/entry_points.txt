@@ -1,0 +1,2 @@
+[console_scripts]
+sasview = sas.qtgui.MainWindow.MainWindow:run_sasview

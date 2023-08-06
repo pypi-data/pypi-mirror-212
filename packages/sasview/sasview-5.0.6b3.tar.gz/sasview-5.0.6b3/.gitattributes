@@ -1,0 +1,9 @@
+*.sld linguist-language=Other
+*.asc linguist-language=Other
+Make.mm linguist-language=Makefile
+sasview/test/* linguist-language=Other
+*.py text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.cpp text eol=lf
+*.rst text eol=lf
