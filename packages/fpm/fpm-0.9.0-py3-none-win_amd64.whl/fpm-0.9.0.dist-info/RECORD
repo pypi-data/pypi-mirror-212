@@ -1,0 +1,9 @@
+fpm/__init__.py,sha256=B4xRIwYtiFbREH78rumZNqgBSQzOLPH9a7mIkeDVmf0,303
+fpm/__main__.py,sha256=L2ubunx1R46BgbO4sAFyFeMT1Hzeo0lxv2T3BBsFS6Q,62
+fpm/fpm.exe,sha256=W5rN-1htNu3meQvyWtU8EsyHVZ-q2wM5Tg1VLoR2uyI,1694985
+fpm-0.9.0.dist-info/LICENSE,sha256=dA4DJ2krQaPqhGhBP-ZgN1racSNP4CrQvhj2CI0WW-M,1094
+fpm-0.9.0.dist-info/METADATA,sha256=4h6dXedRtkL-yVMwzOLKaekUP-byeWYodYKW9nbKTRE,8089
+fpm-0.9.0.dist-info/WHEEL,sha256=-IX3YCapchM-tbUr_pQQvKOQX6Ujdoo6lyr4_4DWbtw,98
+fpm-0.9.0.dist-info/entry_points.txt,sha256=NJnqqyiMMZJutuCM_CiZqcOxlrnjHdSW6spa0VufMqs,33
+fpm-0.9.0.dist-info/top_level.txt,sha256=4c-IiwH4WR5QmxJBtrUGGZYEmJtUaL4_mkgjmp6MT4Y,4
+fpm-0.9.0.dist-info/RECORD,,
