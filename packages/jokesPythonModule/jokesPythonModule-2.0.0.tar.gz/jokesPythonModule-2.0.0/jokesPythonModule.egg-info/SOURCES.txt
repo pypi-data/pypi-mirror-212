@@ -1,0 +1,7 @@
+setup.py
+jokesPythonModule/generate_joke.py
+jokesPythonModule.egg-info/PKG-INFO
+jokesPythonModule.egg-info/SOURCES.txt
+jokesPythonModule.egg-info/dependency_links.txt
+jokesPythonModule.egg-info/requires.txt
+jokesPythonModule.egg-info/top_level.txt
