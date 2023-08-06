@@ -1,0 +1,70 @@
+on:
+  workflow_dispatch
+
+env:
+  SRC_FILE: 'pyproject.toml'
+  OUT_FILE_INDEX: 'docs/index.md'
+  OUT_FILE_QUICK: 'docs/quick_start.md'
+
+jobs:
+  build_pages_from_toml:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_PAT }}
+          ref: main
+
+
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"
+
+      - name: Create new branch
+        id: create_branch
+        run: |
+          BRANCH_NAME=build-pages-from-toml-$(date +%s)
+          git checkout -b $BRANCH_NAME
+          echo "::set-output name=branch_name::$BRANCH_NAME"
+        shell: bash
+
+      - name: Build pages
+        id: build
+        uses: younesStrittmatter/pages-from-pyproject-action@v1a0
+        with:
+          src-file: ${{ env.SRC_FILE }}
+          out-file-index: ${{ env.OUT_FILE_INDEX }}
+          out-file-quick: ${{ env.OUT_FILE_QUICK }}
+
+      - name: Display generated content
+        run: |
+          echo "====== index.md content ======="
+          cat ${{ env.OUT_FILE_INDEX }}
+          echo "====== quick_start.md content ======="
+          cat ${{ env.OUT_FILE_QUICK }}
+
+      - name: Commit changes
+        run: |
+          git add ${{ env.OUT_FILE_INDEX }}
+          git add ${{ env.OUT_FILE_QUICK }}
+          git status
+          git diff --cached
+          git commit -m "Build pages using build-pages-from-toml.py" || true
+
+
+      - name: Push changes to GitHub
+        run: |
+          git push origin HEAD
+
+      - name: Create pull request
+        uses: repo-sync/pull-request@v2
+        with:
+          source_branch: ${{ steps.create_branch.outputs.branch_name }}
+          destination_branch: main
+          pr_title: "Build pages"
+          pr_body: "Please review these changes."
+          pr_label: "auto-generated"
+          github_token: ${{ secrets.GH_PAT }}

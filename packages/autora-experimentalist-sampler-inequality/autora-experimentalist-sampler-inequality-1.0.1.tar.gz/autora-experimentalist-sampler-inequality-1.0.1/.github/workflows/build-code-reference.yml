@@ -1,0 +1,33 @@
+on:
+  workflow_dispatch
+
+jobs:
+  build_code_referemce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: generate a code reference from src
+        id: generate
+        uses: younesStrittmatter/build-python-code-references-action@v1a0
+        with:
+          src: 'src'
+          out-file: 'docs/code_references.md'
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"
+
+      - name: Commit and push changes
+        run: |
+          git add docs/code_references.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update code_reference.md using build-code-reference.py"
+            git push
+          fi

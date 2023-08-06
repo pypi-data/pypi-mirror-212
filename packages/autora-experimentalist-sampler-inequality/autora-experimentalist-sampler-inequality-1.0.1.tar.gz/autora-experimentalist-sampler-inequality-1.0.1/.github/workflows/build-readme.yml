@@ -1,0 +1,33 @@
+on:
+  workflow_dispatch
+
+jobs:
+  generate_readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: generate a readme from src
+        id: generate
+        uses: younesStrittmatter/readme-includes-action@v1a4
+        with:
+          src-file: 'README-src.md'
+          out-file: 'README.md'
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"
+
+      - name: Commit and push changes
+        run: |
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update README.md using generate_readme.py"
+            git push
+          fi
