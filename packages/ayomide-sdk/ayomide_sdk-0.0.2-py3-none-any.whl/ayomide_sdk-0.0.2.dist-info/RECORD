@@ -1,0 +1,14 @@
+ayomide_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ayomide_sdk/api_resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ayomide_sdk/api_resources/abstract.py,sha256=9l63is6AvqCAWAVVBucN4B035XZ3dDO9Uz1IPoJsrZU,207
+ayomide_sdk/api_resources/api_requester.py,sha256=65l5TmzqzxnrK8tbhLnzrDZpXREucyNJOe_PSMas-tY,1862
+ayomide_sdk/api_resources/constants.py,sha256=XdYcbqU7FTUEwjKiQ8A337Rz4eA1nSqgBef2Hte5eTc,92
+ayomide_sdk/api_resources/helpers.py,sha256=P1CR-z-EIugGMeH9f3zkMRwNFmhgiaIp44MGrzp3GY4,270
+ayomide_sdk/rest/__init__.py,sha256=3NjaHMI297YiMblorOc5gRM882rvOE1xEnB8OOOJyBA,2156
+ayomide_sdk/rest/movie/__init__.py,sha256=JbT4hQmcXJ6OhkuLPmmfe13OMhr-GY2APnt912B0HhQ,546
+ayomide_sdk/rest/quote/__init__.py,sha256=7XQcdymnrAhROT5R3dh_uHY6x3ak0zFRWzHaeLCAgwk,546
+ayomide_sdk-0.0.2.dist-info/LICENSE,sha256=Pptwsz-JzOUSGolztxRBqAOo_nzyhgIeZs_0wdDuYas,1071
+ayomide_sdk-0.0.2.dist-info/METADATA,sha256=PnZFcdKdjP94c_VnLEIc3vwcXfrj0T-lQMx6TWWRoOA,930
+ayomide_sdk-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ayomide_sdk-0.0.2.dist-info/top_level.txt,sha256=x-tVCtW3r-g8Fua1v8H8EKVTYFuMlgODuYeaBUf5BCQ,12
+ayomide_sdk-0.0.2.dist-info/RECORD,,
