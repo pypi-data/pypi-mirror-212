@@ -1,0 +1,6 @@
+README.md
+setup.py
+yamap.egg-info/PKG-INFO
+yamap.egg-info/SOURCES.txt
+yamap.egg-info/dependency_links.txt
+yamap.egg-info/top_level.txt
