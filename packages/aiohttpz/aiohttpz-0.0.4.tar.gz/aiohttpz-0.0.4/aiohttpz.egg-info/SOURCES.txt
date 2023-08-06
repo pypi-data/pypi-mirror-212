@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+aiohttps/__init__.py
+aiohttps/main.py
+aiohttpz.egg-info/PKG-INFO
+aiohttpz.egg-info/SOURCES.txt
+aiohttpz.egg-info/dependency_links.txt
+aiohttpz.egg-info/requires.txt
+aiohttpz.egg-info/top_level.txt
