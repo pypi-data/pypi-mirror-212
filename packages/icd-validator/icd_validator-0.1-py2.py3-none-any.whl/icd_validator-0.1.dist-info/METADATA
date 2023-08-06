@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: icd-validator
+Version: 0.1
+Summary: icd 9 and 10 code validator with regular expression
+Author: JeeAnRyu
+License: MIT
+Keywords: ICD910,ICD-9,ICD-10,medical coding,validation,healthcare
+Requires-Dist: pandas
+
