@@ -1,0 +1,3 @@
+[mlflow.request_header_provider]
+unused=mlflow_oidc_client.request_header_provider:PluginOIDCRequestHeaderProvider
+
