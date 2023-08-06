@@ -1,0 +1,7 @@
+monday_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monday_sdk/authentication.py,sha256=sOkXn1gD4an5iT1SiJtkMG-VUofqA6S8OGe4JoF77zA,2239
+monday_sdk/graphql_loader.py,sha256=hft4gie19cNV437ERyk95wIaH4V_woiNHpnkWcfqk0Q,514
+monday_sdk/monday.py,sha256=WZVvHqoMDu4LUv4mDz3c6A6R_F2ronbdWw2VeKmaDGA,3031
+monday_sdk-1.0.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+monday_sdk-1.0.0.dist-info/METADATA,sha256=qvXjbX97gsNNls7Ly09xSP0D03DdU6I0VFQcgVoxnpk,403
+monday_sdk-1.0.0.dist-info/RECORD,,
