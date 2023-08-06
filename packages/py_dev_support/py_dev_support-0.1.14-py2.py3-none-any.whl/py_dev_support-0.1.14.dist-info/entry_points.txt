@@ -1,0 +1,4 @@
+[console_scripts]
+dev-release=py_dev_support.release:run
+dev-version=py_dev_support.version:run
+
