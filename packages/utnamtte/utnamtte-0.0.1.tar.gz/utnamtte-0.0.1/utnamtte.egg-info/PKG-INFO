@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: utnamtte
+Version: 0.0.1
+Summary: A better eval function, eg 2π = 2*math.pi
+Home-page: https://github.com/utkarsh-naman/MATEX
+Author: Utkarsh Naman
+Author-email: its.utnam@gmail.com
+License: MIT
+Keywords: eval calculator text-to-expression
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a convertor that takes normal written mathematical text expressions as string input and return python-expression which you can also fetch the numerical value using tte.eval(<YOUR EXPRRSSION HERE>)
+
+for instance input = "2+ln2√π" , output = "2+(math.log(2))*(math.sqrt(math.pi))"
+
+
+
+Change Log
+==========
+
+0.0.1 (8/06/2023)
+------------------
+- First Release
+
