@@ -1,0 +1,8 @@
+README.md
+setup.py
+mlx2md/__init__.py
+mlx2md/__main__.py
+mlx2md.egg-info/PKG-INFO
+mlx2md.egg-info/SOURCES.txt
+mlx2md.egg-info/dependency_links.txt
+mlx2md.egg-info/top_level.txt
