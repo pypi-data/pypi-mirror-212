@@ -1,0 +1,13 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_chars.py,sha256=KHSp_vVSNeXaz1141tQmik3fF9PIsBYG19exmYfugHw,10429
+tests/test_clients.py,sha256=rORzHHUXwkdASrE1oh5KPQT_J1uy38Kkr22Q3x7oZrM,7511
+vesta/__init__.py,sha256=L1ylMa-6hcHUG1c3bGgY5UeRLuZsZsHpSV87U4c28uU,409
+vesta/chars.py,sha256=FApASGQk3FSlPscUATIgkD8EQxXDBnPbFKkn1XXgLJk,10212
+vesta/clients.py,sha256=JvQJRBE2xOEaAKNg3rl2kd3Z5kUPemWE6l3lCOOA-sc,9223
+vesta/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vesta-0.10.0.dist-info/LICENSE,sha256=C7j_p3uXDZcqq5t_s_-X88kCwX9NjIc4V3i6mlt9qOQ,1084
+vesta-0.10.0.dist-info/METADATA,sha256=feYqlsZa1eSYQw2ThyUTpWIaMc2gfNW8tap3bHoQZ98,9693
+vesta-0.10.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vesta-0.10.0.dist-info/top_level.txt,sha256=B5xtFEGdMOM8ZSMc0fL_QvgsufkvLeRL5CftsZNFQFU,6
+vesta-0.10.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+vesta-0.10.0.dist-info/RECORD,,
