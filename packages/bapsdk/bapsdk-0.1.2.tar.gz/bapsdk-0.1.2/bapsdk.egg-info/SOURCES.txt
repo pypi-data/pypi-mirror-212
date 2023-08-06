@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+bap/__init__.py
+bap/_aiogram.py
+bap/_bap.py
+bapsdk.egg-info/PKG-INFO
+bapsdk.egg-info/SOURCES.txt
+bapsdk.egg-info/dependency_links.txt
+bapsdk.egg-info/requires.txt
+bapsdk.egg-info/top_level.txt
