@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+mkjsfiddle/__init__.py
+mkjsfiddle/parser.py
+mkjsfiddle/plugin.py
+mkjsfiddle.egg-info/PKG-INFO
+mkjsfiddle.egg-info/SOURCES.txt
+mkjsfiddle.egg-info/dependency_links.txt
+mkjsfiddle.egg-info/entry_points.txt
+mkjsfiddle.egg-info/requires.txt
+mkjsfiddle.egg-info/top_level.txt
+tests/test_parser.py
