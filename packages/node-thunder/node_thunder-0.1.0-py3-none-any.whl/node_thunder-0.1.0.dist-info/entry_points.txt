@@ -1,0 +1,3 @@
+[console_scripts]
+node-thunder = mynode_setup.__main__:main
+
