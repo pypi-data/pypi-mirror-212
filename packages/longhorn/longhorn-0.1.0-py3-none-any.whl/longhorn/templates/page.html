@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1" />
+
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="stylesheet" href="/static/home.css" />
+    <link
+      href="{{ object_id }}"
+      rel="alternate"
+      type="application/activity+json"
+    />
+    <title>{{ page_title }}</title>
+  </head>
+
+  <body>
+    {% include 'info.html' %}
+    <main>{{ content | safe }}</main>
+    <div class="comments">
+      {% if entry %} {% for entry in entry.replies %} {% include 'comment.html'
+      %} {% endfor %} {% endif %}
+    </div>
+    <div class="help">
+      You can reply to this post using your favorite FediVerse Application. For
+      this look up the object
+      <pre>{{object_id}}</pre>
+      in it and just reply. Depending on how your FediVerse Application handles
+      Articles, this post may appear different.
+    </div>
+  </body>
+</html>
