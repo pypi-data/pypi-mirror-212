@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: voltronsecurity
+Version: 0.0.1
+Summary: Framework for Abstracting and Storing Security findings
+Author-email: Matt Domko <hashtagcyber@users.noreply.github.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# voltronsecurity
+Python package for abstracting security findings
+
+
+### Test
+'''
+git clone https://github.com/hashtagcyber/voltronsecurity.git
+cd voltronsecurity
+coverage run -m unittest discover -v && coverage report -m --skip-empty --omit 'tests/*'
+'''
+
+### Build
+'''
+
+'''
+### Install
