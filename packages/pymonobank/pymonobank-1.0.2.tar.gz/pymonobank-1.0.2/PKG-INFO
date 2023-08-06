@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pymonobank
+Version: 1.0.2
+Summary: Python client for Monobank API
+Author: Alex Stulen
+Author-email: ookno16@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: certifi (==2023.5.7)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: urllib3 (==2.0.2)
+Description-Content-Type: text/markdown
+
+# Python client for [Monobank API](https://api.monobank.ua/docs/acquiring.html)
+
+---
+
