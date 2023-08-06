@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sidechannelattack
+Version: 0.0.2
+Summary: sidechannelattack
+Home-page: UNKNOWN
+Author: yangsu 
+Author-email: 1152036203@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas-profiling
+Requires-Dist: folium
+Requires-Dist: seaborn
+
+Alignment principle: the reference curve l_0 is selected and the rest of the curve l_i is aligned towards l_0, using the pattern matching method.
+Dimensionality reduction principle: PCA dimensionality reduction
+Filtering principle: open source package signal: low-pass, band-pass, high-pass. Own implementation of fast filtering.
+nb.jit is different from nb.cuda.jit and should be distinguished
+When the amount of data is large, it should be stored in blocks and the corresponding side channel processing method should consider how to process it block by block.
+
