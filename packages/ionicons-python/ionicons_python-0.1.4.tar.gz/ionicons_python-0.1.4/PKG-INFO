@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: ionicons_python
+Version: 0.1.4
+Summary: Package containing icons taken from ionicons website.
+Home-page: https://github.com/srang992/ionicons_python
+Author: Subhradeep Rang
+Author-email: srang992@gmail.com
+License: MIT license
+Keywords: ionicons_python
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+🍀**ionicons_python**
+================
+
+🎯**Description**
+------------------
+This package containing the icons taken from `ionicons` website for using those easily in Python. You will not only get the basic icons from this package, but also get the social icons too, for example Linkedin, GitHub, Twitter, etc.
+
+🎯**Usage**
+------------
+Using this package is just a piece of cake🍰. Just install this package using the below command.
+```bash
+pip install ionicons_python
+```
+After the installation is complete, use it with any of your favourite framework like **Flet, Streamlit** etc. Here I am giving an example of using **Flet**.
+
+```python
+from ionicons_python.ionicons_icons import *
+import flet as ft
+
+def main(page: ft.Page):
+   page.add(ft.Image(linkedin_icon, width=24, height=24))
+
+ft.app(target=main)
+```
+Don't use this icons with `Iconbutton` or  `Icon` of **Flet**.  Those only take flet inbuilt icons.
+
+if you want to see all the icons available, visit [this](https://ionic.io/ionicons) website.
