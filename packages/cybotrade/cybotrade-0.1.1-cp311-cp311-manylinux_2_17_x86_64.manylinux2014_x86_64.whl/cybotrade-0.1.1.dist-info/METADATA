@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: cybotrade
+Version: 0.1.1
+Author: Marcus Lee <marcuslee@balaenaquant.com>
+Author-email: Marcus Lee <marcuslee@balaenaquant.com>
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Cybotrade
+
+This is the Client SDK for building an automated trading strategy on [`Cybotrade`](https://app.cybotrade.rs). The underlying libraries are written in Rust and this is a Python wrapper made possible through [`PyO3`](https://github.com/PyO3/pyo3).
+
+## Documentation
+
+There are currently two main features for this library: 
+
+1. Fetching historical data, `Datahub`
+2. Collecting live market data, `MarketCollector`
+
+### Datahub
+
+This is a Python class and you can use it as follow:
+
+```python
+# Get the Datahub's url from environment.
+url = environ.get("DATAHUB_URL")
+
+# Connect to Datahub.
+datahub = await Datahub.connect(url)
+
+# Fetch 1m candles for the past 10 minutes.
+candles = await datahub.candle("BTC", "USDT", "1m", "bybit_linear", datetime.utcnow() - timedelta(minutes=10), datetime.utcnow())
+```
+
+Note that from the example above it is not guaranteed that you will get exactly 10 candles, you might be only getting 9 candles as the candle for the current minute is not closed yet.
+
+## Development
+
+The underlying Rust libraries are private and hence not everyone is able to build this on their local environment. Although it is not required but using `miniconda` or `virtualenv` to manage your local development environment is recommended.
+
+To build this package, first install `maturin`:
+
+```shell
+pip install maturin
+```
+
+To build and test use `maturin develop`:
+
+```shell
+pip install -r requirements-dev.txt
+maturin develop && pytest
+```
+
+## Publishing
+
+The package is meant to be published to PyPi and the `Dockerfile` uses an environment `manylinux2014` to cross-compile for various linux architecture. It can be done by running the `publish.sh` script.
+
+```shell
+PYPI_USERNAME=<username> PYPI_PASSWORD=<password> ./publish.sh
+```
