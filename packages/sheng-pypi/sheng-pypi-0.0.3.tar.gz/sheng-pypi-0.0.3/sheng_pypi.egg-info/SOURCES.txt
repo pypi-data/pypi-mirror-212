@@ -1,0 +1,5 @@
+setup.py
+sheng_pypi.egg-info/PKG-INFO
+sheng_pypi.egg-info/SOURCES.txt
+sheng_pypi.egg-info/dependency_links.txt
+sheng_pypi.egg-info/top_level.txt
