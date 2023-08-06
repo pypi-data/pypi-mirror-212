@@ -1,0 +1,10 @@
+AFEX_SSO/__init__.py,sha256=Q1nciEgifxsLMMQs-TE_WVxwyET8mpv4v8q1FJjHPPY,36
+AFEX_SSO/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AFEX_SSO/src/get_hash_key.py,sha256=_ynJFPu0c1IOTX3cr0UDXlq7AK1TztLjHPnxcjJBMA4,270
+AFEX_SSO/src/sso.py,sha256=kXW6slSI3lBqHIq5qbgyS0vBBB6E8PWL3BmGHoy_m1w,2115
+AFEX_SSO/src/views.py,sha256=I6RsHnXX1X8FyVlRT5TicSL-iwe_vLVXny452ZPl7xU,1907
+afex_sso-0.0.54.dist-info/LICENSE,sha256=xTdN_fdZ1ShpKqnxMofsxWYv3vbzeu9K24K4873rkK0,1069
+afex_sso-0.0.54.dist-info/METADATA,sha256=ol50iEErHMkAXmojqRcE21EKpkoDFNBRbZGG3wlPIKQ,1952
+afex_sso-0.0.54.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+afex_sso-0.0.54.dist-info/top_level.txt,sha256=2pPL8A09_lbIeTV1HflT3OIjNFg3IUeFEN6VFcrS1Eo,9
+afex_sso-0.0.54.dist-info/RECORD,,
