@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+NikClip.egg-info/PKG-INFO
+NikClip.egg-info/SOURCES.txt
+NikClip.egg-info/dependency_links.txt
+NikClip.egg-info/top_level.txt
