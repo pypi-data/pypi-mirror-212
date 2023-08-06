@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: depthcharge-ms
+Version: 0.3.0
+Summary: A mass spectrometry toolkit for deep learning with Transformer models.
+Author-email: "William E. Fondrie" <fondriew@gmail.com>
+License: Apache 2.0
+Project-URL: Homepage, https://github.com/wfondrie/depthcharge
+Project-URL: Documentation, https://wfondrie.github.io/depthcharge
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: dev
+License-File: LICENSE
