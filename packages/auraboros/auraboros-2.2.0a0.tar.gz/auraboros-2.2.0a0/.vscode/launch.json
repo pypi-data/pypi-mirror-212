@@ -1,0 +1,46 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: __main__.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/auraboros/__main__.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: 現在のファイル",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "purpose": [
+                "debug-test"
+            ],
+            "env": {
+                "PYTEST_ADDOPTS": "--no-cov -s"
+            },
+        },
+        {
+            "name": "Python: example helloworld",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/auraboros/examples/helloworld.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: example ui showcase",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/auraboros/examples/ui_showcase.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+    ]
+}
