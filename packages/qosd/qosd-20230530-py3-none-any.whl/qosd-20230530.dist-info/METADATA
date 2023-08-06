@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: qosd
+Version: 20230530
+Summary: QOSD for python
+Author-email: Laurent Ghigonis <ooookiwi@gmail.com>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/looran/qosd
+Keywords: osd,on-screen-display,tail
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: pyside6
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+
+## qosd - display text over your Xorg screen
+
+`qosd` is a command-line tool and python library can display text over your Linux desktop screen:
+* text is displayed over any window (On-Screen-Display)
+* display simple line
+* tail stdin
+* transparency and text style is configurable
+
+# Install
+
+```
+pip install qosd
+```
+
+# Usage
+
+```
+usage: qosd [-h] [-i] [-m MAXLINES] [-n SESSION_NAME] [-o OPACITY] [-p {topleft,topright,bottomleft,bottomright,center,centerleft,centerright}] [-P POSITION_OFFSET POSITION_OFFSET] [-s STYLE] [-t TIMEOUT] text [text ...]
+
+qosd - display text over your Xorg screen - v20230529
+
+positional arguments:
+  text                  text to display, or '-' for stdin
+
+options:
+  -h, --help            show this help message and exit
+  -i, --no-input        set window transparent to input
+  -m MAXLINES, --maxlines MAXLINES
+                        default: 30
+  -n SESSION_NAME, --session-name SESSION_NAME
+                        start named OSD display session, killing previous OSD with same session name
+  -o OPACITY, --opacity OPACITY
+                        default: 1.0
+  -p {topleft,topright,bottomleft,bottomright,center,centerleft,centerright}, --position {topleft,topright,bottomleft,bottomright,center,centerleft,centerright}
+                        text position, default=topleft
+  -P POSITION_OFFSET POSITION_OFFSET, --position-offset POSITION_OFFSET POSITION_OFFSET
+                        offset in pixels from position, default: 0 0
+  -s STYLE, --style STYLE
+                        default: 'color:"#FFFFFF";background-color:"#99000000";font-size:11pt;font-weight:bold;'
+  -t TIMEOUT, --timeout TIMEOUT
+                        display timeout in seconds, default: 3
+
+examples:
+$ qosd hello
+$ tail -f /var/log/{messages,auth.log} | qosd -
+```
