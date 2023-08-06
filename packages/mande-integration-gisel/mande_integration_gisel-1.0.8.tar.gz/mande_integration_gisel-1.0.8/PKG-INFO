@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mande-integration-gisel
+Version: 1.0.8
+Summary: This package Allows communication Between Mande and Gisel. Using WebScraping technics
+Author: Sejen Developer
+Author-email: developer@sejen.ci
+Requires-Python: >=3.9,<4.0
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beautifulsoup4 (>=4.11.1,<5.0.0)
+Requires-Dist: python-slugify (>=6.1.2,<7.0.0)
+Requires-Dist: selenium (>=4.2.0,<5.0.0)
+Requires-Dist: webdriver-manager (>=3.7.0,<4.0.0)
