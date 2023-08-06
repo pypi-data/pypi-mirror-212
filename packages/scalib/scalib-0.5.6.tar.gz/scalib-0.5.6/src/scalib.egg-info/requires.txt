@@ -1,0 +1,2 @@
+numpy~=1.19
+py-cpuinfo~=9.0
