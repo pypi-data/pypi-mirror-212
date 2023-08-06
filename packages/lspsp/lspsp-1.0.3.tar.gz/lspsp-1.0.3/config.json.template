@@ -1,0 +1,18 @@
+{
+    "loginuser": "",
+    "interval": 60,
+    "notify_config": {
+        "mail": {
+            "enabled": true,
+            "ssl": true,
+            "host": "smtp.example.com",
+            "port": 465,
+            "name": "LSPMonitor",
+            "usn": "sender@example.com",
+            "pwd": "password",
+            "recv": [
+                "receiver@example.com"
+            ]
+        }
+    }
+}
