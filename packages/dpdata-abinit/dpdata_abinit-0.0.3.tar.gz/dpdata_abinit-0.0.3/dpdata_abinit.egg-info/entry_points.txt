@@ -1,0 +1,2 @@
+[dpdata.plugins]
+abihist = dpdata_abinit:AbihistFormat

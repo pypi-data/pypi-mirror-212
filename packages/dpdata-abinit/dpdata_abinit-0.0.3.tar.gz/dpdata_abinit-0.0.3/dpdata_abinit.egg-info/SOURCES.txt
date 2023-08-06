@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+dpdata_abinit/__init__.py
+dpdata_abinit/abihist.py
+dpdata_abinit/histnc.py
+dpdata_abinit.egg-info/PKG-INFO
+dpdata_abinit.egg-info/SOURCES.txt
+dpdata_abinit.egg-info/dependency_links.txt
+dpdata_abinit.egg-info/entry_points.txt
+dpdata_abinit.egg-info/requires.txt
+dpdata_abinit.egg-info/top_level.txt
+dpdata_abinit.egg-info/zip-safe
