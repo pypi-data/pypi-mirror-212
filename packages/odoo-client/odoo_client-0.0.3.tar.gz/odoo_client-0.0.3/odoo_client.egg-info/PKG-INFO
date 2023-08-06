@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: odoo-client
+Version: 0.0.3
+Summary: Simple API wrapper for Odoo's External API
+Home-page: https://github.com/LNTW/odoo-python-api
+Author: Michael Farwell
+Author-email: mike@lie-nielsen.com
+Keywords: python,odoo,api
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+Simple API wrapper for Odoo's External API
