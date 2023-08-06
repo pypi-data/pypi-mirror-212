@@ -1,0 +1,3 @@
+[console_scripts]
+permutate=permutate.main:app
+

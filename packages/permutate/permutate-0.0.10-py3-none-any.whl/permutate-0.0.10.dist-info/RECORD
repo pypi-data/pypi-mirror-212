@@ -1,0 +1,14 @@
+permutate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+permutate/__main__.py,sha256=S4V4c7sKDrf4a3rHh6WhzGMBky74-Y6ynKCY5lD5r0A,48
+permutate/job_request_schema.py,sha256=O06I34ENXkJPH4oSjE3OTBZfRxYzt7d3uNeLfUB1RQM,2354
+permutate/job_response_schema.py,sha256=o5h6g7tvtkAvNmRlHzRm3fEyn0fx30LNyug2hs4eZic,10079
+permutate/logger.py,sha256=O0ZnGmFLkBiJ6_l_uP6DsNWBhmscsyf8AYu2n4yV3dc,1153
+permutate/main.py,sha256=aU6ejJvq9uPeP6Daxqb0pTY8C-9AnlQc_x8ZJZ_cOc4,2357
+permutate/runner.py,sha256=taxhSzoSSlmb8pzBi5ve1Q55DwnXM_vQvZTfYnOKw6g,7553
+permutate/singleton.py,sha256=TjzbHnZKdph8r4w-XvPuql7NJZkUN3s2qBSjxH1XBBg,559
+permutate/templates/job_result_template.html,sha256=dOiYFsMFWGKujGc-LR1vQHm14Kj2Zupg1Uo9Q8fGXR0,3436
+permutate/workspace/plugin_test.yaml,sha256=dPkTItKonSiGUPHNJzSkoMvqTN2DWWxFtFriOmJbrN8,2032
+permutate-0.0.10.dist-info/METADATA,sha256=TVqTQUXOyRSTqPytX9ZbCHMtp8xFTk1k1GDl_21u-TQ,9687
+permutate-0.0.10.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+permutate-0.0.10.dist-info/entry_points.txt,sha256=a2NEzwUVnazNM_Nlbi-qKje_CLITOKZw0Gm3nSqqw6g,48
+permutate-0.0.10.dist-info/RECORD,,
