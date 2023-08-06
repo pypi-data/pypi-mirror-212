@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: blackline-core
+Version: 0.1.1a0
+Summary: Manage personal data in your data stores.
+Home-page: https://github.com/blacklinedata/blackline-core
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: <3.12,>=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml (<7.0,>=6.0)
+Requires-Dist: pydantic (<2.0.0,>=1.10.0)
+Requires-Dist: typing-extensions (!=4.6.0,<5.0.0,>=4.5.0)
+Requires-Dist: jinja2 (<4.0.0,>=3.0.0)
+Requires-Dist: click (<9.0.0,>=7.0.0)
+Requires-Dist: sqlglot (<13.0.0,>=12.0.0)
+Provides-Extra: dev
+Requires-Dist: pre-commit (==2.20.0) ; extra == 'dev'
+Requires-Dist: pytest (==7.2.0) ; extra == 'dev'
+Requires-Dist: bumpver (==2022.1120) ; extra == 'dev'
+Requires-Dist: black (==22.12.0) ; extra == 'dev'
+Requires-Dist: isort (==5.11.4) ; extra == 'dev'
+Requires-Dist: types-PyYAML (==6.0.12.2) ; extra == 'dev'
+Requires-Dist: tox (==4.3.1) ; extra == 'dev'
+Requires-Dist: pdbpp ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs-material (==9.1.6) ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] (==0.21.2) ; extra == 'docs'
+Requires-Dist: prettytable (==3.6.0) ; extra == 'docs'
+Requires-Dist: mkdocs-click (==0.8.0) ; extra == 'docs'
+Requires-Dist: mkdocs-literate-nav (==0.6.0) ; extra == 'docs'
+Requires-Dist: mkdocs-gen-files (==0.4.0) ; extra == 'docs'
+
+# blackline-core
+
+[blackline](www.getblackline.com) Allows teams to easily manage and catelog their retention periods for [Person Identifying Information](https://gdpr.eu/eu-gdpr-personal-data/)
