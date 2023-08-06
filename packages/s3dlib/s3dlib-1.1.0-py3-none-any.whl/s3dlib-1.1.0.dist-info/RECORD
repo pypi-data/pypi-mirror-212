@@ -1,0 +1,8 @@
+s3dlib/__init__.py,sha256=0y91PW-fcytGzZxMWcdcVL1uY8YfJz4Qb4CVpB1hAXg,21
+s3dlib/cmap_utilities.py,sha256=ZP1-2MvqR6XuJSR8FANcrfxR0fuJtRjCOusPfP64dBg,29077
+s3dlib/cmap_xtra.py,sha256=N4820_GRzp0MhetHw-mIrQHahjEk8_OLI8m9QsOr2io,15498
+s3dlib/surface.py,sha256=e63W30b_-vPMLyiVFJadKdtzYRq0_B86DmLzoznuimg,331538
+s3dlib-1.1.0.dist-info/METADATA,sha256=JjZqb2OKBjDNsBc-JIF8905vTfpMPRXg885JAyTr_54,1761
+s3dlib-1.1.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+s3dlib-1.1.0.dist-info/licenses/LICENSE,sha256=E_eL0qLruJQUutivKB5xiRK7whb2PuEQEXAOENcEqx0,1098
+s3dlib-1.1.0.dist-info/RECORD,,

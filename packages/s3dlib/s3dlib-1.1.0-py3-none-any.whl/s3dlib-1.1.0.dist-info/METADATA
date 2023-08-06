@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: s3dlib
+Version: 1.1.0
+Summary: Python classes to create 3D surface and line objects rendered in Matplotlib
+Project-URL: Documentation, https://s3dlib.org
+Project-URL: Repository, https://github.com/fzaverl/s3dlib
+Author-email: "Frank Zaverl, Jr." <fzaverl@s3dlib.org>
+License-File: LICENSE
+Classifier: Framework :: Matplotlib
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+
+# S3Dlib
+
+### Python classes to create 3D surface and line objects rendered in *Matplotlib*
+
+
+Detailed documentation and examples are provided at [s3dlib.org](https://s3dlib.org)
+
+---
+S3Dlib simplifies the construction of 3D objects using predefined geometries in planar, polar, cylindrical, and spherical coordinates.
+Using these geometries remove the development effort of constructing a network of vertex coordinates.
+The object geometry and color are then controlled through various object methods. 
+Objects are finally added to the mpl_toolkits.mplot3d.axes3d.Axes3d using
+the Axes3d.add_collection3d() method.
+
+Included is a module containing functions to create custom Matplotlib color maps.
+
