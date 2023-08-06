@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pymangaj/__init__.py
+pymangaj/chapmanganato.py
+pymangaj/mangalivre.py
+pymangaj/muitomanga.py
+pymangaj/pymangaj.py
+pymangaj.egg-info/PKG-INFO
+pymangaj.egg-info/SOURCES.txt
+pymangaj.egg-info/dependency_links.txt
+pymangaj.egg-info/requires.txt
+pymangaj.egg-info/top_level.txt
