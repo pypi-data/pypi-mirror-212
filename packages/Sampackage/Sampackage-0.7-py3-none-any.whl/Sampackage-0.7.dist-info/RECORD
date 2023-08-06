@@ -1,0 +1,13 @@
+PyShorts/__init__.py,sha256=GdyFv6zio54fmf0ARitjI_MqEFAuA7eDq7qwhd9yaes,38
+PyShorts/funcs.py,sha256=oftTcP8qTTI3Tgx-zBvvQw0YrTfpf4N8ZlrqgSrIjhc,5348
+PyShorts/non_use_funcs.py,sha256=tCKQzKGTUd1qQ2smY5eQKoRcSLgnQATBEWhCmp_xVmQ,1399
+PyShorts/Sub_Functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyShorts/Sub_Functions/funcs.py,sha256=zEl4ahaB5yls9HT20Zxeod_71ovWXkPokFRRQ4MBZ60,5351
+PyShorts/Sub_Functions/non_use_funcs.py,sha256=tCKQzKGTUd1qQ2smY5eQKoRcSLgnQATBEWhCmp_xVmQ,1399
+sampackage/__init__.py,sha256=9vvSTK-CCIWOCQiKu3kbOVr9zuZPvM5DniD57sqLa0Y,27
+sampackage/funcs.py,sha256=FkL5qIYUOQb-wt1Q_vEwpqyglj33KDUJBWcGp4Q2068,5337
+sampackage/non_use_funcs.py,sha256=tCKQzKGTUd1qQ2smY5eQKoRcSLgnQATBEWhCmp_xVmQ,1399
+Sampackage-0.7.dist-info/METADATA,sha256=QJhK-MQrbjzhlZZNUsjqm9fMbkWysVUqQz3LDMYiBeU,3230
+Sampackage-0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Sampackage-0.7.dist-info/top_level.txt,sha256=55yTyrrWR3S9Wx1QAQZcvBH9gF7KlyXY7ZOkJmDqNCQ,11
+Sampackage-0.7.dist-info/RECORD,,

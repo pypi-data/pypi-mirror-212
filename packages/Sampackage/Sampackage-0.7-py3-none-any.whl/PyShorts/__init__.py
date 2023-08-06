@@ -1,0 +1,1 @@
+from sampackage.funcs import mainfuncs
