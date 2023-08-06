@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "web-etc"
+version = "0.2.0"
+description = ""
+authors = ["Brandon Geraci <brandon.geraci@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.95.2"
+python-multipart = "^0.0.5"
+python-dotenv = "^0.19.2"
+uvicorn = "^0.15.0"
+jinja2 = "^3.0.3"
+pam = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-mock = "^3.6.1"
+pytest-asyncio = "^0.16.0"
+httpx = "^0.24.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+include = ["web_etc/templates/*.html"]
