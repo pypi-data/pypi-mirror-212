@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: blackline-postgres
+Version: 0.1.1a0
+Summary: Manage personal data in your data stores.
+Home-page: https://github.com/blacklinedata/blackline-core/tree/main/blackline/postgres
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: <3.12,>=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# blackline-postgres

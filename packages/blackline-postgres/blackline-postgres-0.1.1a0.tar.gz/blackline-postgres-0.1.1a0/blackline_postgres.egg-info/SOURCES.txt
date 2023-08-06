@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+./blackline/adapters/postgres/__init__.py
+./blackline/adapters/postgres/postgres.py
+./blackline/models/postgres/__init__.py
+./blackline/models/postgres/postgres.py
+./tests/conftest.py
+./tests/test_postgrest_integration.py
+./tests/adapters/postgres/test_postgres_adapter.py
+./tests/models/postgres/test_postgres.py
+blackline_postgres.egg-info/PKG-INFO
+blackline_postgres.egg-info/SOURCES.txt
+blackline_postgres.egg-info/dependency_links.txt
+blackline_postgres.egg-info/requires.txt
+blackline_postgres.egg-info/top_level.txt
+tests/test_postgrest_integration.py
