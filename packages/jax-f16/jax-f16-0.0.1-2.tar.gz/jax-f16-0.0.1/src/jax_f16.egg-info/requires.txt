@@ -1,0 +1,8 @@
+jax
+jaxtyping
+
+[dev]
+pytest==5.0.0
+pytest-cov[all]
+mypy==0.910
+black==21.10b0
