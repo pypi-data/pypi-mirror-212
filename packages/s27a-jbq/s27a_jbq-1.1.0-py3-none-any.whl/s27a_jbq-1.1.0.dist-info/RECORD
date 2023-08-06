@@ -1,0 +1,15 @@
+s27a_jbq/__constants__.py,sha256=MSZ7mhflQ4HbXbRWOpEbZdppHBX0Ii_-ZLEASbztk6Y,177
+s27a_jbq/__init__.py,sha256=6frgKjYk2LIyK7tvAf9L_KbOSHNh3DZxymyWVUzmjK0,87
+s27a_jbq/__main__.py,sha256=HSV8y-yt7AmeliZ4VBqB7rnC_zJlWFSnFEwikBEV74k,2662
+s27a_jbq/game/__init__.py,sha256=Z312P3gqAWt0UfoZzlTFSKcaCzkzFvkpP3uj2a3uivU,5852
+s27a_jbq/game/extension.py,sha256=YqBc17OeBm5qv-1S_dEG5sAjAk0ee0y6Am5NM5SeWjk,2617
+s27a_jbq/game/map.py,sha256=BqphKFR4OweherbNNUHgErH81EtvbBGjKzOeWGE0BeI,5586
+s27a_jbq/game/static.py,sha256=0M8yF73YbrXIcK1Wx8obO5QRwZ49ENt1qnA3elzRe4E,2925
+s27a_jbq/window/__init__.py,sha256=eYqncJUy3xi_BwTiiMGBulYrSismZGjepjQlqYC8aRw,12787
+s27a_jbq/window/game_window.py,sha256=dikK-Y62FCDfhfGrbhWqNRceu6AsCzg9BSZVSiX8kOE,11010
+s27a_jbq/window/setting.py,sha256=ZE5YCfjXVKmnaGf9CEn-POxJ4iWVK7vRzIi7qu_lLqQ,2578
+s27a_jbq-1.1.0.dist-info/LICENSE,sha256=qtwixhao1plWi6mXeX7mLSqReT8R7LIMm93BZaC3dzc,1064
+s27a_jbq-1.1.0.dist-info/METADATA,sha256=kfkmAQy4Bt6D63xgjh0TNJbp1k4bMo_3BGTb2QcU7Mk,3760
+s27a_jbq-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+s27a_jbq-1.1.0.dist-info/top_level.txt,sha256=Uk7YRbVv4oyk9sG-ZfV8wtfFFOVSrK0-gaEBp-cTKlc,9
+s27a_jbq-1.1.0.dist-info/RECORD,,
