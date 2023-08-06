@@ -1,0 +1,10 @@
+pyVME/__init__.py,sha256=CfG1i9HDhlzICmm_zzueetcA7Ts46tbX3N7sWcVY1Ns,80
+pyVME/client.py,sha256=aFKLS4KOjnBoS1477vcgymv50LPcVjNsmLI_Nc2ifBM,4325
+pyVME/fpga.py,sha256=kQchpvagLzcGBLRZGk43POTPpzOm2wAIzARe-hGBmac,2568
+pyVME/server.py,sha256=3s6CIeq6d_gGdRwYhe3Xv3PP4KIwTBoFlMy5tqkiAJw,7043
+pyVME/vme_fpga_py.cpython-39-x86_64-linux-gnu.so,sha256=lPklAzuQiXt975VfkTr4dI5KAYnt9TNHc3GHd8PQ7Ls,10929728
+pyVME-1.0.1.dist-info/LICENSE,sha256=mbJQ7YdtcAPvY3NfoV3Rx8_FO_yeaFlclnktwkqJ1Pk,31962
+pyVME-1.0.1.dist-info/METADATA,sha256=0X7jt6R0AcWx60RK9odQgYct3x7YU-St50kaZufB8gA,4680
+pyVME-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyVME-1.0.1.dist-info/top_level.txt,sha256=GAtA6qDrgLBIBdxWuPg7ncGEcButsw9DKw5C8ud1qjI,6
+pyVME-1.0.1.dist-info/RECORD,,
