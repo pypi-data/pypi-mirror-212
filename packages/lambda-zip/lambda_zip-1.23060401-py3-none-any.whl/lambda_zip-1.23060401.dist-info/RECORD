@@ -1,0 +1,10 @@
+lambda_zip/__init__.py,sha256=6xUZo6H44YHH9UokIUEgh6vFBu8dt8qPTcLxz6_GSHU,28519
+lambda_zip/aws_lambda_function.py,sha256=_RlwvM-X-JX9DnSo7VOyruM_VF0QfzkoQGAKO4s86XQ,1018
+lambda_zip/aws_lambda_layer.py,sha256=byM_A3Alsfrg-LI3dQvdfhJyR_ff9YjP8iTAXfS-pAU,3403
+lambda_zip/aws_lambda_layer_version.py,sha256=ODENBGCFmONbV2DZZRqZ_bi9fzFMjwgHP9vjlq7W4UU,3616
+lambda_zip-1.23060401.dist-info/LICENSE,sha256=iX4WgyDQEI6WoEKFfNSm4TUU-Di8mADdhnfN2nel85Q,1070
+lambda_zip-1.23060401.dist-info/METADATA,sha256=dTBd3-i6fZb8W1iwrINmLXiODEGwr58aCO1T1cAvNfE,365
+lambda_zip-1.23060401.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lambda_zip-1.23060401.dist-info/entry_points.txt,sha256=-POstqZNKN1TklnE5aMTjPiB0iWiCgWvfL1p172wzOU,58
+lambda_zip-1.23060401.dist-info/top_level.txt,sha256=oftGMinBW81KE0qYm20a3BuKKTdl0bb-VsYKZsLneFY,11
+lambda_zip-1.23060401.dist-info/RECORD,,
