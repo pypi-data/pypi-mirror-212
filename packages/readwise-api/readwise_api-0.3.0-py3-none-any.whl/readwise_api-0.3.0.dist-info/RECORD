@@ -1,0 +1,12 @@
+readwise/__init__.py,sha256=zNJcghbUZ9ozxQGqPnwa6kgpgtrjjSVMKbhOVJXoQuE,198
+readwise/__main__.py,sha256=Qy0L2eXSKoIKSeTXrjWHlgHPAbcGugnYDYvtK9rOi5U,67
+readwise/api.py,sha256=kkVsD7pUVZb7cjO-emyze7Fl4w_KhNwMIoUAFeJH1uQ,3647
+readwise/cli.py,sha256=PrnIw5hzKEDBWoEphj4fX-pYAErZZA8Hp3fM9bzlJ1s,1566
+readwise/model.py,sha256=0DKyeZzr6HcV4kqbHnfGOTGFvIxqWFLA9b7QnJuqfew,3686
+readwise/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+readwise/version.py,sha256=1dK-zZhoHv_sm1rA8lP0-PyRAHk71GJt0opN-MnKpX4,144
+readwise_api-0.3.0.dist-info/LICENSE,sha256=PpfScHdg8SQpCKUgKpFS_A7zL_95H4TI0xIpCkH5Oxg,1072
+readwise_api-0.3.0.dist-info/METADATA,sha256=c0WpRJvTxbMB15cnVnIUl22soCRcw7Oy0n8cgqedKQA,1538
+readwise_api-0.3.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+readwise_api-0.3.0.dist-info/entry_points.txt,sha256=hK41GosOxMyhVvA6PjVYtz8chHNAfhvxvuyj-zjG4_c,50
+readwise_api-0.3.0.dist-info/RECORD,,
