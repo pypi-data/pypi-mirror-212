@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyerr
+Version: 0.1.1
+Summary: Package providing functional error handling.
+Home-page: https://github.com/soukev/pyerr
+Author: Vojtech Soukenka
+Author-email: <vojtech.soukenka@gmail.com>
+Keywords: error,error handling,functional
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+License-File: LICENSE
+
+Package provinding functional error handling in 'monadic'-like way. Allows you to create wrapped value from success value or an error, apply functions to wrapped value and unwrap.

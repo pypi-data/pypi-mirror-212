@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyerr/__init__.py
+pyerr/pyerr.py
+pyerr.egg-info/PKG-INFO
+pyerr.egg-info/SOURCES.txt
+pyerr.egg-info/dependency_links.txt
+pyerr.egg-info/top_level.txt
+tests/__init__.py
+tests/test_pyerr.py
