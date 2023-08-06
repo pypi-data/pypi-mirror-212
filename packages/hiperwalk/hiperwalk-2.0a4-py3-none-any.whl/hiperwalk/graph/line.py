@@ -1,0 +1,144 @@
+import numpy as np
+from scipy.sparse import csr_array
+from sys import path as sys_path
+from .graph import Graph
+
+class Line(Graph):
+    r"""
+    Finite Line Graph (Path Graph).
+
+    Parameters
+    ----------
+    num_vert : int
+        Number of vertices on the line.
+
+    Notes
+    -----
+    On the Line,
+    we can assign directions to the arcs.
+    If an arc is pointing rightwards it has direction 0 --
+    i.e., (1, 2).
+    If an arc is pointing leftwards, it has direction 1 --
+    i.e., (2, 1).
+
+    We use the arc directions to define the arcs order.
+    Hence, for a vertex :math:`v \in V`,
+    the arcs :math:`(v, v + 1)` and :math:`(v, v - 1)`
+    have labels :math:`a_0` and :math:`a_1` (respectively)
+    such that  :math:`a_0 < a_1`.
+    This order is coherent with the Coined Quantum Walk on the line [1]_.
+    The only exceptions to this rule are the extreme vertices
+    0 and :math:`|V| - 1`.
+    Since they only have one arc.
+    Besides that,
+    for any two vertices :math:`v_1 < v_2`,
+    any arc with tail :math:`v_1` has label smaller than
+    any arc with tail :math:`v_2`.
+
+    For example, the arc labels of the 4-vertices Line
+    are represented in Figure 1.
+    
+    .. graphviz:: ../../graphviz/line-arcs.dot
+        :align: center
+        :layout: neato
+        :caption: Figure 1.
+
+    References
+    ----------
+    .. [1] Portugal, Renato. "Quantum walks and search algorithms".
+        Vol. 19. New York: Springer, 2013.
+    """
+
+    def __init__(self, num_vert):
+        # Creating adjacency matrix
+        # The end vertices are only adjacent to 1 vertex.
+        # Every other vertex is adjacent to two vertices.
+        data = np.ones(2*(num_vert-1), dtype=np.int8)
+        # upper diagonal
+        row_ind = [lin+shift for shift in range(2)
+                             for lin in range(num_vert - 1)]
+        # lower digonal
+        col_ind = [col+shift for shift in [1, 0]
+                             for col in range(num_vert - 1)]
+        adj_matrix = csr_array((data, (row_ind, col_ind)))
+    
+        # initializing
+        super().__init__(adj_matrix)
+
+    def embeddable(self):
+        return True
+
+    def default_coin(self):
+        r"""
+        Returns the default coin name.
+
+        The default coin for the coined quantum walk on the
+        segment is ``'hadamard'``.
+        """
+        return 'hadamard'
+
+    def arc_label(self, tail, head):
+        diff = head - tail
+        if diff != 1 and diff != -1:
+            raise ValueError('Invalid arc.')
+
+        num_vert = self.number_of_vertices()
+        return (2*tail - 1 if (diff == 1 and tail != 0
+                               or head == num_vert - 1)
+                else tail*2)
+
+    def arc(self, label):
+        label += 1
+        tail = label//2
+        num_vert = self.number_of_vertices()
+        head = (tail + (-1)**(label % 2)
+                if tail != 0 and tail != num_vert - 1
+                else tail - (-1)**(label % 2))
+        return (tail, head)
+
+    def next_arc(self, arc):
+        # implemented only if is embeddable
+        try:
+            tail, head = arc
+            diff = head - tail
+            if diff != 1 and diff != -1:
+                raise ValueError('Invalid arc')
+
+            if head == 0 or head == self.number_of_vertices() - 1:
+                return (head, tail)
+            
+            return ((tail + 1, head + 1) if diff == 1
+                    else (tail - 1, head - 1))
+        except TypeError:
+            if arc == 0:
+                return 1
+            num_arcs = self.number_of_arcs() 
+            if arc == num_arcs - 1:
+                return num_arcs - 2
+            return arc + 2 if arc % 2 == 1 else arc - 2
+
+    def previous_arc(self, arc):
+        # implemented only if is embeddable
+        try:
+            tail, head = arc
+            diff = head - tail
+            if diff != 1 and diff != -1:
+                raise ValueError('Invalid arc')
+
+            if tail == 0 or tail == self.number_of_vertices() - 1:
+                return (head, tail)
+            
+            return ((tail - 1, head - 1) if diff == 1
+                    else (tail + 1, head + 1))
+        except TypeError:
+            num_arcs = self.number_of_arcs()
+            if arc < 0 or arc >= num_arcs:
+                raise ValueError('Invalid arc')
+
+            arc = arc + 2 if arc % 2 == 0 else arc - 2
+            if arc < 0:
+                arc += 1
+            elif arc >= num_arcs:
+                arc -= 1
+
+            return arc
