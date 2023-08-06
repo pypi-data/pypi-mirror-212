@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_palm/__init__.py
+autodistill_palm.egg-info/PKG-INFO
+autodistill_palm.egg-info/SOURCES.txt
+autodistill_palm.egg-info/dependency_links.txt
+autodistill_palm.egg-info/requires.txt
+autodistill_palm.egg-info/top_level.txt
