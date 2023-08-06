@@ -1,0 +1,14 @@
+flippers/__about__.py,sha256=kePS21OQOra0rbnRMszzLJFwGPH7nwLjBVLeP4P_38M,258
+flippers/__init__.py,sha256=hnzTdz6_AqIJknZjD4xqMiV4izlnppBkFbUW3lVzX50,429
+flippers/_typing.py,sha256=rJLFTm3VYzNQd7-eAezX0nLwnyIjfn1p9yI8SO973PA,159
+flippers/_core/__init__.py,sha256=jgwQ5ClP_JdzCEynJOCX6iHRB19AxEGngNXTQK0Wr-M,67
+flippers/_core/_core.py,sha256=V-ITuxopYnR7OU4QDcLP_hSUcEw8sYpn_3O0wIMTaYs,17843
+flippers/lfs/__init__.py,sha256=Z03eCDKbzcQ1aFqoGOzJ_ktx8LlbzSQXkKOy1tTFYQQ,89
+flippers/lfs/_lfs.py,sha256=alZaXOiv8rz_r99wI9W0iaCiooZbCn1-A5_WL-i1Jcc,2297
+flippers/models/__init__.py,sha256=_KOPH916ynlhgeX-jWYTijSH3s5kojSk_WWmPd9t0NI,188
+flippers/models/_base.py,sha256=qM4dgYBVA8Ymh7KBJXiosZa21Ti5kmNN3nRsZaUr1ZA,9253
+flippers/models/_snorkel.py,sha256=F0atsi1o26bmq2K07xegjCFSRGvVQdjDojEeMMM8f7s,9722
+flippers-0.0.1b4.dist-info/METADATA,sha256=NDGJ-dlNWQppY_Z1G2g2XWwulLHUZLoHIxs8UYNrpRw,3843
+flippers-0.0.1b4.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+flippers-0.0.1b4.dist-info/licenses/LICENSE,sha256=9O1aXKlcoZ-odewtcv9N-uQSvjNdvbLFStC52IyhzrI,11546
+flippers-0.0.1b4.dist-info/RECORD,,
