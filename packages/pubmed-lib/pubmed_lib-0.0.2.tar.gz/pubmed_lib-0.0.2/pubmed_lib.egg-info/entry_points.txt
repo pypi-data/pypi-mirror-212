@@ -1,0 +1,2 @@
+[nbdev]
+pubmed_lib = pubmed_lib._modidx:d
