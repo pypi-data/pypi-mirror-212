@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: docleaf
+Version: 0.1.0a2
+Requires-Dist: docutils>=0.12
+Requires-Dist: Sphinx>=4.0,<6,!=5.0.0
+License-File: LICENSE.md
+Summary: Integrate your doxygen-generated technical documentation into Sphinx
+Author: Michael Jones
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: repository, https://github.com/docleaf-labs/docleaf
+
+
+# Docleaf
+
+This is an exploratory project for what a new version of Breathe might look like if it is primarily written in Rust.
+This is to improve performance and reduce the memory usage.
+
+It is also an experiment in licensing as to make the project more sustainable the idea is to make it is source 
+available (rather than open source) and free for open source projects but to require a paid license for non-open source
+work.
+
+## Run
+
+Requires a Rust & Cargo installation.
+
+- https://www.rust-lang.org/tools/install
+
+And Poetry for Python package management.
+
+- https://python-poetry.org/docs/#installation
+
+```
+poetry install
+poetry shell
+maturin develop
+make -C documentation html
+firefox documentation/build/html/index.html
+```
+
+## License
+
+Licensed under the [Parity Public License](./LICENSE.md)
+
