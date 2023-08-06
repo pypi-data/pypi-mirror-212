@@ -1,0 +1,9 @@
+addereq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addereq/cleaning.cp38-win_amd64.pyd,sha256=CurSXo_kG6eajjLPgWjuwbJnB2LzPhTgAqb6HKfmTlk,47616
+addereq/fetching.cp38-win_amd64.pyd,sha256=vfZydltbtOifHTpaAC2B9-Ih0rrEX0A4PW4w09YLUqE,116736
+addereq/plotting.cp38-win_amd64.pyd,sha256=LJWPgaGzoaTCM3tS2tWslkwl10jU_QCfefqaE5jtPl4,154112
+addereq-1.0.1.dist-info/LICENSE,sha256=GbwYFqTaQxj0yeDFzsW2MdkgnxP-iQtNjdkhlBRqRt8,1084
+addereq-1.0.1.dist-info/METADATA,sha256=sh0Ap7cwWynHFdBwCV_8DZheG2pVA3bwx_9AC9aQO_U,864
+addereq-1.0.1.dist-info/WHEEL,sha256=F2aDWtWrilNM3-px1vBtJOEd7aRVTetQfFuDYmYbAUQ,100
+addereq-1.0.1.dist-info/top_level.txt,sha256=kTOP05dPDJJ_BcjbvtEfnk5o3vVaHkqY_JPbOoDhkUc,8
+addereq-1.0.1.dist-info/RECORD,,
