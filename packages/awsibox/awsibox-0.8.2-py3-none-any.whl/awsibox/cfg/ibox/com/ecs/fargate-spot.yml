@@ -1,0 +1,43 @@
+global:
+  Parameter:
+    - FargateSpot:
+        Description: 'Use Capacity Provider FARGATE_SPOT (Two services are created) - empty for default based on mapping'
+        AllowedValues: ['', 'yes', 'no']
+  Condition:
+    - FargateSpot:
+        And(
+          Condition('ECSTasksLaunchOnFargate'),
+          get_condition('', 'equals', 'yes', 'FargateSpot')
+        )
+    - FargateBase:
+        And(
+          Condition('ECSTasksLaunchOnFargate'),
+          get_condition('', 'equals', 'no', 'FargateSpot')
+        )
+  ApplicationAutoScalingScalableTarget:
+    - ECSService:
+        ResourceId:
+          If('FargateSpot',
+            get_subvalue('service/${1E}/${ECSServiceSpot.Name}', 'Cluster', 'ClusterStack'),
+            get_subvalue('service/${1E}/${Service.Name}', 'Cluster', 'ClusterStack')
+          )
+  CloudFormationCustomResource:
+    - FargateSpot:
+        Condition: FargateSpot
+        DependsOn: ECSServiceSpot
+        ServiceToken: get_expvalue("LambdaCCRFargateSpot")
+        ServiceArn: Ref("ECSServiceSpot")
+        ServiceBase: GetAtt("Service", "Name")
+        ServiceSpot: GetAtt("ECSServiceSpot", "Name")
+        Cluster: get_expvalue("Cluster", "ClusterStack")
+        ScalingPolicy: Ref("ApplicationAutoScalingScalingPolicyCpu")
+  ECSService:
+    - Spot:
+        IBOX_ENABLED: True
+        Condition: FargateSpot
+        DependsOn: Service
+        Tags:
+          - ServiceBase:
+              Key: IBOXFARGATESPOTServiceBase
+              Value: GetAtt('Service', 'Name')
+  FargateSpot: 'no'
