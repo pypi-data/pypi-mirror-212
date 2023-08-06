@@ -1,0 +1,10 @@
+COPYING
+COPYING.LESSER
+README.md
+setup.py
+solfinder/MCDM.py
+solfinder/__init__.py
+solfinder.egg-info/PKG-INFO
+solfinder.egg-info/SOURCES.txt
+solfinder.egg-info/dependency_links.txt
+solfinder.egg-info/top_level.txt
