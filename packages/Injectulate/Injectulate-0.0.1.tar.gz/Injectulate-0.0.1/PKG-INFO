@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Injectulate
+Version: 0.0.1
+Summary: Lightweight dependency injection container.
+Author-email: Henrik Hjalmarsson <henrik.hjalmarsson.lazy@gmail.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# injectulate
+
+Lightweight dependency injection framework relying on type annotation.
+

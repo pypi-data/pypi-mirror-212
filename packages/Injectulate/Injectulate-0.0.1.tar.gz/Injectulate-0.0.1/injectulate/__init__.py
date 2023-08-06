@@ -1,0 +1,2 @@
+"""Basic dependency injection implementation."""
+
