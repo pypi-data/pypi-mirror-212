@@ -1,0 +1,18 @@
+AUTHORS.rst
+LICENSE.rst
+README.rst
+setup.cfg
+setup.py
+pdfbox/__init__.py
+pdfbox/pdfbox-app-2.0.28.jar
+python_pdfbox_v2.egg-info/PKG-INFO
+python_pdfbox_v2.egg-info/SOURCES.txt
+python_pdfbox_v2.egg-info/dependency_links.txt
+python_pdfbox_v2.egg-info/requires.txt
+python_pdfbox_v2.egg-info/top_level.txt
+tests/test space.pdf
+tests/test.md
+tests/test.pdf
+tests/test2.pdf
+tests/test3.pdf
+tests/test_pdfbox.py
