@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: streamlit-chitchat
+Version: 0.1.1
+Summary: A simple Python project
+Home-page: https://github.com/k4144/streamlit-chitchat
+Author: k4144
+Author-email: 
+Project-URL: Bug Reports, https://github.com/k4144/streamlit-chitchat/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Source, https://github.com/k4144/streamlit-chitchat/
+Keywords: sample,setuptools,development
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+
+# A simple streamlit add-on
+
+![Python Logo](https://www.python.org/static/community_logos/python-logo.png "Sample inline image")
+this module allows you to display chat messages in streamlit, aligned right or left and displaying an avatar image of your choosing.
+
+example use:
+
+from streamlit_chitchat import message
+
+user=message('hello', is_user=True)
+user.write('sorry, I meant to say goodbye')
+
+[The source for this project is available here][src].
