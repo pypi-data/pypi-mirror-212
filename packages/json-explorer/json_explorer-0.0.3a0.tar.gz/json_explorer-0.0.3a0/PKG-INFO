@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: json-explorer
+Version: 0.0.3a0
+Summary: Explore the structure of a bunch of jsons
+Home-page: https://github.com/stringertheory/json-explorer
+Author: Mike Stringer
+Author-email: fmike.stringer.internet@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Documentation, https://stringertheory.github.io/json-explorer/
+Project-URL: Repository, https://github.com/stringertheory/json-explorer
+Description-Content-Type: text/markdown
+
+# json-explorer
+
+![Release](https://img.shields.io/github/v/release/stringertheory/json-explorer?include_prereleases)
+[![Build status](https://img.shields.io/github/actions/workflow/status/stringertheory/json-explorer/main.yml?branch=main)](https://github.com/stringertheory/json-explorer/actions/workflows/main.yml?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/stringertheory/json-explorer/branch/main/graph/badge.svg)](https://codecov.io/gh/stringertheory/json-explorer)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/stringertheory/json-explorer)](https://img.shields.io/github/commit-activity/m/stringertheory/json-explorer)
+[![License](https://img.shields.io/github/license/stringertheory/json-explorer)](https://img.shields.io/github/license/stringertheory/json-explorer)
+
+Explore the structure of a bunch of jsons
+
+- **Documentation** <https://stringertheory.github.io/json-explorer/>
+
+
