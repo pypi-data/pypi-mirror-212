@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+C:/Users/Administrator/Desktop/vt_ratio/utils.py
+C:/Users/Administrator/Desktop/vt_ratio/vt_client.py
+C:/Users/Administrator/Desktop/vt_ratio/vt_api_key/vt_api_key.py
+vt_ratio.egg-info/PKG-INFO
+vt_ratio.egg-info/SOURCES.txt
+vt_ratio.egg-info/dependency_links.txt
+vt_ratio.egg-info/requires.txt
+vt_ratio.egg-info/top_level.txt
