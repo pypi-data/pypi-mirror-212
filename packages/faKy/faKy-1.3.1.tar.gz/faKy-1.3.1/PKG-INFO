@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: faKy
+Version: 1.3.1
+Summary: Your library description
+Author: Sandro Barres Hamers
+Author-email: sbarreshamers@gmail.com
+Description-Content-Type: text/markdown
+Provides-Extra: vader
+
+# faKy
+
+This library provides functionality for analyzing text using various techniques and models. It includes functions for calculating readability scores, sentiment analysis using VADER, counting named entities, analyzing part-of-speech tags, and more.
+
+## Installation
+
+To use this library, you need to have the following dependencies installed:
+
+- pandas
+- numpy
+- sys
+- gzip
+- spacy
+- spacy-readability
+- nltk
+- vaderSentiment
+
+You can install the required dependencies using pip:
+

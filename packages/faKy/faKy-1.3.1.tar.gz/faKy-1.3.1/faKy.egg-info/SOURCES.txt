@@ -1,0 +1,14 @@
+README.md
+setup.py
+faKy/__init__.py
+faKy/faKy.py
+faKy.egg-info/PKG-INFO
+faKy.egg-info/SOURCES.txt
+faKy.egg-info/dependency_links.txt
+faKy.egg-info/requires.txt
+faKy.egg-info/top_level.txt
+faKy/en_core_web_md-2.3.1/MANIFEST.in
+faKy/en_core_web_md-2.3.1/PKG-INFO
+faKy/en_core_web_md-2.3.1/meta.json
+faKy/en_core_web_md-2.3.1/setup.cfg
+faKy/en_core_web_md-2.3.1/setup.py
