@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+hygiene_dm.egg-info/PKG-INFO
+hygiene_dm.egg-info/SOURCES.txt
+hygiene_dm.egg-info/dependency_links.txt
+hygiene_dm.egg-info/top_level.txt
