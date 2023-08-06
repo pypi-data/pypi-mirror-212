@@ -1,0 +1,12 @@
+BroadSword/BroadSword.py,sha256=QMISKSgzTQF_ta6lcURQtCaNLw8RrOq2OM0CYY12JZw,16981
+BroadSword/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+BroadSword/libmatrices.so,sha256=xtWeHOVmbdHLEFDM0Rc6YS9BfOFTQMbhnCM2Kr52cTY,20496
+BroadSword/libmatrices_ARM64.dylib,sha256=iltE5RUsjwVgA0NGmzmgiporTMtQR8zlMmOBneZcESk,33572
+BroadSword/libmatrices_x86_64.dylib,sha256=I1UGm2YkJtISuYZWZTAPFmX5G8AQXIWcsEKsqMMlAwM,33152
+BroadSword/matrices.c,sha256=3iyuNIA8Hn-8SS3P-6SD9GJYZqOO31L14WG544z3CM0,6495
+BroadSword-0.0.10.dist-info/LICENSE,sha256=W8gc-0ikBm1B6D7_iAPYrbxF6g9wi5c99etvK9owOfo,1068
+BroadSword-0.0.10.dist-info/METADATA,sha256=z2RuGXBA3xQMjOl9Lc8wftVAjAt6NMNYDbk4--YTJX0,2808
+BroadSword-0.0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+BroadSword-0.0.10.dist-info/top_level.txt,sha256=1CYr8Ktix8KE3NfaMyL-NUeFLgGeR1d94OZhWOf7EvA,11
+BroadSword-0.0.10.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+BroadSword-0.0.10.dist-info/RECORD,,
