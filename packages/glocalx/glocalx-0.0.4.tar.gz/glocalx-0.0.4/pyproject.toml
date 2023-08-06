@@ -1,0 +1,35 @@
+[build-system]
+requires = [
+    "hatchling"
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "glocalx"
+version = "0.0.4"
+authors = [
+  { name="Mattia Setzu", email="mattia.setzu@di.unipi.it" },
+]
+description = "Generating global explanations from local ones."
+readme = "README.md"
+requires-python = ">=3.8, <3.10"
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers"
+]
+dependencies = [
+    "click==7.1.2",
+    "logzero==1.6.2",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "scipy==1.5.4",
+    "tensorflow==2.5.0",
+]
+
+[project.urls]
+	"Homepage" = "https://github.com/msetzu/glocalx"
+	"Bug Tracker" = "https://github.com/msetzu/glocalx/issues"
