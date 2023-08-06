@@ -1,0 +1,13 @@
+chatglmclient/__init__.py,sha256=P6ZoHBtXWHUQhKxjz64ray-hNivOXtjBgd2BeMib5K4,106
+chatglmclient/chatglm_client.py,sha256=9j0kvcrgJOSJQbGEFXFX7RPaw3hocXjJAO6UOqQF974,1479
+chatglmclient/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatglmclient/tests/test_base.py,sha256=WAv-1BCpKBsXvpFM_8VfL43gu-4V3D4QpALTkokQpF0,183
+chatglmclient/tests/feature/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatglmclient/tests/script/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatglmclient/tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatglmclient/tests/unit/client_test.py,sha256=TA4U0eNJ-UkU6rlEojjkMMAqGFLLJA6BqXhJwiDvmUE,1039
+chatglmclient-0.1.0.dist-info/LICENSE,sha256=S_L4x0s0BaBkWEDQkLJd0FKKvuGBxudTNsargGjA-U8,1164
+chatglmclient-0.1.0.dist-info/METADATA,sha256=ltlGVGUyTshqYOnGXk7YOk4Uy5vZeN03kVRlu8lFnVA,1385
+chatglmclient-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chatglmclient-0.1.0.dist-info/top_level.txt,sha256=WuC8k8eHYLBhJsu9H02E9jmYQg636o9GrtNNOu-gPzE,14
+chatglmclient-0.1.0.dist-info/RECORD,,
