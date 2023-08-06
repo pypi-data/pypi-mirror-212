@@ -1,0 +1,34 @@
+[console_scripts]
+git-theta = git_theta.scripts.git_theta:main
+git-theta-diff = git_theta.scripts.git_theta_diff:main
+git-theta-filter = git_theta.scripts.git_theta_filter:main
+git-theta-merge = git_theta.scripts.git_theta_merge:main
+
+[git_theta.plugins.checkpoints]
+flax = git_theta.checkpoints.flax_checkpoint:FlaxCheckpoint
+flax-checkpoint = git_theta.checkpoints.flax_checkpoint:FlaxCheckpoint
+pickled-dict = git_theta.checkpoints.pickled_dict_checkpoint:PickledDictCheckpoint
+pytorch = git_theta.checkpoints.pickled_dict_checkpoint:PickledDictCheckpoint
+safetensors = git_theta.checkpoints.safetensors_checkpoint:SafeTensorsCheckpoint
+safetensors-checkpoint = git_theta.checkpoints.safetensors_checkpoint:SafeTensorsCheckpoint
+tensorflow = git_theta.checkpoints.tensorflow_checkpoint:TensorFlowCheckpoint
+tensorflow-checkpoint = git_theta.checkpoints.tensorflow_checkpoint:TensorFlowCheckpoint
+tensorflow-savedmodel = git_theta.checkpoints.tensorflow_checkpoint:TensorFlowSavedModel
+tf = git_theta.checkpoints.tensorflow_checkpoint:TensorFlowCheckpoint
+tf-savedmodel = git_theta.checkpoints.tensorflow_checkpoint:TensorFlowSavedModel
+
+[git_theta.plugins.merges]
+average-all = git_theta.merges.average:AverageAll
+average-ours-original = git_theta.merges.average:AverageOursOriginal
+average-ours-theirs = git_theta.merges.average:Average
+average-theirs-original = git_theta.merges.average:AverageTheirsOriginal
+context = git_theta.merges.context:Context
+take_original = git_theta.merges.take:TakeOriginal
+take_them = git_theta.merges.take:TakeThem
+take_us = git_theta.merges.take:TakeUs
+
+[git_theta.plugins.updates]
+dense = git_theta.updates.dense:DenseUpdate
+ia3 = git_theta.updates.ia3:IA3Update
+low-rank = git_theta.updates.low_rank:LowRankUpdate
+sparse = git_theta.updates.sparse:SparseUpdate
