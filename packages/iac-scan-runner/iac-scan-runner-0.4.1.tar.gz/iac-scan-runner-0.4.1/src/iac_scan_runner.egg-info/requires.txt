@@ -1,0 +1,9 @@
+typer
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+content-size-limit-asgi
+PyYAML
+pymongo==4.2.0
+schedule==1.1.0
