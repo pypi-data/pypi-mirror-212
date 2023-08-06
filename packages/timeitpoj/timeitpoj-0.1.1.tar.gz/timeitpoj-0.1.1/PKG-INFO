@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: timeitpoj
+Version: 0.1.1
+Summary: 
+Author: Jari Van Melckebeke
+Author-email: jarivanmelckebeke@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Python Timeit
+
+yet another random library for measuring python performance
+
+## Usage in production
+
+if you do not need to measure performance of your code in a production environment, simply set the environment
+variable `TIME_IT` to`false`
+
