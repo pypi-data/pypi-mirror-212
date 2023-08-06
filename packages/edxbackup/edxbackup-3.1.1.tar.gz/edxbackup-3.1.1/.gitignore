@@ -1,0 +1,12 @@
+dumps
+__pycache__
+*.pyc
+*.egg-info
+.vscode
+build-image
+
+.direnv
+
+# Devenv
+.devenv*
+devenv.local.nix
