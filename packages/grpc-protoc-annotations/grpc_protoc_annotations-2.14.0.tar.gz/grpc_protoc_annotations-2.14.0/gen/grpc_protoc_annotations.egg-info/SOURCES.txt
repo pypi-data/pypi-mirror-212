@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+gen/grpc_protoc_annotations.egg-info/PKG-INFO
+gen/grpc_protoc_annotations.egg-info/SOURCES.txt
+gen/grpc_protoc_annotations.egg-info/dependency_links.txt
+gen/grpc_protoc_annotations.egg-info/requires.txt
+gen/grpc_protoc_annotations.egg-info/top_level.txt
+gen/protoc_gen_openapiv2/options/__init__.py
+gen/protoc_gen_openapiv2/options/annotations_pb2.py
+gen/protoc_gen_openapiv2/options/openapiv2_pb2.py
