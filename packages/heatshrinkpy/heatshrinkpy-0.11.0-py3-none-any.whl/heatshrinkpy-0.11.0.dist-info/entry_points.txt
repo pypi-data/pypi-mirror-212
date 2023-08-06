@@ -1,0 +1,3 @@
+[console_scripts]
+heatshrinkpy=heatshrinkpy:_main
+
