@@ -1,0 +1,10 @@
+numpy
+pandas
+seaborn
+scipy
+tables
+tdt
+xlsxwriter
+
+[:python_version < "3.8"]
+importlib_metadata
