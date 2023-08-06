@@ -1,0 +1,9 @@
+aws_solutions_constructs/aws_wafwebacl_cloudfront/__init__.py,sha256=IqLM8UoF3sROOOe-FpI4KGk3uFg3ISLD1SkhBSdEvjM,13877
+aws_solutions_constructs/aws_wafwebacl_cloudfront/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_solutions_constructs/aws_wafwebacl_cloudfront/_jsii/__init__.py,sha256=HcrPftoFuhf2OOBCugjry1YZfad-4Gclh7EEMfwxMVo,499
+aws_solutions_constructs/aws_wafwebacl_cloudfront/_jsii/aws-wafwebacl-cloudfront@2.41.0.jsii.tgz,sha256=t0iMTd56ra8hUnhODwPLT2Dy4OTjtsOn6a0_D1ZnPXI,220530
+aws_solutions_constructs.aws_wafwebacl_cloudfront-2.41.0.dist-info/LICENSE,sha256=wnT4A3LZDAEpNzcPDh8VCH0i4wjvmLJ86l3A0tCINmw,10279
+aws_solutions_constructs.aws_wafwebacl_cloudfront-2.41.0.dist-info/METADATA,sha256=x_l60y-AleH9sZcBTiREgjUN5DtQDQfiW8nept9N6qU,7112
+aws_solutions_constructs.aws_wafwebacl_cloudfront-2.41.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aws_solutions_constructs.aws_wafwebacl_cloudfront-2.41.0.dist-info/top_level.txt,sha256=hi3us_KW7V1ocfOqVsNq1o3w552jCEgu_KsCckqYWsg,25
+aws_solutions_constructs.aws_wafwebacl_cloudfront-2.41.0.dist-info/RECORD,,
