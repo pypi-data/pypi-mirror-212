@@ -1,0 +1,6 @@
+[console_scripts]
+lopauth=lop_codeingame_cli.command.lopauth:run
+lopdownload=lop_codeingame_cli.command.lopdownload:run
+lopgenerate=lop_codeingame_cli.command.lopgenerate:run
+lopsubmit=lop_codeingame_cli.command.lopsubmit:run
+
