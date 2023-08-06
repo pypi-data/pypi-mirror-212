@@ -1,0 +1,6 @@
+tqdm
+numpy
+
+[full]
+geomdl
+pyvista>=0.28.0
