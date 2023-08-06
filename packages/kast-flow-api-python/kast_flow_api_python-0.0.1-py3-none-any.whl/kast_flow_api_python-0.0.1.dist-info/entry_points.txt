@@ -1,0 +1,3 @@
+[console_scripts]
+kast-flow=kast_flow.main:run
+
