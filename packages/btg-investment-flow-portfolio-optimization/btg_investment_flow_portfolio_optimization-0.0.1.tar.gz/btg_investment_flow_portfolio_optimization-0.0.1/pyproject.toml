@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "btg_investment_flow_portfolio_optimization"
+version = "0.0.1"
+description = ""
+authors = ["NG.CASH"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^2.0"
+pytest = "^6.2"
+pytest-cov = "4.0.0"
+boto3 = "1.26.135"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
