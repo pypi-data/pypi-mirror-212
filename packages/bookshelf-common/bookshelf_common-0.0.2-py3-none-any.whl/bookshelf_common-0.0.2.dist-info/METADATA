@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bookshelf-common
+Version: 0.0.2
+Summary: Share common code for bookshelf
+Home-page: https://github.com/mmuric/bookshelf-common
+Author: Marko Muric
+Author-email: <atis.443@gmail.com>
+License: MIT
+Project-URL: Bug Tracker, https://github.com/mmuric/bookshelf-common/issues
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This package will share some of the common code that we use for implementation of  bookshelf micro services.
