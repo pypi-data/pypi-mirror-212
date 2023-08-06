@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/jepop/__init__.py
+src/jepop/jepop.py
+src/jepop/juniper_encap.py
+src/jepop/juniper_ethernet.py
+src/jepop.egg-info/PKG-INFO
+src/jepop.egg-info/SOURCES.txt
+src/jepop.egg-info/dependency_links.txt
+src/jepop.egg-info/entry_points.txt
+src/jepop.egg-info/requires.txt
+src/jepop.egg-info/top_level.txt
