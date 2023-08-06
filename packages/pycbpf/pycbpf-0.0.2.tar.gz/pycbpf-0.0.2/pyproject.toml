@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycbpf"
+version = "0.0.2"
+authors = [
+  { name="junka", email="wan.junjie@foxmail.com" },
+]
+description = "convert cbpf code to C for BCC"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]
+dependencies = [
+    "libpcap",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/junka/pycbpf"
+"Bug Tracker" = "https://github.com/junka/pycbpf/issues"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+addopts = "--verbose"
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = '''missing-function-docstring,
+        missing-module-docstring,
+'''
