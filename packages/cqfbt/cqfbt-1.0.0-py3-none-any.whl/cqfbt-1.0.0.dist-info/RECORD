@@ -1,0 +1,7 @@
+cqfbt/__init__.py,sha256=crlYURA_2Ujkpz7iVPHovvxZRtvt4QBXF5AAFJzRfz0,23
+cqfbt/backtester.py,sha256=IZsR1IZB5jkNQBPaDnjb041iPwdPw12u_mSWtZNW3TI,46237
+cqfbt/strategy.py,sha256=6CvF90n1GbrsNMJJXwSlG0DSTh6Bswhr6nKcb7NoCFY,779
+cqfbt-1.0.0.dist-info/LICENSE.md,sha256=E0h1eVcyF07JyT9ZiFowZmUKRY59tQTO6FvaQwdKdww,1098
+cqfbt-1.0.0.dist-info/METADATA,sha256=HmFK5KYMFFEmEtd706tS6G_0faMFbSXTCqjJXh7xYsc,2721
+cqfbt-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+cqfbt-1.0.0.dist-info/RECORD,,
