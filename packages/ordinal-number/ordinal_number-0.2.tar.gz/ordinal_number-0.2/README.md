@@ -1,0 +1,62 @@
+This package is for ordinal numbers. Ordered numbers are a concept from set theory that extends the natural numbers to compare the "length" of aligned sets. This library implements ordered numbers: sum, difference (left-hand inverse), product, quotient (left-hand inverse), truncation, division, remainder, comparison of sizes, square root, etc. If I have enough power, I will also create "log", "n-square root" and "factorial". If requested, I will make others. (my Email:alphagameplayerpro$gmail.com (please replace $ to @))
+And,
+```
+omega = ordinal_number.OMEGA
+```
+at the beginning of the program. That way, it is intuitive and the output of repr() can be executed as is.
+
+
+References
+http://www.behounek.online/logic/papers/ordcalc/index.html
+https://proofwiki.org/wiki/Division_Theorem_for_Ordinals#Existence_of_%7F'%22%60UNIQ-MathJax-9-QINU%60%22'%7F_and_%7F'%22%60UNIQ- MathJax-10-QINU%60%22'%7F
+https://manabitimes.jp/math/1318 (Japanese site)
+
+examples
+
+improt ordinal-number as ord
+
+omega = ord.OMEGA
+
+#__add__
+omega+1+omega+omega+1
+#>>> omega*2+1
+
+#__sub__  A-B := (X such that B+X=A) if not exists, return None
+(omrga**2*2+omega*2+1)-omega**2
+#>>> omega**2+omega*2+1
+(omega*2+1)-omega**2
+#>>> None
+
+#__mul__
+(omega+1)*(omega+1)
+#>>> omega**2+omega+1
+
+#__truediv__  A/B := (X such that B*X=A) if not exists, return None
+(omega**2+omega+1)/(omega+1)
+#>>> omega+1
+(omega**2+omega+1)/omega
+#>>> None
+
+#__floordiv__  A//B := (X such that B*X+Y=A ,0<=Y<B)
+(omega**2+omega+1)//(omega+1)
+#>>> omega+1
+(omega**2+omega+1)//omega
+#>>> omega+1
+
+#__truediv__  A%B := (Y such that B*X+Y=A ,0<=Y<B)
+(omega**2+omega+1)%(omega+1)
+#>>> 0
+(omega**2+omega+1)%omega
+#>>> 1
+
+#__pow__
+(omega+1)**2
+#>>> omega**2+omega+1
+2**omega
+#>>> omega
+omega**2
+#>>> omega
+
+#sqrt(self)
+(omega**2+omega+1).sqrt()
+#>>> omega+1
