@@ -1,0 +1,95 @@
+[tool.poetry]
+name = "psychoanalyze"
+version = "0.2.1"
+description = "A Pythonic analysis package for psychophysics data"
+authors = ["Ty Schlichenmeyer <t.schlic@wustl.edu>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.3"
+pandas = "^1.4.2"
+black = "^23.3.0"
+datatest = "^0.11.1"
+pytest = "^7.2.2"
+scipy = "^1.8.0"
+numpy = "^1.23.4"
+mkdocstrings = "^0.18.1"
+plotly = "^5.14.1"
+dash-bootstrap-components = "^1.4.1"
+pytest-sugar = "^0.9.6"
+pytest-mock = "^3.7.0"
+statsmodels = "^0.13.2"
+mypy = "^1.2.0"
+hypothesis = "^6.70.0"
+bandit = "^1.7.4"
+safety = "^2.0.0"
+mkdocs-material = "^8.3.9"
+tabulate = "^0.8.10"
+pandera = {extras = ["mypy"], version = "^0.14.5"}
+pre-commit = "^2.20.0"
+dash-daq = "^0.5.0"
+pandas-stubs = "^1.5.3.230321"
+cmdstanpy = "^1.0.8"
+dbt-core = "^1.5.1"
+dash = "^2.10.2"
+dbt-duckdb = "^1.5.1"
+ydata-profiling = "^4.1.2"
+nbformat = "^5.8.0"
+gunicorn = "^20.1.0"
+shandy-sqlfmt = {extras = ["jinjafmt"], version = "^0.18.0"}
+scikit-learn = "^1.2.2"
+ipywidgets = "^8.0.6"
+conda-lock = "^2.0.0"
+bambi = "^0.11.0"
+python-semantic-release = "7.28.1"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^2.20.0"
+ipykernel = "^6.22.0"
+
+
+[tool.poetry.group.ci.dependencies]
+ruff = "^0.0.261"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = [
+    "psychoanalyze/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "main"
+build_command = "poetry build"
+major_on_zero = true
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::FutureWarning"
+]
+
+[tool.bandit]
+targets = ["psychoanalyze/"]
+skips = ["B311"]
+
+[tool.mypy]
+exclude = [
+    'tests',
+]
+
+[[tool.mypy.overrides]]
+module = [
+    'dash',
+    'plotly',
+    'dash_bootstrap_components',
+    'plotly.express',
+    'scipy.stats',
+    'scipy.special',
+    'sklearn.linear_model',
+    'dash_daq',
+    'datatest'
+]
+ignore_missing_imports = true
