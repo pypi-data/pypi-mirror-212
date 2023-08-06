@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sqbased"
+version = "0.1.0"
+description = ""
+authors = ["redthing1 <redthing1@alt.icu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+typer = "^0.9.0"
+sh = "^2.0.4"
+minlog = "^0.1.0"
+humanfriendly = "^10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+sqbased = "sqbased.__main__:main"
