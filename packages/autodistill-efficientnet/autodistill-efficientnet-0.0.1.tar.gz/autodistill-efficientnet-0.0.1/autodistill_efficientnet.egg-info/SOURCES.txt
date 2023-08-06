@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_efficientnet/__init__.py
+autodistill_efficientnet.egg-info/PKG-INFO
+autodistill_efficientnet.egg-info/SOURCES.txt
+autodistill_efficientnet.egg-info/dependency_links.txt
+autodistill_efficientnet.egg-info/requires.txt
+autodistill_efficientnet.egg-info/top_level.txt
