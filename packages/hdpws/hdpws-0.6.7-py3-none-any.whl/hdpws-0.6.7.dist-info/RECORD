@@ -1,0 +1,11 @@
+hdpws/__init__.py,sha256=DUA0AVVmPQHoQ1Ff1iYvIjrT0PwiqYnMUJfvhnNbfMA,2048
+hdpws/__main__.py,sha256=D3EdVEzHggZ827WCAEVr92h9EBDN2AIQA1u1_bKuWeI,13440
+hdpws/dateinterval.py,sha256=OwFRQUbTMyzR1R7T5gSKT2st4PbLWAwOtcsP7_PqQys,4901
+hdpws/hdpws.py,sha256=Oyq0Vig-KFuGNjI9VnOc5akiHl4CV7IpDI1lBfemSuU,32132
+hdpws/resourcetype.py,sha256=V3ge09mdFfN7tOl6txk9nF_dPr04L7ReoV7WoL0IneE,1745
+hdpws/spase.py,sha256=6lBZ_ezyZmiN2Pfs5d1cI9k8016fcvJWgMBYq7fkqOw,14038
+hdpws-0.6.7.dist-info/LICENSE,sha256=9VDxMcDDn3_T-sDQTMPxmiPZBDkPIiTO4OzYK5olDmk,12589
+hdpws-0.6.7.dist-info/METADATA,sha256=Lv6lZ-AaHjBE8wN4NaRG_o74QZuIXhiqcjPfR5-3vdY,3562
+hdpws-0.6.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hdpws-0.6.7.dist-info/top_level.txt,sha256=BTo-2sxU1YuKAD5Ykfc8bNQvgVX486A74voiQxV4NiQ,6
+hdpws-0.6.7.dist-info/RECORD,,
