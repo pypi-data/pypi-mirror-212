@@ -1,0 +1,22 @@
+
+# Colors
+## Add colors to the static WOrLd!
+
+
+colors module is made to colorize the output of terminal when the code runs on command line, With that there are functions for adding basic text colors (Total 10 including invsisble) and or text formats such as Bold, Italics, Underline, Light or Strikethrough to your code.
+
+But wait there is more! use background colors, filled Variants which can be accessed by calling thier specific name and 'bg' postfix as in background for example:
+colors.cyanbg()
+
+* Each color can be accessed by calling thier particular name and the first letter of the format at the postfix.
+
+* For example:Call clr.redB() for red color with text format Bold, S for strikethrough D for Default U for Underline I for Italics L is for special lighter color substitute for each color.
+
+
+* There are also filled color variants in which the font color and the background color match each other making them viable for specific type of color operations. 
+
+* There is a special function called reset() which is basically the default white so that the color function gets reset it is recommended to use this function after every usage of a color to mantain the color of the terminal.
+* PS if you want to create blocks of colors for decoration purposes use filled variants e.g. clr.whitefilled() 
+
+Explore & stay Creative 😉
+### by> Idris vohra

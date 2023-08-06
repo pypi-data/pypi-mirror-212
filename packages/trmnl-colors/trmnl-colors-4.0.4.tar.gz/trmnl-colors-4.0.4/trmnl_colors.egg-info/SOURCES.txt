@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+trmnl-colors/__init__.py
+trmnl_colors.egg-info/PKG-INFO
+trmnl_colors.egg-info/SOURCES.txt
+trmnl_colors.egg-info/dependency_links.txt
+trmnl_colors.egg-info/top_level.txt
