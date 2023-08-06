@@ -1,0 +1,11 @@
+google_csv_helper/__init__.py,sha256=yvScWpUsvvTZKk147C3IZgFJikkODum8P-Z4xqkW05k,48
+google_csv_helper/adsense_csv_helper.py,sha256=AfNurW7QEzfFl_jd-JMII6uZE7R-SqwRKrODhfNc1Qw,8014
+google_csv_helper/cmd.py,sha256=ulwCU5lM1vr3mBnR1Ss7EAnfHoSrkaeUM3rrg1MyFWw,2552
+google_csv_helper/csv_common.py,sha256=XvP2lctarnZvFk5c08o3QyMOfP3X86FrWHC4IfHP5Es,2885
+google_csv_helper/csv_helper.py,sha256=NyN9ZFu26uLoLq7xtBCZ001zVmzhXFJhWq7auUCN3r8,12644
+google_csv_helper-1.0.5.dist-info/LICENSE,sha256=P1tdyAEKah-ionMUeHlehtI90mYpj4Y0sX1P73vF-Z0,1070
+google_csv_helper-1.0.5.dist-info/METADATA,sha256=YUfqRgvh3RH-7rplmZ7X4FWNDAG5t-bPeA8bhPqa9mc,4302
+google_csv_helper-1.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+google_csv_helper-1.0.5.dist-info/entry_points.txt,sha256=FVgVWW5zIKYhRF39uhaGT91SzsRMMlX2gai-Ey3i4is,65
+google_csv_helper-1.0.5.dist-info/top_level.txt,sha256=lqqHaAtJ-ElPKk0WD3BfUbkdbGKojKNbl1hpHZSWMfw,18
+google_csv_helper-1.0.5.dist-info/RECORD,,
