@@ -1,0 +1,11 @@
+MANIFEST.in
+pyproject.toml
+setup.cfg
+dist/mypackagelicenseprototype.egg-info/PKG-INFO
+dist/mypackagelicenseprototype.egg-info/SOURCES.txt
+dist/mypackagelicenseprototype.egg-info/dependency_links.txt
+dist/mypackagelicenseprototype.egg-info/top_level.txt
+dist/parent/PackageContent.py
+dist/parent/__init__.py
+dist/parent/pyarmor_runtime_000000/__init__.py
+dist/parent/pyarmor_runtime_000000/pyarmor_runtime.pyd
