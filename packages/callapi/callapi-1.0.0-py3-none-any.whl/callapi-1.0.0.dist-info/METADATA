@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: callapi
+Version: 1.0.0
+Summary: A Python module for making API calls to the CallAPI service.
+Home-page: https://github.com/abhashbhai17/callapi
+Author: Abhash
+Author-email: abhashsaha2008@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
