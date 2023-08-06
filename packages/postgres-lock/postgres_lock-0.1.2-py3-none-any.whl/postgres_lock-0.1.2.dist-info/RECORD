@@ -1,0 +1,11 @@
+postgres_lock/__init__.py,sha256=hQ8rXDs6WsOtbqFI--h6QZ2M5oBpm8qjvyXIz2JOK-A,341
+postgres_lock/asyncpg.py,sha256=euWEFd7ox076-vyFNUT5_rAaUQDWkP8O6xbmjr9ufQk,2443
+postgres_lock/errors.py,sha256=TdYiq09RCmO33LKDE-PdDDConwma6RkMjl0eXxbLfV0,589
+postgres_lock/lock.py,sha256=xD4RAmkRGu0EGqiItxEL6Alt2dZKPyN0E3LN-2Qchuw,9627
+postgres_lock/psycopg2.py,sha256=KbuupgQhjQn9uBYLq96lpFZkVjvPOS_ot5CJc-KfIbE,2575
+postgres_lock/psycopg3.py,sha256=6UHx6DXIzs3RyjLs--wZoh81CW0s86O23TiGHxeeRDY,2993
+postgres_lock/sqlalchemy.py,sha256=3UEcx4BF_owX6yiQgmFNIoWHuqN2Fcq7k7ilvcUyF7U,2813
+postgres_lock-0.1.2.dist-info/LICENSE,sha256=8gJcKmTJTfpfX3PliGTO28e1LGg7O88gaDikkIFAd1E,1496
+postgres_lock-0.1.2.dist-info/METADATA,sha256=5p1JTkQbgowRy-82uK1yaECOiRPFFtIrBo6xE_D6yPc,4544
+postgres_lock-0.1.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+postgres_lock-0.1.2.dist-info/RECORD,,
