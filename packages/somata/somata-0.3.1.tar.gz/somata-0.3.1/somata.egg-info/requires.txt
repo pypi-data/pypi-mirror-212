@@ -1,0 +1,9 @@
+numpy>=1.22
+colorcet
+joblib
+kneed
+matplotlib
+scipy
+tqdm
+spectrum
+codetiming
