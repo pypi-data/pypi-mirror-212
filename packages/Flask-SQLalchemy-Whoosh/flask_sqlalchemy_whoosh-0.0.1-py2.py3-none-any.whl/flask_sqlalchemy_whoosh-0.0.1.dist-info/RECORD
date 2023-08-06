@@ -1,0 +1,7 @@
+flask_sqlalchemy_whoosh/__init__.py,sha256=g0DJEPRwSeBbZCReB3VdBKP9ooy7v4gmHELkka-w7ic,29
+flask_sqlalchemy_whoosh/mixin.py,sha256=i0ho9zONEv-d2mff0r-uFfM5s8Op03u1ocoKy79dDFE,2069
+flask_sqlalchemy_whoosh/searcher.py,sha256=4MjND0eCLKN3lTRbBmGQHq05zCrXtlF4y4zsK1fvPac,1911
+flask_sqlalchemy_whoosh-0.0.1.dist-info/METADATA,sha256=ej4ZtwfyEQ8miEoKn8VqSSHmj3G00ZmkrZuRxNY9RFg,630
+flask_sqlalchemy_whoosh-0.0.1.dist-info/WHEEL,sha256=z6xSPN0Mo_h_NAjjk0VNneWjIiXMjAF_l8uGkjgc2-A,105
+flask_sqlalchemy_whoosh-0.0.1.dist-info/licenses/LICENSE,sha256=Q_XJQNkG5DkIHzKdp66jJdZRgpj0d97g3pYaFwCySII,1086
+flask_sqlalchemy_whoosh-0.0.1.dist-info/RECORD,,
