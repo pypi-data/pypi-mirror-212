@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: findex
+Version: 4.0.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: cffi
+Summary: Cosmian Findex Cloudproof library
+Author: Théophile Brézot<theophile.brezot@cosmian.com>
+Author-email: Théophile Brézot<theophile.brezot@cosmian.com>
+License: MIT/Apache-2.0
+Requires-Python: >=3.7
