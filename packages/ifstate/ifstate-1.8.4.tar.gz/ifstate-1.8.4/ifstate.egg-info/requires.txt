@@ -1,0 +1,9 @@
+jsonschema
+pyroute2
+pyyaml
+
+[shell]
+pygments
+
+[wireguard]
+wgnlpy
