@@ -1,0 +1,13 @@
+example/__init__.py,sha256=Y5TpNWqX8HI7KZDfI1bUfQrnccBQDS-zzo5yN8mPC2E,59
+example/example.py,sha256=Po3dFTfG8CYknJDwD81lyHgeyajZrONTE5fxKhXk57Y,1126
+name_conversion/__init__.py,sha256=Y5TpNWqX8HI7KZDfI1bUfQrnccBQDS-zzo5yN8mPC2E,59
+name_conversion/converter.py,sha256=dKCQt1Xje8hOIMl_ROhIiAb0-3tuvlweUfkbkQpPX8o,5631
+name_conversion/enums.py,sha256=ge2FMAKxd-MI7mjjZL18YURV5s8xOg7eXKbYHUlG-c8,765
+name_conversion/rules/rules.json,sha256=ogWNUBVLF699PRathGQq4JTwxX786Au2aNKnUmEOPV4,17628
+tests/__init__.py,sha256=Y5TpNWqX8HI7KZDfI1bUfQrnccBQDS-zzo5yN8mPC2E,59
+tests/simple.py,sha256=UMDSuEvoge3GPJFqipvwg0rg_QMzbtEFZz9IuPz65nk,1074
+Name_conversion-3.0.0.dist-info/LICENSE,sha256=INj14OnAToH8usY8_LumqeFA8pBpMdD8LpCKlxK3njM,1117
+Name_conversion-3.0.0.dist-info/METADATA,sha256=fUe1bM2ULCRpR1Zd2wDDiWyNjDkjdUZ45VJGbIo-3B8,696
+Name_conversion-3.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Name_conversion-3.0.0.dist-info/top_level.txt,sha256=ftxHQjFzv72PvLoakVS2bl33XfYYRmcwq6aUwLaBu9k,30
+Name_conversion-3.0.0.dist-info/RECORD,,
