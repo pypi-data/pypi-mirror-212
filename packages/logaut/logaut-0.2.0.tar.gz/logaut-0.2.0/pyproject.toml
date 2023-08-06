@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "logaut"
+version = "0.2.0"
+description = "From logic to automata."
+authors = ["Marco Favorito <marco.favorito@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+homepage = "https://marcofavorito.me/logaut"
+repository = "https://github.com/whitemech/logaut.git"
+documentation = "https://marcofavorito.me/logaut"
+keywords = []
+classifiers = [
+    'Development Status :: 2 - Pre-Alpha',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+]
+#packages = []
+include = []
+
+
+#[tool.poetry.scripts]
+#script_name = 'path/to/script'
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/whitemech/logaut/issues"
+"Pull Requests" = "https://github.com/whitemech/logaut/pulls"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pylogics = "^0.2.1"
+pythomata = "^0.3.2"
+
+
+[tool.poetry.group.dev.dependencies]
+bandit = "^1.7.5"
+black = "^23.3.0"
+codecov = "^2.1.13"
+flake8 = "^5.0.4"
+flake8-bugbear = "^23.3.12"
+flake8-docstrings = "^1.7.0"
+flake8-eradicate = "^1.5.0"
+flake8-isort = "^6.0.0"
+hypothesis = "^6.76.0"
+hypothesis-pytest = "^0.19.0"
+ipython = "^7.18.1"
+isort = "^5.12.0"
+jupyter = "^1.0.0"
+ltlf2dfa = "^1.0.2"
+markdown = "^3.3.0"
+markdown-include = "^0.8.1"
+mkdocs = "^1.4.3"
+mkdocs-material = "^9.1.15"
+mknotebooks = "^0.7.1"
+mypy = "^1.3.0"
+pylint = "^2.17.4"
+pymdown-extensions = "^10.0.1"
+pytest = "^7.3.1"
+pytest-cov = "^4.1.0"
+pytest-randomly = "^3.12.0"
+safety = "^2.4.0b1"
+tox = "^4.4.12"
+twine = "^4.0.2"
+vulture = "^2.7"
+
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
