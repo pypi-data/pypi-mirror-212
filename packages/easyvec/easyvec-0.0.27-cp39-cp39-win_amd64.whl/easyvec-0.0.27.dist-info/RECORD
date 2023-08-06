@@ -1,0 +1,15 @@
+easyvec/__init__.py,sha256=gnq4JhqQvOp7edhS-YTkhkAT_gRL5ubUMEai0C3csJs,129
+easyvec/geometry.cp39-win_amd64.pyd,sha256=84E4zK5PazdOM5MRmCjImyoiCf0gDlRULbJwSGoKqgk,331776
+easyvec/geometry.pxd,sha256=MEKgt3tg8ebV8fDDzYGT09csSad2M0Fx0cholYidWJI,3508
+easyvec/geometry.pyx,sha256=KzMQLCixRsHXpPoF7ho3BSS8ozXFdrZ6ogAym_xc9Uk,59496
+easyvec/matrixes.cp39-win_amd64.pyd,sha256=Fn1NyZotjhRwMW-MI4p6NDirysadmC1gbn-hfTK9A7o,334848
+easyvec/matrixes.pxd,sha256=V1YZw6-diVCqVdYSQl41Fq9D3U7bNFNsRJr71ixvg9U,4439
+easyvec/matrixes.pyx,sha256=LXhOPc34Y9ihNtoSWEs0jL7Yhd0-2dVDadzcotjKYQY,61561
+easyvec/vectors.cp39-win_amd64.pyd,sha256=uFjzjF9TjXZlqd5J3jXtOnTt5EbJCEftE6ILU5BE4JM,910848
+easyvec/vectors.pxd,sha256=SLebUNjEhIie3ddJ7HNrF3RK7ZKy916xHnfMug3TdV4,10416
+easyvec/vectors.pyx,sha256=lZjq2Ru2sR6PHVOW43UUTGzhrSrLxfQfOtWRV36zGG8,91919
+easyvec-0.0.27.dist-info/LICENSE.txt,sha256=Lx6xksMLUEZorTP0wcAcFLYNVeAIF4QgNswNM0XwP_8,1094
+easyvec-0.0.27.dist-info/METADATA,sha256=oK6vr9xv2D6rExsKsCR-CdksmMUDPhiSkaSCltePkjk,24280
+easyvec-0.0.27.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+easyvec-0.0.27.dist-info/top_level.txt,sha256=PJbyuRdEZDUJiq6FTTXkalAHCVnLEpBD5UaYX_N0Vfc,8
+easyvec-0.0.27.dist-info/RECORD,,
