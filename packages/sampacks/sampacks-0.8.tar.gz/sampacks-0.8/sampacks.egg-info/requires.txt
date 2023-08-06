@@ -1,0 +1,4 @@
+Functions
+pillow
+setuptools
+requests
