@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+annexes-integration = mkdocs_annexes_integration.plugin:AnnexesIntegration
+
