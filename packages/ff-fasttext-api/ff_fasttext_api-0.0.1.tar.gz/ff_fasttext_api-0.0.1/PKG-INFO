@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ff-fasttext-api
+Version: 0.0.1
+Summary: Created for ONS. API/CLI wrapper for proof-of-concept mmap'd Rust word2vec implementation linked with category matching
+License: MIT
+Author: Phil Weir
+Author-email: phil.weir@flaxandteal.co.uk
+Requires-Python: >=3.9,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: bonn (>=0.1,<0.2)
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: dynaconf (>=3.1.7,<4.0.0)
+Requires-Dist: fastapi (>=0.93,<0.94)
+Requires-Dist: httpx (>=0.24.0,<0.25.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Requires-Dist: ruff (>=0.0.264,<0.0.265)
+Requires-Dist: starlette (>=0.25.0,<0.26.0)
+Requires-Dist: structlog (>=21.5,<22.0)
+Requires-Dist: urllib3 (>=1.26,<2.0)
+Requires-Dist: uvicorn (>=0.17.4,<0.18.0)
