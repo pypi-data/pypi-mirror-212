@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "gl-client"
+version = "0.1.8"
+description = ""
+authors = ["Christian Decker <decker@blockstream.com>"]
+license = "MIT"
+
+packages = [
+    { include = "glclient" },
+]
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+grpcio = "^1.51.3"
+grpcio-tools = "^1.51.3"
+keyrings-google-artifactregistry-auth = "^1.1.2"
+gltesting = { path = "../gl-testing/", develop = true }
+
+[[tool.poetry.source]]
+name = "gl"
+url = "https://us-west2-python.pkg.dev/c-lightning/greenlight-pypi/"
+default = false
+secondary = true
+
+[project]
+name = "gl-client"
+dependencies = [
+  "protobuf>=3",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+
+[build-system]
+requires = ["maturin>=0.11,<0.12"]
+build-backend = "maturin"
