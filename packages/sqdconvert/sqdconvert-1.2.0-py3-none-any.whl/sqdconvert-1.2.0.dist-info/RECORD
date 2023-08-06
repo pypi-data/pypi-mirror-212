@@ -1,0 +1,13 @@
+sqdconvert/__init__.py,sha256=L7SeouZyBMoX3f2buxmCgwqAtjBGz-KCeF43tC_39b0,388
+sqdconvert/__main__.py,sha256=Q7cgupl8W6Jd2HugPErQkYH_09vbMMOmHNfO-cB8nTg,2637
+sqdconvert/color.py,sha256=BlD0nGYHuZLWYTsNC6mY26dDaYKoH943Uoht1OAxNq4,825
+sqdconvert/config.py,sha256=Y5MrAIiwIvtTyWq32ADOX4QN_h_TvW1zue3XtsYVNak,2749
+sqdconvert/errors.py,sha256=xGwhJbjnGkiXIACLhH5p08Nl9O_vxQyX2tUfsJVBQXg,808
+sqdconvert/start.py,sha256=EE9b_kVSqaddV5z9KgRA9UdViqLcHYql74PQwvOpnUw,3379
+sqdconvert/utils.py,sha256=ioAgBWHdJIRDq9RqaSqzUZYXLwwAKH2qOQ-Uwii3KYA,471
+sqdconvert-1.2.0.dist-info/LICENSE,sha256=mMkkAsbxwEInCVdddGFfLLMwzlnBWvsuWm9D42C10Fc,1083
+sqdconvert-1.2.0.dist-info/METADATA,sha256=u6Zv8JHX-QTr5cUmHPY8-jfdUIEWx_flqeJMnc-zcos,1787
+sqdconvert-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sqdconvert-1.2.0.dist-info/entry_points.txt,sha256=O9N1fxvZJLKVJPkj121Z_CHx79o5cwtvNwlExlyvmAk,56
+sqdconvert-1.2.0.dist-info/top_level.txt,sha256=GFQg1dVL0gE8eipLwv0hk2HEhWPd3FHzy9D9iGw57jM,11
+sqdconvert-1.2.0.dist-info/RECORD,,
