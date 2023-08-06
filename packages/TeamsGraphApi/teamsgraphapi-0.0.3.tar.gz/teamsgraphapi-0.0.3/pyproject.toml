@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "TeamsGraphApi"
+version = "0.0.3"
+authors = [
+  { name="Ajay Vishwakarma", email="ajay.vishwakarma@codiant.com" },
+]
+description = "wrapper for micorsoft teams graph api's"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+      "requests==2.31.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Ajay7415/graphapi"
+"Bug Tracker" = "https://github.com/Ajay7415/graphapi/issues"
