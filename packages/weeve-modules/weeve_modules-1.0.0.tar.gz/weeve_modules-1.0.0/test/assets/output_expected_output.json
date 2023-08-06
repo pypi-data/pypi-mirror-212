@@ -1,0 +1,15 @@
+{
+    "received_data": {
+        "temperature": 13.5,
+        "pressure": 1024,
+        "location": {
+            "city": "Berlin",
+            "longitude": 52.514732,
+            "latitude": 13.335263
+        },
+        "series": [123, 970, 907],
+        "notified_maintenance": true,
+        "temp_fahrenheit": 56.3,
+        "weather": "sunny"
+    }
+}

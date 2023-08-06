@@ -1,0 +1,32 @@
+{
+    "received_data": {
+        "temperature": 13.5,
+        "pressure": 1024,
+        "location": {
+            "city": "Berlin",
+            "longitude": 52.514732,
+            "latitude": 13.335263
+        },
+        "series": [123, 970, 907],
+        "notified_maintenance": true,
+        "temp_fahrenheit": 56.3,
+        "weather": "sunny"
+    },
+    "processed_data": {
+        "temperature": 13.5,
+        "pressure": 1024,
+        "location": {
+            "city": "Berlin",
+            "longitude": 52.514732,
+            "latitude": 13.335263
+        },
+        "series": [123, 970, 907],
+        "notified_maintenance": true,
+        "temp_fahrenheit": 56.3,
+        "weather": "sunny",
+        "voltage": 215.23,
+        "altitude": 2405,
+        "warnings": true
+    },
+    "err_msg": "Exception when sending data to the next module: HTTPConnectionPool(host=test_wrong_port, port=9000): Max retries exceeded with url: / (Caused by NameResolutionError(<urllib3.connection.HTTPConnection object at >: Failed to resolve test_wrong_port ([Errno -] Name or service not known)))"
+}

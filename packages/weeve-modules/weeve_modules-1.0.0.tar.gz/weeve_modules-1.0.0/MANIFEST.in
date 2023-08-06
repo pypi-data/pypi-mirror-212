@@ -1,0 +1,3 @@
+include weeve_modules/listener_callback_function.py
+include weeve_modules/processing_thread.py
+include weeve_modules/request_handler.py
