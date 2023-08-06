@@ -1,0 +1,11 @@
+fire
+configobj
+pydash
+shapely
+pyhocon
+pandas
+asyncio
+pysocks
+numpy
+pyodps==0.11.2.1
+psycopg2-binary
