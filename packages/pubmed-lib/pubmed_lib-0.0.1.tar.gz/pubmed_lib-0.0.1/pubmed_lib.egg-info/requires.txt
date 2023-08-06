@@ -1,0 +1,13 @@
+nbdev
+fastcore
+pydantic
+biopython
+pandas
+seaborn
+plotly
+matplotlib
+numpy
+python-dotenv
+pubmed-lib
+
+[dev]
