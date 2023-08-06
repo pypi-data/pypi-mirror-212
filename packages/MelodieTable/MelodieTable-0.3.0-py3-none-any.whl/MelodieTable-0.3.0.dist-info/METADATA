@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: MelodieTable
+Version: 0.3.0
+License-File: LICENSE
+Requires-Dist: sqlalchemy
+Requires-Dist: openpyxl
+Requires-Dist: pymysql
+

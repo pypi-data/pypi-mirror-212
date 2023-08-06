@@ -1,0 +1,2 @@
+[console_scripts]
+melodie_table = melodie_table.scripts.main:main
