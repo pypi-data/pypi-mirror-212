@@ -1,0 +1,43 @@
+[package]
+name = "spvn_caller"
+version= "0.1.1-beta.1"
+authors= ["Joshua A. <joshua.auchincloss@proton.me>"]
+edition= "2021"
+rust-version= "1.69.0"
+documentation= "https://github.com/spvn-rs/spvn"
+description= "asgi rust bindings"
+homepage= "https://spvn-rs.github.io/spvn/"
+repository= "https://github.com/spvn-rs/spvn"
+readme = "README.md"
+license = "MIT"
+
+[lib]
+
+[dependencies]
+
+pyo3 = { version = "0.19.0" , features = ["abi3"] }
+futures = { version = "0.3.28" , features = [] }
+crossbeam = "0.8"
+
+deadpool = "0.9.5"
+
+spvn_serde = { path = "../spvn_serde" }
+spvn_dev = { path = "../spvn_dev" }
+
+syncpool = { version = "0.1.6" }
+async-trait = {version = "0.1.68"}
+tokio = {version = "1.9", features = ["sync", "rt"]}
+libc = { version = "0.2.145" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+anyhow = { version = "1.0.71" }
+tracing = "0.1"
+colored = { version = "2.0.0" }
+
+
+
+bytes = "1"
+crossbeam-utils = "0.8.15"
+
+

@@ -1,0 +1,29 @@
+[package]
+name = "spvn_serde"
+version = "0.1.1-beta.1"
+publish = false
+edition = "2021"
+
+[lib]
+crate-type = ["rlib"]
+
+#
+
+[dependencies]
+http = { version = "0.2.9" }
+colored = { version = "2.0.0" }
+ahash = { version = "0.8.3" }
+hyper = { version = "0.14", features = ["full","full"] }
+
+tracing = "0.1"
+
+bytes = "1"
+bytes-expand = "0.4.12"
+pyo3 = { version = "0.19.0" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+libc = { version = "0.2.145" }
+futures = { version = "0.3.28" }
+tokio = {version = "1.9", features = ["sync", "rt"]}
+crossbeam = "0.8"
+spvn_macros = {path = "../spvn_macros" }

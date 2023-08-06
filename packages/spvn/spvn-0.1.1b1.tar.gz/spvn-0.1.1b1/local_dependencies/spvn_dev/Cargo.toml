@@ -1,0 +1,12 @@
+[package]
+name = "spvn_dev"
+version = "0.1.1-beta.1"
+publish = false
+edition = "2021"
+rust-version = "1.69.0"
+
+[dependencies]
+
+tracing = "0.1"
+
+colored = { version = "2.0.0" }

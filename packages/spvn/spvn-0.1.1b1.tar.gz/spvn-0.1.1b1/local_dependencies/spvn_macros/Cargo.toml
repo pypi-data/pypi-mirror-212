@@ -1,0 +1,21 @@
+[package]
+name = "spvn_macros"
+version = "0.1.1-beta.1"
+publish = false
+edition = "2021"
+rust-version = "1.69.0"
+
+[lib]
+crate-type = ["proc-macro"]
+
+[dependencies]
+tracing = "0.1"
+
+colored = { version = "2.0.0" }
+syn = "2.0"
+quote = "1.0"
+pyo3 = { version = "0.19.0" }
+crossbeam = "0.8"
+hyper = { version = "0.14", features = ["full"] }
+tokio = {version = "1.9", features = ["sync", "rt"]}
+futures = { version = "0.3.28" }
