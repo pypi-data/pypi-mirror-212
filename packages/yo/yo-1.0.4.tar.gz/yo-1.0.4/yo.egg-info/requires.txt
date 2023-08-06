@@ -1,0 +1,6 @@
+rich
+oci>=2.85.0
+subc>=0.7.0
+setuptools
+argcomplete
+dataclasses
