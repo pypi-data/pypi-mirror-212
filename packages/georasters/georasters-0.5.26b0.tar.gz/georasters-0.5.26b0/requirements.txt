@@ -1,0 +1,14 @@
+numpy
+pandas
+docopt
+GDAL
+Cython
+git+https://github.com/jswhit/pyproj.git
+git+https://github.com/scikit-image/scikit-image.git
+matplotlib
+coverage
+fiona
+geopandas
+pysal
+affine
+rasterstats
