@@ -1,0 +1,2 @@
+config_mgmt_server
+manage
