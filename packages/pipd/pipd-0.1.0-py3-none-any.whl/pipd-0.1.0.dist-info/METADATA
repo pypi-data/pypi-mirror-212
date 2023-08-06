@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pipd
+Version: 0.1.0
+Summary: Utility functions for python data pipelines.
+Home-page: https://github.com/elevenlabs/pipd
+Author: ElevenLabs
+Keywords: data processing,pipeline
+Description-Content-Type: text/markdown
+
