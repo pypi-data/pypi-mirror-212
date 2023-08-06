@@ -1,0 +1,9 @@
+tldraw/__init__.py,sha256=VVffOocFVLdi7f3dFZde4x_trP44o2i24jmH7GVioYU,212
+tldraw/comp.tsx,sha256=0PnC6niR2qOCmtZtCOpNxTcN6k94MLb37tmNh929QlU,320
+tldraw/tldraw.py,sha256=uVYmqxfFVyfXvoIkEspnUVnyiPsmwW5WLdoboDK1vfM,245
+tldraw/tldraw_matplotlib.py,sha256=fGUQflEwd2Ysd3_VbkTEz4Pn-zZV1gKmp7daOu9cU5U,2226
+tldraw/tldraw_matplotlib_component.tsx,sha256=t2JMj9ckyknC_cmUih0qvn7EFqIx1C_T5A8bsDOg9bo,1183
+tldraw-0.1.1.dist-info/LICENSE,sha256=Jri_eWaxbR7_z2tmTGgcKfb6MVk18R1-wP2cnnpkXLQ,1067
+tldraw-0.1.1.dist-info/METADATA,sha256=LhvMgE7gyfWFoaEzroojwbv4ZWymSnrXSdkwsAEt0Rk,1617
+tldraw-0.1.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+tldraw-0.1.1.dist-info/RECORD,,
