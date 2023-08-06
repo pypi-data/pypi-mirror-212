@@ -1,0 +1,12 @@
+attrbox==0.1.5
+pypdf==3.9.0
+
+[dev]
+black
+coverage
+mypy
+pdm
+pdoc3
+pytest-cov
+pytest
+ruff

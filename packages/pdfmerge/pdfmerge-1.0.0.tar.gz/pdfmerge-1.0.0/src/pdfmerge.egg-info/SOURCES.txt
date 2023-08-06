@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/pdfmerge/__init__.py
+src/pdfmerge/__main__.py
+src/pdfmerge/py.typed
+src/pdfmerge.egg-info/PKG-INFO
+src/pdfmerge.egg-info/SOURCES.txt
+src/pdfmerge.egg-info/dependency_links.txt
+src/pdfmerge.egg-info/entry_points.txt
+src/pdfmerge.egg-info/requires.txt
+src/pdfmerge.egg-info/top_level.txt
+test/test_pdfmerge.py
