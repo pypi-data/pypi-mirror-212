@@ -1,0 +1,12 @@
+pyplexity/__init__.py,sha256=rbh-sbSr5Yl0fBR3cc8vMRGIWCqpXunLNbcLIzOhJ_I,859
+pyplexity/__main__.py,sha256=ywjFjGPI6NB5tubz0yelBakmLNYkNQhxbuJFI0wRI9k,3745
+pyplexity/dataset_processor/CustomWARCWriter.py,sha256=r09WbnT35u_KAQC_zbol3Lg9Rwedxwk7au3R313oHII,6092
+pyplexity/dataset_processor/dataset_processor.py,sha256=4Piuzj6wrg9Q1D7-EBB3ap4wWx6BVcdwry_PsWj1fcU,4910
+pyplexity/distributed_files_server.py,sha256=eQrHHBfo4k_BIT7v-BHjluyWOXEWDafjt5rg9Wz924o,1930
+pyplexity/perpl_model.py,sha256=gygcdsBOHGwq3unBaB47vjuZELcggr5lc9_NGHXJCS8,6711
+pyplexity/tag_remover.py,sha256=_aTD6w3oWKSI7ZXYVf8IWvmFPFchz_y-jSHAyUnT8pE,1829
+pyplexity-0.2.11.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+pyplexity-0.2.11.dist-info/METADATA,sha256=TA--Y5DBghW-Ve7QRnLmfG0IEKa_Dt4UJiOq4k8DtBM,10505
+pyplexity-0.2.11.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pyplexity-0.2.11.dist-info/entry_points.txt,sha256=Cu3wLs6wa90djl8vv7d-lXdMuySpTTsvpdb6cgLT7CE,52
+pyplexity-0.2.11.dist-info/RECORD,,
