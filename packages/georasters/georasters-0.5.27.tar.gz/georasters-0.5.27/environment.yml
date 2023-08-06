@@ -1,0 +1,27 @@
+name: GeoPython38env
+channels:
+  - conda-forge
+dependencies:
+  - python==3.8
+  - pip
+  - gdal
+  - numpy
+  - pandas
+  - docopt
+  - gdal
+  - pyproj
+  - scikit-image
+  - matplotlib-base
+  - coverage
+  - fiona
+  - geopandas
+  - descartes
+  - pysal
+  - affine
+  - rasterstats>=0.12
+  - statsmodels
+  - seaborn
+  - geoplot
+  - html5lib
+  - pip:
+    - googledrivedownloader
