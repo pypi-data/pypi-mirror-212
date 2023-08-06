@@ -1,0 +1,13 @@
+kitaevmodel/__init__.py,sha256=U9ZRInqL9gT3oDtMi5gmmz9jTtMdLqRz3FKlAb1ZEJk,90
+kitaevmodel/basesample.py,sha256=45Hq-2lWl3odApWvJF-dV84d44wcMtimJbgjjwoprNk,12973
+kitaevmodel/eigenstates.py,sha256=wK_pL9Ry8y5dt6kND6Sll962Yh2kRA3i-tubODODSxI,666
+kitaevmodel/hamiltonian_creator.py,sha256=6rdLfqgFUfp1wl-acJQIM_v1Ljo5ZKcoZRsOiT7NHws,8937
+kitaevmodel/image_generator.py,sha256=5nqwTidISHzBRDA3KZfh0upQzABwW_iMrevM1z5dcBY,5698
+kitaevmodel/shapes.py,sha256=ricPRHwFOcuQRfSSF6IIBUUE2EeaalAIGg4X5hvLcdg,19562
+kitaevmodel/time_evolution.py,sha256=-B4rrJYKH9Rzh02nWuiunRwTa6rgNpbdMnZTbLvbuWo,3215
+kitaevmodel/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kitaevmodel/tests/kitaevmodel_tests.py,sha256=gVvWCdUy1mxVjc_NUWW8bhO1clK5RJb6SfpaiPDImn0,6325
+kitaevmodel-0.1.2.dist-info/METADATA,sha256=25dg49zVTtIHsHX2PpFL0EPwXupovsoJbTi0rgnt_uE,646
+kitaevmodel-0.1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+kitaevmodel-0.1.2.dist-info/top_level.txt,sha256=9ukfuMEHAhEGQ14P8dH-LkOS9beaciwxY-hh8Fjq4Nk,12
+kitaevmodel-0.1.2.dist-info/RECORD,,
