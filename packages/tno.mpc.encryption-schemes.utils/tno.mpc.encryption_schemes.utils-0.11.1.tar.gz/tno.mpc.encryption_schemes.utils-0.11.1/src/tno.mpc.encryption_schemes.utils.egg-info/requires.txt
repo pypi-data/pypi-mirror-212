@@ -1,0 +1,15 @@
+packaging
+sympy~=1.3
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[gmpy]
+gmpy2>=2.1.2
+
+[numpy]
+numpy
+
+[tests]
+numpy
+pytest
