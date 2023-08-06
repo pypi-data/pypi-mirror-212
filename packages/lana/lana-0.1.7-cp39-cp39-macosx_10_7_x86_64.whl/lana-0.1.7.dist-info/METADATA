@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: lana
+Version: 0.1.7
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: Experimental Linear Algebra library written in Rust
+Keywords: linear algebra
+Author-email: Marco Salvalaggio <mar.salvalaggio@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/marcosalvalaggio/lana
+
+## Lana 🧶
+
+[![stability-wip](https://img.shields.io/badge/stability-wip-lightgrey.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#work-in-progress) 
+
+**L***inear* **A**lgebra for **n***octurnal* *and* **a**dventurous *data scientists.*
+
+## Install 
+
+```console
+pip install lana
+```
+
+## Example 
+
+```python
+from lana import Matrix
+
+zeros = Matrix.zeros((3,3))
+print(zeros)
+print(f"shape: {zeros.shape}, type: {type(zeros)}")
+print(zeros.to_list()[0], zeros.to_list()[0][0])
+
+mat = Matrix.matrix([[1,2,3],[4,5,6]])
+print(mat)
+print(f"shape: {mat.shape}, type: {type(mat)}")
+for rows in mat.to_list():
+    print(rows, type(rows))
+```
+
+
