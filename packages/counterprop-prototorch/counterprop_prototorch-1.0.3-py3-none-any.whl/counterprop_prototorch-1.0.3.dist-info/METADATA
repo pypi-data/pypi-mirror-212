@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: counterprop-prototorch
+Version: 1.0.3
+Summary: Counter Propagation based on Prototorch. 
+Home-page: https://github.com/rmschubert/Counterpropagation-Prototorch
+Download-URL: https://github.com/rmschubert/Counterpropagation-Prototorch.git
+Author: Ronny Schubert
+Author-email: trebuhcsynnor@gmail.com
+License: MIT
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: prototorch (>=0.7.4)
+Requires-Dist: prototorch-models (>=0.5.4)
+Requires-Dist: pytorch-lightning
+Requires-Dist: scipy
+Requires-Dist: torch-kmeans
+Provides-Extra: dev
+Requires-Dist: twine (>=4.0.2) ; extra == 'dev'
+
+## About
+This is the implementation of Counterpropagation Models based on [Prototorch](https://github.com/si-cim/prototorch) by [SICIM](https://www.institute.hs-mittweida.de/webs/sicim/).
+
+## How to install and use
+
+To install use:
+```
+pip install counterprop-prototorch
+```
+This will install the package, as well as the needed additions.
+
+For a use-case scenario please have a look a the __example.py__ file.
+
+## Contact
+bugs, fixes, ideas etc. can be send to [trebuhcsynnor@gmail.com](mailto:trebuhcsynnor@gmail.com) 
