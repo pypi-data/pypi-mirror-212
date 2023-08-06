@@ -1,0 +1,4 @@
+project: miniofs
+host: auto
+username: minioadmin
+password: minioadmin
