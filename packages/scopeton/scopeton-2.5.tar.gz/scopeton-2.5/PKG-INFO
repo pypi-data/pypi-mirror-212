@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: scopeton
+Version: 2.5
+Summary: Dependency injection mechanism
+Home-page: https://github.com/shaddyx/scopeton
+Download-URL: https://github.com/shaddyx/scopeton/tarball/0.1
+Author: Anatolii Yakushko
+Author-email: shaddyx@gmail.com
+Keywords: dependency,injection
+License-File: LICENSE.txt
