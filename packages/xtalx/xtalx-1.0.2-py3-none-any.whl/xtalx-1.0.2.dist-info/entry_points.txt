@@ -1,0 +1,3 @@
+[console_scripts]
+xtalx_discover = xtalx.tools.discover:_main
+xtalx_test = xtalx.tools.xtalx_test_yield:_main
