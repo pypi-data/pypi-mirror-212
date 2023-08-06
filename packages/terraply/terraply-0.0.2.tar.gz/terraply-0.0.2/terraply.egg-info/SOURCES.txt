@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+terraply/__init__.py
+terraply/terraply.py
+terraply.egg-info/PKG-INFO
+terraply.egg-info/SOURCES.txt
+terraply.egg-info/dependency_links.txt
+terraply.egg-info/entry_points.txt
+terraply.egg-info/top_level.txt

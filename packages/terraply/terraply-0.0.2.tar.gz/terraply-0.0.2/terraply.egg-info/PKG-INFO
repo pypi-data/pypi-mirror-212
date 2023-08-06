@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: terraply
+Version: 0.0.2
+Summary: A wrapper to expand and exclude targets in terraform.
+Author-email: Joshua Adkins <josh@nline.io>
+Project-URL: Homepage, https://github.com/nline/terraply
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Terraply
+========
+
+A thin terraform wrapper that expands the -target argument using glob syntax and adds an -exclude
+argument.
+
+
+## Install
+
+You must have terraform installed. Then:
+
+```
+pip install terraply
+```
+
+## Examples
+```
+terraply apply -target module.child-module-*.resource
+```
+
+
+```
+terraply apply -target module.child-module-*.resource --exclude module.child-module-5
+```
