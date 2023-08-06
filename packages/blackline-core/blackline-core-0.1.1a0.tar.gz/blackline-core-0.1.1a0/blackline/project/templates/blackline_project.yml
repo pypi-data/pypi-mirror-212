@@ -1,0 +1,8 @@
+name: {{ config.name }}
+config-version: {{ config.config_version }}
+version: {{ config.version }}
+
+default-profile: {{ config.default_profile }}
+
+catalogue-path: ./{{ config.catalogue_path.stem }}
+adapters-path: ./{{ config.adapters_path.stem }}

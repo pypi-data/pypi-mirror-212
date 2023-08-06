@@ -1,0 +1,2 @@
+[console_scripts]
+blackline = blackline.__main__:main
