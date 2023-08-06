@@ -1,0 +1,10 @@
+caqui/__init__.py,sha256=blGXPx1NLgrn-m0eygXyG6RcvhOEW_RzBip8QWzbkbA,43559
+caqui/asynchronous.py,sha256=Z_7Xl0Q4zJ-foLGKO0VxZFZpX2Nb1pSzHGthD7zwPKc,10603
+caqui/constants.py,sha256=J4zEQEiZLR5k9WdEyB6x-IVcNdo_M5eptXUW_eoyaJw,169
+caqui/exceptions.py,sha256=O_VX5-HlUhlm39ADqEENvKiIAjBaJir07FXIq4B5jg8,42
+caqui/helper.py,sha256=0LWl4jk0cdf-cU82Bu5yU8wzm00UsQ_Iblc1min3ZYs,327
+caqui/synchronous.py,sha256=aQYIAkyYPWecHTs4KgM996UXUtK8eZKWMHRh1_vMFtw,10062
+caqui-1.9.0.dist-info/METADATA,sha256=3tfkh2z9HsNtq9dE07eErmcXOkv-yvvjUQlwl5FHlwk,10401
+caqui-1.9.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+caqui-1.9.0.dist-info/licenses/LICENSE,sha256=0KPO_xf1TCrHl0HA4lNdOEoO_9BTHoGROYnzpZPJJDM,1072
+caqui-1.9.0.dist-info/RECORD,,
