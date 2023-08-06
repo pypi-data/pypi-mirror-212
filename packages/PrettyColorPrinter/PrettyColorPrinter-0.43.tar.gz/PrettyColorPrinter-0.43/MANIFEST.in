@@ -1,0 +1,4 @@
+include PrettyColorPrinter/requirements.txt
+include PrettyColorPrinter/thirdparty.json
+include PrettyColorPrinter/README.MD
+include PrettyColorPrinter/LICENSE
