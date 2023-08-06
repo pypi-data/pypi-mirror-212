@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: manuscriptmonitor
+Version: 0.6.0
+Summary: A tool for keeping a ongoing CaptureOne tethered workflow in sync with a guide sheet
+Project-URL: Documentation, https://github.com/d-flood/manuscriptmonitor#readme
+Project-URL: Issues, https://github.com/d-flood/manuscriptmonitor/issues
+Project-URL: Source, https://github.com/d-flood/manuscriptmonitor
+Author-email: David Flood <d-flood@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: CSNTM,CaptureOne,DT Atom,tethered
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: openpyxl==3.0.9
+Requires-Dist: pysimplegui==4.47.0
+Requires-Dist: rich==11.2.0
+Requires-Dist: watchfiles==0.19.0
+Provides-Extra: excel
+Requires-Dist: pandas==2.0.2; extra == 'excel'

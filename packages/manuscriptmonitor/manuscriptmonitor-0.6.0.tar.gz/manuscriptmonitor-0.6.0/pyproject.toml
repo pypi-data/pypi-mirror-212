@@ -1,0 +1,102 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+authors = [
+  {name = "David Flood", email = "d-flood@users.noreply.github.com"},
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+    "watchfiles==0.19.0",
+    "rich==11.2.0",
+    "PySimpleGUI==4.47.0",
+    "openpyxl==3.0.9"
+]
+description = 'A tool for keeping a ongoing CaptureOne tethered workflow in sync with a guide sheet'
+dynamic = ["version"]
+keywords = [
+    'CaptureOne',
+    'tethered',
+    'DT Atom',
+    'CSNTM'
+]
+license = "MIT"
+name = "manuscriptmonitor"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+excel = [
+  "pandas==2.0.2",
+]
+
+[project.urls]
+Documentation = "https://github.com/d-flood/manuscriptmonitor#readme"
+Issues = "https://github.com/d-flood/manuscriptmonitor/issues"
+Source = "https://github.com/d-flood/manuscriptmonitor"
+
+[tool.hatch.version]
+path = "manuscriptmonitor/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+  "yapf",
+]
+
+[tool.hatch.envs.default.scripts]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.10", "3.11"]
+
+[tool.hatch.envs.lint]
+dependencies = []
+detached = true
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+  "/docs",
+  "/tests",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["manuscriptmonitor"]
+
+[tool.coverage.run]
+branch = true
+omit = [
+  "manuscriptmonitor/__about__.py",
+]
+parallel = true
+source_pkgs = ["manuscriptmonitor", "tests"]
+
+[tool.coverage.paths]
+manuscriptmonitor = ["manuscriptmonitor", "*/manuscriptmonitor/manuscriptmonitor"]
+tests = ["tests", "*/manuscriptmonitor/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
