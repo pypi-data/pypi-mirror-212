@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/smper/__init__.py
+src/smper/smper.py
+src/smper.egg-info/PKG-INFO
+src/smper.egg-info/SOURCES.txt
+src/smper.egg-info/dependency_links.txt
+src/smper.egg-info/not-zip-safe
+src/smper.egg-info/top_level.txt
