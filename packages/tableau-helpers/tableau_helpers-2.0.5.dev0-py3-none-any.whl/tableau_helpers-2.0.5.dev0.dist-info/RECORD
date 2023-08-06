@@ -1,0 +1,12 @@
+tableau_helpers/__init__.py,sha256=UByACHyRjJ0nuPfPvOUV25l14uTQ75wii7QRkRyPYa8,182
+tableau_helpers/hyper.py,sha256=oxhuf4pVlw4yDCOveStyMJ8Qpo9hUWMWrSaLssSVE8s,7149
+tableau_helpers/server.py,sha256=b-420eq0zZGMHldQJbfVja2MdAp3neIB9r__7unG-3U,8008
+tableau_helpers/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tableau_helpers/cli/csv_to_hyper.py,sha256=pm0fkeMamD7OZXX5zq6GJPJ3rMoqFZPY6uzQRqyBfMA,2280
+tableau_helpers/cli/upload_hyper.py,sha256=4hpqhlDGt7Bmnv7TDWV2IKwrT-LXrnicT1a2IU1wPRk,1141
+tableau_helpers-2.0.5.dev0.dist-info/LICENSE,sha256=68O0rpvKaTC9BolDchyfhrrUgtWXn4WQ-0Ddo5edIi8,1088
+tableau_helpers-2.0.5.dev0.dist-info/METADATA,sha256=jmMIvRWn4y7N8cgqallkC2EcaEVoAF7fQElZk1HiCr8,2189
+tableau_helpers-2.0.5.dev0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tableau_helpers-2.0.5.dev0.dist-info/entry_points.txt,sha256=-Si2UWPYR9v-RNGheVRItsVy3ASVmOQVveOItg1SNt8,138
+tableau_helpers-2.0.5.dev0.dist-info/top_level.txt,sha256=Xnp_Io0ZChdItlbFb9eMCBTIQqPwae36cJJ62Iwmte8,16
+tableau_helpers-2.0.5.dev0.dist-info/RECORD,,
