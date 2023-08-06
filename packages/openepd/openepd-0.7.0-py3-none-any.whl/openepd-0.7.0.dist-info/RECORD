@@ -1,0 +1,17 @@
+openepd/__init__.py,sha256=7_QNx3x9RCC7Lj9fHDD3nzgq6wV4Fmou7OJNWkCPnEw,837
+openepd/__version__.py,sha256=EWxgjDC9N7_wuwhU2q4zPuk76h4G-bp8tM3RuSg6hCI,855
+openepd/model/__init__.py,sha256=7_QNx3x9RCC7Lj9fHDD3nzgq6wV4Fmou7OJNWkCPnEw,837
+openepd/model/base.py,sha256=CO6EVmeHV5uOfLdfjApwOSS9gkCgul-CEDScVzfgXI8,2613
+openepd/model/common.py,sha256=SBapGDMDNbxwdcJa69TXS72FfesiVQbKJGJqKLj9Jp0,3365
+openepd/model/epd.py,sha256=ghctWN5_jiz6TbLFAlj3jef2Up-oM23fCUXwihoWDn8,12201
+openepd/model/lcia.py,sha256=UHKi676voHLluY4iLqVIMD-B0UxQrgssyEKMneatD6c,11266
+openepd/model/org.py,sha256=e9acmGS6p1M77gC6mrn-8ErADs7xvpLWOltWOx0AFOg,3811
+openepd/model/pcr.py,sha256=RmOB9YLkNJIU1RAvHSDzOOIL3ux3FmJo60oCkXXu_08,2855
+openepd/model/specs/__init__.py,sha256=JmbvfzwO0QmNcrxGqYE_KjvYHBmc2bnDm7cyZsaMG78,1137
+openepd/model/specs/concrete.py,sha256=v9Jyi6NiaoMA2ELX_wMckgTAtRplEOaIkZrd2qEdiN4,3342
+openepd/model/standard.py,sha256=Nv_H3Lhu79y4waWzzKpwODCPPGrlWwRIl6eZBMSc9Qg,1519
+openepd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openepd-0.7.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+openepd-0.7.0.dist-info/METADATA,sha256=TiziIco25lC8TV3aBmA9Ivc-yLtbeThSiO90QxWAqoI,3723
+openepd-0.7.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+openepd-0.7.0.dist-info/RECORD,,
