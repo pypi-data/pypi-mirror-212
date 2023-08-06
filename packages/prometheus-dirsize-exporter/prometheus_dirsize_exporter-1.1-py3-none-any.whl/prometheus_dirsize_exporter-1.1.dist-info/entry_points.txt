@@ -1,0 +1,2 @@
+[console_scripts]
+dirsize-exporter = prometheus_dirsize_exporter.exporter:main
