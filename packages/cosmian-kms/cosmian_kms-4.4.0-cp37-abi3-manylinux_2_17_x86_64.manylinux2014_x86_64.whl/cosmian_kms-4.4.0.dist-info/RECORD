@@ -1,0 +1,9 @@
+cosmian_kms-4.4.0.dist-info/METADATA,sha256=BWv5hAPrENLQ2PiOiC56aKo6t1_ZQkyIKeBhN50gMZE,914
+cosmian_kms-4.4.0.dist-info/WHEEL,sha256=IqxwOvQt2Z1bnwxwJi_ugUrc4gP4XzT0b1Tl-PkDiaE,128
+cosmian_kms.libs/libssl-f40ddc33.so.1.1,sha256=kTYTZAWPTeqxKb5hGh4-3g89jws29xmRgE5JB3q0MGE,736161
+cosmian_kms.libs/libcrypto-857b1cfb.so.1.1,sha256=OcKwAz49RSy5oxkb3ZzARYvHEZSSlT01vkNBBAGKIrs,3477145
+cosmian_kms/__init__.pyi,sha256=t4KsBVy3yjjgQhL-biJJR4rorWoW03dnIAp2yHad65Y,8861
+cosmian_kms/py.typed,sha256=bWew9mHgMy8LqMu7RuqQXFXLBxh2CRx0dUbSx-3wE48,27
+cosmian_kms/__init__.py,sha256=ePBIbK1BLxb1v3EhtMcSKuP7ddcNMBCOYSacaKw-LJo,152
+cosmian_kms/cosmian_kms.abi3.so,sha256=CrKcvnJCWYFqxlSBEeudFyYdkGOrsMI_z5lC9wxaUHw,3719545
+cosmian_kms-4.4.0.dist-info/RECORD,,
