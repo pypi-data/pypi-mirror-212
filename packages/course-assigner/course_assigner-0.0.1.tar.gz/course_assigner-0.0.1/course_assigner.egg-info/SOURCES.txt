@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+course_assigner.egg-info/PKG-INFO
+course_assigner.egg-info/SOURCES.txt
+course_assigner.egg-info/dependency_links.txt
+course_assigner.egg-info/top_level.txt

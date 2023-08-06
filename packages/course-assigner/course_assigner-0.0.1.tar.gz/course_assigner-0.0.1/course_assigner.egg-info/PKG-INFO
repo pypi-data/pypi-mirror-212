@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: course-assigner
+Version: 0.0.1
+Summary: Assign students to classes based on preference.
+Home-page: https://github.com/bellemanwesley/course_assigner
+Author: Wesley Belleman
+Author-email: bellemanwesley@gmail.com
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
