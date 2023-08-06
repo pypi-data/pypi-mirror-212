@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: nlmod
+Version: 0.6.0
+Summary: nlmod is an open-source Python package for building Modflow 6 groundwater models from online data sources in The Netherlands
+Author: O. Ebbens, R. Caljé, D.A. Brakenhoff
+Maintainer-email: "O. Ebbens" <o.ebbens@artesia-water.nl>, "R. Calje" <r.calje@artesia-water.nl>, "D.A. Brakenhoff" <d.brakenhoff@artesia-water.nl>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2020 O.N. Ebbens, D.A. Brakenhoff, R. Calje
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/ArtesiaWater/nlmod
+Project-URL: repository, https://github.com/ArtesiaWater/nlmod
+Project-URL: documentation, https://nlmod.readthedocs.io/en/latest/
+Keywords: hydrology,groundwater,modeling,Modflow 6,flopy
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: full
+Provides-Extra: knmi
+Provides-Extra: grib
+Provides-Extra: test
+Provides-Extra: nbtest
+Provides-Extra: lint
+Provides-Extra: ci
+Provides-Extra: rtd
+License-File: LICENSE
+
+# nlmod
+
+<img src="docs/_static/logo_10000_2.png" width="256"/>
+
+[![nlmod](https://github.com/ArtesiaWater/nlmod/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ArtesiaWater/nlmod/actions/workflows/ci.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6fadea550ea04ea28b6ccde88fc56f35)](https://www.codacy.com/gh/ArtesiaWater/nlmod/dashboard?utm_source=github.com&utm_medium=referral&utm_content=ArtesiaWater/nlmod&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/6fadea550ea04ea28b6ccde88fc56f35)](https://www.codacy.com/gh/ArtesiaWater/nlmod/dashboard?utm_source=github.com&utm_medium=referral&utm_content=ArtesiaWater/nlmod&utm_campaign=Badge_Coverage)
+[![PyPI version](https://badge.fury.io/py/nlmod.svg)](https://badge.fury.io/py/nlmod)
+[![Documentation Status](https://readthedocs.org/projects/nlmod/badge/?version=stable)](https://nlmod.readthedocs.io/en/stable/?badge=stable)
+
+Python package with functions to process, build and visualise MODFLOW models in the Netherlands.
+
+The functions in nlmod have four main objectives:
+
+1. Create and adapt the temporal and spatial discretization of a MODFLOW model using an xarray Dataset (`nlmod.dims`).
+2. Download and read data from external sources, project this data on the modelgrid and add this data to an xarray Dataset (`nlmod.read`).
+3. Use data in an xarray Dataset to build modflow packages using FloPy (`nlmod.gwf` for Modflow 6 and `nlmod.modpath` for Modpath).
+4. Visualise modeldata in Python (`nlmod.plot`) or GIS software (`nlmod.gis`).
+
+More information can be found on the documentation-website: https://nlmod.readthedocs.io/.
+
+## Installation
+
+Install the module with pip:
+
+`pip install nlmod`
+
+`nlmod` has many required dependencies: `flopy`, `xarray`, `netcdf4`, `rasterio`, `rioxarray`, `affine`, `geopandas`, `owslib`, `hydropandas`, `shapely`, `pyshp`, `rtree`, `matplotlib`, `dask` and `colorama`. On top of that there are some optional dependecies, only needed (and imported) in a single method. Examples of this are `bottleneck` (used in calculate_gxg), `geocube` (used in add_min_ahn_to_gdf), `h5netcdf` (used for hdf5 files backend in xarray). To install the nlmod with the optional dependencies use:
+
+`pip install nlmod[full]`
+
+When using pip the dependencies are automatically installed. Some dependencies are notoriously hard to install on certain platforms.
+Please see the [dependencies](https://github.com/ArtesiaWater/hydropandas#dependencies) section of the `hydropandas` package for more information on how to install these packages manually.
+
+## Getting started
+
+If you are using nlmod for the first time you need to download the MODFLOW executables. You can easily download these executables by running this Python code:
+
+    import nlmod
+	nlmod.download_mfbinaries()
+
+After you've downloaded the executables you can run the Jupyter Notebooks in the examples folder. These notebooks illustrate how you to use the nlmod package.
