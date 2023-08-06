@@ -1,0 +1,16 @@
+jgp_report_creditos/__init__.py,sha256=DjDoBdol61gepMxfhJxh0Es_Sw09Td5VCluokZrG2JU,83
+jgp_report_creditos/report.py,sha256=SM64_NCqRINFcUsF5-PgqNUAaVJn8T3ivlHi6ia-biQ,3791
+jgp_report_creditos/test.py,sha256=mAmSHymCCnbkC-mSEYWjcvcA8og2vT7PN3UEkwDKaBU,714
+jgp_report_creditos/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jgp_report_creditos/core/contrato/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jgp_report_creditos/core/contrato/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jgp_report_creditos/core/contrato/v1/base.py,sha256=EUTWKCc6NqMHLMCYYMSf9FY2tzNWOSAYGp75dAxzNEU,145944
+jgp_report_creditos/core/contrato/v1/contratos.py,sha256=03dnqlSsCr7snFgFR2JGoJTypXiuqP97RMYx5wHk_mw,19761
+jgp_report_creditos/core/exception/__init__.py,sha256=eqzdZzb349VPXjxVc_BzeldwetvNyU9PiakBIIYn2hU,37
+jgp_report_creditos/core/exception/exception.py,sha256=qhZngHDrS04L9plO41gry3jOkhzrF6qtUbn99OcK_Ns,309
+jgp_report_creditos/resources/img/logo_jgp.png,sha256=Se30KNnRXDpLt9Ww8gAx6n9mlC9pfxk4vw2joD5rI1I,57446
+jgp_report_creditos-0.0.9.dist-info/LICENSE,sha256=nVEHZdwPEFxiXW63IrWED1ucE9qe-7rV7iHcHeWawS4,1074
+jgp_report_creditos-0.0.9.dist-info/METADATA,sha256=6GQmKO8Of6cR3FCuGzUSsd4Y_EHK6aPeiQp_ocChn5I,6616
+jgp_report_creditos-0.0.9.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jgp_report_creditos-0.0.9.dist-info/top_level.txt,sha256=2PZ60Mv4Zv4CNWhxW5BNlwOT74U3QM-XrLr2_6I5Kq4,20
+jgp_report_creditos-0.0.9.dist-info/RECORD,,
