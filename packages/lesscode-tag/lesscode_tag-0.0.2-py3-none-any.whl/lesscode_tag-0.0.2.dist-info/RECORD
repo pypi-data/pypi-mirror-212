@@ -1,0 +1,9 @@
+lesscode_tag/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lesscode_tag/aes.py,sha256=qV6r7xEWoG4-Mvm06EiLnTSNFj82hkde4leUxfC5JUA,1807
+lesscode_tag/business.py,sha256=6qYkVhKRkKwgDu-j191PHo0ld46aLB1uwqpoHoHk6ZU,8139
+lesscode_tag/es_util.py,sha256=EySw5Jr6pHzR5rjWRPnhhI90i_D4iMVzLee5MsuKGd4,9603
+lesscode_tag/version.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+lesscode_tag-0.0.2.dist-info/METADATA,sha256=aGnuk1t7j1rAT9-dQ3klIIo8OZSYhVDhZ11A2H-5SFI,379
+lesscode_tag-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lesscode_tag-0.0.2.dist-info/top_level.txt,sha256=B1SS9UDTtMEQNi6qj29Sab4WU_EQWRNVjk1fYR2Y1P4,13
+lesscode_tag-0.0.2.dist-info/RECORD,,
