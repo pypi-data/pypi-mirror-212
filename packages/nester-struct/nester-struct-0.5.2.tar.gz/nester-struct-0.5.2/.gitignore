@@ -1,0 +1,23 @@
+# IDEs
+.vscode/
+.idea/
+.fleet/
+
+# Virtualenv
+venv/
+env/
+
+# cache
+**/**/__pycache__/
+src/nester/__pycache__/
+src/nester/**/__pycache__/
+test/__pycache__/
+.pytest_cache/
+
+
+# build information
+**/**/__nester_struct.egg-info/
+src/nester_struct.egg-info/
+src/Nester.egg-info/
+src/nester.egg-info/
+build/
