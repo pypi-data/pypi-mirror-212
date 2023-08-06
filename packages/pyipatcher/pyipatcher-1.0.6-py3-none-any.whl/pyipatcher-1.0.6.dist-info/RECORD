@@ -1,0 +1,17 @@
+pyipatcher/__init__.py,sha256=0uSgQFNrmYlfhZc-g2TBgpvZJGQ63no8ZHuda0jwMXU,173
+pyipatcher/__main__.py,sha256=224KpziXwnsczq-VqPf-hpiKs8trziAlJHVA9hhDC1E,272
+pyipatcher/cli/ibootpatcher.py,sha256=0EHbtjZ4rYzedE7s9iAVw4PwnuZ4_KiFuCyHNU5w3L4,2217
+pyipatcher/cli/kernelpatcher.py,sha256=mlK9JnLxvmC8748K0dmyXGDIFsQM2LePWA4ufHDDnj4,2229
+pyipatcher/cli/ramdiskpatcher.py,sha256=-n0L6fJnR5fXmyAQPjtVcOSqdoiPwI6RjmswlRzKj64,1588
+pyipatcher/logger.py,sha256=GP8f9zoEHOnghj0jb5Aw1asvLMh2YMSSoJbBuIet2_M,1140
+pyipatcher/patchfinder/asrpatchfinder.py,sha256=vezU96KDN25E7VgDeW-YF2dl_83BXwyAOxrH-8COWdc,1455
+pyipatcher/patchfinder/ibootpatchfinder.py,sha256=q0E_KWMIOYTPqKqWYy_4g0oBAfpk2tkW1-rR2cRNesw,20092
+pyipatcher/patchfinder/insn.py,sha256=afPD0aqDxeizxvPCKbQWrOELWTsLEhdTUBDUySYrNqE,6116
+pyipatcher/patchfinder/kernelpatchfinder.py,sha256=teLAk2NMYdWDK82wLbUurt4dc080KwyiI-QNhtKEZok,6238
+pyipatcher/patchfinder/patchfinder64.py,sha256=FiCIOnDU1Ba8lNW3nlbHipwAiTp-WJuKkhcfh1Q3584,5541
+pyipatcher/patchfinder/rextpatchfinder.py,sha256=w2mqjhcnNZNPjgwOrZ5baizH2hm_KZMxjSWFEPJx8nM,2024
+pyipatcher-1.0.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyipatcher-1.0.6.dist-info/METADATA,sha256=8j-K5yCJUwR33rxYWMAPsEQZjbA26bhXBJ9Dz4JruGA,1904
+pyipatcher-1.0.6.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pyipatcher-1.0.6.dist-info/entry_points.txt,sha256=I4IkxiZDwFvIG01sY45U2ytGvYrqy8Z7IBXl4hZ2zZ0,54
+pyipatcher-1.0.6.dist-info/RECORD,,
