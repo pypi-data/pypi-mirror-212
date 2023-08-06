@@ -1,0 +1,15 @@
+scutls/__init__.py,sha256=XtWUl6HPylv5jZLd2KkgtPptuzuda93kC2REmOrF-Cs,22
+scutls/arguments.py,sha256=fppxGSJJGuNy0tIU9wNhT0wOwVyD3QmqlT41bBCvKv4,6256
+scutls/assets/genome_ensembl_107_54_54_54.json,sha256=-33iV4damoDHRF05NDkYOSI0uB_I8PfCqNmwN39RX7w,214034
+scutls/assets/genome_ensembl_release_all.txt,sha256=BOi_zkvT6sgNbxkyUhi8_-WYnf8ehiz71dsg8ln2PLo,1014
+scutls/assets/genome_ensembl_release_use.txt,sha256=AP8EzxngQmOWCOUEOeGsoRfleRGr0KSg7yV5cCcj_bk,50
+scutls/assets/genome_ucsc.json,sha256=7S-3zlUDoPYygZclUqFJ78ovLu6-gsXFeFsOphPk8cg,41218
+scutls/barcode.py,sha256=k5HFc0T0t4cgtgGfEoPju-c6tgHcYfdXGTIxD15uBlA,5001
+scutls/cli.py,sha256=ReNcyel47wnZxQWi-sXzn8MiMdV8FoiqZ55ah5flBKE,1074
+scutls/download.py,sha256=ArKVLGkFIEKpQdxWRmstXb3lfVJltI84j083ddTROEs,7682
+scutls/fastq.py,sha256=UG4NCx8nCR5Ly3v8KocYTjezR8oV3iopXAbjgqiG960,3845
+scutls/util.py,sha256=qL8veXOWda547LaCCDhpobhDdb-d2jXmek_3h32fE3o,9201
+scutls-0.2.3.dist-info/entry_points.txt,sha256=KL-w6s2KKE2MRwOMmXKhvEpjy0uuAetKA3otJxbMjrc,48
+scutls-0.2.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+scutls-0.2.3.dist-info/METADATA,sha256=tUF_ybXdn6SR1Lcf_5X585CrsgHjmTNRdIZP4frffuA,765
+scutls-0.2.3.dist-info/RECORD,,
