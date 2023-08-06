@@ -1,0 +1,8 @@
+.venv/
+.oft/
+*.py[cod]
+/dist/
+/build/
+
+__pycache__/
+.mypy_cache/

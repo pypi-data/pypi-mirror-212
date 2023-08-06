@@ -1,0 +1,12 @@
+[build-system]
+requires = ['flit_core >=3.2,<4']
+build-backend = 'flit_core.buildapi'
+
+[project]
+name = 'oft'
+authors = [
+  {name = 'Flavio Veloso Soares', email = 'flaviovs@magnux.com'}
+]
+dynamic = ['version', 'description']
+readme = 'README.md'
+license = {text = 'GPL-2.0-only'}
