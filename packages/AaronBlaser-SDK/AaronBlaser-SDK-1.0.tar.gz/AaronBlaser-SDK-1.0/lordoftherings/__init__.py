@@ -1,0 +1,1 @@
+from .lordoftherings import LordOfTheRings
