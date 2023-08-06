@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+ApolloV2_Api_Parser.egg-info/PKG-INFO
+ApolloV2_Api_Parser.egg-info/SOURCES.txt
+ApolloV2_Api_Parser.egg-info/dependency_links.txt
+ApolloV2_Api_Parser.egg-info/top_level.txt
+package_dir/__init__.py
+package_dir/apollov2_api_parser.py
