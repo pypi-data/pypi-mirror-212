@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: influxdb_wrapper
+Version: 0.0.5
+Summary: DB management wrapper over influxDB
+Home-page: https://github.com/Phornee/influxdb_wrapper
+Author: Ismael Raya
+Author-email: phornee@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Database utilities
+This package contains utilities to access Influx Databases
+It allows to create a influxdb mock... useful for unittesting
+
+
