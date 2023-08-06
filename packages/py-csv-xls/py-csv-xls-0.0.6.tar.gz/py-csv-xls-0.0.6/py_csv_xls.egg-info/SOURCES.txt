@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+py_csv_xls/__init__.py
+py_csv_xls/csvsniffer.py
+py_csv_xls/excelworker.py
+py_csv_xls/exception.py
+py_csv_xls.egg-info/PKG-INFO
+py_csv_xls.egg-info/SOURCES.txt
+py_csv_xls.egg-info/dependency_links.txt
+py_csv_xls.egg-info/requires.txt
+py_csv_xls.egg-info/top_level.txt

@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: py-csv-xls
+Version: 0.0.6
+Summary: Converter from csv format to xls
+Home-page: https://github.com/pog7x/py-csv-xls
+Author: pog7x
+Author-email: poluningm@gmail.com
+License: MIT
+Keywords: python csv xls excel date
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-csv-xls
+
+[![PyPI](https://img.shields.io/pypi/v/py-csv-xls)](https://pypi.org/project/py-csv-xls/)
+[![License](https://img.shields.io/github/license/pog7x/py-csv-xls)](https://github.com/pog7x/py-csv-xls/blob/master/LICENSE)
+
+## Converter from csv format to xls
+
+### Installation
+
+```bash
+pip install py-csv-xls
+```
+
+### Example
+```python
+from py_csv_xls import CSVSniffer, ExcelWorker, PyCsvXlsException
+
+file_lines = CSVSniffer(
+    main_path="/abs/path/to/ur/csv/or/dir",
+).get_dir_files_with_lines()
+
+ExcelWorker(
+    workbook_name="/abs/path/to/ur/xl/without/extension",
+    workbook_extension=".xls",
+    want_cleared=True,
+).fill_workbook(all_data=file_lines)
+```
