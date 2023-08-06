@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: anx-interface
+Version: 0.5.3
+Summary: Implements anx_api
+Author: Tech FloMobility
+Author-email: tech@flomobility.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: opencv-python (>=4.7.0.68,<5.0.0.0)
+Requires-Dist: pillow (>=9.4.0,<10.0.0)
+Requires-Dist: progress (>=1.6,<1.7)
+Requires-Dist: protobuf (==3.12.4)
+Requires-Dist: psutil (>=5.9.4,<6.0.0)
+Requires-Dist: pyzmq (>=22.3.0,<22.4.0)
+Description-Content-Type: text/markdown
+
+# anx_interface
+```
+anx_mock (python) <--anx_api--> anx_interface (python) --> anx_interface_ros2
+```
+
+## anx_mock
+**Purpose:** Development and testing of anx_interface, anx_interface_ros and anx_interface_ros2
+
+## Installing
+**Note:** Install [scons](https://scons.org/) and [poetry](https://python-poetry.org/) befor proceeding
+
+```bash
+cd anx_interface
+scons
+poetry build
+pip install dist/anx_interface-<version>-py3-none-any.whl
+```
+
