@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "poetry-demo-aflabs-test"
+version = "0.1.0"
+description = ""
+authors = ["Ziga Avbreht <ziga.avbreht@gmail.com>"]
+readme = "README.md"
+packages = [{include = "poetry_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pendulum = "^2.1"
+
+[[tool.poetry.source]]
+name = "aflabs-test"
+url = "https://pypi.example.org/simple/"
+priority = "supplemental"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "pypi-test"
+url = "htttp://test.pypi.org/simple/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
