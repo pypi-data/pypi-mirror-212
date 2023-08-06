@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: jijzeptlab-client
+Version: 0.3.5
+Summary: Python Interface for JijZeptLab.
+Home-page: https://www.jijzept.com
+Author: Jij Inc.
+Author-email: info@j-ij.com
+License: Other/Proprietary License
+Project-URL: Documentation, https://www.documentation.jijzept.com
+Project-URL: Reference, https://www.ref.documentation.jijzept.com
+Project-URL: JijModeling, https://pypi.org/project/jijmodeling/
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Requires-Python: <3.11,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: jijzept (<1.15.0,>=1.14.1)
+Requires-Dist: jijmodeling (<0.12.0,>=0.10.0)
+Requires-Dist: python-rapidjson (<2.0,>=1.0)
+Requires-Dist: jijmodeling-transpiler (>=0.4.0)
+
+# JijZeptLab Quick Start
+To be noted
