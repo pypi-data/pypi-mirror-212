@@ -1,0 +1,3 @@
+[console_scripts]
+pwp = pwproxy.cli:main
+
