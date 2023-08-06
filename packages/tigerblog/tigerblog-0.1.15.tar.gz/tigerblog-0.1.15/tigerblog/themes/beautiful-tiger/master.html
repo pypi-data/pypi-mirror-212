@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base href="{{blog.config.host}}/">
+
+	<!-- META -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- LINKS -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<link rel="icon" type="image/x-icon" href="{{blog.favicon}}">
+	{% block customcss %}{% endblock %}
+	
+	<title> {% block title %} {{blog.name}}{% endblock %} </title>
+
+	{% block seoTags %}
+	{% include 'seo_tags_listings.html' %}
+	{% endblock %}
+	<plugins></plugins>
+</head>
+<body>
+	<div style="flex: 1;">
+		<nav>
+			<div class="nav-inner">
+				<a href="" class="logo">
+					<img src="{{blog.config.host}}/{{blog.logo}}" alt="">
+				</a>
+				<div class="nav-links">
+				{% include "navlinks.html" %}
+				</div>
+			</div>
+		</nav>
+		<div class="blogs-content-wrapper">
+			<div class="page-content">
+				<header>
+					<div class="header-inner">
+						{% block header %}{% endblock %}
+					</div>
+				</header>
+				{% block body %}{% endblock %}
+			</div>
+			{% include "sidebar.html" %}
+		</div>
+	</div>
+
+	{% block bottomMoreContent %}{% endblock %}
+
+	<footer>
+		<div class="footer-inner">
+			<!-- Consider not to remove this as this is free and open source -->
+			<p>Powered By TigerBlogEngine Copyright @ 2023 <a href="https://TigerTeamX.com">TigerTeamX.com</a></p>
+		</div>
+	</footer>
+
+	{% block customjs %}{% endblock %}
+
+	{% if blog.config.toolelFeedbackId != "" %}
+	<script defer data-show-after="{{blog.config.toolelFeedbackShowAfter}}" data-show-thank-you="{{blog.config.toolelFeedbackShowThanks}}" data-id="{{blog.config.toolelFeedbackId}}" src="https://toolel.com/js/toolel_feedback.js"></script>
+	{% endif %}
+
+	{% if blog.config.plausibleDomain != "" %}
+	<script defer data-domain="{{ blog.config.plausibleDomain }}" src="https://plausible.io/js/script.js"></script>
+	{% endif %}
+
+</body>
+</html>

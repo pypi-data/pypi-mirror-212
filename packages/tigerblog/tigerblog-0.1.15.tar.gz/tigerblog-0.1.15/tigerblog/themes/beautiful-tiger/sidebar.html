@@ -1,0 +1,19 @@
+<aside>
+<div class="aside-inner" style="background-image: url('{{blog.config.host}}/{{blog.sidebar_bg}}');">
+	<div class="sidebar-md">
+		<h2>Welcome to Tiger Blog Engine</h2>
+		<p>TigerBlog: a developer's Blog Engine. User-friendly, created by and for developers. </p>
+		<ul>
+			<li>Manage and create blogs with its intuitive interface.</li>
+			<li>Simplifying the blogging experience for the developer community etc...</li>
+		</ul>
+	</div>
+
+	<h2 style="margin-bottom: .6rem;">Tags</h2>
+	<div class="tags">
+		{% for tag in blog.tags %}
+			<a href="{{tag.url}}">{{tag.title}}</a>
+		{% endfor %}
+	</div>
+</div>
+</aside>
