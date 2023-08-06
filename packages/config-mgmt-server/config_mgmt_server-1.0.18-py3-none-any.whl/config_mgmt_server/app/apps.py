@@ -1,0 +1,3 @@
+from django.apps import AppConfig
+class ApiConfig(AppConfig):
+    name = 'config_mgmt_server'
