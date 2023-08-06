@@ -1,0 +1,9 @@
+wctrl/__init__.py,sha256=ZK8EUfyw8qobSfhgzjv6kpk26uUlXioKQlz_vBSFv8U,110
+wctrl/capTool.py,sha256=lYoYcBwN1WiqY8AbVcz73lvcd02vLVblQXDQWPGhwyw,1434
+wctrl/keyboard.py,sha256=lCymq78JYBFRk8ZBFBGIFPRTEsITpVdlSVnwYEmU9zc,4173
+wctrl/mouse.py,sha256=0NTAJfflcxTVLE_mdh5Q7VZVWjae0dY_Ri7v6qdVLh8,1974
+wctrl/tools.py,sha256=5_OziXJNNNvxQGbHrq_WS0b2frRYZ_Etr1FPK5L9yu8,4465
+wctrl-0.0.1.dist-info/METADATA,sha256=HTxBxj6I3_rA1cFpRMEbabw9W69hzRztAfNBXUC90sI,485
+wctrl-0.0.1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+wctrl-0.0.1.dist-info/licenses/LICENSE,sha256=wSJeQ18nSuQNHlhYchOYI1LQ9KWUIPUzYlJK97Y6saA,1083
+wctrl-0.0.1.dist-info/RECORD,,
