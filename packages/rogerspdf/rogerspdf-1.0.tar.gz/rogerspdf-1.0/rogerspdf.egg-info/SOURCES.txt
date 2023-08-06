@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+rogerspdf/__init__.py
+rogerspdf/pdf2image.py
+rogerspdf/pdf2text.py
+rogerspdf.egg-info/PKG-INFO
+rogerspdf.egg-info/SOURCES.txt
+rogerspdf.egg-info/dependency_links.txt
+rogerspdf.egg-info/top_level.txt
