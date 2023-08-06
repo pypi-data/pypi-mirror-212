@@ -1,0 +1,13 @@
+gpiozero>=1.6.2
+
+[dev]
+gpiozero>=1.6.2
+numpy
+
+[lint]
+pylint
+
+[test]
+flake8
+pytest
+numpy
