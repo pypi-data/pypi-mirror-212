@@ -1,0 +1,2 @@
+[console_scripts]
+crema = crema.crema:main
