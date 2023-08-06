@@ -1,0 +1,13 @@
+*.py[cod]
+run*
+build
+*~
+.DS_Store
+.ipynb_checkpoints/
+.cache
+.coverage
+.coverage.xml
+*.egg-info/
+htmlcov
+.pytest_cache/
+*test-output.xml
