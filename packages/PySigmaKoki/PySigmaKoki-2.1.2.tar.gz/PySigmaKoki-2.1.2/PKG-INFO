@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PySigmaKoki
+Version: 2.1.2
+Summary: Python Interface for Instruments by Sigma Koki
+Home-page: https://github.com/akira-okumura/PySigmaKoki
+Author: Akira Okumura
+Author-email: oxon@mac.com
+License: BSD License
+Platform: MacOS :: MacOS X
+Platform: POSIX
+Platform: Windows
+Classifier: Topic :: Terminals :: Serial
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+
+
+This is an interface module for instruments produced by Sigma Koki
