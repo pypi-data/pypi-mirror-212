@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+mypackagelicenseprototype/PackageContent.py
+mypackagelicenseprototype/__init__.py
+mypackagelicenseprototype.egg-info/PKG-INFO
+mypackagelicenseprototype.egg-info/SOURCES.txt
+mypackagelicenseprototype.egg-info/dependency_links.txt
+mypackagelicenseprototype.egg-info/requires.txt
+mypackagelicenseprototype.egg-info/top_level.txt
+mypackagelicenseprototype/submodule/SubmoduleContent.py
+mypackagelicenseprototype/submodule/__init__.py
