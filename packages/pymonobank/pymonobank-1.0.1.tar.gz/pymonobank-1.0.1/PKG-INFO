@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: pymonobank
+Version: 1.0.1
+Summary: Python client for Monobank API
+Author: Alex Stulen
+Author-email: ookno16@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: attrs (==23.1.0)
+Requires-Dist: build (==0.10.0)
+Requires-Dist: cachecontrol (==0.12.14)
+Requires-Dist: certifi (==2023.5.7)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: cleo (==2.0.1)
+Requires-Dist: crashtest (==0.4.1)
+Requires-Dist: cryptography (==41.0.1)
+Requires-Dist: distlib (==0.3.6)
+Requires-Dist: dulwich (==0.21.5)
+Requires-Dist: filelock (==3.12.0)
+Requires-Dist: html5lib (==1.1)
+Requires-Dist: idna (==3.4)
+Requires-Dist: importlib-metadata (==6.6.0)
+Requires-Dist: installer (==0.7.0)
+Requires-Dist: jaraco-classes (==3.2.3)
+Requires-Dist: jeepney (==0.8.0)
+Requires-Dist: jsonschema (==4.17.3)
+Requires-Dist: keyring (==23.13.1)
+Requires-Dist: lockfile (==0.12.2)
+Requires-Dist: more-itertools (==9.1.0)
+Requires-Dist: msgpack (==1.0.5)
+Requires-Dist: packaging (==23.1)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: pkginfo (==1.9.6)
+Requires-Dist: platformdirs (==3.5.1)
+Requires-Dist: poetry (==1.5.1)
+Requires-Dist: poetry-core (==1.6.1)
+Requires-Dist: poetry-plugin-export (==1.4.0)
+Requires-Dist: ptyprocess (==0.7.0)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pyproject-hooks (==1.0.0)
+Requires-Dist: pyrsistent (==0.19.3)
+Requires-Dist: rapidfuzz (==2.15.1)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: requests-toolbelt (==1.0.0)
+Requires-Dist: secretstorage (==3.3.3)
+Requires-Dist: shellingham (==1.5.0.post1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tomli (==2.0.1)
+Requires-Dist: tomlkit (==0.11.8)
+Requires-Dist: trove-classifiers (==2023.5.24)
+Requires-Dist: urllib3 (==1.26.16)
+Requires-Dist: virtualenv (==20.23.0)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==3.15.0)
+Description-Content-Type: text/markdown
+
+# Python client for [Monobank API](https://api.monobank.ua/docs/acquiring.html)
+
+---
+
