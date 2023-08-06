@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: StrangeSerializerLab3
+Version: 19.0
+Summary: Serializer for lab_3
+Author: Mihail Kornievich
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
