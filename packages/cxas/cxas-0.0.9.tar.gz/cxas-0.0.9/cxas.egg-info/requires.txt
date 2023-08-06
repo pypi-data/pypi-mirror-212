@@ -1,0 +1,15 @@
+cython
+torch
+gdown
+torchvision
+numpy
+SimpleITK
+pydicom
+pydicom_seg
+scikit-image
+scikit-learn
+opencv-python
+colorcet
+pycocotools
+pandas
+tqdm
