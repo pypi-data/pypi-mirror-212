@@ -1,0 +1,9 @@
+codezen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codezen/__main__.py,sha256=cYN1Iv28egkON6JJAdUPJuy-C-F6p8KvWk7pYvPphsE,30
+codezen/app.py,sha256=FhiO07NPNVg_19yCgIbAfZpXe0Hk91CEC31WhfyWW48,4633
+codezen/ignore_files.py,sha256=7EfTsbXsjWRy6ZJ-QwoyQpwZqsWorBYIDNQ7dFkDIqg,582
+codezen-0.3.0.dist-info/LICENSE,sha256=z9lZP1bydk9XJbHjHj3AUOncIopg3OkbltinoQN7ax8,1067
+codezen-0.3.0.dist-info/METADATA,sha256=w9Nfh3IOESgnoJCHpWAfgfoEqHW9hHo5rWiolJ19eUM,2459
+codezen-0.3.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+codezen-0.3.0.dist-info/entry_points.txt,sha256=YHclvI3xr1-b2CVabiwwFalg_kOJMb3gmYw_7gWYZOo,44
+codezen-0.3.0.dist-info/RECORD,,
