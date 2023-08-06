@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/tensoract/__init__.py
+src/tensoract/client.py
+src/tensoract.egg-info/PKG-INFO
+src/tensoract.egg-info/SOURCES.txt
+src/tensoract.egg-info/dependency_links.txt
+src/tensoract.egg-info/top_level.txt
