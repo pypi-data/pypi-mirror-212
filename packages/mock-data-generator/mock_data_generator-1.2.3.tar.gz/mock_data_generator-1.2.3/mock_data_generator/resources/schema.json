@@ -1,0 +1,13 @@
+{
+    "type" : "object",
+    "properties" : {
+        "price" : {"type" : "number"},
+        "name" : {"type" : "string"},
+        "a" : {"type" : "integer"},
+        "b" : {"type" : "float"},
+        "c" : {"type" : "boolean"},
+        "dt" : {"type" : "date"},
+        "ts" : {"type" : "timestamp"},
+        "e" : {"type" : "boolean"}
+        }
+}
