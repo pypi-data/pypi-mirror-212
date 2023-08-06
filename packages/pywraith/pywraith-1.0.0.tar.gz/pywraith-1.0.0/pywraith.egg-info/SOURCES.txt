@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pywraith.py
+setup.py
+pywraith.egg-info/PKG-INFO
+pywraith.egg-info/SOURCES.txt
+pywraith.egg-info/dependency_links.txt
+pywraith.egg-info/requires.txt
+pywraith.egg-info/top_level.txt
