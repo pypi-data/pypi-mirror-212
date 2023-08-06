@@ -1,0 +1,145 @@
+[build-system]
+# Defined by PEP 518
+requires = [
+    "setuptools>=61",
+    "setuptools_scm[toml]>=7",
+    "wheel"
+]
+# Defined by PEP 517
+build-backend = "setuptools.build_meta"
+
+
+[project]
+authors = [
+    {name = "GeoVista Contributors", email = "geovista.pub@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+]
+description = "Cartographic rendering and mesh analytics powered by PyVista"
+dynamic = [
+    "dependencies",
+    "optional-dependencies",
+    "readme",
+    "version",
+]
+keywords = [
+    "cartography",
+    "curvilinear",
+    "earth-science",
+    "grid",
+    "mesh",
+    "python",
+    "pyvista",
+    "rectilinear",
+    "ugrid",
+    "unstructured",
+    "vtk",
+]
+license.file = "LICENSE"
+name = "geovista"
+requires-python = ">=3.9"
+
+
+[project.urls]
+Code = "https://github.com/bjlittle/geovista"
+Discussions = "https://github.com/bjlittle/geovista/discussions"
+Issues = "https://github.com/bjlittle/geovista/issues"
+
+
+[project.scripts]
+geovista = "geovista.cli:main"
+
+
+[tool.black]
+line-length = 88
+target-version = ["py39", "py310", "py311"]
+include = '\.pyi?$'
+
+
+[tool.check-manifest]
+ignore = [
+    "src/geovista/_version.py",
+]
+
+
+[tool.codespell]
+ignore-words-list = "whet"
+skip = ".git,*.ipynb"
+
+
+[tool.pytest.ini_options]
+addopts = "-ra -v --doctest-modules --doctest-continue-on-failure --import-mode=importlib"
+minversion = "6.0"
+doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS NUMBER"
+testpaths = "tests"
+
+
+[tool.ruff]
+ignore = [
+    "D105",  # pydocstyle: undocumented-magic-method
+]
+extend-exclude = [
+    "docs",
+]
+line-length = 88
+select = [
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "I",   # isort
+    "E",   # pycodestyle
+    "W",
+    "D",   # pydocstyle
+    "F",   # pyflakes
+    "UP",  # pyupgrade
+]
+target-version = "py39"
+
+
+[tool.ruff.isort]
+force-sort-within-sections = true
+known-first-party = ["geovista"]
+
+
+[tool.ruff.mccabe]
+max-complexity = 22
+
+
+[tool.ruff.pydocstyle]
+convention = "numpy"
+
+
+[tool.setuptools]
+license-files = ["LICENSE"]
+zip-safe = false
+
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements/pypi-core.txt"]}
+readme = {file = "README.md", content-type = "text/markdown"}
+
+
+[tool.setuptools.dynamic.optional-dependencies]
+cmap = {file = ["requirements/pypi-optional-cmap.txt"]}
+docs = {file = ["requirements/pypi-optional-docs.txt"]}
+test = {file = ["requirements/pypi-optional-test.txt"]}
+
+
+[tool.setuptools.packages.find]
+include = ["geovista*"]
+where = ["src"]
+
+
+[tool.setuptools_scm]
+write_to = "src/geovista/_version.py"
+local_scheme = "dirty-tag"
+version_scheme = "release-branch-semver"
