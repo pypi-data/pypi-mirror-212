@@ -1,0 +1,2 @@
+[console_scripts]
+wudz-perms = wudz_perms:cli_main
