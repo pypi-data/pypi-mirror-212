@@ -1,0 +1,13 @@
+Calibrator_KS1200/.gitignore,sha256=Yu89mP80WNo0X0glhl-9mrlv2B4WHEHDGC0hTpQgcek,37
+Calibrator_KS1200/Exchange_data_str_bu7.py,sha256=Mp1hrxhR7IhrNIOelCJKI7P_6PMnoJmLh599C6pq95g,44304
+Calibrator_KS1200/Exchange_data_str_itm.py,sha256=P37G1F5kz4K7EZil2Hpvl3RQ-bv50JYvzKEAdH9RevQ,64070
+Calibrator_KS1200/Logo_etalon.ico,sha256=vRDVKzbbJLOQiex7s8FaAnr-umbY643VCossOldRqV8,270398
+Calibrator_KS1200/Logo_etalon.png,sha256=uxDw2Hsi1GwOkzgXfDRY4yhoON9CgZYqZ31ZmdJjEh4,60540
+Calibrator_KS1200/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Calibrator_KS1200/func_lib.py,sha256=z5Gyw17Ry-b0Hps5cNRulv_2yyPvOFX3hj93jyJN3aA,21063
+Calibrator_KS1200/ks1200.db,sha256=NiP2T-xqsUGSFWbaC_f8b8uaf5xj5e5wWXlCSaaZbDw,53248
+Calibrator_KS1200/ks1200.py,sha256=EqIeaXPiIOFaFGdHP1tNjw7kuib17k80Bvv8QlKhr4I,171399
+Calibrator_KS1200-0.0.6.dist-info/METADATA,sha256=BgQ-6k_J1cnlTTg6XF9V__gMsFtGot4ahfvjE4fuYIQ,2528
+Calibrator_KS1200-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Calibrator_KS1200-0.0.6.dist-info/top_level.txt,sha256=0XgaDk7zYEM2HBBozwIRXNTONGGDoieWJBIDWNl70PA,18
+Calibrator_KS1200-0.0.6.dist-info/RECORD,,
