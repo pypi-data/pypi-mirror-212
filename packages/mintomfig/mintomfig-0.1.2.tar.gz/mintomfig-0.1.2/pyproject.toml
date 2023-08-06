@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mintomfig"
+version = "0.1.2"
+description = ""
+authors = ["redthing1 <redthing1@alt.icu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+toml = "^0.10.2"
+xdg = "^6.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
