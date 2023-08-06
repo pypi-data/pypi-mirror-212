@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dataone.util
+Version: 3.5.2
+Summary: DataONE Utilities and Examples
+Home-page: https://github.com/DataONEorg/d1_tools
+Author: DataONE Project
+Author-email: developers@dataone.org
+License: Apache License, Version 2.0
+Keywords: DataONE python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: dataone.common (>=3.5.2)
+Requires-Dist: dataone.libclient (>=3.5.2)
+Requires-Dist: beautifulsoup4 (>=4.12.2)
+Requires-Dist: aiohttp (>=3.8.4)
+Requires-Dist: requests (>=2.31.0)
+
