@@ -1,0 +1,9 @@
+README.md
+setup.py
+gptscannotation/__init__.py
+gptscannotation/chat_workflow.py
+gptscannotation.egg-info/PKG-INFO
+gptscannotation.egg-info/SOURCES.txt
+gptscannotation.egg-info/dependency_links.txt
+gptscannotation.egg-info/requires.txt
+gptscannotation.egg-info/top_level.txt
