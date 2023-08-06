@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: git2pdf
+Version: 0.1.7
+Summary: Generate a PDF with the contents of files in a GitHub repository
+Home-page: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
+
+==========
+git2pdf
+==========
+
+git2pdf is a simple Python script that fetches the contents of files in a GitHub repository and generates a PDF with those contents.
+
+Installation
+============
+
+git2pdf can be installed via pip:
+
+.. code-block:: bash
+
+    $ pip install git2pdf
+
+Usage
+=====
+
+To use git2pdf, simply run the command and follow the prompts:
+
+.. code-block:: bash
+
+    $ git2pdf
+
+
