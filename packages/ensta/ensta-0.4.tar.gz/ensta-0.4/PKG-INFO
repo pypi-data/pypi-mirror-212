@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: ensta
+Version: 0.4
+Summary: Simple & Up-to-date Instagram API
+Home-page: https://github.com/diezo/ensta
+Download-URL: https://github.com/diezo/ensta/archive/refs/tags/v0.1.tar.gz
+Author: Deepak Soni
+Author-email: lonelycube@proton.me
+License: MIT
+Keywords: instagram,web,private,api,scraper,easy,download,upload
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Ensta
+This package lets you use Instagram's Internal API (Web API) through simple methods and classes.
+
+It supports two type of classes - "Guest" and "Host"
+
+[!["Buy me a coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/diezo)
+
+## Installation
+Open a terminal window and run this command:
+```shell
+pip install ensta
+```
+
+## Guest Mode
+It doesn't require any type of login and can be used to fetch publicly available data like Profile Information, Username Availability etc.
+
+```python
+from ensta import Guest
+
+guest = Guest()
+biography = guest.get_biography("username")
+
+print(biography)
+```
+
+## Host Mode
+It requires login and can be used to manage your account or fetch information not available without logging in.
+
+```python
+from ensta import Host
+
+sessionid = "12345678:abcdefgh"
+
+host = Host(sessionid)
+result = host.follow_username("username")
+
+print(result)
+```
