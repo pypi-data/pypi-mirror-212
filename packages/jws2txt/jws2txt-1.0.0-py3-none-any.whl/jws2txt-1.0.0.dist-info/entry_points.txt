@@ -1,0 +1,2 @@
+[console_scripts]
+jws2txt = jws2txt.jws2txt:main

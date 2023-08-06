@@ -1,0 +1,9 @@
+jws2txt/__init__.py,sha256=YdSprzo61fc5YKSivxcZmosAL5APSaY3y-CifhaE5z4,50
+jws2txt/jws2txt.py,sha256=SE7-A1zHla_q9RLFDkEOwsf6AlZfPRGokVHKJv3nv2I,2317
+jws2txt/helpers/__init.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jws2txt/helpers/helpers.py,sha256=hClMyvdWZpc2Dg-iousmqjRhMKN6nRIMAm4zacTQCoA,5777
+jws2txt-1.0.0.dist-info/METADATA,sha256=sbS-Kl-xtX82HFYX2YUzNzdmU3LAeIcGyzPL8xbUHy0,1569
+jws2txt-1.0.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+jws2txt-1.0.0.dist-info/entry_points.txt,sha256=QzFK7C3GX98B2d1NtFQ3mLE9Ae9m6PjFXKpmaxvKp8A,49
+jws2txt-1.0.0.dist-info/licenses/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jws2txt-1.0.0.dist-info/RECORD,,
