@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-nested-mutable
+Version: 0.0.1
+Summary: SQLAlchemy Nested Mutable Types.
+Home-page: https://github.com/wonderbeyond/sqlalchemy-nested-mutable
+License: MIT
+Keywords: SQLAlchemy,Nested,Mutable,Types,JSON
+Author: Wonder
+Author-email: wonderbeyond@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: psycopg2-binary (>=2.9.6,<3.0.0)
+Requires-Dist: pydantic (>=1.10.8,<2.0.0)
+Requires-Dist: sqlalchemy (>=2.0,<3.0)
+Project-URL: Documentation, https://github.com/wonderbeyond/sqlalchemy-nested-mutable
+Project-URL: Repository, https://github.com/wonderbeyond/sqlalchemy-nested-mutable
+Description-Content-Type: text/markdown
+
+SQLAlchemy-Nested-Mutable
+=========================
+
+An advanced SQLAlchemy column type factory that helps map complex Python types (e.g. List, Dict, Pydantic Model and their hybrids) to database types (e.g. ARRAY, JSONB),
+And keep track of mutations in deeply nested data structures so that SQLAlchemy can emit proper UPDATE statements.
+
+SQLAlchemy-Nested-Mutable is highly inspired by SQLAlchemy-JSON <sup>[[0]](https://github.com/edelooff/sqlalchemy-json)</sup><sup>[[1]](https://variable-scope.com/posts/mutation-tracking-in-nested-json-structures-using-sqlalchemy)</sup>. However, it does not limit the mapped Python types to dict-like objects.
+
+Documentation is not ready yet. Please refer to these test files for usage:
+
+* test_mutable_list.py
+* test_mutable_dict.py
+* test_mutable_pydantic_type.py
+
