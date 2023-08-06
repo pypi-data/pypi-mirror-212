@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: accord.py
+Version: 0.0.1
+Summary: Testing library for the discord.py library
+Author-email: Eetu Asikainen <eetu.asikainen1204@gmail.com>
+Project-URL: Homepage, https://github.com/EddieTheCubeHead/accord.py
+Project-URL: Bug Tracker, https://github.com/EddieTheCubeHead/accord.py/issues
+Keywords: testing,discord,discord.py
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Accord.py
+Testing library for the discord.py library
+
+## Work in progress, better documentation coming
