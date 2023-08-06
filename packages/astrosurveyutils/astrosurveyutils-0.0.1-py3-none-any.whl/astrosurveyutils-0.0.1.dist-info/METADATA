@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: astrosurveyutils
+Version: 0.0.1
+Summary: Astronomical survey utilities
+Author-email: Viraj Karambelkar <viraj@astro.caltech.edu>
+Project-URL: Homepage, https://github.com/virajkaram/astrosurveyutils
+Project-URL: Bug Tracker, https://github.com/virajkaram/astrosurveyutils/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: jupyter
+Requires-Dist: matplotlib
+Requires-Dist: mocpy (==0.12.0)
+
+Install with  `pip install -e .` in the cloned directory. 
+<br>
+<br>
+Example/ documentation in `astrosurveyutils/notebooks/example.ipynb `
