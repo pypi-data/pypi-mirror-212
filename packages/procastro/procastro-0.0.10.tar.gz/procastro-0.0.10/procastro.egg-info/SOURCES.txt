@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+procastro/__init__.py
+procastro.egg-info/PKG-INFO
+procastro.egg-info/SOURCES.txt
+procastro.egg-info/dependency_links.txt
+procastro.egg-info/requires.txt
+procastro.egg-info/top_level.txt

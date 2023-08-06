@@ -1,0 +1,9 @@
+sphinx
+astropy
+astroquery
+numpy
+scipy
+matplotlib
+exifread
+rawpy
+pandas
