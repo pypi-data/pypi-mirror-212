@@ -1,0 +1,2 @@
+[console_scripts]
+Lumosweb = LumosWeb.cli:main
