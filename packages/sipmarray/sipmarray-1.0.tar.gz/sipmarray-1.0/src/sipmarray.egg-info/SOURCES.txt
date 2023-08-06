@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/sipmarray/__init__.py
+src/sipmarray/array.py
+src/sipmarray/unit.py
+src/sipmarray.egg-info/PKG-INFO
+src/sipmarray.egg-info/SOURCES.txt
+src/sipmarray.egg-info/dependency_links.txt
+src/sipmarray.egg-info/entry_points.txt
+src/sipmarray.egg-info/top_level.txt
+src/sipmarray/scripts/__init__.py
+src/sipmarray/scripts/script_sipmarray.py
+src/sipmarray/scripts/script_sipmunit.py
+tests/test_unit.py
