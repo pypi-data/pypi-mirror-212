@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dataone.common
+Version: 3.5.2
+Summary: Contains functionality common to projects that interact with the DataONE infrastructure via Python
+Home-page: https://github.com/DataONEorg/d1_python
+Author: DataONE Project
+Author-email: developers@dataone.org
+License: Apache License, Version 2.0
+Keywords: DataONE client server member-node coordinating-node xml url oai-ore rdf resource-map
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: cryptography (>=40.0.2)
+Requires-Dist: iso8601 (>=1.1.0)
+Requires-Dist: PyJWT (>=2.7.0)
+Requires-Dist: pyasn1 (>=0.5.0)
+Requires-Dist: pyxb-x (>=1.2.6.1)
+Requires-Dist: rdflib (>=6.3.2)
+Requires-Dist: zipstream (>=1.1.4)
+
