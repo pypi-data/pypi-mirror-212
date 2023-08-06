@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+deepchecks_installer/__init__.py
+deepchecks_installer/cli.py
+deepchecks_installer/deploy-oss.sh
+deepchecks_installer.egg-info/PKG-INFO
+deepchecks_installer.egg-info/SOURCES.txt
+deepchecks_installer.egg-info/dependency_links.txt
+deepchecks_installer.egg-info/entry_points.txt
+deepchecks_installer.egg-info/requires.txt
+deepchecks_installer.egg-info/top_level.txt

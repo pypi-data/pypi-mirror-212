@@ -1,0 +1,2 @@
+[console_scripts]
+deepchecks-installer = deepchecks_installer.cli:main
