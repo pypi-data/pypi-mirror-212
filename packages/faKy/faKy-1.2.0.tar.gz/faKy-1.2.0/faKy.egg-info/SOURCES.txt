@@ -1,0 +1,9 @@
+README.md
+setup.py
+faKy/__init__.py
+faKy/faKy.py
+faKy.egg-info/PKG-INFO
+faKy.egg-info/SOURCES.txt
+faKy.egg-info/dependency_links.txt
+faKy.egg-info/requires.txt
+faKy.egg-info/top_level.txt
