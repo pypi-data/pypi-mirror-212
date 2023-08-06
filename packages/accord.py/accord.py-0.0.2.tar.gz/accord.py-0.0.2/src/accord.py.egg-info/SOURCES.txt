@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/accord.py
+src/discord_objects.py
+src/accord.py.egg-info/PKG-INFO
+src/accord.py.egg-info/SOURCES.txt
+src/accord.py.egg-info/dependency_links.txt
+src/accord.py.egg-info/top_level.txt
