@@ -1,0 +1,6 @@
+setup.py
+digispark/__init__.py
+digispark.egg-info/PKG-INFO
+digispark.egg-info/SOURCES.txt
+digispark.egg-info/dependency_links.txt
+digispark.egg-info/top_level.txt
