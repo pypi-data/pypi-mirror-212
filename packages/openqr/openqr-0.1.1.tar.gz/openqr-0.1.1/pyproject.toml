@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "openqr"
+version = "0.1.1"
+description = "An interesting python package"
+authors = ["Mark Hoo <markhoo@foxmail.com>"]
+readme = "README.md"
+license = "Apache-2.0"
+homepage = "https://github.com/MarkHoo/openqr"
+repository = "https://github.com/MarkHoo/openqr"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Operating System :: Unix",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+packages = [
+    { include = "openqr" },
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/MarkHoo/openqr/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
