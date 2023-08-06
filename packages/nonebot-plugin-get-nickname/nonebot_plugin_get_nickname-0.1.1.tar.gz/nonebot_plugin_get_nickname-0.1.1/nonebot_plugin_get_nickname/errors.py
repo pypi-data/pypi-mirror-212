@@ -1,0 +1,6 @@
+class GetNicknameError(RuntimeError):
+    ...
+
+
+class UnsupportedBotError(GetNicknameError):
+    ...
