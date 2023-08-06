@@ -1,0 +1,9 @@
+setup.py
+Sampackage.egg-info/PKG-INFO
+Sampackage.egg-info/SOURCES.txt
+Sampackage.egg-info/dependency_links.txt
+Sampackage.egg-info/requires.txt
+Sampackage.egg-info/top_level.txt
+sampackage/__init__.py
+sampackage/funcs.py
+sampackage/non_use_funcs.py
