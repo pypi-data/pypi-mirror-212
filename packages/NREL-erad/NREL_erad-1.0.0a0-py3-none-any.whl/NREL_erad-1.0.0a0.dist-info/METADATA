@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: NREL-erad
+Version: 1.0.0a0
+Summary: Graph based scalable tool for computing equitable         resilience metrics for distribution systems.
+Home-page: https://github.com/nrel/erad
+Author: Kapil Duwadi, Aadil Latif, Kwami Sedzro,  Sherin Ann Abraham, Bryan Palmintier
+Author-email: kapil.duwadi@nre.gov, aadil.altif@nrel.gov, sherinann.abraham@nrel.gov, kwami.sedzro@nrel.gov, bryan.palmintier@nrel.gov
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: pytest
+Requires-Dist: networkx
+Requires-Dist: pyyaml
+Requires-Dist: geojson
+Requires-Dist: neo4j-driver
+Requires-Dist: python-dotenv
+Requires-Dist: ditto.py
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: OpenDSSDirect.py
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: shapely
+Requires-Dist: jupyter
+Requires-Dist: geopandas
+Requires-Dist: stateplane
+Requires-Dist: graphdatascience
+Requires-Dist: scipy
+Requires-Dist: geopy
+Requires-Dist: rasterio
+Requires-Dist: xmltodict
+Requires-Dist: pydantic
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: mkdocs ; extra == 'dev'
+Requires-Dist: mkdocstrings[python] ; extra == 'dev'
+Requires-Dist: mkdocs-material ; extra == 'dev'
+Requires-Dist: mkdocs-jupyter ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+
