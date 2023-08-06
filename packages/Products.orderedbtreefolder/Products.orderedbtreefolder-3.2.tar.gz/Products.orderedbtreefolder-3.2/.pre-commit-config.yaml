@@ -1,0 +1,56 @@
+---
+exclude: (\.min\.js$|\.min\.css$|\.svg$)
+repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.0.1
+      hooks:
+          - id: trailing-whitespace
+          - id: end-of-file-fixer
+          - id: fix-encoding-pragma
+            args: [--remove]
+          - id: check-yaml
+          - id: debug-statements
+            language_version: python3
+          - id: check-merge-conflict
+          - id: check-xml
+            name: Check ZCML
+            types: [xml, zcml]
+    - repo: https://github.com/PyCQA/pydocstyle
+      rev: 6.1.1
+      hooks:
+          - id: pydocstyle
+            language_version: python3
+            args:
+              - --add-ignore=D100,D107
+              - --convention=pep257
+              - --match=interfaces.py
+    - repo: https://github.com/pre-commit/mirrors-autopep8
+      rev: v1.5.7
+      hooks:
+          - id: autopep8
+    - repo: https://github.com/PyCQA/isort
+      rev: 5.9.3
+      hooks:
+      - id: isort
+        args: [--filter-files]
+        files: \.py$
+    - repo: https://github.com/PyCQA/flake8
+      rev: 3.9.2
+      hooks:
+          - id: flake8
+            language_version: python3
+    - repo: https://github.com/PyCQA/bandit
+      rev: 1.7.0
+      hooks:
+      - id: bandit
+        exclude: tests|tests.py|test_*|testing.py
+        args: ["--skip=B314,B405,B406,B410"]
+    - repo: https://github.com/myint/rstcheck
+      rev: "3f92957478422df87bd730abde66f089cc1ee19b"  # released versions are too old
+      hooks:
+      - id: rstcheck
+        args: ["--ignore-messages", "Duplicate implicit target.*|No directive entry for|No role entry for|Hyperlink target .* is not referenced"]
+        exclude: LICENSE.txt|solr/.*/synonyms.txt
+        types: [file]
+        files: (\.rst$|\.txt$)
+        additional_dependencies: [Sphinx]

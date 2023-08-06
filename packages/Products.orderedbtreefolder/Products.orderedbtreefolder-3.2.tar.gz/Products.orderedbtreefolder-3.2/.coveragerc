@@ -1,0 +1,20 @@
+[run]
+branch = True
+data_file = ./.coverage
+source = products.orderedbtreefolder
+
+[report]
+precision = 2
+show_missing = True
+skip_covered = True
+omit = */alembic/*
+       */generations/*
+       */coregeneration/*
+       */setup.py
+       */schema/versions/*
+exclude_lines =
+    pragma: no cover
+    class I[A-Z]\w+\((zope\.interface\.Interface|.*I[A-Z].*)\):
+
+[html]
+directory = htmlcov
