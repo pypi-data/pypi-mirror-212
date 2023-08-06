@@ -1,0 +1,8 @@
+LICENSE,sha256=TwGcbcBMa6Lsc-FCv2R8yHRBlPGIIOjfrvA6WK-vO10,1072
+dynaconf_aws_loader/__init__.py,sha256=NfuMUS3BGJaiWyd6cr420sNQi_W-fWzxg9SzZ4j3Js0,221
+dynaconf_aws_loader/loader.py,sha256=0GifJKiMzqM-aOndHajL8YwoLC3z_AVoyCsmsJvh4Ks,5702
+dynaconf_aws_loader/util.py,sha256=4MDjPZqd1j06j4ox8CqhYMNtcQiqh8Xb7FiPMKyy_Js,711
+dynaconf_aws_loader-0.2.0.dist-info/LICENSE,sha256=TwGcbcBMa6Lsc-FCv2R8yHRBlPGIIOjfrvA6WK-vO10,1072
+dynaconf_aws_loader-0.2.0.dist-info/METADATA,sha256=YwdRmuo2EbHy_yEOTQCur8RwKYyau0MFOLYWszp5F_M,7512
+dynaconf_aws_loader-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+dynaconf_aws_loader-0.2.0.dist-info/RECORD,,
