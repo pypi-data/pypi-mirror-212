@@ -1,0 +1,10 @@
+README.md
+setup.py
+ai_supporter/__init__.py
+ai_supporter/tts.py
+ai_supporter.egg-info/PKG-INFO
+ai_supporter.egg-info/SOURCES.txt
+ai_supporter.egg-info/dependency_links.txt
+ai_supporter.egg-info/not-zip-safe
+ai_supporter.egg-info/requires.txt
+ai_supporter.egg-info/top_level.txt
