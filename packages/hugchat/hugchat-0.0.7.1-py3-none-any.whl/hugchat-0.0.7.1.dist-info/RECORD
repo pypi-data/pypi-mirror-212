@@ -1,0 +1,10 @@
+hugchat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hugchat/cli.py,sha256=5JESqPD9aURqjtJsE68VWy_jzz86NuIQdT2yk1oc8S4,3854
+hugchat/exceptions.py,sha256=ESYFRQ2ovKNuacW5KfOwjhCYnKORNuE6SamuD_aVQ0k,928
+hugchat/hugchat.py,sha256=IpV57xK156clFsMsRmq5R-RtKlZM5okc9MdIlmdt_Pk,10994
+hugchat/login.py,sha256=ZC8iwx14zwq3xlRbn1UELZlD23kdLytdfPmXKFkxLVE,5728
+hugchat-0.0.7.1.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+hugchat-0.0.7.1.dist-info/METADATA,sha256=9mkNhUNBUKAOhFFHYRcU1mUq6Rla2Pva5NU2nFRfk2c,4610
+hugchat-0.0.7.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hugchat-0.0.7.1.dist-info/top_level.txt,sha256=oAJyW554jLGIwH008pdgBxFPzXXbIK8KOXgR5yEzQPM,8
+hugchat-0.0.7.1.dist-info/RECORD,,
