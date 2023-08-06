@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: startnet
+Version: 0.1.0
+Summary: startnet - Art-Net protocol implementation
+Home-page: https://github.com/sunarch/startnet
+Author: András Németh (sunarch)
+Author-email: sunarch@protonmail.com
+Maintainer: András Németh (sunarch)
+Maintainer-email: sunarch@protonmail.com
+License: Mozilla Public License 2.0 (MPL 2.0)
+Project-URL: Bug Tracker, https://github.com/sunarch/startnet/issues
+Keywords: startnet,Art-Net
+Platform: Any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Multimedia
+Classifier: Topic :: System :: Networking
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+stArtNet - an Art-Net implementation
+====================================
+
+Art-Net packages
+
+### Installation
+
+Available on PyPI: [libmonty-artnet](https://pypi.org/project/startnet/)
+
+```commandline
+pip install startnet
+```
+
+### Credits
+
+- [Art-Net™](https://artisticlicence.com/support-and-resources/art-net-4/)
+  Designed by and Copyright [Artistic Licence](https://artisticlicence.com/)
+- Thanks to `bethlenke` at [HSBP](https://hsbp.org) for bringing my
+  attention to the protocol and providing the LED grids for testing
+
+### License
+
+[Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
+
+```
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at http://mozilla.org/MPL/2.0/.
+```

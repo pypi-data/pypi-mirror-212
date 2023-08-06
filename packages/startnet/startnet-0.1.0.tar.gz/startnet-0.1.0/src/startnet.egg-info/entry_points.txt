@@ -1,0 +1,2 @@
+[console_scripts]
+startnet = startnet.__main__:main
