@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+setup.py
+ceotr_file/__init__.py
+ceotr_file/file_system_controller.py
+ceotr_file/file_system_manager.py
+ceotr_file/linux_command.py
+ceotr_file/loacl_command_executor.py
+ceotr_file/remote_server_connector.py
+ceotr_file/utils.py
+ceotr_file.egg-info/PKG-INFO
+ceotr_file.egg-info/SOURCES.txt
+ceotr_file.egg-info/dependency_links.txt
+ceotr_file.egg-info/requires.txt
+ceotr_file.egg-info/top_level.txt
+ceotr_file.egg-info/zip-safe
