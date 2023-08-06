@@ -1,0 +1,8 @@
+aad_token_verify/__init__.py,sha256=DSDC76xbq-Q7A1NSUh6ue1BWWInGTlcH1qjBGHzk5wU,49
+aad_token_verify/exceptions.py,sha256=4gW4bk4ozo_Yqrv37Jf0zsWARwP7h1MT47ja8IfdFIg,180
+aad_token_verify/token_verifier.py,sha256=9eCdo6nubQli9CW3cJX9aRBkml-AAvayW5D_gZvmB88,4539
+aad_token_verify-0.2.0.dist-info/LICENSE,sha256=XiraYarKk5spPHvAitoZCnIih6cT54vfoCUBDUkDB70,1070
+aad_token_verify-0.2.0.dist-info/METADATA,sha256=igTug1c4GBcjm7IYdxTaTnwy2tuC6HGui_DA57x1k9Q,3438
+aad_token_verify-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aad_token_verify-0.2.0.dist-info/top_level.txt,sha256=4nyXVL2TOT3LgD2tSa2Ym7P2Hu5gj5aBN4QZ0lu-HTQ,17
+aad_token_verify-0.2.0.dist-info/RECORD,,
