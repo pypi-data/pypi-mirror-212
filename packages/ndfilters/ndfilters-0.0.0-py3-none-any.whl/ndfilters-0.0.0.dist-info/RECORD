@@ -1,0 +1,8 @@
+ndfilters/__init__.py,sha256=L1eVAOv7FX8l2rMBYsB913fmNA1AUMqXJQ6owJyadAo,29
+ndfilters/_trimmed_mean.py,sha256=HqTTOKM7zSZY3MYR4bbfDAAA5PQf9o9XEPNCYpFHSuE,10357
+ndfilters/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ndfilters/tests/test_trimmed_mean.py,sha256=V7uVVznd10xtkDmpnfWTXKl94j6lJrBLZwmGMSc14gU,2304
+ndfilters-0.0.0.dist-info/METADATA,sha256=O_cBRrYpjDePqgV7LPnoOhYQz0loTO90liPFZKkeYd0,1544
+ndfilters-0.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ndfilters-0.0.0.dist-info/top_level.txt,sha256=0rTq63iFTquvJmiT4LcbIX0iGVaqd33uVyOh-XyCKWU,10
+ndfilters-0.0.0.dist-info/RECORD,,
