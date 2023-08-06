@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "depcheck"
+version = "0.3.1"
+authors = ["FlixMobility Tech <open-source@flixbus.com>"]
+description = "Python code quality package that helps in defining and restricting how components of your code may interact"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/flix-tech/depcheck"
+repository = "https://github.com/flix-tech/depcheck"
+documentation = "https://github.com/flix-tech/depcheck"
+keywords = ["dependencies", "hexagonal", "architecture", "jdepend", "deptrac"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydeps = "^1.12.0"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3.0"
+pyre-check = "^0.9.0"
+flake8 = "^6.0.0"
+coverage = "^7.2.0"
+black = "^23.3.0"
+isort = "^5.12.0"
+
+[tool.black]
+line-length = 119
+
+[tool.isort]
+profile = "black"
+line_length = 119
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+depcheck = 'depcheck:run_depcheck'
