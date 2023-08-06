@@ -1,0 +1,8 @@
+log_mgr/__init__.py,sha256=May0rG9SFbA8jF5J6Oa_nyBXqYDTe5vhO3NaEiZKEJY,54
+log_mgr/logger.py,sha256=1l-IBA0CSB9DDSYJCuoL1BzZSyCNbsyFGnoHCFWIRMQ,4630
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_config.py,sha256=ZEQvG_u9jaYEjekLMgd2739N_yksG0qgoCtVCVCxlbI,919
+log_mgr-0.1.1.dist-info/METADATA,sha256=oYzQbxxYjsNbN25YBje8cpkzkNpG9blVu5A_5VOGA_s,654
+log_mgr-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+log_mgr-0.1.1.dist-info/top_level.txt,sha256=7O1nUGryu-_mz-RinATwAUtpQVhFgrnNT5l5MlsiZKM,14
+log_mgr-0.1.1.dist-info/RECORD,,
