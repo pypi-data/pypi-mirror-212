@@ -1,0 +1,13 @@
+Allows the user to easily set the key-words passed in to classes
+as object attributes.
+
+Calling "Defaults.kwargs(self, **kwargs)" or
+"Defaults.kwargs(self, kwargs)" will take any key-word value pairs
+in the kwargs dict and assign them as object variables. If these
+key-words had default values set, they will be overruled by the new
+values passed in.
+
+For further documentation see the following:
+load, inherit
+https://github.com/HenryGinn/HGUtils
+https://github.com/HenryGinn/HGUtils/tree/main/Defaults
