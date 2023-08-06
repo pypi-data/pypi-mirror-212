@@ -1,0 +1,12 @@
+signax/__init__.py,sha256=OFXKUzknjdaTOfe1qf8HPQBjvuOy_g-G0Ag-etQ8EEI,503
+signax/module.py,sha256=tOJwvAknoZWmcsqcTxSbl5TfReIiKgGOZTH1q_Dvxpc,1062
+signax/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+signax/signatures.py,sha256=0AEFi0LvXSsbj8ir0soVd2eNo2APxEzFVToLg8nj9mw,6961
+signax/tensor_ops.py,sha256=Q1hgPa8eh13GzNgcrP20dpsxWjH4r1VHQqEEz9b8gB4,4370
+signax/utils.py,sha256=6CemwP7UQH5GlNe2rToP0AzCJTHW8mPpIacetYpZXlQ,3582
+signax/_compat/__init__.py,sha256=ARQUcoO_uwz38SqYUoRkMQrnPz2cZNNUypU-6ZQ806U,150
+signax/_compat/typing.py,sha256=ykMK84ImLvmb6IvGTEmaL9SoWComR8CIDB_t-sOSsjI,424
+signax-0.2.0.dist-info/METADATA,sha256=NDbnPuXH4B5ZxzM0755Lx0pJRIkW9P851gMvyGtTcyk,6306
+signax-0.2.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+signax-0.2.0.dist-info/licenses/LICENSE,sha256=d5fHei1ixnX9fulZV8a6LNsplo8dOPnUWB1HMBGRGfM,1072
+signax-0.2.0.dist-info/RECORD,,
