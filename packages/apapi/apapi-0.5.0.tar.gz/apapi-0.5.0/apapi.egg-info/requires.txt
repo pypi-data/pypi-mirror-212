@@ -1,0 +1,8 @@
+requests~=2.28
+
+[dev]
+black~=23.1
+isort~=5.12
+pdoc~=12.3
+twine~=4.0
+wheel~=0.38
