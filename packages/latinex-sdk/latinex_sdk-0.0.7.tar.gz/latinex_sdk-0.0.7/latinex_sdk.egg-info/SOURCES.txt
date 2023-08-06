@@ -1,0 +1,9 @@
+README.md
+setup.py
+latinex_sdk/__init__.py
+latinex_sdk/generic_utils.py
+latinex_sdk.egg-info/PKG-INFO
+latinex_sdk.egg-info/SOURCES.txt
+latinex_sdk.egg-info/dependency_links.txt
+latinex_sdk.egg-info/requires.txt
+latinex_sdk.egg-info/top_level.txt
