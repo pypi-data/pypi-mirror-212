@@ -1,0 +1,9 @@
+gemseo>=5
+numpy
+pdfo<=1.2,>=1.0.0
+
+[test]
+covdefaults
+pytest
+pytest-cov
+pytest-xdist
