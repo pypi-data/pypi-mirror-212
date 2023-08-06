@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+ArticleSumm/__init__.py
+articlesumm.egg-info/PKG-INFO
+articlesumm.egg-info/SOURCES.txt
+articlesumm.egg-info/dependency_links.txt
+articlesumm.egg-info/requires.txt
+articlesumm.egg-info/top_level.txt

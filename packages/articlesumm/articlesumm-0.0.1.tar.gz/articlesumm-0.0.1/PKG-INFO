@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: articlesumm
+Version: 0.0.1
+Summary: Custom scientific/research article summarization library based on Statistical features
+Home-page: 
+Author: Maxwell Tetteh
+Author-email: tettehmaxwell11@gmail.com
+License: MIT
+Keywords: text summarization,scientific articles
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+The summarization of research articles is a complex task compared to general-purpose summaries.This is a result of
+the distict nature or semantic structure of these scientific articles. The presence of inline citations and summarization
+modules bias to certain Text features that often work well on less-tecnical text but fail to produce coherence in 
+this area are all underlying factors.
+
+We circumvent these challenges in order to produce more coherent, human-understandable summaries of manuscripts and research text
+using this libary.
+
+CHANGELOG
+=================
+
+0.0.1 (06/06/2023)
+------------------
+- First Release
