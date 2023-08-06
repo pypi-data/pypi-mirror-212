@@ -1,0 +1,14 @@
+README.md
+README.rst
+setup.py
+auto_route/__init__.py
+auto_route/auto_app.py
+auto_route/auto_route.py
+auto_route/cli_auto_route.py
+auto_route/create_composed_class.py
+auto_route/streamlit_demo.py
+auto_route.egg-info/PKG-INFO
+auto_route.egg-info/SOURCES.txt
+auto_route.egg-info/dependency_links.txt
+auto_route.egg-info/requires.txt
+auto_route.egg-info/top_level.txt
