@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+aspectify/__init__.py
+aspectify/_modidx.py
+aspectify/aop.py
+aspectify/examples.py
+aspectify/examples2.py
+aspectify.egg-info/PKG-INFO
+aspectify.egg-info/SOURCES.txt
+aspectify.egg-info/dependency_links.txt
+aspectify.egg-info/entry_points.txt
+aspectify.egg-info/not-zip-safe
+aspectify.egg-info/requires.txt
+aspectify.egg-info/top_level.txt

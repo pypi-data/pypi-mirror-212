@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+aspectify = aspectify._modidx:d
+
