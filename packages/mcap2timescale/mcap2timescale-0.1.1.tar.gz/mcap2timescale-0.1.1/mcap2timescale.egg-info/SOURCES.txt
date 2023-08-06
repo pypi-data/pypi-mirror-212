@@ -1,0 +1,8 @@
+README.md
+setup.py
+mcap2timescale.egg-info/PKG-INFO
+mcap2timescale.egg-info/SOURCES.txt
+mcap2timescale.egg-info/dependency_links.txt
+mcap2timescale.egg-info/entry_points.txt
+mcap2timescale.egg-info/requires.txt
+mcap2timescale.egg-info/top_level.txt
