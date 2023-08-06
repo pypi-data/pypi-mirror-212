@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: pdf2index
+Version: 0.0.2
+Project-URL: Documentation, https://gitlab.com/philipp.herkert/pdf2index
+Project-URL: Issues, https://gitlab.com/philipp.herkert/pdf2index/-/issues
+Project-URL: Source, https://gitlab.com/philipp.herkert/pdf2index
+Author: Philipp Herkert
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: keybert
+Requires-Dist: pdfminer-six
+Requires-Dist: typer[all]
+Description-Content-Type: text/markdown
+
+# pdf2index
+
+[![PyPI - Version](https://img.shields.io/pypi/v/pdf2index.svg)](https://pypi.org/project/pdf2index)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pdf2index.svg)](https://pypi.org/project/pdf2index)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install pdf2index
+```
+
+Consider installing in a `venv` or using `pipx`
+
+Warning: This package has large dependencies. You will be downloading ~2 GB.
+
+## Usage
+
+```console
+pdf2index book1.pdf book2.pdf book3.pdf --password $(<password_file.txt) --out index.txt
+```
+
+Note: The order of the pdfs matters as the books will be referenced in that order.
+
+## Dev
+
+```console
+ hatch run pdf2index data/Book* -p $(<data/passwd/passwd.txt)
+```
+
+## License
+
+`pdf2index` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
