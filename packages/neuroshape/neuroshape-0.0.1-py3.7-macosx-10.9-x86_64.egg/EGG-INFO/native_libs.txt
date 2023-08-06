@@ -1,0 +1,3 @@
+neuroshape/_stats.cpython-37m-darwin.so
+neuroshape/eta.cpython-37m-darwin.so
+neuroshape/euler.cpython-37m-darwin.so
