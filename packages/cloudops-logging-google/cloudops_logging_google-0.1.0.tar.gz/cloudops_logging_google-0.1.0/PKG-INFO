@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cloudops-logging-google
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/manucalop/cloudops-logging-google
+License: MIT
+Author: Manuel Castillo-Lopez
+Author-email: manucalop@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: google-cloud-logging (>=3.5.0,<4.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Project-URL: Repository, https://github.com/manucalop/cloudops-logging-google
+Description-Content-Type: text/markdown
+
+# cloudops-logging-google
+
+
