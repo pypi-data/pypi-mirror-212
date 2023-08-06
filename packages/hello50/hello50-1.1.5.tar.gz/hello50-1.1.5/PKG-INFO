@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hello50
+Version: 1.1.5
+Summary: Hello world shit!!!!
+Author: Malik
+Author-email: myemail46926213@gmail.com
+Keywords: python,hello
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Hello world 3~~~~~
