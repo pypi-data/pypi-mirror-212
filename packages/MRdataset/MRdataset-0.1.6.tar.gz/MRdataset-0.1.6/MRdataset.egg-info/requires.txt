@@ -1,0 +1,6 @@
+dicom2nifti>=2.4.2
+nibabel
+pydicom
+dictdiffer
+pandas>=1.5.2
+pybids
