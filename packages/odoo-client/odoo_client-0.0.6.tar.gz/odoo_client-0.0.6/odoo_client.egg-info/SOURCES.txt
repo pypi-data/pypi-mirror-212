@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+examples/__init__.py
+examples/product.py
+odoo_client/__init__.py
+odoo_client/client.py
+odoo_client/decorators.py
+odoo_client/model.py
+odoo_client/object.py
+odoo_client.egg-info/PKG-INFO
+odoo_client.egg-info/SOURCES.txt
+odoo_client.egg-info/dependency_links.txt
+odoo_client.egg-info/top_level.txt
