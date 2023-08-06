@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyLiang
+Version: 1.0.0
+Summary: A python package for liang-klleeman infomation flow causality test.
+Home-page: https://github.com/Koni2020/pyLiang
+Author: Hanyu Jin
+Author-email: henrychin2006@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyLiang
+# What is the pyLiang?
+The liang-klleeman information flow (Liang) is used to detect causality between two time series. 
