@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: BCHS-PopHealth
+Version: 0.1.0
+Summary: Python package to automate SQL queries, Excel spreadsheet creation, and email tasks.
+Author: BCHS Population Health
+Author-email: <pophealthdata@bronxcare.org>
+License: MIT license
+Keywords: pophealth,taskmaster,BCHS,BronxCare
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+License-File: LICENSE
+Requires-Dist: SQLAlchemy (>=2.0.15)
+Requires-Dist: pywin32 (>=306)
+Requires-Dist: pandas (>=2.0.2)
+Requires-Dist: openpyxl (>=3.1.2)
+Requires-Dist: sqlparams (>=5.1.0)
+
