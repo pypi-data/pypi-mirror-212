@@ -1,0 +1,12 @@
+autotrader/SmartWebSocketV2.py,sha256=tSfr-uA1QqciLVL0L_OtBdvOjPcJLVys_yigYsJ6EYI,16121
+autotrader/__init__.py,sha256=YYeEb3LCBhyrfJS8-0Rzt2b7ICacBkGMANTjgoBugIY,2692
+autotrader/autotradingfunctions.py,sha256=VbKje9_nA64_yi6PtvjzET-9XbKNZ6A5cUheC4dn9qQ,139414
+autotrader/blackscholes.py,sha256=-BW30crkrryaxHFj72o2mKYlc7shwmEEtlaOe0aX-I4,7881
+autotrader/datamodule.py,sha256=wThR2sxSJV5gQkDiZS9rneWgMnQclQPD2q-trhJRErY,23526
+autotrader/discord_bot.py,sha256=6pqa1dJuOg_jTTmrrt3UZ27hpHN7IreQmUhV0zR4xF8,1683
+autotrader/nsefunctions.py,sha256=gLj844eTI517hL8AHstb28kkSzrgoz08WXCjgJMpZ30,39664
+autotrader/strategies.py,sha256=tm7LWjBy2yNG8LiniAN-ocU6sH9gKznaHDK54V4Axzs,14140
+autotrading-0.8.11.dist-info/METADATA,sha256=nRYzCFMD0OmzM7mhkyM-KJh0k4jXYBrBPjTKHWI-aFQ,1994
+autotrading-0.8.11.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autotrading-0.8.11.dist-info/top_level.txt,sha256=dccsMWWYXMCtdUurof9A2iOX4tAbR6zm2-8-GIJUKyo,11
+autotrading-0.8.11.dist-info/RECORD,,
