@@ -1,0 +1,10 @@
+tree_ring_watermark/__init__.py,sha256=ur9JkulEpYUUtr9cnlS8myYH5LqmUVWUhO7jMWtG9Gs,111
+tree_ring_watermark/_check.py,sha256=jjZ1flowjZ9SGNgT_WNLBkPn1aPxF8hXLw6OMImgr9Q,107
+tree_ring_watermark/_detect.py,sha256=GECovl4KtZnSUTexQ8Y6svwAe7xXn0xHxpnnm0al8u8,164
+tree_ring_watermark/_get_noise.py,sha256=GZSvVSCRkrmAWRGY-jd-MHnfMWOujj2scpJx6MzfZvM,149
+tree_ring_watermark/dependency_versions_table.py,sha256=FgA6Hoaml22nQzgRFp_u2ltX7hOZeZokZS5aSItPw30,274
+tree_ring_watermark-0.0.1.dist-info/LICENSE.md,sha256=hOHog7ETpbeYFpYEA2dTSAdYuILVO8WJC5Fh37bmrQo,1065
+tree_ring_watermark-0.0.1.dist-info/METADATA,sha256=B39lOvX3lZ5Rhr4BdQabPfyGixFU_uQNoipqLgNSJAc,3492
+tree_ring_watermark-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tree_ring_watermark-0.0.1.dist-info/top_level.txt,sha256=EgxQ1ExASUWc7I7DUCL7zxAAhhL7gWnmy_IdZKIcz-I,20
+tree_ring_watermark-0.0.1.dist-info/RECORD,,
