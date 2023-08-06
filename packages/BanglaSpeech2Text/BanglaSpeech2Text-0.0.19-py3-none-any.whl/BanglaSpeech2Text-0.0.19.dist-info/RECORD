@@ -1,0 +1,11 @@
+banglaspeech2text/__init__.py,sha256=uLu0sMJsVmTM471Qghia-FvNsJBEf6f7Q-8-QEN1kWA,53
+banglaspeech2text/speech2text.py,sha256=d-3QehEgBptpoabqahPJllv_tor5PAebFBJm0lqvB5Y,12472
+banglaspeech2text/utils/__init__.py,sha256=jLeTeKjS5QTvVw15hHGZTkHFt76CRx_cztdFVCJHCvM,185
+banglaspeech2text/utils/helpers.py,sha256=NJ8-Hcaqdetz9J5bVES9DJ-IuMLO-o3XIeQVTeWcg6Q,895
+banglaspeech2text/utils/listed_models.json,sha256=U9NbSJFGNQieXG6NUgBa-DSlnxglLYS6MLFXCaQD9NE,1123
+banglaspeech2text/utils/models.py,sha256=Zi1Ld92I85QqY6jOHLU5LlXabvQWFw3VPx-2_4Ym8d4,1421
+BanglaSpeech2Text-0.0.19.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+BanglaSpeech2Text-0.0.19.dist-info/METADATA,sha256=ShklFPTvxphu5a7cWEESdiAQRsGgP16dR4mH0bnBWRA,5531
+BanglaSpeech2Text-0.0.19.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+BanglaSpeech2Text-0.0.19.dist-info/top_level.txt,sha256=U3WrHLx0sUu5PebkcRF__Br6AfsuaonFIJQR762QQ7M,18
+BanglaSpeech2Text-0.0.19.dist-info/RECORD,,
