@@ -1,0 +1,11 @@
+LICENCE.txt
+setup.py
+threatmon/__init__.py
+threatmon/ioc.py
+threatmon/utils.py
+threatmon.egg-info/PKG-INFO
+threatmon.egg-info/SOURCES.txt
+threatmon.egg-info/dependency_links.txt
+threatmon.egg-info/not-zip-safe
+threatmon.egg-info/requires.txt
+threatmon.egg-info/top_level.txt
