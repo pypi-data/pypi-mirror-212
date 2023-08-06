@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+angel/__init__.py
+angel/alg/__init__.py
+angel/alg/iAngel.py
+angel/alg/iArchAngel.py
+angelcommunity.egg-info/PKG-INFO
+angelcommunity.egg-info/SOURCES.txt
+angelcommunity.egg-info/dependency_links.txt
+angelcommunity.egg-info/requires.txt
+angelcommunity.egg-info/top_level.txt
