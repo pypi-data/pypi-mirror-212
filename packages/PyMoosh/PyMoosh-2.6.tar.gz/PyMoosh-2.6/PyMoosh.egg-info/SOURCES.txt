@@ -1,0 +1,18 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+PyMoosh/__init__.py
+PyMoosh/core.py
+PyMoosh/materials.py
+PyMoosh/optim_algo.py
+PyMoosh.egg-info/PKG-INFO
+PyMoosh.egg-info/PKG-INFO.sbak
+PyMoosh.egg-info/SOURCES (SFConflict antoine.moreau@uca.fr 2023-05-29-10-11-16).txt
+PyMoosh.egg-info/SOURCES.txt
+PyMoosh.egg-info/dependency_links.txt
+PyMoosh.egg-info/requires.txt
+PyMoosh.egg-info/top_level.txt
+PyMoosh/data/material_data.json
+PyMoosh/data/solar.json
