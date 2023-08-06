@@ -1,0 +1,153 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jun  4 16:41:03 2023
+
+@author: muthyala.7
+"""
+
+
+import torch
+import warnings
+warnings.filterwarnings('ignore')
+import itertools
+import time 
+import torch.nn as nn
+import torch.optim as optim
+import itertools
+import pdb
+class SISSORegressor:
+    
+    def __init__(self,x,y,names,dimension=1,sis_features=20,method='L0',device='cpu'):
+        self.device = device
+        self.x = x.to(self.device)
+        self.y = y.to(self.device)
+        self.names = names
+        self.dimension = dimension
+        self.sis_features = sis_features
+        self.method = method 
+        self.x_mean = self.x.mean(dim=0)
+        self.x_std = self.x.std(dim=0)
+        self.y_mean = self.y.mean()
+        self.y_centered = self.y - self.y_mean
+        self.x_standardized = ((self.x - self.x_mean)/self.x_std)
+        self.scores = []
+        self.indices = torch.arange(1, (self.dimension*self.sis_features+1)).view(self.dimension*self.sis_features,1).to(self.device)
+        self.residual = torch.empty(self.y_centered.shape).to(self.device)
+        self.x_std_clone = torch.clone(self.x_standardized)
+
+        
+    
+    def higher_dimension(self,iteration):
+        
+        min_error = torch.dot(self.y_centered,self.y_centered)
+        #Indices values that needs to be assinged zero 
+        ind = self.indices[:,-1][~torch.isnan(self.indices[:,-1])]
+        self.x_standardized[:,ind.tolist()] = 0
+        scores= torch.abs(torch.mm(self.residual,self.x_standardized))
+        scores[torch.isnan(scores)] = 0
+        self.x_standardized[:,ind.tolist()] = self.x_std_clone[:,ind.tolist()]
+        sorted_scores, sorted_indices = torch.topk(scores, k= self.sis_features)
+        sorted_indices = sorted_indices.T
+        sorted_indices_earlier = self.indices[:((iteration-1)*self.sis_features),(iteration-1)].unsqueeze(1)
+        sorted_indices = torch.cat((sorted_indices_earlier,sorted_indices),dim=0)
+        if sorted_indices.shape[0] < self.indices.shape[0]:
+            remaining = (self.sis_features*self.dimension) - int(sorted_indices.shape[0])
+            #zeros = torch.zeros(remaining,1)
+            nan = torch.full((remaining,1),float('nan')).to(self.device)
+            sorted_indices = torch.cat((sorted_indices,nan),dim=0)
+            self.indices = torch.cat((self.indices,sorted_indices),dim=1)
+        else:
+            self.indices = torch.cat((self.indices,sorted_indices),dim=1)
+        comb = self.indices[:,-1][~torch.isnan(self.indices[:,-1])].tolist()
+        combinations_generated = itertools.combinations(comb, (int(self.indices.shape[1])-1))
+        start_c = time.time()
+        for combinations in combinations_generated:
+            x_sub = self.x_standardized[:,combinations].to(self.device)
+            coefficients = x_sub.pinverse()@self.y_centered.reshape(-1,1)
+            sum_of_residuals = torch.sum((x_sub @ coefficients - self.y_centered.reshape(-1,1))**2)
+            index = torch.tensor(combinations)
+            try:
+                if sum_of_residuals <min_error:
+                    min_error = sum_of_residuals
+                    coefs_min, indices_min = coefficients,index
+            except:
+                pass
+        print('Time taken to go through all combinations is:', time.time()-start_c)
+        rmse = torch.sqrt(min_error/int(self.y_centered.shape[0]))
+        print(indices_min.shape)
+        non_std_coeff = ((coefs_min.T/self.x_std[indices_min.tolist()]))
+        non_std_intercept = self.y.mean() - torch.dot(self.x_mean[indices_min.tolist()]/self.x_std[indices_min.tolist()],coefs_min.flatten())
+        self.residual = self.y_centered - torch.mm(coefs_min.T,self.x_standardized[:,indices_min.tolist()].T)
+        terms = []
+        for i in range(len(non_std_coeff.squeeze())):
+            term = str(round(float(non_std_coeff.squeeze()[i]),3)) + "*" + str(self.names[int(indices_min[i])])
+            terms.append(term)
+        return float(rmse),terms,non_std_intercept,non_std_coeff
+    
+    def SISSO(self):
+        
+        if self.x.shape[1] > self.sis_features*self.dimension :
+            print(f"Starting SISSO in {self.device}")
+        else:
+            return RuntimeError(f'Number of features in SIS screening are greater than total number of features, SISSO cannot be performed. Please input the valid number when product of {self.dimension}*{self.sis_features} that is less than  {self.x.shape[1]}')
+        
+        #Looping over the dimensions 
+        for i in range(1,self.dimension+1):
+            
+            if i ==1:
+                
+                start_1D = time.time()
+                #calculate the scores 
+                scores = torch.abs(torch.mm(self.y_centered.unsqueeze(1).T,self.x_standardized))
+                
+                #Set the NaN values claculation to zero, instead of removing 
+                scores[torch.isnan(scores)] = 0
+                
+                #Sort the top number of scores based on the sis_features 
+                sorted_scores, sorted_indices = torch.topk(scores,k=self.sis_features)
+                sorted_indices = sorted_indices.T
+                remaining = (self.sis_features*self.dimension) - int(sorted_indices.shape[0])
+                #replace the remaining indices with nan
+                nan = torch.full((remaining,1),float('nan')).to(self.device)
+                #zeros = torch.zeros(remaining,1)
+                sorted_indices = torch.cat((sorted_indices,nan),dim=0)
+                #store the sorted indices as next column
+                self.indices = torch.cat((self.indices,sorted_indices),dim=1)
+                #selected_index = self.indices[0,0]
+                selected_index = self.indices[0,1]
+                x_in = self.x[:, int(selected_index)].unsqueeze(1)
+                # Add a column of ones to x for the bias term
+                x_with_bias = torch.cat((torch.ones_like(x_in), x_in), dim=1)
+                #Calculate the intercept and coefficient, Non standardized
+                coef1 = torch.pinverse(x_with_bias) @ self.y
+                
+                #Calculate the residuals based on the standardized and centered values
+                x_in1 = self.x_standardized[:, int(selected_index)].unsqueeze(1)
+                # Add a column of ones to x for the bias term
+                x_with_bias1 = torch.cat((torch.ones_like(x_in1), x_in1), dim=1)
+                coef = torch.pinverse(x_with_bias1) @ self.y_centered
+                self.residual = (self.y_centered - (coef[1]*self.x_standardized[:, int(selected_index)])).unsqueeze(1).T
+                rmse = float(torch.sqrt(torch.mean(self.residual**2)))
+                #self.residual = residual
+                coefficient = coef1[1]
+                intercept = coef1[0]
+                if intercept > 0:
+                    equation = str(float(coefficient)) + '*' + str(self.names[int(selected_index)]) + '+' + str(float(intercept))
+                    print('Equation: ', equation)
+                    print('RMSE: ', rmse)
+                else:
+                    equation = str(float(coefficient)) + '*' + str(self.names[int(selected_index)]) + '-' + str(float(intercept))
+                    print('Equation: ', equation)
+                    print('RMSE: ', rmse)
+                print('Time taken to generate one dimensional equation: ', time.time()-start_1D,'seconds')
+            else:
+                start = time.time()
+                s = self.higher_dimension(i)
+                print(s,time.time()-start)
+                
+                    
+                
+                
+                
+                
