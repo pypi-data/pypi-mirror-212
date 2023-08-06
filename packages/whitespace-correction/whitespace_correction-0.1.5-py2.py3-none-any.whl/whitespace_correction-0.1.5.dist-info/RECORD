@@ -1,0 +1,14 @@
+whitespace_correction/__init__.py,sha256=2_7Hru4602vL6ihc3wEZUAZfbesWqOZA-iwlPfN55Fk,110
+whitespace_correction/model.py,sha256=1E-rCm_UPOojUmzXaoE9zVZ79bjhOEIM74BR7OPrA0k,8128
+whitespace_correction/version.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+whitespace_correction/api/__init__.py,sha256=f5qaG0Te6JqN_f3SppbQSxRD6PkP2dA4h2U7yRmmY-U,68
+whitespace_correction/api/cli.py,sha256=xaADzVtatlCOfsl5ws3TwTNJim16kiIC0_9hpUsfpBM,1878
+whitespace_correction/api/corrector.py,sha256=sU4BO5IZJX80vaa7_BO-yrj6_H81XWS_XV0R2PLERPQ,20578
+whitespace_correction/api/server.py,sha256=uEVIFgY6MvEh-xbEEmY9DKlLk-cLC7v78cKBRVBmNDI,4556
+whitespace_correction/api/train.py,sha256=YpQc3LoCd4aTcdoZE5Jt5Y8enpeNYYWraGtlSgVX_wU,1207
+whitespace_correction-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+whitespace_correction-0.1.5.dist-info/METADATA,sha256=Hd4DLztdyx6O6hGnlRxgNhnLjpRyEp29MGlWUbnDiNA,23131
+whitespace_correction-0.1.5.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+whitespace_correction-0.1.5.dist-info/entry_points.txt,sha256=3hJmgW8SM8ywXBEhMUvV2AWO7mow-lA5-qzWtBoNuXU,59
+whitespace_correction-0.1.5.dist-info/top_level.txt,sha256=LTZG7nM9EHApO-Kp-6C7XlAny-PDw8GLvUfT2yrx-fQ,22
+whitespace_correction-0.1.5.dist-info/RECORD,,
