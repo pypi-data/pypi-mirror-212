@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: PyPO-pkg
+Version: 1.0.0
+Author: Arend Moerman
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+License-File: LICENSE
