@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: wscraping-helper
+Version: 1.0.0
+Summary: WebScraping helper module
+Author: Komáromi János
+Author-email: komaromijano2002@gmail.com
+Requires-Dist: requests
+
