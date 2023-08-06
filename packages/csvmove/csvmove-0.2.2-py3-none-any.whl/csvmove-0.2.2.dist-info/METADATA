@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: csvmove
+Version: 0.2.2
+Summary: CLI utility that moves files based on columns in a csv
+License: GPL-3.0-or-later
+Author: João Fauvel
+Author-email: jmmfauvel@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: rich (>=13.3.2,<14.0.0)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# csvmove
+CLI utility that moves files based on columns in a csv.
