@@ -1,0 +1,10 @@
+geovista>=0.2
+scitools-iris>=3.2
+
+[dev]
+pre-commit
+
+[test]
+codecov
+pytest>=6.0
+pytest-cov
