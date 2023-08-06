@@ -1,0 +1,9 @@
+SQLAlchemy
+matplotlib
+numpy
+pandas>=1.4.0
+python-dateutil>=2.5
+pytz
+scikit-learn
+scipy
+statsmodels
