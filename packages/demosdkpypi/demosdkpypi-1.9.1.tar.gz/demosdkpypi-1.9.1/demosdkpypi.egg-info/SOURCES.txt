@@ -1,0 +1,8 @@
+README.md
+setup.py
+demosdkpypi/__init__.py
+demosdkpypi/hello.py
+demosdkpypi.egg-info/PKG-INFO
+demosdkpypi.egg-info/SOURCES.txt
+demosdkpypi.egg-info/dependency_links.txt
+demosdkpypi.egg-info/top_level.txt
