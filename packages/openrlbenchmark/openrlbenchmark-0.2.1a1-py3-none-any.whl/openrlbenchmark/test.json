@@ -1,0 +1,76 @@
+{
+    "_wandb": {
+        "desc": null,
+        "value": {
+            "t": {
+                "1": [
+                    1,
+                    11,
+                    49,
+                    51,
+                    55,
+                    71,
+                    84
+                ],
+                "2": [
+                    1,
+                    11,
+                    49,
+                    51,
+                    55,
+                    71,
+                    84
+                ],
+                "3": [
+                    23
+                ],
+                "4": "3.8.11",
+                "5": "0.15.3",
+                "6": "4.29.2",
+                "8": [
+                    5
+                ]
+            },
+            "code_path": "code/examples/calculator.py",
+            "framework": "huggingface",
+            "start_time": 1686080048.258101,
+            "cli_version": "0.15.3",
+            "is_jupyter_run": false,
+            "python_version": "3.8.11",
+            "is_kaggle_kernel": false,
+            "huggingface_version": "4.29.2"
+        }
+    },
+    "trl_ppo_trainer_config": {
+        "desc": null,
+        "value": {
+            "lam": 0.95,
+            "seed": 0,
+            "gamma": 1,
+            "steps": 20000,
+            "target": 6,
+            "horizon": 10000,
+            "vf_coef": 0.1,
+            "log_with": "wandb",
+            "cliprange": 0.2,
+            "target_kl": 0.1,
+            "batch_size": 256,
+            "model_name": null,
+            "ppo_epochs": 4,
+            "adap_kl_ctrl": true,
+            "init_kl_coef": 0.2,
+            "compare_steps": 1,
+            "learning_rate": 0.0000141,
+            "max_grad_norm": null,
+            "early_stopping": false,
+            "cliprange_value": 0.2,
+            "mini_batch_size": 16,
+            "total_ppo_epochs": 79,
+            "forward_batch_size": null,
+            "optimize_cuda_cache": false,
+            "tracker_project_name": "trl",
+            "remove_unused_columns": true,
+            "gradient_accumulation_steps": 1
+        }
+    }
+}
