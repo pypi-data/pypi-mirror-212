@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+FiniteDiffX.egg-info/PKG-INFO
+FiniteDiffX.egg-info/SOURCES.txt
+FiniteDiffX.egg-info/dependency_links.txt
+FiniteDiffX.egg-info/not-zip-safe
+FiniteDiffX.egg-info/requires.txt
+FiniteDiffX.egg-info/top_level.txt
+finitediffx/__init__.py
+finitediffx/_src/__init__.py
+finitediffx/_src/fgrad.py
+finitediffx/_src/finite_diff.py
+finitediffx/_src/utils.py
+tests/__init__.py
+tests/test_fgrad.py
+tests/test_finite_diff.py
