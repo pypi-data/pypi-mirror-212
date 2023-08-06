@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+src/test_graphql_sdk.egg-info/PKG-INFO
+src/test_graphql_sdk.egg-info/SOURCES.txt
+src/test_graphql_sdk.egg-info/dependency_links.txt
+src/test_graphql_sdk.egg-info/top_level.txt
