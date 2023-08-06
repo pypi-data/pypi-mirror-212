@@ -1,0 +1,17 @@
+nifigator/__init__.py,sha256=fS5Auwqvf74LScMAobyMtsNuLuz1jP1Nbc3OWAwLqJY,861
+nifigator/const.py,sha256=iQNkzQY9VtVN3y0eCqkVyTXvv95mEZGvmYNHHQt05L4,8630
+nifigator/converters.py,sha256=qIe8VPY74IRJcbeCYZzp50h735I18DOLICBbFyiWvFU,10814
+nifigator/lemongraph.py,sha256=LJTJwAUd4VzW5xn33BvF_-4ySsd057y8JAikLQFlGHw,8693
+nifigator/lemonobjects.py,sha256=SBzdxPDnBo2RjSE6_HDC_PHOi1FAUUVq9DRf_xzyxQc,71379
+nifigator/nafdocument.py,sha256=cslD-1k6oBgI0kP9XF4eMgBznGRrblfLrwElRM2kRa4,40383
+nifigator/nafobjects.py,sha256=LgLMY28jmiMfPMZ0obaEL8CRnUMJ9TvkTLqvoLRcn0I,6832
+nifigator/nifgraph.py,sha256=k58porWtDzf7VrKYzNZ5taEOCQlCH8nhJh5efxRZCMc,18160
+nifigator/nifobjects.py,sha256=8UwiXgpXkLevbdBkzt1fIsvvfEPgLBhsS0SMcn7nRCo,66013
+nifigator/nifvecobjects.py,sha256=T7H8k1Snw9XoWzN6gYnlDltUCumK2eHhISPMWUKBZCI,10975
+nifigator/pdfparser.py,sha256=2JS1VWdAh0LTYts5BEafKftkMeyv-N4KEQaaxV-WvEE,8692
+nifigator/utils.py,sha256=vKh9ALnQWGLihtBGoTQzDj_cDVMLJzhz2Ek6oqnZEio,13608
+nifigator-0.1.19.dist-info/LICENSE.txt,sha256=TdE5OKRJvkQbx2HHuqn9tYIueDVuzsQlcXydN3mo7D0,1356
+nifigator-0.1.19.dist-info/METADATA,sha256=DOFUTqhnMQKKibKdIMe9f6nW_8zDqEReEHZtuU4SA7U,3217
+nifigator-0.1.19.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+nifigator-0.1.19.dist-info/top_level.txt,sha256=28yDNfqHZVhjrjwKrhqtbtixnZk2ZbJjkeWXOgZtgts,10
+nifigator-0.1.19.dist-info/RECORD,,
