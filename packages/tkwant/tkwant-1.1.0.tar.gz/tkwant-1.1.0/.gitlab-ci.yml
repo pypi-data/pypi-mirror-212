@@ -1,0 +1,72 @@
+image: gitlab.kwant-project.org:5005/kwant/tkwant:latest
+
+variables:
+      GIT_STRATEGY: clone
+      # rsync is used to send documentation to our web servers: we never send any
+      # secret information, and using 'ssh-keyscan' causes the CI server's IP to be blacklisted
+      SSH_COMMAND: "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+      OMP_NUM_THREADS: "1"
+
+
+stages:
+    - build
+    - test
+    - deploy
+
+# Build
+
+build:package:
+  stage: build
+  script:
+    - python3 setup.py build
+    - python3 setup.py build_ext -i
+  artifacts:
+    untracked: true
+    expire_in: 1 hour
+
+# Test
+
+test:package:
+    stage: test
+    script:
+        - py.test -rs --cache-clear --integtest
+
+build:documentation:
+    stage: test
+    script:
+        - make -C doc clean ; make -C doc doctest html
+    artifacts:
+      paths:
+        - doc/build/html/
+      expire_in: 1 week
+
+upload dev docs:
+  stage: deploy
+  environment:
+    name: production
+    url: https://tkwant.kwant-project.org/doc/dev/
+  only:
+    - master@kwant/tkwant
+  script:
+    - eval $(ssh-agent -s)
+    - echo $WEBSITE_KEY | base64 -d | ssh-add -
+    # Server-side we use rrsync to restrict access to the tkwant website directory.
+    - rsync -rlv -e "$SSH_COMMAND" --delete doc/build/html/* "kwant@kwant-project.org:doc/dev/"
+
+upload stable docs:
+  stage: deploy
+  environment:
+    name: production
+    url: https://tkwant.kwant-project.org/doc/
+  only:
+    - tags
+  script:
+    - desc=$(git describe --first-parent)
+    # Do nothing if this commit is not versioned.
+    - echo "$desc" | egrep -q '^v[0-9]+\.[0-9]+\.[0-9]+$' || exit 0
+    # Extract version in x.y format.
+    - ver=$(echo "$desc" | egrep -o '[0-9]+\.[0-9]+')
+    - eval $(ssh-agent -s)
+    - echo $WEBSITE_KEY | base64 -d | ssh-add -
+    # Server-side we use rrsync to restrict access to the tkwant website directory.
+    - rsync -rlv -e "$SSH_COMMAND" --delete doc/build/html/* "kwant@kwant-project.org:doc/$ver/"

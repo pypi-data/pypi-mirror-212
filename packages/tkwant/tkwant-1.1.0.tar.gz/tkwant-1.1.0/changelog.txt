@@ -1,0 +1,20 @@
+Version 1.1
+
+* new class manybody.Greenfuncion() to calculate nonequilibrium Greenfunctions
+* new module interaction, including the class interaction.SelfConsistentState(), for generalized self-consistent calculations
+* new routine manybody.boundstates_present() to check whether boundstates are present
+* new class tkwant.system.siteId() to simplify indexing in a Kwant system
+* changed Hamiltonian pertubation interpolation to use adaptive stepsize control
+* simplified lead occupation and generalization for multiorbital systems
+* additional tutorial sections (elect. vs. chem. potential, green functions,
+  self-consistent calculations, boundstates, frequent tkwant pitfalls)
+* special analytical reference implementations (for calculating Green functions on dot arrays)
+* optimization for performance and memory consumption
+* optional mode to further reduce memory footprint
+* improved logging and debug infos
+* reduced library dependencies for building Tkwant
+* bugfixes
+
+Version 1.0
+
+* initial release
