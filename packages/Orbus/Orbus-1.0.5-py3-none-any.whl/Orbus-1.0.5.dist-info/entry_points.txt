@@ -1,0 +1,2 @@
+[console_scripts]
+orbusmaker = orbusmaker.__main__:main
