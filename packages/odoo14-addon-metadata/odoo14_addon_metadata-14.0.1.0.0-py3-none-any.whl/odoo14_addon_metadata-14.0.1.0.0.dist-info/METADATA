@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: odoo14-addon-metadata
+Version: 14.0.1.0.0
+Summary: Save custom metadata on any model
+Home-page: UNKNOWN
+Author: Coopdevs Treball SCCL
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.6
+Requires-Dist: odoo (<14.1dev,>=14.0a)
+
+UNKNOWN
+
+
