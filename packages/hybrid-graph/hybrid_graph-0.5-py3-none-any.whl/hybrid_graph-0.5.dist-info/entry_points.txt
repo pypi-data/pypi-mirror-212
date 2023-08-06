@@ -1,0 +1,2 @@
+[console_scripts]
+hybrid-graph = hg.hybrid_graph.cli:main
