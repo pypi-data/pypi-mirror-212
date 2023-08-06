@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/security/__init__.py
+src/security.egg-info/PKG-INFO
+src/security.egg-info/SOURCES.txt
+src/security.egg-info/dependency_links.txt
+src/security.egg-info/top_level.txt
+src/security/safe_requests/__init__.py
