@@ -1,0 +1,15 @@
+adjustText
+cazy_webscraper
+biopython
+pandas
+tqdm
+sklearn
+scikit-learn
+saintbioutils
+numpy
+seaborn
+sqlalchemy
+upsetplot
+scipy
+jupyter
+ncbi-genome-download
