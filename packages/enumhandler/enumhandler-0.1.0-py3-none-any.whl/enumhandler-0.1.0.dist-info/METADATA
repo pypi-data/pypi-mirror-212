@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: enumhandler
+Version: 0.1.0
+Summary: A class that allows the definition of handlers for an enum class, along withdefinition-time type and exhaustivity checks.
+Author: asthasr
+Author-email: 466533+asthasr@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# EnumHandler
+
