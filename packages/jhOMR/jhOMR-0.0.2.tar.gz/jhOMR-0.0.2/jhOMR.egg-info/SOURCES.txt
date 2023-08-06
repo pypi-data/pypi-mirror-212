@@ -1,0 +1,8 @@
+setup.py
+jhOMR/OMRutils.py
+jhOMR/__init__.py
+jhOMR.egg-info/PKG-INFO
+jhOMR.egg-info/SOURCES.txt
+jhOMR.egg-info/dependency_links.txt
+jhOMR.egg-info/requires.txt
+jhOMR.egg-info/top_level.txt
