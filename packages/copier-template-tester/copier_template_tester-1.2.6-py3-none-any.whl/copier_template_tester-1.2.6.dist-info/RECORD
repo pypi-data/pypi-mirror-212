@@ -1,0 +1,11 @@
+LICENSE,sha256=MgW8rD_w4fHqIVbpl47DYXPTlEDArfAdmLgYYWs3rpM,1066
+copier_template_tester/__init__.py,sha256=xAc-ucnqhvYpjUpluh5-eHNXfxJjnuy2xJh_yd2hme8,197
+copier_template_tester/_config.py,sha256=ECyCM-3zMEA7yAIYrtXNimEM34xfIiBozhObWiBD6Pw,918
+copier_template_tester/_pre_commit_support.py,sha256=3Ell4O8mZOnq8WMQm9KG-mTvY8rt5xW_bVDZKGgRf5Q,1201
+copier_template_tester/_write_output.py,sha256=7XxHCLeqZ6LaKM3AFcUJgWa0a_g-_918jz6gx8jxsCs,4651
+copier_template_tester/main.py,sha256=iwCGlT3Rd-OcJzTc8iYBtI4oAVm04YIfclMAn_9gxiE,2212
+copier_template_tester-1.2.6.dist-info/LICENSE,sha256=MgW8rD_w4fHqIVbpl47DYXPTlEDArfAdmLgYYWs3rpM,1066
+copier_template_tester-1.2.6.dist-info/METADATA,sha256=mgMUSFDP2fTPKgJ-w3TA1-nbVDaQQMUm2f7ebx60Kao,4437
+copier_template_tester-1.2.6.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+copier_template_tester-1.2.6.dist-info/entry_points.txt,sha256=ev5ah84tIHQX5cPFf9h-CpsNp66soSHm_PmrlnAKxn8,59
+copier_template_tester-1.2.6.dist-info/RECORD,,
