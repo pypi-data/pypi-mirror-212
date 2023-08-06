@@ -1,0 +1,13 @@
+im_swagger_spy/__init__.py,sha256=dIELzV67IR0ioqKwIOXbI-fzxLAoRm75f5ky30ASADg,60
+im_swagger_spy/__main__.py,sha256=ISVlNvFs6xu6L1bHKMad-GJB_kcxiNrCGkHQp0Qmv7I,347
+im_swagger_spy/base.py,sha256=HS3qsz53REfZP9IRV3IT12Jct3eFqqWbOZoWUiNkkcU,8787
+im_swagger_spy/file_spy.py,sha256=p3VE2l3xII_l3IfLsYONfS7yfvbzdS78wTMST6yTrsc,1160
+im_swagger_spy/http_spy.py,sha256=mdhSHbCzNFXxZahTnawF5JcSJwdZRqUNRyx96kwebE8,1800
+im_swagger_spy/plugin.py,sha256=D32ztKK1z52iZ2qPEHjDebZ12yUjKfTPvwPuAzejOVA,3149
+im_swagger_spy/syncdb.py,sha256=Mw5sAabL9H21PSNv9X6zi-SYyxa899VjUXqMC6cUnAc,1060
+im_swagger_spy/template.html,sha256=yXUTn5zMh2EheC3UGRbJLCSf8kdoql2BiJXbNSRV8Yg,5304
+im_swagger_spy/utils.py,sha256=kdKG-gb3uqPjoBB6bLT-ghrbWri-KQ0UFCEkz3Q61GE,375
+im_swagger_spy-0.3.9.dist-info/METADATA,sha256=2zUjxKKqQt9ViDT2OBRntp_O7u3bPzlFH5j-ydkTM_U,2662
+im_swagger_spy-0.3.9.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+im_swagger_spy-0.3.9.dist-info/entry_points.txt,sha256=o_oTnwiOdeDOQ1_3ExdYUcetF4pdbD9RkgFQtv7G5Zk,114
+im_swagger_spy-0.3.9.dist-info/RECORD,,

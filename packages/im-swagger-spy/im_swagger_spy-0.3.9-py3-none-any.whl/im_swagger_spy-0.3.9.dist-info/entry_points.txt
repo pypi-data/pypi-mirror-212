@@ -1,0 +1,5 @@
+[console_scripts]
+im_swagger_spy = im_swagger_spy.__main__:cli
+
+[pytest11]
+im_swagger_spy = im_swagger_spy.plugin
