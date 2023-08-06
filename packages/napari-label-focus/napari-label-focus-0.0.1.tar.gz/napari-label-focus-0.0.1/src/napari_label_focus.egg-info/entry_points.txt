@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-label-focus = napari_label_focus:napari.yaml

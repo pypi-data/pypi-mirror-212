@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/napari_label_focus/__init__.py
+src/napari_label_focus/_table.py
+src/napari_label_focus/_widget.py
+src/napari_label_focus/napari.yaml
+src/napari_label_focus.egg-info/PKG-INFO
+src/napari_label_focus.egg-info/SOURCES.txt
+src/napari_label_focus.egg-info/dependency_links.txt
+src/napari_label_focus.egg-info/entry_points.txt
+src/napari_label_focus.egg-info/requires.txt
+src/napari_label_focus.egg-info/top_level.txt
+src/napari_label_focus/_tests/__init__.py
+src/napari_label_focus/_tests/test_widget.py
