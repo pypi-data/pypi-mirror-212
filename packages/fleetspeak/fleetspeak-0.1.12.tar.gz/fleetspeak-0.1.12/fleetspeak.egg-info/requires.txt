@@ -1,0 +1,5 @@
+absl-py>=0.8.0
+grpcio>=1.24.1
+
+[test]
+grpcio-testing==1.54.2
