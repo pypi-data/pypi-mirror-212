@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+cidres/__init__.py
+cidres.egg-info/PKG-INFO
+cidres.egg-info/SOURCES.txt
+cidres.egg-info/dependency_links.txt
+cidres.egg-info/requires.txt
+cidres.egg-info/top_level.txt

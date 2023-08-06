@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: cidres
+Version: 0.0.1
+Summary: Easy and fast convert CIDR yo IP list
+Home-page: https://github.com/mishakorzik/cidres
+Author: MishaKorzhik_He1Zen
+Author-email: developer.mishakorzhik@gmail.com
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/mishakorzik/cidres/issues
+Project-URL: Sponsor, https://www.buymeacoffee.com/mishakorzik
+Keywords: cidr,ip,convert,ipv4,ipv6,tcp,address,range,pypi,python,easy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+
+## Usage
+
+**Easily and quickly convert CIDR to IP address list**
+
+```python
+# convert CIDR to IP list
+>>> import cidres
+>>> cidres.cidr.convert("129.153.48.0/20")
+```
+
