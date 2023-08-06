@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: hp2p-api
+Version: 0.0.2
+Summary: An API for HP2P Peer
+Home-page: https://github.com/ITU-T-SG11-Q8/Q.4102
+Author: JAYB
+Author-email: jaylee@jayb.kr
+Keywords: hp2p,hp2p-api
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+License-File: LICENSE
