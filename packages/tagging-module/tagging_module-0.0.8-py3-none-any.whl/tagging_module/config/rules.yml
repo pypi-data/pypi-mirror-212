@@ -1,0 +1,341 @@
+Web:
+  - web
+  - front-end
+  - web design
+  - html
+  - css
+  - javascript
+  - typescript
+  - react
+  - svelte
+  - responsive design
+  - user experience
+  - user interface
+  - website optimization
+  - browser compatibility
+  - responsive frameworks
+
+Performance:
+  - memory efficient
+  - memory optimization
+  - scalable architecture
+  - profiling
+  - resource utilization
+  - response time
+  - throughput
+  - latency
+  - bottlenecks
+  - load testing
+  - performance tuning
+  - parallel processing
+  - memory management
+  - cpu utilization
+  - i/o operations
+  - algorithmic complexity
+
+Mobile:
+  - mobile app development
+  - ios development
+  - android development
+  - ios
+  - android
+  - swift
+  - kotlin
+  - objective-C
+  - mobile user interface
+  - mobile user experience
+  - cross-platform development
+  - mobile testing
+  - push notifications
+
+Database:
+  - database management
+  - sql
+  - nosql
+  - relational databases
+  - database design
+  - data modeling
+  - query optimization
+  - data indexing
+  - database administration
+
+Cloud:
+  - cloud computing
+  - amazon web services
+  - aws
+  - microsoft azure
+  - azure
+  - google cloud platform
+  - infrastructure as a service
+  - platform as a service
+  - software as a service
+  - cloud storage
+  - serverless
+  - containerization
+
+AI:
+  - artificial intelligence
+  - machine learning
+  - deep learning
+  - neural networks
+  - natural language processing
+  - nlp
+  - ai
+  - ml
+  - computer vision
+  - predictive modeling
+  - reinforcement learning
+  - graph neural network
+  - neural network
+  - large language model
+
+DevOps:
+  - devops
+  - continuous integration
+  - continuous delivery
+  - version control
+  - deployment automation
+  - infrastructure as code
+  - monitoring
+  - logging
+  - container orchestration
+
+Testing:
+  - software testing
+  - test automation
+  - testing frameworks
+  - unit testing
+  - integration testing
+  - system testing
+  - performance testing
+  - load testing
+  - test-driven development
+  - behavior-driven development
+
+Security:
+  - cybersecurity
+  - encryption
+  - authentication
+  - network security
+  - secure coding practices
+  - vulnerability assessment
+  - penetration testing
+  - security auditing
+  - identity and access management
+  - security incident response
+
+Backend:
+  - backend development
+  - server-side programming
+  - apis
+  - node.js
+  - ruby on rails
+  - python
+  - java
+  - c#
+  - microservices
+  - performance optimization
+  - caching
+  - database querying
+  - rust
+  - system design
+  - scalability
+  - reliability
+  - availability
+  - fault tolerance
+  - load balancing
+  - caching
+  - distributed systems
+  - microservices
+  - service-oriented architecture
+  - database design
+  - data modeling
+  - data replication
+  - data partitioning
+  - sharding
+  - message queues
+  - event-driven architecture
+  - api design
+  - system architecture
+
+UI/UX:
+  - user interface design
+  - user experience
+  - wireframing
+  - prototyping
+  - interaction design
+  - usability testing
+  - information architecture
+  - visual design
+  - responsive design
+  - mobile app design
+  - user research
+
+Data Science:
+  - data science
+  - data analysis
+  - data visualization
+  - statistical analysis
+  - exploratory data analysis
+  - predictive modeling
+  - data mining
+  - feature engineering
+  - data cleaning
+  - data wrangling
+  - time series analysis
+  - statistical modeling
+  - predictive analytics
+  - regression
+  - classification
+  - clustering
+  - feature engineering
+  - anomaly detection
+  - big data
+  - time series analysis
+  - data preprocessing
+  - model evaluation
+
+Blockchain:
+  - blockchain technology
+  - smart contracts
+  - decentralized applications
+  - dapp
+  - cryptocurrency
+  - Ethereum
+  - Hyperledger
+  - blockchain security
+  - consensus algorithms
+  - digital identity
+  - tokenization
+  - blockchain scalability
+  - peer-to-peer networks
+  - trustless
+  - consensus algorithms
+  - Web3 frameworks
+  - decentralized identity
+
+Game Dev:
+  - game development
+  - game design
+  - unity
+  - unreal engine
+  - game physics
+  - 3d modeling
+  - level design
+  - game mechanics
+  - multiplayer games
+  - game optimization
+
+Data Engg:
+  - data engineering
+  - etl
+  - data pipelines
+  - data warehousing
+  - data ingestion
+  - data lakes
+  - data integration
+  - big data processing
+  - apache hadoop
+  - apache spark
+  - data governance
+
+Network:
+  - network administration
+  - network configuration
+  - network monitoring
+  - tcp/ip
+  - dns
+  - dhcp
+  - vpn
+  - firewall management
+  - network troubleshooting
+  - network security
+
+Hardware:
+  - cpu
+  - gpu
+  - motherboard
+  - ram
+  - ssd
+  - hdd
+  - power supply
+  - cooling
+  - peripherals
+  - overclocking
+  - gaming
+  - microcontroller
+  - Arduino
+  - Raspberry Pi
+  - embedded systems
+  - FPGA
+  - sensors
+  - actuators
+  - IoT
+
+Robotics:
+  - autonomous
+  - machine learning
+  - computer vision
+  - control systems
+  - kinematics
+  - dynamics
+  - motion planning
+  - path optimization
+  - sensor fusion
+  - manipulators
+  - mobile robots
+  - aerial robots
+  - humanoid robots
+  - swarm robotics
+  - robot perception
+  - human-robot interaction
+  - robot localization
+  - robot navigation
+
+Coding:
+  - integrated development environment
+  - code editor
+  - version control
+  - git
+  - source code management
+  - debugging
+  - profiling
+  - code review
+  - static code analysis
+  - dependency management
+  - build tools
+  - package managers
+  - documentation generation
+  - task runners
+  - code formatting
+  - linters
+  - api testing
+  - mocking frameworks
+
+Algorithms:
+  - algorithm
+  - data structure
+  - complexity
+  - time complexity
+  - space complexity
+  - sorting
+  - searching
+  - graph algorithms
+  - dynamic programming
+  - greedy algorithms
+  - divide and conquer
+  - backtracking
+  - computational geometry
+  - string algorithms
+  - tree algorithms
+  - hash tables
+  - linked lists
+  - stacks
+  - queues
+  - heaps
+  - binary search
+  - breadth-first search
+  - depth-first search
+  - shortest path
+  - spanning trees
+  - recurrence relations
