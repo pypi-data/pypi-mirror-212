@@ -1,0 +1,13 @@
+viewephys/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+viewephys/command_line.py,sha256=P5xzpS3Hw0rP0ACt3lGjU3mQrSaleXvzdeKcxWNsDt8,908
+viewephys/gui.py,sha256=RKp3_AF3qqHkL7rSaxBGmo02o77NV7YzcT7IQhH30gQ,11714
+viewephys/nav_file.ui,sha256=sQTCjCVN4dE9xrD4w3opTnUOlNuJbNvrfeSEGHoa2vM,3962
+viewephys/raster.py,sha256=QojERpl70UusIJEYSlFlTSI6jQXMMZKoA2HXc1r1n6A,8785
+viewephys/raster.ui,sha256=A3NWEVZ1dcuxf6pIV84RTMD1Z2VTn9yIUnkeg-tPlXg,3557
+viewephys/viewephys.svg,sha256=v6VPpU7WNJ6sUxeZsoex3yY_g5Q-8u28n4PHBEF45X8,4075
+viewephys-0.2.1.dist-info/LICENSE,sha256=exq586ZhuIyCB4ZY33MC_Qh9bw5b3Q-v7eV0yMmgcXc,1071
+viewephys-0.2.1.dist-info/METADATA,sha256=DGnYAcgopTExba_GWtDvUhPYfcWkUBB9DHw-bhs5yXs,2076
+viewephys-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+viewephys-0.2.1.dist-info/entry_points.txt,sha256=ZEL8XFdLvSLtdO2k4B5tZ-WE7vmqCEe7KQp1-unGgs4,63
+viewephys-0.2.1.dist-info/top_level.txt,sha256=pi54rAUVYV1fYzYkUK0VTJXCV3neWRX_q3pTuOnRo6o,10
+viewephys-0.2.1.dist-info/RECORD,,
