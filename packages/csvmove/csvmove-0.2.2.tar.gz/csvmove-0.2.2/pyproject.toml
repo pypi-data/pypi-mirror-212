@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "csvmove"
+version = "0.2.2"
+description = "CLI utility that moves files based on columns in a csv"
+authors = ["João Fauvel <jmmfauvel@gmail.com>"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.7.0"
+pandas = "^1.5.3"
+rich = "^13.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+csvmove = "csvmove.main:app"
