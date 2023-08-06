@@ -1,0 +1,7 @@
+astropy
+numpy
+pandas
+jupyter
+matplotlib
+mocpy==0.12.0
+pandas
