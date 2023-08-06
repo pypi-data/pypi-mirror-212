@@ -1,0 +1,19 @@
+-r base.txt
+
+# Linting
+pylint==2.*
+pylint-pytest==1.*
+pylint-pydantic==0.*
+
+# Testing
+pytest==7.*
+pytest-xdist==3.*
+pytest-cov==4.*
+coverage==7.*
+tox==4.*
+
+# Testing/linting
+mypy==1.*
+
+# Precommit
+pre-commit==3.*
