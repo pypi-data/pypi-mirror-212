@@ -1,0 +1,14 @@
+torch
+torchvision
+torchaudio
+peachdb-pytorchvideo
+timm
+ftfy
+regex
+einops
+fvcore
+iopath
+numpy
+matplotlib
+types-regex
+mayavi
