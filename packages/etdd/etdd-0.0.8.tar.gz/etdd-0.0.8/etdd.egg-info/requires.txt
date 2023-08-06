@@ -1,0 +1,6 @@
+colorama
+console-menu
+jinja2
+lizard
+pathlib
+tabulate
