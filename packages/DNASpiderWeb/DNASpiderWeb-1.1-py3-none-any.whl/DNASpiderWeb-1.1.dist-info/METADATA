@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: DNASpiderWeb
+Version: 1.1
+Summary: SPIDER-WEB generates coding algorithms with superior error tolerance and real-time information retrieval capacity
+Home-page: https://github.com/HaolingZHANG/DNASpiderWeb
+Author: Haoling ZHANG
+Author-email: zhanghaoling@genomics.cn
+License: BGI-Research
+Keywords: DNA-based data storage,coding algorithm,automatic algorithm generator,probabilistic error correction
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.pdf
+Requires-Dist: numpy
+Requires-Dist: networkx
+
+DNA has been considered a promising medium for storing digital information. Previously, functions including bit-to-base transcoding and error correction are implemented by independent algorithms. It would result in either increased computational complexity or compromised error tolerance when attempting to correct various types of errors, especially for insertions/deletions (indels). To address this issue, we report a graph-based architecture, named SPIDER-WEB, providing an all-in-one coding solution by generating customized algorithms with an efficient built-in error correction function. SPIDER-WEB is able to correct a maximum of 4% edit errors in the DNA sequences including substitution and indel, with only 5.5% logical redundancy. In addition, SPIDER-WEB enables real-time retrieval of megabyte-level data with a 100x execution speed improvement over conventional methods and hold the potential of practicability for large-scale data storage applications at the exabyte-level.
+
