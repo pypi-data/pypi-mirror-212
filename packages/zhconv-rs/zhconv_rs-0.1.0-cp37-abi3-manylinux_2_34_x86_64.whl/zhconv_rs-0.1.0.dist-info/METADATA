@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zhconv-rs
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Natural Language :: Chinese (Simplified)
+Summary: zhconv as in MediaWiki, oxidized with more efficiency 🦀
+Author: Hung-I Wang <whygowe@gmail.com>
+Author-email: Hung-I Wang <whygowe@gmail.com>
+License: GPL-2.0-or-later
+Requires-Python: >=3.7
+Project-URL: Source, https://github.com/Gowee/zhconv-rs/tree/main/pyo3
