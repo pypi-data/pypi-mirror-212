@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/mongofire/__init__.py
+src/mongofire/collection.py
+src/mongofire/document.py
+src/mongofire/errors.py
+src/mongofire/field.py
+src/mongofire/mongodb.py
+src/mongofire/mongofire.py
+src/mongofire/query.py
+src/mongofire/results.py
+src/mongofire.egg-info/PKG-INFO
+src/mongofire.egg-info/SOURCES.txt
+src/mongofire.egg-info/dependency_links.txt
+src/mongofire.egg-info/top_level.txt
