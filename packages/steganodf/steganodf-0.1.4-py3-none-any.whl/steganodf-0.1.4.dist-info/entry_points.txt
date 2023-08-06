@@ -1,0 +1,3 @@
+[console_scripts]
+steganodf=steganodf.__main__:cli
+
