@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: bigboat
+Version: 0.3.0
+Summary: BigBoat docker dashboard API
+Home-page: https://github.com/grip-on-software/bigboat-python-api
+Author: Leon Helwerda
+Author-email: l.s.helwerda@liacs.leidenuniv.nl
+License: Apache License, Version 2.0
+Keywords: docker dashboard bigboat api
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3
+License-File: LICENSE
+
+Python wrapper library for the BigBoat API.
+Support for v2 and the deprecated v1 is included.
+This API can create, retrieve, update and delete application definitions,
+do similar operations for instances and poll for status
