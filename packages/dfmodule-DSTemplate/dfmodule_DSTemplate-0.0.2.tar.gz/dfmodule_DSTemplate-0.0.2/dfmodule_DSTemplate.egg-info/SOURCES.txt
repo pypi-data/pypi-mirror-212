@@ -1,0 +1,10 @@
+README.md
+setup.py
+DS/Get_by_dates.py
+DS/__init__.py
+dfmodule_DSTemplate.egg-info/PKG-INFO
+dfmodule_DSTemplate.egg-info/SOURCES.txt
+dfmodule_DSTemplate.egg-info/dependency_links.txt
+dfmodule_DSTemplate.egg-info/not-zip-safe
+dfmodule_DSTemplate.egg-info/requires.txt
+dfmodule_DSTemplate.egg-info/top_level.txt
