@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+requirements.txt
+setup.py
+kaaslibdinges/__init__.py
+kaaslibdinges.egg-info/PKG-INFO
+kaaslibdinges.egg-info/SOURCES.txt
+kaaslibdinges.egg-info/dependency_links.txt
+kaaslibdinges.egg-info/requires.txt
+kaaslibdinges.egg-info/top_level.txt
+kaaslibdinges/nan/NaN.py
+kaaslibdinges/nan/__init__.py
+kaaslibdinges/visu/__init__.py
+kaaslibdinges/visu/plot.py
