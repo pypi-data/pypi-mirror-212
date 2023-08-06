@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+customChatbot.egg-info/PKG-INFO
+customChatbot.egg-info/SOURCES.txt
+customChatbot.egg-info/dependency_links.txt
+customChatbot.egg-info/requires.txt
+customChatbot.egg-info/top_level.txt
+customGPT/__init__.py
+customGPT/bot.py
