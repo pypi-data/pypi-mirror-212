@@ -1,0 +1,10 @@
+pythttp/Log_Manager.py,sha256=EZjQB96hQmPcZd2Ck9HrJxUDRZcgGhTxBR64bpMRHTY,726
+pythttp/Protocol.py,sha256=Eyfd16e_2oMH2iTT21BYitMVLaB4fC3iOBYl1Fa6utQ,3501
+pythttp/RequestHandler.py,sha256=xi1gRoNLACn5Gz7kubIgKKh4FE286jbYwHVEK3PzPdo,12967
+pythttp/Structure.py,sha256=GihqaTvCq2_XYQbogQn6uHP8brHllsM2bdxzQ-uH5P4,3182
+pythttp/Thread_Manager.py,sha256=Q0pILf3b4AUujBcH1uvBuRN9ZN6t0_0qwRcZbIVZJVE,3064
+pythttp/__init__.py,sha256=atKzOZLCsTu4EXbHWfux1U2daHa321e5acrc5u1fAlw,139
+pythttp-0.1.2.dist-info/METADATA,sha256=6e0kKDRSx9LQNvbWa-RIFU2fQ5FMHXda-hISwS4A_A8,1093
+pythttp-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pythttp-0.1.2.dist-info/top_level.txt,sha256=pEsW4ms2XyOyLAsFcB3a9W-itF6VsHcPjLrUA0uBvlE,8
+pythttp-0.1.2.dist-info/RECORD,,
