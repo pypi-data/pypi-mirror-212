@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: vertex-protocol
+Version: 0.1.0
+Summary: Vertex Protocol SDK
+Keywords: vertex protocol,vertex sdk,vertex protocol api
+Author: Jeury Mejia
+Author-email: jeury@vertexprotocol.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: eth-account (>=0.8.0,<0.9.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: web3 (>=6.4.0,<7.0.0)
+Description-Content-Type: text/markdown
+
+# Vertex Python SDK
+
+```python
+print("Hello Vertex")
+```
+
+# Development
+
+1. Install poetry
+   ```
+   $ curl -sSL https://install.python-poetry.org | python3 -
+   ```
+2. Setup a virtual environment and activate it
+
+   ```
+   $ python3 -m venv venv
+   $ source ./venv/bin/activate
+   ```
+
+3. Install dependencies via `poetry install`
+4. Setup an `.env` file and set the following envvars
+
+   ```shell
+   CLIENT_MODE='mainnet|testnet|devnet'
+   SIGNER_PRIVATE_KEY="0x..."
+   LINKED_SIGNER_PRIVATE_KEY="0x..." # not required
+   ```
+
+# Run tests
+
+```
+$ poetry run test
+```
+
+# Run sanity checks
+
+- `poetry run client-sanity`: runs sanity checks for the top-level client.
+- `poetry run engine-sanity`: runs sanity checks for the `engine-client`.
+- `poetry run indexer-sanity`: runs sanity checks for the `indexer-client`.
+- `poetry run contracts-sanity`: runs sanity checks for the contracts module.
+
+# Docs
+
+Regenerates SDK docs.
+
+```
+$ poetry run sphinx-build docs/source docs/build
+```
+
