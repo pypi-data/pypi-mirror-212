@@ -1,0 +1,9 @@
+uk_postcodes_parsing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uk_postcodes_parsing/fix.py,sha256=mizKZjKvkA6l9StQZkkG4yXR5gQerkyhUsfDuUnrRyQ,3705
+uk_postcodes_parsing/postcode_utils.py,sha256=Uiwn5_bvk1Ti0LpWZbmfUKi9JLLjO58SbazQsXmZL68,4742
+uk_postcodes_parsing/postcodes_nov_2022.py,sha256=dI3zsOJINc3Hwku-rSh3Csm4yHPStngxYcEwqkJmel8,20547700
+uk_postcodes_parsing/ukpostcode.py,sha256=P6Fhk_qGZhd7jeoWC_AWNBGjGxJxVnNu5jc2fSy8yow,7714
+uk_postcodes_parsing-1.0.0.dist-info/METADATA,sha256=RcJY6N1OkupABPOrThKmdWxRHx2ikqXHBJkTR-InpfA,9591
+uk_postcodes_parsing-1.0.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+uk_postcodes_parsing-1.0.0.dist-info/licenses/LICENSE,sha256=VAG9afaOeO1Mx-pigXhkQCbYqamBXyacCS1snKh7CME,1071
+uk_postcodes_parsing-1.0.0.dist-info/RECORD,,
