@@ -1,0 +1,15 @@
+countries|4|4
+distinctions|1|1
+educations|6|3
+employments|17|6
+external_identifiers|8|4
+fundings|8|2
+invited_positions|4|1
+keywords|7|2
+memberships|1|1
+peer_reviews|8|3
+persons|8|8
+qualifications|5|2
+research_resources|1|1
+researcher_urls|7|4
+services|1|1

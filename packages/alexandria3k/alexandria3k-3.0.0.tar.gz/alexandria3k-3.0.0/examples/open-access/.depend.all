@@ -1,0 +1,8 @@
+reports/yearly-journal-oa-work-ratio.txt: maindb/non_oa_journal_papers
+reports/yearly-journal-oa-work-ratio.txt: maindb/oa_journal_papers
+reports/yearly-journal-oa-work-ratio.txt: maindb/works
+reports/yearly-journal-oa-work-ratio.txt: tables/oa_works
+reports/yearly-oa-journal-works.txt: maindb/works
+reports/yearly-oa-journal-works.txt: tables/oa_works
+tables/oa_works: maindb/open_access_journals
+tables/oa_works: maindb/works

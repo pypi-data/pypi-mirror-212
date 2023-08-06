@@ -1,0 +1,5 @@
+abstract,0,10
+abstract,1,2
+type,journal-article,10
+type,other,1
+type,proceedings-article,1

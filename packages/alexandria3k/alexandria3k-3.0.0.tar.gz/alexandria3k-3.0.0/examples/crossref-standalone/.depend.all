@@ -1,0 +1,6 @@
+reports/work-metrics.txt: maindb/counts
+reports/work-metrics.txt: maindb/works
+reports/yearly-abstracts.txt: maindb/works
+reports/yearly-journals.txt: maindb/issns
+reports/yearly-journals.txt: maindb/issns_by_year
+reports/yearly-journals.txt: maindb/works

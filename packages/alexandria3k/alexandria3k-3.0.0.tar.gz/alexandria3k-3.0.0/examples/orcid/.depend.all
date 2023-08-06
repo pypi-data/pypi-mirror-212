@@ -1,0 +1,15 @@
+reports/metrics.txt: maindb/person_countries
+reports/metrics.txt: maindb/person_distinctions
+reports/metrics.txt: maindb/person_educations
+reports/metrics.txt: maindb/person_employments
+reports/metrics.txt: maindb/person_external_identifiers
+reports/metrics.txt: maindb/person_fundings
+reports/metrics.txt: maindb/person_invited_positions
+reports/metrics.txt: maindb/person_keywords
+reports/metrics.txt: maindb/person_memberships
+reports/metrics.txt: maindb/person_peer_reviews
+reports/metrics.txt: maindb/person_qualifications
+reports/metrics.txt: maindb/person_research_resources
+reports/metrics.txt: maindb/person_researcher_urls
+reports/metrics.txt: maindb/person_services
+reports/metrics.txt: maindb/persons

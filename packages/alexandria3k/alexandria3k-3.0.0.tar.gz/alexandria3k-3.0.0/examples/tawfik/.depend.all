@@ -1,0 +1,9 @@
+reports/comparison-report.txt: maindb/comparison
+reports/tawfik-works.txt: maindb/work_authors
+reports/tawfik-works.txt: maindb/works
+tables/baseline_cdindex: maindb/cdindex
+tables/baseline_cdindex: maindb/works
+tables/comparison: tables/baseline_cdindex
+tables/comparison: tables/tawfik_cdindex
+tables/tawfik_cdindex: maindb/cdindex
+tables/tawfik_cdindex: maindb/tawfik_works

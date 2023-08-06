@@ -1,0 +1,6 @@
+reports/cdindex-by-type.txt: tables/cdindex
+reports/top-consolidating.txt: tables/cdindex
+reports/top-consolidating.txt: tables/citations_number
+reports/top-disruptive.txt: tables/cdindex
+reports/top-disruptive.txt: tables/citations_number
+reports/top-disruptive.txt: tables/references_number

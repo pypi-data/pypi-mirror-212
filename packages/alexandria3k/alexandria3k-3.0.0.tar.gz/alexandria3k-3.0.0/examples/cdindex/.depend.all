@@ -1,0 +1,4 @@
+reports/cd5index-all.txt: tables/cdindex
+reports/nature-example.txt: tables/cdindex
+reports/yearly-cdindex.txt: maindb/works
+reports/yearly-cdindex.txt: tables/cdindex

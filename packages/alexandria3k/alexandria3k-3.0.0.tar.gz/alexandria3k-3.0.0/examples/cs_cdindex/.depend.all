@@ -1,0 +1,15 @@
+reports/cdindex-by-type.txt: maindb/work_references
+reports/cdindex-by-type.txt: maindb/works
+reports/cdindex-by-type.txt: tables/cdindex
+reports/top-consolidating.txt: maindb/works
+reports/top-consolidating.txt: tables/cdindex
+reports/top-consolidating.txt: tables/citations_number
+reports/top-disruptive.txt: maindb/works
+reports/top-disruptive.txt: tables/cdindex
+reports/top-disruptive.txt: tables/citations_number
+reports/top-disruptive.txt: tables/references_number
+tables/cdindex: maindb/cdindex
+tables/cdindex: maindb/works
+tables/citations_number: maindb/work_references
+tables/citations_number: maindb/works
+tables/references_number: maindb/work_references

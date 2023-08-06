@@ -1,0 +1,3 @@
+reports/yearly-numpages.txt: tables/works_pages
+tables/works_pages: maindb/page_data
+tables/works_pages: maindb/works

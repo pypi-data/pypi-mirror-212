@@ -1,0 +1,2 @@
+reports/yearly-journal-oa-work-ratio.txt: tables/oa_works
+reports/yearly-oa-journal-works.txt: tables/oa_works

@@ -1,0 +1,12 @@
+.depend
+.depend.all
+cdindex-db
+cdindex-db.exe
+fast-cdindex
+nohup.out
+populate
+reports
+rolap
+simple-rolap
+sqlite_modern_cpp
+tables

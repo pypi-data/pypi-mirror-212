@@ -1,0 +1,46 @@
+Works
+12
+Works with a text mining link
+9
+Works with subject
+8
+Works with references
+7
+Works with affiliation
+4
+Works with funders
+4
+Author records
+69
+Author records with ORCID
+10
+Distinct authors with ORCID
+8
+Author affiliation records
+14
+Author records with research organization records matches
+0
+Distinct affiliation names
+6
+Author records matched with research organization records
+0
+Distinct matched research organization records
+0
+Works with a research organization record match
+0
+Work subject records
+16
+Work funders
+5
+Funder records with DOI
+4
+Distinct funder DOIs
+4
+Funder awards
+5
+References
+281
+References with DOIs
+211
+Distinct reference DOIs
+211

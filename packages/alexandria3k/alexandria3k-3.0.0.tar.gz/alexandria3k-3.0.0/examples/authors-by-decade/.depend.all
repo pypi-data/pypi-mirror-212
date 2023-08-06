@@ -1,0 +1,3 @@
+reports/authors-by-decade.txt: maindb/works
+reports/authors-by-decade.txt: tables/num_work_authors
+tables/num_work_authors: maindb/work_authors

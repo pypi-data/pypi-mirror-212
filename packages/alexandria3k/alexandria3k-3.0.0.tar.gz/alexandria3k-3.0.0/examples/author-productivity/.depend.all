@@ -1,0 +1,14 @@
+reports/author-productivity.txt: tables/yearly_authors
+reports/author-productivity.txt: tables/yearly_works
+reports/frequent-names.txt: maindb/all_1945
+reports/frequent-names.txt: maindb/all_2021
+reports/frequent-names.txt: maindb/author_activity
+reports/frequent-names.txt: maindb/common_1945
+reports/frequent-names.txt: maindb/common_2021
+reports/frequent-names.txt: maindb/work_authors
+reports/frequent-names.txt: maindb/works
+tables/yearly_authors: maindb/author_activity
+tables/yearly_authors: maindb/distinct_author_activity
+tables/yearly_authors: maindb/work_authors
+tables/yearly_authors: maindb/works
+tables/yearly_works: maindb/works

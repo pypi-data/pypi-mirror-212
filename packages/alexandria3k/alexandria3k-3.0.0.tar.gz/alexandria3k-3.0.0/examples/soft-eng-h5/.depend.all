@@ -1,0 +1,8 @@
+reports/venue-h5-report.txt: tables/venue_h5
+tables/venue_h5: maindb/eligible_ranks
+tables/venue_h5: maindb/ranked_venue_citations
+tables/venue_h5: tables/work_citations
+tables/venue_h5: tables/works_venue
+tables/work_citations: maindb/work_references
+tables/works_venue: maindb/journal_names
+tables/works_venue: maindb/works

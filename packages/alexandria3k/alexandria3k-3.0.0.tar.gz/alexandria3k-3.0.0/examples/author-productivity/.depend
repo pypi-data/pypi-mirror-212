@@ -1,0 +1,2 @@
+reports/author-productivity.txt: tables/yearly_authors
+reports/author-productivity.txt: tables/yearly_works
