@@ -1,0 +1,5 @@
+setup.py
+my_package_for_dpp.egg-info/PKG-INFO
+my_package_for_dpp.egg-info/SOURCES.txt
+my_package_for_dpp.egg-info/dependency_links.txt
+my_package_for_dpp.egg-info/top_level.txt
