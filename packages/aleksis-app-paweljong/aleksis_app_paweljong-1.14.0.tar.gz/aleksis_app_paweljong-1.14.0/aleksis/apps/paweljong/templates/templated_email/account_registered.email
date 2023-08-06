@@ -1,0 +1,64 @@
+{% load i18n %}
+
+{% block subject %} {% trans "New account" %} {{ person }} {% endblock %}
+
+{% block plain %}
+    {% blocktrans with person=person %}New account: {{ person }}{% endblocktrans %}
+
+    **** {% trans "Person" %} ****
+
+    * {% trans "Name" %}: {{ person }}
+    * {% trans "Username" %} {{ person.user.username }}
+    * {% trans "Date of birth" %}: {{ person.date_of_birth }}
+    * {% trans "Email address" %}: {{ person.email }}
+    * {% trans "Mobile number" %}: {{ person.mobile_number }}
+    * {% trans "Street" %}: {{ person.street }}
+    * {% trans "Housenumber" %}: {{ person.housenumber }}
+    * {% trans "Postal code" %}: {{ person.postal_code }}
+    * {% trans "Place" %}: {{ person.place }}
+
+
+    {% if person.guardians.first %}
+    **** {% trans "Guardian" %} ****
+
+    * {% trans "Name" %}: {{ person.guardians.first }}
+    * {% trans "Email address" %}: {{ person.guardians.first.email }}
+    * {% trans "Mobile number" %}: {{ person.guardians.first.mobile_number }}
+    {% endif %}
+
+
+    {% trans "Your AlekSIS team" %}
+{% endblock %}
+
+{% block html %}
+<main>
+    <p>{% trans "New account" %}: {{ person }}</p>
+
+    <blockquote>
+        <h5>{% trans "Person" %}</h5>
+        <ul>
+            <li>{% trans "Name" %}: {{ person }}</li>
+	    <li>{% trans "Username" %}: {{ person.user.username }}</li>
+            <li>{% trans "Date of birth" %}: {{ person.date_of_birth }}</li>
+            <li>{% trans "Email address" %}: {{ person.email }}</li>
+            <li>{% trans "Mobile number" %}: {{ person.mobile_number }}</li>
+            <li>{% trans "Street" %}: {{ person.street }}</li>
+            <li>{% trans "Housenumber" %}: {{ person.housenumber }}</li>
+            <li>{% trans "Postal code" %}: {{ person.postal_code }}</li>
+            <li>{% trans "Place" %}: {{ person.place }}</li>
+        </ul>
+	{% if person.guardians.first %}
+        <h5>{% trans "Guardian" %}</h5>
+        <ul>
+	    <li>{% trans "Name" %}: {{ person.guardians.first }}</li>
+	    <li>{% trans "Email address" %}: {{ person.guardians.first.email }}</li>
+	    <li>{% trans "Mobile number" %}: {{ person.guardians.first.mobile_number }}</li>
+	</ul>
+	{% endif %}
+    </blockquote>
+
+    <p>
+        <i>{% trans "Your AlekSIS team" %}</i>
+    </p>
+</main>
+{% endblock %}
