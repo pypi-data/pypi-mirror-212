@@ -1,0 +1,10 @@
+README.md
+setup.py
+check_type_hints/__init__.py
+check_type_hints/main.py
+check_type_hints.egg-info/PKG-INFO
+check_type_hints.egg-info/SOURCES.txt
+check_type_hints.egg-info/dependency_links.txt
+check_type_hints.egg-info/entry_points.txt
+check_type_hints.egg-info/requires.txt
+check_type_hints.egg-info/top_level.txt
