@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: stadiamaps
+Version: 0.1.0
+Summary: Stadia Maps Geospatial APIs
+Home-page: https://docs.stadiamaps/
+Author: Stadia Maps Support
+Author-email: support@stadiamaps.com
+Keywords: OpenAPI,OpenAPI-Generator,Stadia Maps Geospatial APIs
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+    The Stadia Maps Geospatial APIs provide you with the data you need to build awesome applications.  # noqa: E501
+    
