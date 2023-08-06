@@ -1,0 +1,2 @@
+[console_scripts]
+stc-geck = stc_geck.cli:main

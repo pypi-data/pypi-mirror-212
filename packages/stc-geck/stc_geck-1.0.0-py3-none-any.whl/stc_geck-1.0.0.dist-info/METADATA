@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: stc-geck
+Version: 1.0.0
+Summary: GECK (Garden Of Eden Creation Kit) is a toolkit for setting up and maintaning STC
+Author: Interdimensional Walker
+Project-URL: Homepage, https://github.com/nexus-stc/stc
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: summa-embed (>=0.15.18)
+Requires-Dist: termcolor
+Requires-Dist: fire
+
