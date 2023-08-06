@@ -1,0 +1,12 @@
+.gitignore
+pyproject.toml
+requirements.txt
+setup.py
+cozo_client/__init__.py
+cozo_client/_builder.py
+cozo_client/_client.py
+cozo_client.egg-info/PKG-INFO
+cozo_client.egg-info/SOURCES.txt
+cozo_client.egg-info/dependency_links.txt
+cozo_client.egg-info/requires.txt
+cozo_client.egg-info/top_level.txt

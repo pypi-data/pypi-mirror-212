@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cozo-client
+Version: 0.1.2
+Summary: Another Python client for CozoDB, battery included
+Author-email: Ziyang Hu <hu.ziyang@cantab.net>
+License: MIT
+Keywords: client
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown

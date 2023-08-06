@@ -1,0 +1,4 @@
+cozo-embedded
+requests
+pydantic
+openpyxl
