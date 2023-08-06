@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_yolor/__init__.py
+autodistill_yolor.egg-info/PKG-INFO
+autodistill_yolor.egg-info/SOURCES.txt
+autodistill_yolor.egg-info/dependency_links.txt
+autodistill_yolor.egg-info/requires.txt
+autodistill_yolor.egg-info/top_level.txt
