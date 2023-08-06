@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: KraitUtilities
+Version: 1.0.0
+Summary: A package for data preprocessing and visualization
+Author: Declan van den Hoek
+Author-email: declanvandenhoek@gmail.com
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: pandas
+
