@@ -1,0 +1,2 @@
+[console_scripts]
+thipster-demo = demo:demo
