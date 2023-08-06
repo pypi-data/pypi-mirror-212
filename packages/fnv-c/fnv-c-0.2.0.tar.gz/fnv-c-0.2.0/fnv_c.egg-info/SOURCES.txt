@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+fnv_c/__init__.py
+fnv_c.egg-info/PKG-INFO
+fnv_c.egg-info/SOURCES.txt
+fnv_c.egg-info/dependency_links.txt
+fnv_c.egg-info/requires.txt
+fnv_c.egg-info/top_level.txt
+fnv_c/ext/__init__.py
+fnv_c/ext/build.py
+fnv_c/ext/fnv.c
+fnv_c/ext/fnv.h
