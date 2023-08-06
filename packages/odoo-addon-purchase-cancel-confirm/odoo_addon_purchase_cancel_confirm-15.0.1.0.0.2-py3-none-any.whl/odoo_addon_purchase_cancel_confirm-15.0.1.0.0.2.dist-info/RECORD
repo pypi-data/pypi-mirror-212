@@ -1,0 +1,16 @@
+odoo/addons/purchase_cancel_confirm/README.rst,sha256=bMYHxq3POlCFoZ1jfX48DS9OSvf7xNnrzXfLGbOEW9s,2986
+odoo/addons/purchase_cancel_confirm/__init__.py,sha256=AcvHGqkxI9Dp6p94R9wviUOD6aMes7rHlw6_-7Fhnn4,148
+odoo/addons/purchase_cancel_confirm/__manifest__.py,sha256=xkmkDvNtyZ5pCdYt5zsLF2z9zNK0YBj67l0iqA71Q9o,506
+odoo/addons/purchase_cancel_confirm/i18n/purchase_cancel_confirm.pot,sha256=dgpQzMRfMoLomS3eyMNyzbI9rUQ6f66cuoqlhU81Qes,1232
+odoo/addons/purchase_cancel_confirm/model/__init__.py,sha256=wbVCurkTt5wCGY7YXDAfb061L6fDsT2iBUjkovjaA48,151
+odoo/addons/purchase_cancel_confirm/model/purchase.py,sha256=F-nBOB65HR9hEG6Esqtpp8137zao5mlu4ePgS1rCZy0,623
+odoo/addons/purchase_cancel_confirm/readme/CONTRIBUTORS.rst,sha256=ND9iER31OXNdbuc-A70OPWMYdemEOX8huHq33wDq8qI,34
+odoo/addons/purchase_cancel_confirm/readme/DESCRIPTION.rst,sha256=mcBf35pYBXNgKh1Q4vZAsOB2PQR04G04mNu5fY1qyME,103
+odoo/addons/purchase_cancel_confirm/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/purchase_cancel_confirm/static/description/index.html,sha256=mJRz76l2BgXa5EXZBuyd1rss044fOfJjExVOLxR8Y0o,12128
+odoo/addons/purchase_cancel_confirm/tests/__init__.py,sha256=N60MB8R5eGfz-GKIkIFiQgVXEDVYeX0hd9fWdh3aYV0,171
+odoo/addons/purchase_cancel_confirm/tests/test_purchase_cancel_confirm.py,sha256=bOX41TvpKZQuOewx6skNMjRDBrFoApEF5hMYxi4rtf8,1737
+odoo_addon_purchase_cancel_confirm-15.0.1.0.0.2.dist-info/METADATA,sha256=zjfCitUKEVviTslBvr5jGg-KbyIKAbp6HM8kaw494mk,3599
+odoo_addon_purchase_cancel_confirm-15.0.1.0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+odoo_addon_purchase_cancel_confirm-15.0.1.0.0.2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_purchase_cancel_confirm-15.0.1.0.0.2.dist-info/RECORD,,
