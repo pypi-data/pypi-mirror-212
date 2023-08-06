@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mcap2timescale
+Version: 0.1.0
+Summary: Transform mcap (or rosbag) files into a Timescale database
+Home-page: https://github.com/SensorSurf/mcap2timescale
+Author: SensorSurf
+Author-email: support@sensorsurf.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/SensorSurf/mcap2timescale/issues
+Project-URL: Source, https://github.com/SensorSurf/mcap2timescale
+Keywords: ros,ros1,rosbag,mcap,timescale,etl,timeseries,database,etl
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+MCAP and ROS bags are a common format used to log data in the ROS ecosystem, capturing messages from various topics and nodes. However, analyzing and querying data directly from these files can be challenging, especially when dealing with large datasets. mcap2timescale simplifies this process by converting topic data into a TimescaleDB database, which is optimized for time-series data storage and querying.
+

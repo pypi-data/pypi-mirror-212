@@ -1,0 +1,53 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='mcap2timescale',
+    version='0.1.0',
+    author='SensorSurf',
+    author_email='support@sensorsurf.com',
+    description='Transform mcap (or rosbag) files into a Timescale database',
+    long_description='MCAP and ROS bags are a common format used to log data in the ROS ecosystem, capturing messages from various topics and nodes. However, analyzing and querying data directly from these files can be challenging, especially when dealing with large datasets. mcap2timescale simplifies this process by converting topic data into a TimescaleDB database, which is optimized for time-series data storage and querying.',
+    long_description_content_type='text/markdown',
+    url='https://github.com/SensorSurf/mcap2timescale',
+    packages=find_packages(),
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+    ],
+    keywords='ros, ros1, rosbag, mcap, timescale, etl, timeseries, database, etl',
+    install_requires=[
+        'boto3==1.26.138',
+        'botocore==1.29.138',
+        'jmespath==1.0.1',
+        'lz4==4.3.2',
+        'mcap==1.0.2',
+        'numpy==1.23.1',
+        'pandas==2.0.1',
+        'psycopg2-binary==2.9.6',
+        'python-dateutil==2.8.2',
+        'pytz==2023.3',
+        'rosbags==0.9.15',
+        'ruamel.yaml==0.17.26',
+        'ruamel.yaml.clib==0.2.7',
+        's3transfer==0.6.1',
+        'six==1.16.0',
+        'tzdata==2023.3',
+        'urllib3==1.26.15',
+        'zstandard==0.21.0',
+    ],
+    entry_points={
+        'console_scripts': [
+            'mcap2timescale=mcap2timescale.module:main',
+        ],
+    },
+    project_urls={
+        'Bug Reports': 'https://github.com/SensorSurf/mcap2timescale/issues',
+        'Source': 'https://github.com/SensorSurf/mcap2timescale',
+    },
+)
