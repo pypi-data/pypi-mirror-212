@@ -1,0 +1,13 @@
+sphinx_revealjs_slides/__init__.py,sha256=HhZLVS0kKhaUMDDaB5zcarrv0O9gTwMIEyOLVs73axE,2271
+sphinx_revealjs_slides/builder.py,sha256=16LANA4ADShYG12ekPfohMk5jBFket0GITPsyf2aY3Y,323
+sphinx_revealjs_slides/directives/__init__.py,sha256=3KtIoVkk5r-VmA-1xGPMbc9G6cT_O-Uz9vpWlzI_5vo,89
+sphinx_revealjs_slides/directives/_base_slide.py,sha256=tQDheuQHVG12sHsrJKUPlwL6C8ej3JmOqi3q2xsyb8g,1082
+sphinx_revealjs_slides/directives/incremental.py,sha256=oQMCht1abJK9IrUgulHEIfcCVlPS_hnaXgU6mpl28Jg,4082
+sphinx_revealjs_slides/directives/newslide.py,sha256=J-InN4mmh6HVy7B1O2Njtd8GmAxZ5IkJ8K7glNfE4QQ,1716
+sphinx_revealjs_slides/directives/speakernote.py,sha256=dM7PTmPFKzwwEUQNKyWCXbUmT2JcjYPktSUvv-o-DMg,1257
+sphinx_revealjs_slides/overridenodes.py,sha256=oRmj3fpYFKYMKHkmeF0knlZFWgZnIjntlDLbOkPAL9k,3030
+sphinx_revealjs_slides/themes/revealjs/layout.html,sha256=CCmfRCx2uTGOxsaOK5oqOanAXG9FpsMktl2dbahCYKk,780
+sphinx_revealjs_slides/themes/revealjs/theme.conf,sha256=3rFxsodowxmJcaX4Q-G-Fi90ZrsOZxgmVvXi12DgE0Y,127
+sphinx_revealjs_slides-0.2.4.dist-info/METADATA,sha256=ixy3aFgvIbRK1HSauWkCHTY4gqOLVt2sQnA-3VXjxBM,474
+sphinx_revealjs_slides-0.2.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+sphinx_revealjs_slides-0.2.4.dist-info/RECORD,,

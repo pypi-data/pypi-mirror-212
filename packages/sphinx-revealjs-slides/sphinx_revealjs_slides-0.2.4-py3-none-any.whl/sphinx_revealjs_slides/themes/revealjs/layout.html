@@ -1,0 +1,34 @@
+{%- extends "basic/layout.html" %}
+
+{%- block css %}
+  {{ super() }}
+{%- endblock css %}
+
+{%- block linktags %}{% endblock linktags %}
+
+{%- block scripts %}
+  {{ super() }}
+{%- endblock scripts %}
+
+{%- block relbar1 %}{% endblock relbar1 %}
+
+{%- block sidebar1 %}{% endblock sidebar1 %}
+
+{%- block content %}
+  {% block body %}{% endblock body %}
+  {%- block sidebar2 %}{% endblock sidebar2 %}
+  {%- block relbar2 %}{% endblock relbar2 %}
+  {%- block footer %}{% endblock footer %}
+  {%- block initRevealjs %}
+    <script>
+      (() => {
+        Reveal.initialize({
+          slideNumber: "c/t",
+          showSlideNumber: "print",
+          hashOneBasedIndex: true,
+          hash: true
+        });
+      })();
+    </script>
+  {%- endblock initRevealjs %}
+{%- endblock content %}
