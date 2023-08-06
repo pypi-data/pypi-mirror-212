@@ -1,0 +1,14 @@
+procure/__about__.py,sha256=jZ5uWOiyV1Hb9rhNyo3bAgfWmHx8_xkueUWpcUrkz_w,21
+procure/__init__.py,sha256=aJjZ7EkSIHqiZdsEeV3oFKET6BqlPwM3ZD_2-1V7sa4,46
+procure/project.py,sha256=fxDqzrlO6dzuf9-PAqJ5-Ok8tfpNgVGmn-fivi8KWbY,97
+procure/resource.py,sha256=TEpjS_3RHbIFn46dp8cbcFDYJ2IYRNCvHKuQLUgxwWw,54
+procure/cli/__init__.py,sha256=E_ThQw3gwHIt7L-uV5SrFBMnDwGdJ4KSvC3oVnxAPtE,885
+procure/solution/__init__.py,sha256=qvOydfwzUzMquNTjYINSMIqFbKSUn57wiA82zly6ExY,58
+procure/solution/git.py,sha256=OcYejnWF5NIWAASFAUdqAcxk8af-KtiEwVs7VYp8xdA,687
+procure/solution/solution.py,sha256=9UPxc8vltNYdOCWgHCDYckIpuAKlM0JQpNlVzls9u7c,100
+procure/solution/zip.py,sha256=NTPzU8Uo1qFYWMw2S_a65E5nSj5i3iOsr_GV9wZgvvc,868
+procure-0.1.1.dist-info/METADATA,sha256=RZ5D1z_KvPnyw59pCN-it_LafCEOQWOBXCxdXc6BjJo,2434
+procure-0.1.1.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+procure-0.1.1.dist-info/entry_points.txt,sha256=JyNfRC0HnQefcG97WjEdNHXgGJtDFoWCCK5S-TMQmwc,44
+procure-0.1.1.dist-info/licenses/LICENSE,sha256=Yg_GlIov9Zg2uR_OskJg-wsUmuaky01UgSVd0D1Gj8s,1089
+procure-0.1.1.dist-info/RECORD,,
