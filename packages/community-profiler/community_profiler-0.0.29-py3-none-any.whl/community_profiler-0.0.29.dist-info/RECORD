@@ -1,0 +1,9 @@
+community_profiler/__init__.py,sha256=AJSBXfbpJasH-23jDp25v1LBqsaCvVmbAuXcP0GE42Y,38
+community_profiler/cli.py,sha256=fzGVBbKHMZcC-grfurVJciT05LKuk0V8Ma3PFhPphCQ,292
+community_profiler/profiler.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+community_profiler/util.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+community_profiler-0.0.29.dist-info/METADATA,sha256=2DgU4cz2bXtWPpIXNkubsnltqv_B9cWV3x-2i0TF4MY,1121
+community_profiler-0.0.29.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+community_profiler-0.0.29.dist-info/entry_points.txt,sha256=CxEU67VjvsUL2zvKFyh4BMtLCmS7_qf4JsIzR0nl_VQ,62
+community_profiler-0.0.29.dist-info/top_level.txt,sha256=3V_Qw5HU3zvydp4-UMG_UFKgIaWLUUMYMpofiSBwGHY,19
+community_profiler-0.0.29.dist-info/RECORD,,
