@@ -1,0 +1,6 @@
+[pytest11]
+sphinx_test=sphinx_pytest.plugin
+
+[sphinx.builders]
+doctree=sphinx_pytest.builders
+

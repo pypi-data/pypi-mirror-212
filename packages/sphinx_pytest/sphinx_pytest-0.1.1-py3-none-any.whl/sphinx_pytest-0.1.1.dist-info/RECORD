@@ -1,0 +1,8 @@
+sphinx_pytest/__init__.py,sha256=INoHgCGFP1L2NrDjoogy3spJlsfk1IfbXxw8I8_5sGE,76
+sphinx_pytest/builders.py,sha256=4stO3SlDHA9f3dIBEX-1Xvezkfsdve25aX1P7vwfTzo,1053
+sphinx_pytest/plugin.py,sha256=NvIEDe8t6qW2LnuaSyRoWUGzCoALhLqT-RFGL1FJUs8,4829
+sphinx_pytest-0.1.1.dist-info/entry_points.txt,sha256=yIgBabRzCzaH9aIMSNBPCKPJ9Am1zyfNtMO-2cUUBUM,95
+sphinx_pytest-0.1.1.dist-info/LICENSE,sha256=MIoxP93CKh576q4Znoil0dW6v4YYafh8HbVvwg98EbY,1069
+sphinx_pytest-0.1.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+sphinx_pytest-0.1.1.dist-info/METADATA,sha256=FRjUp4e1s-KSLd-YSE68KwKFiVFx5ln76PSf3qFLMu0,2234
+sphinx_pytest-0.1.1.dist-info/RECORD,,
