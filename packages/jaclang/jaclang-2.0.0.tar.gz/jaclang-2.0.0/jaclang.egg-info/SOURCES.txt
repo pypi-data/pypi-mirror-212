@@ -1,0 +1,6 @@
+README.md
+setup.py
+jaclang.egg-info/PKG-INFO
+jaclang.egg-info/SOURCES.txt
+jaclang.egg-info/dependency_links.txt
+jaclang.egg-info/top_level.txt
