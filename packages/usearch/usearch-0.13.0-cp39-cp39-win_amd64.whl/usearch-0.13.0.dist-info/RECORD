@@ -1,0 +1,12 @@
+usearch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usearch/client.py,sha256=GGPjJt7baBYppvB43Bd9DdxMCWM1_LxF4ZF1E8ziaKo,4320
+usearch/compiled.cp39-win_amd64.pyd,sha256=wYmPPNpED-5IzylBl3IdRI3GXde2zmfmZwE89k3r9zo,320000
+usearch/index.py,sha256=pKGLWlHcutA5gNc6miIUQtgwRAryGlW2RsBCXYvIpn0,14419
+usearch/io.py,sha256=UW4nxJoRfgmEM0gjIUVdoFWNiApY2A7qHUG2td1LqaA,2468
+usearch/server.py,sha256=6w9cNzTvYNO1IVz5U9hUGkrPpfUrFWsQyFnQIMooFwk,3884
+usearch/synthetic.py,sha256=4Sh-gID71ZN6h-VLb7IRKD_SVcKwCkxe1woupZN5xtI,1031
+usearch-0.13.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+usearch-0.13.0.dist-info/METADATA,sha256=GvEnMq6f1P7l9hZrLKRVWqUKIG6yWFRVzwyFQtvwGfE,21937
+usearch-0.13.0.dist-info/WHEEL,sha256=eep6QWEFiQfg2wcclssb_WY-D33AnLYLnEKGA9Rn-VU,100
+usearch-0.13.0.dist-info/top_level.txt,sha256=zFbid1SmQjk8RsbEgpqF7tTjgWdFvE2z0e1LQ2hKdPg,8
+usearch-0.13.0.dist-info/RECORD,,
