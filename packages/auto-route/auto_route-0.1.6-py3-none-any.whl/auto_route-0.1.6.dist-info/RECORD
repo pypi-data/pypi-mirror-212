@@ -1,0 +1,13 @@
+auto_app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_app/auto_app.py,sha256=UoJ27BrGOGsc4yc3yWn5-04AxpTF7O7ig4sPMtfxy6o,3725
+auto_app/cli_auto_app.py,sha256=DCvoOkg_iOPC4bnmlXiNRf8PtP0jzgueJCkWmvRg53I,1608
+auto_app/streamlit_demo.py,sha256=89shq9ERdr_D6VY9vZ6CBhEhU7JnK6FmC3rcevseiWg,779
+auto_route/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_route/auto_route.py,sha256=ByVHjp6x64ZQO8PDsV8Kh1Kx8A1UdAAmoiiB3fCQJB0,7067
+auto_route/create_composed_class.py,sha256=Rxtg_okUdLcrYna0Q4tDyCerWmwrmQRMtsXa5IiAt20,2657
+auto_route/generator.py,sha256=E67WwsfvCtSkfUTYk5P16xm8CNEv54e9iWejrVOYH90,349
+auto_route-0.1.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+auto_route-0.1.6.dist-info/METADATA,sha256=UGoFbUbecQTTaCpJj5p57YGZu-_87Anw_B4AopVZjjY,5075
+auto_route-0.1.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+auto_route-0.1.6.dist-info/top_level.txt,sha256=NlLZJJo1gddeyT2WbeMlDGsVsnqKcS_Nt47rOvuZ3r4,20
+auto_route-0.1.6.dist-info/RECORD,,
