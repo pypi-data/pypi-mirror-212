@@ -1,0 +1,8 @@
+setuptools
+pyside2
+appdirs
+MDAnalysis
+matplotlib
+numpy
+scipy
+parmed
