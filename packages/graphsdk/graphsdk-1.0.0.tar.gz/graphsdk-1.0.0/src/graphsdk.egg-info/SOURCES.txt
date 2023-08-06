@@ -1,0 +1,8 @@
+LICENSE.txt
+README.txt
+pyproject.toml
+setup.cfg
+src/graphsdk.egg-info/PKG-INFO
+src/graphsdk.egg-info/SOURCES.txt
+src/graphsdk.egg-info/dependency_links.txt
+src/graphsdk.egg-info/top_level.txt
