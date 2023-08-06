@@ -1,0 +1,10 @@
+dxfsspec/__init__.py,sha256=TCNrpMLRzKRTpk403TFZZzyTCysYJ-tQrIjfVjRFkzM,70
+dxfsspec/core.py,sha256=jjRUhHmNi3JeJHVsLB69eWEapNuTlwJGXH_897gBwLE,16792
+fsspec_dnanexus/__init__.py,sha256=Qp9IeL8XHC2QMgudO2nDfrhKybOUpXC9ikoOeRJcN0Q,94
+fsspec_dnanexus/core.py,sha256=xgfiC1nxZ-gBXMXlO5tlAXyuwkCL7oX4ebCpw3CoTiI,20706
+fsspec_dnanexus-0.0.3.dist-info/LICENSE.txt,sha256=xw5rRrmGcck7yjci2gFi_mdLQMqoJ4z_wj9V-v1f8kc,1064
+fsspec_dnanexus-0.0.3.dist-info/METADATA,sha256=wpyEn7LBrcc8jdex4y9-TpR90SkiuiRBrOwEAL93ocw,5598
+fsspec_dnanexus-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fsspec_dnanexus-0.0.3.dist-info/entry_points.txt,sha256=zedbecJMg3jDda3NJosZuAeXyQcyvjjtxoPOUzaxvpA,55
+fsspec_dnanexus-0.0.3.dist-info/top_level.txt,sha256=fhiQuqx3PFbiSpzgyHwTk5k8oC2um96uzf3YTKNwpIE,16
+fsspec_dnanexus-0.0.3.dist-info/RECORD,,
