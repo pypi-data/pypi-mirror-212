@@ -1,0 +1,6 @@
+scanpy==1.9.1
+numpy
+pandas
+anndata==0.8.0
+scikit-image
+openai
