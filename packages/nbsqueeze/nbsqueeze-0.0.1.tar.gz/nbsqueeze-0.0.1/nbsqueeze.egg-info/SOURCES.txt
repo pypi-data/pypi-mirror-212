@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+nbsqueeze/__init__.py
+nbsqueeze/_modidx.py
+nbsqueeze/extract.py
+nbsqueeze/squeeze.py
+nbsqueeze.egg-info/PKG-INFO
+nbsqueeze.egg-info/SOURCES.txt
+nbsqueeze.egg-info/dependency_links.txt
+nbsqueeze.egg-info/entry_points.txt
+nbsqueeze.egg-info/not-zip-safe
+nbsqueeze.egg-info/requires.txt
+nbsqueeze.egg-info/top_level.txt

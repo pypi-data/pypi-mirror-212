@@ -1,0 +1,6 @@
+nbformat
+ipynb_path
+matplotlib
+numpy
+
+[dev]

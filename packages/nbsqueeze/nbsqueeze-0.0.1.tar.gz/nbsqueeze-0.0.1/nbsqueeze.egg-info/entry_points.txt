@@ -1,0 +1,6 @@
+[console_scripts]
+nbsqueeze = nbsqueeze.squeeze:squeeze
+
+[nbdev]
+nbsqueeze = nbsqueeze._modidx:d
+
