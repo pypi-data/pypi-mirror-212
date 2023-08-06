@@ -1,0 +1,17 @@
+txtadv_nightly/BUILD_DESC.md,sha256=_STNIDSEF-_SVnhdj3n93M3QMtNUYQjKSYLNDGLdbSQ,414
+txtadv_nightly/__init__.py,sha256=nPSyiG4TvELXHP39YwxEJqhn2rXreFOWrNTcVfiO4Lg,11466
+txtadv_nightly/color/__init__.py,sha256=GyFk_CgVXiwAMOIWkUW83bRtmuTb_KU2WNz6DL69s4U,786
+txtadv_nightly/commands/__init__.py,sha256=t8YzdoyOCjlr0n4boyyversHeFqd6J1L8TfcUnPCqpM,7006
+txtadv_nightly/file/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+txtadv_nightly/file/load.py,sha256=1UujioV2qcBkJVYDQnr5Rfcuh6nRAZ253EdrO1nT_1s,2418
+txtadv_nightly/file/save.py,sha256=TT9jQYm8cAD_0Kiph-dLdNYrr2iVBLX-V8EQ2Nn1jhs,1895
+txtadv_nightly/location/__init__.py,sha256=vncolT2rFbfIY_R2VNK5ZUaXdH5QnQwXkosGiCKowPc,720
+txtadv_nightly/messaging/__init__.py,sha256=sOQRIf-uAFJXBlnDN6ZkxKeWDvQMyJd7HfiNesh6HSM,2118
+txtadv_nightly/multiplayer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+txtadv_nightly/multiplayer/recieve.py,sha256=4_YKX8zey75lDsai-4lpmSl2g-v1-Jqgo6VMVKaHSbo,32
+txtadv_nightly/multiplayer/taw.proto,sha256=lhxgSI1f2YorG32CXOLTHmQPdN5qmxxvpRKJnK_Baqs,2212
+txtadv_nightly/multiplayer/taw_pb2.py,sha256=lXG4iKL8CCr2DhecQCpayGe5xY7zlR4eN_56Vgkcfss,5884
+txtadv_nightly-110105103104116108121110105103104116108121.2.dist-info/LICENSE,sha256=m37mkNcV7ubcwT6jUuDEfpiRtzpeJm5gBtMyIQfiFnQ,1068
+txtadv_nightly-110105103104116108121110105103104116108121.2.dist-info/METADATA,sha256=Eyb9_68afU_X-EqhN-AfKbCyJIDlbNMWjRCUu0o28Pk,877
+txtadv_nightly-110105103104116108121110105103104116108121.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+txtadv_nightly-110105103104116108121110105103104116108121.2.dist-info/RECORD,,
