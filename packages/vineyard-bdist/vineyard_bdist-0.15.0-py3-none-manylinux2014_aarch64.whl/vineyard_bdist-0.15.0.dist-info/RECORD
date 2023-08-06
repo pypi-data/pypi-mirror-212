@@ -1,0 +1,9 @@
+vineyard/bdist/__init__.py,sha256=ert-WgL537zSwe74NB2p1rOygOXCF61xEJGVHq_PhbI,650
+vineyard/bdist/vineyardctl,sha256=AFAsXi_9aYuRuiEQFK-F2vyztS_aU7JKMDbJmg--8tI,51448120
+vineyard/bdist/vineyardd,sha256=HS2W1nMiqzb24Z3bjd6vBaNbRJseqeRW-3IG7uQ_TYY,17356704
+vineyard_bdist-0.15.0.dist-info/LICENSE,sha256=jzcMNMgiI9HvjCZPxiLzEcdLTV9y1vImVhvCaQsB4b8,64582
+vineyard_bdist-0.15.0.dist-info/METADATA,sha256=d8i_zPQl1K7RpFugkQZ2izKgPMgxKiEljGGVA1r40us,18591
+vineyard_bdist-0.15.0.dist-info/NOTICE.txt,sha256=CpvNDiG8l4g1bbhN--L33Abkv4QLO3-T7tEe6-8HdW8,2068
+vineyard_bdist-0.15.0.dist-info/WHEEL,sha256=ryMUasDaGVJQYRdR2znim369C4kZcrC3XBMjnx90Wvg,111
+vineyard_bdist-0.15.0.dist-info/top_level.txt,sha256=eZrYkLRbDypCZAYVfMwFNTMYj4dRG-c-6B5uV6vu4Sk,9
+vineyard_bdist-0.15.0.dist-info/RECORD,,
