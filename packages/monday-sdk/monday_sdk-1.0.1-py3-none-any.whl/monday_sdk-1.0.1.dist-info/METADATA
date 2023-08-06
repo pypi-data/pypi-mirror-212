@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: monday-sdk
+Version: 1.0.1
+Summary: 
+Home-page: https://github.com/krummja/MondaySDK.git
+Author: Jonathan Crum
+Author-email: jcrum@theobogroup.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: fastapi (>=0.88.0,<0.89.0)
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
+Project-URL: Repository, https://github.com/krummja/MondaySDK.git
+Description-Content-Type: text/markdown
+
+# Python SDK for monday.com
+
