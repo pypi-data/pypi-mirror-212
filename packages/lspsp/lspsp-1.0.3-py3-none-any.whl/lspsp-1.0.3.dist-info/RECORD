@@ -1,0 +1,16 @@
+lspsp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lspsp/executable.py,sha256=FtmURNZyJ88RZ7BxdiZChsjQAQEfzMAc6LxypujlKxA,262
+lspsp/lspmon.py,sha256=btn6Qy_A0YNK42ACHeLpjAPZu-7CZ_Rw7MrJV6nLJcc,1831
+lspsp/lspnotify.py,sha256=Lq6hzjQfagLTMhHiQ-Kzb-TYhmU8UfQY5ePmnRzbat8,1642
+lspsp/lspsp.py,sha256=6yE8wNGTEuxxVtoXyPrYXdVWHzwE1UYzxdp32rfpIAg,1100
+lspsp/mailbuilder.py,sha256=clyTrLAkIXqaU7s6SQQnctHdfO6qYwULlNPe8WlUDRo,752
+lspsp/main.py,sha256=xdpiUvvv07OGyZDms7B7GImJ59Yq6vP_K0gsugUN0gc,173
+lspsp/monexec.py,sha256=nZLKrBeNgs24Hi8031VXaYRnQ47cf6T6F5FhwS0GP4s,895
+lspsp/resource/mail.html,sha256=55QKsIi2npAnt9x5ihWsXEW0Nvx_fCg4ITqdE4sQAEM,1468
+lspsp/resource/test.html,sha256=5s8d4uZ9ch8dz72V9J9JtAv8Tjp-rWN7e0dHB_AfVjE,1211
+lspsp-1.0.3.data/data/etc/lspsp/config.json.template,sha256=uigpH8GVBtUO93FFAw30Rp1PG7NlGRLCMV-6U3jTq74,401
+lspsp-1.0.3.dist-info/METADATA,sha256=yJ3jef1yuv7l-FCtlrr7vszY66ARAw4getmuOM2jMbE,311
+lspsp-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lspsp-1.0.3.dist-info/entry_points.txt,sha256=ZZTIDfPCoe25drzwZ7iTaLf3zWkqxy404pgIpBGM4Vk,42
+lspsp-1.0.3.dist-info/top_level.txt,sha256=XrVuM1s9jbDmcYiJFpwDaszDlayFtR3DVgcpYixqZIs,6
+lspsp-1.0.3.dist-info/RECORD,,
