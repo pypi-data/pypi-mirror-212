@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pyVME/__init__.py
+src/pyVME/client.py
+src/pyVME/fpga.py
+src/pyVME/server.py
+src/pyVME/vme_fpga_py.cpython-39-x86_64-linux-gnu.so
+src/pyVME.egg-info/PKG-INFO
+src/pyVME.egg-info/SOURCES.txt
+src/pyVME.egg-info/dependency_links.txt
+src/pyVME.egg-info/top_level.txt

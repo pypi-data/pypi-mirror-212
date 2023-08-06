@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyVME"
+version = "1.0.1"
+authors = [
+  { name="Dominic Schüchter", email="schuechter@hiskp.uni-bonn.de" },
+]
+description = "A small python VME integration, that uses an exposed cpp vme library to interact with a FPGA and can act as a user<->server system"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+]
+[tool.setuptools]
+include-package-data = true
+
+[project.urls]
+"Homepage" = "https://github.com/dschuechter/pyVME"
