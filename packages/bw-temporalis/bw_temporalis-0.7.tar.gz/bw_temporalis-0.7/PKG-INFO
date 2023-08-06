@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: bw_temporalis
+Version: 0.7
+Summary: Revision of bw2temporalis for modern Brightway
+Home-page: https://github.com/brightway-lca/bw_temporalis
+Author: Chris Mutel
+Author-email: <cmutel@gmail.com>
+Maintainer: Chris Mutel
+Maintainer-email: <cmutel@gmail.com>
+License: BSD-3-Clause
+Project-URL: source, https://github.com/brightway-lca/bw_temporalis
+Project-URL: homepage, https://github.com/brightway-lca/bw_temporalis
+Project-URL: tracker, https://github.com/brightway-lca/bw_temporalis/issues
+Keywords: "brightway","development"
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: testing
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+# bw_temporalis
+
+[![PyPI](https://img.shields.io/pypi/v/bw_temporalis.svg)][pypi status]
+[![Status](https://img.shields.io/pypi/status/bw_temporalis.svg)][pypi status]
+[![Python Version](https://img.shields.io/pypi/pyversions/bw_temporalis)][pypi status]
+[![License](https://img.shields.io/pypi/l/bw_temporalis)][license]
+
+[![Read the documentation at https://bw_temporalis.readthedocs.io/](https://img.shields.io/readthedocs/bw_temporalis/latest.svg?label=Read%20the%20Docs)][read the docs]
+[![Tests](https://github.com/brightway-lca/bw_temporalis/workflows/Tests/badge.svg)][tests]
+[![Codecov](https://codecov.io/gh/brightway-lca/bw_temporalis/branch/main/graph/badge.svg)][codecov]
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+
+[pypi status]: https://pypi.org/project/bw_temporalis/
+[read the docs]: https://bw_temporalis.readthedocs.io/
+[tests]: https://github.com/brightway-lca/bw_temporalis/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/brightway-lca/bw_temporalis
+[pre-commit]: https://github.com/pre-commit/pre-commit
+[black]: https://github.com/psf/black
+
+## Installation
+
+You can install _bw_temporalis_ via [pip] from [PyPI]:
+
+```console
+$ pip install bw_temporalis
+```
+
+Currently Python 3.11 installations are broken as [scikit-network](https://scikit-network.readthedocs.io/en/latest/?badge=latest) doesn't have pre-built wheels and compilation fails. This [could be fixed soon](https://github.com/sknetwork-team/scikit-network/pull/558).
+
+You can also install using conda in the [cmutel channel](https://anaconda.org/cmutel/bw_temporalis).
+
+## Contributing
+
+Contributions are very welcome.
+To learn more, see the [Contributor Guide].
+
+## License
+
+Distributed under the terms of the [BSD 3 Clause license][license],
+_bw_temporalis_ is free and open source software.
+
+## Issues
+
+If you encounter any problems,
+please [file an issue] along with a detailed description.
+
+
+<!-- github-only -->
+
+[command-line reference]: https://bw_temporalis.readthedocs.io/en/latest/usage.html
+[license]: https://github.com/brightway-lca/bw_temporalis/blob/main/LICENSE
+[contributor guide]: https://github.com/brightway-lca/bw_temporalis/blob/main/CONTRIBUTING.md
