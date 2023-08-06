@@ -1,0 +1,17 @@
+dummy_kinematics/__about__.py,sha256=PH0P-04ODcCllfzVhUojh8qntepQhKxeg89f2cjdPsg,126
+dummy_kinematics/__init__.py,sha256=Bs8hLygiBFGO7YgxXLSOJ21kUAZKck24UACbyVimBgU,51
+dummy_kinematics/chart_element.py,sha256=jEWGhAfOC6ZnanvY3Lj4BcHtRew9pcwGQoSe3NqDu0M,20585
+dummy_kinematics/config.py,sha256=dI-NpP0aLf6r2tLiCklrPwYUb2QhG2GaVHdzFqDZHoc,21
+dummy_kinematics/data_converter.py,sha256=m_VKCXheJkecrYUdRxwL37ciiW9dKXlqjUlUva1Kk_E,13059
+dummy_kinematics/descriptors.py,sha256=73aO44mDLorx7K1UoLgw57DgvwDk6Os0IeI2jXdZwCE,2935
+dummy_kinematics/dummy_iso_config.py,sha256=SU98XBw294i43U9hVZydPaU4mh1dJVlhAJNmVTzvt8U,54622
+dummy_kinematics/json_file_helper.py,sha256=x5ny-NthJM0LFt_XyQ9n5usMFLxeaB5KHxcMG0KuLeI,358
+dummy_kinematics/logger_helper.py,sha256=BZcfrzsqOU1MUgdRGsu-SHpla1zn66je0w2hVKcpXsI,1286
+dummy_kinematics/ppt_factory.py,sha256=OZJS4U2fZiNJL3ri4bjUH-76kF6qG4r3xf6jf606QXw,20807
+dummy_kinematics/ppt_insert_helper.py,sha256=JWev9ZHPsj1vJAGRzH9HupwWHlBoIG6cIGwsAjf8xyA,6535
+dummy_kinematics/unitils.py,sha256=vr155HtMBwX9W6hP-sbnZeb4gbk3BV3tTOMv0rWZz4g,18634
+dummy_kinematics/default/default_template.pptx,sha256=Av9hGbMJ-EpkzFdUzmSTzZCFbrbMGcOSXKf96hSSrhU,252577
+dummy_kinematics-0.0.9.dist-info/METADATA,sha256=psrYyoNa7pMVng-5oIIuAB_ZpTP1nnSYfnXKItb-MqE,2868
+dummy_kinematics-0.0.9.dist-info/WHEEL,sha256=9MIigYJ7D5sOqAPqr0-o6tSMY_nQ7c6kvtvyeUB99YQ,87
+dummy_kinematics-0.0.9.dist-info/licenses/LICENSE.txt,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+dummy_kinematics-0.0.9.dist-info/RECORD,,
