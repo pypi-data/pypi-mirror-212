@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: nnexteraa-glue
+Version: 0.1.dev0
+Requires-Python: >=3.7
+Requires-Dist: awswrangler (==2.15.1)
+
