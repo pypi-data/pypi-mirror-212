@@ -1,0 +1,8 @@
+setup.py
+try_pyspark/__init__.py
+try_pyspark/sql_file_picker.py
+try_pyspark/test_pyspark.py
+try_pyspark.egg-info/PKG-INFO
+try_pyspark.egg-info/SOURCES.txt
+try_pyspark.egg-info/dependency_links.txt
+try_pyspark.egg-info/top_level.txt
