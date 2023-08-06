@@ -1,0 +1,4 @@
+[console_scripts]
+tcb.baseline = text_correction_benchmarks.baselines:main
+tcb.download = text_correction_benchmarks.cli.download:main
+tcb.evaluate = text_correction_benchmarks.cli.evaluate:main
