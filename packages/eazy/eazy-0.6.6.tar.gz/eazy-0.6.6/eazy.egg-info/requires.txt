@@ -1,0 +1,18 @@
+numpy
+scipy
+matplotlib
+astropy
+peakutils
+tqdm
+h5py
+astro-sedpy>=0.3
+dust_attenuation@ git+https://github.com/karllark/dust_attenuation#egg=dust_attenuation
+dust_extinction@ git+https://github.com/gbrammer/dust_extinction.git#egg=dust_extinction
+
+[docs]
+sphinx
+sphinx-astropy
+
+[test]
+pytest>=5.1
+flake8
