@@ -1,0 +1,7 @@
+mi_libreria.py
+setup.py
+mi_libreria.egg-info/PKG-INFO
+mi_libreria.egg-info/SOURCES.txt
+mi_libreria.egg-info/dependency_links.txt
+mi_libreria.egg-info/entry_points.txt
+mi_libreria.egg-info/top_level.txt
