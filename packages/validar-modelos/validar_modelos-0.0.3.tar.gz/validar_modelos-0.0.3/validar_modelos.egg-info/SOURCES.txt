@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+validar_modelos/__init__.py
+validar_modelos/validar_modelos.py
+validar_modelos.egg-info/PKG-INFO
+validar_modelos.egg-info/SOURCES.txt
+validar_modelos.egg-info/dependency_links.txt
+validar_modelos.egg-info/requires.txt
+validar_modelos.egg-info/top_level.txt
