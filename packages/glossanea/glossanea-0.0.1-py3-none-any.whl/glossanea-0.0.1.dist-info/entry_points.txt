@@ -1,0 +1,2 @@
+[console_scripts]
+glossanea = glossanea.__main__:main
