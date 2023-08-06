@@ -1,0 +1,5 @@
+include zhousflib/font/simfang.ttf
+include zhousflib/font/SimSun.ttf
+include zhousflib/font/Symbola.ttf
+include requirements.txt
+include README.md
