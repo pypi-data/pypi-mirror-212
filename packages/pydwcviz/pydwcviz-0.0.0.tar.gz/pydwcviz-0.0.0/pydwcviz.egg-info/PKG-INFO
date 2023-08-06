@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pydwcviz
+Version: 0.0.0
+Summary: Python package for Darwin-Core Data Analysis.
+Home-page: https://github.com/marinebon/py-dwc-viz
+Author: 'Ayush Anand, Tylar Murray'
+License: MIT
+Project-URL: Documentation, https://marinebon.github.io/py-dwc-viz
+Project-URL: Bug Tracker, https://github.com/marinebon/py-dwc-viz
+Project-URL: Source Code, https://github.com/marinebon/py-dwc-viz
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyDwcViz
+A python package that makes Darwin-Core Data analysis and visualization easy.
+
+## Installation
+### Install latest development version from GitHub
+```python
+pip install git+git://github.com/marinebon/py-dwc-viz.git
+```
+
+## Modules
+Module | Description
+-------|------------
+`diversity`|Generate biodiversity indices for species analysis.
+`map`|Visualize DwC data easily on maps
+`stats`|Visualize distribution of records and environmental parameters.
+`taxon`|Visualize taxonomic distributions.
+
+## Documentation
+The documentation can be found at [GitHub Pages](https://marinebon.github.io/py-dwc-viz).
+
+## Authors
+Open-sourced and Built with ❤️ by MBON volunteers
