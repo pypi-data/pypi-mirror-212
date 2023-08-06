@@ -1,0 +1,5 @@
+[console_scripts]
+swh-hg-identify = swh.loader.mercurial.identify:main
+
+[swh.workers]
+loader.mercurial = swh.loader.mercurial:register
