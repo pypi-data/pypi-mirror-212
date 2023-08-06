@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aioipinfo"
+version = "0.1.1"
+description = "The aioipinfo Python package"
+readme = "README.md"
+requires-python = ">=3.11"
+
+# Fill in dependencies here.
+dependencies = []
+
+[[project.authors]]
+name = "John Gorman"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/gormaniac/aioipinfo"
+Documentation = "https://gormo.co/aioipinfo/"
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["src"]

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/aioipinfo/__init__.py
+src/aioipinfo/__main__.py
+src/aioipinfo.egg-info/PKG-INFO
+src/aioipinfo.egg-info/SOURCES.txt
+src/aioipinfo.egg-info/dependency_links.txt
+src/aioipinfo.egg-info/top_level.txt
