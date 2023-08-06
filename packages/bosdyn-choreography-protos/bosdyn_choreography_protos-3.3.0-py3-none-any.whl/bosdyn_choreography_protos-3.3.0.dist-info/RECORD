@@ -1,0 +1,13 @@
+bosdyn/__init__.py,sha256=h-QyvMVzDNpT3jyVskcSbUVFXxGCRxieFPrvTveZG9k,64
+bosdyn/api/__init__.py,sha256=h-QyvMVzDNpT3jyVskcSbUVFXxGCRxieFPrvTveZG9k,64
+bosdyn/api/spot/__init__.py,sha256=h-QyvMVzDNpT3jyVskcSbUVFXxGCRxieFPrvTveZG9k,64
+bosdyn/api/spot/choreography_params_pb2.py,sha256=L3mThS_rwGPq41JLpWAPgYneiCDE4Ru2lpPT3WHIdbM,52917
+bosdyn/api/spot/choreography_params_pb2_grpc.py,sha256=1oboBPFxaTEXt9Aw7EAj8gXHDCNMhZD2VXqocC9l_gk,159
+bosdyn/api/spot/choreography_sequence_pb2.py,sha256=iNOgt9ZEKNVTQkpv0-FljDOAmnRp6t4lKcz-X8qNQDs,53517
+bosdyn/api/spot/choreography_sequence_pb2_grpc.py,sha256=1oboBPFxaTEXt9Aw7EAj8gXHDCNMhZD2VXqocC9l_gk,159
+bosdyn/api/spot/choreography_service_pb2.py,sha256=ykmFtskgrBBd20VPp-McwWC-GStAPDyOucQcz-TNIbQ,3109
+bosdyn/api/spot/choreography_service_pb2_grpc.py,sha256=XMqXEzL7FocgRnxQBiX1K7fQd5V4TVwm7c8V9d1h4Uc,27930
+bosdyn_choreography_protos-3.3.0.dist-info/METADATA,sha256=gW3KtDmiGhbpPOaqlR-5BMyULyNmAvr_3GZN3Hh2cgI,1542
+bosdyn_choreography_protos-3.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bosdyn_choreography_protos-3.3.0.dist-info/top_level.txt,sha256=an2OWgx1ej2jFjmBjPWNQ68ZglvUfKhmXWW-WhTtDmA,7
+bosdyn_choreography_protos-3.3.0.dist-info/RECORD,,
