@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: TPE-Bot
+Version: 0.5.23
+Summary: A TPEdu personalised chatbot package
+Author: Ester Goh
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
