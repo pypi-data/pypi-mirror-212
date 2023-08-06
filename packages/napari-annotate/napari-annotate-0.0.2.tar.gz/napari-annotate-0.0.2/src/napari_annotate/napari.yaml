@@ -1,0 +1,46 @@
+name: napari-annotate
+schema_version: 0.1.0
+contributions:
+  commands:
+  - id: napari-annotate.next_slide_huron
+    title: Create next_slide_huron
+    python_name: napari_annotate._annotate:next_slide_huron
+
+  - id: napari-annotate.review_annotations_huron
+    title: Create review_annotations_huron
+    python_name: napari_annotate._annotate:review_annotations_huron
+
+  - id: napari-annotate.review_segmentations_huron
+    title: Create review_segmentations_huron
+    python_name: napari_annotate._annotate:review_segmentations_huron
+
+  - id: napari-annotate.add_annotations_huron
+    title: Create add_annotations_huron
+    python_name: napari_annotate._annotate:add_annotations_huron
+
+  - id: napari-annotate.next_slide_olympus
+    title: Create next_slide_olympus
+    python_name: napari_annotate._annotate:next_slide_olympus
+
+  - id: napari-annotate.review_annotations_olympus
+    title: Create review_annotations_olympus
+    python_name: napari_annotate._annotate:review_annotations_olympus
+
+  widgets:
+  - command: napari-annotate.next_slide_huron
+    display_name: Annotate next slide Huron
+
+  - command: napari-annotate.review_annotations_huron
+    display_name: Review ROI Huron
+
+  - command: napari-annotate.review_segmentations_huron
+    display_name: Review segmentations Huron
+
+  - command: napari-annotate.add_annotations_huron
+    display_name: Add annotations Huron
+
+  - command: napari-annotate.next_slide_olympus
+    display_name: Annotate next slide Olympus
+
+  - command: napari-annotate.review_annotations_olympus
+    display_name: Review ROI Olympus
