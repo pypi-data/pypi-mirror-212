@@ -1,0 +1,13 @@
+AUTHORS.rst
+HISTORY.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+test_schedule.py
+arivo_schedule.egg-info/PKG-INFO
+arivo_schedule.egg-info/SOURCES.txt
+arivo_schedule.egg-info/dependency_links.txt
+arivo_schedule.egg-info/top_level.txt
+schedule/__init__.py
