@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hiveviewer
+Version: 0.0.1
+Summary: Offers a toolset for comprehensive, multi-faceted analysis of data exported from Hive, accompanied by powerful data visualization capabilities.
+Home-page: https://github.com/yinsn/hiveviewer
+Author: Yin Cheng
+Author-email: yin.sjtu@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hiveviewer
+
+
