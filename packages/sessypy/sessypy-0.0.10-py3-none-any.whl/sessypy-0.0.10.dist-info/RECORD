@@ -1,0 +1,10 @@
+sessypy/__init__.py,sha256=uY0YRiKuh6KN82hdwKvGRGERX3WcF6djsxC_cjB2VwM,27
+sessypy/api.py,sha256=fTYC851iEb6SrNmvQMHugH8qgmTiHzbOktlCx_-kJBo,1518
+sessypy/const.py,sha256=nI7I9dOh8rzbAGNGuHyww9yvqP8SDGxeV0GXbxWof4k,2230
+sessypy/devices.py,sha256=_3JTbstJ4rV1PLuuHkX5cnPVSAEzVgac4Dsb7iQgCX8,3301
+sessypy/util.py,sha256=7LqQPmEuQAYPnBOV91Mlb6ZmKfkArK9CEZYL86KLMOE,155
+sessypy-0.0.10.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+sessypy-0.0.10.dist-info/METADATA,sha256=UkERaQkPAZc0xrNcpwbCMHSbSx9Qcf0dpNwsa1HmsyA,816
+sessypy-0.0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sessypy-0.0.10.dist-info/top_level.txt,sha256=WMbTvlm1IBXkm96-1UdpbnmW0rBbYyeAzN-K34KGtZY,8
+sessypy-0.0.10.dist-info/RECORD,,
