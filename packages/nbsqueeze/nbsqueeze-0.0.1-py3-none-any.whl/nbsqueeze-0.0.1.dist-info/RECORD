@@ -1,0 +1,10 @@
+nbsqueeze/__init__.py,sha256=XMdVh-5PhR-JeBdIY60ayznM3nh1SGhgnb6-Uk_bAzY,71
+nbsqueeze/_modidx.py,sha256=qPQc7bzebzu_jaUUID8Br9mZZnzG5s9NeFZ3gGjc4Jo,1290
+nbsqueeze/extract.py,sha256=YBFda5Q3JhuJZ669D8GXUubXWP7GJXAxJk0UYXJonXU,5083
+nbsqueeze/squeeze.py,sha256=dYIIgROzFjqqMemQdUHpOXnGjxDW03bCQq9YN5aq8hM,2563
+nbsqueeze-0.0.1.dist-info/LICENSE,sha256=S8xHnn0z68frFr6dwAwCtOEr98bj1hCmsO881_whPpI,1072
+nbsqueeze-0.0.1.dist-info/METADATA,sha256=uvShlhVAsngcrgXna9XIwKVu1r9VY03aNzt6tJF4E88,1784
+nbsqueeze-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+nbsqueeze-0.0.1.dist-info/entry_points.txt,sha256=WeCmFBpXOEcu-bBnE4I9UcJ3DXOVBLr2lYwjdV7nDec,98
+nbsqueeze-0.0.1.dist-info/top_level.txt,sha256=n9RqJTIaiwSucx-SblrlXeCPGt4F7sZXTSCtd3AC7wM,10
+nbsqueeze-0.0.1.dist-info/RECORD,,
