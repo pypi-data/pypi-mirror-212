@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bumbo-tikey
+Version: 0.0.1
+Summary: Bumbo Python Web Framework built for learning purposes.
+Author: Ti Key
+Author-email: tikeytest@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+Bumbo Python Web Framework built for learning purposes.
