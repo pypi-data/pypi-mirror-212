@@ -1,0 +1,10 @@
+micropython_magic/__init__.py,sha256=emKaO2qLUN5Q_d3qpcyq-HalHiLKBbaboCCWAcDEeo8,871
+micropython_magic/magic_transformer.py,sha256=IfVU-abTn9PQFsAOijxc4jKbAqprncKr1QCKYiR7aLg,742
+micropython_magic/mpr.py,sha256=1k8aXVRDIa6w6-_JjjnfSZtf8Il9EGy4NkBPE8aAvCA,4358
+micropython_magic/octarine.py,sha256=GlYBoBDDGRyqQC9BxR-rGPTuE00Ph7HbiAXHIRII2Zs,12010
+micropython_magic/param_fixup.py,sha256=LVNzQuuhm_92-K_K9UDugp3u8PW1aBoJeBqmXbnFiRc,488
+micropython_magic/test_magics.py,sha256=Yz423Bz3-7TT1fyMI4iLXjB8XrZuw4ZShb_tMQkK65k,2514
+micropython_magic-0.2.0.dist-info/LICENSE,sha256=8p4JzJZsyDDk_ouALL9OPtFOEJpLpviYc6I6Y4b-0qM,1090
+micropython_magic-0.2.0.dist-info/METADATA,sha256=feKL_RegUDOsi1W0t9F6f1zsrLBYum4qt3PbgmrFsB4,6736
+micropython_magic-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+micropython_magic-0.2.0.dist-info/RECORD,,
