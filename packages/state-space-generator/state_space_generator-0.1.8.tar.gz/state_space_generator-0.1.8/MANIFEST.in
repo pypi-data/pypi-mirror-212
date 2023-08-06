@@ -1,0 +1,8 @@
+include state_space_generator/scorpion/fast-downward.py
+include state_space_generator/scorpion/build.py
+include state_space_generator/scorpion/build_configs.py
+include state_space_generator/scorpion/LICENSE.md
+include state_space_generator/scorpion/README.md
+recursive-include state_space_generator/scorpion/builds/release/bin/ *
+recursive-include state_space_generator/scorpion/driver/ *
+recursive-include state_space_generator/scorpion/src/ *
