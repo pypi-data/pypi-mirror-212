@@ -1,0 +1,15 @@
+nonebot_plugin_picstatus-0.5.0.dist-info/METADATA,sha256=GJWY7DKMAsmaqAPTnNqYbImA_eHcsqOmhLWmJhbnVJE,7830
+nonebot_plugin_picstatus-0.5.0.dist-info/WHEEL,sha256=m6kf1fJuo48rT4uxh0SeA_FsGq51BpCh_8VNBKVwYQA,90
+nonebot_plugin_picstatus-0.5.0.dist-info/licenses/LICENSE,sha256=rSxNsvf6KiOkVyQ_xzeto7hLWIPHa6GQTQFba4vXZjw,1069
+nonebot_plugin_picstatus/__init__.py,sha256=mzS86oJ9mxkkypP8iHEKQFEiZI_PXWOB7a1Mc9kyMuA,988
+nonebot_plugin_picstatus/__main__.py,sha256=yFVSgk-0kCWmKJH_co9jv2-sSS0wykUrRhtao_3Znro,4123
+nonebot_plugin_picstatus/config.py,sha256=PvhQuxvLUfopAK2Vml3nRuVoCdZjwYdGuRNAnhNbPco,1713
+nonebot_plugin_picstatus/const.py,sha256=QAEVIch7uyeiyJjOfPQR-PGHNaw53SCr1nrLz_Hddak,251
+nonebot_plugin_picstatus/draw.py,sha256=MeXa8K4-noYZoL_IsdsJUgdTXcJuiO51L6F-pynGts0,14152
+nonebot_plugin_picstatus/res/default_avatar.png,sha256=8XlkYnuw5Hjm8YHoOENERRdTMuWO47OfP6ZUKGOVORs,378600
+nonebot_plugin_picstatus/res/default_bg.png,sha256=4SYcyVfHDANJbvUelERgH-iDWf2jwXuJu46f6Pk0sWE,1527158
+nonebot_plugin_picstatus/statistics.py,sha256=DFqq4fP_txXyjX5EB5phJOppQlT1v-AlwvQBt-LowZY,1393
+nonebot_plugin_picstatus/status.py,sha256=dnqpYOlT8dbN2e3PaHxIWW3uFUcDxXn_9H1vDkeueGY,12403
+nonebot_plugin_picstatus/util.py,sha256=qXRU_NqA7QDAP_md2Z8Vv7WkQOJ-szNnZw6ZVjwpspM,3966
+nonebot_plugin_picstatus/version.py,sha256=LBK46heutvn3KmsCrKIYu8RQikbfnjZaj2xFrXaeCzQ,22
+nonebot_plugin_picstatus-0.5.0.dist-info/RECORD,,
