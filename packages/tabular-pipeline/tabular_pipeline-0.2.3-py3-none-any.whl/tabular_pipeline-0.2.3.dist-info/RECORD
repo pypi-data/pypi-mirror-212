@@ -1,0 +1,13 @@
+tabular_pipeline/__init__.py,sha256=eQHlf9OIJmuc5XKwcB1lDqQZzjw2-S8nBuAJIoNaHEU,33
+tabular_pipeline/pipeline.py,sha256=DP0Yc3gRVK79AeLVw-WDhDS-mud8JTG1cQFe5XfgjJs,658
+tabular_pipeline/read.py,sha256=lAXIYX_JRMeK6WG9bU85sPyfJ2ArXDfSXqYVUXxreWw,1489
+tabular_pipeline/schemas.py,sha256=ClsVts7L63Z5zoTUS9_Dr3e-WA9N1la1I_yMWHsIIlg,411
+tabular_pipeline/settings.py,sha256=Dam8jBnyaiGstbJNwBEzigQb8C54h4QupbQS9sdj0yE,929
+tabular_pipeline/steps/__init__.py,sha256=NYAQswJena8nazpv8Ej0aDBaEw2PHSTQtVIpiFSBm9c,1447
+tabular_pipeline/steps/conform.py,sha256=xXyGYm7ICWMFNmK7XONfGBmlHI3s_y9ucU52YQP-_v8,1998
+tabular_pipeline/steps/load.py,sha256=03zAEskv22J8O2NZ3m4Q7ZP7jtLJpmadIOeZdB4GbkE,1603
+tabular_pipeline/util.py,sha256=caY3L_VgErSlCgWGtKk-dx2wtsgTfXoeFlZhiH1UCos,815
+tabular_pipeline/write.py,sha256=iwvl07UMcMgBZCpLz4FW2DXAQy7stK_LIUgFzq9GkCE,671
+tabular_pipeline-0.2.3.dist-info/METADATA,sha256=xKJ6hW4I1XN5EVLGix8Fsp6FlWfo1aDK9WudRjqApyA,1799
+tabular_pipeline-0.2.3.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+tabular_pipeline-0.2.3.dist-info/RECORD,,
