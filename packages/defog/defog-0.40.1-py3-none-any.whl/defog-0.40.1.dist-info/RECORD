@@ -1,0 +1,14 @@
+defog/__init__.py,sha256=UF9Dsbwic-9y9biMMVWk9QY1UrPHW2e3Hh3TDKUVDGA,34983
+defog/cli.py,sha256=-RpGjRgpNVBU_s1GrloZq2gUfujIwpWPmem8k2j_7-I,15702
+defog/query.py,sha256=_q7fHT4s8eTSR7IFUjtTWFvZT_xe1dOflgog09TS-BE,4896
+defog/util.py,sha256=_AEe8AyrnJitb963zLy7x7cHtV0SXaw755q7XII-mA8,1563
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_defog.py,sha256=u4gqvjwFo4imztlqwU_QflB4i7d6jxUG1U-ts_-pq34,9742
+tests/test_query.py,sha256=CP2oXuKMfdsTj1nyabria8oqbrhUf3oWGRmlScyjkr4,6314
+tests/test_util.py,sha256=4pDNKAX1iRp0Nnf3CLePhLehdr5zoJlb8ioaPy4DHtc,1508
+defog-0.40.1.dist-info/LICENSE,sha256=cfZBeJFhWvq55ShydRPX57HXlEJGbP6qcfilLLZ61R8,1065
+defog-0.40.1.dist-info/METADATA,sha256=IsZGif8zzLdI5xjo_ieoIFJRIQ6GPekP3Bs3WLV5nGY,521
+defog-0.40.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+defog-0.40.1.dist-info/entry_points.txt,sha256=QAM556i08Vj-nRTWkZW3otzR8pzoYBVYUlkAS1CztmQ,41
+defog-0.40.1.dist-info/top_level.txt,sha256=qXdZrMWGbYrvUzf-Um4CgieE_5hPraMYi2SUKDK0_Bw,12
+defog-0.40.1.dist-info/RECORD,,
