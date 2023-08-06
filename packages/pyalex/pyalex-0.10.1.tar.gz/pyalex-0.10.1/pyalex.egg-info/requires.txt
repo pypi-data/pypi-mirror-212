@@ -1,0 +1,8 @@
+requests
+
+[lint]
+flake8
+flake8-import-order
+
+[test]
+pytest
