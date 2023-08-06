@@ -1,0 +1,114 @@
+[tool.poetry]
+name = "mcstatus"
+version = "11.0.0rc2" # version is handled by git tags and poetry-dynamic-versioning
+description = "A library to query Minecraft Servers for their status and capabilities."
+authors = ["Nathan Adams <dinnerbone@dinnerbone.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/py-mine/mcstatus"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Games/Entertainment",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Monitoring",
+    "Typing :: Typed",
+]
+packages = [
+    { include = "mcstatus" },
+    { include = "protocol", from = "mcstatus" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4"
+asyncio-dgram = "^2.1.2"
+dnspython = "^2.3.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.2"
+tox = "^3.28.0"
+tox-poetry = "0.5.0" # deprecated, no sense in `^`
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.1"
+pytest-asyncio = "^0.21.0"
+pytest-cov = "^4.0.0"
+pytest-rerunfailures = "^11.1.2"
+coverage = "^7.2.6"
+
+[tool.poetry.group.lint.dependencies]
+black = "^23.3.0"
+coverage = "^7.2.6"
+flake8 = "^6.0.0"
+flake8-annotations = "^3.0.1"
+flake8-bugbear = "^23.5.9"
+flake8-tidy-imports = "^4.8.0"
+flake8-pep585 = {version = "^0.1.7", python = ">=3.9"}
+flake8-new-union-types = "^0.4.1"
+flake8-future-annotations = "^1.1.0"
+isort = "^5.12.0"
+pep8-naming = "^0.13.3"
+pyright = "^1.1.309"
+typing-extensions = "^4.6.1"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.0.1"
+sphinx-autodoc-typehints = "^1.23.0"
+furo = ">=2022.12.7"
+m2r2 = "^0.3.3"
+tomli = { version = "^2.0.1", markers = "python_version < '3.11'" }
+packaging = "23.1"
+poetry-dynamic-versioning = "*"  # actual version is in `release` group
+
+[tool.poetry.group.release]
+optional = true
+
+[tool.poetry.group.release.dependencies]
+twine = "^4.0.2"
+poetry-dynamic-versioning = "^0.22.0"
+
+[tool.poetry.group.workflow-tox]
+optional = true
+
+[tool.poetry.group.workflow-tox.dependencies]
+tox-gh-actions = "^2.12.0"
+poetry = "^1.5.0"
+
+[tool.poetry.scripts]
+mcstatus = 'mcstatus.__main__:main'
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--strict-markers --doctest-modules --cov=mcstatus --cov-append --cov-branch --cov-report=term-missing -vvv --no-cov-on-fail --asyncio-mode=strict"
+testpaths = ["tests"]
+
+[tool.poetry-dynamic-versioning]
+bump = true
+enable = false
+style = "pep440"
+
+[tool.black]
+line-length = 127
+
+[tool.isort]
+profile = "black"
+line_length = 127
+order_by_type = false
+case_sensitive = true
+skip = [".venv", ".git", ".cache", ".tox"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
