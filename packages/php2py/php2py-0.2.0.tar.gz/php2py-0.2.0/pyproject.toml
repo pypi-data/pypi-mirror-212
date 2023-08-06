@@ -1,0 +1,64 @@
+[tool.poetry]
+name = "php2py"
+version = "0.2.0"
+homepage = "https://github.com/sfermigier/php2py"
+description = "PHP to Python transpiler."
+authors = ["Abilian SAS <sf@abilian.com>"]
+readme = "README.md"
+classifiers = [
+    'Development Status :: 2 - Pre-Alpha',
+    'Intended Audience :: Developers',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+]
+packages = [
+    { include = "php2py", from = "src" },
+    { include = "tests", format = "sdist" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4"
+astor = "^0.8.1"
+attrs = "^23.1.0"
+
+# For debugging. Remove later.
+icecream = "^2.1.3"
+rich = "^13.4.1"
+devtools = "^0.11.0"
+astpretty = "^3.0.0"
+click = "^8.1.3"
+platformdirs = "^3.5.1"
+cleez = "^0.1.11"
+
+[tool.poetry.dev-dependencies]
+abilian-devtools = "^0.5.2"
+
+restructuredtext_lint = "^1.4.0"
+
+[tool.poetry.scripts]
+php2py = "php2py.cli:cli"
+
+
+[tool.poetry.group.dev.dependencies]
+abilian-devtools = "^0.5.2"
+coverage = "^7.2.7"
+
+[tool.ruff]
+extend-ignore = [
+    "S101", # Use of 'assert'
+    "E501", # Line too long
+    # TODO: fix these
+    "F841", # Local variable `key` is assigned to but never used
+]
+extend-exclude = [
+    ".nox"
+]
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
