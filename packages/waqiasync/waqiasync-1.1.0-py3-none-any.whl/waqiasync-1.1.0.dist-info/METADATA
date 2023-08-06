@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: waqiasync
+Version: 1.1.0
+Summary: asyncio-friendly python API for aqicn.org
+Home-page: https://github.com/andrey-git/waqi-async
+Author: andrey-git
+Author-email: andrey-git@github.com
+License: MIT
+Keywords: waqi
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: async-timeout
+
+asyncio-friendly python API for World Air Quality Index (http://aqicn.org). Requires Python 3.5+
