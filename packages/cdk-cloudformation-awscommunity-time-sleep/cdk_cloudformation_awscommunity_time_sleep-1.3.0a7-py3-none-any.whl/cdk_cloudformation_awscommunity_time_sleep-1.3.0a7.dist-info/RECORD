@@ -1,0 +1,9 @@
+cdk_cloudformation_awscommunity_time_sleep/__init__.py,sha256=yKOymEb7ipRt7ybftvWUMdDwz14sGteCfmjM9Sa8TVw,10577
+cdk_cloudformation_awscommunity_time_sleep/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdk_cloudformation_awscommunity_time_sleep/_jsii/__init__.py,sha256=uYmQvmxAgUeI6Q9ekW-eJEQFJ8LZ7Dwwe1oqdsT-syE,462
+cdk_cloudformation_awscommunity_time_sleep/_jsii/awscommunity-time-sleep@1.3.0-alpha.7.jsii.tgz,sha256=FUvA3MtOuIJNLM7vS0JWcFOkec0vRz60HhPgwz1o1mA,17937
+cdk_cloudformation_awscommunity_time_sleep-1.3.0a7.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cdk_cloudformation_awscommunity_time_sleep-1.3.0a7.dist-info/METADATA,sha256=Ti93IVYETSSVdSWTYjNg5Kl9a13eWchF5k3riaCHxZk,3204
+cdk_cloudformation_awscommunity_time_sleep-1.3.0a7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cdk_cloudformation_awscommunity_time_sleep-1.3.0a7.dist-info/top_level.txt,sha256=JHnG2v-_0yBc00WPPcmrxOqOkoyxMEfHgntdlsw7mVc,43
+cdk_cloudformation_awscommunity_time_sleep-1.3.0a7.dist-info/RECORD,,
