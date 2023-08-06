@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: easydags
+Version: 0.0.2
+Summary: Dags made easy
+Author: Mateo Graciano
+Author-email: magralo@gmail.com
+Classifier: Development Status :: 3 - Alpha
+License-File: LICENSE
