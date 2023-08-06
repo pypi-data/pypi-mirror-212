@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+pydocstyle_gitlab_code_quality/__init__.py
+pydocstyle_gitlab_code_quality/main.py
+pydocstyle_gitlab_code_quality.egg-info/PKG-INFO
+pydocstyle_gitlab_code_quality.egg-info/SOURCES.txt
+pydocstyle_gitlab_code_quality.egg-info/dependency_links.txt
+pydocstyle_gitlab_code_quality.egg-info/entry_points.txt
+pydocstyle_gitlab_code_quality.egg-info/top_level.txt
+pydocstyle_gitlab_code_quality/src/__init__.py
+pydocstyle_gitlab_code_quality/src/cq_types.py
+pydocstyle_gitlab_code_quality/src/encoder.py
+pydocstyle_gitlab_code_quality/src/hash.py
