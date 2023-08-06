@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+src/main.py
+src/authenticus.egg-info/PKG-INFO
+src/authenticus.egg-info/SOURCES.txt
+src/authenticus.egg-info/dependency_links.txt
+src/authenticus.egg-info/top_level.txt
