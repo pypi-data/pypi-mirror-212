@@ -1,0 +1,6 @@
+
+echolocator__Events_TABS_CREATED_EVENT = "echolocator__Events_TABS_CREATED_EVENT";
+echolocator__Events_TAB_OPENED = "echolocator__Events_TAB_OPENED";
+echolocator__Events_PLATE_PICKED_EVENT = "echolocator__Events_PLATE_PICKED_EVENT";
+echolocator__Events_IMAGE_PICKED_EVENT = "echolocator__Events_IMAGE_PICKED_EVENT";
+echolocator__Events_IMAGE_PREVIOUS_OR_NEXT_EVENT = "echolocator__Events_IMAGE_PREVIOUS_OR_NEXT_EVENT";
