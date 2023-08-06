@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+gesture_control_api.egg-info/PKG-INFO
+gesture_control_api.egg-info/SOURCES.txt
+gesture_control_api.egg-info/dependency_links.txt
+gesture_control_api.egg-info/top_level.txt
