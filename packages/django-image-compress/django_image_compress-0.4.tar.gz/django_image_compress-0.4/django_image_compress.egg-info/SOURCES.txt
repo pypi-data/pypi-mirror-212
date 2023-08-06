@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_image_compress/__init__.py
+django_image_compress/compress.py
+django_image_compress.egg-info/PKG-INFO
+django_image_compress.egg-info/SOURCES.txt
+django_image_compress.egg-info/dependency_links.txt
+django_image_compress.egg-info/requires.txt
+django_image_compress.egg-info/top_level.txt
