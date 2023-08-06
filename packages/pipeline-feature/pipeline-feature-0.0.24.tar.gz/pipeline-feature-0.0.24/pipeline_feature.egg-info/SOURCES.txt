@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+mlops_pipeline_feature_v1/__init__.py
+mlops_pipeline_feature_v1/pipeline.py
+pipeline_feature.egg-info/PKG-INFO
+pipeline_feature.egg-info/SOURCES.txt
+pipeline_feature.egg-info/dependency_links.txt
+pipeline_feature.egg-info/requires.txt
+pipeline_feature.egg-info/top_level.txt
+tests/__init__.py
+tests/test_dummy.py
