@@ -1,0 +1,8 @@
+dxsp/__init__.py,sha256=eBgnrPYRoHIORA94VX35RMc5SsjwlAcWhxUTuGZRkik,86
+dxsp/config.py,sha256=Mb_pwFOjdeOOdMpCUGYaMFlXvNHnyis_pQeSlQKSlBQ,387
+dxsp/default_settings.toml,sha256=iklUC4gEdUfZ_XJdKo2MR9h36eHmy2zvdv6ddGEDPv4,3679
+dxsp/main.py,sha256=tVmHkwhYIoBC64OhCfaTfGdgzrYvpXul66uCKzIq5U8,18964
+dxsp-2.6.8.dist-info/LICENSE,sha256=Ym-WJCFdWfn0XKn-qLQI-u5nxBJX6F2kl-hPeRJp1fI,1064
+dxsp-2.6.8.dist-info/METADATA,sha256=vTT8_LVhDwI8QSBcM8Xt9ehLHVeXGur9sYcvNhAOQyc,3138
+dxsp-2.6.8.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+dxsp-2.6.8.dist-info/RECORD,,
