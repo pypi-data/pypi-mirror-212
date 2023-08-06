@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "bokhakpack"
+version = "1.0.0"
+description = "A description of your package"
+authors = ["dudcks <dudcks3886@naver.com>"]
+
+[build-system.requires]
+python = ">=3.6"
