@@ -1,0 +1,16 @@
+catleg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+catleg/catleg.py,sha256=Gk4mQA_UV6XBbOeMRSqaWti3ohnV9e34W3IXNaAZiZ4,1551
+catleg/cli_util.py,sha256=uCww8VC8FrjvH91HSVFT-HUKRwgmdYmHlvPwVomI-60,441
+catleg/config.py,sha256=ZopsElJw-VwOsBgJsnlUOsOUVZ4vcz6Q9GZaB2ZirLc,278
+catleg/find_changes.py,sha256=0injMO1GPVHUKFeWfYHd2V0L4ikeKo-z4owMI90Zx0k,2169
+catleg/git_diff.py,sha256=COg7hWcwWTGjqZ3yprpBzB0Ug4mCfNsvfU_JtpjBFKI,1064
+catleg/law_text_fr.py,sha256=d4h-ELhPbyLqhdpOclxSVdYPeRRSl5BANumfwLv-bZo,2012
+catleg/parse_catala_markdown.py,sha256=065vnbkNXdzoJ_8_Fi6FIs-x49wce3hc0N2XdXKjKFE,2985
+catleg/query.py,sha256=-Cz82HpwCzJcMvtD4WiqjGPWtuxyBLZSdkyXNX42LQ8,6402
+catleg/skeleton.py,sha256=mNi3CaYOhnHf3ZDpbUDgEXOe-uvbRFbVnUXe3yi9tpk,1393
+catleg/markdown_it/heading_extension.py,sha256=xSHpg6pwqnkyTNN92EUlCe-SpHHz7r66MIF0HVLejxk,3554
+catleg-0.1.0rc1.dist-info/METADATA,sha256=QjE7_NEmraVM-JtgYTD4etYSUWqoWqWEngSdJ6sQfA4,15391
+catleg-0.1.0rc1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+catleg-0.1.0rc1.dist-info/entry_points.txt,sha256=nc5WzvTak1tZUvTylPC43oxNxahmBL1FGCson0fb2Bw,46
+catleg-0.1.0rc1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+catleg-0.1.0rc1.dist-info/RECORD,,
