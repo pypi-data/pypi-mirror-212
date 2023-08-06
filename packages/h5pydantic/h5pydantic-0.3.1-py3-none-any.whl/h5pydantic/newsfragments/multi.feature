@@ -1,0 +1,1 @@
+Made the library available for all versions of Python 3.9 and up. Added testing to the gitlab CI to test all three major versions.
