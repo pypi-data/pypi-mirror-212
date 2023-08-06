@@ -1,0 +1,12 @@
+tca_beam/__init__.py,sha256=jbF71eIqU-w34V-8xqWc8L8pXQU6_COQY1WuzhR2Bc0,169
+tca_beam/tca_beam.py,sha256=SVJaEwztiMm7U__zcvztgmf7KFore82Du2sDDssz7E0,6363
+tca_beam/templates/AllPreviews.swift,sha256=eshiN-dI4EB7duCMTktovDijd-P4SSybdzk50EGZCb0,526
+tca_beam/templates/OneFile.swift,sha256=XIQYoVkvIrSw-ggBICfRG8_Rj6yGplx9PcX06sjnlcA,86
+tca_beam/templates/TwoFile_ReducerPart.swift,sha256=q7WQtGYBiZHmedUS8fMLMrqn9efHgaADsDJocoNsVRs,52
+tca_beam/templates/TwoFile_ViewPart.swift,sha256=hPtR24qnGxgY-9lbVmrjbCG87RbDxPemLKWDa5opnq8,64
+tca_beam/templates/View.swift,sha256=v4zvse1OCSn6pQoALuPkQUXI_SpkIaixK670li_rnt8,633
+tca_beam/templates/ViewFeature.swift,sha256=b-ljNOUgVC55tXBl-W9XV6xnpm2_Sj1q5SNqSp_6dsM,463
+tca_beam-0.3.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tca_beam-0.3.4.dist-info/entry_points.txt,sha256=HT74FDglDF-Mj15bmqm3gL0Nsi-6vuYOjUc5F7wISI4,52
+tca_beam-0.3.4.dist-info/METADATA,sha256=NltVVLFrhK-5C0f3FkmpFzfabE4TUEqJYQ1D-q7TRJ0,607
+tca_beam-0.3.4.dist-info/RECORD,,
