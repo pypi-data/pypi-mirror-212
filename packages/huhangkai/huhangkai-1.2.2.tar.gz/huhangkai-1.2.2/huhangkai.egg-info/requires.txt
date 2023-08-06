@@ -1,0 +1,8 @@
+faker
+openpyxl
+apscheduler
+rsa
+pyDes
+pycryptodome
+xlsxwriter
+pandas
