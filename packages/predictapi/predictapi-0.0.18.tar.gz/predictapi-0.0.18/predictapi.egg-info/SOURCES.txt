@@ -1,0 +1,8 @@
+README.md
+predictapi.py
+setup.py
+predictapi.egg-info/PKG-INFO
+predictapi.egg-info/SOURCES.txt
+predictapi.egg-info/dependency_links.txt
+predictapi.egg-info/requires.txt
+predictapi.egg-info/top_level.txt
