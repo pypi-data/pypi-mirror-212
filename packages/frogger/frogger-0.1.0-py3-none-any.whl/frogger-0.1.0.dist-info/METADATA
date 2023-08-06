@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: frogger
+Version: 0.1.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: fastapi
+Requires-Dist: uvicorn (==0.21.*)
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: fsspec (>=2021.04.0)
+Requires-Dist: pyyaml
+Requires-Dist: coqpit (>=0.0.16)
+Requires-Dist: trainer (==0.0.20)
+Requires-Dist: pysbd
+Requires-Dist: librosa (==0.10.0.*)
+Requires-Dist: torchaudio
+Requires-Dist: pandas
+Requires-Dist: inflect (==5.6.0)
+Requires-Dist: gruut[de,es,fr] (==2.2.3)
+Provides-Extra: build
+Requires-Dist: setuptools (>=61) ; extra == 'build'
+Requires-Dist: build ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: black (==23.1.*) ; extra == 'dev'
+Requires-Dist: isort (==5.12.*) ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+
+# Frogger
+
+This TTS is heavily cropped and packaged [coqui-ai/TTS](https://github.com/coqui-ai/TTS). If you like this then you'll love their other projects.
+
+## Running
+
+Currently it's expected to checkout whole code locally and install deps, and run http server.
+
+```bash
+git clone git@github.com:laszukdawid/frogger.git
+cd frogger
+make install
+make serve
+```
