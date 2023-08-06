@@ -1,0 +1,7 @@
+poetry_python_version/__init__.py,sha256=c1S2axJJz5y1Xe4QpKR0TZXAzMdoLjr-KKcH2htdvFQ,170
+poetry_python_version/plugins.py,sha256=SdBvzSEWEPYIjbgQSDfN_dXGbR7E6-rJbzMAh1-pJ1Q,1223
+poetry_python_version-0.0.5.dist-info/LICENSE,sha256=857wvao7BdK_xeMpLFrrgjDQ9y0qc9ZW6Jd5i5Ril7U,1055
+poetry_python_version-0.0.5.dist-info/METADATA,sha256=qXY5ucRNHTouG-g7y7lQwG73CdN_q59U2_P-bbvZ83M,2160
+poetry_python_version-0.0.5.dist-info/WHEEL,sha256=HNQIvPlX3_ghCv6ljjG1vnIF6Npwq1SIN8tJybrRXEo,92
+poetry_python_version-0.0.5.dist-info/entry_points.txt,sha256=HXOXb_BRdi8EibeSBsiDIlJSNx-P9byJGxkPr5aPHNI,89
+poetry_python_version-0.0.5.dist-info/RECORD,,
