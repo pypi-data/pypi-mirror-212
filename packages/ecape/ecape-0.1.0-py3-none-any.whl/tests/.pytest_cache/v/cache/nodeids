@@ -1,0 +1,13 @@
+[
+  "test_ecape.py::test_calc_ecape_a",
+  "test_ecape.py::test_calc_el_height",
+  "test_ecape.py::test_calc_integral_arg",
+  "test_ecape.py::test_calc_lfc_height",
+  "test_ecape.py::test_calc_mse",
+  "test_ecape.py::test_calc_ncape",
+  "test_ecape.py::test_calc_psi",
+  "test_ecape.py::test_calc_sr_wind",
+  "test_ecape.py::test_end_to_end_ecape",
+  "test_ecape.py::test_manual_ecape",
+  "test_ecape.py::test_undiluted_ecape"
+]
