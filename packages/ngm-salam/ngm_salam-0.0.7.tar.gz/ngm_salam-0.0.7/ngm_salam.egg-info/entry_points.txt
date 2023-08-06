@@ -1,0 +1,2 @@
+[console_scripts]
+salam = ngm_salam.__main__:main
