@@ -1,0 +1,8 @@
+prototorch>=0.7.4
+prototorch_models>=0.5.4
+pytorch-lightning
+scipy
+torch-kmeans
+
+[dev]
+twine>=4.0.2
