@@ -1,0 +1,3 @@
+[console_scripts]
+fabric-jupyter-startup=jupyternb.jupyter_startup:Main.run
+
