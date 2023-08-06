@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/ofxstatement/__init__.py
+src/ofxstatement/plugins/__init__.py
+src/ofxstatement/plugins/chebanca.py
+src/ofxstatement/plugins/chebanca_pdf.py
+src/ofxstatement_chebanca.egg-info/PKG-INFO
+src/ofxstatement_chebanca.egg-info/SOURCES.txt
+src/ofxstatement_chebanca.egg-info/dependency_links.txt
+src/ofxstatement_chebanca.egg-info/entry_points.txt
+src/ofxstatement_chebanca.egg-info/namespace_packages.txt
+src/ofxstatement_chebanca.egg-info/requires.txt
+src/ofxstatement_chebanca.egg-info/top_level.txt
+src/ofxstatement_chebanca.egg-info/zip-safe

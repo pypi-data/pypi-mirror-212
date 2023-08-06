@@ -1,0 +1,4 @@
+[ofxstatement]
+chebanca = ofxstatement.plugins.chebanca:CheBancaPlugin
+chebanca-pdf = ofxstatement.plugins.chebanca_pdf:CheBancaPdfPlugin
+
