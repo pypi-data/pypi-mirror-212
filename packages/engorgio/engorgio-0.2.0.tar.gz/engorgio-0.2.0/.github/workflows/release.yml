@@ -1,0 +1,24 @@
+name: Release
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "engorgio/**"
+      - "pyproject.toml"
+permissions:
+  contents: write
+  pull-requests: write
+  issues: read
+  packages: none
+  id-token: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: waylonwalker/hatch-action@v4
+        with:
+          before-command: "test-lint"
+        env:
+          # required for gh release
+          GH_TOKEN: ${{ github.token }}
