@@ -1,0 +1,1 @@
+mkdocs_annexes_integration
