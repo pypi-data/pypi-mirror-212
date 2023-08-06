@@ -1,0 +1,3 @@
+[console_scripts]
+hshield=hshield.main:main
+

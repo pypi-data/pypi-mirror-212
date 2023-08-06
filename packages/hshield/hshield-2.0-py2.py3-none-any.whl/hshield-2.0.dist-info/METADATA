@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hshield
+Version: 2.0
+Summary: Shield: Data Anonymizer tool
+Author-email: Francisco Alexandre Neves <pg50375@alunos.uminho.pt>, Henrique Parola Costa <pg50415@alunos.uminho.pt>, José Pedro Fernandes <pg50525@alunos.uminho.pt>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Source, https://github.com/LittleLevi05/spln-2223/tree/main/TP2
+
+# Shield 
+
+## Description 
+
+Shield is a Data anonymizer tool.
+
+
+
+
+## Authors
+
+* Henrique Parola
+* José Pedro
+* Alex
