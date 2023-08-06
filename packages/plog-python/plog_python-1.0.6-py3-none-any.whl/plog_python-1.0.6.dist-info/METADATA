@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: plog-python
+Version: 1.0.6
+Summary: A service for logging data and objects in different steps of applications
+Author: Ali Khodadoost
+Author-email: ali1.khodadoost@gmail.com
+License: MIT
+Requires-Dist: pandas
+Requires-Dist: python-dateutil
+Requires-Dist: python-multipart
+Requires-Dist: sqlmodel
+
+A service for logging data and objects in different steps of applications
