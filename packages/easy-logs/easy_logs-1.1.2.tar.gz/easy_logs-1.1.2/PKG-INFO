@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: easy_logs
+Version: 1.1.2
+Summary: package for easy colored logs with predefined configurations.
+Home-page: https://github.com/michalskibinski109/easy_logging
+Author: Michał Skibiński
+Author-email: mskibinski109@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+
+![example workflow](https://github.com/michalskibinski109/easy_logs/actions/workflows/python-app.yml/badge.svg)
+[![PyPI version](https://badge.fury.io/py/easy_logs.svg)](https://badge.fury.io/py/miskibin)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+# easy_logs
+[Documentation](https://github.com/michalskibinski109/easy_logs/tree/main#readme)
