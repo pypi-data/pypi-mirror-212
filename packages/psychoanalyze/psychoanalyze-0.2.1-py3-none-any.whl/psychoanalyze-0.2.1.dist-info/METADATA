@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: psychoanalyze
+Version: 0.2.1
+Summary: A Pythonic analysis package for psychophysics data
+License: GPL-3.0-or-later
+Author: Ty Schlichenmeyer
+Author-email: t.schlic@wustl.edu
+Requires-Python: ==3.11.3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: bambi (>=0.11.0,<0.12.0)
+Requires-Dist: bandit (>=1.7.4,<2.0.0)
+Requires-Dist: black (>=23.3.0,<24.0.0)
+Requires-Dist: cmdstanpy (>=1.0.8,<2.0.0)
+Requires-Dist: conda-lock (>=2.0.0,<3.0.0)
+Requires-Dist: dash (>=2.10.2,<3.0.0)
+Requires-Dist: dash-bootstrap-components (>=1.4.1,<2.0.0)
+Requires-Dist: dash-daq (>=0.5.0,<0.6.0)
+Requires-Dist: datatest (>=0.11.1,<0.12.0)
+Requires-Dist: dbt-core (>=1.5.1,<2.0.0)
+Requires-Dist: dbt-duckdb (>=1.5.1,<2.0.0)
+Requires-Dist: gunicorn (>=20.1.0,<21.0.0)
+Requires-Dist: hypothesis (>=6.70.0,<7.0.0)
+Requires-Dist: ipywidgets (>=8.0.6,<9.0.0)
+Requires-Dist: mkdocs-material (>=8.3.9,<9.0.0)
+Requires-Dist: mkdocstrings (>=0.18.1,<0.19.0)
+Requires-Dist: mypy (>=1.2.0,<2.0.0)
+Requires-Dist: nbformat (>=5.8.0,<6.0.0)
+Requires-Dist: numpy (>=1.23.4,<2.0.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: pandas-stubs (>=1.5.3.230321,<2.0.0.0)
+Requires-Dist: pandera[mypy] (>=0.14.5,<0.15.0)
+Requires-Dist: plotly (>=5.14.1,<6.0.0)
+Requires-Dist: pre-commit (>=2.20.0,<3.0.0)
+Requires-Dist: pytest (>=7.2.2,<8.0.0)
+Requires-Dist: pytest-mock (>=3.7.0,<4.0.0)
+Requires-Dist: pytest-sugar (>=0.9.6,<0.10.0)
+Requires-Dist: python-semantic-release (==7.28.1)
+Requires-Dist: safety (>=2.0.0,<3.0.0)
+Requires-Dist: scikit-learn (>=1.2.2,<2.0.0)
+Requires-Dist: scipy (>=1.8.0,<2.0.0)
+Requires-Dist: shandy-sqlfmt[jinjafmt] (>=0.18.0,<0.19.0)
+Requires-Dist: statsmodels (>=0.13.2,<0.14.0)
+Requires-Dist: tabulate (>=0.8.10,<0.9.0)
+Requires-Dist: ydata-profiling (>=4.1.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# PsychoAnalyze
+
+Psychophysics analysis in Python.
+
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/psychoanalyze)
+![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
+[![Documentation Status](https://readthedocs.org/projects/psychoanalyze/badge/?version=latest)](https://psychoanalyze.readthedocs.io/en/latest/?badge=latest)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+[![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
+[![Open in Remote - Containers](https://img.shields.io/static/v1?label=Remote%20-%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/psychoanalyze/psychoanalyze)
+
+
+## Installation
+pip:
+```console
+pip install psychoanalyze
+```
+poetry:
+```console
+poetry add psychoanalyze
+```
+
+## Dashboard
+See what `psychoanalyze` can do by [viewing our dashboard](https://app.psychoanalyze.io/).
+
+## Documentation
+View the full documentation [here](https://docs.psychoanalyze.io).
+
