@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: KiramiBot
+Version: 0.0.0.dev0
+Summary: 🌟 读作 Kirami，写作星见，简明轻快的机器人应用。
+License: AGPL-3.0
+Keywords: kirami,bot,chatbot,qq,qqbot,onebot
+Author-email: Akirami <akiramiaya@outlook.com>
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: Robot Framework
+Classifier: Framework :: Robot Framework :: Library
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Typing :: Typed
+Project-URL: repository, https://github.com/A-kirami/KiramiBot
+Description-Content-Type: text/markdown
+
+# KiramiBot
