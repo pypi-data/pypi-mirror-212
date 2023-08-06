@@ -1,0 +1,9 @@
+lordoftherings/__init__.py,sha256=RvlI34yhlv3o-1t4XmrFuyx13ZrI0LveHDhgd0cOkn8,42
+lordoftherings/lordoftherings.py,sha256=uHScbjE3a2lMEIbC7GoDH2398eTvLhRcvjr-rZD3-HY,10611
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_lordoftherings.py,sha256=Odkb_MXQA_FQ_seEpJfwL-tgVnUynVVQF7E4nAcmin0,8526
+tests/test_usage.py,sha256=ka-5DE8eZyDXDGOHA1LOCgXyLHTqopINJVwPxmhK6fQ,2081
+AaronBlaser_SDK-1.0.1.dist-info/METADATA,sha256=BkjIfbKI6TpJV-YY-_d8dT4KqvMuO40wlPkvzFoBigY,3152
+AaronBlaser_SDK-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+AaronBlaser_SDK-1.0.1.dist-info/top_level.txt,sha256=QNdJA64a5LCoiqSW-RHPJZTihnSRPassJHkGgquR4nQ,21
+AaronBlaser_SDK-1.0.1.dist-info/RECORD,,
