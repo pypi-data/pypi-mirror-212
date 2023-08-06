@@ -1,0 +1,13 @@
+cffi>=1.0.0
+
+[all]
+pytest>=3.8.0
+pywin32
+
+[test]
+pytest>=3.8.0
+pywin32
+
+[tests]
+pytest>=3.8.0
+pywin32
