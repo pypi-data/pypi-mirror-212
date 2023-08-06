@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/preprocessing/__init__.py
+src/preprocessing/example.py
+src/test_package_mlops_2.egg-info/PKG-INFO
+src/test_package_mlops_2.egg-info/SOURCES.txt
+src/test_package_mlops_2.egg-info/dependency_links.txt
+src/test_package_mlops_2.egg-info/not-zip-safe
+src/test_package_mlops_2.egg-info/requires.txt
+src/test_package_mlops_2.egg-info/top_level.txt

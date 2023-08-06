@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: test-package-mlops-2
+Version: 0.1.0
+Summary: Preprocessing package
+Author: Ivan
+Author-email: ivan.kuis@innowise-group.com
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst; charset=UTF-8
+
+#### Preprocessing library
+
+###### Description:
+
+The Preprocessing Library is a versatile python tool that simplifies and automates data preprocessing tasks for data analysis and machine learning. It provides a wide range of functions and methods for cleaning, transforming, and scaling data, making it easier for users to prepare their data.
+
+###### Building package:
+
+```
+pip install build
+python -m build
+```
+
+###### Library structure:
+
+```
+preprocessing:
+├── todo   
+├── todo  
+└── todo 
+```
+
+###### Code examples:
+
+```
+todo
+```

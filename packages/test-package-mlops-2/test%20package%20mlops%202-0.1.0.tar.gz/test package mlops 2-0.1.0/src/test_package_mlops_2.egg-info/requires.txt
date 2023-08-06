@@ -1,0 +1,6 @@
+numpy
+pandas
+matplotlib
+
+[:python_version < "3.8"]
+importlib-metadata
