@@ -1,0 +1,7 @@
+README.md
+setup.py
+PythonLogging/__init__.py
+PythonLogging.egg-info/PKG-INFO
+PythonLogging.egg-info/SOURCES.txt
+PythonLogging.egg-info/dependency_links.txt
+PythonLogging.egg-info/top_level.txt
