@@ -1,0 +1,13 @@
+numpy
+requests
+prettytable
+rich
+pydantic
+gaohn-common-utils==0.0.23
+
+[dev]
+black
+pylint
+isort
+pytest
+mypy
