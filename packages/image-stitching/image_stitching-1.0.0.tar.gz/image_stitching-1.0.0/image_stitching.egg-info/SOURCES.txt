@@ -1,0 +1,9 @@
+setup.py
+image_stitching/__init__.py
+image_stitching/exceptions.py
+image_stitching/stitch_image.py
+image_stitching/util.py
+image_stitching.egg-info/PKG-INFO
+image_stitching.egg-info/SOURCES.txt
+image_stitching.egg-info/dependency_links.txt
+image_stitching.egg-info/top_level.txt
