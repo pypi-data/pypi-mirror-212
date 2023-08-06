@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ayomide_sdk.egg-info/PKG-INFO
+src/ayomide_sdk.egg-info/SOURCES.txt
+src/ayomide_sdk.egg-info/dependency_links.txt
+src/ayomide_sdk.egg-info/requires.txt
+src/ayomide_sdk.egg-info/top_level.txt
+test/test_movie.py
+test/test_quote.py
