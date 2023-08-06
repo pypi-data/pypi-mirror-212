@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arcusapi"
+version = "0.1.1"
+authors = [
+  { name="Arcus Inc.", email="sdk@arcus.co" },
+]
+description = "Arcus Data Exchange Client SDK."
+readme = "README.md"
+requires-python = ">=3.8,<3.11"
+dependencies = [
+  "torch==1.13.1",
+  "numpy==1.24.2",
+  "pytorch-lightning==1.9.3",
+  "langchain==0.0.189",
+  "openai==0.27.2",
+  "requests==2.31.0",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://www.arcus.co"
+"Documentation" = "https://app.arcus.co/docs"

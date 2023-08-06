@@ -1,0 +1,6 @@
+torch==1.13.1
+numpy==1.24.2
+pytorch-lightning==1.9.3
+langchain==0.0.189
+openai==0.27.2
+requests==2.31.0
