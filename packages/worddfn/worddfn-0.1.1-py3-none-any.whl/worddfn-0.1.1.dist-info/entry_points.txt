@@ -1,0 +1,2 @@
+[console_scripts]
+word = worddfn.__main__:main
