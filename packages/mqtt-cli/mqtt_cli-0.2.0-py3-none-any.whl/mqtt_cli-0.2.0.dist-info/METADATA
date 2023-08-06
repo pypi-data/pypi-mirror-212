@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: mqtt-cli
+Version: 0.2.0
+Summary: CLI for Paho MQTT
+Home-page: https://github.com/MO-RISE/mqtt-cli
+Author: Fredrik Olsson
+Author-email: fredrik.x.olsson@ri.se
+Maintainer: Fredrik Olsson
+Maintainer-email: fredrik.x.olsson@ri.se
+License: Apache License 2.0
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paho-mqtt
+Requires-Dist: parse
+Requires-Dist: persist-queue
+
+# mqtt-cli
+A command-line tool for publishing and subscribing to mqtt. 
+
+Use cases:
+* Trials
+* As part of a bash pipeline
+
+## Installation
+`pip install mqtt-cli`
+
+## Usage
+`mqtt --help`
+
+TBC
