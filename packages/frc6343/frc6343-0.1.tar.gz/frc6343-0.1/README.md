@@ -1,0 +1,2 @@
+# frc6343
+This is a package created Steel Ridge Robotics, a team that participates inthe [FIRST Robotics Competition](https://www.firstinspires.org/robotics/frc/what-is-first-robotics-competition). This is a package that utilizes the [Robotpy](https://robotpy.github.io/) package so code can be recycled from season to season.

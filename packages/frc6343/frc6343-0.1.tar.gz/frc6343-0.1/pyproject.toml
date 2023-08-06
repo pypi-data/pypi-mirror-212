@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frc6343"
+version = "0.01"
+authors = [
+  { name= "Steel Ridge Robotics" },
+]
+
+description = "Enter description"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+  "robotpy",
+  "math"
+]
+
+[project.urls]
+Repository = "https://github.com/SteelRidgeRobotics/frc-6343-python-package"
