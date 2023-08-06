@@ -1,0 +1,6 @@
+setup.py
+generate_joke.egg-info/PKG-INFO
+generate_joke.egg-info/SOURCES.txt
+generate_joke.egg-info/dependency_links.txt
+generate_joke.egg-info/requires.txt
+generate_joke.egg-info/top_level.txt
