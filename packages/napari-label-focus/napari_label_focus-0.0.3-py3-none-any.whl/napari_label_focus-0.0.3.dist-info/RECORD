@@ -1,0 +1,12 @@
+napari_label_focus/__init__.py,sha256=DTHNaryjPefj1ClhP6HBaqR4267Pzbm3xkswZo9uShs,89
+napari_label_focus/_table.py,sha256=QtxQRS2wMRm4J_gh_gN5f3Ps4qoCvEXZGXxTo6uAbUk,3953
+napari_label_focus/_widget.py,sha256=-kDyFUoYQbytJ8UJnMrgXpvlLanz0g-82ruOwPKh2Q8,1908
+napari_label_focus/napari.yaml,sha256=OICEb9iPHnI2TY6esBRk-G8D17fY8Hr9DuNQntcGNpI,276
+napari_label_focus/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_label_focus/_tests/test_widget.py,sha256=lJS40Ue8SKIZG-Gk1FUpGhK9MVZgE3jjZlYWaFA8WD8,604
+napari_label_focus-0.0.3.dist-info/LICENSE,sha256=smd8ODagBIa-n7Gcme1_ZupI0EGI9iFFR1D0GVrv9Uw,1490
+napari_label_focus-0.0.3.dist-info/METADATA,sha256=VHmU-Pdlfb6Va3owgjoifRzj6mir0j2I0gv0jexWrkk,3048
+napari_label_focus-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+napari_label_focus-0.0.3.dist-info/entry_points.txt,sha256=BuPUOfX2_vx32dPO2FjjCKus3P-DX_uBs3Vhw5At09o,70
+napari_label_focus-0.0.3.dist-info/top_level.txt,sha256=J8_oUXcQtcS2kOfz3VvnJm0HvtX8calh2AC9llS8TzM,19
+napari_label_focus-0.0.3.dist-info/RECORD,,
