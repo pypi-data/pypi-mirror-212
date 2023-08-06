@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+midi_clip/__init__.py
+midi_clip/midi_clip.py
+midi_clip/midi_duration.py
+midi_clip.egg-info/PKG-INFO
+midi_clip.egg-info/SOURCES.txt
+midi_clip.egg-info/dependency_links.txt
+midi_clip.egg-info/requires.txt
+midi_clip.egg-info/top_level.txt
