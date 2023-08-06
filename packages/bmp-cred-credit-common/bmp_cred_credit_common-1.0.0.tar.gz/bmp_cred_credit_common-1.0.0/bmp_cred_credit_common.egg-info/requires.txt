@@ -1,0 +1,6 @@
+boto3==1.26.146
+pandas==2.0.2
+parameterized==0.9.0
+pytz==2023.3
+setuptools==65.5.0
+validate_docbr==1.10.0

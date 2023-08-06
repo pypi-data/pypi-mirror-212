@@ -1,0 +1,1 @@
+Biblioteca compartilhada entre os projetos "BMPCredCredit".
