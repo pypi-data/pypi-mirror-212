@@ -1,0 +1,2 @@
+[console_scripts]
+datadm = datadm.app:main
