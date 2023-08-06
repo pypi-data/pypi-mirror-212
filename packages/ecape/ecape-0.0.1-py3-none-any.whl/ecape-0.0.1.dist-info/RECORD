@@ -1,0 +1,7 @@
+docs/source/conf.py,sha256=TdEW6gWbpQNxrF70zUwf8OY-FDa5iPF0eCTptEwIuv8,1988
+tests/__init__.py,sha256=2OjZpYwIYEFJaxD5MT9BMvstjfCXy3A-BRdT9O6O-pM,114
+tests/test_ecape.py,sha256=vLFKW93XqXLlBvSLlwvFUuhkkRSbcSb-ceJZhNS4Ap8,7501
+ecape-0.0.1.dist-info/METADATA,sha256=1T99HtWDg1HRh_aZORH9694EMh1n_qSVjpUjYw352rs,2709
+ecape-0.0.1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+ecape-0.0.1.dist-info/licenses/LICENSE.txt,sha256=0uITRsrhbab504SWK1tEXrP6I5sy6vldygYg8SeiRYo,1112
+ecape-0.0.1.dist-info/RECORD,,
