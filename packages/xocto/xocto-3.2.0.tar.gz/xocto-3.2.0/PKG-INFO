@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: xocto
+Version: 3.2.0
+Summary: Kraken Technologies Python service utilities
+Home-page: https://github.com/octoenergy/xocto
+Author: Kraken Technologies
+Author-email: talent@octopus.energy
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+# xocto - utilities for Python services
+
+Proven utilities used on Python services at Kraken Technologies. This library
+works with Python 3.9 and above.
+
+CI status:
+
+[![CircleCI](https://circleci.com/gh/octoenergy/xocto/tree/main.svg?style=svg)](https://circleci.com/gh/octoenergy/xocto/tree/main)
+
+- PyPI detail page: <https://pypi.python.org/pypi/xocto>
+- Documentation: <https://xocto.readthedocs.io/>
