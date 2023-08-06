@@ -1,0 +1,10 @@
+README.md
+setup.py
+sync/__init__.py
+sync/sync.py
+yacs_adapter.egg-info/PKG-INFO
+yacs_adapter.egg-info/SOURCES.txt
+yacs_adapter.egg-info/dependency_links.txt
+yacs_adapter.egg-info/entry_points.txt
+yacs_adapter.egg-info/requires.txt
+yacs_adapter.egg-info/top_level.txt

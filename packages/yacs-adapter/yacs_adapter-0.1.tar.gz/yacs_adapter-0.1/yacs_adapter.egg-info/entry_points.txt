@@ -1,0 +1,3 @@
+[console_scripts]
+yacs_sync = sync.sync:main
+
