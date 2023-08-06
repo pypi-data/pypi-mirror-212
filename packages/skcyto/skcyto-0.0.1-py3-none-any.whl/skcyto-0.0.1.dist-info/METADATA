@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: skcyto
+Version: 0.0.1
+Summary: "Flow cytometry for sk-learn
+Home-page: https://github.com/MSHelm/skcyto
+Download-URL: https://github.com/MSHelm/skcyto
+Maintainer: Martin Helm
+Maintainer-email: martin@bio-ai.org
+License: new BSD
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn (>=1.2.0)
+Requires-Dist: minisom
+Requires-Dist: igraph
+Requires-Dist: flowutils
+Provides-Extra: dev
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pandas ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-gallery ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: matplotlib ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+.. -*- mode: rst -*-
+
+|Travis|_ |Codecov|_ |CircleCI|_ |ReadTheDocs|_
+
+.. |Travis| image:: https://app.travis-ci.com/MSHelm/sk-cyto.svg?branch=main
+.. _Travis: https://app.travis-ci.com/MSHelm/sk-cyto
+
+.. |Codecov| image:: https://codecov.io/gh/MSHelm/sk-cyto/branch/main/graph/badge.svg?token=J4VXARST8A
+.. _Codecov: https://codecov.io/gh/MSHelm/sk-cyto
+
+.. |CircleCI| image:: https://circleci.com/gh/MSHelm/sk-cyto.svg?style=shield
+.. _CircleCI: https://circleci.com/gh/MSHelm/sk-cyto/
+
+.. |ReadTheDocs| image:: https://readthedocs.org/projects/sk-cyto/badge/?version=latest
+.. _ReadTheDocs: https://sk-cyto.readthedocs.io/en/latest/?badge=latest
+
+sk-cyto - Flow cytometry algorithms for scikit-learn
+============================================================
+
+
+**sk-cyto** brings flow cytometry to scikit-learn.
+
+Flow cytometry is extremely amenable to regular machine learning algorithms. At the same time,
+it requires specific data transformations, and various dedicated analysis methods have been developed.
+sk-cyto allows you to combine the best of sk-learn infrastructure with dedicated cytometry analysis methods.
+Use established patterns, such as ``Pipeline`` and existing ``Transformers`` together with state-of-the-art
+algorithms like ``FlowSOM``.
+
+.. _documentation: https://sk-cyto.readthedocs.io/en/latest/quick_start.html
+
+Refer to the documentation_ for a full list of available ``Transformers`` and ``Estimators``
+
+This package is work in progress. New features and algorithms will be implemented frequently.
+
+
+Installation
+============
+
+From PyPI
+.. code-block::
+
+    pip install sk-cyto
+
+Install from Github source code with
+.. code-block::
+    
+    git clone git@github.com:MSHelm/sk-cyto.git
+    cd sk-cyto
+    pip install .
+
