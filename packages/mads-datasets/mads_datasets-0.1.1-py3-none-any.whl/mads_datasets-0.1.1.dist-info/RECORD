@@ -1,0 +1,9 @@
+mads_datasets/__init__.py,sha256=II-QQcYx5cZPjfYMbRIN9ZQBYfJtI6xh6hSkN_E8UDc,147
+mads_datasets/datasetfactory.py,sha256=danPKlr28bL2XWYuTiqgms4OHrRhtoTm3f7ccLDLuA8,12948
+mads_datasets/datasets.py,sha256=UBjtudvDothTEEfdlI8qkProh6rAATT5CTfBIFoK1bU,4995
+mads_datasets/datatools.py,sha256=DOhB3-eXTucB-BAHPfEUu1fPI59720BnPLfdWzgTQI8,4778
+mads_datasets/settings.py,sha256=uuN1-S1umA5HIc0M_mMqPIHBbHO4OdK2C0brR9Wtjto,2824
+mads_datasets/tokenizer.py,sha256=VcTsPillt5v3_9x5FHNiC7IaT1Lc6HTZDjOCSaripjA,3196
+mads_datasets-0.1.1.dist-info/METADATA,sha256=Pk6ZNNdUt-XmQuuTHR6h8jiJaaeMGn9sazPlQKeFwU8,778
+mads_datasets-0.1.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+mads_datasets-0.1.1.dist-info/RECORD,,
