@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ExtendClass
+Version: 1.0.3
+Summary: A python lib to extend classes
+Author: Rodrigo Santos de Carvalho
+Author-email: <rodrigosc2401@gmail.com>
+Keywords: python,extend,class,extend class,extendclass,extend-class,extend_class,extendclass
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A python lib to extend classes. Inject methods in a class without inheritance. It access protected methods and attributes.
