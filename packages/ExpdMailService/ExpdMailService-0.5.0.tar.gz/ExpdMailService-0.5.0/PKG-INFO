@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ExpdMailService
+Version: 0.5.0
+Summary: Python Module for sending mail from internal mail server
+Home-page: UNKNOWN
+Author: greg he
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: sending mail
+Platform: UNKNOWN

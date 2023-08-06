@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/ExpdMailService/__init__.py
+src/ExpdMailService.egg-info/PKG-INFO
+src/ExpdMailService.egg-info/SOURCES.txt
+src/ExpdMailService.egg-info/dependency_links.txt
+src/ExpdMailService.egg-info/requires.txt
+src/ExpdMailService.egg-info/top_level.txt
