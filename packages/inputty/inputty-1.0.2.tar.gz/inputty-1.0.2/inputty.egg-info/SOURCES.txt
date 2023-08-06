@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+inputty/__init__.py
+inputty/_version.py
+inputty/xxx.py
+inputty.egg-info/PKG-INFO
+inputty.egg-info/SOURCES.txt
+inputty.egg-info/dependency_links.txt
+inputty.egg-info/top_level.txt
+inputty/src/__init__.py
+inputty/src/input.py
+inputty/tests/__init__.py
+inputty/tests/test_input.py
