@@ -1,0 +1,10 @@
+gtvision/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gtvision/datasets/__init__.py,sha256=Cmg97T3qVgfLdsZBip-au8M-0jit_E9mH1kqV2JnGtY,127
+gtvision/datasets/folder.py,sha256=cwkerMTvsm92MDHasrthYDJjzc6PGzTUbQFByoW9Gj4,1703
+gtvision/datasets/mnist.py,sha256=H365jgDDDuqWXhU40tFYeqkyapzB8Qxlv_TpDX5NeIQ,2837
+gtvision/transforms/__init__.py,sha256=5QU9g_hsl_VRTfMSWbk5u1gMPVzasWzJdrFJ08tLf_Y,85
+gtvision/transforms/factory.py,sha256=lr2Sgjr-LD0HTtWWM-MhO0DhEAIrifKJrKTZL8XG724,1134
+gtvision-0.0.0a5.dist-info/LICENSE,sha256=7wnC4cmbLW29-edCxt2DQq9uo1vLirgRpscnqfg-7ZQ,1501
+gtvision-0.0.0a5.dist-info/METADATA,sha256=e6hzxgKjUAioCDJyrJepfnxzSwCe4ccx6ukzs6CpYD8,1402
+gtvision-0.0.0a5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+gtvision-0.0.0a5.dist-info/RECORD,,
