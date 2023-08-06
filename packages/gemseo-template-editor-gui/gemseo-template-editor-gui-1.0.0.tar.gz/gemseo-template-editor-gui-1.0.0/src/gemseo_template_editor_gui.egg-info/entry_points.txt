@@ -1,0 +1,2 @@
+[console_scripts]
+gemseo-template-grammar-editor = gemseo_template_editor_gui:main

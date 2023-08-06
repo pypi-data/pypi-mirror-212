@@ -1,0 +1,7 @@
+pyside6<=6.4.2,>=6.3.0
+
+[test]
+covdefaults
+pytest
+pytest-cov
+pytest-xdist
