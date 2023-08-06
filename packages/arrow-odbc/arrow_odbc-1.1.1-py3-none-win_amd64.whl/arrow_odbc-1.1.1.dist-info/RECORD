@@ -1,0 +1,13 @@
+arrow_odbc-1.1.1.dist-info/METADATA,sha256=MXnaVcfPmwCV6g-D-f4AR4E0ZdlamSkCLLVEhPCXJSk,8251
+arrow_odbc-1.1.1.dist-info/WHEEL,sha256=N2vdRzMvy_xg9-L-RtnUtVbXBxzEOUUTQfSVJ8kVnHw,93
+arrow_odbc-1.1.1.dist-info/license_files/LICENSE,sha256=CEhJgoie9YgbuaA3WSRqFJXeFzbnSBgZD7fTH68B2R8,1069
+arrow_odbc/connect.py,sha256=5MlQ9aA2seS6ucL9WSjo6GxG9rjW0QA2PxYU1Uy6V3s,1645
+arrow_odbc/error.py,sha256=72tbIWGe0BUWwDmO_3bIt_LaOBmQ1pk9lrWX6mTfJPQ,672
+arrow_odbc/log.py,sha256=X7AMu-UMcISfS5apDxPolFHWduDC_3asddiiI04_uoU,791
+arrow_odbc/reader.py,sha256=-_XLvhsZYAOheoqD9Uy7zsPySbe6TK6XcXXPnL5yRi0,15067
+arrow_odbc/writer.py,sha256=1mCk2r9nVg75beD0c2RQFfVQ2WJncKXdmOIvmTQ1-sg,9164
+arrow_odbc/__init__.py,sha256=pxX5ehvSLuRMI5ya1tWxVfNnJqO0RAGKnY9MeGgOgV8,358
+arrow_odbc/arrow_odbc/__init__.py,sha256=hsVZR7agC05B2LKh1o3-Xj95Uziyiy2NP0_kS0aEM4k,136
+arrow_odbc/arrow_odbc/ffi.py,sha256=sT7UaB2yzFw0hEYQB748Awfzf21IeWEFXSPBVXcIYFE,2679
+arrow_odbc/arrow_odbc/native.so,sha256=199ZyJemPLnQoX-j2Fdby7GoGZs0_20FWftyP13Zpkc,925696
+arrow_odbc-1.1.1.dist-info/RECORD,,
