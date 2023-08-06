@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: relyonai
+Version: 0.1.0
+Summary: Inline AI in your Python code
+Author-email: Stanislav Beliaev <its@stanb.me>
+License-File: LICENSE
+Keywords: ai,gpt3,openai
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: joblib==1.2.0
+Requires-Dist: openai[embeddings]==0.27.6
+Requires-Dist: tiktoken==0.4.0
+Provides-Extra: all
+Requires-Dist: relyonai[dev]; extra == 'all'
+Requires-Dist: relyonai[prompt]; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: black==23.3.0; extra == 'dev'
+Requires-Dist: flake8-pyproject==1.2.3; extra == 'dev'
+Requires-Dist: flake8==6.0.0; extra == 'dev'
+Requires-Dist: isort==5.12.0; extra == 'dev'
+Requires-Dist: pandas==2.0.1; extra == 'dev'
+Requires-Dist: pytest-sugar==0.9.7; extra == 'dev'
+Requires-Dist: pytest-xdist==3.2.1; extra == 'dev'
+Requires-Dist: pytest==7.3.1; extra == 'dev'
+Requires-Dist: tox==4.5.1; extra == 'dev'
+Provides-Extra: prompt
+Requires-Dist: jupyter==1.0.0; extra == 'prompt'
+Description-Content-Type: text/markdown
+
+# relyonai
+
+## usage
+
+```python
+from relyonai import ai
+```
+
+## `-> 0.2` future plans
+
+- [ ] improve quality
+  - [ ] better, more sophisticated tests, self-testing
+  - [ ] include invocation context (`ai`, ±5 above/below exprs)
+  - [ ] better system prompt with gpt-4 (it's working)
+  - [ ] include project info / files / pip / hardware / os / time / etc.
+  - [ ] implement final result check
+  - [ ] examples.json for different py versions
+  - [ ] other runtimes: bash, remote, c++, etc.
+- [ ] async
+  - [ ] agpt
+  - [ ] aemb
+  - [ ] aai
+- [ ] advanced caching
+  - [ ] redis
+  - [ ] limit size (up to ~20mb)
+  - [ ] save pre-compiled code?
+- [ ] better introspection
+  - [ ] `rich` dialogue printint (+spinner)
+  - [ ] much better error handling
+  - [ ] view source code/doc
+  - [ ] more granular sessions (trees)
