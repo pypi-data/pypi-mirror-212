@@ -1,0 +1,14 @@
+ez_cqrs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ez_cqrs/acid_exec.py,sha256=xd6As7PZIiujFVIv_9V_iiWzjNl6j0pSzuyAPeB33HI,2468
+ez_cqrs/components.py,sha256=SjyVqSuJG61u8ikRa8RKyaoVm6NXQ8W5Cqm8JbYJ9so,1226
+ez_cqrs/error.py,sha256=2zXcLQGluZZn9-VsCUC9yWH3TiNmh3_C_5vPmDbmDFc,1406
+ez_cqrs/framework.py,sha256=Wp5q27jaR67zCA_Ktjn7X-q9IyNqgaWudQy-M4LlFrE,1745
+ez_cqrs/handler.py,sha256=wukkBn_e0J4kKF2cX_FQqgMn4OL4j8fdwflLy6JhAVM,1524
+ez_cqrs/ops.py,sha256=SAf4tR83EVHRgmn_Q1zmM54XV57bT9K0OEMsuNFJyjk,1119
+ez_cqrs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ez_cqrs/shared_state.py,sha256=JCUDKH8SdHZYgM0PWFhqFTlIQ70gqLI71_RTBFuSBG4,568
+ez_cqrs/testing.py,sha256=V0CpiQrXIqkvnqVdjdzkFkvJLMG8yYoGoLMoS25K5i0,3058
+ez_cqrs-1.0.0.dist-info/METADATA,sha256=yzSeHnvsCkvV48bPkITaEgOVklUnZ8pS0RUA16UW0-U,851
+ez_cqrs-1.0.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+ez_cqrs-1.0.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ez_cqrs-1.0.0.dist-info/RECORD,,
