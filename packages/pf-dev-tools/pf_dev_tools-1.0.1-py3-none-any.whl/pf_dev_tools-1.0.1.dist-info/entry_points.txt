@@ -1,0 +1,2 @@
+[console_scripts]
+pf = pfTools.pfCommand.__main__:main
