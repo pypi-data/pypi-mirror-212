@@ -1,0 +1,9 @@
+pyproject.toml
+setup.cfg
+setup.py
+predictapi.egg-info/PKG-INFO
+predictapi.egg-info/SOURCES.txt
+predictapi.egg-info/dependency_links.txt
+predictapi.egg-info/top_level.txt
+src/__init__.py
+src/predict.py
