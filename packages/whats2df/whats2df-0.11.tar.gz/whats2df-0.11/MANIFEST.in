@@ -1,0 +1,4 @@
+include whats2df/requirements.txt
+include whats2df/thirdparty.json
+include whats2df/README.MD
+include whats2df/whats2df.py
