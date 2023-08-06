@@ -1,0 +1,13 @@
+{% load i18n %}
+
+<div data-controller="map-center-coordinates">
+  {% include "wagtailadmin/panels/field_row_panel.html" %}
+
+  <button type="button" class="button button-secondary w-100" data-action="map-center-coordinates#calculate">
+    {% translate "Calculate from the points" %}
+  </button>
+
+  <p class="error-message" data-map-center-coordinates-target="errorMessage" hidden>
+    {% translate "Unable to calculate the geometric center of the points. Verify that you have at least one point with valid latitude and longitude." %}
+  </p>
+</div>

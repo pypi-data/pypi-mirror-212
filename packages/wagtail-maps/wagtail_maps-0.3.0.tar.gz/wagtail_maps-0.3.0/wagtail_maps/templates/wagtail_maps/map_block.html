@@ -1,0 +1,1 @@
+<div class="map" data-controller="map" data-map-api-url-value="{% url "wagtail_maps:api:map-detail" self.map.pk %}"{% for name, value in attrs.items %}{% if value is not False %} {{ name }}{% if value is not True %}="{{ value|stringformat:'s' }}"{% endif %}{% endif %}{% endfor %}></div>

@@ -1,0 +1,153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wagtail-maps\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-07 11:40+0200\n"
+"PO-Revision-Date: 2023-06-07 11:42+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: admin.py:26
+msgid "Latitude"
+msgstr "Latitude"
+
+#: admin.py:27
+msgid "Longitude"
+msgstr "Longitude"
+
+#: admin.py:29
+msgid "Center of the map"
+msgstr "Centre de la carte"
+
+#: admin.py:42 admin.py:51
+msgid "Points"
+msgstr "Points"
+
+#: admin.py:43
+msgid "Point"
+msgstr "Point"
+
+#: blocks.py:25 blocks.py:72
+msgid "Map"
+msgstr "Carte"
+
+#: blocks.py:47
+msgid "Height (px)"
+msgstr "Hauteur (px)"
+
+#: blocks.py:52
+msgid "Initial zoom"
+msgstr "Zoom initial"
+
+#: blocks.py:58
+msgid "Minimum zoom level"
+msgstr "Niveau de zoom minimum"
+
+#: blocks.py:64
+msgid "Maximum zoom level"
+msgstr "Niveau de zoom maximum"
+
+#: blocks.py:88
+msgid "Minimum zoom level must be smaller than maximum."
+msgstr "Le niveau de zoom minimum doit être plus petit que le maximum."
+
+#: models.py:13
+msgid "name"
+msgstr "nom"
+
+#: models.py:16
+msgid "center point's latitude"
+msgstr "latitude du point central"
+
+#: models.py:21
+msgid "center point's longitude"
+msgstr "longitude du point central"
+
+#: models.py:27
+msgid "map"
+msgstr "carte"
+
+#: models.py:28
+msgid "maps"
+msgstr "cartes"
+
+#: models.py:35
+msgid "title"
+msgstr "Titre"
+
+#: models.py:37
+msgid "content"
+msgstr "Contenu"
+
+#: models.py:43
+msgid "link to a page"
+msgstr "lien vers une page"
+
+#: models.py:50
+msgid "link to an URL"
+msgstr "lien vers une URL"
+
+#: models.py:55
+msgid "latitude"
+msgstr "latitude"
+
+#: models.py:60
+msgid "longitude"
+msgstr "longitude"
+
+#: models.py:68
+msgid "point"
+msgstr "point"
+
+#: models.py:69
+msgid "points"
+msgstr "points"
+
+#: models.py:73
+msgid "Choose between a link to a page or an URL."
+msgstr "Choisissez entre un lien vers une page ou une URL."
+
+#: templates/wagtail_maps/panels/map_center_coordinates.html:7
+msgid "Calculate from the points"
+msgstr "Calculer à partir des points"
+
+#: templates/wagtail_maps/panels/map_center_coordinates.html:11
+msgid ""
+"Unable to calculate the geometric center of the points. Verify that you have "
+"at least one point with valid latitude and longitude."
+msgstr ""
+"Impossible de calculer le centre géographique des points. Vérifiez qu'au "
+"moins un point est défini avec une latitude et longitude valides."
+
+#: templates/wagtail_maps/panels/point_coordinates.html:5
+msgid "Coordinates from geo URI…"
+msgstr "Coordonnées depuis une URI géo…"
+
+#: templates/wagtail_maps/panels/point_coordinates.html:8
+msgid "Coordinates of the point"
+msgstr "Coordonnées du point"
+
+#: templates/wagtail_maps/panels/point_coordinates.html:11
+msgid ""
+"Enter the geo URI of your point to set its latitude and longitude "
+"accordingly."
+msgstr ""
+"Entrez l'URI géo du point pour définir sa latitude et sa longitude en "
+"conséquence."
+
+#: templates/wagtail_maps/panels/point_coordinates.html:14
+msgid "Set coordinates"
+msgstr "Définir les coordonnées"
+
+#: templates/wagtail_maps/panels/point_coordinates.html:17
+msgid ""
+"Unable to parse the geo URI. Verify that it is in the form of "
+"<code>geo:1.0,2.0</code>."
+msgstr ""
+"Impossible d'analyser l'URI géo. Vérifiez qu'elle est de la forme "
+"<code>geo:1.0,2.0</code>."
