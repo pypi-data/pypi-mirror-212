@@ -1,0 +1,4 @@
+blessed>=1.19.1
+mozfile
+mozterm
+six>=1.13.0
