@@ -1,0 +1,9 @@
+cpquant/__init__.py,sha256=JABBtVPDPXDT4tw-MHNjq6ZC1wkMFIY8SHFgFFxR4lk,14
+cpquant/data.py,sha256=3swhsh92hvDokyOYF91ufXmMwSNp8el-Zu2JEiGoeIU,65
+src/__init__.py,sha256=JABBtVPDPXDT4tw-MHNjq6ZC1wkMFIY8SHFgFFxR4lk,14
+src/cpquant.py,sha256=3swhsh92hvDokyOYF91ufXmMwSNp8el-Zu2JEiGoeIU,65
+cpquant-0.0.3.dist-info/LICENSE,sha256=GCbJrXeAr2fGEKJO05R5Ma57UBOIJsQAR7vYGM_i8bM,1076
+cpquant-0.0.3.dist-info/METADATA,sha256=HdpTwcQq23n8E8KaJOQ3Uccry1zXXzUDGMZhzmlUl-4,522
+cpquant-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cpquant-0.0.3.dist-info/top_level.txt,sha256=-66xMU7HfhC_9PcRUuUT4XlE1yw9Jjt1XvVSaQUwtKA,8
+cpquant-0.0.3.dist-info/RECORD,,
