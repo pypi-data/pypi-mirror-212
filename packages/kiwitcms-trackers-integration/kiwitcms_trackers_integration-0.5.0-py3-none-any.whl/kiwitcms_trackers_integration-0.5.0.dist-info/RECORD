@@ -1,0 +1,14 @@
+tcms_settings_dir/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+tcms_settings_dir/trackers_integration.py,sha256=5niCj-nxhCrBBra04d2bGzbfMVG3fvl6aCf9VdKi-RU,424
+trackers_integration/__init__.py,sha256=gMXcwXBYHviDjs9CyVxDYXe5NMHPwRPS7Dwhm_zjvA8,133
+trackers_integration/menu.py,sha256=JXLMDOSd1pirew84Klo0mnO7rscQZHYoeUSTrdrXH2A,16
+trackers_integration/urls.py,sha256=Bjdewssljt0LIefjixBem9JN0kkghPvmrIETj3GdXbY,17
+trackers_integration/issuetracker/__init__.py,sha256=DqHjeutmKYKLWIQS3SkOEempBxl1vtr-yNbGP3XoCyc,381
+trackers_integration/issuetracker/mantis.py,sha256=LjKx2iWgP65cxHWV5C6k05NUxCP8Kc_Mw91dYI2RGJg,7441
+trackers_integration/issuetracker/openproject.py,sha256=mVNbz47HFj0bVo3gkO9ywKSrUFAbgyyN7_4a67eARhY,6965
+kiwitcms_trackers_integration-0.5.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+kiwitcms_trackers_integration-0.5.0.dist-info/METADATA,sha256=oAsYjpulGYAejpN93QNzLF3-LQUE6HOTco8Aq7TMizg,2061
+kiwitcms_trackers_integration-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kiwitcms_trackers_integration-0.5.0.dist-info/entry_points.txt,sha256=T0KjP5pfzwpy6OklRDgDGlpE-xGrB8mw9kEchurhubw,73
+kiwitcms_trackers_integration-0.5.0.dist-info/top_level.txt,sha256=D9u9aM8VEB2wk4CB40g1IhYWA4gq5_wTLvQgXIf76_0,39
+kiwitcms_trackers_integration-0.5.0.dist-info/RECORD,,
