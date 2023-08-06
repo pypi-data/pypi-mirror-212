@@ -1,0 +1,17 @@
+openedx_webhooks/__init__.py,sha256=9kebZjZoaGQvuvSSPdg7_w3OKKH6SL7Shy0NlVlArPg,147
+openedx_webhooks/admin.py,sha256=ThZLebrg9B8CwPePnvnnzCNw--5MJ-9oKEYqA98tB8c,524
+openedx_webhooks/apps.py,sha256=Y4bkT9EzV5axNQbfQpsf6QzRWFBAaX99JYVfKZFpUZU,1391
+openedx_webhooks/models.py,sha256=4ubkU1amgJwbyyF27RomBSyonHJg0JOcBGVUPqzyWxc,1673
+openedx_webhooks/receivers.py,sha256=tKUI-uHgQxV-VJGAJAxxnK5r2ZIHnRGNjPf89X6Abb0,5512
+openedx_webhooks/urls.py,sha256=viSWPpXc_TE9KcAjgJW4De6m26ficeMyDGbZmKRL4CE,325
+openedx_webhooks/utils.py,sha256=nDIeNKSWrme5YtOitOduGU10FdOTs8gwUyNceFnmE0I,947
+openedx_webhooks/migrations/0001_initial.py,sha256=oVTL4tXM6SNWA2nlPaRbuPOsybMCxeS9GpL-VMK3R0o,1737
+openedx_webhooks/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openedx_webhooks/templates/webhooks/base.html,sha256=wtjBYqfHmOnyEY5tN3VGOmzYLsOD24MXdEUhTZ7OmwI,662
+test_utils/__init__.py,sha256=nTURertE0ytpb8CV3mmc2yF4pAmmYFmm9vZAfJTVcKU,341
+openedx_webhooks-0.2.1.dist-info/LICENSE.txt,sha256=QTW2QN7q3XszgUAXm9Dzgtu5LXYKbR1SGnqMa7ufEuY,35139
+openedx_webhooks-0.2.1.dist-info/METADATA,sha256=s9vyLMuLiyDtz3I3vmcZv95UlQYlgE_OcoNQR7R0BmE,7289
+openedx_webhooks-0.2.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+openedx_webhooks-0.2.1.dist-info/entry_points.txt,sha256=rVewrKVxumLK1ZCSrLoDxLQDZ8yGdfmE64HUaJH5hUs,64
+openedx_webhooks-0.2.1.dist-info/top_level.txt,sha256=Lx_8f8je7V1CypHz9OumJ1COL0Qqvleqv4H1QjaLXe8,28
+openedx_webhooks-0.2.1.dist-info/RECORD,,
