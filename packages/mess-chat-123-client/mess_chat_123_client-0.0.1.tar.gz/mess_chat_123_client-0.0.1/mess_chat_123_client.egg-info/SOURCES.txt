@@ -1,0 +1,16 @@
+setup.py
+client_module/__init__.py
+client_module/client_database.py
+client_module/client_gui.py
+client_module/main_client_window_ui.py
+client_module/transport.py
+common/__init__.py
+common/decorators.py
+common/descriptors.py
+common/metaclasses.py
+common/utils.py
+mess_chat_123_client.egg-info/PKG-INFO
+mess_chat_123_client.egg-info/SOURCES.txt
+mess_chat_123_client.egg-info/dependency_links.txt
+mess_chat_123_client.egg-info/requires.txt
+mess_chat_123_client.egg-info/top_level.txt
