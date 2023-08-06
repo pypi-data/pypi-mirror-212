@@ -1,0 +1,7 @@
+humanize
+pillow
+flask
+requests
+jinja2
+art
+opencv-python
