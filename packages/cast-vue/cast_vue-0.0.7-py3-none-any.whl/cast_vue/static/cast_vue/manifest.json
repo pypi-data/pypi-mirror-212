@@ -1,0 +1,14 @@
+{
+  "js/cast_vue/main.css": {
+    "file": "main-da561700.css",
+    "src": "js/cast_vue/main.css"
+  },
+  "js/cast_vue/main.ts": {
+    "css": [
+      "main-da561700.css"
+    ],
+    "file": "main-ef623d7b.js",
+    "isEntry": true,
+    "src": "js/cast_vue/main.ts"
+  }
+}
