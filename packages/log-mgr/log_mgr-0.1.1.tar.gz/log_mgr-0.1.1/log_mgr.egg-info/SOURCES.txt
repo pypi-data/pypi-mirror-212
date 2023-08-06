@@ -1,0 +1,10 @@
+README.md
+setup.py
+log_mgr/__init__.py
+log_mgr/logger.py
+log_mgr.egg-info/PKG-INFO
+log_mgr.egg-info/SOURCES.txt
+log_mgr.egg-info/dependency_links.txt
+log_mgr.egg-info/top_level.txt
+tests/__init__.py
+tests/test_config.py
