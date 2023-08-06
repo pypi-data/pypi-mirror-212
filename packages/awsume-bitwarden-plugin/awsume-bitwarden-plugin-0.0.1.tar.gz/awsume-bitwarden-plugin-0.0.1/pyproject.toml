@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awsume-bitwarden-plugin"
+version = "0.0.1"
+authors = [
+  { name="Daniel Jensen", email="daniel+pypi@d-jensen.de" },
+]
+description = "a small helper for awsume and bitwarden"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "awsume >= 4"
+]
+
+[project.entry-points."awsume"]
+bitwarden = "bitwarden"
+
+[tool.setuptools]
+py-modules = ["bitwarden"]
+
+[project.urls]
+"Homepage" = "https://github.com/danto7/awsume-bitwarden-plugin"
+"Bug Tracker" = "https://github.com/danto7/awsume-bitwarden-plugin/issues"
