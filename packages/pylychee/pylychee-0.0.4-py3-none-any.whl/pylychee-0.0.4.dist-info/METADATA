@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pylychee
+Version: 0.0.4
+Summary: SDK合集
+Author-email: chenhaiou <haiou_chen@sina.cn>
+Project-URL: Homepage, https://github.com/MrLawes/pylychee
+Project-URL: Bug Tracker, https://github.com/MrLawes/lychee/pylychee
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pylychee
+Pylychee 是一个各种第三方 SDK 的集合体，省去了按照第三方接口文档对接的过程。谢谢你的关注。

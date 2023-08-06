@@ -1,0 +1,9 @@
+pylychee/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylychee/apps/__init__.py,sha256=7MUHdn4ZQFFdRvrHgUgXnr1V72GdLXezvibMK2hmQIw,50
+pylychee/apps/feishu/__init__.py,sha256=dM8nTJXDmSMbJNC4I3BBVC_Kr-juob0IeJHi4gSg_YA,1013
+pylychee/apps/feishu/messages.py,sha256=A9wBQ5LosZYX74uzsCFmn70CutI8usgTKtO9TDGWakU,1033
+pylychee-0.0.4.dist-info/LICENSE,sha256=cfvPj8QTesqJ7V6TO0phuTKETT6G4b0_CE4OAJfyiT0,1062
+pylychee-0.0.4.dist-info/METADATA,sha256=r6j2fZIx3Ozvoeohf8o_Ve--trdp-Z3F_wRmIbZUg_Y,618
+pylychee-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pylychee-0.0.4.dist-info/top_level.txt,sha256=uN7Kww3WUOAYEJCl8Tct1UmfLpU7wa6Hj320Nfd4Xw0,9
+pylychee-0.0.4.dist-info/RECORD,,
