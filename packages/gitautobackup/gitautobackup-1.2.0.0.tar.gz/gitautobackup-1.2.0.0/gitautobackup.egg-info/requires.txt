@@ -1,0 +1,16 @@
+pathlib
+GitPython
+
+[:python_version < "3.8"]
+typing-extensions
+
+[cli]
+argparse
+pprint
+
+[dev]
+setuptools>=64.0.0
+pip-tools
+validate-pyproject[all]
+build
+twine
