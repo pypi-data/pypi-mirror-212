@@ -1,0 +1,12 @@
+hyswap/__init__.py,sha256=RlzarubJYSlvLsfrTGaGvCyu_o2jAZOnh2-z0lAXkZw,400
+hyswap/_version.py,sha256=5k9AwAVayek12gIReFd_-qIlTEdp0kx184xX4unsfNc,162
+hyswap/cumulative.py,sha256=OuNdSCn5-3S4K94Vwckq5rHZtv43XLv2rQBbFb1gxD4,5109
+hyswap/exceedance.py,sha256=kiUPUuIrcy-T6gnxZtC8tyVyign98JqYZ13Xm36VzKI,8459
+hyswap/percentiles.py,sha256=B0fpMRGB_FVi8mqYl2VsveYec_jDqADt8UK83zDZEBg,5969
+hyswap/rasterhydrograph.py,sha256=IDaYMI-agAytjXz2H7ukghUp_JSlf-VcFcNtUdOUF6M,10548
+hyswap/utils.py,sha256=gPzVupdR8HU-jyWAjxy7zaJr2MpLOlBdc2eVmfaBc94,12718
+hyswap-0.0.0a0.dist-info/LICENSE.md,sha256=GcdkUHLV8myUzDOtNZAi2a8j89MZhVxtnS29uT-c0cs,1638
+hyswap-0.0.0a0.dist-info/METADATA,sha256=r4faxf3G9NL9YHHqtOKghilHVM6ox-ax0CdZdWEryyk,4413
+hyswap-0.0.0a0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hyswap-0.0.0a0.dist-info/top_level.txt,sha256=pfPQsIVEjdFBtkXnatCBV9ukkfkCTYskoWDScTnGc_Q,7
+hyswap-0.0.0a0.dist-info/RECORD,,
