@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+dingdong_sonos/__init__.py
+dingdong_sonos/main.py
+dingdong_sonos.egg-info/PKG-INFO
+dingdong_sonos.egg-info/SOURCES.txt
+dingdong_sonos.egg-info/dependency_links.txt
+dingdong_sonos.egg-info/entry_points.txt
+dingdong_sonos.egg-info/requires.txt
+dingdong_sonos.egg-info/top_level.txt
+dingdong_sonos/media/pornhub.mp3
+dingdong_sonos/media/quack.mp3
+dingdong_sonos/media/school-bell-sound.mp3
+dingdong_sonos/media/wrong.mp3
