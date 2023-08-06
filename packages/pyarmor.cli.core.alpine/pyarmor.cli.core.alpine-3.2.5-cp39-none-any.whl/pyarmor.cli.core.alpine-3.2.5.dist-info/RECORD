@@ -1,0 +1,9 @@
+pyarmor/cli/core/alpine/__init__.py,sha256=J1hdDnxUFUK4kXQSX36fVlrqnTdkaiD__YHllZu6Nzs,22
+pyarmor/cli/core/alpine/aarch64/pyarmor_runtime.so,sha256=ldskdRaYKnxGCblpoQJupY-Fj88CS-e4SMjl4IxzTQU,638512
+pyarmor/cli/core/alpine/aarch64/pytransform3.so,sha256=bznV-p1LYl6Ty06BH7YntxHduNtiivptlkFndVZB3LI,767648
+pyarmor/cli/core/alpine/x86_64/pyarmor_runtime.so,sha256=qrhueUkRQ4_LUlDHOi6I11LveWDvvZt_2lG-Bu6T3Fk,660528
+pyarmor/cli/core/alpine/x86_64/pytransform3.so,sha256=Ce8UwS0IgKkycm1p65mxO1p9qOAumcbjrEwAN5S3Zzg,723920
+pyarmor.cli.core.alpine-3.2.5.dist-info/METADATA,sha256=dmzHgSHWralgqzui6bIQ5kOAeX3dDy6Eb62JnTkfswo,772
+pyarmor.cli.core.alpine-3.2.5.dist-info/WHEEL,sha256=QbbyyBnlPXzoGKd-349G69XkCwSd1NFnt4kuAN58gNs,93
+pyarmor.cli.core.alpine-3.2.5.dist-info/top_level.txt,sha256=UE1ovZ_90YzwF_lZ3LV7o8HKLe-RgzUaUUvdH5UTUus,8
+pyarmor.cli.core.alpine-3.2.5.dist-info/RECORD,,
