@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+zachet/__init__.py
+zachet/tvz.py
+zachet.egg-info/PKG-INFO
+zachet.egg-info/SOURCES.txt
+zachet.egg-info/dependency_links.txt
+zachet.egg-info/top_level.txt
