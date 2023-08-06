@@ -1,0 +1,11 @@
+spherediff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spherediff/coeffs.py,sha256=2uFQ6imBCdsIYa-rp32UfTQLRqSdtosWSXpanQWWNJQ,8087
+spherediff/kernel.py,sha256=5hCpelqKTwD3T8EUCAuSIKtesYaZ-y2V_Q2-syl58G0,11140
+spherediff/poly.py,sha256=QaG3u0e1ziUSBGK_l5ZoAAMW0gDthxPe-pqJoWNm8fY,4459
+spherediff/sample.py,sha256=fP8iBTSJn5xUdRovlNc_TaKAZSZr5oNQY4qV3YzR4AU,2332
+spherediff/score.py,sha256=si8fPfy3qvAPxGHS4nFJuiKnSLcQ1T4VSxxhNeTxtqI,1423
+spherediff-1.2.1.dist-info/LICENSE.txt,sha256=ut31f6pg0c6lVeaFJbDAX0_fZA1XU3oZvZyOzY4sN1M,1068
+spherediff-1.2.1.dist-info/METADATA,sha256=WzW_GjwQr2r-JpqnDqsTio-sJJjnZ_-u6drqM-xBVfo,5998
+spherediff-1.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+spherediff-1.2.1.dist-info/top_level.txt,sha256=Yy2BXU1LuFTFE2tyiGo_Yi2uFwxtnqeOw8CiJW3_bgo,11
+spherediff-1.2.1.dist-info/RECORD,,
