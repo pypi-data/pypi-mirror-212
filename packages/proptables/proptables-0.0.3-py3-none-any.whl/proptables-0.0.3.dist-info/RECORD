@@ -1,0 +1,17 @@
+proptables/R134a_PresSat.csv,sha256=czOGlI1uRVWhRgWWmlIdKMieTSS5MBeGBVsfPoDKtFs,2347
+proptables/R134a_SupPreSat.csv,sha256=NJkTN-OWtjgVgT1eyKajp_XKEEr49r9QV08hj-xDNjg,239
+proptables/R134a_Super.csv,sha256=iQ7AamHbHjP47PTb42zcsFqqL_-TnkYsWW8thnXlSCY,9777
+proptables/R134a_TempSat.csv,sha256=NCz8h8BDMAWkRfJ-SMJ9fjLuRro4kh-LgpYLmG-uz0I,3736
+proptables/__init__.py,sha256=yfjIgj1CzXU3--eE-0xF8Kcq6zgrF78KU0u9A-j67nM,33
+proptables/calSatData.py,sha256=rMQIFj6eBGgqiPyeoy7k9oSd11UwxJohIjfTBlL4Ak0,4497
+proptables/calSuperHeatData.py,sha256=WirIGb_pyB_xv4Jj2wgximpnSGoaI_wzZ9EC6sxYzLg,5031
+proptables/import_data.py,sha256=UNXRaGybQsZfr44FCVVTgOim9qMHkJBmTc2_E6eSNIs,594
+proptables/interpolate.py,sha256=prvzxfELGRLLlvewms-BHlIykBVqJN0tRjTvAK89e8I,113
+proptables/main.py,sha256=T7Rzc2jT_x32oqP3AtF3QYfd_3GjxApJXfqybKwaAc8,1377
+proptables/superheated.py,sha256=EOBaWqeTMk2I9Mr_SxyjUMQucMaujzVjNbsTTt99mk8,5646
+proptables/test.py,sha256=M6WAjh9a2Hdx31cGEyeeW1Coh6K9Eui0EZ2KKcLvdGI,2070
+proptables-0.0.3.dist-info/LICENCE.txt,sha256=2xUoHCN6sNt55lkG9Y-iWc9dIXHnHzgruLWWU4BMciI,1070
+proptables-0.0.3.dist-info/METADATA,sha256=SXIH4tW-FRcOq5sCKbZkvybHQzGms60yzEovrPUqARk,2452
+proptables-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+proptables-0.0.3.dist-info/top_level.txt,sha256=rozkWjNNGw2ioJ3Lbv8p73wGO4N3X6-dDCDWED4uqGI,11
+proptables-0.0.3.dist-info/RECORD,,
