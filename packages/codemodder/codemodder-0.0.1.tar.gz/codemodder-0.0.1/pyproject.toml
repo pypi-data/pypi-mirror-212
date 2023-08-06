@@ -1,0 +1,12 @@
+[project]
+name = "codemodder"
+version = "0.0.1"
+description = "codemodder"
+readme = "README.md"
+authors = [
+    { name = "Dani Alcala", email = "danalitovsky@gmail.com" }
+]
+license = { file = "LICENSE.txt" }
+keywords = ["security"]
+requires-python = ">=3.8"
+

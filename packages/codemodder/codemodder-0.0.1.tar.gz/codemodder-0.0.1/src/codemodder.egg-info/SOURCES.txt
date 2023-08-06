@@ -1,0 +1,8 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/codemodder.egg-info/PKG-INFO
+src/codemodder.egg-info/SOURCES.txt
+src/codemodder.egg-info/dependency_links.txt
+src/codemodder.egg-info/top_level.txt
