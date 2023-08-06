@@ -1,0 +1,10 @@
+wpcsys/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wpcsys/libusb-1.0.dll,sha256=PDwfR8gEDYQalAIYh0vPiKR-JPWKEVprr_CGnSUy-44,1292959
+wpcsys/pywpc.cp310-win_amd64.pyd,sha256=HV4kb0c-WErklcQfHpJcIdNYOqnSGkpsrFnrNvQswpU,6996992
+wpcsys/pywpc.cp38-win_amd64.pyd,sha256=a0Mnd-avQgLM1UhUvPqYF5RGECjOf6TAquy-7467yXk,7545344
+wpcsys/pywpc.cp39-win_amd64.pyd,sha256=ifQVCZUZ8gOu4BJbM6XAqjfEbOKr5d3rvolQ6s1oXxc,7555072
+wpcsys-2.1.2.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+wpcsys-2.1.2.dist-info/METADATA,sha256=Lk09g_pIup1BVyGT29N698AhXBhSCkHT_kZBdZ8fO7k,10014
+wpcsys-2.1.2.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+wpcsys-2.1.2.dist-info/top_level.txt,sha256=0_MMgzXCFieTV8Cugw10SqWzdlq5d7HLRWNRKTxB33w,7
+wpcsys-2.1.2.dist-info/RECORD,,
