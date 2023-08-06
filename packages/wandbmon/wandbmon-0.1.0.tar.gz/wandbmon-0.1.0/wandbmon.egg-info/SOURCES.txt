@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+tests/test_monitor.py
+wandbmon/__init__.py
+wandbmon.egg-info/PKG-INFO
+wandbmon.egg-info/SOURCES.txt
+wandbmon.egg-info/dependency_links.txt
+wandbmon.egg-info/requires.txt
+wandbmon.egg-info/top_level.txt
+wandbmon/sdk/evaluate.py
+wandbmon/sdk/logging.py
+wandbmon/sdk/monitor.py
