@@ -1,0 +1,8 @@
+setup.py
+FileMaster/FileMaster.py
+FileMaster/__init__.py
+FileMaster.egg-info/PKG-INFO
+FileMaster.egg-info/SOURCES.txt
+FileMaster.egg-info/dependency_links.txt
+FileMaster.egg-info/not-zip-safe
+FileMaster.egg-info/top_level.txt
