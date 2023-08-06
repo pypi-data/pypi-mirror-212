@@ -1,0 +1,2 @@
+[console_scripts]
+agg = great.scripts:my_script
