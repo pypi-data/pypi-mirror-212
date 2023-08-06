@@ -1,0 +1,29 @@
+[build-system]
+requires=["setuptools","setuptools-scm"]
+build-backend="setuptools.build_meta"
+
+[project]
+name = "PyArrShow"
+version = "1.0.8"
+authors = [
+  { name="Kaixuan,Zhao", email="kaixuan_zhao@163.com" },
+]
+description = "Python ArrayShow for MRI data visualization."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy",
+  "pyside6"
+]
+
+[project.scripts]
+pas = "pyas.__main__:main"
+
+[project.urls]
+"Homepage" = "https://github.com/15625148866/PyArrShow"
+"Bug Tracker" = "https://github.com/15625148866/PyArrShow/issues"
