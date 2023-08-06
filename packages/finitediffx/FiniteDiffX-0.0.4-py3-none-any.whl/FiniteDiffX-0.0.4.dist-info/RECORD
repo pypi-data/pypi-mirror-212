@@ -1,0 +1,13 @@
+finitediffx/__init__.py,sha256=UabwKwaUDcmqVGTJKWVjZIaODe2J5SfEMKYWjb1rEP4,1092
+finitediffx/_src/__init__.py,sha256=cfA9Ryf5MeWbJNDx5BnR13uOTr82tSYwBHLNBqdeTX8,584
+finitediffx/_src/fgrad.py,sha256=XXSJZFh4udOutZhQRZ1sqlfs5Yi0Cs-ObrzOGd1RT80,15645
+finitediffx/_src/finite_diff.py,sha256=khQ2cKEMf0n4lmAqWqZtYntKPS6-IdyhqFOgXt7Dvek,24619
+finitediffx/_src/utils.py,sha256=iNTLDMtsrBkOOiDAEm_QKCKZB1PQ-GM8XoQrQp-yn4U,4310
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_fgrad.py,sha256=hAaRbW7RD0gfJzMrJixsDaYnykkABmHXnTZ2cIj9BII,8503
+tests/test_finite_diff.py,sha256=Jr5dLWGhlvuAO0p8G3pekDb7LZUmM811Hxxuy6jD13A,12747
+FiniteDiffX-0.0.4.dist-info/LICENSE,sha256=apL6UibMhFhjSC21hvDV3iiGmSV3QUBxbI4m4eS2Uks,11341
+FiniteDiffX-0.0.4.dist-info/METADATA,sha256=M1-p8-mHL8p2ha3NDNq9mUHc7o6ROpRQPe6bLsBIsng,10493
+FiniteDiffX-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+FiniteDiffX-0.0.4.dist-info/top_level.txt,sha256=QnNgWgRbJiAu_caOoNIaZlQFgOsvw0mmB_DeVWZSbn4,25
+FiniteDiffX-0.0.4.dist-info/RECORD,,
