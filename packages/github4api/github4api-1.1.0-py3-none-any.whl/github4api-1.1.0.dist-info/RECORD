@@ -1,0 +1,9 @@
+github4api/__init__.py,sha256=MswrdprriCey9NLrvHF_dai9rsp0jEeHOfmGhy1vHbw,286
+github4api/request_handler/__init__.py,sha256=x6CAoX9Ch8XFMUtYPcCHegZTMK2n8ZopcJk9rAIpI9M,858
+github4api/scraper/__init__.py,sha256=4iIlDRawisl0JVxoyaq1O9d8_m0yisZL4U83B5snbfU,4100
+github4api/user_handler/__init__.py,sha256=EHnoxn_J7qDAJrVs98uKbkTTlLIKBIX0U5oPV-7PQPM,487
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+github4api-1.1.0.dist-info/METADATA,sha256=qERqBZ9RsZiZ0MVQDUxAh-RwmzkCRxk6-s0QeSCmLKA,5960
+github4api-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+github4api-1.1.0.dist-info/top_level.txt,sha256=WYo4FSWs9h1FmuAXEWWEzVRiErFf5PPqo5PEknuBEcI,17
+github4api-1.1.0.dist-info/RECORD,,
