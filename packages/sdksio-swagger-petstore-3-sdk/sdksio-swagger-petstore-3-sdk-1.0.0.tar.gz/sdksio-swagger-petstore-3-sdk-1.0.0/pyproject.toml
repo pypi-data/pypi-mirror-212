@@ -1,0 +1,16 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]
+[project]
+name = "sdksio-swagger-petstore-3-sdk"
+description = "Swagger Petstore - OpenAPI 3.0"
+version = "1.0.0"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["OpenAPI", "swagger", "apimatic", "petstore"]
+authors = [{name = "developer-sdksio", email = "developer+sdksio@apimatic.io"}]
+urls = {Documentation = "https://apimaticpetstore.pages.dev/#/python/pet-store-api"}
+dependencies = ["apimatic-core~=0.2.0", "apimatic-core-interfaces~=0.1.0", "apimatic-requests-client-adapter~=0.1.0", "python-dateutil~=2.8.1", "enum34~=1.1, >=1.1.10"]
+classifiers = []
+[project.optional-dependencies]
+testutils = ["pytest>=7.2.2"]
