@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm[toml]"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "remu"
+description = "Response Matrix Utilities for likelihood calculations and hypothesis testing"
+authors = [{name = "Lukas Koch", email = "lukas.koch@mailbox.org"}]
+readme = "README.rst"
+license = {file = "LICENSE"}
+classifiers=[
+    # See: https://pypi.org/pypi?%3Aaction=list_classifiers
+    # How mature is this project? Common values are
+    #   3 - Alpha
+    #   4 - Beta
+    #   5 - Production/Stable
+    "Development Status :: 4 - Beta",
+    # Indicate who your project is intended for
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    # Pick your license as you wish (should match "license" above)
+    "License :: OSI Approved :: MIT License",
+    # Specify the Python versions you support here. In particular, ensure
+    # that you indicate whether you support Python 2, Python 3 or both.
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dynamic = ["version"]
+requires-python = ">=3.7,<4"
+dependencies = [
+    "numpy >= 1.21.0",
+    "scipy >= 1.7.0",
+    "pyyaml >= 5.4",
+    "matplotlib >= 3.5.0",
+]
+
+[project.optional-dependencies]
+mcmc = [
+    "emcee >= 3.1.0",
+]
+
+[project.urls]
+Home = "https://remu.readthedocs.io/en/latest/"
+
+[tool.setuptools_scm]
+write_to = "src/remu/_version.py"
+
+[tool.setuptools.dynamic]
+version = {attr = "remu.__version__"}

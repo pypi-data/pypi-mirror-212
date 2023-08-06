@@ -1,0 +1,8 @@
+# Ignore virtualenv
+/ENV
+_version.py
+*.egg-info
+/dist
+/build
+.coverage
+*.pyc

@@ -1,0 +1,7 @@
+!RectilinearBinning
+variables:
+- x_truth
+- y_truth
+bin_edges:
+- [0, 1, 2]
+- [0, 1, 2]

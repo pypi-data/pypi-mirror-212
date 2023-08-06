@@ -1,0 +1,9 @@
+version: 2
+
+python:
+  version: 3
+  install:
+    - requirements: requirements.txt
+    - requirements: documentation-requirements.txt
+    - method: pip
+      path: .
