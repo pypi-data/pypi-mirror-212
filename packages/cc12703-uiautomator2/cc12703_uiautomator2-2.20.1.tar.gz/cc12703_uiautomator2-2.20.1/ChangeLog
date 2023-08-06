@@ -1,0 +1,18 @@
+CHANGES
+=======
+
+2.20.1
+------
+
+* trigger by push tag
+* fix  bug of  compatible
+* update atx-agent
+* fix bug of app\_current
+* support  stop app by user id
+* add uninstall whatsinput for purge
+* add isRunning
+* improve install
+* fix  workflow cant  run
+* update adbutils rep
+* Addresses issue #823 in owner repo. (#870)
+* Update README.md
