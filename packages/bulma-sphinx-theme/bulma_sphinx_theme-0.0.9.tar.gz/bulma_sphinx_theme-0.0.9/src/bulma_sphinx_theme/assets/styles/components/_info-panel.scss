@@ -1,0 +1,11 @@
+.info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: var(--top-content-to-navbar-gap) 1rem 1rem 1rem;
+  background: var(--bst-color-background-info-panel);
+
+  .level:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
