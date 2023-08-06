@@ -1,0 +1,12 @@
+pp_project_pkg/__init__.py,sha256=9idX2X6SQKZg--ziGy6Ii9OB-kz9hOX1nEG9a0xEW9g,71
+pp_project_pkg/newsvendor.py,sha256=E6JHp0Vtmq63toKM6bO3xTAdCgwmAZzRua-w10wrc5Y,577
+pp_project_pkg/pp_tables.py,sha256=8rqVp4P9nF13UbBmN_R7vGK7MeY4BkeG2ibDa7jLRpg,7115
+pp_project_pkg/utils.py,sha256=nwTUL_AZDxjX12AjAQm5Fe1Wn5u7Gffn4QvmlwVfGXk,1203
+pp_project_pkg/version.py,sha256=BPlGImS9GxVl35jcgzvte57Y_Hzu01zBUdMt-G7Mllw,396
+pp_project_pkg/wrangling.py,sha256=rTDhW4hNytVSargqNoJlub_wyN37zPElVtKNc2TaRlw,4391
+pp_project_pkg-1.0.202306061654.data/scripts/get_tables.py,sha256=E5FmW2bHAU9NPORQMG85RzGtXOGjjzbATEa5lLGjyk4,65
+pp_project_pkg-1.0.202306061654.data/scripts/pp_project_run.py,sha256=hNrYjtDlo7nX9pwMbM7un9R7ToKRdjVosBt3qErKtaA,1316
+pp_project_pkg-1.0.202306061654.dist-info/METADATA,sha256=v9oBfmXmB3Iu05TJahj5ibnl4jBk8nsa-Jr0SB28l4M,191
+pp_project_pkg-1.0.202306061654.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pp_project_pkg-1.0.202306061654.dist-info/top_level.txt,sha256=2V1bEC5qsYRo1f2gAotX3L3S5xl1nIUxjITUTeRd8yQ,15
+pp_project_pkg-1.0.202306061654.dist-info/RECORD,,
