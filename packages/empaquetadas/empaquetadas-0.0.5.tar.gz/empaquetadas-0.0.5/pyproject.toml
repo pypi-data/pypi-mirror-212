@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "empaquetadas"
+version = "0.0.5"
+description = "Package to calculate what would have happened if you had invested your pesos"
+requires-python = ">=3.9"
+readme = "README.md"
+license.file = "LICENSE"
+authors = [{ name = "Rafael Sanabria", email = "rafael.d.sanabria@gmail.com" }]
+dependencies = ["click >= 8.1"]
+classifiers = []
+
+[project.optional-dependencies]
+dev = ["pytest >= 7.3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.tox]
+legacy_tox_ini = """
+  [tox]
+  min_version = 4.0
+  env_list = linter, type, format, py39, py310, py311
+
+  [testenv]
+  deps = 
+    pytest
+  commands = pytest
+
+  [testenv:format]
+  skip_install = true
+  deps =
+    black>=23.0
+  commands = black {posargs:src tests}
+
+  [testenv:type]
+  deps =
+    mypy>=1.3
+  commands = mypy {posargs:src}
+
+  [testenv:linter]
+  skip_install = true
+  deps = 
+    ruff >= 0.0.271
+  commands = ruff check .
+"""
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+# select = [
+#     "D", # pydocstyle
+# ]
+
+# [tool.ruff.pydocstyle]
+# convention = "google"
+[project.scripts]
+empaquetadas = "empaquetadas.cli:entrypoint"
