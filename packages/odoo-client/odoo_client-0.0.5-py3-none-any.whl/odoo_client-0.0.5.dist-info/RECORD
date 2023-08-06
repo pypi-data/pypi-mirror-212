@@ -1,0 +1,9 @@
+odoo_client/__init__.py,sha256=_c_pEf6eiYRfaZ00xw54RgF9QExIdR49xu3HZeRr1JY,62
+odoo_client/client.py,sha256=akwUBkRc2V1OIMpjUDQchngi3N38KXDJB-czNhMHNE0,1237
+odoo_client/model.py,sha256=rxRQeM9XO7hc7Xfb_Z2fDfHauCsnvJp2S7ShWnSKPT4,1615
+odoo_client/object.py,sha256=2DQS6Wv_YUTtEpUntIGdEM7waDiU479piNVU-R1Fgvg,5255
+odoo_client-0.0.5.dist-info/LICENSE,sha256=H7RD_iebVckvZmJMPieXEJcIFc49CpxTK1CUS7ju5jY,1078
+odoo_client-0.0.5.dist-info/METADATA,sha256=PYiFW3_yXw-LhElbjtPD4BaKLxzEuikVncZAyJWuHNc,1289
+odoo_client-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo_client-0.0.5.dist-info/top_level.txt,sha256=jCW4k7AYcBZRusGc2JjabPgk5i5Gnh9J6cVi1YQfTwM,12
+odoo_client-0.0.5.dist-info/RECORD,,
