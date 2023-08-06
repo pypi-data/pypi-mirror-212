@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: restraint-fold
+Version: 0.1
+Summary: Simple Protein Structure Parser
+Home-page: https://gitee.com/dechin/restraint-fold/
+Author: Dechin CHEN
+Author-email: dechin.phy@gmail.com
+License: MIT License
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 简化版蛋白质二级结构分类器
