@@ -1,0 +1,4 @@
+setuptools~=41.2.0
+packaging~=23.1
+boto3~=1.9.47
+pytest~=7.3.1
