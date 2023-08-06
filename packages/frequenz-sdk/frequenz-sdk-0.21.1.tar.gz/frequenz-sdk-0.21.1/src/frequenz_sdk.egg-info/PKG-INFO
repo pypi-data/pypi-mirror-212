@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: frequenz-sdk
+Version: 0.21.1
+Summary: Frequenz Python SDK
+Author-email: Frequenz Energy-as-a-Service GmbH <floss@frequenz.com>
+License: MIT
+Project-URL: Changelog, https://github.com/frequenz-floss/frequenz-sdk-python/releases
+Project-URL: Repository, https://github.com/frequenz-floss/frequenz-sdk-python
+Project-URL: Issues, https://github.com/frequenz-floss/frequenz-sdk-python/issues
+Project-URL: Support, https://github.com/frequenz-floss/frequenz-sdk-python/discussions/categories/support
+Keywords: frequenz,sdk,microgrid,actor
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: <4,>=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: docs-gen
+Provides-Extra: docs-lint
+Provides-Extra: format
+Provides-Extra: nox
+Provides-Extra: examples
+Provides-Extra: pytest
+Provides-Extra: mypy
+Provides-Extra: pylint
+Provides-Extra: dev
+License-File: LICENSE
+
+# Frequenz Python SDK
+
+[![Build Status](https://github.com/frequenz-floss/frequenz-sdk-python/actions/workflows/ci.yaml/badge.svg)](https://github.com/frequenz-floss/frequenz-sdk-python/actions/workflows/ci.yaml)
+[![PyPI Package](https://img.shields.io/pypi/v/frequenz-sdk)](https://pypi.org/project/frequenz-sdk/)
+[![Docs](https://img.shields.io/badge/docs-latest-informational)](https://frequenz-floss.github.io/frequenz-sdk-python/)
+
+A development kit to interact with the Frequenz development platform.
+
+## Supported Python versions
+
+* Only Python 3.11 is fully supported (tested).
+
+## Contributing
+
+If you want to know how to build this project and contribute to it, please
+check out the [Contributing Guide](CONTRIBUTING.md).
