@@ -1,0 +1,9 @@
+school_grader/__init__.py,sha256=of8WXH8m0h0drG7OCRgyNVzcoTpOFdMl0wEoX7CIh24,481
+school_grader/equality.py,sha256=qZOEj9WBTDeyUMOZ9dhQhtiEuKAFgldOl_WWVh9HxN0,11544
+school_grader/html_test_result.py,sha256=5gcPsTFT0j9lKH37TIds_CzU1teaBEl-mfNQvqC5NAI,4898
+school_grader/json_test_result.py,sha256=RM9v3Ld_ENCtk3Ddq5A8xBWCTopzT8vN4KUT4qdnV6I,1317
+school_grader/test_case.py,sha256=68ofBZ-KJFoomjc7NiqfVLzROQTZF1EIMmWTrmSfUjk,8381
+school_grader-4.0.5.dist-info/METADATA,sha256=Y8VbtcMMrGG2LacUDBpYTdqF0qXe0W4gIXgRgoeoFbc,7447
+school_grader-4.0.5.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+school_grader-4.0.5.dist-info/licenses/LICENSE,sha256=ysY8h7U8wMPo2vidse-vx2OLKaaj8bYzrTRzxq-K_CI,1065
+school_grader-4.0.5.dist-info/RECORD,,
