@@ -1,0 +1,7 @@
+setup.py
+good_package/__init__.py
+good_package/good_package.py
+good_package.egg-info/PKG-INFO
+good_package.egg-info/SOURCES.txt
+good_package.egg-info/dependency_links.txt
+good_package.egg-info/top_level.txt
