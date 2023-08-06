@@ -1,0 +1,10 @@
+generateStoredProcedure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generateStoredProcedure/backup.py,sha256=HpPXy_aXdWzT4QF14aEQURJHPq4JyH_SLKSsPLUjAu4,1654
+generateStoredProcedure/compare.py,sha256=46fJP-D5rgjwd3hum-UaECF5S6DCP5IENwVFMYzddxI,1927
+generateStoredProcedure/login.py,sha256=YCjcwxQ-6gzufgwcLVcsQFKox7_uwnUxF795Hb1yPcU,665
+generateStoredProcedure/main.py,sha256=tgghvGspm4rrD4WLMuQFUgMn6SdkuhzbnguPBlZea0w,2382
+gensp-1.0.17.dist-info/METADATA,sha256=ppRcSC22tXyJ1YDZv6pD9ak2Igtt0qp9cdVE8W3Ldc4,1361
+gensp-1.0.17.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gensp-1.0.17.dist-info/entry_points.txt,sha256=a3WGZ1mQzFWvgoyP2vjCay7kmGx82OcqPsjUckcDwYo,61
+gensp-1.0.17.dist-info/top_level.txt,sha256=OpbPiFa7ucqxVYid3U4t-8tLAR3rlRwZKYJYwkdZgSs,24
+gensp-1.0.17.dist-info/RECORD,,
