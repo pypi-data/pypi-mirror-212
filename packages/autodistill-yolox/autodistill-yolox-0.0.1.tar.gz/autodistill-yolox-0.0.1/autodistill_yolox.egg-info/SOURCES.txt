@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_yolox/__init__.py
+autodistill_yolox.egg-info/PKG-INFO
+autodistill_yolox.egg-info/SOURCES.txt
+autodistill_yolox.egg-info/dependency_links.txt
+autodistill_yolox.egg-info/requires.txt
+autodistill_yolox.egg-info/top_level.txt
