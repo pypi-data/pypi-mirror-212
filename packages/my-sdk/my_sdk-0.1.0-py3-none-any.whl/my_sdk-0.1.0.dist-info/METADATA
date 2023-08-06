@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: my-sdk
+Version: 0.1.0
+Summary: Python SDK for Vecpot(Embedding as a Service)
+Home-page: https://github.com/vecpot/vecpot-python-sdk
+Author: VecPot
+Author-email: contact@vecpot.com
+Project-URL: Bug Reports, https://github.com/vecpot/vecpot-python-sdk/issues
+Project-URL: Source, https://github.com/vecpot/vecpot-python-sdk
+Project-URL: Documentation, https://docs.vecpot.com/introduction
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests (==2.31.0)
+
