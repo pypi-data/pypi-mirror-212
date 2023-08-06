@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fastgenerateapi/__init__.py
+fastgenerateapi/__version__.py
+fastgenerateapi.egg-info/PKG-INFO
+fastgenerateapi.egg-info/SOURCES.txt
+fastgenerateapi.egg-info/dependency_links.txt
+fastgenerateapi.egg-info/top_level.txt
