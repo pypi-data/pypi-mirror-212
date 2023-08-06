@@ -1,0 +1,13 @@
+setup.py
+amelpersik_custom_serializer.egg-info/PKG-INFO
+amelpersik_custom_serializer.egg-info/SOURCES.txt
+amelpersik_custom_serializer.egg-info/dependency_links.txt
+amelpersik_custom_serializer.egg-info/entry_points.txt
+amelpersik_custom_serializer.egg-info/top_level.txt
+lab3/serializer/src/__init__.py
+lab3/serializer/src/constants.py
+lab3/serializer/src/converter.py
+lab3/serializer/src/factory.py
+lab3/serializer/src/json_serializer.py
+lab3/serializer/src/supportive.py
+lab3/serializer/src/xml_serializer.py
