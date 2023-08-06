@@ -1,0 +1,13 @@
+README.md
+setup.py
+stop_sequencer/__init__.py
+stop_sequencer/stop_sequencer.py
+stop_sequencer/stopping_criteria.py
+stop_sequencer.egg-info/PKG-INFO
+stop_sequencer.egg-info/SOURCES.txt
+stop_sequencer.egg-info/dependency_links.txt
+stop_sequencer.egg-info/not-zip-safe
+stop_sequencer.egg-info/requires.txt
+stop_sequencer.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
