@@ -1,0 +1,67 @@
+Diveplane Corporation
+
+Reactor Community Edition Free Software License FAQs
+
+1. Why are you providing a free version of Diveplane Reactor?
+
+   We are excited to announce the release of a free version of our AI software,
+   Reactor(tm), which is called Reactor Community Edition. We believe that
+   everyone should have access to this groundbreaking technology, and we are
+   committed to keeping the humanity in AI. Our free version includes many of
+   the core features of our paid version, with some limitations. We hope that
+   this free version will allow more people to experience the power of AI and
+   to use it to make the world a better place.
+
+2. Is this license indefinite?
+
+   No. This license lasts through December 31, 2023. It is our intention to
+   release an open source version of Reactor Community Edition, which will
+   replace this freeware version.
+
+3. Can I use Reactor Community Edition for my personal, school, and
+   commercial projects?
+
+   You can use Reactor Community Edition in your back-end systems for personal,
+   educational, or commercial purposes. This license will not allow you to
+   provide Reactor Community Edition as part of a service (SaaS), or to ship a
+   hardware or software product that contains Reactor Community Edition.
+
+4. What if I would like to provide a commercial service or distribute a product
+   that includes Reactor Community Edition?
+
+   You cannot do that under the free license, but feel free to contact us for a
+   commercial license of Reactor.
+
+5. What is in the commercial version of Reactor that is not in Reactor
+   Community Edition?
+
+   Many notable features that are geared towards corporations are excluded from
+   Reactor Community Edition, such as scaling, user management, relational
+   database support, and extended feature type support.
+
+6. Do I have to tell people I am using your software?
+
+   If you publish anything (paper, blog post, the Reactor Community Edition
+   output, etc.) or use Reactor Community Edition commercially, we ask in the
+   license that you reference that you used Diveplane’s Reactor Community
+   Edition.
+
+7. Do you collect any information when I download or use Reactor
+   Community Edition?
+
+   We generally collect IP addresses of those who visit our website and that
+   includes when you download Reactor Community Edition.  Reactor Community
+   Edition also has a call-back that sends some small amount of usage
+   information, such as IP address and version number as Reactor Community
+   Edition is used.
+
+8. Can I open source Diveplane Reactor Community Edition?
+
+   No. First, decompilation of Diveplane Reactor Community Edition is strictly
+   prohibited, and, further, Diveplane Reactor Community Edition is only
+   licensed for use as a compiled application, and open sourcing any portion of
+   Reactor Community Edition is prohibited.
+
+9. Can I mirror Diveplane Reactor Community Edition on my website?
+
+   No. We do not allow redistribution of Reactor Community Edition.

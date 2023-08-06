@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: diveplane-reactor-api
+Version: 2.4.3
+Summary: Diveplane Reactor and Scikit Estimator for the interpretable Machine Learning and Artificial Intelligence API Diveplane.
+Home-page: https://www.diveplane.com
+Author: Diveplane Corp
+Author-email: support@diveplane.com
+Keywords: machine learning artificial intelligence
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Diveplane Reactor
+

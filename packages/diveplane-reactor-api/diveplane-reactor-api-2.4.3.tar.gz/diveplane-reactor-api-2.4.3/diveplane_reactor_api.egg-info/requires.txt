@@ -1,0 +1,17 @@
+certifi
+cryptography>=2.9.2
+deprecation<3,>=2.1.0
+diveplane-amalgam-api>=2.3.5
+diveplane-openapi-client>=22.2.0
+Faker>=4.1.1
+humanize>=4.0.0
+mmh3
+numpy
+pandas
+pyjwt<3,>=2.6.0
+pyyaml<7.0,>=5.4.1
+rich>=12.5.1
+scikit-learn
+semantic-version<3,>=2.8.5
+typing-extensions<5.0,>=4.1.0
+urllib3<=2,>=1.26.2

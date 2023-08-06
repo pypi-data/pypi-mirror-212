@@ -1,0 +1,9 @@
+include README.md
+global-include requirements-*.txt
+global-include requirements.in
+include LICENSE.txt
+include LICENSE-FAQ.txt
+include LICENSE-3RD-PARTY.txt
+graft diveplane
+global-exclude *.py[co]
+global-exclude tests tests/**
