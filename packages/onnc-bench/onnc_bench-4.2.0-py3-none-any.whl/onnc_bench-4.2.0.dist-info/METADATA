@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: onnc-bench
+Version: 4.2.0
+Summary: ONNC-bench is a Python wrapper of ONNC
+Home-page: https://www.skymizer.com
+Author: The Skymizer Team
+Author-email: hello@skymizer.com
+License: Apache License 2.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: onnx
+Requires-Dist: loguru
+Requires-Dist: sentry-sdk
+Requires-Dist: packaging
+Requires-Dist: requests (==2.30.0)
+Requires-Dist: matplotlib (==3.5.2)
+Requires-Dist: numpy (==1.21.1)
+Requires-Dist: onnx (==1.14.0)
+Requires-Dist: openvino (==2022.3.0)
+Requires-Dist: read-only-attributes (==1.2)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: wget
+Requires-Dist: loguru (==0.6.0)
+Requires-Dist: sentry-sdk (==1.5.12)
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: singledispatchmethod (==1.0)
+Requires-Dist: msgpack-numpy
+Requires-Dist: zerorpc (==0.6.3)
+Requires-Dist: packaging (==21.3)
+
+# ONNC-bench
+
+ONNC-bench is a Python wrapper of ONNC
+
+## Installation
+
+### Using pip
+
+```
+pip install onnc-bench
+```
+
+## Python API Example
+
+Here is an example to show how to use ONNC python API
+
+```
+from onnc.bench import login, Project
+# Setup your ONNC API key
+api_key = "Your API KEY"
+login(api_key)
+
+# Instantiate a projct
+project = Project('experiment-1')
+
+# Add a model and its coresponding calibration samples
+project.add_model('path/to/model', 'path/to/samples')
+
+# Compile the model and optmize to `CMSIS-NN` backend
+project.compile(target='CMSIS-NN-DEFAULT')
+
+
+# Save the compiled model
+deployment = project.save('./output')
+
+```
+
+Please Check https://docs-tinyonnc.skymizer.com/index.html for the full documents.
