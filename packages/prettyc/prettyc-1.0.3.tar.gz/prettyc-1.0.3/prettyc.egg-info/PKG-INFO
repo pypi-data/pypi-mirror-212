@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: prettyc
+Version: 1.0.3
+Summary: Fork of Google's cpplint, modified to work only with C.
+Home-page: http://github.com/pylover/prettyc
+Author: Vahid Mardani
+Author-email: vahid.mardani@gmail.com
+License: BSD-3-Clause
+Keywords: lint,python,c
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: C
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: License :: OSI Approved :: BSD License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# prettyc - static code checker for C
+
+PrettyC is a command-line tool to check only C files for style issues.
+It's forked from Cpplint which is developed and maintained by Google Inc. at 
+`google/styleguide <https://github.com/google/styleguide>`_, also see the 
+`wikipedia entry <http://en.wikipedia.org/wiki/Cpplint>`_
+
+
+## Installation
+To install prettyc from PyPI, run:
+
+```bash
+pip install prettyc
+```
+
+Then run it with:
+
+```bash
+prettyc [OPTIONS] files 
+```
+
+For full usage instructions, run:
+
+
+```bash
+prettyc --help
+```
+
+## How to use:
+
+```bash
+prettyc --help
+```
+
+## Development
+
+Create virtual environment.
+```bash
+make venv
+```
+
+Activate.
+```bash
+source activate.sh
+```
+
+Create development environment
+```bash
+make dev
+```
+
+Distribution and install:
+```bash
+make dist
+make install
+```
+
+
+
