@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyakamai
+Version: 1.1
+Summary: A Boto3 like SDK for Akamai
+Home-page: https://github.com/Achuthananda/pyakamai
+Author: Achuthananda M P
+Author-email: achuthadivine@gmail.com
+Keywords: Akamai Python CDN SDK Edge
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: edgegrid-python
+Requires-Dist: requests
+
+# pyakamai
