@@ -1,0 +1,15 @@
+README.md
+setup.py
+neuroimager.egg-info/PKG-INFO
+neuroimager.egg-info/SOURCES.txt
+neuroimager.egg-info/dependency_links.txt
+neuroimager.egg-info/requires.txt
+neuroimager.egg-info/top_level.txt
+pipes/__init__.py
+pipes/brainage.py
+pipes/cca.py
+plotting/__init__.py
+plotting/plot.py
+utils/__init__.py
+utils/atlas.py
+utils/fc.py
