@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: docinterrogator
+Version: 0.1.0
+Summary: 
+Author: JazBern
+Author-email: jasmine0696@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: pdf2image (>=1.16.3,<2.0.0)
+Requires-Dist: pillow (>=9.5.0,<10.0.0)
+Requires-Dist: protobuf (==3.20.1)
+Requires-Dist: pytesseract (>=0.3.10,<0.4.0)
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Requires-Dist: sentencepiece (>=0.1.99,<0.2.0)
+Requires-Dist: torch (>=2.0.1,<3.0.0)
+Requires-Dist: transformers (>=4.30.0,<5.0.0)
+Requires-Dist: urllib3 (<2.0)
+Description-Content-Type: text/markdown
+
+
