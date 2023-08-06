@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+telebirrweb/__init__.py
+telebirrweb/telebirr.py
+telebirrweb/test.py
+telebirrweb/utils.py
+telebirrweb.egg-info/PKG-INFO
+telebirrweb.egg-info/SOURCES.txt
+telebirrweb.egg-info/dependency_links.txt
+telebirrweb.egg-info/requires.txt
+telebirrweb.egg-info/top_level.txt
