@@ -1,0 +1,8 @@
+README.md
+setup.py
+autodistill_open_flamingo/__init__.py
+autodistill_open_flamingo.egg-info/PKG-INFO
+autodistill_open_flamingo.egg-info/SOURCES.txt
+autodistill_open_flamingo.egg-info/dependency_links.txt
+autodistill_open_flamingo.egg-info/requires.txt
+autodistill_open_flamingo.egg-info/top_level.txt
