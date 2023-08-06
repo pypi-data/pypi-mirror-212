@@ -1,0 +1,2 @@
+[console_scripts]
+srm-aggregate = ncrar_dkm_tools.main:main_aggregate
