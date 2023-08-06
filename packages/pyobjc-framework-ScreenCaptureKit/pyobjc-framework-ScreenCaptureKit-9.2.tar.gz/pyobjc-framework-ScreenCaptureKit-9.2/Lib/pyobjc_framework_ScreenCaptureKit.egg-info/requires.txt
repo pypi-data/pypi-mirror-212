@@ -1,0 +1,2 @@
+pyobjc-core>=9.2
+pyobjc-framework-CoreMedia>=9.2
