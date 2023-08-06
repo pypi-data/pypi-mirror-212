@@ -1,0 +1,10 @@
+README.md
+setup.py
+SwarmML/AlgorithmPSO.py
+SwarmML/FeatureSelection.py
+SwarmML/__init__.py
+SwarmML.egg-info/PKG-INFO
+SwarmML.egg-info/SOURCES.txt
+SwarmML.egg-info/dependency_links.txt
+SwarmML.egg-info/requires.txt
+SwarmML.egg-info/top_level.txt
