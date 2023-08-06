@@ -1,0 +1,11 @@
+usearch/server.py,sha256=dk7ZgC18khIWRwXtrBSrL35l2B-ucGQSJ-92ecJR9LE,3758
+usearch/index.py,sha256=4k8T2vBIpKUwZQI4CWInPcctbgdDUQRCj81olOUj9w4,12963
+usearch/client.py,sha256=FLEy0YkHth4qdpsC8TePqZH_9A0ISJLhgJO8ddUDUdY,4194
+usearch/io.py,sha256=RXeDDzH6Y2-7q7kIKv1fXQWgeYVyp3VpDns3M0aHYoI,2231
+usearch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usearch/compiled.cpython-311-darwin.so,sha256=UPKjJrrCMsFIHiVKaKUxLYH-yh3UKRd_Y8sPsmUI4Go,1283339
+usearch-0.12.2.dist-info/RECORD,,
+usearch-0.12.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+usearch-0.12.2.dist-info/WHEEL,sha256=1gGdl8c7V4tzGrOfjA4xbXg5uJOisfAwei4hK84YpXE,115
+usearch-0.12.2.dist-info/top_level.txt,sha256=zFbid1SmQjk8RsbEgpqF7tTjgWdFvE2z0e1LQ2hKdPg,8
+usearch-0.12.2.dist-info/METADATA,sha256=8o6ejjNhipAIEPg3cvliFYe96I57K8DN75-niae70t8,19944
