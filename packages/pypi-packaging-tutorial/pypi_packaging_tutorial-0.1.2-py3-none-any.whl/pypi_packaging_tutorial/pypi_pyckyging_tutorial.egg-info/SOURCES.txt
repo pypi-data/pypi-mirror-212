@@ -1,0 +1,14 @@
+LICENSE.txt
+README.txt
+pyproject.toml
+setup.cfg
+src/divide/__init__.py
+src/divide/divide_by_three.py
+src/multiply/__init__.py
+src/multiply/multiply_by_three.py
+src/pypi_pyckyging_tutorial.egg-info/PKG-INFO
+src/pypi_pyckyging_tutorial.egg-info/SOURCES.txt
+src/pypi_pyckyging_tutorial.egg-info/dependency_links.txt
+src/pypi_pyckyging_tutorial.egg-info/top_level.txt
+tests/test_divide_by_three.py
+tests/test_multiply_by_three.py

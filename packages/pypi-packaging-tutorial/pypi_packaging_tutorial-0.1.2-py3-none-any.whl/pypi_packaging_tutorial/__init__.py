@@ -1,0 +1,2 @@
+from divide.divide_by_three import divide_by_three as divide_by_three
+from multiply.multiply_by_three import multiply_by_three as multiply_by_three
