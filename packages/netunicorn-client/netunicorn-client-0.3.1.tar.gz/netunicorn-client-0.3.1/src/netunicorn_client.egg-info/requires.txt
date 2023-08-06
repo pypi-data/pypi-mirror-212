@@ -1,0 +1,4 @@
+netunicorn-base>=0.3.3
+cloudpickle
+requests
+returns
