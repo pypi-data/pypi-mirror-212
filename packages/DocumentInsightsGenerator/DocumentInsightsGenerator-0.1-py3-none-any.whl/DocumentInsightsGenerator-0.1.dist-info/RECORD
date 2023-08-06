@@ -1,0 +1,9 @@
+DocumentInsightsGenerator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DocumentInsightsGenerator/documentinsightsgenerator.py,sha256=qeFH71Ypxatm6lipXrg3l0JZPldy1CV6zi1vGXA8DIQ,8862
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_documentinsightsgenerator.py,sha256=ERXiX13LGfoavD2TIQNeMvUXQ_fzJAF1YV9Asg-2Sug,5807
+DocumentInsightsGenerator-0.1.dist-info/LICENSE,sha256=hg9TYJLfdFywjhH9L8TgMb-X8iKdhgpSt_njP_9Reno,1068
+DocumentInsightsGenerator-0.1.dist-info/METADATA,sha256=yHOo-w3q5qI6Aurn5Z3Z24gH7lv3Mql231w-H3JE3Eg,2281
+DocumentInsightsGenerator-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+DocumentInsightsGenerator-0.1.dist-info/top_level.txt,sha256=pCREYNs6MWgeNrhXAPu2v5uNxulCxmY_vI-IRcoFCfk,32
+DocumentInsightsGenerator-0.1.dist-info/RECORD,,
