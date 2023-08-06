@@ -1,0 +1,9 @@
+meta.py,sha256=nQVEn9o9Q95-PZRuvJ89O6wDe6d7GvHM5migGgAEs9s,17
+notifier.py,sha256=E_MejE08j6fUcMf499GZScXNTQIJNsh7UdyLQBCzQc4,969
+replicator.py,sha256=K3TYerozIOi5CRci07zYmZVtLgBgB0WbIVDpZvI7oiM,3666
+replicator_cli-0.0.7.dist-info/LICENSE,sha256=ag5kCehipa4Cvmrz13j-IqxEOIKUXSUrkS3xaL6YWXk,1091
+replicator_cli-0.0.7.dist-info/METADATA,sha256=7mRGRHcHUh1Opbj68XYdYWkpr5hoihk_57DAoqnuGfk,2472
+replicator_cli-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+replicator_cli-0.0.7.dist-info/entry_points.txt,sha256=HnwGUXTazlzgW9LjLkuD2zoVM1GnfVZvM1SXHw-k5Ms,46
+replicator_cli-0.0.7.dist-info/top_level.txt,sha256=U-VrT_q4xT34gsj-lW1SZmbVCDyKyXzkEYqf2gLpGkU,25
+replicator_cli-0.0.7.dist-info/RECORD,,
