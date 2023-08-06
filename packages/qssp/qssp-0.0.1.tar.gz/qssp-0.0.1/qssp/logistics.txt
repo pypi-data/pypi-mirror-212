@@ -1,0 +1,45 @@
+TO DO: 
+
+General
+-------
+1. Recheck inline documentation
+2. Ensure PEP8 naming conventions
+
+hmm
+----
+1. Test
+
+q_objects
+------
+1. Test
+3. Implement partial trace
+4. Implement tensor product
+
+qshmm
+------
+1. Add documentation to qshmm
+
+utils.py
+-----------
+
+------------------------------------------
+
+TO ADD:
+
+qshmm
+------
+1. Adaptive Measurements
+2. Nonlocal Measurements
+
+msp
+----
+General methods for manipulation of nonunifilar HMMs
+1. Construct msp
+
+q_utils
+---
+1. Representation/manipulation of kets/bras rather than just density matrices
+
+Future Features
+---------------
+2. Change alphabet to labels as opposed to just integers
