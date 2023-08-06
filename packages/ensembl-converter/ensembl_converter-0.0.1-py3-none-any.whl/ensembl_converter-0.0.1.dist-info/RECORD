@@ -1,0 +1,9 @@
+Ensembl_converter/__init__.py,sha256=_K7Wd8bSuCHeRh9luytumtNRP1CjsUmJ5SUZk5keo4k,73
+Ensembl_converter/converter.py,sha256=1m9T__52t3k1OrjGOw-816ZbQtpw-jKP7GL3i3wdSKM,959
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_converter.py,sha256=rjCl5BYq7clTgh4WYrSQ3O952F9p05ZvgUC2Snl1Crw,358
+ensembl_converter-0.0.1.dist-info/LICENSE,sha256=k1uUZ25Ne_mz5L4Wb-Wkt3ieMEaoetnGrYPV6EGJG9g,1091
+ensembl_converter-0.0.1.dist-info/METADATA,sha256=OzTpJp6utlCWKx9N3WqWfdzPQFqGdle9n3f7fSFeEsk,2524
+ensembl_converter-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+ensembl_converter-0.0.1.dist-info/top_level.txt,sha256=OfwwvhFOH1noKSbc4CXN6qQdyugTWu664CcMS5wczUE,24
+ensembl_converter-0.0.1.dist-info/RECORD,,
