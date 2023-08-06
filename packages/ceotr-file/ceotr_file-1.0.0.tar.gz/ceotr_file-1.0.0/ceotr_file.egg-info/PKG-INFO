@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ceotr-file
+Version: 1.0.0
+Summary: Common python library for CEOTR data team
+Home-page: https://gitlab.oceantrack.org/ceotr-public/ceotr_app_common/ceotr_file
+Author: CEOTR
+Author-email: support@ceotr.ca
+License: GNU General Public License v3 (GPLv3)
+Description: UNKNOWN
+Platform: UNKNOWN
