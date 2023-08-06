@@ -1,0 +1,3 @@
+[console_scripts]
+gensp = generateStoredProcedure.main:main
+
