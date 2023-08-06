@@ -1,0 +1,8 @@
+README.md
+setup.py
+pipd/__init__.py
+pipd/pipd.py
+pipd.egg-info/PKG-INFO
+pipd.egg-info/SOURCES.txt
+pipd.egg-info/dependency_links.txt
+pipd.egg-info/top_level.txt
