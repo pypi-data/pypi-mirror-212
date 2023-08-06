@@ -1,0 +1,10 @@
+am4utils-0.1.1.dist-info/RECORD,,
+am4utils-0.1.1.dist-info/WHEEL,sha256=sXM-XIE6DqCcMDoHcTplp3GK_cVqvz4hBR9-s8f0eGI,113
+am4utils-0.1.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+am4utils-0.1.1.dist-info/METADATA,sha256=FYBOKo4coRK1ulhvNM7NYsGgU1zYfCE-gQm6fN05GY4,3033
+am4utils/libduckdb.dylib,sha256=yRpP2kbW9MQuse63HD5vGe2KZYf4KMn_Ww1Gq2_lIx0,83198704
+am4utils/__init__.py,sha256=67sNwsP8WRvRa3paQrXfmuqRuY2T8ffW05XE-Qg0wC4,34
+am4utils/_core.cpython-310-darwin.so,sha256=Ir2His8oSLPRNzFjdXYAwtmC09g8woYKsNUC_F2pcEc,327488
+am4utils/data/routes.parquet,sha256=MPazB8uXKBh4h4bu8vh1vDVMHqFlVLMR8hlkHXnCVuE,65886139
+am4utils/data/aircrafts.parquet,sha256=FW9bnHGY0rufgqZgyI3OiHJMuEsP9NzGWHFX9hND_ck,36127
+am4utils/data/airports.parquet,sha256=k4Qva2rqPBQOySmEsgULpYyylLreMzb_l-lwRnldr0E,274383
