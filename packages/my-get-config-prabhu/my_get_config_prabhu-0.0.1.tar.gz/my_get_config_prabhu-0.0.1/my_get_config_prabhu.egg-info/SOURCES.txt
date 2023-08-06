@@ -1,0 +1,8 @@
+setup.py
+my_first_package/__init__.py
+my_first_package/main.py
+my_get_config_prabhu.egg-info/PKG-INFO
+my_get_config_prabhu.egg-info/SOURCES.txt
+my_get_config_prabhu.egg-info/dependency_links.txt
+my_get_config_prabhu.egg-info/requires.txt
+my_get_config_prabhu.egg-info/top_level.txt
