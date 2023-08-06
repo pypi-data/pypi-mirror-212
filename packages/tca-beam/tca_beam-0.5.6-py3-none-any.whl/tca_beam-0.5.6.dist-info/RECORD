@@ -1,0 +1,16 @@
+tca_beam/__init__.py,sha256=1YHCuSAuZMm9O9X9AoW643vcrNMUVXzuo6JQpDjx-qA,173
+tca_beam/config.py,sha256=sREZq_kES1pvfuIW7KmAO4DxzCGlrpvpHCScHp2tMCw,282
+tca_beam/helpers.py,sha256=-Kijhp3brfgLWbLmFJsVA__vGHriJgFOUdRiG5MYCM8,273
+tca_beam/run.py,sha256=woddBRQ1rSLVT-CHquXBCW2hS6zZePF5wMgaD_RY6-U,2391
+tca_beam/tca_beam.py,sha256=tjSPGjebKk1ise0jXFahQfDfA_mInxYEfW_uOEeIJso,2616
+tca_beam/template_rendering.py,sha256=aOFCl9FspPRP2e1DfyZsxvspT8uxwKS5NUBkDxBhbbA,1615
+tca_beam/templates/AllPreviews.swift,sha256=nnSc7r4fXokgP-ckrSOIM7br6ikoiasB6aU5h6CJ0rc,628
+tca_beam/templates/OneFile.swift,sha256=XIQYoVkvIrSw-ggBICfRG8_Rj6yGplx9PcX06sjnlcA,86
+tca_beam/templates/TwoFile_ReducerPart.swift,sha256=q7WQtGYBiZHmedUS8fMLMrqn9efHgaADsDJocoNsVRs,52
+tca_beam/templates/TwoFile_ViewPart.swift,sha256=hPtR24qnGxgY-9lbVmrjbCG87RbDxPemLKWDa5opnq8,64
+tca_beam/templates/View.swift,sha256=uU98w-zNAC6keLY9Xe5aIDMy_wohNbGf1K_2HL1OeS8,723
+tca_beam/templates/ViewFeature.swift,sha256=b-ljNOUgVC55tXBl-W9XV6xnpm2_Sj1q5SNqSp_6dsM,463
+tca_beam-0.5.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tca_beam-0.5.6.dist-info/entry_points.txt,sha256=HT74FDglDF-Mj15bmqm3gL0Nsi-6vuYOjUc5F7wISI4,52
+tca_beam-0.5.6.dist-info/METADATA,sha256=abs8Lpr2-RBm3iyoLHFRwonN8KGGy2O-lkVULJ7rLt8,765
+tca_beam-0.5.6.dist-info/RECORD,,
