@@ -1,0 +1,8 @@
+ldap3
+gssapi
+dnspython
+pycryptodomex
+asn1crypto
+
+[dev]
+mypy
