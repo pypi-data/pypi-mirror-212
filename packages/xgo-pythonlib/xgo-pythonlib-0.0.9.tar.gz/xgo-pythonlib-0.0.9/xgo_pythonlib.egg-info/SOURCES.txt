@@ -1,0 +1,10 @@
+README.md
+setup.py
+xgo_pythonlib.egg-info/PKG-INFO
+xgo_pythonlib.egg-info/SOURCES.txt
+xgo_pythonlib.egg-info/dependency_links.txt
+xgo_pythonlib.egg-info/top_level.txt
+xgoedu/__init__.py
+xgoedu/xgoedu.py
+xgolib/__init__.py
+xgolib/xgolib.py
