@@ -1,0 +1,15 @@
+scdef/__init__.py,sha256=sxEsF06YUE4FVj_jlPWEiogQqdJhUrBuA0u6EjNF8DI,68
+scdef/bscdef.py,sha256=oBe6-Q6qazwyqy-67f4x2lb_TEcwsoOIC0tOmQe_U2o,10950
+scdef/iscdef.py,sha256=DIchNjAFFlbOOS5tWPoPorSG8b-bRrXEeArwKMMV-Lc,7953
+scdef/main.py,sha256=RWCinOcwrSgXRA63vpOyEbCLTt1YaHyUX2sPjMZS-P8,2993
+scdef/models/__init__.py,sha256=FbdisCVUNgSjqLd7qc9ueypRZ06beT_IUgq8ZuQXkBM,29
+scdef/models/integrated.py,sha256=tMJ_c2Ca_YXGKDZUTprGTPqfsby-EQ8YbWu_6UjW6mU,6928
+scdef/models/joint.py,sha256=5bQemV4PCHatpoaqxF8os6BfFkFIjqp0yyb6CdKw-XI,6892
+scdef/models/single.py,sha256=JmKj-mTYNm0lix_SXJV4hybrkWYVViqUq61c9MKV87g,21
+scdef/models/spatial.py,sha256=fSY5vf12wwvivZNDk8EqJLP0K2Yr6QXbarOgX7IetwE,17568
+scdef/scdef.py,sha256=67Tl4d5U3oNcleblMtfkFO6krO9zJKcTJuF0E18aTos,43343
+scdef/util.py,sha256=GvqpYRvK-JIqR24L0rJEr_xP0psYqdMXWnuKvnt5218,3108
+scdef-0.0.1.dist-info/entry_points.txt,sha256=CxfY367BKjiR9gb5s7aARzhdzBFcQ_Y1aWYO06P7WFA,36
+scdef-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+scdef-0.0.1.dist-info/METADATA,sha256=3HqJxYzn_tKHghi4mKQPH-pcLu-J2lUlAPCarKU_krc,1448
+scdef-0.0.1.dist-info/RECORD,,
