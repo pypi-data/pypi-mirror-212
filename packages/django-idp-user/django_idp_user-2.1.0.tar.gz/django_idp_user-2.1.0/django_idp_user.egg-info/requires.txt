@@ -1,0 +1,5 @@
+Django
+boto3
+djangorestframework
+pyjwt==2.4.0
+requests
