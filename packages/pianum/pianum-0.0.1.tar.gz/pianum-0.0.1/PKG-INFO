@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: pianum
+Version: 0.0.1
+Summary: Music theory tools
+Project-URL: Homepage, https://github.com/chemtrails/pianum
+Project-URL: Bug Tracker, https://github.com/chemtrails/pianum/issues
+License-File: LICENSE
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Install
+
+```bash
+pip install pianum
+```
+
+Use
+
+```py
+import pianum as pn
+from pianum.struct import Interval, Scale, Chord
+
+root = 3
+
+interval = pn.interval(root, Interval.M3)
+print(interval)
+
+scale = pn.scale(root, Scale.Major)
+print(scale)
+
+chord = pn.chord(root, Chord.Major7)
+print(chord)
+
+inversion = pn.invert_up(chord)
+print(inversion)
+
+notes = pn.ints_to_notes(inversion)
+print(notes)
+```
+
+```bash
+[3, 7]
+[3, 5, 7, 8, 10, 12, 14]
+[3, 7, 10, 14]
+[7, 10, 14, 15]
+['E', 'G', 'B', 'C']
+```
