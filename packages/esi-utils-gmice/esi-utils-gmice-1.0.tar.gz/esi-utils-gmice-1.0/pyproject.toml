@@ -1,0 +1,54 @@
+[project]
+name = "esi-utils-gmice"
+dynamic = ["version"]
+description = "USGS Automated Ground Motion Processing Software"
+authors = [
+    {name = "Bruce Worden", email="cbworden@contractor.usgs.gov"},
+    {name = "Eric Thompson", email="emthompsone@usgs.gov"},
+    {name = "Mike Hearne", email="mhearne@usgs.gov"},
+]
+license = {file = "LICENSE.md"}
+readme = "README.md"
+requires-python = ">=3.8,<3.11"
+
+# Requirements:
+dependencies = [
+    "numpy>=1.21",
+    "openquake.engine>=3.14",
+]
+
+[project.optional-dependencies]
+dev = [
+    "build>=0.7.0",
+    "black>=21",
+    "flake8>=3.9",
+    "ipython>=7.26",
+    "pylint>=2.17",
+]
+test = [
+    "pytest>=6.2",
+    "pytest-cov>=2.12",
+    "pytest-console-scripts>=1.2",
+    "vcrpy>=4.1",
+]
+build = [
+    "build",
+    "twine",
+    "check-wheel-contents",
+]
+
+
+[build-system]
+requires = [
+  "setuptools>=42",
+  "wheel",
+  "setuptools_scm[toml]>=3.4",
+  "numpy",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools_scm]
+

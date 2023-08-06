@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+src/esi_utils_gmice.egg-info/PKG-INFO
+src/esi_utils_gmice.egg-info/SOURCES.txt
+src/esi_utils_gmice.egg-info/dependency_links.txt
+src/esi_utils_gmice.egg-info/requires.txt
+src/esi_utils_gmice.egg-info/top_level.txt
+src/gmice/ak07.py
+src/gmice/fm11.py
+src/gmice/gmice.py
+src/gmice/wald99.py
+src/gmice/wgrw12.py
