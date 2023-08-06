@@ -1,0 +1,9 @@
+plothist/__init__.py,sha256=9M1j1UzePOFnpHaSEj-5HtF6335zMXDDzN_6T826TtA,1183
+plothist/generate_dummy_data.py,sha256=emiS9laViGb6mTFRBW4Y39GC7uOklCul7bfU6S82SPU,801
+plothist/hep_plotters.py,sha256=8CuuNIpRC2CQMcfQ2CDOu13H_Llqb97eywk6zJvsDVw,9881
+plothist/plotters.py,sha256=ctdkwLwn9sZCitpLzxeKMZBPcpKFd_6K9CiSW3lgKT8,21128
+plothist/style.mplstyle,sha256=q-6p3BL68ngAeAEd0z7s2kUjGL9oZ_bnhJ3Swvp0xsM,2406
+plothist-0.1.dist-info/LICENSE,sha256=3x4ZYY2YTYaoCKbmWtUa9Yernv-Zx4n9vI__4ed1Gus,1518
+plothist-0.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+plothist-0.1.dist-info/METADATA,sha256=gvl4AhsfcDkDk_edtFUOG9VsrUYF-l5fqKRsb3vgV_s,670
+plothist-0.1.dist-info/RECORD,,
