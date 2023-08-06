@@ -1,0 +1,9 @@
+README.md
+setup.py
+jgp_utils/__init__.py
+jgp_utils/numero_letras.py
+jgp_utils/utils.py
+jgp_utils.egg-info/PKG-INFO
+jgp_utils.egg-info/SOURCES.txt
+jgp_utils.egg-info/dependency_links.txt
+jgp_utils.egg-info/top_level.txt
