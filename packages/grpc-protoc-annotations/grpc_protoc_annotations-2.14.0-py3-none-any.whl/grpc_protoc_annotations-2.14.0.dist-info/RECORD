@@ -1,0 +1,8 @@
+protoc_gen_openapiv2/options/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protoc_gen_openapiv2/options/annotations_pb2.py,sha256=SlQXLCKFrbsqkGdBhBDAL-ti2AV_7ITTAcprowYY24E,2712
+protoc_gen_openapiv2/options/openapiv2_pb2.py,sha256=Y_UZ486H3hzL9uIMHqyJx7vkBJ9eIABL4Mdhb0r3YbU,19672
+grpc_protoc_annotations-2.14.0.dist-info/LICENSE,sha256=IQMh1db0BhmcDV_m-fUFyQyniJBH2_lyQcGuOrk-Bas,1515
+grpc_protoc_annotations-2.14.0.dist-info/METADATA,sha256=8nsWTO5iVekr9skEmupeTIzZgUhTkD_X4BWgmomYnAs,1433
+grpc_protoc_annotations-2.14.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+grpc_protoc_annotations-2.14.0.dist-info/top_level.txt,sha256=vC0QYHo25nxnMrtiYQqniF4Uu5V-4ldiP99kizllTso,29
+grpc_protoc_annotations-2.14.0.dist-info/RECORD,,
