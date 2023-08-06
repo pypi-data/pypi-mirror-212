@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: lassen
+Version: 0.1.0
+Summary: Common webapp scaffolding.
+Author: Pierce Freeman
+Author-email: pierce@freeman.vc
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: SQLAlchemy (>=2.0.15,<3.0.0)
+Requires-Dist: alembic (>=1.11.1,<2.0.0)
+Requires-Dist: alembic-autogenerate-enums (>=0.1.1,<0.2.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: fastapi (>=0.96.0,<0.97.0)
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Requires-Dist: psycopg2 (>=2.9.6,<3.0.0)
+Requires-Dist: pydantic (>=1.10.8,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# lassen
+
+**40.4881° N, 121.5049° W**
+
+Core utilities for MonkeySee web applications.
+
+Not guaranteed to be backwards compatible, use at your own risk.
+
+## Structure
+
+**Stores:** Each model is expected to have its own store. Base classes that provide standard logic are provided by `lassen.store`
+- StoreBase: Base class for all stores
+- StoreFilterMixin: Mixin for filtering stores that specify an additional schema to use to filter
+
+**Migrations:** Lassen includes a templated alembic.init and env.py file. Client applications just need to have a `migrations` folder within their project root. After this you can swap `poetry run alembic` with `poetry run migrate`.
+
+```sh
+poetry run migrate upgrade head
+```
+
+**Settings:** Application settings should subclass our core settings. This provides a standard way to load settings from environment variables and includes common database keys.
+
+```python
+from lassen.core.config import CoreSettings, register_settings
+
+@register_settings
+class ClientSettings(CoreSettings):
+    pass
+```
+
+**Schemas:** For helper schemas when returning results via API, see [lassen.schema](./lassen/schema.py).
+
+## Development
+
+```sh
+poetry install
+
+createuser lassen
+createdb -O lassen lassen_db
+createdb -O lassen lassen_test_db
+```
+
+Unit Tests:
+
+```sh
+poetry run pytest
+```
+
