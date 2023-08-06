@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/BroadSword/BroadSword.py
+src/BroadSword/__init__.py
+src/BroadSword/libmatrices.dylib
+src/BroadSword/libmatrices.so
+src/BroadSword.egg-info/PKG-INFO
+src/BroadSword.egg-info/SOURCES.txt
+src/BroadSword.egg-info/dependency_links.txt
+src/BroadSword.egg-info/requires.txt
+src/BroadSword.egg-info/top_level.txt
+src/BroadSword.egg-info/zip-safe
