@@ -1,0 +1,5 @@
+from StrangeSerializerLab3.StrangeXML.StrangeXmlSerializer import StrangeXmlSerializer
+from StrangeSerializerLab3.StrangeJSON.StrangeJsonSerializer import StrangeJsonSerializer
+import StrangeSerializerLab3.AdditionalFunctions
+import StrangeSerializerLab3.StrangeJSON.parser
+import StrangeSerializerLab3.StrangeXML.parser
