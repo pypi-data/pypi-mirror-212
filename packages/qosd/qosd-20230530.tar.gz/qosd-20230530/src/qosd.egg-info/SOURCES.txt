@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/qosd.py
+src/qosd.egg-info/PKG-INFO
+src/qosd.egg-info/SOURCES.txt
+src/qosd.egg-info/dependency_links.txt
+src/qosd.egg-info/entry_points.txt
+src/qosd.egg-info/requires.txt
+src/qosd.egg-info/top_level.txt
