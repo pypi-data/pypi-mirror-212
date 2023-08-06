@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+ezlab.egg-info/PKG-INFO
+ezlab.egg-info/SOURCES.txt
+ezlab.egg-info/dependency_links.txt
+ezlab.egg-info/top_level.txt
