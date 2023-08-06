@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: amazon-scrape-toolkit
+Version: 0.0.1
+Summary: Some Helpful Classes and Functions for Scraping Amazon Data
+Home-page: https://github.com/KidCoderT/amazon-scraper
+Author: Tejas
+License: MIT
+Platform: any
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet

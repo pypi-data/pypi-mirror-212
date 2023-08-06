@@ -1,0 +1,9 @@
+README.rst
+setup.py
+amazon_scrape_toolkit.egg-info/PKG-INFO
+amazon_scrape_toolkit.egg-info/SOURCES.txt
+amazon_scrape_toolkit.egg-info/dependency_links.txt
+amazon_scrape_toolkit.egg-info/requires.txt
+amazon_scrape_toolkit.egg-info/top_level.txt
+src/__init__.py
+src/main.py
