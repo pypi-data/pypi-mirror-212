@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: servicex-client
+Version: 0.1.0a2
+Summary: 
+Author: Ben Galewsky
+Author-email: bengal1@illinois.edu
+Requires-Python: >=3.8,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: func_adl (==3.2.5-alpha.1)
+Requires-Dist: google-auth (>=2.17,<3.0)
+Requires-Dist: httpx (>=0.24,<0.25)
+Requires-Dist: miniopy-async (>=1.15,<2.0)
+Requires-Dist: pydantic (>=1.10,<2.0)
+Requires-Dist: qastle (>=0.16,<0.17)
+Requires-Dist: requests (>=2.31,<3.0)
+Requires-Dist: tinydb (>=4.7,<5.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Requires-Dist: types-PyYAML (>=6.0,<7.0)
+Description-Content-Type: text/markdown
+
+# servicex_client
+Python SDK and CLI Client for ServiceX
+
