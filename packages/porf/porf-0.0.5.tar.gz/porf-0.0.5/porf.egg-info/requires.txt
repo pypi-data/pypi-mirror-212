@@ -1,0 +1,8 @@
+pandas
+
+[develop]
+sphinx
+sphinx_rtd_theme
+sphinx_autodoc_typehints
+nbsphinx
+myst_parser

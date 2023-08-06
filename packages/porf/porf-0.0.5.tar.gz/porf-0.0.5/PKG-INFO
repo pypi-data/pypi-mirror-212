@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: porf
+Version: 0.0.5
+Summary: Parse OpenRoad Files - RPT file parser for Openlane OpenROAD Static Timing Analysis output files.
+Home-page: https://github.com/daquintero/porf
+Author: Dario Quintero
+Author-email: darioaquintero@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: develop
+License-File: LICENSE
+
+# PORF
+
+Parse OpenRoad Files - A Python Pandas-based report file (RPT) parser for Openlane OpenROAD Static Timing Analysis (STA) output files. 
+
+
+
+## Examples
+
+Basic Usage
+
+```python
+import porf
+
+parse_file = porf.OpenSTAParser(file_address="./docs/examples/25-rcx_sta.rpt")
+parse_run = porf.RunAnalyser(run_directory="./docs/examples/")
+```
+
+## Installation
+
+### Quick Start
+
+Install via `pip`
+
+```bash
+$ pip install porf
+```
+
+Then you can:
+
+```python
+import porf
+```
+
+Local development install for most recent version. Contributions very welcome.
+```bash
+$ git clone https://github.com/daquintero/porf.git
+$ cd qups
+$ pip install -e .[develop]
+```
