@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+DSE_Software_Connection_Tester.egg-info/PKG-INFO
+DSE_Software_Connection_Tester.egg-info/SOURCES.txt
+DSE_Software_Connection_Tester.egg-info/dependency_links.txt
+DSE_Software_Connection_Tester.egg-info/top_level.txt
+dseconnectiontester/__init__.py
