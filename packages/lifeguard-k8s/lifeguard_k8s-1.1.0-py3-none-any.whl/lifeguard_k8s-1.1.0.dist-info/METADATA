@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: lifeguard-k8s
+Version: 1.1.0
+Summary: Lifeguard integration with Kubernetes
+Home-page: https://github.com/LifeguardSystem/lifeguard-k8s
+Author: Diego Rubin
+Author-email: contact@diegorubin.dev
+License: GPL2
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Monitoring
+Description-Content-Type: text/markdown
+Requires-Dist: lifeguard
+Requires-Dist: kubernetes
+
+# Lifeguard K8S
+
+Integration with Kubernetes
+
+## Validations
+
+- __pods_validation__: check if all pods are running
+
+**Important**:
+To use Kubernetes APIs into the valiations, you need to create a service account and a cluster role binding. Example of a valid manifest:
+
+```yaml
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: lifeguard-sa
+---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: lifeguard-roles
+rules:
+  - apiGroups: [""]
+    resources: ["nodes"]
+    verbs: ["get", "list"]
+  - apiGroups: [""]
+    resources: ["pods", "pods/exec"]
+    verbs: ["get", "list"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: lifeguard-rolebinding
+subjects:
+  - kind: ServiceAccount
+    name: lifeguard-sa
+    namespace: namespace
+roleRef:
+  kind: ClusterRole
+  name: lifeguard-roles
+  apiGroup: rbac.authorization.k8s.io
+```
+
