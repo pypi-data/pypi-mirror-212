@@ -1,0 +1,17 @@
+setup.py
+TorchSisso/FC_copy.py
+TorchSisso/FC_copy_working.py
+TorchSisso/FeatureSpaceConstruction.py
+TorchSisso/Feature_space_construction_1.py
+TorchSisso/SISSORegressor.py
+TorchSisso/SISSORegressor_L1L0.py
+TorchSisso/SISSO_REGRESSOR_TORCH.py
+TorchSisso/SISSO_Torch.py
+TorchSisso/SISSO_Torch_1.py
+TorchSisso/__init__.py
+TorchSisso/testRegressor.py
+TorchSisso.egg-info/PKG-INFO
+TorchSisso.egg-info/SOURCES.txt
+TorchSisso.egg-info/dependency_links.txt
+TorchSisso.egg-info/requires.txt
+TorchSisso.egg-info/top_level.txt
