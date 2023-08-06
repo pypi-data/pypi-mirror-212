@@ -1,0 +1,125 @@
+syntax = "proto2";
+import "google/protobuf/any.proto";
+
+package taw;
+
+message Dict {
+  repeated string keys = 1;
+  repeated bytes values = 2;
+}
+message BoolDict {
+  repeated string keys = 1;
+  repeated bool values = 2;
+}
+enum Direction {
+  NORTH = 0;
+  SOUTH = 1;
+  EAST = 2;
+  WEST = 3;
+  UP = 4;
+  DOWN = 5;
+}
+
+message Script {
+  optional string label = 1;
+    
+  enum ScriptType {
+    NATIVE_PY = 0;
+//    TACODE = 1; // For future use, possibly
+  }
+    
+  message Code {
+    required string script = 1;
+    optional ScriptType type = 2 [default = NATIVE_PY];
+  }
+    
+  required Code code = 4;
+}
+
+message Room {
+  required string name = 1;
+  required string iname = 2;
+  required string desc = 3;
+  repeated Room exits = 4;
+  repeated Object items = 5;
+}
+
+message Object {
+  required string name = 1;
+  required string sdesc = 2;
+  required string ldesc = 3;
+  required Room loc = 4;
+  required string iname = 5;
+  optional BoolDict flags = 6;
+}
+
+message Item {
+  required string name = 1;
+  required string sdesc = 2;
+  required string ldesc = 3;
+  required Room loc = 4;
+  required string iname = 5;
+  optional BoolDict flags = 6;
+}
+
+message World {
+  message Command {
+    repeated string aliases = 1;
+    required Script code = 2;
+  }
+  repeated Command commands = 1;
+  required Room room = 2;
+}
+
+message Save {
+  required World world = 1;
+  optional Dict saves = 2;
+}
+
+message Player {
+  required string name = 1;
+  required Room loc = 2;
+  required Room inventory = 3;
+  required bool colored = 4;
+}
+
+message Entity {
+  required string name = 1;
+  required Room loc = 2;
+  required Room inventory = 3;
+}
+
+message Event {
+  repeated google.protobuf.Any target = 1;
+  repeated google.protobuf.Any action = 2;
+}
+
+message MovePlayerEvent {
+  required Player target = 1;
+  required Room to = 2;
+}
+
+message MoveObjectEvent {
+  required Object target = 1;
+  required Room to = 2;
+}
+
+message MoveItemEvent {
+  required Item target = 1;
+  required Room to = 2;
+}
+
+message AddExitEvent {
+  required Room target = 1;
+  required Direction dir = 2;
+  required Room to = 3;
+}
+
+message LocalChatEvent {
+  required Room source = 1;
+  required string mess = 2;
+}
+
+message GlobalChatEvent {
+  required string mess = 1;
+}

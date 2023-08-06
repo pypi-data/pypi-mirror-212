@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: txtadv-nightly
+Version: 110105103104116108121110105103104116108121.2
+Summary: The nightly version of txtadv, a feature-rich text adventure library!
+License: MIT
+Author: sdft
+Author-email: averse.abfun@gmail.com
+Requires-Python: >=3.10.0,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# txtadv_nightly
+<<<<<<< Updated upstream
+txtadv_nightly is the nightly version of txtadv, the feature-rich text adventure library! Check out txtadv at (pypi.org/project/txtadv/)[https://pypi.org/project/txtadv/]
+=======
+txtadv_nightly is the nightly version of txtadv, the feature-rich text adventure library! Check out txtadv at [pypi.org/project/txtadv](https://pypi.org/project/txtadv)
+>>>>>>> Stashed changes
+
