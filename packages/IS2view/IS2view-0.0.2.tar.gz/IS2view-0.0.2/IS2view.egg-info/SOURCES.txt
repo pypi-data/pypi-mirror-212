@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+IS2view/IS2view.py
+IS2view/__init__.py
+IS2view/convert.py
+IS2view/io.py
+IS2view/utilities.py
+IS2view/version.py
+IS2view.egg-info/PKG-INFO
+IS2view.egg-info/SOURCES.txt
+IS2view.egg-info/dependency_links.txt
+IS2view.egg-info/requires.txt
+IS2view.egg-info/top_level.txt
