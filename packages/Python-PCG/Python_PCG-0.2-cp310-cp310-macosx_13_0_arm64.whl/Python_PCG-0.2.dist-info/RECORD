@@ -1,0 +1,17 @@
+PCGCPP.cpython-310-darwin.so,sha256=THK_ucOlz2kqB2X7aA7Dnx1S0P1DwTQLC2grA4W-WKU,53513
+pcg-cpp/include/pcg_extras.hpp,sha256=shAEY_nfpttG6hEiNc7PLiBpAKlsM9v0TtQdjybgkKI,20333
+pcg-cpp/include/pcg_random.hpp,sha256=6nHfaTQ7NtISt2q8ajuiHXdlGJPodVjWM_SFTDeATKM,73456
+pcg-cpp/include/pcg_uint128.hpp,sha256=tirZ6VWDZpnJDNeKAhh-36ZTjW53XRs6kRAv1_AOMKE,28354
+py_pcg/PCGCPP.pyi,sha256=8o-SK6lFJS67BBSMsg16PHyzTRJBDg-Yfakk8AKzU3A,527
+py_pcg/__init__.py,sha256=M6t0LOjra4TC0odSyM8aOlDvI0AwqntBOmlOAWrMYVk,25
+py_pcg/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_pcg/normal_cdf.cpp,sha256=5ICRTBKGeuEnZNRX98-oulSBRZDcOhtQlsCj5iCo_w0,1118
+py_pcg/normal_cdf.hpp,sha256=UciuBcR4AJPrZ7iq4A6z693Rm1lKPP__m52or6AJfrA,786
+py_pcg/pcg32.py,sha256=jzFxAX48KdTrG5_wNwbpvU6eDArGWRV-vrFiJSaSe5E,1911
+py_pcg/pcg32.pyi,sha256=Kx6APSmSSCh5OlT9focYqgcZrbp59PLDlsI805dKLfQ,459
+py_pcg/pcg_wrapper.cpp,sha256=EjDBXFbU71wGf60AuSkGqB0TGxCWybacoQzxqQPoO-4,3490
+Python_PCG-0.2.dist-info/LICENSE,sha256=wBSuekGFrj2EZ93RiidrKm0s92F4l9mv1mPbiPLkKss,1061
+Python_PCG-0.2.dist-info/METADATA,sha256=Duf04pzv_TtLJXdc0zqzR9y55stAN3fh2jnR-uiEb_U,1189
+Python_PCG-0.2.dist-info/WHEEL,sha256=LcjwYWQh_Km3cEepT9QVbUXQ44bxhemD0a4p7Q0cPjE,110
+Python_PCG-0.2.dist-info/top_level.txt,sha256=b3tRJs-mo04NXKyDwPMZtCcCaHCq_6SsSdklEy0TkqQ,22
+Python_PCG-0.2.dist-info/RECORD,,
