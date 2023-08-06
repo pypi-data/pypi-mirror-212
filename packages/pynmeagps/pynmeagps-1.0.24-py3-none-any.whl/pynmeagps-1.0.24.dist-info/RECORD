@@ -1,0 +1,16 @@
+pynmeagps/__init__.py,sha256=NHnFFpxF7VXF2G2D1v9_MS2jHGjbsEuV11XVH-byYrM,601
+pynmeagps/_version.py,sha256=nAKcU22NAWHVREVnXZxaCbSAPYALo3z-FmQp8L2Hw6o,162
+pynmeagps/exceptions.py,sha256=fDpzwA7UoAlSMXZSmeCadRvAw-nh8w4GjpnNjnRzioc,625
+pynmeagps/nmeahelpers.py,sha256=gUW0SO8T4LKklXhauGwloxVvbJZQIq28W1GQ8UuxqTk,15256
+pynmeagps/nmeamessage.py,sha256=uuJUIjNKXc8PUypmtkn_zPO5lnjpY3UCUdaQfJwMCaU,17108
+pynmeagps/nmeareader.py,sha256=ICmQVidI-h0sREvH6so2sEEV7yyIOAjq4d70NjDqkQ0,7968
+pynmeagps/nmeatypes_core.py,sha256=h82SXKS3hHPvAApdW_2QaDjKY1Rr5bnj77PJoqODC58,12348
+pynmeagps/nmeatypes_get.py,sha256=mswjaZSbo53csLF33ZEzz_eOgUocOTudMmxUTXsyE3Y,27210
+pynmeagps/nmeatypes_poll.py,sha256=pC9QY_LWaAx1sgeNQsOeNI-z5tNKg8Qumw6tZWO8190,4345
+pynmeagps/nmeatypes_set.py,sha256=Trt7C7KqhMLTLCFj0fzMMYgQVTSezCQTNwph_wT9JBI,3116
+pynmeagps/socket_stream.py,sha256=LzwLGO3ak4EkxP70Q2pK-8hd7_BOGG8MBYSuHGXbEP4,2465
+pynmeagps-1.0.24.dist-info/LICENSE,sha256=usDKU6OiUtz3PBS6Gve5fqLJdaNLQ1roBgPfpzoc06g,1613
+pynmeagps-1.0.24.dist-info/METADATA,sha256=ywp0zGScXInn6wH3JzWxPkjBheJO2o2V-tr6D_zrSpU,20343
+pynmeagps-1.0.24.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pynmeagps-1.0.24.dist-info/top_level.txt,sha256=QAkoBItnP9Flz4Zaf4TiiJZgSWP5r0bVUgqWHl6iSuM,10
+pynmeagps-1.0.24.dist-info/RECORD,,
