@@ -1,0 +1,11 @@
+torch
+
+[dev]
+black
+isort
+pytest
+pytest_mock
+sphinx
+sphinx-copybutton
+sphinx-gallery
+sphinx-tabs

@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: hypll
+Version: 0.0.1
+Summary: A framework for hyperbolic learning in PyTorch
+Provides-Extra: dev
+License-File: LICENSE
