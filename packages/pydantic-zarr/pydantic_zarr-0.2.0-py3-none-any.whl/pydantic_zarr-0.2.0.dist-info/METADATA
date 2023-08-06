@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pydantic-zarr
+Version: 0.2.0
+Summary: 
+Author: Davis Vann Bennett
+Author-email: davis.v.bennett@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.8,<2.0.0)
+Requires-Dist: zarr (>=2.14.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# pydantic-zarr
+[Pydantic](https://docs.pydantic.dev/1.10/) models for [Zarr](https://zarr.readthedocs.io/en/stable/index.html). Not stable. Do not use in production.
+
+## About
+This library uses pydantic models to define a storage-independent JSON-serializable model of a [Zarr](https://zarr.readthedocs.io/en/stable/index.html) hierarchy, i.e. a tree of groups and arrays. This representation of the hierarchy can be derived from, and serialized to, any zarr store. These models can also be validated.
+
+
+
