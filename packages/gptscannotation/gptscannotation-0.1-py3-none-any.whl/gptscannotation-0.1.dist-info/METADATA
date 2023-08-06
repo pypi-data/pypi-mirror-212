@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gptscannotation
+Version: 0.1
+Summary: Simple package for asking OpenAI GPT to do the scRNA-seq annotation based on the gene signatures
+Author: Ran Ran
+Author-email: andran@umich.edu
+Requires-Dist: scanpy (==1.9.1)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: anndata (==0.8.0)
+Requires-Dist: scikit-image
+Requires-Dist: openai
+
