@@ -1,0 +1,9 @@
+README.md
+setup.py
+./spepper/__init__.py
+spepper/__init__.py
+spepper.egg-info/PKG-INFO
+spepper.egg-info/SOURCES.txt
+spepper.egg-info/dependency_links.txt
+spepper.egg-info/requires.txt
+spepper.egg-info/top_level.txt
