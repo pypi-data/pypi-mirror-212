@@ -1,0 +1,8 @@
+stegonosaurus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stegonosaurus/stegoexceptions.py,sha256=Km2YmBZekykYO8SfJA1aeo59mDMCyJFeFa4dDKALqNs,814
+stegonosaurus/stegofunctions.py,sha256=Qzzi2f49YxmTiZl1YllFjv5k775GfZYHpYdBOy4S71I,4722
+stegonosaurus/stegoutils.py,sha256=oPUETo2trqaV9iRrjpJIhuz88pcaGi99bvNgXH1lC5o,3042
+stegonosaurus-1.2.3.dist-info/METADATA,sha256=ZhOEPgc1k9TLbbtszbzLsW2FHqN9wTi0yat6KxoXtgk,2915
+stegonosaurus-1.2.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+stegonosaurus-1.2.3.dist-info/top_level.txt,sha256=YLFUar-slFwVr7FDYXnhU2pahgOl9aznWIxgd_zgCgQ,14
+stegonosaurus-1.2.3.dist-info/RECORD,,
