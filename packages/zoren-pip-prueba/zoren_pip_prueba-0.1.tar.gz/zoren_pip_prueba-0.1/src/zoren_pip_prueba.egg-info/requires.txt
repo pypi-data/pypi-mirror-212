@@ -1,0 +1,6 @@
+pandas
+tk
+Editor
+matplotlib
+IPython
+Editor

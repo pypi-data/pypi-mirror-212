@@ -1,0 +1,9 @@
+LICENSE.rst
+README.md
+setup.cfg
+setup.py
+src/zoren_pip_prueba.egg-info/PKG-INFO
+src/zoren_pip_prueba.egg-info/SOURCES.txt
+src/zoren_pip_prueba.egg-info/dependency_links.txt
+src/zoren_pip_prueba.egg-info/requires.txt
+src/zoren_pip_prueba.egg-info/top_level.txt
