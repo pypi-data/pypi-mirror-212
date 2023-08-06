@@ -1,0 +1,14 @@
+pyproject.toml
+setup.cfg
+setup.py
+src/hibp_py/ad.py
+src/hibp_py/api.py
+src/hibp_py/args.py
+src/hibp_py/main.py
+src/hibp_py/report.py
+src/hibp_py.egg-info/PKG-INFO
+src/hibp_py.egg-info/SOURCES.txt
+src/hibp_py.egg-info/dependency_links.txt
+src/hibp_py.egg-info/not-zip-safe
+src/hibp_py.egg-info/requires.txt
+src/hibp_py.egg-info/top_level.txt
