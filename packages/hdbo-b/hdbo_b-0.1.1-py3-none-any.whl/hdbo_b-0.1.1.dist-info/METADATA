@@ -1,0 +1,134 @@
+Metadata-Version: 2.1
+Name: hdbo-b
+Version: 0.1.1
+Summary: High-Dimentional Bayesian Benchmark (HDBO-B)
+Home-page: https://github.com/yiyuiii/hdbo-b
+License: MIT
+Keywords: hdbo,benchmark
+Author: yiyuiii
+Author-email: yiyuiii@foxmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: alebo
+Provides-Extra: hebo
+Requires-Dist: botorch (>=0.8.5,<0.9.0)
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
+Requires-Dist: numpy (>=1.21.5,<2.0.0)
+Requires-Dist: pillow (>=9.2.0,<10.0.0)
+Requires-Dist: scipy (>=1.9.1,<2.0.0)
+Project-URL: Documentation, https://github.com/yiyuiii/hdbo-b#readme
+Project-URL: Repository, https://github.com/yiyuiii/hdbo-b
+Description-Content-Type: text/markdown
+
+<!--
+ * @Author         : yiyuiii
+ * @Date           : 2023-06-03 20:00:00
+ * @LastEditors    : yiyuiii
+ * @LastEditTime   : 2023-06-06 20:00:00
+ * @Description    : None
+ * @GitHub         : https://github.com/yiyuiii/HDBO-B
+-->
+
+<!-- markdownlint-disable MD033 MD036 MD041 -->
+
+<div align="center">
+
+# HDBO-B: High Dimensional Bayesian Optimization Benchmark
+
+</div>
+
+<p align="center">
+<a href="https://raw.githubusercontent.com/Yiyuiii/HDBO-B/master/LICENSE"><img src="https://img.shields.io/github/license/Yiyuiii/HDBO-B.svg" alt="license"></a>
+<a href="https://pypi.python.org/pypi/HDBO-B"><img src="https://img.shields.io/pypi/v/HDBO-B.svg" alt="pypi"></a>
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+<img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python">
+</p>
+
+**HDBO-B**, a generalized and unified benchmark for High Dimensional Bayesian Optimization, is including testing functions, example algorithms and more examples. 
+
+## :gear: Installation
+
+We recommend using [CONDA](https://www.anaconda.com/) to isolate Python environments and their packages, this protects you from potential package version conflicts.
+
+To install HDBO-B package, choose one below:
+
+- `git clone https://github.com/yiyuiii/HDBO-B && cd HDBO-B && pip install -e .` (You may get example codes **ONLY** by this way.)
+- `pip install hdbo-b`
+- `wget https://github.com/Yiyuiii/HDBO-B/releases/download/whl/hdbo_b-0.1.0-py3-none-any.whl && pip install hdbo_b-0.1.0-py3-none-any.whl`
+
+In case we use HEBO 0.3.5 for experiments and there is 0.3.2 on PyPI currently, user should manually install:
+- `git clone https://github.com/huawei-noah/HEBO && cd HEBO/HEBO && pip install -e .`
+
+## :rocket: Quick Start
+
+Uncomment lines in `test.py`, and run `python test.py`.
+
+User may also check codes in folder `./example`.
+
+## :wrench: Details
+
+### Test Functions
+
+To import hand-designed 30 test functions: 
+
+```python
+from HDBOBenchmark import TestFuncs as func_list
+```
+
+We have designed a stricter framework for functions and algorithms, 
+This brings a lot of convenience to scaling, while there are a bit more difficulties in getting started.
+Check them out in
+- `./HDBOBenchmark/base/FunctionBase.py`
+- `./HDBOBenchmark/AdditiveFunction.py`
+- `./example/wrapper/hebo_wrapper.py`
+
+### Bayesian Optimization Algorithms
+
+Algorithms can be found in `./examples/algorithms` (more original) and `./examples/wrapper` (directly imported by `./examples/optimize.py`), including
+
+- GP(Gaussian Process) + UCB(Upper Confidence Bound) Implementation with [BOTorch](https://github.com/pytorch/botorch)
+> M. Balandat, B. Karrer, D. R. Jiang, S. Daulton, B. Letham, A. G. Wilson, and E. Bakshy. BoTorch: A Framework for Efficient Monte-Carlo Bayesian Optimization. Advances in Neural Information Processing Systems 33, 2020.
+
+- GP/GPy(warped GP)/gumbel/... + MACE(Multi-objective ACquisition function Ensemble) with [HEBO](https://github.com/huawei-noah/HEBO/tree/master/HEBO)
+> Cowen-Rivers, Alexander I., et al. HEBO: Pushing The Limits of Sample-Efficient Hyperparameter Optimisation. Journal of Artificial Intelligence Research, 2022.
+
+- Python implementation of [Add-GP-UCB](https://github.com/kirthevasank/add-gp-bandits)
+> Kandasamy K, Schneider J, Póczos B. High dimensional Bayesian optimisation and bandits via additive models. International conference on machine learning, 2015.
+
+- Python implementation of [REMBO](https://github.com/ziyuw/rembo)
+> Wang Z, Hutter F, Zoghi M, et al. Bayesian optimization in a billion dimensions via random embeddings. Journal of Artificial Intelligence Research, 2016.
+
+- Wrapper of [ALEBO](https://github.com/facebookresearch/alebo)
+> Letham B, Calandra R, Rai A, et al. Re-examining linear embeddings for high-dimensional Bayesian optimization. Advances in neural information processing systems, 2020.
+
+- Wrapper of [TuRBO](https://github.com/uber-research/TuRBO)
+> Eriksson D, Pearce M, Gardner J, et al. Scalable global optimization via local bayesian optimization. Advances in neural information processing systems, 2019.
+
+- Wrapper of [SAASBO](https://github.com/martinjankowiak/saasbo)
+> Eriksson D, Jankowiak M. High-dimensional Bayesian optimization with sparse axis-aligned subspaces. Uncertainty in Artificial Intelligence, 2021.
+
+`./examples/optimize.py` saves optimizing histories in folder `./result`, which are automatically read by `./example/plot_result.py`.
+
+## :speech_balloon: Common Issues
+
+## :triangular_flag_on_post: TODO List
+
+- [ ] Introducing more realistic test functions
+
+- [ ] Introducing VAE-based algorithms and related datasets needed
+
+## :microscope: Cite Us
+
+## :clipboard: Changelog
+
+#### 2023.06.06 > v0.1.1 :fire:
+- Fixed logging.
+
+#### 2023.06.03 > v0.1.0
+- Initialization.
+
