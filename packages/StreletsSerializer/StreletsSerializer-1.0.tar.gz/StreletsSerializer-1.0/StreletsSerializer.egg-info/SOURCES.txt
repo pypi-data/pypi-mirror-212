@@ -1,0 +1,12 @@
+setup.py
+StreletsSerializer.egg-info/PKG-INFO
+StreletsSerializer.egg-info/SOURCES.txt
+StreletsSerializer.egg-info/dependency_links.txt
+StreletsSerializer.egg-info/top_level.txt
+serializers/__init__.py
+serializers/serializer_base.py
+serializers/serializer_dict.py
+serializers/serializer_json.py
+serializers/serializer_xml.py
+serializers/serializers_factory.py
+serializers/type_constants.py

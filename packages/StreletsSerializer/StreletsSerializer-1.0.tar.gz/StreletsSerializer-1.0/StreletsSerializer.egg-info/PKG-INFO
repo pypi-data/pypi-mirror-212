@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: StreletsSerializer
+Version: 1.0
+Summary: module for python serialization(JSON, XML)
+Home-page: UNKNOWN
+Author: IGI
+Author-email: testeee@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
