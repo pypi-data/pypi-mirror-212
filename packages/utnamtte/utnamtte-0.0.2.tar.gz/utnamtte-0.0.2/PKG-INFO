@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: utnamtte
+Version: 0.0.2
+Summary: A better eval function, eg 2π = 2*math.pi
+Home-page: https://github.com/utkarsh-naman/MATEX
+Author: Utkarsh Naman
+Author-email: its.utnam@gmail.com
+License: MIT
+Keywords: tte eval calculator text-to-expression utnamtte
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a convertor that takes normal mathematical text expressions as String inputs (eg. "2+ln2√π) and return the expression as it would be written in python (2+(math.log(2))*(math.sqrt(math.pi))
+
+                            To do so
+
+
+pip install utnamtte
+
+
+
+-----------------------#Method 1---------------------------------
+
+import utnamtte
+print(utnamtte.tte("2+ln2"))
+
+
+
+------------------------#Method 2----------------------------------
+
+from utnamtte import tte
+print(tte("2+ln2"))
+
+
+
+------------------------#Method 3---------------------------------
+
+from utnamtte import tte as xy
+print(xy("2+ln2"))
+
+
+watch tutorial on youtube https://bit.ly/ytutnamtte
+
+Change Log
+==========
+
+0.0.2 (7/06/2023)
+------------------
+- Fixed some bugs
+
