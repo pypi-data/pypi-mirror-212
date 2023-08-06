@@ -1,0 +1,10 @@
+tex_fast_recompile/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tex_fast_recompile/__main__.py,sha256=WMc-79uYTOhLMLNhbZEML_PcM6rX3ayEWziNH2NE04o,21348
+tex_fast_recompile/latexmk.py,sha256=EUzxjoia3FO9kGcnVfSP5ix1AcbxDOxSLg-_pqPFSAU,4113
+tex_fast_recompile/util.py,sha256=IjHuUdbGJkKNYmpKiL7ylKcGNmQePQzcy4k7mNrh8ds,1163
+tex_fast_recompile-0.5.1.dist-info/LICENSE,sha256=I8WHaMhvngtMXKqZNjdOCdqKAiEMFj0eFh_ngUiUuZo,19105
+tex_fast_recompile-0.5.1.dist-info/METADATA,sha256=7EzN474cb-npP5IGYmAGSSSXr_lWMF3_5NLJvCnibPg,6744
+tex_fast_recompile-0.5.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tex_fast_recompile-0.5.1.dist-info/entry_points.txt,sha256=kQlAlVc2OF-JS4MMyAUEDwqdwcU2mppZ7X36ZDY_Dgg,133
+tex_fast_recompile-0.5.1.dist-info/top_level.txt,sha256=Zv76C2GKk_zBRtI3l8v1C6Z6wfLN1N0HYCDzzzE3_uU,19
+tex_fast_recompile-0.5.1.dist-info/RECORD,,
