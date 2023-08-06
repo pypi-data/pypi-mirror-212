@@ -1,0 +1,5 @@
+[orange.widgets]
+System Dynamics = orangecontrib.system_dynamics.widgets
+
+[orange3.addon]
+system_dynamics = orangecontrib.system_dynamics
