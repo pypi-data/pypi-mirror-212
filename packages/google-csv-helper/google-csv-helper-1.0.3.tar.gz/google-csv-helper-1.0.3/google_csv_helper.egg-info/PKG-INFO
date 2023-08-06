@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: google-csv-helper
+Version: 1.0.3
+Summary: A simple tool that takes CSV reports from Google Adsense, Google Admob, and Google Analytics and outputs them in JSON / Pandas.DataFrame format.
+Home-page: https://github.com/changyy/google-csv-helper
+Download-URL: https://pypi.org/project/google-csv-helper/
+Author: Yuan-Yi Chang
+Author-email: <changyy.csie@gmail.com>
+Keywords: python,google,csv,adsense,admob,report
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Python: >=3.10
+License-File: LICENSE
+
+A simple tool that takes CSV reports from Google Adsense, Google Admob, and Google Analytics and outputs them in JSON / Pandas.DataFrame format.
