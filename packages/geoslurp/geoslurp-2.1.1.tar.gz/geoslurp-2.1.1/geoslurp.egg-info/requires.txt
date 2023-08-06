@@ -1,0 +1,17 @@
+numpy
+SQLAlchemy
+pycurl
+cryptography
+PyYAML
+lxml
+keyring
+pandas
+motuclient
+netCDF4
+GDAL
+Shapely
+GeoAlchemy2
+psycopg2
+
+[SH]
+pyshtools
