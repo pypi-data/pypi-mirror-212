@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "sphinx-revealjs-slides"
+version = "0.2.4"
+description = ""
+authors = ["Ashley Trinh <ashley@hackbrightacademy.com>"]
+readme = "README.md"
+packages = [{ include = "sphinx_revealjs_slides", from = "src" }]
+exclude = ["src/sphinx_revealjs_slides/themes/lib/reveal.js/*"]
+include = [
+  "src/sphinx_revealjs_slides/themes/lib/reveal.js/dist",
+  "src/sphinx_revealjs_slides/themes/lib/reveal.js/plugin"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sphinx = "^6.1.3"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.1.1"
+black = "^23.1.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
