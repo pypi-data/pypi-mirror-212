@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nmaquifertool
+Version: 0.0.5
+Summary: Python tool for interacting with NM_Aquifer database
+Author-email: Jake Ross <jake.ross@nmt.edu>
+License: BSD-3-Clause
+Keywords: water data,aquifer,database
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# NMAquiferTool
+
+
+# Example usage
+## Upload a Water Levels xlsx file
+
+```shell
+nmat upload waterlevels --file water_levels.xlsx
+```
