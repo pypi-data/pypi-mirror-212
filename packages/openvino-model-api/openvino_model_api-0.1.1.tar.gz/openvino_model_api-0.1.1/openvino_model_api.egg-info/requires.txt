@@ -1,0 +1,12 @@
+numpy>=1.16.6
+opencv-python
+scipy>=1.5.4
+openvino>=2023.0.0
+openvino-dev>=2023.0.0
+
+[ovms]
+ovmsclient
+
+[tests]
+pytest
+openvino-dev[onnx,pytorch,tensorflow2]
