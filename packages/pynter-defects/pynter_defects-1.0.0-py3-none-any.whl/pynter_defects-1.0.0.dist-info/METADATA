@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pynter-defects
+Version: 1.0.0
+Summary: Tools for atomistic calculations
+Author: Lorenzo Villa
+Requires-Dist: ase
+Requires-Dist: pymatgen (>=2023.3.23)
+Requires-Dist: pymatgen-analysis-defects (>=2023.3.25)
+Requires-Dist: pymatgen-db
+Requires-Dist: PyYAML
+Requires-Dist: schedule
+
