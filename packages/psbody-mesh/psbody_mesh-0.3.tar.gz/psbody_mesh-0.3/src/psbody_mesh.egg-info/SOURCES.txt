@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/psbody_mesh.egg-info/PKG-INFO
+src/psbody_mesh.egg-info/SOURCES.txt
+src/psbody_mesh.egg-info/dependency_links.txt
+src/psbody_mesh.egg-info/entry_points.txt
+src/psbody_mesh.egg-info/requires.txt
+src/psbody_mesh.egg-info/top_level.txt
+tests/test_simple.py
