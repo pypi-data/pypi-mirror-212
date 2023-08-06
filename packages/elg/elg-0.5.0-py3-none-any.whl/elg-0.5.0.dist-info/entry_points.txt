@@ -1,0 +1,2 @@
+[console_scripts]
+elg = elg.cli.elg:main
