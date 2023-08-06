@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/py_vomit.egg-info/PKG-INFO
+src/py_vomit.egg-info/SOURCES.txt
+src/py_vomit.egg-info/dependency_links.txt
+src/py_vomit.egg-info/not-zip-safe
+src/py_vomit.egg-info/requires.txt
+src/py_vomit.egg-info/top_level.txt
+src/vomit/__init__.py
+src/vomit/__main__.py
+src/vomit/py.typed
+tests/test_fuctionality.py

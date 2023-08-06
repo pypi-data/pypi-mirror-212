@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: py-vomit
+Version: 0.1.0
+Summary: "Somewhat unintelligible"
+Home-page: https://github.com/bhmt/vomit
+Author: bhmt
+License: MIT
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE
+
+# vomit
+
+Make your python code somewhat unintelligible but still readable.
+Change the utf8 encoding of class names, function names, function args, and name nodes with a fitting unicode representation.
+Or switch those back from unicode to utf8.
