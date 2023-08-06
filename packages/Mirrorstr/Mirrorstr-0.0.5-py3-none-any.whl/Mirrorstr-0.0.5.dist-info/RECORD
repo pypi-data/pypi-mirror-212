@@ -1,0 +1,11 @@
+mirrorstr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mirrorstr/main.py,sha256=l9FphqRYJwJFYpxAyB11xUH21n2lEOGhdGGUJG585WQ,6625
+mirrorstr/mp4_to_gif.py,sha256=49BHmd-A8Jaq1Mutu_dSk5qsnqvdpO93BJsAod4R2mY,677
+mirrorstr/post_note.py,sha256=tePWGs0GGcP3N7mPp1SOlmDyTRPsGizvG9_CR0N9LOI,1712
+mirrorstr/upload_to_voidcat_and_return_url.py,sha256=mHtHg4eL5JI-IyzQnsbigivmdZ8DbxMHQ1Ioorn2pCc,558
+Mirrorstr-0.0.5.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+Mirrorstr-0.0.5.dist-info/METADATA,sha256=UcuR4PyDaZ9OVMgxnzImUGLkdwmlnuizS3rIKN-tPE4,3536
+Mirrorstr-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Mirrorstr-0.0.5.dist-info/entry_points.txt,sha256=caiMu6vtBWubNHUa0xwvIf6OJnIq2IQaD6-TTUeFT7E,50
+Mirrorstr-0.0.5.dist-info/top_level.txt,sha256=B_uTgJkOK1RSwx0onqAKPqhSvckmMWzDdaE80TLGcUE,10
+Mirrorstr-0.0.5.dist-info/RECORD,,
