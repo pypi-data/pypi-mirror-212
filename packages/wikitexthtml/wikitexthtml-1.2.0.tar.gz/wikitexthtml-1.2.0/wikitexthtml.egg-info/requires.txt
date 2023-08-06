@@ -1,0 +1,4 @@
+pygments
+python-slugify
+ply
+wikitextparser
