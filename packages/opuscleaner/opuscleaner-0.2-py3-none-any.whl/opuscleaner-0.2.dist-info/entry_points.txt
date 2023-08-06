@@ -1,0 +1,6 @@
+[console_scripts]
+opuscleaner-clean = opuscleaner.clean:main
+opuscleaner-col = opuscleaner.col:main
+opuscleaner-sample = opuscleaner.sample:main
+opuscleaner-server = opuscleaner.server:main
+opuscleaner-threshold = opuscleaner.threshold:main
