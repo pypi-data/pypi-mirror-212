@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+akadoc/__init__.py
+akadoc.egg-info/PKG-INFO
+akadoc.egg-info/SOURCES.txt
+akadoc.egg-info/dependency_links.txt
+akadoc.egg-info/top_level.txt
+akadoc/entities/__init__.py
+akadoc/entities/bbox.py
