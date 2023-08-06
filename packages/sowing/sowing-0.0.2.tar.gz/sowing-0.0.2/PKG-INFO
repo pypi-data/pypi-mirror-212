@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sowing
+Version: 0.0.2
+Summary: sowing
+Project-URL: Homepage, https://github.com/UdeM-LBIT/sowing
+Project-URL: Bug Tracker, https://github.com/UdeM-LBIT/sowing/issues
+Author-email: Mattéo Delabre <git.matteo@delab.re>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: immutables
+Description-Content-Type: text/markdown
+
+# sowing
