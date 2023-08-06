@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sastadev
+Version: 0.0.4a1
+Summary: Linguistic functions for SASTA tool
+Home-page: https://github.com/UUDigitalHumanitieslab/sastadev
+Author: Digital Humanities Lab, Utrecht University
+Author-email: digitalhumanities@uu.nl
+License: BSD-3-Clause
+Platform: UNKNOWN
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+
+# Sastadev
+
+Linguistic functions for SASTA tool.
+
+```python
+from sastadev.deregularise import correctinflection
+result = correctinflection('slaapten')
+print(result)
+# [('sliepen', 'Overgeneralisation')]
+```
+
+
