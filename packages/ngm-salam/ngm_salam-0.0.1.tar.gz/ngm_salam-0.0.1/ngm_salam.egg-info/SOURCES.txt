@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+ngm_salam.egg-info/PKG-INFO
+ngm_salam.egg-info/SOURCES.txt
+ngm_salam.egg-info/dependency_links.txt
+ngm_salam.egg-info/entry_points.txt
+ngm_salam.egg-info/requires.txt
+ngm_salam.egg-info/top_level.txt
+salam/__init__.py
+salam/__main__.py
+salam/message.py
+salam/sysparams.py
