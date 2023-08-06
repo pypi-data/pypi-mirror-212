@@ -1,0 +1,8 @@
+caio~=0.9.0
+
+[develop]
+aiomisc-pytest
+pytest
+pytest-rst
+pytest-cov
+coveralls
