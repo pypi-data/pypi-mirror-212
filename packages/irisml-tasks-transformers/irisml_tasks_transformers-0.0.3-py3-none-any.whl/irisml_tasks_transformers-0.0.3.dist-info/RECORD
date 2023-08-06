@@ -1,0 +1,9 @@
+irisml/tasks/cache_transformers_model_on_azure_blob.py,sha256=8vL0yHtAGpnLAGvS5jaIJc6TTGtXzUzvV2huPkFkkvQ,2563
+irisml/tasks/create_transformers_model.py,sha256=GofbuM8oEF9POTG0Q-yAuzqHBQWsnPUovmOxYPo-qBo,3951
+irisml/tasks/create_transformers_text_model.py,sha256=-Fsd4NWOIjwe9EU1DIg0TdfM2egzmaFJmGCh6PudTME,4048
+irisml/tasks/create_transformers_tokenizer.py,sha256=EvV0x6FMSLizACgYLggA86w5P0ZxSpHBKWrF7xESgO8,750
+irisml_tasks_transformers-0.0.3.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+irisml_tasks_transformers-0.0.3.dist-info/METADATA,sha256=UIl3jWkGR9fW03gMq1vM_KMfZf9l9WREwHZrLeQS_r0,998
+irisml_tasks_transformers-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+irisml_tasks_transformers-0.0.3.dist-info/top_level.txt,sha256=-O6mZvBaJ0q2Xuea9BVCfU8n5tO5UO5aLoPn_Eos3Ao,7
+irisml_tasks_transformers-0.0.3.dist-info/RECORD,,
