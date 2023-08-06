@@ -1,0 +1,12 @@
+dbt_core_interface/__init__.py,sha256=9TrphhM7qQOu1kMWeAyRL9cK_f1OnGLeMVfBenMRgy4,87
+dbt_core_interface/dbt_templater/LICENSE.md,sha256=zThEEoHhVVG5xK0hOJnPMGStkK8Bo3hrJ0EJbdTxkyQ,1214
+dbt_core_interface/dbt_templater/__init__.py,sha256=R1jaaYCenkwHAhvkXeo-5A3gYbYfFBYHwDfuSb4HtVs,700
+dbt_core_interface/dbt_templater/templater.py,sha256=6SewSJfHdXXMt63JT4xs4L405QU7NtrRbeEx6pwgk2M,9050
+dbt_core_interface/project.py,sha256=kzJ76uxxhbdZj2vR6WZ6TXADdBwUiaRk1Jzec8PhSbw,229322
+dbt_core_interface/sqlfluff_util.py,sha256=pJNfj5dvkKC0CPqbgtB-6y3zteslzCFnlqGTpLYHo70,4553
+dbt_core_interface/state.py,sha256=xO0u2uvu3UOic0eBTMRYTG8ezo6AhPn0MlLbDP0sGEw,29
+dbt_core_interface-0.2.4.dist-info/LICENSE,sha256=kXXALl19IYMmr2I2tGFTLZU_KrKlm0lFH-He00viWRE,1067
+dbt_core_interface-0.2.4.dist-info/METADATA,sha256=mqjq33Jzp4La9tkDispJtuFL3W05lpgsvK_yWMhk6W4,5766
+dbt_core_interface-0.2.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+dbt_core_interface-0.2.4.dist-info/entry_points.txt,sha256=Sakm-39Z_LKp_KTeum83QOxG1NN4dz4gpPqciX3vjLM,59
+dbt_core_interface-0.2.4.dist-info/RECORD,,
