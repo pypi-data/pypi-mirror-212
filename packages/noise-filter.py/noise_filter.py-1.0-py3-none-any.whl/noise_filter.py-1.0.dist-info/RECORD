@@ -1,0 +1,9 @@
+noise_filter/PIL_filter.py,sha256=cb8HHAf7Lomf_oKn5b1mRh5mXScogEKnQZdVq1o8kV8,7104
+noise_filter/__init__.py,sha256=eP0FBoOQWeoK30SDv69TpvvL1G2XPpZdJ5DU3gUQNf4,1665
+noise_filter/noise_filter.py,sha256=6snBgLQjcKj7W2GkNQQYOwPAvce1OKfm1s0o5b4ppqE,709
+noise_filter/opencv_filter.py,sha256=f8YJlimsATYeF9JWYfK6sls0DxJPZWE5hvzIGI64nPY,3900
+noise_filter/skimage_filter.py,sha256=UKjTmBHTM25XJVSbeNlLUU_h4s4PyNOlO9lvxogv91k,2795
+noise_filter.py-1.0.dist-info/METADATA,sha256=nal5z7JEAPEr76Dsv91HuhSe9CdhUxicA2dlkfZhxLM,161
+noise_filter.py-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+noise_filter.py-1.0.dist-info/top_level.txt,sha256=Je1ccC9liVfBjC_e9S5sOQ5PTeN6QQ0fSKJvZ3yl5Uw,13
+noise_filter.py-1.0.dist-info/RECORD,,
