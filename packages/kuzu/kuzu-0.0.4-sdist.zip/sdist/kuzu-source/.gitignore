@@ -1,0 +1,37 @@
+.idea/
+.vscode
+bazel-*
+.clwb
+.cache
+.bazelrc
+
+test_temp/
+build/
+
+### Python
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+cmake-build-debug/
+test/unittest_temp/
+tools/python_api/test/test_PYTHON_CSV.csv
+
+# antlr4 jar
+scripts/antlr4/antlr4.jar
+
+# macOS
+.DS_Store
+
+### Node.js
+tools/nodejs_api/node_modules/
+tools/nodejs_api/cmake_install.cmake
+tools/nodejs_api/package-lock.json
+tools/nodejs_api/prebuilt/
+
+# Archive files
+*.zip
+*.tar.gz
+scripts/pre-compiled-bins/headers
+scripts/pre-compiled-bins/lib*
+scripts/pre-compiled-bins/kuzu*

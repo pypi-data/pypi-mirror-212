@@ -1,0 +1,538 @@
+-GROUP TinySnbReadTest
+-DATASET tinysnb
+
+--
+
+-CASE ProjectionSingleLabel
+
+-NAME ReturnLiteral3
+-QUERY RETURN "abc", MIN(1)
+---- 1
+abc|1
+
+-NAME ReturnLiteral1
+-QUERY RETURN 3 * 2, COUNT(*), MIN(2), COUNT(5)
+---- 1
+6|1|2|1
+
+-NAME ReturnLiteral2
+-QUERY MATCH (a:person) RETURN 1 + 1, label(a) LIMIT 2
+---- 2
+2|person
+2|person
+
+-NAME ReturnNullLiteral
+-QUERY RETURN (NULL = NULL) IS NOT NULL, NULL, NULL = NULL
+---- 1
+False||
+
+-NAME ReturnAggOnConst
+-QUERY MATCH (a:person) RETURN COUNT(3)
+---- 1
+8
+
+-NAME ReturnColumnWithSameExpression
+-QUERY MATCH (a:person) WHERE a.fName='Alice' RETURN a.age, a.age AS k
+---- 1
+35|35
+
+-NAME OrgNodesReturnStarTest
+-QUERY MATCH (a:organisation) RETURN *
+---- 3
+(label:organisation, 1:0, {ID:1, name:ABFsUni, orgCode:325, mark:3.700000, score:-2, history:10 years 5 months 13 hours 24 us, licenseValidInterval:3 years 5 days, rating:1.000000, state:{REVENUE: 138, LOCATION: ['toronto', 'montr,eal'], STOCK: {PRICE: [96,56], VOLUME: 1000}}})
+(label:organisation, 1:1, {ID:4, name:CsWork, orgCode:934, mark:4.100000, score:-100, history:2 years 4 days 10 hours, licenseValidInterval:26 years 52 days 48:00:00, rating:0.780000, state:{REVENUE: 152, LOCATION: ["vanco,uver north area"], STOCK: {PRICE: [15,78,671], VOLUME: 432}}})
+(label:organisation, 1:2, {ID:6, name:DEsWork, orgCode:824, mark:4.100000, score:7, history:2 years 4 hours 22 us 34 minutes, licenseValidInterval:82:00:00.1, rating:0.520000, state:{REVENUE: 558, LOCATION: ['very long city name', 'new york'], STOCK: {PRICE: [22], VOLUME: 99}}})
+
+-NAME PersonNodesTestNull
+-QUERY MATCH (a:person) RETURN a.ID, a.fName STARTS WITH NULL, a.isWorker, a.isWorker AND null
+---- 8
+0||False|False
+10||True|
+2||False|False
+3||True|
+5||True|
+7||True|
+8||False|False
+9||False|False
+
+-NAME PersonNodesTestString
+-QUERY MATCH (a:person) RETURN a.fName
+---- 8
+Alice
+Bob
+Carol
+Dan
+Elizabeth
+Farooq
+Greg
+Hubert Blaine Wolfeschlegelsteinhausenbergerdorff
+
+-NAME PersonNodesTestInt
+-QUERY MATCH (a:person) RETURN a.age
+---- 8
+35
+30
+45
+20
+20
+25
+40
+83
+
+-NAME PersonNodesTestBoolean
+-QUERY MATCH (a:person) RETURN a.isStudent
+---- 8
+True
+True
+False
+False
+False
+True
+False
+False
+
+-NAME PersonNodesTestDouble
+-QUERY MATCH (a:person) RETURN a.eyeSight
+---- 8
+5.000000
+5.100000
+5.000000
+4.800000
+4.700000
+4.500000
+4.900000
+4.900000
+
+-NAME PersonNodesTestDate
+-QUERY MATCH (a:person) RETURN a.birthdate
+---- 8
+1900-01-01
+1900-01-01
+1940-06-22
+1950-07-23
+1980-10-26
+1980-10-26
+1980-10-26
+1990-11-27
+
+-NAME PersonNodesTestList
+-QUERY MATCH (a:person) RETURN a.workedHours, a.usedNames
+---- 8
+[10,5]|[Aida]
+[12,8]|[Bobby]
+[4,5]|[Carmen,Fred]
+[1,9]|[Wolfeschlegelstein,Daniel]
+[2]|[Ein]
+[3,4,5,6,7]|[Fesdwe]
+[1]|[Grad]
+[10,11,12,3,4,5,6,7]|[Ad,De,Hi,Kye,Orlan]
+
+-NAME PersonNodesTestNestedList
+-QUERY MATCH (a:person) RETURN a.courseScoresPerTerm
+---- 8
+[[10,8],[6,7,8]]
+[[8,9],[9,10]]
+[[8,10]]
+[[7,4],[8,8],[9]]
+[[6],[7],[8]]
+[[8]]
+[[10]]
+[[7],[10],[6,7]]
+
+-NAME ListWithNullValues
+-QUERY RETURN [5, null, 100, null, null]
+---- 1
+[5,,100,,]
+
+-NAME NestedListWithNullValues
+-QUERY RETURN [[78, null, 100, null, null], null, [null, 5, null, 100, null]]
+---- 1
+[[78,,100,,],,[,5,,100,]]
+
+-NAME EmptyList
+-QUERY RETURN []
+---- 1
+[]
+
+-NAME NestedEmptyList
+-QUERY RETURN [[],[]]
+---- 1
+[[],[]]
+
+-NAME CrossProductReturn
+-QUERY MATCH (a:organisation), (b:organisation) RETURN a.orgCode = b.orgCode
+---- 9
+False
+False
+False
+False
+False
+False
+True
+True
+True
+
+-NAME KnowsOneHopTest1
+-QUERY MATCH (a:person)-[e:knows]->(b:person) WHERE b.age=20 RETURN b.age
+---- 3
+20
+20
+20
+
+-NAME KnowsTwoHopTest1
+-QUERY MATCH (a:person)-[:knows]->(:person)-[:knows]->(b:person) WHERE b.age>40 RETURN b.age
+---- 9
+45
+45
+45
+45
+45
+45
+45
+45
+45
+
+-NAME KnowsTwoHopTest2
+-QUERY MATCH (a:person)-[:knows]->(:person)-[:knows]->(b:person) WHERE a.age>b.age+10 RETURN a.age, b.age
+---- 6
+35|20
+35|20
+45|20
+45|20
+45|30
+45|30
+
+-NAME KnowsRelTestDate
+-QUERY MATCH (a:person)-[e:knows]->(b:person) RETURN e.date
+-ENUMERATE
+---- 14
+2021-06-30
+2021-06-30
+2021-06-30
+2021-06-30
+1950-05-14
+1950-05-14
+2021-06-30
+1950-05-14
+2000-01-01
+2021-06-30
+1950-05-14
+2000-01-01
+1905-12-12
+1905-12-12
+
+-NAME KnowsOneHopTest2
+-QUERY MATCH (a:person)-[e:knows]->(b:person) WHERE b.age=20 RETURN b.age * 2
+-ENUMERATE
+---- 3
+40
+40
+40
+
+-NAME KnowsOneHopTest3
+-QUERY MATCH (a:person)-[e:knows]->(b:person) WHERE a.age>20 RETURN b.fName
+-ENUMERATE
+---- 9
+Alice
+Alice
+Bob
+Bob
+Carol
+Carol
+Dan
+Dan
+Dan
+
+
+-NAME KnowsTwoHopTest3
+-QUERY MATCH (a:person)-[:knows]->(b:person)-[:knows]->(c:person) WHERE a.age>c.age+10 RETURN a.age, b.fName, c.age
+-ENUMERATE
+---- 6
+35|Bob|20
+35|Carol|20
+45|Alice|20
+45|Alice|30
+45|Bob|20
+45|Dan|30
+
+-NAME KnowsTwoHopTest4
+-QUERY MATCH (a:person)-[:knows]->(b:person)-[:knows]->(c:person) RETURN a.fName, b.fName
+-ENUMERATE
+---- 36
+Alice|Bob
+Alice|Bob
+Alice|Bob
+Alice|Carol
+Alice|Carol
+Alice|Carol
+Alice|Dan
+Alice|Dan
+Alice|Dan
+Bob|Alice
+Bob|Alice
+Bob|Alice
+Bob|Carol
+Bob|Carol
+Bob|Carol
+Bob|Dan
+Bob|Dan
+Bob|Dan
+Carol|Alice
+Carol|Alice
+Carol|Alice
+Carol|Bob
+Carol|Bob
+Carol|Bob
+Carol|Dan
+Carol|Dan
+Carol|Dan
+Dan|Alice
+Dan|Alice
+Dan|Alice
+Dan|Bob
+Dan|Bob
+Dan|Bob
+Dan|Carol
+Dan|Carol
+Dan|Carol
+
+-NAME KnowsTwoHopTest5
+-QUERY MATCH (a:person)-[:knows]->(b:person)-[:knows]->(c:person) WHERE a.age < 31 RETURN a.age + b.age + c.age
+-ENUMERATE
+---- 18
+100
+100
+105
+110
+110
+70
+75
+80
+85
+85
+85
+85
+85
+95
+95
+95
+95
+95
+
+-NAME StudyAtPropertyProjectionTest
+-QUERY MATCH (a:person)-[e:studyAt]->(b:organisation) RETURN e.year
+-ENUMERATE
+---- 3
+2021
+2020
+2020
+
+-NAME RelID1
+-QUERY MATCH (a:person)-[r:knows]->(b:person) RETURN id(r)
+-ENUMERATE
+---- 14
+3:0
+3:1
+3:10
+3:11
+3:12
+3:13
+3:2
+3:3
+3:4
+3:5
+3:6
+3:7
+3:8
+3:9
+
+-NAME RelID2
+-QUERY MATCH (a:person)-[r:studyAt]->(o:organisation) RETURN id(r)
+-ENUMERATE
+---- 3
+4:0
+4:1
+4:2
+
+-NAME RelID3
+-QUERY MATCH (a:person)-[r:workAt]->(o:organisation) RETURN id(r)
+-ENUMERATE
+---- 3
+5:0
+5:1
+5:2
+
+-NAME QueryOneToOneRelTable
+-QUERY MATCH (:person)-[m:marries]->(:person) RETURN m
+---- 3
+(0:0)-[label:marries, {_id:7:0, usedAddress:[toronto], address:[4,5], note:}]->(0:1)
+(0:2)-[label:marries, {_id:7:1, usedAddress:, address:[2,5], note:long long long string}]->(0:3)
+(0:4)-[label:marries, {_id:7:2, usedAddress:[], address:[3,9], note:short str}]->(0:5)
+
+-NAME ReturnFixedListNodeProp
+-QUERY MATCH (a:person) RETURN a.grades
+---- 8
+[96,54,86,92]
+[98,42,93,88]
+[91,75,21,95]
+[76,88,99,89]
+[96,59,65,88]
+[80,78,34,83]
+[43,83,67,43]
+[77,64,100,54]
+
+-NAME ReturnFixedListRelProp
+-QUERY MATCH (a:person)-[e:workAt]->(o:organisation) RETURN e.grading
+---- 3
+[2.100000,4.400000]
+[3.800000,2.500000]
+[9.200000,3.100000]
+
+-NAME ReturnFloatNodeProp
+-QUERY MATCH (a:person) RETURN a.height
+---- 8
+1.731000
+0.990000
+1.000000
+1.300000
+1.463000
+1.510000
+1.600000
+1.323000
+
+-NAME ReturnFloatRelProp
+-QUERY MATCH (a:person)-[e:workAt]->(o:organisation) RETURN e.rating
+---- 3
+8.200000
+7.600000
+9.200000
+
+-NAME ReturnFixedListFloatRelProp
+-QUERY MATCH (a:person)-[e:meets]->(b:person) RETURN e.location
+---- 7
+[7.820000,3.540000]
+[2.870000,4.230000]
+[3.650000,8.440000]
+[2.110000,3.100000]
+[2.200000,9.000000]
+[3.000000,5.200000]
+[3.500000,1.100000]
+
+-NAME ReturnInt32NodeProp
+-QUERY MATCH (m:movies) RETURN m.length
+---- 3
+126
+2544
+298
+
+-NAME ReturnInt16NodeProp
+-QUERY MATCH (:person)-[e:studyAt]->(:organisation) RETURN e.length
+---- 3
+5
+55
+22
+
+-NAME ReturnFixedListInt16RelProp
+-QUERY MATCH (a:person)-[e:marries]->(b:person) RETURN e.address
+---- 3
+[4,5]
+[2,5]
+[3,9]
+
+-NAME ReturnIntRelProp
+-QUERY MATCH (a:person)-[e:meets]->(b:person) RETURN e.times
+---- 7
+5
+2
+3
+7
+9
+11
+13
+
+-NAME ReturnStructLiteral
+-QUERY RETURN {weight: 1.8, age: 42, name: "Mark", grades: [1,2,3]}
+---- 1
+{WEIGHT: 1.800000, AGE: 42, NAME: Mark, GRADES: [1,2,3]}
+
+-NAME ReturnStructLiteral2
+-QUERY WITH {a: '1', b: 2, c: [4,5,6]} AS st RETURN st.a, st.b * 5, (st.c)[1:3]
+---- 1
+1|10|[4,5]
+
+-NAME ReturnStructLiteralWithNull
+-QUERY RETURN {info: {name: "AliceBobCarolDan", gender: "female", hobby: null}, height: 1.8, age: null}
+---- 1
+{INFO: {NAME: AliceBobCarolDan, GENDER: female, HOBBY: }, HEIGHT: 1.800000, AGE: }
+
+-NAME ReturnStructListLiteralWithNull
+-QUERY RETURN {info: {name: "smith", gender: null, hobby: [null, "footBall"]}, height: 1.8, age: null}
+---- 1
+{INFO: {NAME: smith, GENDER: , HOBBY: [,footBall]}, HEIGHT: 1.800000, AGE: }
+
+-NAME ReturnStruct
+-QUERY MATCH (m:movies) RETURN m.description
+---- 3
+{RATING: 1223.000000, VIEWS: 10003, RELEASE: 2011-02-11 16:44:22, FILM: 2013-02-22}
+{RATING: 5.300000, VIEWS: 152, RELEASE: 2011-08-20 11:25:30, FILM: 2012-05-11}
+{RATING: 7.000000, VIEWS: 982, RELEASE: 2018-11-13 13:33:11, FILM: 2014-09-12}
+
+-NAME ReturnStructLiteralWithUnflatFlatChildren
+-QUERY MATCH (p:person)-[e:knows]->(p1:person) return {name: p.fName, id: p1.ID, date: e.date}
+---- 14
+{NAME: Alice, ID: 2, DATE: 2021-06-30}
+{NAME: Alice, ID: 3, DATE: 2021-06-30}
+{NAME: Alice, ID: 5, DATE: 2021-06-30}
+{NAME: Bob, ID: 0, DATE: 2021-06-30}
+{NAME: Bob, ID: 3, DATE: 1950-05-14}
+{NAME: Bob, ID: 5, DATE: 1950-05-14}
+{NAME: Carol, ID: 0, DATE: 2021-06-30}
+{NAME: Carol, ID: 2, DATE: 1950-05-14}
+{NAME: Carol, ID: 5, DATE: 2000-01-01}
+{NAME: Dan, ID: 0, DATE: 2021-06-30}
+{NAME: Dan, ID: 2, DATE: 1950-05-14}
+{NAME: Dan, ID: 3, DATE: 2000-01-01}
+{NAME: Elizabeth, ID: 8, DATE: 1905-12-12}
+{NAME: Elizabeth, ID: 9, DATE: 1905-12-12}
+
+-NAME ReturnNestedStructLiteral
+-QUERY MATCH (p:person) return {description: {gender: p.gender, age: p.age}, name: p.fName}
+---- 8
+{DESCRIPTION: {GENDER: 1, AGE: 20}, NAME: Elizabeth}
+{DESCRIPTION: {GENDER: 1, AGE: 35}, NAME: Alice}
+{DESCRIPTION: {GENDER: 1, AGE: 45}, NAME: Carol}
+{DESCRIPTION: {GENDER: 2, AGE: 20}, NAME: Dan}
+{DESCRIPTION: {GENDER: 2, AGE: 25}, NAME: Farooq}
+{DESCRIPTION: {GENDER: 2, AGE: 30}, NAME: Bob}
+{DESCRIPTION: {GENDER: 2, AGE: 40}, NAME: Greg}
+{DESCRIPTION: {GENDER: 2, AGE: 83}, NAME: Hubert Blaine Wolfeschlegelsteinhausenbergerdorff}
+
+-NAME ReturnNestedListOfStructLiteral
+-QUERY MATCH (p:person) return [{description: {propA: p.gender, propB: [p.age, 10]}, name: p.fName}, {description: {propA: p.ID, propB: [p.gender, 20]}, name: p.fName}]
+---- 8
+[{DESCRIPTION: {PROPA: 1, PROPB: [35,10]}, NAME: Alice},{DESCRIPTION: {PROPA: 0, PROPB: [1,20]}, NAME: Alice}]
+[{DESCRIPTION: {PROPA: 2, PROPB: [30,10]}, NAME: Bob},{DESCRIPTION: {PROPA: 2, PROPB: [2,20]}, NAME: Bob}]
+[{DESCRIPTION: {PROPA: 1, PROPB: [45,10]}, NAME: Carol},{DESCRIPTION: {PROPA: 3, PROPB: [1,20]}, NAME: Carol}]
+[{DESCRIPTION: {PROPA: 2, PROPB: [20,10]}, NAME: Dan},{DESCRIPTION: {PROPA: 5, PROPB: [2,20]}, NAME: Dan}]
+[{DESCRIPTION: {PROPA: 1, PROPB: [20,10]}, NAME: Elizabeth},{DESCRIPTION: {PROPA: 7, PROPB: [1,20]}, NAME: Elizabeth}]
+[{DESCRIPTION: {PROPA: 2, PROPB: [25,10]}, NAME: Farooq},{DESCRIPTION: {PROPA: 8, PROPB: [2,20]}, NAME: Farooq}]
+[{DESCRIPTION: {PROPA: 2, PROPB: [40,10]}, NAME: Greg},{DESCRIPTION: {PROPA: 9, PROPB: [2,20]}, NAME: Greg}]
+[{DESCRIPTION: {PROPA: 2, PROPB: [83,10]}, NAME: Hubert Blaine Wolfeschlegelsteinhausenbergerdorff},{DESCRIPTION: {PROPA: 10, PROPB: [2,20]}, NAME: Hubert Blaine Wolfeschlegelsteinhausenbergerdorff}]
+
+-NAME ReturnNestedListOfStructWithUnflatFlatChildren
+-QUERY MATCH (p1:person)-[e:knows]->(p2:person) return [{description: {propA: [p1.gender, p2.gender], propB: e.date}, name: p1.fName}, {description: {propA: [p1.ID, p2.ID], propB: p1.birthdate}, name: p2.fName}]
+---- 14
+[{DESCRIPTION: {PROPA: [1,2], PROPB: 2021-06-30}, NAME: Alice},{DESCRIPTION: {PROPA: [0,2], PROPB: 1900-01-01}, NAME: Bob}]
+[{DESCRIPTION: {PROPA: [1,1], PROPB: 2021-06-30}, NAME: Alice},{DESCRIPTION: {PROPA: [0,3], PROPB: 1900-01-01}, NAME: Carol}]
+[{DESCRIPTION: {PROPA: [1,2], PROPB: 2021-06-30}, NAME: Alice},{DESCRIPTION: {PROPA: [0,5], PROPB: 1900-01-01}, NAME: Dan}]
+[{DESCRIPTION: {PROPA: [2,1], PROPB: 2021-06-30}, NAME: Bob},{DESCRIPTION: {PROPA: [2,0], PROPB: 1900-01-01}, NAME: Alice}]
+[{DESCRIPTION: {PROPA: [2,1], PROPB: 1950-05-14}, NAME: Bob},{DESCRIPTION: {PROPA: [2,3], PROPB: 1900-01-01}, NAME: Carol}]
+[{DESCRIPTION: {PROPA: [2,2], PROPB: 1950-05-14}, NAME: Bob},{DESCRIPTION: {PROPA: [2,5], PROPB: 1900-01-01}, NAME: Dan}]
+[{DESCRIPTION: {PROPA: [1,1], PROPB: 2021-06-30}, NAME: Carol},{DESCRIPTION: {PROPA: [3,0], PROPB: 1940-06-22}, NAME: Alice}]
+[{DESCRIPTION: {PROPA: [1,2], PROPB: 1950-05-14}, NAME: Carol},{DESCRIPTION: {PROPA: [3,2], PROPB: 1940-06-22}, NAME: Bob}]
+[{DESCRIPTION: {PROPA: [1,2], PROPB: 2000-01-01}, NAME: Carol},{DESCRIPTION: {PROPA: [3,5], PROPB: 1940-06-22}, NAME: Dan}]
+[{DESCRIPTION: {PROPA: [2,1], PROPB: 2021-06-30}, NAME: Dan},{DESCRIPTION: {PROPA: [5,0], PROPB: 1950-07-23}, NAME: Alice}]
+[{DESCRIPTION: {PROPA: [2,2], PROPB: 1950-05-14}, NAME: Dan},{DESCRIPTION: {PROPA: [5,2], PROPB: 1950-07-23}, NAME: Bob}]
+[{DESCRIPTION: {PROPA: [2,1], PROPB: 2000-01-01}, NAME: Dan},{DESCRIPTION: {PROPA: [5,3], PROPB: 1950-07-23}, NAME: Carol}]
+[{DESCRIPTION: {PROPA: [1,2], PROPB: 1905-12-12}, NAME: Elizabeth},{DESCRIPTION: {PROPA: [7,8], PROPB: 1980-10-26}, NAME: Farooq}]
+[{DESCRIPTION: {PROPA: [1,2], PROPB: 1905-12-12}, NAME: Elizabeth},{DESCRIPTION: {PROPA: [7,9], PROPB: 1980-10-26}, NAME: Greg}]

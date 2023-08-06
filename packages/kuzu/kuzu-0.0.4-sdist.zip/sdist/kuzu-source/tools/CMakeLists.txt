@@ -1,0 +1,8 @@
+add_subdirectory(shell)
+if(${BUILD_NODEJS})
+    add_subdirectory(nodejs_api)
+endif()
+add_subdirectory(python_api)
+if(${BUILD_BENCHMARK})
+    add_subdirectory(benchmark)
+endif()
