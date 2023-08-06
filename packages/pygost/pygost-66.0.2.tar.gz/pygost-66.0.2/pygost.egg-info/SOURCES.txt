@@ -1,0 +1,6 @@
+README.md
+setup.py
+pygost.egg-info/PKG-INFO
+pygost.egg-info/SOURCES.txt
+pygost.egg-info/dependency_links.txt
+pygost.egg-info/top_level.txt
