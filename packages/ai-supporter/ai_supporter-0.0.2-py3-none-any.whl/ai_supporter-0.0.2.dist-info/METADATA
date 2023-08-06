@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ai-supporter
+Version: 0.0.2
+Summary: Ai supporter
+Home-page: https://github.com/automatethem/ai-supporter
+Author: Sang Ki Kwon
+Author-email: automatethem@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: gtts
+Requires-Dist: pygame
+
+# ai-supporter
+
+https://pypi.org/project/ai-supporter
+<pre>
+pip install ai-supporter
+</pre>
