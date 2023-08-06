@@ -1,0 +1,2 @@
+[console_scripts]
+saturnfs = saturnfs.cli.main:entrypoint

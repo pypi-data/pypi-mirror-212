@@ -1,0 +1,4 @@
+click
+requests
+marshmallow<4.0.0,>=3.10.0
+marshmallow-dataclass

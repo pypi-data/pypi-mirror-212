@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: saturnfs
+Version: 0.0.1
+Summary: Python library and CLI for interacting with object storage through saturn cloud
+Home-page: https://saturncloud.io/
+Maintainer: Saturn Cloud Developers
+Maintainer-email: dev@saturncloud.io
+License: BSD-3-Clause
+Project-URL: Documentation, http://docs.saturncloud.io
+Project-URL: Source, https://github.com/saturncloud/saturnfs
+Project-URL: Issue Tracker, https://github.com/saturncloud/saturnfs/issues
+Keywords: saturn cloud saturnfs object storage
+Description-Content-Type: text/markdown
+
+# SaturnFS
+
+Python library and CLI for interacting with object storage through saturn cloud
