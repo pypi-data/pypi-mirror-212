@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "hh-ui-check"
+version = "0.1.6"
+description = ""
+authors = ["林明超 <mingchao.lin@zeekrlife.com>"]
+readme = "README.md"
+packages = [{include = "hh_ui_check"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24.3"
+opencv-python = "^4.7.0.72"
+matplotlib = "^3.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+my-script = "hh_ui_check.main:main"
