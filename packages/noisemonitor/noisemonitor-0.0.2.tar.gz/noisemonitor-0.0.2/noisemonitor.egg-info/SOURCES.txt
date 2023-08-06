@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+noisemonitor/__init__.py
+noisemonitor/modules.py
+noisemonitor/utilities.py
+noisemonitor.egg-info/PKG-INFO
+noisemonitor.egg-info/SOURCES.txt
+noisemonitor.egg-info/dependency_links.txt
+noisemonitor.egg-info/requires.txt
+noisemonitor.egg-info/top_level.txt

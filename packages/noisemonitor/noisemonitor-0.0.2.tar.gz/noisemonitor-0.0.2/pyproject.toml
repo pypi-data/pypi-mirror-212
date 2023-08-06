@@ -1,0 +1,31 @@
+[project]
+name = "noisemonitor"
+version = "0.0.2"
+authors = [
+  { name="Valérian Fraisse", email="valerian.fraisse@mail.mcgill.ca" },
+]
+description = "Long-term sound level measurements analysis in Python"
+readme = "README.md"
+requires-python = ">=3.7"
+
+dependencies = [
+    "matplotlib >= 3.5.3",
+    "numpy >= 1.21.6",
+    "pandas >= 1.3.5",
+    "xlrd >= 2.0.1",
+    "openpyxl >= 3.1.2",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/valerianF/noisemonitor"
+"Bug Tracker" = "https://github.com/valerianF/noisemonitor/issues"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
