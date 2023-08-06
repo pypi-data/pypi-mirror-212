@@ -1,0 +1,12 @@
+usearch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usearch/client.py,sha256=FLEy0YkHth4qdpsC8TePqZH_9A0ISJLhgJO8ddUDUdY,4194
+usearch/compiled.cpython-36m-darwin.so,sha256=LlgNEjlZ4321tkFylSxb7z6DPInOI36nJ-I-fyAeqzE,640872
+usearch/index.py,sha256=y82wCZEI8pknTSZ7EAeVPUDM4216JIgAecpT-QULw9w,14009
+usearch/io.py,sha256=NJes_Uak-eKMFhl6r1orkLfZMQClkaXfbKPPaJjkkgA,2392
+usearch/server.py,sha256=dk7ZgC18khIWRwXtrBSrL35l2B-ucGQSJ-92ecJR9LE,3758
+usearch/synthetic.py,sha256=0WiJUxUjpWHLDKSki3t13NMkWJova_y0YAdQ14OpLyM,999
+usearch-0.13.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+usearch-0.13.0.dist-info/METADATA,sha256=U9Ief_EUu12c3p9k3Paz6hIV37vo2VkkPh-LNa72zjY,21373
+usearch-0.13.0.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+usearch-0.13.0.dist-info/top_level.txt,sha256=zFbid1SmQjk8RsbEgpqF7tTjgWdFvE2z0e1LQ2hKdPg,8
+usearch-0.13.0.dist-info/RECORD,,
