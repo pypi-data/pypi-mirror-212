@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lifeguard-openai
+Version: 1.0.0
+Summary: Lifeguard integration with OpenAI
+Home-page: https://github.com/LifeguardSystem/lifeguard-openai
+Author: Diego Rubin
+Author-email: contact@diegorubin.dev
+License: GPL2
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Monitoring
+Description-Content-Type: text/markdown
+
+# Lifeguard OpenAI
+
+Integration with OpenAI API.
+
+## Actions
+
+- __errors.explain_error__: Explain an error based on the traceback in Validation Response details. Full example in [https://github.com/LifeguardSystem/lifeguard-example/blob/main/validations/on_error_validation.py](https://github.com/LifeguardSystem/lifeguard-example/blob/main/validations/on_error_validation.py).
+
