@@ -1,0 +1,8 @@
+generallibrary[table]
+generalfile
+requests
+pyinstaller
+coverage
+setuptools
+wheel
+twine
