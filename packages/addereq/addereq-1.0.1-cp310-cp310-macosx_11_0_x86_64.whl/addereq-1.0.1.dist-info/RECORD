@@ -1,0 +1,9 @@
+addereq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addereq/cleaning.cpython-310-darwin.so,sha256=NgW__GgSovp_NEakTAfX4qnNDn9x6D14_vc3dP1koh4,108784
+addereq/fetching.cpython-310-darwin.so,sha256=Bd4WDwuyxmuLJwAc13LnpPKzFRVwM4V47g2X_lYv0x4,254232
+addereq/plotting.cpython-310-darwin.so,sha256=FAtVh8wv_AI2LWatn55s5yjDlI79-T7mArHGz3JFM8E,322296
+addereq-1.0.1.dist-info/LICENSE,sha256=GbwYFqTaQxj0yeDFzsW2MdkgnxP-iQtNjdkhlBRqRt8,1084
+addereq-1.0.1.dist-info/METADATA,sha256=OBr1FMGjtLZwmAWGZW0RvXzrV7GxfTlUt2FPJFWGV-g,832
+addereq-1.0.1.dist-info/WHEEL,sha256=tNYyggI0QC5GD4MVHQuiVTUUU_cLi9bibpSukmwhhdM,111
+addereq-1.0.1.dist-info/top_level.txt,sha256=kTOP05dPDJJ_BcjbvtEfnk5o3vVaHkqY_JPbOoDhkUc,8
+addereq-1.0.1.dist-info/RECORD,,
