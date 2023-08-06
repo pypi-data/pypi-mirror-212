@@ -1,0 +1,20 @@
+[console_scripts]
+ertk-cli = ertk.cli.cli:cli
+ertk-dataset = ertk.cli.dataset:cli
+ertk-util = ertk.cli.util:cli
+
+[ertk.processors]
+encodec = ertk.preprocessing.encodec:EncodecExtractor
+fairseq = ertk.preprocessing.fairseq:FairseqExtractor
+huggingface = ertk.preprocessing.huggingface:HuggingFaceExtractor
+keras_apps = ertk.preprocessing.keras_apps:KerasAppsExtractor
+kmeans = ertk.preprocessing.kmeans:KMeansExtractor
+opensmile = ertk.preprocessing.opensmile:OpenSMILEExtractor
+openxbow = ertk.preprocessing.openxbow:OpenXBOWExtractor
+phonemize = ertk.preprocessing.phonemize:Phonemizer
+resample = ertk.preprocessing.resample:Resampler
+spectrogram = ertk.preprocessing.spectrogram:SpectrogramExtractor
+speechbrain = ertk.preprocessing.speechbrain:SpeechBrainExtractor
+vad_trim = ertk.preprocessing.vad_trim:VADTrimmer
+vggish = ertk.preprocessing.audioset:VGGishExtractor
+yamnet = ertk.preprocessing.audioset:YAMNetExtractor
