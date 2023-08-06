@@ -1,0 +1,5 @@
+orquestra-quantum
+requests==2.25.0
+
+[dev]
+orquestra-python-dev

@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: orquestra-ionq
+Version: 0.2.0
+Summary: "Orquestra Integration for IonQ"
+Home-page: https://github.com/zapatacomputing/orquestra-ionq
+Author: Zapata Computing Inc.
+Author-email: info@zapatacomputing.com,
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: !=3.9.7,<3.11,>=3.8
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: dev
+
+# Orquestra-IonQ
+
+## What is it?
+
+`orquestra-ionq` is a [Zapata](https://www.zapatacomputing.com) library holding modules for integrating ionq with [Orquestra](https://www.zapatacomputing.com/orquestra/).
+
+## Installation
+
+Even though it's intended to be used with Orquestra, `orquestra-ionq` can be also used as a Python module.
+Just run `pip install orquestra-ionq` or clone the repo from github and run `pip install .` from the main directory.
+
+## Usage
+
+`orquestra-ionq` is a Python module that exposes IonQ's simulators and QPUs as an [`orquestra`](https://github.com/zapatacomputing/orquestra-quantum/blob/main/src/orquestra/quantum/api/backend.py) `CircuitRunner`. It can be imported with:
+
+``` python
+from orquestra.integrations.ionq import IonQRunner
+```
+
+From there you can create a circuit runner and use the usual `run_and_measure` method to run a circuit on IonQ's simulators or QPUs.
+``` python
+from orquestra.quantum.circuit import Circuit, H, CNOT
+
+runner = IonQRunner(<api_key_here>, "harmony")
+circuit = Circuit([H(0)), CNOT(0, 1)])
+measurements = runner.run_and_measure(circuit, 1000)
+```
+
+In addition, it also provides converters that allow one to convert an `orquestra` circuit into a circuit dictionary used in IonQ's API.
+
+The module can be used directly in Python or in an [Orquestra](https://www.orquestra.io) workflow.
+For more details, see the [Orquestra Core docs](https://zapatacomputing.github.io/orquestra-core/index.html).
+
+For more information regarding Orquestra and resources, please refer to the [Orquestra documentation](https://www.orquestra.io/docs).
+
+## Development and contribution
+
+You can find the development guidelines in the [`orquestra-quantum` repository](https://github.com/zapatacomputing/orquestra-quantum).
