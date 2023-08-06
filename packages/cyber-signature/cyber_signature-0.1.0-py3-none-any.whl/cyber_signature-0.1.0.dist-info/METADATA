@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cyber-signature
+Version: 0.1.0
+Summary: 
+Author: Cristian Triana
+Author-email: crisdevelop4@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cryptography (>=41.0.1,<42.0.0)
+Requires-Dist: pypdf (>=3.9.0,<4.0.0)
+Requires-Dist: reportlab (>=4.0.4,<5.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Digital signature
+
+This project is an application for digitally signing pdfs.
+
+The user provides a pdf that will be signed using an Ed25519 algorithm.
+Additionally, for providing a better user experience a new page will be appended
+at the end of the pdf that offers visual feedback to the user that the document
+was indeed signed.

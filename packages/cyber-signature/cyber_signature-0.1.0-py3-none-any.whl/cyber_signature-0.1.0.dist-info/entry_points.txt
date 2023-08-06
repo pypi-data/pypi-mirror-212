@@ -1,0 +1,3 @@
+[console_scripts]
+cyber-signature=app.cli.app:app
+
