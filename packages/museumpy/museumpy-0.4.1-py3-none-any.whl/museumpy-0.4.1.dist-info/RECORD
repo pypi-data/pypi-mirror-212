@@ -1,0 +1,10 @@
+museumpy/__init__.py,sha256=R09kewcVBo2rLWNa9_6mv6rIz_rFKP_8Kk9s1uT3a7Y,1556
+museumpy/client.py,sha256=HDa0RtwBEUmoFCXMJf6yXDlIXrC__k4RHnofqNtve_U,7648
+museumpy/errors.py,sha256=heIFLNikZWkp_X5OfdZ2r70uv5dbUDd6Ze7fTs0IAn4,519
+museumpy/response.py,sha256=y-zK6Jnd7NMuPnynmIfsgu9-1zHSrXgOFYmv9ETvXTs,6904
+museumpy/xmlparse.py,sha256=hXe-SvpRnDv4829ek0H6j6gKq5RPOig7n3cyT9hEXP8,1811
+museumpy-0.4.1.dist-info/LICENSE.md,sha256=SQtlo_Aq8Hgw8R5v_F8xBHzAycFFCX7QcGGH18fVQQw,1057
+museumpy-0.4.1.dist-info/METADATA,sha256=J7UVQFAzsXmEBaUCdBzxDjIOYzrtz4xXtDBDj2F2Ejg,5596
+museumpy-0.4.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+museumpy-0.4.1.dist-info/top_level.txt,sha256=RqyG7SGtwUu3dJT5Mrf5AITUjEUZLQlfckgF4KXd5_w,9
+museumpy-0.4.1.dist-info/RECORD,,
