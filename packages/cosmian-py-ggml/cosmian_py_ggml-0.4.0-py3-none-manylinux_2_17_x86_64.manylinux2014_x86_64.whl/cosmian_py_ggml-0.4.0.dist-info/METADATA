@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: cosmian-py-ggml
+Version: 0.4.0
+Summary: Python bindings for GGML
+License: MIT
+Author: Hugo Rosenkranz-Costa
+Author-email: hugo.rosenkranz@cosmian.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Cosmian Python bindings for [`ggml`](https://github.com/ggerganov/ggml)
+
+This library provides python bindings for the [examples models](https://github.com/ggerganov/ggml/tree/master/examples) of ggml.
+
+## Available models architecture
+
+- [gpt-neox](https://huggingface.co/docs/transformers/model_doc/gpt_neox)
+
+```python
+from cosmian_py_ggml import gpt_neox
+from transformers import AutoTokenizer
+
+tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neox-20b")
+model = gpt_neox.load_model("ggml_model_path")
+
+res = gpt_neox.generate(model, tokenizer.encode(query))
+print("Response:", tokenizer.decode(res))
+
+gpt_neox.free_model(model)
+```
+
+## Build from sources
+
+```bash
+git clone --recursive git@github.com:Cosmian/cosmian_py_ggml.git
+scripts/build.sh
+```
+
