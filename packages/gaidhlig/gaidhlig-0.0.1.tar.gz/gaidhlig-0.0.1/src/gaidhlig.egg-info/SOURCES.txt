@@ -1,0 +1,6 @@
+setup.py
+src/gaidhlig/__init__.py
+src/gaidhlig.egg-info/PKG-INFO
+src/gaidhlig.egg-info/SOURCES.txt
+src/gaidhlig.egg-info/dependency_links.txt
+src/gaidhlig.egg-info/top_level.txt
