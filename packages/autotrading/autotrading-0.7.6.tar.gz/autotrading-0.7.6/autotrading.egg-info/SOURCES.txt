@@ -1,0 +1,14 @@
+pyproject.toml
+setup.cfg
+autotrader/SmartWebSocketV2.py
+autotrader/__init__.py
+autotrader/autotradingfunctions.py
+autotrader/blackscholes.py
+autotrader/discord_bot.py
+autotrader/nsefunctions.py
+autotrader/strategies.py
+autotrading.egg-info/PKG-INFO
+autotrading.egg-info/SOURCES.txt
+autotrading.egg-info/dependency_links.txt
+autotrading.egg-info/requires.txt
+autotrading.egg-info/top_level.txt
