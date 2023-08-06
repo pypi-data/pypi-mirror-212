@@ -1,0 +1,6 @@
+pandas
+seaborn
+pyttsx3
+docx2pdf
+pypdf
+requests
