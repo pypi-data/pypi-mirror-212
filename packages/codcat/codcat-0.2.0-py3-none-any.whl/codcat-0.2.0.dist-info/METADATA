@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: codcat
+Version: 0.2.0
+Summary: Code snippets language classification tool
+Author-email: Konstantin Templin <1qnbhd@gmail.com>
+Maintainer-email: Konstantin Templin <1qnbhd@gmail.com>
+License: MIT
+Project-URL: Repository, https://gitlab.com/codcat/codcat
+Keywords: code,snippets,classification,language,NLP,ML
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygments
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: onnxruntime (==1.15.0)
+Requires-Dist: skl2onnx (==1.14.1)
+Requires-Dist: onnxmltools (==1.11.2)
+Requires-Dist: nltk (>=3.8.1)
+Requires-Dist: click (>=8.1.3)
+Requires-Dist: rich (>=13.3.3)
+Requires-Dist: lightgbm (>=3.3.0)
+Requires-Dist: pyyaml
+Requires-Dist: requests
+
+# Codcat
+
+Natural Language Processing (NLP) is a rapidly growing field that aims to help machines understand and interpret human language. With the increasing use of code repositories like Github, there is a growing need to accurately categorize program code by programming language. This is particularly important in large repositories where multiple programming languages are used, as it allows developers to easily navigate and search for specific code snippets.
+
+The goal of this NLP project is to develop a model that can automatically categorize program code by programming language. The model will be trained on a large dataset of code snippets from various programming languages, and will use NLP techniques to extract features and patterns from the code.
+
+The project will involve several steps, including data collection, pre-processing, feature extraction, model selection and evaluation. The dataset for the project will be sourced from various public code repositories, including GitHub, GitLab, Stackoverflow. The collected data will then be pre-processed to remove irrelevant information and to standardize the format of the code snippets. This will involve techniques such as tokenization and stop-word removal.
+
+Once the data is pre-processed, features will be extracted from the code snippets using NLP techniques. This will involve using methods such as Bag of Words (BoW), Term Frequency-Inverse Document Frequency (TF-IDF), and Embeddings to capture the semantics of the code. These features will then be used to train and evaluate several machine learning models, including Naive Bayes, RandomForest, CNN, RNN, Transformers.
+
+The final model will be evaluated on a test set of code snippets to assess its accuracy and generalizability.
+
+## Prerequisites
+
+On your PC with local run you must have Python >= 3.9
+
+## Installation
+Install `codcat` with pip:
+
+```bash
+pip install codcat
+```
+
+or with your favorite package manager.
+
+## Example
+
+### Input
+
+```python
+from codcat.downloader import load
+model = load('base-tiny')
+print(model.predict(['def foo(bar): return bar', '#include <stdio.h>']))
+```
+
+### Output
+
+```python
+['python' 'c']
+```
+
+## Authors
+
+- Templin Konstantin <1qnbhd@gmail.com>

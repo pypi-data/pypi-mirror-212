@@ -1,0 +1,14 @@
+base-tiny:
+  href: https://disk.yandex.ru/d/fnZVe9s_4nLJvw
+  ext: onnx
+  type: sklearn
+
+base-md:
+  href: https://disk.yandex.ru/d/DS1dUHySs9W2hg
+  ext: onnx
+  type: sklearn
+
+base-xl:
+  href: https://disk.yandex.ru/d/2L3dSQqYVwjcLA
+  ext: onnx
+  type: sklearn
