@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: board-automate
+Version: 0.4.0
+Summary: Automate remote exection on linux based embedded boards
+License: MIT
+Author: Christoph Gerum
+Author-email: christoph.gerum@uni-tuebingen.de
+Requires-Python: >3.7.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: postgres
+Provides-Extra: xilinx
+Requires-Dist: GitPython (>=3.1.27,<4.0.0)
+Requires-Dist: coloredlogs (>=10.0,<11.0)
+Requires-Dist: fabric (>=3.1.0,<4.0.0)
+Requires-Dist: jinja2 (>3.0,<3.1)
+Requires-Dist: jinjasql (>0.1.7) ; extra == "postgres"
+Requires-Dist: keyring (>=21.1.0,<22.0.0)
+Requires-Dist: prompt_toolkit (>=3.0,<4.0)
+Requires-Dist: psycopg2-binary (>=2.8.6,<3.0.0) ; extra == "postgres"
+Requires-Dist: pydantic (>=1.10.5,<2.0.0)
+Requires-Dist: pydot (>=1.4.1,<2.0.0) ; extra == "postgres"
+Requires-Dist: python-dotenv (>=0.10.5,<0.11.0) ; extra == "postgres"
+Requires-Dist: requests (>=2.22,<3.0)
+Requires-Dist: ruamel-yaml (>=0.17.21,<0.18.0)
+Requires-Dist: setproctitle (>=1.1.10,<2.0.0)
+Requires-Dist: six (>=1.16.0,<2.0.0)
+Requires-Dist: tabulate (>=0.8.6,<0.9.0)
