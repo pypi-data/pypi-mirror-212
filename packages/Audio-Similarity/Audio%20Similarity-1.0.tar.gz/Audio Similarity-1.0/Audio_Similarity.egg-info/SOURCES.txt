@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+Audio_Similarity.egg-info/PKG-INFO
+Audio_Similarity.egg-info/SOURCES.txt
+Audio_Similarity.egg-info/dependency_links.txt
+Audio_Similarity.egg-info/requires.txt
+Audio_Similarity.egg-info/top_level.txt
+audio_similarity/__init__.py
+audio_similarity/__version__.py
+audio_similarity/audio_similarity.py
