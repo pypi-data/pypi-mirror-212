@@ -1,0 +1,2 @@
+[console_scripts]
+intorods = intorods.intorods:main
